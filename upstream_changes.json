@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-18T19:35:06Z",
+  "triggered_at": "2026-04-18T23:26:44Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "599360c",
-      "new": "3c976b1",
-      "full": "3c976b1ffb1e87aa65e6c93c7ccd7af16a062cfd",
-      "msg": "[LA64_DYNAREC] Fixed amadd_db.b use in lock opcodes (#3793)",
-      "date": "2026-04-18T18:57:22Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "fcfdd4c",
-      "new": "b860e01",
-      "full": "b860e0132f97dfe0b30c63b51a78ae6beae99428",
-      "msg": "amd: use gfx_level instead of family_id to choose addrlib",
-      "date": "2026-04-18T18:55:46.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "011706c",
+      "new": "1dd4ea3",
+      "full": "1dd4ea327d85418922f7d3f920a8cebc41d2ce81",
+      "msg": "[dxvk] Fix type mismatch in copy shader for packed 16-bit formats",
+      "date": "2026-04-18T22:57:19Z"
     }
   ]
 }
