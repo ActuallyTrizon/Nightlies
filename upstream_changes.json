@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-18T07:55:26Z",
+  "triggered_at": "2026-04-18T09:39:53Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "a4479a9",
-      "new": "13cb80d",
-      "full": "13cb80d1b774e70befd6a25595c377ab0c85fdaa",
-      "msg": "[LA64_DYNAREC] Fixed BSF/BSR pf computtation (#3788)",
-      "date": "2026-04-18T07:26:24Z"
+      "old": "13cb80d",
+      "new": "599360c",
+      "full": "599360ce079ca1e39a10417b28d98df6c89201a4",
+      "msg": "[DYNAREC] Fixed callret=2 with always_test out-of-bounds read (#3790)",
+      "date": "2026-04-18T08:55:59Z"
     }
   ]
 }
