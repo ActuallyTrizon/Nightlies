@@ -1837,6 +1837,12 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "tu_v25.1 \u2014 a8xx-gen8-V25.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v25.1_a8xx-gen8-V25.1.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v25 \u2014 a8xx-gen8-V25.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v25_a8xx-gen8-V25.zip"
