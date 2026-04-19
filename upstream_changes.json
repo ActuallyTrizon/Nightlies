@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-18T23:26:44Z",
+  "triggered_at": "2026-04-19T12:41:08Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "011706c",
-      "new": "1dd4ea3",
-      "full": "1dd4ea327d85418922f7d3f920a8cebc41d2ce81",
-      "msg": "[dxvk] Fix type mismatch in copy shader for packed 16-bit formats",
-      "date": "2026-04-18T22:57:19Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "b860e01",
+      "new": "8736d1a",
+      "full": "8736d1a9a6b323fc2c6c1bdb5d6a445f1cef1575",
+      "msg": "intel/compiler: implement macl part of Wa_18035690555",
+      "date": "2026-04-19T11:39:10.000+00:00"
     }
   ]
 }
