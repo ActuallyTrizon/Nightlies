@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-20T22:35:31Z",
+  "triggered_at": "2026-04-20T23:36:02Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "c276b56",
-      "new": "ca8538f",
-      "full": "ca8538f231b9f4fd6c03db9545c3b0d1eb2aca20",
-      "msg": "[dxvk] Fix resource tracking during resource defragmentation",
-      "date": "2026-04-20T21:47:57Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3388123",
+      "new": "6397ddd",
+      "full": "6397ddd15d4295edd3001495dfe7fbdcd67c0530",
+      "msg": "gallium: Drop post-processing filters",
+      "date": "2026-04-20T22:58:39.000+00:00"
     }
   ]
 }
