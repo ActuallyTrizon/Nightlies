@@ -1,7 +1,7 @@
 # Star-Compose: Jetpack Compose Migration Report & Developer Guide
 
 **Date:** 2026-04-16  
-**Last updated:** 2026-04-17
+**Last updated:** 2026-04-20
 
 ---
 
@@ -42,6 +42,14 @@
 - [D1. Fix Summary Table](#d1-fix-summary-table)
 - [D2–D9. Per-Job Detail](#d2-job-detail-help--support)
 - [D10. New Gotchas (13–18)](#d10-new-gotchas-discovered-during-feedback-fixes)
+
+**Part E — Post-Migration Improvements (2026-04-20)**
+- [E1. AdrenoTools SIGSEGV Fix](#e1-adrenotools--turnip-driver-sigsegv-fix)
+- [E2. Developer Feedback Fixes](#e2-developer-feedback-fixes)
+- [E3. TopAppBar Actions Architecture](#e3-topappbar-actions-architecture)
+- [E4. Shortcut Grid Cover Art Layout](#e4-shortcut-grid--cover-art-layout)
+- [E5. Shortcut List Tech Info Columns](#e5-shortcut-list-item--tech-info-columns)
+- [E6. New Gotchas (19–22)](#e6-new-gotchas-1922)
 
 ---
 
@@ -1802,3 +1810,130 @@ Composables promoted to `internal` visibility so they can be shared across scree
 | Total lines of Java/XML removed | ~5,000+ |
 | Post-migration feedback fix commits | 8 jobs → 9 commits |
 | New gotchas documented (Part D) | 6 (Gotchas 13–18) |
+
+---
+
+## Part E — Post-Migration Improvements (2026-04-20)
+
+### E1. AdrenoTools / Turnip Driver SIGSEGV Fix
+
+**Symptom:** GPU extension count showed `0/0` in the graphics driver config dialog instead of the expected `169/169`. The app did not crash but extensions were silently missing.
+
+**Root cause:** The Compose migration moved `GPUInformation` JNI calls onto background coroutine threads (`Dispatchers.IO`). The AdrenoTools `hook_android_dlopen_ext` is not reentrant across threads — concurrent invocations from the main thread and an IO thread triggered a SIGSEGV race condition.
+
+**Rule established:** ALL `GPUInformation` native methods must run on the main thread:
+- `enumerateExtensions()` — called inside `LaunchedEffect(version)` with no `withContext`
+- `isDriverSupported()` / `getRenderer()` — called inside `LaunchedEffect(Unit)`, outside any `withContext(Dispatchers.IO)` block
+- Pure file I/O (`enumarateInstalledDrivers()`, `gpu_cards.json`) stays on `Dispatchers.IO`
+
+**File:** `ContainerDetailScreen.kt` → `GraphicsDriverConfigDialog` composable  
+**Commits:** `8035420` (partial), `e22815c` (full fix)  
+**CI:** `24662739330` ✅
+
+---
+
+### E2. Developer Feedback Fixes
+
+After device testing, 5 pieces of developer feedback were applied in a single pass.
+
+#### E2 Fix Summary Table
+
+| # | Issue | Fix | Commit |
+|---|---|---|---|
+| 1 | Appearance in wrong drawer section | Moved `DrawerItem(Screen.Appearance)` from Emulation to Tools section in `AppDrawer.kt` | `0879429` |
+| 2 | Action buttons (import, grid toggle, sort) were inline below the list | Moved all action buttons into `AppTopBar` via `LocalTopBarActions` `CompositionLocal` | `0879429` |
+| 3 | Shortcut grid used 2-column large tiles | `GridCells.Adaptive(120.dp)` for ~3 columns portrait, more in landscape | `0879429` → `a595b7a` |
+| 4 | Grid items used 3-dot menu button | Replaced with `combinedClickable` long-press to open context menu | `0879429` |
+| 5 | Top bar buttons disappeared when dialogs opened | `DisposableEffect.onDispose` was firing on dialog open, not just navigation. Fixed by removing `DisposableEffect` and adding `LaunchedEffect(currentRoute)` in `MainActivity` to clear actions only on route change | `afaf051` |
+
+---
+
+### E3. TopAppBar Actions Architecture
+
+Screens push their own action buttons into the shared `AppTopBar` without prop drilling via a `CompositionLocal`:
+
+**`LocalTopBarActions.kt`:**
+```kotlin
+val LocalTopBarActions = compositionLocalOf<MutableState<@Composable RowScope.() -> Unit>> {
+    mutableStateOf({})
+}
+```
+
+**In `MainActivity.kt`:**
+```kotlin
+val topBarActionsState = remember { topBarActionsState() }
+LaunchedEffect(currentRoute) { topBarActionsState.value = {} }  // clear on navigation only
+CompositionLocalProvider(LocalTopBarActions provides topBarActionsState) { ... }
+```
+
+**In each screen:**
+```kotlin
+val topBarActions = LocalTopBarActions.current
+SideEffect {  // SideEffect not DisposableEffect — keeps captures fresh every recomposition
+    topBarActions.value = { /* IconButtons here */ }
+}
+```
+
+**Why `SideEffect` not `DisposableEffect`:** `DisposableEffect.onDispose` fires whenever the composable leaves composition — including when a dialog opens on the same screen. This clears the top bar buttons mid-session. `SideEffect` runs on every recomposition and has no `onDispose`, so buttons stay visible while dialogs are open.
+
+---
+
+### E4. Shortcut Grid — Cover Art Layout
+
+Grid tiles were redesigned so the game cover art fills the entire tile (`ContentScale.Crop`) with a vertical gradient scrim at the bottom overlaying the game name and container name in white text.
+
+**`ShortcutGridItem` structure:**
+```kotlin
+Box(modifier = Modifier.aspectRatio(1f).clip(RoundedCornerShape(8.dp))...) {
+    Image(contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
+    Box(
+        modifier = Modifier.align(Alignment.BottomStart)
+            .background(Brush.verticalGradient(listOf(Color.Transparent, Color.Black.copy(0.75f))))
+            .padding(8.dp)
+    ) {
+        Column {
+            Text(shortcut.name, color = Color.White, fontWeight = FontWeight.Bold)
+            Text(containerName, fontSize = 10.sp, color = Color.White.copy(0.7f))
+        }
+    }
+    DropdownMenu(...)  // long-press context menu
+}
+```
+
+**Commit:** `a595b7a` CI: `24667712651` ✅
+
+---
+
+### E5. Shortcut List Item — Tech Info Columns
+
+The list view card was extended to show per-shortcut technical settings in the right-hand space, keeping card height unchanged.
+
+**Layout:**
+```
+[icon]  Game Name          1280x720 · turnip25.1.0   [▶] [⋮]
+        Container-1        DXVK 2.3.1 · VKD3D 3.1
+```
+
+**Implementation:** A second `Column(horizontalAlignment = Alignment.End)` sits between the name column and action buttons. Top line: resolution + GPU driver version. Bottom line: DXVK version + VKD3D version — both parsed from the single `dxwrapperConfig` key-value string.
+
+```kotlin
+val cfgMap = dxwrapperCfg.split(",").mapNotNull {
+    val parts = it.split("=", limit = 2)
+    if (parts.size == 2) parts[0].trim() to parts[1].trim() else null
+}.toMap()
+val dxvkVersion = cfgMap["version"] ?: ""
+val vkd3dVersion = cfgMap["vkd3dVersion"] ?: ""
+```
+
+**Commits:** `bdf2657`, `658013f`, `41b9f88` — CI: `24671327547` ✅
+
+---
+
+### E6. New Gotchas (19–22)
+
+| # | Gotcha | Details |
+|---|---|---|
+| 19 | `GPUInformation` JNI must stay on main thread | `hook_android_dlopen_ext` is not reentrant. Any `GPUInformation.*` call on a background thread races with the main thread and causes SIGSEGV. Use `LaunchedEffect` with no `withContext` for these calls. |
+| 20 | `DisposableEffect.onDispose` fires on dialog open | If a screen pushes state in `DisposableEffect(Unit)` and clears it in `onDispose`, dialogs opening on the same screen will trigger `onDispose` and wipe the state. Use `SideEffect` for state that should persist while the screen is visible. |
+| 21 | `combinedClickable` requires `@OptIn(ExperimentalFoundationApi::class)` | Must annotate the composable function and add `import androidx.compose.foundation.ExperimentalFoundationApi`. Missing annotation causes compile error. |
+| 22 | `dxwrapperConfig` stores both DXVK and VKD3D in one string | Format: `version=X,framerate=0,...,vkd3dVersion=Y,...`. Use key-value parsing (`split(",")` → `split("=")`) to extract individual versions. Do not use `GraphicsDriverConfigDialog.getVersion()` directly — it returns `version` value which includes trailing config keys. |
