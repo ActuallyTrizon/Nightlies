@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-04-20T13:10:02Z",
+  "triggered_at": "2026-04-20T15:11:07Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d43e64e",
-      "new": "fe6b932",
-      "full": "fe6b9327d1b90a521e466e3fc694db5b2c1b7568",
-      "msg": "[DYNAREC] Fixed 69 IMUL opcode load immediate (#3795)",
-      "date": "2026-04-20T12:33:45Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "474f50a",
-      "new": "c276b56",
-      "full": "c276b56bb84b78b7e46493e82fd5837c16c690f5",
-      "msg": "[d3d11] Re-introduce heuristic to drop Flush calls on tilers",
-      "date": "2026-04-20T11:14:42Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "917c3dc",
-      "new": "ecb9beb",
-      "full": "ecb9bebdef03f73d15b555aac1cb088cc2d2f38f",
-      "msg": "docs/features: add GL_EXT_texture_shadow_lod",
-      "date": "2026-04-20T12:49:53.000+00:00"
+      "old": "ecb9beb",
+      "new": "8fcfecb",
+      "full": "8fcfecb9797cc6790d7a0ee682163f226666b3e7",
+      "msg": "Revert \"ci: disable Collabora's farm due to maintenance\"",
+      "date": "2026-04-20T14:28:04.000+00:00"
     }
   ]
 }
