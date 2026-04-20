@@ -1,41 +1,14 @@
 {
-  "triggered_at": "2026-04-20T16:56:53Z",
+  "triggered_at": "2026-04-20T17:54:05Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "fe6b932",
-      "new": "7eeb501",
-      "full": "7eeb5016493dab4e143d53da50dd47bfb44a9509",
-      "msg": "Bumped version to v0.4.2",
-      "date": "2026-04-20T16:33:09Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d41d52b",
-      "new": "59755ec",
-      "full": "59755ec11551f6ed689cead9f3f0d3b77e815ddf",
-      "msg": "Merge pull request #5426 from Sonicadvance1/139",
-      "date": "2026-04-20T15:53:51Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "ca33bc4",
-      "new": "8850039",
-      "full": "8850039b792a1836cdd2e30ba70e035202e2db89",
-      "msg": "vkd3d: Bump RDNA1 compat path for VRS up to tier 2.",
-      "date": "2026-04-20T15:26:11Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8fcfecb",
-      "new": "36983b5",
-      "full": "36983b50fe822d43079dc5d0a12c025197fd9636",
-      "msg": "panvk: increase maxBufferSize on v11 and later",
-      "date": "2026-04-20T16:00:56.000+00:00"
+      "old": "36983b5",
+      "new": "bf460a5",
+      "full": "bf460a525d35dfae5b87628c2191373276492763",
+      "msg": "gallium: completely remove T{EX,XF}_LZ opcode",
+      "date": "2026-04-20T17:09:21.000+00:00"
     }
   ]
 }
