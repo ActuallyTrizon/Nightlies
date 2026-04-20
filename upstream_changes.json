@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-20T20:40:45Z",
+  "triggered_at": "2026-04-20T22:35:31Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "7adfea1",
-      "new": "3388123",
-      "full": "3388123f0248c899e3dfc46dafa4e47eb8e2dbc9",
-      "msg": "anv/apply_layout: move some helpers around",
-      "date": "2026-04-20T21:53:35.000+03:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c276b56",
+      "new": "ca8538f",
+      "full": "ca8538f231b9f4fd6c03db9545c3b0d1eb2aca20",
+      "msg": "[dxvk] Fix resource tracking during resource defragmentation",
+      "date": "2026-04-20T21:47:57Z"
     }
   ]
 }
