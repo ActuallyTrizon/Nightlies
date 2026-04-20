@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-04-20T11:14:12Z",
+  "triggered_at": "2026-04-20T13:10:02Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e477ccd",
-      "new": "d43e64e",
-      "full": "d43e64ee46e1989ee4b451f185e9f4dca5d8a355",
-      "msg": "[WRAPPER] Added a few more symbols to libhoweed6",
-      "date": "2026-04-20T10:06:12Z"
+      "old": "d43e64e",
+      "new": "fe6b932",
+      "full": "fe6b9327d1b90a521e466e3fc694db5b2c1b7568",
+      "msg": "[DYNAREC] Fixed 69 IMUL opcode load immediate (#3795)",
+      "date": "2026-04-20T12:33:45Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "1dd4ea3",
-      "new": "474f50a",
-      "full": "474f50a702a3bf31dfa0b2fb1c16efc38883c7b0",
-      "msg": "[meta] Update Vulkan profile",
-      "date": "2026-04-20T10:02:09Z"
+      "old": "474f50a",
+      "new": "c276b56",
+      "full": "c276b56bb84b78b7e46493e82fd5837c16c690f5",
+      "msg": "[d3d11] Re-introduce heuristic to drop Flush calls on tilers",
+      "date": "2026-04-20T11:14:42Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7a8721e",
-      "new": "917c3dc",
-      "full": "917c3dc77aeda9e5c566bc866ee15a506021d6fe",
-      "msg": "panvk: Advertise VK_EXT_shader_uniform_buffer_unsized_array",
-      "date": "2026-04-20T12:10:19.000+02:00"
+      "old": "917c3dc",
+      "new": "ecb9beb",
+      "full": "ecb9bebdef03f73d15b555aac1cb088cc2d2f38f",
+      "msg": "docs/features: add GL_EXT_texture_shadow_lod",
+      "date": "2026-04-20T12:49:53.000+00:00"
     }
   ]
 }
