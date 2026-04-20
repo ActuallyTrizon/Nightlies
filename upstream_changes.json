@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-20T18:54:23Z",
+  "triggered_at": "2026-04-20T20:40:45Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bf460a5",
-      "new": "7adfea1",
-      "full": "7adfea17e359eb7ed135215ea0e7aea3cfa0cf13",
-      "msg": "d3d12: Handle THREAD_SAFE maps and use them for async query results",
-      "date": "2026-04-20T18:09:30.000+00:00"
+      "old": "7adfea1",
+      "new": "3388123",
+      "full": "3388123f0248c899e3dfc46dafa4e47eb8e2dbc9",
+      "msg": "anv/apply_layout: move some helpers around",
+      "date": "2026-04-20T21:53:35.000+03:00"
     }
   ]
 }
