@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-20T17:54:05Z",
+  "triggered_at": "2026-04-20T18:54:23Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "36983b5",
-      "new": "bf460a5",
-      "full": "bf460a525d35dfae5b87628c2191373276492763",
-      "msg": "gallium: completely remove T{EX,XF}_LZ opcode",
-      "date": "2026-04-20T17:09:21.000+00:00"
+      "old": "bf460a5",
+      "new": "7adfea1",
+      "full": "7adfea17e359eb7ed135215ea0e7aea3cfa0cf13",
+      "msg": "d3d12: Handle THREAD_SAFE maps and use them for async query results",
+      "date": "2026-04-20T18:09:30.000+00:00"
     }
   ]
 }
