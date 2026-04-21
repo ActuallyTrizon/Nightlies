@@ -217,17 +217,26 @@ jobs:
           cp "$GE/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch" \
             wine-source/android/patches/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch
 
-          # Fix dlls_winex11_drv_x11drv_h.patch: upstream swapped XATOM_GAMESCOPE order
+          # Fix GAMESCOPE atom ordering: upstream swapped XALIA_OVERLAY and EDID_PATH
           python3 <<'PY'
           import pathlib
-          p = pathlib.Path('wine-source/android/patches/dlls_winex11_drv_x11drv_h.patch')
-          c = p.read_text()
-          c = c.replace(
-              '     XATOM_GAMESCOPE_DISPLAY_EDID_PATH,\n     XATOM_GAMESCOPE_XALIA_OVERLAY,',
-              '     XATOM_GAMESCOPE_XALIA_OVERLAY,\n     XATOM_GAMESCOPE_DISPLAY_EDID_PATH,'
-          )
-          p.write_text(c)
-          print('fixed x11drv.h patch')
+          fixes = {
+              'wine-source/android/patches/dlls_winex11_drv_x11drv_h.patch': [
+                  ('     XATOM_GAMESCOPE_DISPLAY_EDID_PATH,\n     XATOM_GAMESCOPE_XALIA_OVERLAY,',
+                   '     XATOM_GAMESCOPE_XALIA_OVERLAY,\n     XATOM_GAMESCOPE_DISPLAY_EDID_PATH,'),
+              ],
+              'wine-source/android/patches/dlls_winex11_drv_x11drv_main_c.patch': [
+                  ('     "GAMESCOPE_DISPLAY_EDID_PATH",\n     "GAMESCOPE_XALIA_OVERLAY",',
+                   '     "GAMESCOPE_XALIA_OVERLAY",\n     "GAMESCOPE_DISPLAY_EDID_PATH",'),
+              ],
+          }
+          for path, replacements in fixes.items():
+              p = pathlib.Path(path)
+              c = p.read_text()
+              for old, new in replacements:
+                  c = c.replace(old, new)
+              p.write_text(c)
+              print(f'fixed {path}')
           PY
 
           find wine-source/android/patches -type f -name "*.patch" -exec sed -i 's/\r$//' {} +
