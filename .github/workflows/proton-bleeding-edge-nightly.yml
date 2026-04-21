@@ -130,16 +130,6 @@ jobs:
             sysvshm: true
             enable_ntsync: false
 
-          - arch_id: arm64ec-ntsync
-            termux_arch: aarch64
-            build_script: build-step-arm64ec.sh
-            output_dir: compiled-files-aarch64
-            prefix_pack: prefixPack-arm64ec.txz
-            profile_version: 10.0.99-arm64ec-ntsync
-            display_arch: ARM64EC NTSync
-            sysvshm: true
-            enable_ntsync: true
-
     steps:
       - name: Checkout Nightlies repo
         uses: actions/checkout@v4
@@ -226,6 +216,22 @@ jobs:
             wine-source/android/patches/test-bylaws/dlls_wow64_syscall_c.patch
           cp "$GE/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch" \
             wine-source/android/patches/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch
+
+          # Fix dlls_winex11_drv_x11drv_h.patch: upstream swapped XATOM_GAMESCOPE order
+          cat > wine-source/android/patches/dlls_winex11_drv_x11drv_h.patch << 'PATCH'
+--- a/dlls/winex11.drv/x11drv.h
++++ b/dlls/winex11.drv/x11drv.h
+@@ -588,6 +588,9 @@ enum x11drv_atoms
+     XATOM_text_rtf,
+     XATOM_text_richtext,
+     XATOM_text_uri_list,
++#ifdef __ANDROID__
++    XATOM__NET_WM_HWND,
++#endif
+     XATOM_GAMESCOPE_XALIA_OVERLAY,
+     XATOM_GAMESCOPE_DISPLAY_EDID_PATH,
+     NB_XATOMS
+PATCH
 
           find wine-source/android/patches -type f -name "*.patch" -exec sed -i 's/\r$//' {} +
           sed -i 's/atoi("WINE_X11FORCEGLX")/atoi(getenv("WINE_X11FORCEGLX"))/g' \
@@ -691,7 +697,6 @@ jobs:
               "| Component | Source / Commit |",
               "| :--- | :--- |",
               f"| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |",
-              f"| **Proton ARM64EC NTSync** | Same source — NTSync patches applied on top |",
               "",
               "---",
               "",
@@ -827,7 +832,7 @@ jobs:
                   },
                   {
                     \"name\": \"Arch\",
-                    \"value\": \"ARM64EC + ARM64EC NTSync\",
+                    \"value\": \"ARM64EC\",
                     \"inline\": true
                   },
                   {
