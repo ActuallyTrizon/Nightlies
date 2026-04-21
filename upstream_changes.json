@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-21T15:05:50Z",
+  "triggered_at": "2026-04-21T17:53:53Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "e72c075",
-      "new": "f036a76",
-      "full": "f036a76d05316068fd6eb22c044baded1ad1d244",
-      "msg": "tests: Explicitly test suspend-resume behavior in RP test.",
-      "date": "2026-04-21T14:08:32Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bddd8b3",
-      "new": "f59734d",
-      "full": "f59734d5d3a111962f93a1c6ac2d3da31a5a7b81",
-      "msg": "kk: Use device limits for buffers and compute shared memory.",
-      "date": "2026-04-21T14:11:08.000+00:00"
+      "old": "f59734d",
+      "new": "b0c1735",
+      "full": "b0c17357dbe7d13683ec53f12389addb1b94f878",
+      "msg": "intel/ci: update expectation for RPL",
+      "date": "2026-04-21T16:29:14.000+00:00"
     }
   ]
 }
