@@ -239,47 +239,86 @@ jobs:
               print(f'fixed {path}')
           PY
 
-          # Rewrite virtual.c patch: upstream restructured kernel_writewatch_init
-          # (now inside #ifdef USE_UFFD_WRITEWATCH, added TRACE before closing brace)
+          # Directly patch virtual.c for Android compatibility changes that no longer
+          # apply cleanly via the patch file (upstream restructured kernel_writewatch_init
+          # and we need the markers for the already-applied reverse-check to skip the patch).
           python3 <<'PY'
-          import pathlib
-          patch = (
-              '--- a/dlls/ntdll/unix/virtual.c\n'
-              '+++ b/dlls/ntdll/unix/virtual.c\n'
-              '@@ -314,7 +314,13 @@ static void *address_space_start = (void *)0x10000;\n'
-              ' #endif\n'
-              ' #ifdef _WIN64\n'
-              '+#ifdef __ANDROID__\n'
-              '+static void *address_space_limit = (void *)0x7fffff0000;  /* top of the total available address space */\n'
-              '+static void *user_space_limit    = (void *)0x7fffff0000;  /* top of the user address space */\n'
-              '+static void *working_set_limit   = (void *)0x7fffff0000;  /* top of the current working set */\n'
-              '+#else\n'
-              ' static void *address_space_limit = (void *)0x7fffffff0000;  /* top of the total available address space */\n'
-              ' static void *user_space_limit    = (void *)0x7fffffff0000;  /* top of the user address space */\n'
-              ' static void *working_set_limit   = (void *)0x7fffffff0000;  /* top of the current working set */\n'
-              '+#endif\n'
-              ' #else\n'
-              ' static void *address_space_limit = (void *)0xc0000000;\n'
-              '@@ -419,6 +425,7 @@ static void kernel_writewatch_init(void)\n'
-              ' static void kernel_writewatch_init(void)\n'
-              ' {\n'
-              '+#ifndef __ANDROID__\n'
-              '     struct uffdio_api uffdio_api;\n'
-              ' \n'
-              '     uffd_fd = syscall( __NR_userfaultfd, O_CLOEXEC | O_NONBLOCK | UFFD_USER_MODE_ONLY );\n'
-              '@@ -444,6 +451,10 @@ static void kernel_writewatch_init(void)\n'
-              '     use_kernel_writewatch = 1;\n'
-              '     TRACE( "Using kernel write watches.\\n" );\n'
-              '+#else\n'
-              '+    TRACE( "Kernel writewatches are not supported on Android\\n" );\n'
-              '+    use_kernel_writewatch = 0;\n'
-              '+#endif\n'
-              ' }\n'
-              ' \n'
-              ' static void kernel_writewatch_reset( void *start, SIZE_T len )\n'
+          import pathlib, re
+          p = pathlib.Path('wine-source/dlls/ntdll/unix/virtual.c')
+          c = p.read_text()
+
+          # 1. Android address space limit (0x7fffff0000 vs 0x7fffffff0000)
+          OLD_LIMIT = (
+              '#ifdef _WIN64\n'
+              'static void *address_space_limit = (void *)0x7fffffff0000;  /* top of the total available address space */\n'
+              'static void *user_space_limit    = (void *)0x7fffffff0000;  /* top of the user address space */\n'
+              'static void *working_set_limit   = (void *)0x7fffffff0000;  /* top of the current working set */\n'
+              '#else\n'
           )
-          pathlib.Path('wine-source/android/patches/arm64ec/dlls_ntdll_unix_virtual_c.patch').write_text(patch)
-          print('wrote fixed virtual.c patch')
+          NEW_LIMIT = (
+              '#ifdef _WIN64\n'
+              '#ifdef __ANDROID__\n'
+              'static void *address_space_limit = (void *)0x7fffff0000;  /* top of the total available address space */\n'
+              'static void *user_space_limit    = (void *)0x7fffff0000;  /* top of the user address space */\n'
+              'static void *working_set_limit   = (void *)0x7fffff0000;  /* top of the current working set */\n'
+              '#else\n'
+              'static void *address_space_limit = (void *)0x7fffffff0000;  /* top of the total available address space */\n'
+              'static void *user_space_limit    = (void *)0x7fffffff0000;  /* top of the user address space */\n'
+              'static void *working_set_limit   = (void *)0x7fffffff0000;  /* top of the current working set */\n'
+              '#endif\n'
+              '#else\n'
+          )
+          if OLD_LIMIT in c:
+              c = c.replace(OLD_LIMIT, NEW_LIMIT, 1)
+              print('patched address_space_limit')
+          elif '0x7fffff0000' in c:
+              print('address_space_limit already patched')
+          else:
+              print('WARNING: address_space_limit pattern not found')
+
+          # 2. Android writewatch guard inside kernel_writewatch_init
+          OLD_WW = (
+              'static void kernel_writewatch_init(void)\n'
+              '{\n'
+              '    struct uffdio_api uffdio_api;\n'
+          )
+          NEW_WW = (
+              'static void kernel_writewatch_init(void)\n'
+              '{\n'
+              '#ifndef __ANDROID__\n'
+              '    struct uffdio_api uffdio_api;\n'
+          )
+          OLD_WW2 = (
+              '    use_kernel_writewatch = 1;\n'
+              '    TRACE( "Using kernel write watches.\\n" );\n'
+              '}\n'
+          )
+          NEW_WW2 = (
+              '    use_kernel_writewatch = 1;\n'
+              '    TRACE( "Using kernel write watches.\\n" );\n'
+              '#else\n'
+              '    TRACE( "Kernel writewatches are not supported on Android\\n" );\n'
+              '    use_kernel_writewatch = 0;\n'
+              '#endif\n'
+              '}\n'
+          )
+          if OLD_WW in c:
+              c = c.replace(OLD_WW, NEW_WW, 1)
+              print('patched kernel_writewatch_init open')
+          elif '#ifndef __ANDROID__' in c and 'kernel_writewatch_init' in c:
+              print('kernel_writewatch_init open already patched')
+          else:
+              print('WARNING: kernel_writewatch_init pattern not found')
+
+          if OLD_WW2 in c:
+              c = c.replace(OLD_WW2, NEW_WW2, 1)
+              print('patched kernel_writewatch_init close')
+          elif 'Kernel writewatches are not supported on Android' in c:
+              print('kernel_writewatch_init close already patched')
+          else:
+              print('WARNING: kernel_writewatch_init close pattern not found')
+
+          p.write_text(c)
           PY
 
           find wine-source/android/patches -type f -name "*.patch" -exec sed -i 's/\r$//' {} +
