@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T04:43:05Z",
+  "triggered_at": "2026-04-21T06:53:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6397ddd",
-      "new": "e5392e3",
-      "full": "e5392e3d5fb93327d67aec8ca3834e9eacd3380a",
-      "msg": "mesa/st: Set protected content context flag based on pipe context attributes",
-      "date": "2026-04-21T03:14:35.000+00:00"
+      "old": "e5392e3",
+      "new": "d1dd65d",
+      "full": "d1dd65d4255ed564ea0851502135e3027df3ef3b",
+      "msg": "nir/opt_algebraic: fix fabs optimization",
+      "date": "2026-04-21T04:10:29.000+00:00"
     }
   ]
 }
