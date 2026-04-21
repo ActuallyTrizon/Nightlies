@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T21:38:16Z",
+  "triggered_at": "2026-04-21T22:31:57Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6f8656e",
-      "new": "fa784ff",
-      "full": "fa784fffd02a694805b7db8aec4970e39476a7b3",
-      "msg": "brw: Don't set header_size at init since it will be re-set in later code",
-      "date": "2026-04-21T19:23:41.000+00:00"
+      "old": "fa784ff",
+      "new": "4ae192a",
+      "full": "4ae192a3d9f7861f40fc90ff4ebb4bf4112a9c80",
+      "msg": "glsl, spirv: Improve accuracy of asin() and acos()",
+      "date": "2026-04-21T21:10:22.000+00:00"
     }
   ]
 }
