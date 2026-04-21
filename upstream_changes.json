@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T17:53:53Z",
+  "triggered_at": "2026-04-21T19:00:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f59734d",
-      "new": "b0c1735",
-      "full": "b0c17357dbe7d13683ec53f12389addb1b94f878",
-      "msg": "intel/ci: update expectation for RPL",
-      "date": "2026-04-21T16:29:14.000+00:00"
+      "old": "b0c1735",
+      "new": "6f8656e",
+      "full": "6f8656ec64cdd2495d0610770bc29caad199cdf8",
+      "msg": "microsoft/compiler: Back-propagate interpolator modes from FS",
+      "date": "2026-04-21T18:31:31.000+00:00"
     }
   ]
 }
