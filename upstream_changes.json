@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-04-21T11:55:18Z",
+  "triggered_at": "2026-04-21T15:05:50Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "8850039",
-      "new": "e72c075",
-      "full": "e72c07531baacafd0e3c562df2bcd750dab204bd",
-      "msg": "Adjust VK_NV_low_latency2 usage so downstream components can map vkQueuePresent ",
-      "date": "2026-04-21T11:26:32Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "ca8538f",
-      "new": "d4486d5",
-      "full": "d4486d59b04bc7e92b563159831e51042f96d794",
-      "msg": "[dxvk] Fix invalid dxbc-spirv IR for multisampled blit shader",
-      "date": "2026-04-21T10:40:11Z"
+      "old": "e72c075",
+      "new": "f036a76",
+      "full": "f036a76d05316068fd6eb22c044baded1ad1d244",
+      "msg": "tests: Explicitly test suspend-resume behavior in RP test.",
+      "date": "2026-04-21T14:08:32Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "daeb52d",
-      "new": "bddd8b3",
-      "full": "bddd8b36a6d522d9f7597df0fa5512a1608c73d6",
-      "msg": "aco: use RegisterDemand::operator[] more",
-      "date": "2026-04-21T11:16:26.000+00:00"
+      "old": "bddd8b3",
+      "new": "f59734d",
+      "full": "f59734d5d3a111962f93a1c6ac2d3da31a5a7b81",
+      "msg": "kk: Use device limits for buffers and compute shared memory.",
+      "date": "2026-04-21T14:11:08.000+00:00"
     }
   ]
 }
