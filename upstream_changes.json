@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T06:53:39Z",
+  "triggered_at": "2026-04-21T08:28:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e5392e3",
-      "new": "d1dd65d",
-      "full": "d1dd65d4255ed564ea0851502135e3027df3ef3b",
-      "msg": "nir/opt_algebraic: fix fabs optimization",
-      "date": "2026-04-21T04:10:29.000+00:00"
+      "old": "d1dd65d",
+      "new": "1fc8683",
+      "full": "1fc86832814ac9e9a0ef2e9d7640dfae7fb83fe3",
+      "msg": "radv: allow depth+stencil formats with host image copy",
+      "date": "2026-04-21T08:57:31.000+02:00"
     }
   ]
 }
