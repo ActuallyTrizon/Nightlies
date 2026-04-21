@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T22:31:57Z",
+  "triggered_at": "2026-04-21T23:29:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fa784ff",
-      "new": "4ae192a",
-      "full": "4ae192a3d9f7861f40fc90ff4ebb4bf4112a9c80",
-      "msg": "glsl, spirv: Improve accuracy of asin() and acos()",
-      "date": "2026-04-21T21:10:22.000+00:00"
+      "old": "4ae192a",
+      "new": "64bc538",
+      "full": "64bc538f5e2f73bfb21717f898d7b54aab323adc",
+      "msg": "intel/brw: Explicitly upcast UB to UW for SHR with vector immediates",
+      "date": "2026-04-21T22:51:45.000+00:00"
     }
   ]
 }
