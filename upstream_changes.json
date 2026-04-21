@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-04-21T10:13:09Z",
+  "triggered_at": "2026-04-21T11:55:18Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "8850039",
+      "new": "e72c075",
+      "full": "e72c07531baacafd0e3c562df2bcd750dab204bd",
+      "msg": "Adjust VK_NV_low_latency2 usage so downstream components can map vkQueuePresent ",
+      "date": "2026-04-21T11:26:32Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "ca8538f",
+      "new": "d4486d5",
+      "full": "d4486d59b04bc7e92b563159831e51042f96d794",
+      "msg": "[dxvk] Fix invalid dxbc-spirv IR for multisampled blit shader",
+      "date": "2026-04-21T10:40:11Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1fc8683",
-      "new": "daeb52d",
-      "full": "daeb52d38dd330a3c93df763c044418439a7007f",
-      "msg": "pco: Replace nir_shader_lower_instructions with nir_shader_*_pass",
-      "date": "2026-04-21T09:17:28.000+00:00"
+      "old": "daeb52d",
+      "new": "bddd8b3",
+      "full": "bddd8b36a6d522d9f7597df0fa5512a1608c73d6",
+      "msg": "aco: use RegisterDemand::operator[] more",
+      "date": "2026-04-21T11:16:26.000+00:00"
     }
   ]
 }
