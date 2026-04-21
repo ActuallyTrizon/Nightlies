@@ -239,6 +239,49 @@ jobs:
               print(f'fixed {path}')
           PY
 
+          # Rewrite virtual.c patch: upstream restructured kernel_writewatch_init
+          # (now inside #ifdef USE_UFFD_WRITEWATCH, added TRACE before closing brace)
+          python3 <<'PY'
+          import pathlib
+          patch = (
+              '--- a/dlls/ntdll/unix/virtual.c\n'
+              '+++ b/dlls/ntdll/unix/virtual.c\n'
+              '@@ -314,7 +314,13 @@ static void *address_space_start = (void *)0x10000;\n'
+              ' #endif\n'
+              ' #ifdef _WIN64\n'
+              '+#ifdef __ANDROID__\n'
+              '+static void *address_space_limit = (void *)0x7fffff0000;  /* top of the total available address space */\n'
+              '+static void *user_space_limit    = (void *)0x7fffff0000;  /* top of the user address space */\n'
+              '+static void *working_set_limit   = (void *)0x7fffff0000;  /* top of the current working set */\n'
+              '+#else\n'
+              ' static void *address_space_limit = (void *)0x7fffffff0000;  /* top of the total available address space */\n'
+              ' static void *user_space_limit    = (void *)0x7fffffff0000;  /* top of the user address space */\n'
+              ' static void *working_set_limit   = (void *)0x7fffffff0000;  /* top of the current working set */\n'
+              '+#endif\n'
+              ' #else\n'
+              ' static void *address_space_limit = (void *)0xc0000000;\n'
+              '@@ -419,6 +425,7 @@ static void kernel_writewatch_init(void)\n'
+              ' static void kernel_writewatch_init(void)\n'
+              ' {\n'
+              '+#ifndef __ANDROID__\n'
+              '     struct uffdio_api uffdio_api;\n'
+              ' \n'
+              '     uffd_fd = syscall( __NR_userfaultfd, O_CLOEXEC | O_NONBLOCK | UFFD_USER_MODE_ONLY );\n'
+              '@@ -444,6 +451,10 @@ static void kernel_writewatch_init(void)\n'
+              '     use_kernel_writewatch = 1;\n'
+              '     TRACE( "Using kernel write watches.\\n" );\n'
+              '+#else\n'
+              '+    TRACE( "Kernel writewatches are not supported on Android\\n" );\n'
+              '+    use_kernel_writewatch = 0;\n'
+              '+#endif\n'
+              ' }\n'
+              ' \n'
+              ' static void kernel_writewatch_reset( void *start, SIZE_T len )\n'
+          )
+          pathlib.Path('wine-source/android/patches/arm64ec/dlls_ntdll_unix_virtual_c.patch').write_text(patch)
+          print('wrote fixed virtual.c patch')
+          PY
+
           find wine-source/android/patches -type f -name "*.patch" -exec sed -i 's/\r$//' {} +
           sed -i 's/atoi("WINE_X11FORCEGLX")/atoi(getenv("WINE_X11FORCEGLX"))/g' \
             wine-source/android/patches/dlls_winex11_drv_opengl_c.patch
