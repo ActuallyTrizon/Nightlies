@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-21T08:28:26Z",
+  "triggered_at": "2026-04-21T10:13:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d1dd65d",
-      "new": "1fc8683",
-      "full": "1fc86832814ac9e9a0ef2e9d7640dfae7fb83fe3",
-      "msg": "radv: allow depth+stencil formats with host image copy",
-      "date": "2026-04-21T08:57:31.000+02:00"
+      "old": "1fc8683",
+      "new": "daeb52d",
+      "full": "daeb52d38dd330a3c93df763c044418439a7007f",
+      "msg": "pco: Replace nir_shader_lower_instructions with nir_shader_*_pass",
+      "date": "2026-04-21T09:17:28.000+00:00"
     }
   ]
 }
