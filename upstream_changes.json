@@ -1,14 +1,41 @@
 {
-  "triggered_at": "2026-04-22T10:13:20Z",
+  "triggered_at": "2026-04-22T11:54:13Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2deb99a",
+      "new": "96fc30b",
+      "full": "96fc30b1004ec68dd165014768393cfcce36d3b3",
+      "msg": "[MALLOCHOOK] Fix UAF and leak (#3804)",
+      "date": "2026-04-22T11:47:44Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "f036a76",
+      "new": "14f13bc",
+      "full": "14f13bc7fcdb8b25689198258f4465e8b782b336",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-04-22T10:19:14Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d4486d5",
+      "new": "dd4b432",
+      "full": "dd4b432111528927738cabcc5642ab36c42adfde",
+      "msg": "[dxvk] Work around depth-stencil copies involving weird formats (#5597)",
+      "date": "2026-04-22T11:37:08Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9d17a7b",
-      "new": "6031d52",
-      "full": "6031d523930f68f64cb44256694ef6532b09e2e6",
-      "msg": "anv: implement VK_EXT_primitive_restart_index",
-      "date": "2026-04-22T08:52:57.000+00:00"
+      "old": "6031d52",
+      "new": "806fcc6",
+      "full": "806fcc6193e305c22366baa17ccf88c8e1da1bda",
+      "msg": "nir/opt_loop: always try to peel initial break from loops with unrolling hint",
+      "date": "2026-04-22T10:34:58.000+00:00"
     }
   ]
 }
