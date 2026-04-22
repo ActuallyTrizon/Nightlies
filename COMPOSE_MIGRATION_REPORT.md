@@ -1,7 +1,7 @@
 # Star-Compose: Jetpack Compose Migration Report & Developer Guide
 
 **Date:** 2026-04-16  
-**Last updated:** 2026-04-20
+**Last updated:** 2026-04-22
 
 ---
 
@@ -50,6 +50,14 @@
 - [E4. Shortcut Grid Cover Art Layout](#e4-shortcut-grid--cover-art-layout)
 - [E5. Shortcut List Tech Info Columns](#e5-shortcut-list-item--tech-info-columns)
 - [E6. New Gotchas (19–22)](#e6-new-gotchas-1922)
+
+**Part F — Post-Migration Improvements (2026-04-22)**
+- [F1. Animated Splash Screen](#f1-animated-splash-screen)
+- [F2. Custom Accent Color Fix](#f2-custom-accent-color--base-preset-inheritance-fix)
+- [F3. AppDrawer + AppTopBar Theme Fix](#f3-appdrawer--apptopbar--materialtheme-color-fix)
+- [F4. In-Game Drawer Compose Migration](#f4-in-game-side-drawer--full-compose-migration)
+- [F5. Contents URL Update](#f5-contents-screen--remote-profiles-url)
+- [F6. New Gotchas (23–25)](#f6-new-gotchas-2325)
 
 ---
 
@@ -1937,3 +1945,281 @@ val vkd3dVersion = cfgMap["vkd3dVersion"] ?: ""
 | 20 | `DisposableEffect.onDispose` fires on dialog open | If a screen pushes state in `DisposableEffect(Unit)` and clears it in `onDispose`, dialogs opening on the same screen will trigger `onDispose` and wipe the state. Use `SideEffect` for state that should persist while the screen is visible. |
 | 21 | `combinedClickable` requires `@OptIn(ExperimentalFoundationApi::class)` | Must annotate the composable function and add `import androidx.compose.foundation.ExperimentalFoundationApi`. Missing annotation causes compile error. |
 | 22 | `dxwrapperConfig` stores both DXVK and VKD3D in one string | Format: `version=X,framerate=0,...,vkd3dVersion=Y,...`. Use key-value parsing (`split(",")` → `split("=")`) to extract individual versions. Do not use `GraphicsDriverConfigDialog.getVersion()` directly — it returns `version` value which includes trailing config keys. |
+
+---
+
+## Part F — Post-Migration Improvements (2026-04-22)
+
+### F1. Animated Splash Screen
+
+The splash screen was completely rebuilt as a Canvas-animated Compose full-screen experience.
+
+**New features:**
+- 18 four-point sparkles orbiting the logo, each with independent speed, size, and rotation — drawn via `Canvas { drawFourPointStar(...) }` using `withFrameMillis` for per-frame updates
+- Logo pulse animation — `Modifier.scale(animateFloatAsState(1.0f → 1.07f))` on a repeating `InfiniteTransition`
+- Glowing progress bar — layered fake glow (3 `drawRoundRect` passes with expanding size and decreasing alpha) + shimmer sweep via `clipRect { drawRoundRect(Brush.horizontalGradient(...)) }`
+- Cycling status text — 5 messages mapped to progress ranges with animated ellipsis dots
+- Smooth animated percentage counter — `animateIntAsState(progress.toInt())`
+- `AnimatedVisibility(fadeIn + scaleIn)` Proceed button that appears on completion
+
+**Key fix (CI failure):** `clipRect` used inside `DrawScope` requires an explicit import — `import androidx.compose.ui.graphics.drawscope.clipRect`. Without it the compiler cannot resolve the overload and the build fails with a type mismatch error. This import is not auto-suggested by IDE tooling.
+
+**File:** `ui/screens/SplashScreen.kt`  
+**Commits:** `d1be7af` (initial), `65712d6` (clipRect import fix)  
+**CI:** `24788390969` ✅
+
+---
+
+### F2. Custom Accent Color — Base Preset Inheritance Fix
+
+**Problem:** When the user selected a custom accent color from the HSV picker, all non-accent colors (background, surface, surfaceVariant) reset to the hardcoded "Custom" preset defaults — flat gray — regardless of which theme preset was active before the switch.
+
+**Root cause:** `setCustomAccent()` set `_presetIndex` to `CUSTOM_PRESET_INDEX`. The `colorScheme` flow then used the "Custom" preset entry for *all* color values, including background and surface, instead of inheriting them from the previously active preset.
+
+**Fix — `AppThemeState.kt`:** Added `_customBaseIndex: MutableStateFlow<Int>` which snapshots the current preset index at the moment the user first switches to Custom. The `colorScheme` flow uses this base preset for background/surface/surfaceVariant and only overrides the `primary` (accent) color.
+
+```kotlin
+private val _customBaseIndex = MutableStateFlow(0)
+
+fun setCustomAccent(color: Color) {
+    // Snapshot the current preset as the base before switching to Custom
+    if (_presetIndex.value != CUSTOM_PRESET_INDEX) {
+        _customBaseIndex.value = _presetIndex.value
+        themePrefs.edit().putInt("custom_base_index", _customBaseIndex.value).apply()
+    }
+    _customAccent.value = color
+    _presetIndex.value  = CUSTOM_PRESET_INDEX
+    themePrefs.edit().putInt("custom_accent", color.toArgb())
+               .putInt("preset_index", CUSTOM_PRESET_INDEX).apply()
+}
+
+val colorScheme: Flow<ColorScheme> =
+    combine(_presetIndex, _customAccent, _isDarkMode, _customBaseIndex) { index, accent, dark, baseIdx ->
+        val preset = if (index == CUSTOM_PRESET_INDEX)
+            themePresets.getOrElse(baseIdx) { themePresets.first() }   // use base for bg/surface
+        else
+            themePresets.getOrElse(index) { themePresets.first() }
+        val override = if (index == CUSTOM_PRESET_INDEX) accent else null
+        if (dark) preset.toColorScheme(accentOverride = override)
+        else      preset.toLightColorScheme(accentOverride = override)
+    }
+```
+
+**File:** `ui/theme/AppThemeState.kt`  
+**Commit:** `65712d6`
+
+---
+
+### F3. AppDrawer + AppTopBar — MaterialTheme Color Fix
+
+**Problem:** After the dynamic theme system was introduced, the navigation drawer and top app bar remained gray regardless of the active theme. They were still using static color constants imported from `Color.kt` (`Surface`, `Background`, `OnSurface`, etc.) rather than reading from `MaterialTheme.colorScheme`.
+
+**Fix:** Replaced all static constant references in both files with `MaterialTheme.colorScheme.*` equivalents.
+
+| Static constant (removed) | Replaced with |
+|---|---|
+| `.background(Surface)` | `.background(MaterialTheme.colorScheme.surface)` |
+| `.background(Color(0xFF1A1A1A))` | `.background(MaterialTheme.colorScheme.background)` |
+| `tint = OnSurfaceVariant` | `tint = MaterialTheme.colorScheme.onSurfaceVariant` |
+| `color = OnSurface` | `color = MaterialTheme.colorScheme.onSurface` |
+| `containerColor = Surface` (TopAppBar) | `containerColor = MaterialTheme.colorScheme.surface` |
+| `Color.White` (icon tint/text) | `MaterialTheme.colorScheme.onSurface` |
+
+**Files:** `ui/AppDrawer.kt`, `ui/AppTopBar.kt`  
+**Commit:** `e8acb58`  
+**CI:** `24790554006` ✅
+
+---
+
+### F4. In-Game Side Drawer — Full Compose Migration
+
+The in-game side drawer (shown while a Wine session is running, opened by swiping from the left edge) was fully migrated from `NavigationView` + XML menu + RecyclerView animation helpers to Jetpack Compose.
+
+#### Architecture
+
+The existing `DrawerLayout` is kept as the shell — it handles touch interception, edge-swipe detection, scrim, and open/close animation. Only the `NavigationView` content is replaced with a `ComposeView`.
+
+```
+DrawerLayout (kept)
+├── FLXServerDisplay (kept — game surface)
+├── ComposeView id=XServerDrawerComposeView (NEW — replaces NavigationView)
+└── XRTextInput (kept — XR keyboard input)
+```
+
+#### XServerDrawerState.kt (new)
+
+Kotlin `object` singleton bridging `XServerDisplayActivity` (Java) ↔ Compose:
+
+```kotlin
+object XServerDrawerState {
+    // StateFlows — drive Compose recomposition
+    val isPaused:               StateFlow<Boolean>
+    val isRelativeMouseMovement:StateFlow<Boolean>
+    val isMouseDisabled:        StateFlow<Boolean>
+    val moveCursorToTouchpoint: StateFlow<Boolean>
+    val showLogs:               StateFlow<Boolean>
+    val showMagnifier:          StateFlow<Boolean>
+    val cursorExpanded:         StateFlow<Boolean>
+
+    // Callbacks set by Activity — @JvmField + Runnable for Java interop
+    @JvmField var onClose:                  Runnable? = null
+    @JvmField var onKeyboard:               Runnable? = null
+    @JvmField var onInputControls:          Runnable? = null
+    @JvmField var onScreenEffects:          Runnable? = null
+    @JvmField var onGraphicEngine:          Runnable? = null
+    @JvmField var onVibration:              Runnable? = null
+    @JvmField var onToggleFullscreen:       Runnable? = null
+    @JvmField var onPauseResume:            Runnable? = null
+    @JvmField var onPipMode:                Runnable? = null
+    @JvmField var onActiveWindows:          Runnable? = null
+    @JvmField var onTaskManager:            Runnable? = null
+    @JvmField var onMagnifier:              Runnable? = null
+    @JvmField var onLogs:                   Runnable? = null
+    @JvmField var onExit:                   Runnable? = null
+    @JvmField var onMoveCursorToTouchpoint: Runnable? = null
+    @JvmField var onRelativeMouseMovement:  Runnable? = null
+    @JvmField var onDisableMouse:           Runnable? = null
+
+    fun toggleCursorExpanded()
+    fun reset()
+    // + Boolean setters for Java to call
+}
+```
+
+#### XServerDrawer.kt (new)
+
+Top-level `fun setupComposeView(view: ComposeView)` callable from Java as `XServerDrawerKt.setupComposeView(composeView)`.
+
+Menu structure — all items:
+| Item | State-aware | Behavior |
+|------|------------|---------|
+| Keyboard | — | `onKeyboard?.run()` |
+| Input Controls | — | `onInputControls?.run()` |
+| Mouse & Cursor *(collapsible header)* | `cursorExpanded` | `toggleCursorExpanded()` — `AnimatedVisibility(expandVertically + fadeIn)` |
+| → Move Cursor to Touchpoint | `moveCursorToTouchpoint` (checkmark) | `onMoveCursorToTouchpoint?.run()` |
+| → Relative Mouse Movement | `isRelativeMouse` (checkmark) | `onRelativeMouseMovement?.run()` |
+| → Disable Mouse | `isMouseDisabled` (checkmark) | `onDisableMouse?.run()` |
+| Screen Effects | — | `onScreenEffects?.run()` |
+| Graphic Engine | — | `onGraphicEngine?.run()` |
+| Vibration | — | `onVibration?.run()` |
+| Toggle Fullscreen | — | `onToggleFullscreen?.run()` |
+| Pause / Resume | `isPaused` (icon flips) | `onPauseResume?.run()` |
+| Picture in Picture | — | `onPipMode?.run()` |
+| Active Windows | — | `onActiveWindows?.run()` |
+| Task Manager | — | `onTaskManager?.run()` |
+| Magnifier | hidden if `!showMagnifier` | `onMagnifier?.run()` |
+| Logs | hidden if `!showLogs` | `onLogs?.run()` |
+| Exit | — | `onExit?.run()` (no close — exits session) |
+
+#### XServerDisplayActivity.java changes
+
+Removed (~400 lines):
+- `implements NavigationView.OnNavigationItemSelectedListener`
+- `navigationView` field
+- All nav view setup (duplicate `findViewById`, dark mode styling, menu config)
+- `onNavigationItemSelected()` method (130 lines)
+- All RecyclerView animation helpers: `navRecycler()`, `findNavRecycler()`, `titlesForIds()`, `rowTitle()`, `findVisibleRowsForTitles()`, `animateInGroupItems()`, `animateOutGroupItems()`, `applyGroup()`, `persistSection()`, `expandGroup()`, `collapseGroup()`, `finishCollapse()`
+- Fields: `expCursor`, `navLayoutAnim`, `enableLogs` (field), `allowMagnifier`, `navigationFocused`, `PREF_EXP_CURSOR`, `ANIM_DURATION`, `SLIDE_DP`, `COLLAPSE_TRANSLATION_DP`, `CURSOR_IDS`, `dp()`
+
+Added (~80 lines):
+- `ComposeView` and `XServerDrawerKt`/`XServerDrawerState` imports
+- `XServerDrawerState.INSTANCE.reset()` + all callback wiring
+- `XServerDrawerKt.setupComposeView(drawerComposeView)` call
+
+#### B4 update — in-game drawer now Compose
+
+The following item is removed from "Java dialogs kept" in B4:
+> ~~`NavigationView` + `onNavigationItemSelected` — in-game side drawer~~
+
+The drawer is now fully Compose. The `DrawerLayout` XML shell remains.
+
+**Files:**
+- NEW: `ui/XServerDrawerState.kt`
+- NEW: `ui/XServerDrawer.kt`
+- MODIFIED: `res/layout/xserver_display_activity.xml` — `NavigationView` → `ComposeView`
+- MODIFIED: `XServerDisplayActivity.java` — ~400 lines removed, ~80 added
+
+**Commits:** `f79f1ef` (initial), `9289d57` (@JvmField fix), `3659f74` (merge to main)  
+**CI:** `24793070513` ✅
+
+---
+
+### F5. Contents Screen — Remote Profiles URL
+
+The remote profiles endpoint used by `ContentsManager.java` was updated from the original GitLab URL to the Bionic Nightly content index:
+
+```java
+// Before
+public static final String REMOTE_PROFILES = "https://gitlab.com/.../content.json";
+
+// After
+public static final String REMOTE_PROFILES =
+    "https://raw.githubusercontent.com/Xnick417x/Winlator-Bionic-Nightly-wcp/refs/heads/main/content.json";
+```
+
+**File:** `contents/ContentsManager.java`  
+**Commit:** `e8acb58`
+
+---
+
+### F6. New Gotchas (23–25)
+
+#### Gotcha 23: Kotlin `object` properties are private fields from Java's perspective
+
+Kotlin `object` `var` properties compile to private backing fields with public getter/setter methods. Java code that tries to assign them directly (`state.onClose = ...`) gets a compile error: `onClose has private access in XServerDrawerState`.
+
+Two options:
+1. **`@JvmField`** — exposes the backing field as a public Java field. Java can assign directly. Best when the field is meant to be read/written from both Java and Kotlin.
+2. **Explicit Java-callable setter** — `fun setOnClose(r: Runnable?) { onClose = r }`. More explicit but more boilerplate.
+
+For callbacks on a bridge singleton, `@JvmField` is cleaner.
+
+```kotlin
+// Wrong — Java cannot assign this
+var onClose: Runnable? = null
+
+// Right — Java can assign directly
+@JvmField var onClose: Runnable? = null
+```
+
+#### Gotcha 24: `() -> Unit` Kotlin lambdas cannot be assigned from Java void lambdas
+
+Kotlin `(() -> Unit)?` compiles to `Function0<Unit>`. A Java lambda `() -> doSomething()` returns `void`, not `kotlin.Unit`. Java throws: `incompatible types: bad return type in lambda expression`.
+
+**Fix:** Use `Runnable?` instead of `(() -> Unit)?` for any property that Java will set. Java `Runnable` accepts void lambdas natively. Kotlin callers invoke it with `.run()` instead of `.invoke()`.
+
+```kotlin
+// Wrong — Java cannot assign a void lambda
+@JvmField var onClose: (() -> Unit)? = null
+
+// Right — Runnable works from both Java and Kotlin
+@JvmField var onClose: Runnable? = null
+```
+
+```java
+// Java (works naturally):
+state.onClose = () -> drawerLayout.closeDrawers();
+```
+
+```kotlin
+// Kotlin (call with .run()):
+state.onClose?.run()
+```
+
+#### Gotcha 25: `import androidx.compose.ui.graphics.drawscope.clipRect` is not auto-suggested
+
+When using `clipRect { }` inside a `DrawScope` lambda (e.g. inside `Canvas { }`), the compiler needs the explicit `drawscope` package import. The IDE does not always suggest it, and the error message is a generic type mismatch rather than "unresolved reference", making it hard to diagnose.
+
+```kotlin
+// Required — add this explicitly:
+import androidx.compose.ui.graphics.drawscope.clipRect
+
+// Usage:
+Canvas(modifier) {
+    clipRect(right = fillWidth) {
+        drawRoundRect(brush = shimmerBrush, ...)
+    }
+}
+```
+
+Without this import the build fails with `error: type mismatch` or `overload resolution ambiguity` pointing at the `clipRect` call site.
