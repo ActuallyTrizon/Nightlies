@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-22T20:43:41Z",
+  "triggered_at": "2026-04-22T21:43:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "26ef12f",
-      "new": "96d17d1",
-      "full": "96d17d18be1412a5ab78026e2baaf9666586d59b",
-      "msg": "zink/ci: Move Turnip flakes to correct list",
-      "date": "2026-04-22T19:56:11.000+00:00"
+      "old": "96d17d1",
+      "new": "0458a47",
+      "full": "0458a47cf92cb816f82a12cd3c2ee6f51dd6b09c",
+      "msg": "docs: update calendar for 26.1.0-rc2",
+      "date": "2026-04-22T21:05:58.000+00:00"
     }
   ]
 }
