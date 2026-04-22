@@ -30,7 +30,7 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 | **FEXCore** | [`701555e40`](https://github.com/FEX-Emu/FEX/commit/701555e40) — FEX-2604-Nightly-701555e40 |
 | **VKD3D-Proton (Std)** | [`f036a76d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/f036a76d) |
 | **VKD3D-Proton (ARM64EC)** | [`f036a76d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/f036a76d) |
-| **DXVK (GPLAsync)** | [`d4486d59`](https://github.com/doitsujin/dxvk/commit/d4486d59) |
+| **DXVK (GPLAsync)** | [`89087e67`](https://github.com/doitsujin/dxvk/commit/89087e67) |
 | **DXVK (ARM64EC)** | [`d4486d59`](https://github.com/doitsujin/dxvk/commit/d4486d59) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
 | **Turnip** | [v26.2.0-20260422-r332](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260422-r332) — Turnip 26.2.0 — 20260422 |
