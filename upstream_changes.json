@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-22T04:40:35Z",
+  "triggered_at": "2026-04-22T08:25:55Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7eeb501",
+      "new": "2deb99a",
+      "full": "2deb99ae4aa4b326819806ac2541477273244741",
+      "msg": "[WRAPPER] Fixed various wrapping issues (#3799)",
+      "date": "2026-04-22T07:35:58Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5f37490",
-      "new": "12f81ea",
-      "full": "12f81eaa88d5422219e78b4ed34eee9fd3451eb2",
-      "msg": "anv: Enable dynamic stack ID control on Xe3+",
-      "date": "2026-04-22T01:48:19.000+00:00"
+      "old": "12f81ea",
+      "new": "9d17a7b",
+      "full": "9d17a7bdb44a12ae28c5d50ad6395b08f38ebcab",
+      "msg": "spirv,treewide: rework specialization constant",
+      "date": "2026-04-22T06:57:55.000+00:00"
     }
   ]
 }
