@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-22T15:05:45Z",
+  "triggered_at": "2026-04-22T16:51:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "806fcc6",
-      "new": "5d48016",
-      "full": "5d480163177f74c383f5473d56ff8df9f556bad9",
-      "msg": "ci/bare-metal: drop duplicate timestamps now that gitlab-runner has per-line tim",
-      "date": "2026-04-22T13:34:07.000+00:00"
+      "old": "5d48016",
+      "new": "9329da6",
+      "full": "9329da6d88bf33d95396fcf3dc113c17d577a861",
+      "msg": "brw: Don't set saturate for SYNC instruction",
+      "date": "2026-04-22T16:06:42.000+00:00"
     }
   ]
 }
