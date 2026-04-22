@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-22T17:54:22Z",
+  "triggered_at": "2026-04-22T19:01:04Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9329da6",
-      "new": "a2ac649",
-      "full": "a2ac64918b122a84ab77f93d207e5ece7eaa272b",
-      "msg": "turnip/ci: document recent flakes",
-      "date": "2026-04-22T17:19:22.000+00:00"
+      "old": "a2ac649",
+      "new": "26ef12f",
+      "full": "26ef12f7c1b95f23db0f2bb464c4f2b686a364ed",
+      "msg": "brw: Use brw prefix to LSC helpers tied to brw",
+      "date": "2026-04-22T18:25:41.000+00:00"
     }
   ]
 }
