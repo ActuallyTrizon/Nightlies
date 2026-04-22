@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-22T16:51:03Z",
+  "triggered_at": "2026-04-22T17:54:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5d48016",
-      "new": "9329da6",
-      "full": "9329da6d88bf33d95396fcf3dc113c17d577a861",
-      "msg": "brw: Don't set saturate for SYNC instruction",
-      "date": "2026-04-22T16:06:42.000+00:00"
+      "old": "9329da6",
+      "new": "a2ac649",
+      "full": "a2ac64918b122a84ab77f93d207e5ece7eaa272b",
+      "msg": "turnip/ci: document recent flakes",
+      "date": "2026-04-22T17:19:22.000+00:00"
     }
   ]
 }
