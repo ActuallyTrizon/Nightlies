@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-22T19:01:04Z",
+  "triggered_at": "2026-04-22T20:43:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a2ac649",
-      "new": "26ef12f",
-      "full": "26ef12f7c1b95f23db0f2bb464c4f2b686a364ed",
-      "msg": "brw: Use brw prefix to LSC helpers tied to brw",
-      "date": "2026-04-22T18:25:41.000+00:00"
+      "old": "26ef12f",
+      "new": "96d17d1",
+      "full": "96d17d18be1412a5ab78026e2baaf9666586d59b",
+      "msg": "zink/ci: Move Turnip flakes to correct list",
+      "date": "2026-04-22T19:56:11.000+00:00"
     }
   ]
 }
