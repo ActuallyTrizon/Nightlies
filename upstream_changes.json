@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-23T11:55:12Z",
+  "triggered_at": "2026-04-23T15:45:16Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ce161a3",
-      "new": "790baf4",
-      "full": "790baf44600630215d2e83ad4b5342ffd4e5bf12",
-      "msg": "[WRAPPER] Fixed more custom wrapping issues (#3810)",
-      "date": "2026-04-23T11:31:24Z"
+      "old": "790baf4",
+      "new": "e11c10c",
+      "full": "e11c10c1fa64b6ac48a433a22bbb14bb3134483a",
+      "msg": "[WRAPPER] Added 1 more symbol to libxkbcommon",
+      "date": "2026-04-23T15:28:24Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "40fa195",
-      "new": "91f5fcd",
-      "full": "91f5fcdcd56a005b514a5c800cb4649445ee7b68",
-      "msg": "radv: advertise VK_KHR_shader_constant_data",
-      "date": "2026-04-23T11:12:06.000+00:00"
+      "old": "91f5fcd",
+      "new": "037873b",
+      "full": "037873b8e16207c4e0561f084ef2e84dcef70a40",
+      "msg": "tu: Fix draw call offset for LRZ warnings in secondaries",
+      "date": "2026-04-23T14:23:25.000+00:00"
     }
   ]
 }
