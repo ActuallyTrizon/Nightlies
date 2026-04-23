@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-23T20:04:23Z",
+  "triggered_at": "2026-04-23T21:38:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b7f9974",
-      "new": "e65e62b",
-      "full": "e65e62b17f40c96bc2fe06ed23c8886164bb67cc",
-      "msg": "intel/genxml: Disable compute walker mid-thread preemption",
-      "date": "2026-04-23T19:24:41.000+00:00"
+      "old": "e65e62b",
+      "new": "ba92143",
+      "full": "ba92143ef24cae79f1073c50e738a07c2754eebf",
+      "msg": "compiler: Add missing MESA_SHADER_KERNEL case for SPIR-V dump",
+      "date": "2026-04-23T20:36:55.000+00:00"
     }
   ]
 }
