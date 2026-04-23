@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-23T21:38:11Z",
+  "triggered_at": "2026-04-23T22:36:04Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "701555e",
+      "new": "deed99e",
+      "full": "deed99e7a31a0d34637417a9df1de7823d68ff3a",
+      "msg": "Merge pull request #5425 from pmatos/f64-atan-fyl2x",
+      "date": "2026-04-23T22:16:04Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e65e62b",
-      "new": "ba92143",
-      "full": "ba92143ef24cae79f1073c50e738a07c2754eebf",
-      "msg": "compiler: Add missing MESA_SHADER_KERNEL case for SPIR-V dump",
-      "date": "2026-04-23T20:36:55.000+00:00"
+      "old": "ba92143",
+      "new": "96ae270",
+      "full": "96ae27069dba4f50c19ff0947a073ea45b880002",
+      "msg": "ci/crosvm: Sanitize CROSVM_RET in crosvm-runner.sh",
+      "date": "2026-04-23T21:47:21.000+00:00"
     }
   ]
 }
