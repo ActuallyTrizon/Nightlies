@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-23T01:53:42Z",
+  "triggered_at": "2026-04-23T04:45:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0458a47",
-      "new": "c5edb90",
-      "full": "c5edb9004654168492db8ed942117fecc5ecd64b",
-      "msg": "anv: silence warning",
-      "date": "2026-04-22T16:17:35.000-07:00"
+      "old": "c5edb90",
+      "new": "b41cd59",
+      "full": "b41cd5979024419d2ffe020520cccf786e12b138",
+      "msg": "ac,radeonsi,radv: use V_581A_* engine sel for non-pws acquire_mem packet",
+      "date": "2026-04-23T02:48:06.000+00:00"
     }
   ]
 }
