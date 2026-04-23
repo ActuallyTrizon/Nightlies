@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-23T04:45:29Z",
+  "triggered_at": "2026-04-23T06:56:51Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "96fc30b",
+      "new": "d118d6a",
+      "full": "d118d6ac1abf2005a0f64de0b72fdaf7b2186d0c",
+      "msg": "[WRAPPER] Added libpixman-1.so wrapping (#3805)",
+      "date": "2026-04-23T06:45:11Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c5edb90",
-      "new": "b41cd59",
-      "full": "b41cd5979024419d2ffe020520cccf786e12b138",
-      "msg": "ac,radeonsi,radv: use V_581A_* engine sel for non-pws acquire_mem packet",
-      "date": "2026-04-23T02:48:06.000+00:00"
+      "old": "b41cd59",
+      "new": "809bf45",
+      "full": "809bf45c126cf8790b7fd151da6fe7ed3f7351c9",
+      "msg": "radeonsi: enable protected context support for Android",
+      "date": "2026-04-23T05:23:57.000+00:00"
     }
   ]
 }
