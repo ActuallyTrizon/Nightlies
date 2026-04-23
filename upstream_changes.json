@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-23T08:50:52Z",
+  "triggered_at": "2026-04-23T11:55:12Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "d118d6a",
-      "new": "ce161a3",
-      "full": "ce161a38f581d3dd34e60176fcd2550e6da9f558",
-      "msg": "[WRAPPER] Fixed some gtk custom wrapping issues (#3809)",
-      "date": "2026-04-23T08:13:10Z"
+      "old": "ce161a3",
+      "new": "790baf4",
+      "full": "790baf44600630215d2e83ad4b5342ffd4e5bf12",
+      "msg": "[WRAPPER] Fixed more custom wrapping issues (#3810)",
+      "date": "2026-04-23T11:31:24Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "809bf45",
-      "new": "40fa195",
-      "full": "40fa195cd0d5539c871c0c6d174660a58ddd5add",
-      "msg": "aco: fix broken VGPRs reservation for 64-bit attributes in VS prologs",
-      "date": "2026-04-23T08:20:47.000+00:00"
+      "old": "40fa195",
+      "new": "91f5fcd",
+      "full": "91f5fcdcd56a005b514a5c800cb4649445ee7b68",
+      "msg": "radv: advertise VK_KHR_shader_constant_data",
+      "date": "2026-04-23T11:12:06.000+00:00"
     }
   ]
 }
