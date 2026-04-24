@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-24T01:53:53Z",
+  "triggered_at": "2026-04-24T04:49:32Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "deed99e",
-      "new": "4b02c04",
-      "full": "4b02c04afce5055234e212af206c08abd054375f",
-      "msg": "Merge pull request #5429 from Sonicadvance1/142",
-      "date": "2026-04-24T00:13:13Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "fa27503",
+      "new": "3f5d54a",
+      "full": "3f5d54ab8ca608566a75900d22b909ad84925c44",
+      "msg": "nouveau: drop sector promotion.",
+      "date": "2026-04-24T04:20:10.000+00:00"
     }
   ]
 }
