@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-24T11:59:45Z",
+  "triggered_at": "2026-04-24T15:02:09Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "14f13bc",
+      "new": "004fe37",
+      "full": "004fe379bd2a5b27b1e8d0de22eb5652330cdb11",
+      "msg": "tests: Add test for multiview + DGC.",
+      "date": "2026-04-24T14:37:29Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4e8e4ca",
-      "new": "f9f60aa",
-      "full": "f9f60aa84451bf8f38a102e0481292b084fd655a",
-      "msg": "radv: don't use radv_optimize_nir after lowering indirect derefs for RT",
-      "date": "2026-04-24T11:01:03.000+00:00"
+      "old": "f9f60aa",
+      "new": "ce45069",
+      "full": "ce45069c49cdc0eb5c1bb14a548740de23cd1908",
+      "msg": "zink: Guard bo map/unmap on map_count.",
+      "date": "2026-04-24T13:44:50.000+00:00"
     }
   ]
 }
