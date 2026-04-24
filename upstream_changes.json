@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-24T18:42:07Z",
+  "triggered_at": "2026-04-24T21:40:18Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "004fe37",
-      "new": "7373c84",
-      "full": "7373c84c1602641f060f6edcdb96239dc3dd18de",
-      "msg": "Fix copy direction in deferred discard compaction loop",
-      "date": "2026-04-24T18:19:56Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bccaeb2",
-      "new": "ed729bf",
-      "full": "ed729bf948c0aae7ad19d3da7abd990b0eca3cfb",
-      "msg": "ci/llvmpipe: Disable some traces too close to the timeout.",
-      "date": "2026-04-24T18:06:48.000+00:00"
+      "old": "ed729bf",
+      "new": "965e28f",
+      "full": "965e28ff8aab6e4c5d291d90257991a26128342a",
+      "msg": "intel/tools: Fix parse of '[HWCTX].replay_*' in aubinator_error_decode_xe",
+      "date": "2026-04-24T20:19:09.000+00:00"
     }
   ]
 }
