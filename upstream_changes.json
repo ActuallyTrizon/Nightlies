@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-04-24T10:59:23Z",
+  "triggered_at": "2026-04-24T11:59:45Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "e11c10c",
-      "new": "41054e4",
-      "full": "41054e4599ab834a2a638b1230267ac15124efb0",
-      "msg": "[LA64_DYNAREC] Fixed a typo (#3811)",
-      "date": "2026-04-24T10:10:09Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "dd4b432",
-      "new": "e3d3f69",
-      "full": "e3d3f69fe3707a6c0b6886262d404f5af92b4b33",
-      "msg": "[dxvk] Always re-route mapped allocations to cached memory on tilers",
-      "date": "2026-04-24T10:08:08Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4d4eb02",
-      "new": "4e8e4ca",
-      "full": "4e8e4ca2fc3f6d92c4271c0f2918785b496d2bb9",
-      "msg": "ethosu: Add minimum and maximum operators",
-      "date": "2026-04-24T09:22:16.000+00:00"
+      "old": "4e8e4ca",
+      "new": "f9f60aa",
+      "full": "f9f60aa84451bf8f38a102e0481292b084fd655a",
+      "msg": "radv: don't use radv_optimize_nir after lowering indirect derefs for RT",
+      "date": "2026-04-24T11:01:03.000+00:00"
     }
   ]
 }
