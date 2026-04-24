@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-24T07:01:03Z",
+  "triggered_at": "2026-04-24T09:23:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3f5d54a",
-      "new": "cf9fb46",
-      "full": "cf9fb46e54f20d99f353f11aa8f712a9d0146d63",
-      "msg": "radv: zero-initialize radv_cmd_state only when a cmdbuf is reset",
-      "date": "2026-04-24T06:28:41.000+00:00"
+      "old": "cf9fb46",
+      "new": "4d4eb02",
+      "full": "4d4eb027d5d23080ddf712805aa76c406774de70",
+      "msg": "freedreno: Don't set UCHE_CLIENT_PF",
+      "date": "2026-04-24T08:58:27.000+00:00"
     }
   ]
 }
