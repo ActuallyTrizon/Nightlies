@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-24T22:33:17Z",
+  "triggered_at": "2026-04-24T23:33:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "965e28f",
-      "new": "d2c4653",
-      "full": "d2c4653ee953dba73f0be8e9eab872269813582b",
-      "msg": "freedreno/registers: Add gen8 perfcntrs",
-      "date": "2026-04-24T21:28:33.000+00:00"
+      "old": "d2c4653",
+      "new": "bfb6c41",
+      "full": "bfb6c41b648d50a5f6f41e3113f1efaba68555ef",
+      "msg": "amd: remove unnecessary and transitive #includes",
+      "date": "2026-04-24T21:53:07.000+00:00"
     }
   ]
 }
