@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-24T16:46:14Z",
+  "triggered_at": "2026-04-24T17:44:10Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "41054e4",
-      "new": "42ae8b8",
-      "full": "42ae8b818cc0645be56063ea0cc350dcd8f19843",
-      "msg": "[BOX32][WRAPPER] Added 1 more symbol to libxcb",
-      "date": "2026-04-24T15:29:22Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ce45069",
-      "new": "d476c96",
-      "full": "d476c96badae1ef1188a69efdfbd643c0a38fb39",
-      "msg": "radv: enable advertising of VK_KHR_pipeline_library under llvm",
-      "date": "2026-04-24T15:59:59.000+00:00"
+      "old": "d476c96",
+      "new": "bccaeb2",
+      "full": "bccaeb28bbd4869e4b1cc44b3ce1c1c2c50ea6d7",
+      "msg": "brw/nir_lower_cs_intrinsics: do some math at 16-bit",
+      "date": "2026-04-24T17:13:24.000+00:00"
     }
   ]
 }
