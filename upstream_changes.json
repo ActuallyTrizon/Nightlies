@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-25T08:01:03Z",
+  "triggered_at": "2026-04-25T14:44:38Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "42ae8b8",
-      "new": "2c72942",
-      "full": "2c72942faef0d67d036e3110dd1dc5ac950599a5",
-      "msg": "[STEAM] Added libnettle as prefer emulated with gnutls when steam runtime is det",
-      "date": "2026-04-25T07:30:29Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "4b02c04",
+      "new": "7dc1f54",
+      "full": "7dc1f54fb61a25aa9312cd16c2a859524cb0ce5c",
+      "msg": "Merge pull request #5435 from Sonicadvance1/143",
+      "date": "2026-04-25T14:34:07Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "bfb6c41",
+      "new": "5bfbb7b",
+      "full": "5bfbb7b1a792e3cc79afb3a5d8464c2623e9aced",
+      "msg": "ir3/ra: fix killed src detection while spilling",
+      "date": "2026-04-25T14:11:10.000+00:00"
     }
   ]
 }
