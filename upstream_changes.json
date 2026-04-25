@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-25T14:44:38Z",
+  "triggered_at": "2026-04-25T18:37:58Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "4b02c04",
-      "new": "7dc1f54",
-      "full": "7dc1f54fb61a25aa9312cd16c2a859524cb0ce5c",
-      "msg": "Merge pull request #5435 from Sonicadvance1/143",
-      "date": "2026-04-25T14:34:07Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bfb6c41",
-      "new": "5bfbb7b",
-      "full": "5bfbb7b1a792e3cc79afb3a5d8464c2623e9aced",
-      "msg": "ir3/ra: fix killed src detection while spilling",
-      "date": "2026-04-25T14:11:10.000+00:00"
+      "old": "5bfbb7b",
+      "new": "642bed9",
+      "full": "642bed9eba724132c5e0802fac99af11b9ef7841",
+      "msg": "kk: Fix VK_CULL_MODE_FRONT_AND_BACK with points and lines.",
+      "date": "2026-04-25T17:33:52.000+00:00"
     }
   ]
 }
