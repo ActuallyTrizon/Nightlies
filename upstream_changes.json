@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-24T23:33:51Z",
+  "triggered_at": "2026-04-25T08:01:03Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "d2c4653",
-      "new": "bfb6c41",
-      "full": "bfb6c41b648d50a5f6f41e3113f1efaba68555ef",
-      "msg": "amd: remove unnecessary and transitive #includes",
-      "date": "2026-04-24T21:53:07.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "42ae8b8",
+      "new": "2c72942",
+      "full": "2c72942faef0d67d036e3110dd1dc5ac950599a5",
+      "msg": "[STEAM] Added libnettle as prefer emulated with gnutls when steam runtime is det",
+      "date": "2026-04-25T07:30:29Z"
     }
   ]
 }
