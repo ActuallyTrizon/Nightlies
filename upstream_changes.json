@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-27T05:28:10Z",
+  "triggered_at": "2026-04-27T08:07:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "642bed9",
-      "new": "9225ba4",
-      "full": "9225ba47d5dd338b2d25e71b77a3fddedb7da9df",
-      "msg": "amd/vpelib: Support vpe 2.0",
-      "date": "2026-04-27T03:06:42.000+00:00"
+      "old": "9225ba4",
+      "new": "782254b",
+      "full": "782254b820f4e4c73eb680b6e702a3688ae844d8",
+      "msg": "radv: re-introduce DGC+multiview support and enable it for vkd3d-proton only",
+      "date": "2026-04-27T07:08:23.000+00:00"
     }
   ]
 }
