@@ -113,36 +113,47 @@ jobs:
               })
           print(f"  {len(nightly_assets)} assets")
 
-          # Banners-Turnip — latest release GPU driver
-          print("Fetching Banners-Turnip latest release...")
+          # Banners-Turnip — all releases GPU driver
+          print("Fetching Banners-Turnip all releases...")
           turnip_driver_entries = []
-          result = subprocess.run(
-              ["gh", "release", "view", "--repo", "The412Banner/Banners-Turnip",
-               "--json", "tagName,assets",
-               "-q", "{tag: .tagName, assets: [.assets[] | {name: .name, url: .url}]}"],
+          list_result = subprocess.run(
+              ["gh", "release", "list", "--repo", "The412Banner/Banners-Turnip",
+               "--json", "tagName", "--limit", "100",
+               "-q", ".[].tagName"],
               capture_output=True, text=True
           )
-          if result.returncode == 0 and result.stdout.strip():
-              data = json.loads(result.stdout.strip())
-              turnip_tag = data["tag"]
-              for asset in data["assets"]:
-                  name = asset["name"]
-                  if not name.endswith(".zip"):
+          if list_result.returncode == 0 and list_result.stdout.strip():
+              tags = list_result.stdout.strip().splitlines()
+              for tag in tags:
+                  tag = tag.strip()
+                  result = subprocess.run(
+                      ["gh", "release", "view", tag, "--repo", "The412Banner/Banners-Turnip",
+                       "--json", "tagName,assets",
+                       "-q", "{tag: .tagName, assets: [.assets[] | {name: .name, url: .url}]}"],
+                      capture_output=True, text=True
+                  )
+                  if result.returncode != 0 or not result.stdout.strip():
+                      print(f"  WARNING: could not fetch {tag}: {result.stderr.strip()}")
                       continue
-                  if "turnip" not in name.lower():
-                      continue
-                  ver_name = name.rsplit(".", 1)[0]
-                  entry = {
-                      "type":      "GpuDriver",
-                      "verName":   ver_name,
-                      "verCode":   "0",
-                      "remoteUrl": asset["url"],
-                  }
-                  entries.append(entry)
-                  turnip_driver_entries.append(entry)
-                  print(f"  Added Turnip: {name} (tag {turnip_tag})")
+                  data = json.loads(result.stdout.strip())
+                  for asset in data["assets"]:
+                      name = asset["name"]
+                      if not name.endswith(".zip"):
+                          continue
+                      if "turnip" not in name.lower():
+                          continue
+                      ver_name = name.rsplit(".", 1)[0]
+                      entry = {
+                          "type":      "GpuDriver",
+                          "verName":   ver_name,
+                          "verCode":   "0",
+                          "remoteUrl": asset["url"],
+                      }
+                      entries.append(entry)
+                      turnip_driver_entries.append(entry)
+                      print(f"  Added Turnip: {name} (tag {tag})")
           else:
-              print(f"  WARNING: could not fetch Banners-Turnip latest: {result.stderr.strip()}")
+              print(f"  WARNING: could not list Banners-Turnip releases: {list_result.stderr.strip()}")
 
           with open("nightlies_components.json", "w") as f:
               json.dump(entries, f, indent=2)
