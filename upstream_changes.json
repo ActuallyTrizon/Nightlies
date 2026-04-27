@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-27T16:28:01Z",
+  "triggered_at": "2026-04-27T18:01:04Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "3174b66",
-      "new": "bcbc563",
-      "full": "bcbc563af48ea11eec7e3631c4648c71c2253f9d",
-      "msg": "[dxvk] Correctly track resources after relocation as well",
-      "date": "2026-04-27T15:03:49Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7b5277c",
-      "new": "2595940",
-      "full": "2595940b0def52f1eb9d3e8aadb88e3e363afe5c",
-      "msg": "radv: fix UB in radv_format_pack_clear_color for snorm formats",
-      "date": "2026-04-27T15:44:09.000+00:00"
+      "old": "2595940",
+      "new": "acba4c9",
+      "full": "acba4c9fd84ecf7de7e59c3463b9ac71ba812ccd",
+      "msg": "radv: expose VK_KHR_performance_query on GFX11",
+      "date": "2026-04-27T16:16:00.000+00:00"
     }
   ]
 }
