@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-27T20:03:59Z",
+  "triggered_at": "2026-04-27T21:48:13Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "acba4c9",
-      "new": "117f3cb",
-      "full": "117f3cb1fc4e009bae193f8003ff9c251bbf7d3c",
-      "msg": "gfxstream: allow VK_KHR_maintenance extensions",
-      "date": "2026-04-27T18:57:43.000+00:00"
+      "old": "117f3cb",
+      "new": "0684976",
+      "full": "0684976de8a4cfef193fea049dee0c82383869bb",
+      "msg": "ac/nir: add ac_nir_assign_fs_input_locations to set PS input locations in stone",
+      "date": "2026-04-27T21:05:53.000+00:00"
     }
   ]
 }
