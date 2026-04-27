@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-27T21:48:13Z",
+  "triggered_at": "2026-04-27T23:44:02Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "7dc1f54",
+      "new": "dd145aa",
+      "full": "dd145aaa88f58726e159abe0e2614b19fa0fa2e7",
+      "msg": "Merge pull request #5439 from Sonicadvance1/144",
+      "date": "2026-04-27T23:43:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "117f3cb",
-      "new": "0684976",
-      "full": "0684976de8a4cfef193fea049dee0c82383869bb",
-      "msg": "ac/nir: add ac_nir_assign_fs_input_locations to set PS input locations in stone",
-      "date": "2026-04-27T21:05:53.000+00:00"
+      "old": "0684976",
+      "new": "a42c55d",
+      "full": "a42c55da46fc8a3846b873231887073a57f39d56",
+      "msg": "amd/radeonsi: dont clamp packed user varyings",
+      "date": "2026-04-27T22:59:58.000+00:00"
     }
   ]
 }
