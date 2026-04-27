@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-27T18:01:04Z",
+  "triggered_at": "2026-04-27T20:03:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2595940",
-      "new": "acba4c9",
-      "full": "acba4c9fd84ecf7de7e59c3463b9ac71ba812ccd",
-      "msg": "radv: expose VK_KHR_performance_query on GFX11",
-      "date": "2026-04-27T16:16:00.000+00:00"
+      "old": "acba4c9",
+      "new": "117f3cb",
+      "full": "117f3cb1fc4e009bae193f8003ff9c251bbf7d3c",
+      "msg": "gfxstream: allow VK_KHR_maintenance extensions",
+      "date": "2026-04-27T18:57:43.000+00:00"
     }
   ]
 }
