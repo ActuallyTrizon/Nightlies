@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-27T14:59:19Z",
+  "triggered_at": "2026-04-27T16:28:01Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "3953ab0",
-      "new": "228cc3a",
-      "full": "228cc3ad8a4b780560820485fd80ea8989764ae4",
-      "msg": "vkd3d: Do not enable present wait2/timing on pre-595 NV drivers.",
-      "date": "2026-04-27T13:28:08Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "3174b66",
+      "new": "bcbc563",
+      "full": "bcbc563af48ea11eec7e3631c4648c71c2253f9d",
+      "msg": "[dxvk] Correctly track resources after relocation as well",
+      "date": "2026-04-27T15:03:49Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "af1669d",
-      "new": "7b5277c",
-      "full": "7b5277ce5c3f7d9e787cf68ff47113ec7a111d45",
-      "msg": "frontends/va: Fix out of bounds write in AV1 decode tile info",
-      "date": "2026-04-27T14:29:34.000+00:00"
+      "old": "7b5277c",
+      "new": "2595940",
+      "full": "2595940b0def52f1eb9d3e8aadb88e3e363afe5c",
+      "msg": "radv: fix UB in radv_format_pack_clear_color for snorm formats",
+      "date": "2026-04-27T15:44:09.000+00:00"
     }
   ]
 }
