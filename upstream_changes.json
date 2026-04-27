@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-04-27T10:54:36Z",
+  "triggered_at": "2026-04-27T12:17:17Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "7373c84",
-      "new": "3953ab0",
-      "full": "3953ab064e22ec62b0ad4dcdc65ec39c5c20e9f9",
-      "msg": "tests: Use internal AGS WMMA query in WMMA tests.",
-      "date": "2026-04-27T09:24:26Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "e3d3f69",
-      "new": "3174b66",
-      "full": "3174b66ed9fae84c1c4f2c038b3121be4eb5526c",
-      "msg": "[util] Enable draw time buffer uploads for CSGO and Insurgency",
-      "date": "2026-04-27T09:24:28Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "782254b",
-      "new": "4f2de63",
-      "full": "4f2de63a27c08598f10e6edb9e25ca996e27fa19",
-      "msg": "pan/ci: add a flake from nightly",
-      "date": "2026-04-27T09:27:02.000+00:00"
+      "old": "4f2de63",
+      "new": "af1669d",
+      "full": "af1669d9e25a346104d061ec05e89bd6a5a80c40",
+      "msg": "pco: reserve additional outputs for trilinear sampled coeffs",
+      "date": "2026-04-27T11:32:29.000+00:00"
     }
   ]
 }
