@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-28T10:56:16Z",
+  "triggered_at": "2026-04-28T12:21:38Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "dd145aa",
+      "new": "821efab",
+      "full": "821efab8aa0b1f056917ff7605c507c443482928",
+      "msg": "Merge pull request #5440 from Sonicadvance1/145",
+      "date": "2026-04-28T11:55:10Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7d59c62",
-      "new": "35f57a2",
-      "full": "35f57a27396c116fc5e9984ac1254d26b83ad2c4",
-      "msg": "pvr: increase value of maxPerStageDescriptorStorageBuffers",
-      "date": "2026-04-28T08:36:48.000+00:00"
+      "old": "35f57a2",
+      "new": "b205c7d",
+      "full": "b205c7d592d08e485b0b2deb6e1cb94141ca97db",
+      "msg": "pvr: Enable shaderImageGatherExtended",
+      "date": "2026-04-28T12:04:09.000+01:00"
     }
   ]
 }
