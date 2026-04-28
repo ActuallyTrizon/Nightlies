@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-27T23:44:02Z",
+  "triggered_at": "2026-04-28T02:06:20Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7dc1f54",
-      "new": "dd145aa",
-      "full": "dd145aaa88f58726e159abe0e2614b19fa0fa2e7",
-      "msg": "Merge pull request #5439 from Sonicadvance1/144",
-      "date": "2026-04-27T23:43:44Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0684976",
-      "new": "a42c55d",
-      "full": "a42c55da46fc8a3846b873231887073a57f39d56",
-      "msg": "amd/radeonsi: dont clamp packed user varyings",
-      "date": "2026-04-27T22:59:58.000+00:00"
+      "old": "a42c55d",
+      "new": "4b66258",
+      "full": "4b662587170196783ae0abd10fb34161d30db394",
+      "msg": "nak: call nir_opt_algebraic_distribute_src_mods",
+      "date": "2026-04-28T03:08:01.000+02:00"
     }
   ]
 }
