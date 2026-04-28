@@ -487,39 +487,39 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-e5d154718",
+    "verName": "Box64-Hybrid-Bionic-d01a35fe0",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-e5d154718.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-d01a35fe0.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-e5d154718",
+    "verName": "Box64-Hybrid-Bionic-d01a35fe0",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-e5d154718.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-d01a35fe0.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-7d63602cc",
+    "verName": "Box64-Hybrid-Native-844f6fa73",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-7d63602cc.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-844f6fa73.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-7d63602cc",
+    "verName": "Box64-Hybrid-Native-844f6fa73",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-7d63602cc.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-844f6fa73.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-df8710838",
+    "verName": "Box64-Hybrid-WOW64-1f9954a0f",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-df8710838.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-1f9954a0f.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-df8710838",
+    "verName": "Box64-Hybrid-WOW64-1f9954a0f",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-df8710838.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-1f9954a0f.zip"
   },
   {
     "type": "DXVK",
@@ -547,15 +547,15 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2604-Nightly-dd145aaa8",
+    "verName": "FEX-2604-Nightly-821efab8a",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2604-Nightly-dd145aaa8.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2604-Nightly-821efab8a.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2604-Nightly-dd145aaa8",
+    "verName": "FEX-2604-Nightly-821efab8a",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2604-Nightly-dd145aaa8.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2604-Nightly-821efab8a.zip"
   },
   {
     "type": "VKD3D",
@@ -580,6 +580,18 @@
     "verName": "VKD3D-Proton-arm64ec-3.0b-228cc3ad",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-228cc3ad.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260428-r4-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260428-r4/Turnip-v26.2.0-20260428-r4-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260428-r4",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260428-r4/Turnip-v26.2.0-20260428-r4.zip"
   },
   {
     "type": "GpuDriver",
