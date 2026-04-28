@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-28T19:21:56Z",
+  "triggered_at": "2026-04-28T21:00:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "669d391",
-      "new": "76a3951",
-      "full": "76a3951e03281acc8f5cd1093726d85f581b97ff",
-      "msg": "kk: Fix issues with maximal reconvergence",
-      "date": "2026-04-28T18:50:36.000+00:00"
+      "old": "76a3951",
+      "new": "11399b1",
+      "full": "11399b15e0ef64bb5563eae9ac3ec8d15986e9d5",
+      "msg": "pan/bi: Improve swizzle propagation",
+      "date": "2026-04-28T20:27:16.000+00:00"
     }
   ]
 }
