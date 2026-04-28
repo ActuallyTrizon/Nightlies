@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-28T21:00:26Z",
+  "triggered_at": "2026-04-28T22:47:50Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "76a3951",
-      "new": "11399b1",
-      "full": "11399b15e0ef64bb5563eae9ac3ec8d15986e9d5",
-      "msg": "pan/bi: Improve swizzle propagation",
-      "date": "2026-04-28T20:27:16.000+00:00"
+      "old": "11399b1",
+      "new": "6b8d934",
+      "full": "6b8d9344075630d3dc6893fd6a9379aa8ba833d2",
+      "msg": "CODEOWNERS: update owners for Android components",
+      "date": "2026-04-28T21:42:34.000+00:00"
     }
   ]
 }
