@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-28T02:06:20Z",
+  "triggered_at": "2026-04-28T08:09:35Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a42c55d",
-      "new": "4b66258",
-      "full": "4b662587170196783ae0abd10fb34161d30db394",
-      "msg": "nak: call nir_opt_algebraic_distribute_src_mods",
-      "date": "2026-04-28T03:08:01.000+02:00"
+      "old": "4b66258",
+      "new": "7d59c62",
+      "full": "7d59c62fded7638dbe8b7e0737a8ba491bf6438c",
+      "msg": "panvk: Wire up VK_EXT_conservative_rasterization on v11+",
+      "date": "2026-04-28T09:34:28.000+02:00"
     }
   ]
 }
