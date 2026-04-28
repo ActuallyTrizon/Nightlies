@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-28T08:09:35Z",
+  "triggered_at": "2026-04-28T10:56:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4b66258",
-      "new": "7d59c62",
-      "full": "7d59c62fded7638dbe8b7e0737a8ba491bf6438c",
-      "msg": "panvk: Wire up VK_EXT_conservative_rasterization on v11+",
-      "date": "2026-04-28T09:34:28.000+02:00"
+      "old": "7d59c62",
+      "new": "35f57a2",
+      "full": "35f57a27396c116fc5e9984ac1254d26b83ad2c4",
+      "msg": "pvr: increase value of maxPerStageDescriptorStorageBuffers",
+      "date": "2026-04-28T08:36:48.000+00:00"
     }
   ]
 }
