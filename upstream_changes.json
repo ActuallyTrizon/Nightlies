@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-28T17:40:33Z",
+  "triggered_at": "2026-04-28T19:21:56Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "228cc3a",
-      "new": "2a8342b",
-      "full": "2a8342b211770423c1eb80a3d3a777599c05ef6b",
-      "msg": "vkd3d: Depth attachment resolves happen in COLOR stages and ACCESS.",
-      "date": "2026-04-28T17:00:07Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f6cd7f",
-      "new": "669d391",
-      "full": "669d3915c69a20f4d9d9e86f28236ff69466e800",
-      "msg": "radv: slightly rework initializing the default graphics state",
-      "date": "2026-04-28T17:06:42.000+00:00"
+      "old": "669d391",
+      "new": "76a3951",
+      "full": "76a3951e03281acc8f5cd1093726d85f581b97ff",
+      "msg": "kk: Fix issues with maximal reconvergence",
+      "date": "2026-04-28T18:50:36.000+00:00"
     }
   ]
 }
