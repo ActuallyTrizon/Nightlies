@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-29T19:11:25Z",
+  "triggered_at": "2026-04-29T20:54:30Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2c72942",
+      "new": "2e7d01e",
+      "full": "2e7d01ec46dc37a85da2fb4944ed585e17f24834",
+      "msg": "add _ZGVbN4vv_powf _ZGVbN4v_acosf (#3814)",
+      "date": "2026-04-29T20:03:52Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5fcde4d",
-      "new": "8292593",
-      "full": "82925935d425b4465bcede519a671045fb58d098",
-      "msg": "pvr: wait for graphics jobs in CopyQueryPoolResults",
-      "date": "2026-04-29T17:41:17.000+00:00"
+      "old": "8292593",
+      "new": "59f626a",
+      "full": "59f626ac81bd139bdf4ae92e02c1d2ec93a196b4",
+      "msg": "tu/u_trace: Fix explicit toggle_name not being used",
+      "date": "2026-04-29T20:17:35.000+00:00"
     }
   ]
 }
