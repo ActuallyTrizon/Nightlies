@@ -1861,6 +1861,12 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "tu_v25.3 \u2014 a8xx-turnip-gen8-V25.3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v25.3_a8xx-turnip-gen8-V25.3.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v25.2 \u2014 a8xx-gen8-V25.2.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v25.2_a8xx-gen8-V25.2.zip"
