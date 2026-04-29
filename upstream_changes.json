@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-29T15:04:51Z",
+  "triggered_at": "2026-04-29T17:19:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "120bd20",
-      "new": "3a8d5ae",
-      "full": "3a8d5aeaa1f873a1e2e308679f996428c2f58a9d",
-      "msg": "v3dv: Expose hardware-accelerated integer dot products on V3D 7.1+",
-      "date": "2026-04-29T13:21:08.000+00:00"
+      "old": "3a8d5ae",
+      "new": "5fcde4d",
+      "full": "5fcde4d65d8ff9a3a9d8a92d6a5a01f162308dde",
+      "msg": "freedreno: Fix CP_CCHE_INVALIDATE not being applied at the right point",
+      "date": "2026-04-29T16:25:16.000+00:00"
     }
   ]
 }
