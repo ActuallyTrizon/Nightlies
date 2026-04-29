@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-29T17:19:07Z",
+  "triggered_at": "2026-04-29T19:11:25Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3a8d5ae",
-      "new": "5fcde4d",
-      "full": "5fcde4d65d8ff9a3a9d8a92d6a5a01f162308dde",
-      "msg": "freedreno: Fix CP_CCHE_INVALIDATE not being applied at the right point",
-      "date": "2026-04-29T16:25:16.000+00:00"
+      "old": "5fcde4d",
+      "new": "8292593",
+      "full": "82925935d425b4465bcede519a671045fb58d098",
+      "msg": "pvr: wait for graphics jobs in CopyQueryPoolResults",
+      "date": "2026-04-29T17:41:17.000+00:00"
     }
   ]
 }
