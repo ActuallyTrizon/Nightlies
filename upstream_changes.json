@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-29T08:02:47Z",
+  "triggered_at": "2026-04-29T10:47:52Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "72e0eda",
-      "new": "ca92f86",
-      "full": "ca92f8697e81bc3a72a437c2b11e023228bf2b05",
-      "msg": "panfrost/ci: Update kernel to pick up ZSTD support for ZRAM",
-      "date": "2026-04-29T07:24:18.000+00:00"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "2a8342b",
+      "new": "0feea6a",
+      "full": "0feea6a6d65b92ffc3ba117629e3717501c3d747",
+      "msg": "vkd3d: Emit null descriptor as texel buffer fallback for stride of 1.",
+      "date": "2026-04-29T10:45:33Z"
     }
   ]
 }
