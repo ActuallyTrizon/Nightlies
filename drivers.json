@@ -1849,6 +1849,18 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip_MTR_v3.3.1-d-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.3.1-d-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v3.3.1-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.3.1-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v25.2 \u2014 a8xx-gen8-V25.2.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v25.2_a8xx-gen8-V25.2.zip"
