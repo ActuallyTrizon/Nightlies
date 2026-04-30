@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-30T17:10:27Z",
+  "triggered_at": "2026-04-30T19:07:25Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3359de8",
-      "new": "1ebc14b",
-      "full": "1ebc14bcb9c74f8404d3948fd86f398a933c3460",
-      "msg": "brw: Stop tracking inline parameter usage in prog_key/prog_data",
-      "date": "2026-04-30T16:39:22.000+00:00"
+      "old": "1ebc14b",
+      "new": "db27a10",
+      "full": "db27a10f38ff766ed2171aa8f5de2c37cd22bddd",
+      "msg": "pan/compiler: Add better documentation for second lower_int64",
+      "date": "2026-04-30T18:26:13.000+00:00"
     }
   ]
 }
