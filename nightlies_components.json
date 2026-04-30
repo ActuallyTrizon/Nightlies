@@ -163,12 +163,6 @@
   },
   {
     "type": "DXVK",
-    "verName": "dxvk-sarek-async-arm64ec-1.11.0",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC-ARM64EC/dxvk-sarek-async-arm64ec-1.11.0.wcp"
-  },
-  {
-    "type": "DXVK",
     "verName": "dxvk-1.10.3",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/dxvk-1.10.3.wcp"
@@ -580,6 +574,24 @@
     "verName": "VKD3D-Proton-arm64ec-3.0b-497357c0",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-497357c0.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260430-r8-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260430-r8/Turnip-v26.2.0-20260430-r8-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260430-r8-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260430-r8/Turnip-v26.2.0-20260430-r8-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260430-r8",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260430-r8/Turnip-v26.2.0-20260430-r8.zip"
   },
   {
     "type": "GpuDriver",
