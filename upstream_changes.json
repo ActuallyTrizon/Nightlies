@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-30T05:50:54Z",
+  "triggered_at": "2026-04-30T08:06:43Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "0feea6a",
+      "new": "4832e12",
+      "full": "4832e12e614c2d7d7ab45245ab90a024b0f6b264",
+      "msg": "tests: Fix test failure in SM 6.8 when DGC is not supported.",
+      "date": "2026-04-30T06:43:59Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d433ea5",
-      "new": "b2aa92b",
-      "full": "b2aa92b52374066e9830672ef07bc4f6100a3508",
-      "msg": "softfloat: make sign bit an unsigned int",
-      "date": "2026-04-30T01:12:14.000+00:00"
+      "old": "b2aa92b",
+      "new": "1027059",
+      "full": "1027059baa2554afa8fa3ca4aa222861f9863a04",
+      "msg": "pvr: increase maxPerStageResources for new maxPerStageDescriptorStorageBuffers",
+      "date": "2026-04-30T07:38:53.000+00:00"
     }
   ]
 }
