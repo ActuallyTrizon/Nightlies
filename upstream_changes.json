@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-04-30T12:09:22Z",
+  "triggered_at": "2026-04-30T15:01:27Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "2e7d01e",
-      "new": "c6418bc",
-      "full": "c6418bc3fd9f45e8b624513c04e654c46fc816ef",
-      "msg": "[DOCS] Corrected typos in usage document (#3815)",
-      "date": "2026-04-30T11:07:23Z"
-    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "c5c2b68",
-      "new": "0d15a1c",
-      "full": "0d15a1cf650d901e0a6b3cf82242b89768a85144",
-      "msg": "vkd3d: Add workgraph path for nvapi ext setup.",
-      "date": "2026-04-30T11:27:28Z"
+      "old": "0d15a1c",
+      "new": "497357c",
+      "full": "497357c0f03796d1a87696937c8b503106fdca6a",
+      "msg": "vkd3d: Finally get rid of SMEM PRT workaround on 26.2+.",
+      "date": "2026-04-30T13:20:53Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "bcbc563",
+      "new": "ec9111c",
+      "full": "ec9111c07d58b74b63e00169f690a835547358c0",
+      "msg": "[dxvk] Try to use draw with input attachments to implement image copies",
+      "date": "2026-04-30T12:18:52Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b4591f4",
-      "new": "41965d4",
-      "full": "41965d4082d954a911f41ee7a4b7a233a98527d0",
-      "msg": "mediafoundation: code clean up",
-      "date": "2026-04-30T11:51:33.000+00:00"
+      "old": "41965d4",
+      "new": "3359de8",
+      "full": "3359de824729de3ca8a0efa6c442e7682313441d",
+      "msg": "driconf: disable allow_rgb16_configs for SPECviewperf",
+      "date": "2026-04-30T14:26:39.000+00:00"
     }
   ]
 }
