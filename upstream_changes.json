@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-04-30T15:01:27Z",
+  "triggered_at": "2026-04-30T17:10:27Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "0d15a1c",
-      "new": "497357c",
-      "full": "497357c0f03796d1a87696937c8b503106fdca6a",
-      "msg": "vkd3d: Finally get rid of SMEM PRT workaround on 26.2+.",
-      "date": "2026-04-30T13:20:53Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "bcbc563",
-      "new": "ec9111c",
-      "full": "ec9111c07d58b74b63e00169f690a835547358c0",
-      "msg": "[dxvk] Try to use draw with input attachments to implement image copies",
-      "date": "2026-04-30T12:18:52Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "41965d4",
-      "new": "3359de8",
-      "full": "3359de824729de3ca8a0efa6c442e7682313441d",
-      "msg": "driconf: disable allow_rgb16_configs for SPECviewperf",
-      "date": "2026-04-30T14:26:39.000+00:00"
+      "old": "3359de8",
+      "new": "1ebc14b",
+      "full": "1ebc14bcb9c74f8404d3948fd86f398a933c3460",
+      "msg": "brw: Stop tracking inline parameter usage in prog_key/prog_data",
+      "date": "2026-04-30T16:39:22.000+00:00"
     }
   ]
 }
