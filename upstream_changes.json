@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-30T21:50:17Z",
+  "triggered_at": "2026-04-30T22:43:14Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "098c4c5",
-      "new": "8ab0075",
-      "full": "8ab00758be7bb6a8530e861958397a629b48ab4e",
-      "msg": "Merge pull request #5448 from bylaws/claudefix6",
-      "date": "2026-04-30T21:42:08Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b64cd52",
-      "new": "c4b6df2",
-      "full": "c4b6df29bf50aba7046ca42d569729f2cf8de1d7",
-      "msg": "intel/isl: fix assert when surf->size_B is > UINT_MAX",
-      "date": "2026-04-30T21:07:02.000+00:00"
+      "old": "c4b6df2",
+      "new": "608bc0e",
+      "full": "608bc0e5930ec2c75511eb818d787d8c1432e8e6",
+      "msg": "radv/meta: fix expanding HTILE on compute with multisampling",
+      "date": "2026-04-30T22:17:43.000+00:00"
     }
   ]
 }
