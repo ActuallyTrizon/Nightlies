@@ -26,15 +26,15 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260430-121431](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260430-121431) |
+| **Release** | [🔗 nightly-20260430-151350](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260430-151350) |
 | **FEXCore** | [`098c4c57b`](https://github.com/FEX-Emu/FEX/commit/098c4c57b) — FEX-2604-Nightly-098c4c57b |
-| **VKD3D-Proton (Std)** | [`0d15a1cf`](https://github.com/HansKristian-Work/vkd3d-proton/commit/0d15a1cf) |
-| **VKD3D-Proton (ARM64EC)** | [`0d15a1cf`](https://github.com/HansKristian-Work/vkd3d-proton/commit/0d15a1cf) |
-| **DXVK (GPLAsync)** | [`bcbc563a`](https://github.com/doitsujin/dxvk/commit/bcbc563a) |
-| **DXVK (ARM64EC)** | [`bcbc563a`](https://github.com/doitsujin/dxvk/commit/bcbc563a) |
+| **VKD3D-Proton (Std)** | [`497357c0`](https://github.com/HansKristian-Work/vkd3d-proton/commit/497357c0) |
+| **VKD3D-Proton (ARM64EC)** | [`497357c0`](https://github.com/HansKristian-Work/vkd3d-proton/commit/497357c0) |
+| **DXVK (GPLAsync)** | [`ec9111c0`](https://github.com/doitsujin/dxvk/commit/ec9111c0) |
+| **DXVK (ARM64EC)** | [`ec9111c0`](https://github.com/doitsujin/dxvk/commit/ec9111c0) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260430-r5](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260430-r5) — Turnip v26.2.0-20260430-r5 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260430-121431) |
+| **Turnip** | [v26.2.0-20260430-r6](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260430-r6) — Turnip v26.2.0-20260430-r6 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260430-151350) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
