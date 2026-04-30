@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-30T22:43:14Z",
+  "triggered_at": "2026-04-30T23:43:37Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c4b6df2",
-      "new": "608bc0e",
-      "full": "608bc0e5930ec2c75511eb818d787d8c1432e8e6",
-      "msg": "radv/meta: fix expanding HTILE on compute with multisampling",
-      "date": "2026-04-30T22:17:43.000+00:00"
+      "old": "608bc0e",
+      "new": "d8b5254",
+      "full": "d8b525466ca4d51a75d460f84697dd497d7c5a43",
+      "msg": "ir3: Fix shared IMAD24 lowering.",
+      "date": "2026-04-30T22:39:29.000+00:00"
     }
   ]
 }
