@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-30T19:07:25Z",
+  "triggered_at": "2026-04-30T20:51:50Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1ebc14b",
-      "new": "db27a10",
-      "full": "db27a10f38ff766ed2171aa8f5de2c37cd22bddd",
-      "msg": "pan/compiler: Add better documentation for second lower_int64",
-      "date": "2026-04-30T18:26:13.000+00:00"
+      "old": "db27a10",
+      "new": "b64cd52",
+      "full": "b64cd520f7858814374e19b8a2ca2f36e6871367",
+      "msg": "vulkan/android: Set COLOR_ATTACHMENT_BIT for external format resolve",
+      "date": "2026-04-30T19:56:26.000+00:00"
     }
   ]
 }
