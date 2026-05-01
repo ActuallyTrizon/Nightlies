@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T08:54:20Z",
+  "triggered_at": "2026-05-01T10:17:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "645de2b",
-      "new": "38cf44a",
-      "full": "38cf44a7330db312683f5d84c5c85c6d0e63f08d",
-      "msg": "pvr: ignore DS attachment's D or S when it's unused in dynamic rendering",
-      "date": "2026-05-01T08:22:05.000+00:00"
+      "old": "38cf44a",
+      "new": "fe067b1",
+      "full": "fe067b17d908d8f02e88ef3c4433ec5fbb66b2a9",
+      "msg": "radv: split radv_compiler_info's family into debug::family and key::family",
+      "date": "2026-05-01T08:45:28.000+00:00"
     }
   ]
 }
