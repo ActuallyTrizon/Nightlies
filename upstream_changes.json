@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T12:59:05Z",
+  "triggered_at": "2026-05-01T16:46:27Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "012d72f",
-      "new": "80e6b46",
-      "full": "80e6b468f435aea09c085b14efff9e70c32ec4dd",
-      "msg": "panfrost: add helper function for checking for active queries",
-      "date": "2026-05-01T12:22:53.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c6418bc",
+      "new": "234105f",
+      "full": "234105ff8dad024e817539deafffbffd14400464",
+      "msg": "[DOCS] Added Chinese translation to the usage document (#3817)",
+      "date": "2026-05-01T16:30:09Z"
     }
   ]
 }
