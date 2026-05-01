@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-30T23:43:37Z",
+  "triggered_at": "2026-05-01T02:12:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "608bc0e",
-      "new": "d8b5254",
-      "full": "d8b525466ca4d51a75d460f84697dd497d7c5a43",
-      "msg": "ir3: Fix shared IMAD24 lowering.",
-      "date": "2026-04-30T22:39:29.000+00:00"
+      "old": "d8b5254",
+      "new": "6aabe54",
+      "full": "6aabe5482e51ec28126d4af5285936c04b247a34",
+      "msg": "anv: Fix support for indirect SBTs on Xe3+",
+      "date": "2026-05-01T00:18:23.000+00:00"
     }
   ]
 }
