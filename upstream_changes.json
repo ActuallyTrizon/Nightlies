@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T10:17:24Z",
+  "triggered_at": "2026-05-01T11:52:13Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "38cf44a",
-      "new": "fe067b1",
-      "full": "fe067b17d908d8f02e88ef3c4433ec5fbb66b2a9",
-      "msg": "radv: split radv_compiler_info's family into debug::family and key::family",
-      "date": "2026-05-01T08:45:28.000+00:00"
+      "old": "fe067b1",
+      "new": "012d72f",
+      "full": "012d72f2b0314e91e3b8637e3390337a58366c62",
+      "msg": "nir/opt_algebraic: add some imul24_relaxed pattern",
+      "date": "2026-05-01T10:07:26.000+00:00"
     }
   ]
 }
