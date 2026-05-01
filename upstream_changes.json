@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T11:52:13Z",
+  "triggered_at": "2026-05-01T12:59:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fe067b1",
-      "new": "012d72f",
-      "full": "012d72f2b0314e91e3b8637e3390337a58366c62",
-      "msg": "nir/opt_algebraic: add some imul24_relaxed pattern",
-      "date": "2026-05-01T10:07:26.000+00:00"
+      "old": "012d72f",
+      "new": "80e6b46",
+      "full": "80e6b468f435aea09c085b14efff9e70c32ec4dd",
+      "msg": "panfrost: add helper function for checking for active queries",
+      "date": "2026-05-01T12:22:53.000+00:00"
     }
   ]
 }
