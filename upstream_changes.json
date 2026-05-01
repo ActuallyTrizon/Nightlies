@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T06:08:25Z",
+  "triggered_at": "2026-05-01T08:54:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6aabe54",
-      "new": "645de2b",
-      "full": "645de2b433f154203ff27ae30eb7b8db816e5843",
-      "msg": "gallivm: handle llvm 22 scatter/gather intrinsic changes.",
-      "date": "2026-05-01T03:51:55.000+00:00"
+      "old": "645de2b",
+      "new": "38cf44a",
+      "full": "38cf44a7330db312683f5d84c5c85c6d0e63f08d",
+      "msg": "pvr: ignore DS attachment's D or S when it's unused in dynamic rendering",
+      "date": "2026-05-01T08:22:05.000+00:00"
     }
   ]
 }
