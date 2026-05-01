@@ -1,10 +1,48 @@
 {
-  "updated_at": "2026-05-01T10:17:44Z",
+  "updated_at": "2026-05-01T11:52:31Z",
   "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
-  "total_releases": 56,
-  "total_assets": 69,
+  "total_releases": 58,
+  "total_assets": 72,
   "releases": [
+    {
+      "tag": "v30",
+      "name": "Turnip Gen8 V30",
+      "published_at": "2026-05-01T10:29:32Z",
+      "assets": [
+        {
+          "name": "Turnip_Gen8_V30.zip",
+          "mirror_name": "v30_Turnip_Gen8_V30.zip",
+          "size": 2674301,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v30/Turnip_Gen8_V30.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v30_Turnip_Gen8_V30.zip",
+          "published_at": "2026-05-01T10:29:15Z"
+        }
+      ]
+    },
+    {
+      "tag": "turnip_v26.3.0_r3",
+      "name": "Turnip 26.2.0 R3",
+      "published_at": "2026-05-01T10:31:22Z",
+      "assets": [
+        {
+          "name": "Turnip_26.2.0_R3_OneUI.zip",
+          "mirror_name": "turnip_v26.3.0_r3_Turnip_26.2.0_R3_OneUI.zip",
+          "size": 2675675,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_26.2.0_R3_OneUI.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.3.0_r3_Turnip_26.2.0_R3_OneUI.zip",
+          "published_at": "2026-05-01T10:31:01Z"
+        },
+        {
+          "name": "Turnip_v26.2.0_R3.zip",
+          "mirror_name": "turnip_v26.3.0_r3_Turnip_v26.2.0_R3.zip",
+          "size": 2675326,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_v26.2.0_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.3.0_r3_Turnip_v26.2.0_R3.zip",
+          "published_at": "2026-05-01T10:31:00Z"
+        }
+      ]
+    },
     {
       "tag": "v29",
       "name": "Turnip Gen8 V29",
