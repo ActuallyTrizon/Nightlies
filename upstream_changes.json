@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T02:12:03Z",
+  "triggered_at": "2026-05-01T06:08:25Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d8b5254",
-      "new": "6aabe54",
-      "full": "6aabe5482e51ec28126d4af5285936c04b247a34",
-      "msg": "anv: Fix support for indirect SBTs on Xe3+",
-      "date": "2026-05-01T00:18:23.000+00:00"
+      "old": "6aabe54",
+      "new": "645de2b",
+      "full": "645de2b433f154203ff27ae30eb7b8db816e5843",
+      "msg": "gallivm: handle llvm 22 scatter/gather intrinsic changes.",
+      "date": "2026-05-01T03:51:55.000+00:00"
     }
   ]
 }
