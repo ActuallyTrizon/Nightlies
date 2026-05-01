@@ -487,39 +487,39 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-cc8c76314",
+    "verName": "Box64-Hybrid-Bionic-af5569ece",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-cc8c76314.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-af5569ece.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-cc8c76314",
+    "verName": "Box64-Hybrid-Bionic-af5569ece",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-cc8c76314.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-af5569ece.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-c3820776a",
+    "verName": "Box64-Hybrid-Native-c74bd5281",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-c3820776a.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-c74bd5281.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-c3820776a",
+    "verName": "Box64-Hybrid-Native-c74bd5281",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-c3820776a.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-c74bd5281.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-41ec81759",
+    "verName": "Box64-Hybrid-WOW64-09c81cf1d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-41ec81759.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-09c81cf1d.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-41ec81759",
+    "verName": "Box64-Hybrid-WOW64-09c81cf1d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-41ec81759.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-09c81cf1d.zip"
   },
   {
     "type": "DXVK",
