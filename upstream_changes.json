@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-01T23:43:09Z",
+  "triggered_at": "2026-05-02T05:12:49Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "216c5c6",
-      "new": "95954b0",
-      "full": "95954b098190dc24f0c555db7dfbe0cb0f6feefb",
-      "msg": "vk/cmd_queue: always ceil() param lens",
-      "date": "2026-05-01T22:38:22.000+00:00"
+      "old": "95954b0",
+      "new": "9cb688a",
+      "full": "9cb688af88a72aef8b40937899736561da44427c",
+      "msg": "lavapipe: treat NULL pColorAttachmentLocations as no handles",
+      "date": "2026-05-02T14:46:15.000+10:00"
     }
   ]
 }
