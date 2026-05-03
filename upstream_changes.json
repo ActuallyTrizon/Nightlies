@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-03T14:07:22Z",
+  "triggered_at": "2026-05-03T15:39:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9cb688a",
-      "new": "f583f6e",
-      "full": "f583f6e717a3e5fb3948ff73bd1f1a406d229b3c",
-      "msg": "nir: use nir_build_frag_coord everywhere",
-      "date": "2026-05-03T13:03:01.000+00:00"
+      "old": "f583f6e",
+      "new": "a0a88e3",
+      "full": "a0a88e329de1ea5216736d1042b657adaa547e3e",
+      "msg": "dri: try to enable GL_ARB_compatiblity when supported GL core version is 3.1",
+      "date": "2026-05-03T13:55:49.000+00:00"
     }
   ]
 }
