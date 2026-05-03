@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-03T11:36:10Z",
+  "triggered_at": "2026-05-03T12:50:58Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "a3f3118",
-      "new": "197e6de",
-      "full": "197e6de194a5630d5a8872c0ee21f497829d4c4b",
-      "msg": "Merge pull request #5462 from peppergrayxyz/uc_sigmask",
-      "date": "2026-05-03T10:48:53Z"
+      "old": "197e6de",
+      "new": "8577399",
+      "full": "85773995e10070d07d302fa725a0e5de1c1b5ad1",
+      "msg": "Merge pull request #5470 from peppergrayxyz/header_redirect",
+      "date": "2026-05-03T11:41:18Z"
     }
   ]
 }
