@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-03T15:39:07Z",
+  "triggered_at": "2026-05-03T20:34:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f583f6e",
-      "new": "a0a88e3",
-      "full": "a0a88e329de1ea5216736d1042b657adaa547e3e",
-      "msg": "dri: try to enable GL_ARB_compatiblity when supported GL core version is 3.1",
-      "date": "2026-05-03T13:55:49.000+00:00"
+      "old": "a0a88e3",
+      "new": "38e691f",
+      "full": "38e691fc0a693fe338c9de4ab13ab3f48bbcaf92",
+      "msg": "nir/opt_varyings: do no_signed_zero linking even for non removable stores",
+      "date": "2026-05-03T19:55:10.000+00:00"
     }
   ]
 }
