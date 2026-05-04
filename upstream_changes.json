@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-04T19:16:38Z",
+  "triggered_at": "2026-05-04T22:05:11Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "93015a0",
-      "new": "f0764ae",
-      "full": "f0764aeafe50c54e61e1d65d2346ce1cfd7a1365",
-      "msg": "Merge pull request #5480 from neobrain/refactor_musl_sigmask",
-      "date": "2026-05-04T17:39:42Z"
+      "old": "f0764ae",
+      "new": "47e173e",
+      "full": "47e173e54921fa4f296b29cf7aefb91060217807",
+      "msg": "Merge pull request #5472 from peppergrayxyz/format",
+      "date": "2026-05-04T21:18:28Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0ff1650",
-      "new": "352a8d6",
-      "full": "352a8d6beb61767406026b2e2db6628210115e80",
-      "msg": "pan/compiler: Clamp fp16 ldexp exponent range",
-      "date": "2026-05-04T17:59:18.000+00:00"
+      "old": "352a8d6",
+      "new": "af746cc",
+      "full": "af746cc2a6498fd7acbbe8fc3b632d6f58d7ac86",
+      "msg": "radv/rt: Use 64-bit keys for gfx11-",
+      "date": "2026-05-04T20:42:50.000+00:00"
     }
   ]
 }
