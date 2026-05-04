@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-04T17:23:31Z",
+  "triggered_at": "2026-05-04T19:16:38Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "47c9f8d",
-      "new": "13debcb",
-      "full": "13debcbb9866c0a43e1473bb8a881670dffe8865",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-05-04T16:30:29Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "93015a0",
+      "new": "f0764ae",
+      "full": "f0764aeafe50c54e61e1d65d2346ce1cfd7a1365",
+      "msg": "Merge pull request #5480 from neobrain/refactor_musl_sigmask",
+      "date": "2026-05-04T17:39:42Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c19234",
-      "new": "0ff1650",
-      "full": "0ff16506628216e06d876aab5cc498f71067b2af",
-      "msg": "ac/nir/lower_tex_coord: fix moving wqm coordinates",
-      "date": "2026-05-04T15:09:46.000+00:00"
+      "old": "0ff1650",
+      "new": "352a8d6",
+      "full": "352a8d6beb61767406026b2e2db6628210115e80",
+      "msg": "pan/compiler: Clamp fp16 ldexp exponent range",
+      "date": "2026-05-04T17:59:18.000+00:00"
     }
   ]
 }
