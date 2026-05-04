@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-05-04T08:22:20Z",
+  "triggered_at": "2026-05-04T10:57:47Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d238db6",
-      "new": "93015a0",
-      "full": "93015a02667835faa9f6fc5b76a70d64f0c8ebd1",
-      "msg": "Merge pull request #5458 from peppergrayxyz/largefile64",
-      "date": "2026-05-04T06:36:59Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "497357c",
+      "new": "47c9f8d",
+      "full": "47c9f8db0fa037bd60f4eb3b8b405b52670d89c2",
+      "msg": "vkd3d: Fix dst subresource comparison in resolve barrier deduplication",
+      "date": "2026-05-04T09:38:37Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d1b0151",
+      "new": "3a57d41",
+      "full": "3a57d414db3a14f2d43fe69285bba78a06bd035b",
+      "msg": "[dxvk] Don't hard-require KHR_pipeline_library",
+      "date": "2026-05-04T10:29:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "38e691f",
-      "new": "917058a",
-      "full": "917058a4c5a68ddf3befb899c7daa03171cceddf",
-      "msg": "radeonsi/tests: update expectations",
-      "date": "2026-05-04T09:38:33.000+02:00"
+      "old": "917058a",
+      "new": "f4812dc",
+      "full": "f4812dc11d48204091260914d481784eb55a75eb",
+      "msg": "nir/opt_constant_folding: constant-fold op(bcsel(), #c) -> bcsel(.., #c1, #c2)",
+      "date": "2026-05-04T09:42:59.000+00:00"
     }
   ]
 }
