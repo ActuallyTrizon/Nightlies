@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-04T10:57:47Z",
+  "triggered_at": "2026-05-04T12:20:01Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "497357c",
-      "new": "47c9f8d",
-      "full": "47c9f8db0fa037bd60f4eb3b8b405b52670d89c2",
-      "msg": "vkd3d: Fix dst subresource comparison in resolve barrier deduplication",
-      "date": "2026-05-04T09:38:37Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "234105f",
+      "new": "dfaabd0",
+      "full": "dfaabd0187c3c75f7427ea6e3d9eda018eecd3a5",
+      "msg": "[ARM64_DYNAREC] Fix NaN detection operand typo (#3820)",
+      "date": "2026-05-04T11:35:17Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "d1b0151",
-      "new": "3a57d41",
-      "full": "3a57d414db3a14f2d43fe69285bba78a06bd035b",
-      "msg": "[dxvk] Don't hard-require KHR_pipeline_library",
-      "date": "2026-05-04T10:29:43Z"
+      "old": "3a57d41",
+      "new": "c2308b6",
+      "full": "c2308b6bf136231fee5b02c525653a754ca296b8",
+      "msg": "[d3d9] Disable sRGB support for D3DFMT_L8",
+      "date": "2026-05-04T11:51:55Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "917058a",
-      "new": "f4812dc",
-      "full": "f4812dc11d48204091260914d481784eb55a75eb",
-      "msg": "nir/opt_constant_folding: constant-fold op(bcsel(), #c) -> bcsel(.., #c1, #c2)",
-      "date": "2026-05-04T09:42:59.000+00:00"
+      "old": "f4812dc",
+      "new": "2c19234",
+      "full": "2c1923458c356e536443645882c34bfe97afeb48",
+      "msg": "r600: update memory barrier operations",
+      "date": "2026-05-04T11:34:57.000+00:00"
     }
   ]
 }
