@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-05T02:03:30Z",
+  "triggered_at": "2026-05-05T05:35:28Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "47e173e",
+      "new": "694e68b",
+      "full": "694e68b8389de608f2471ba9a023e34e814ace65",
+      "msg": "Merge pull request #5468 from peppergrayxyz/proc_self_stat",
+      "date": "2026-05-05T03:21:16Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "af746cc",
-      "new": "1883f30",
-      "full": "1883f3094fdf4bb4498fb0e778f96577b86342ea",
-      "msg": "ci: uprev virglrenderer",
-      "date": "2026-05-05T00:41:46.000+00:00"
+      "old": "1883f30",
+      "new": "a9b28b9",
+      "full": "a9b28b9838745814a2eead1e34c60b536c2cf099",
+      "msg": "pan/nir: Lower texel buffers in nir_lower_tex()",
+      "date": "2026-05-05T01:27:16.000+00:00"
     }
   ]
 }
