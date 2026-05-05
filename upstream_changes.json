@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-05T07:56:03Z",
+  "triggered_at": "2026-05-05T09:56:53Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "13debcb",
+      "new": "9f89a76",
+      "full": "9f89a765ba3f10c715395c087b664a81947bb816",
+      "msg": "vkd3d: Fix wrong Vulkan enum for mesh stage check in PSO init.",
+      "date": "2026-05-05T08:40:45Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a9b28b9",
-      "new": "60fdab2",
-      "full": "60fdab22a5f38f7ecef040961d1401d27d4d83b1",
-      "msg": "v3dv: Emulate multi-queue support via vk_queue for Android",
-      "date": "2026-05-05T07:03:08.000+00:00"
+      "old": "60fdab2",
+      "new": "49c6589",
+      "full": "49c658972f7614e9660fb86fe4303798b129f5b9",
+      "msg": "ir3: mark __alias_n as UNUSED in foreach_src_in_alias_group_n",
+      "date": "2026-05-05T08:56:14.000+00:00"
     }
   ]
 }
