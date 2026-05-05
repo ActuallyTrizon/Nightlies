@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-05T09:56:53Z",
+  "triggered_at": "2026-05-05T11:13:41Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "13debcb",
-      "new": "9f89a76",
-      "full": "9f89a765ba3f10c715395c087b664a81947bb816",
-      "msg": "vkd3d: Fix wrong Vulkan enum for mesh stage check in PSO init.",
-      "date": "2026-05-05T08:40:45Z"
+      "old": "9f89a76",
+      "new": "3b10bd7",
+      "full": "3b10bd7a7ec6a7347e616cf8bea59333afec2255",
+      "msg": "meta: Add changelog for 3.0.1.",
+      "date": "2026-05-05T10:34:12Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "60fdab2",
-      "new": "49c6589",
-      "full": "49c658972f7614e9660fb86fe4303798b129f5b9",
-      "msg": "ir3: mark __alias_n as UNUSED in foreach_src_in_alias_group_n",
-      "date": "2026-05-05T08:56:14.000+00:00"
+      "old": "49c6589",
+      "new": "27c870a",
+      "full": "27c870a28359644363547cdc0b18e36fc230e4ba",
+      "msg": "st/mesa: fix implicit conversion warning in st_atom_framebuffer",
+      "date": "2026-05-05T09:36:18.000+00:00"
     }
   ]
 }
