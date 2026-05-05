@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-05T17:15:08Z",
+  "triggered_at": "2026-05-05T19:06:42Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "c2308b6",
-      "new": "a9bdb29",
-      "full": "a9bdb2983641f3b1995fce6824d0922e968a01ed",
-      "msg": "[meta] Add pull request template",
-      "date": "2026-05-05T16:28:45Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2801185",
-      "new": "1499236",
-      "full": "14992361a4ef6355443b774e8dd2888e6c365af4",
-      "msg": "zink: relax build-id length assertion for Mach-O",
-      "date": "2026-05-05T17:48:31.000+02:00"
+      "old": "1499236",
+      "new": "844087c",
+      "full": "844087c6e7841811119a85ddb26ee1c197f5c5f3",
+      "msg": "anv: enable EXT_descriptor_heap",
+      "date": "2026-05-05T18:21:17.000+00:00"
     }
   ]
 }
