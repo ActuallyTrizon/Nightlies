@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-05T19:06:42Z",
+  "triggered_at": "2026-05-05T20:54:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1499236",
-      "new": "844087c",
-      "full": "844087c6e7841811119a85ddb26ee1c197f5c5f3",
-      "msg": "anv: enable EXT_descriptor_heap",
-      "date": "2026-05-05T18:21:17.000+00:00"
+      "old": "844087c",
+      "new": "099933f",
+      "full": "099933f00415707e948cae858d5c0dfcbb336536",
+      "msg": "llvmpipe: always set view_index for linear rasterizer",
+      "date": "2026-05-05T20:11:38.000+00:00"
     }
   ]
 }
