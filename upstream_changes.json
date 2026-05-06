@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-06T17:23:49Z",
+  "triggered_at": "2026-05-06T19:25:16Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "05b8d97",
-      "new": "19c9af4",
-      "full": "19c9af4dd093e2e8cd2728370ca60531c6e879cb",
-      "msg": "[ARM64_DYNAREC] Added 1 more faked F2 prefixed opcode",
-      "date": "2026-05-06T17:19:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2b9e491",
-      "new": "e334894",
-      "full": "e33489420c63048c90e98c5ffbef12ab81f0aa5f",
-      "msg": "ci: uprev vkd3d",
-      "date": "2026-05-06T15:44:31.000+00:00"
+      "old": "e334894",
+      "new": "d15e1fd",
+      "full": "d15e1fd10888abd76f8ebda139387ddde218a59b",
+      "msg": "android_stub: sync Android 16 headers",
+      "date": "2026-05-06T18:40:02.000+00:00"
     }
   ]
 }
