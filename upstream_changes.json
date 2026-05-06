@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-06T05:49:40Z",
+  "triggered_at": "2026-05-06T10:58:13Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "dfaabd0",
+      "new": "b619090",
+      "full": "b619090f1d70f5b1fb75b53a265c2675faa6b002",
+      "msg": "[DYNAREC] Restored sep entries hidden dynablock reference (#3822)",
+      "date": "2026-05-06T10:23:08Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5674327",
-      "new": "c67118a",
-      "full": "c67118a6ebef15657b725d2510e7605c06717403",
-      "msg": "ir3/shared_ra: insert reloads before tied dst pcopies",
-      "date": "2026-05-06T05:03:14.000+00:00"
+      "old": "c67118a",
+      "new": "567a65b",
+      "full": "567a65bbbf61fce2f8d3dd419bb018cbbceeaa08",
+      "msg": "etnaviv: Use shader R/B swap for LINEAR_PE shared resources",
+      "date": "2026-05-06T10:26:58.000+00:00"
     }
   ]
 }
