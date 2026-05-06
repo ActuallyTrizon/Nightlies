@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-05T22:48:56Z",
+  "triggered_at": "2026-05-06T02:02:31Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e60e5fe",
-      "new": "653ef90",
-      "full": "653ef9040385d5050f7368446271cd90a77cbe96",
-      "msg": "subprojects: update to rustix 1.1.4 + downstream patches",
-      "date": "2026-05-05T21:59:01.000+00:00"
+      "old": "653ef90",
+      "new": "5674327",
+      "full": "5674327297af8d00d44871aff1a36abfc4465dcd",
+      "msg": "screenshot-layer: Wait on the fence before fallible operations.",
+      "date": "2026-05-06T01:10:04.000+00:00"
     }
   ]
 }
