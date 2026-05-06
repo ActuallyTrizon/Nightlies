@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-06T22:41:06Z",
+  "triggered_at": "2026-05-06T23:41:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0f75fa5",
-      "new": "f694b2a",
-      "full": "f694b2ac6f5f2f296f07385a28791bf5056cf412",
-      "msg": "tu: Fix preemption latency selector values",
-      "date": "2026-05-06T21:37:16.000+00:00"
+      "old": "f694b2a",
+      "new": "2e9e8e9",
+      "full": "2e9e8e9a3667c0669bce34df2f9e29e313caf0ac",
+      "msg": "lavapipe: fix setting colormasks when attachments get remapped",
+      "date": "2026-05-06T22:41:52.000+00:00"
     }
   ]
 }
