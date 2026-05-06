@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-06T21:04:05Z",
+  "triggered_at": "2026-05-06T22:41:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d15e1fd",
-      "new": "0f75fa5",
-      "full": "0f75fa5bfd29770128a412f1fcf5c4121f95e1bb",
-      "msg": "nir/tests: add partial unroll OOB tests",
-      "date": "2026-05-06T20:08:13.000+00:00"
+      "old": "0f75fa5",
+      "new": "f694b2a",
+      "full": "f694b2ac6f5f2f296f07385a28791bf5056cf412",
+      "msg": "tu: Fix preemption latency selector values",
+      "date": "2026-05-06T21:37:16.000+00:00"
     }
   ]
 }
