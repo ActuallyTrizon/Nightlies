@@ -316,7 +316,8 @@ jobs:
           git clone --recursive https://github.com/HansKristian-Work/vkd3d-proton src
           cd src
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="3.0b-${COMMIT_HASH}"
+          LATEST_TAG=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
@@ -573,7 +574,8 @@ jobs:
           git clone --recursive https://github.com/HansKristian-Work/vkd3d-proton src
           cd src
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="arm64ec-3.0b-${COMMIT_HASH}"
+          LATEST_TAG=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          VERSION_NAME="arm64ec-${LATEST_TAG}-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
@@ -1101,8 +1103,8 @@ jobs:
           5. **Box64 Hybrid Bionic**: `Box64-Hybrid-Bionic-*.wcp` (and `.zip`)
           6. **WOWBox64 Hybrid**: `WOWBox64-Hybrid-*.wcp` (and `.zip`)
           7. **FEXCore**: `FEX-*.wcp` (and `.zip`)
-          8. **VKD3D-Proton (Std)**: `VKD3D-Proton-3.0b*.wcp` (and `.zip`)
-          9. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-3.0b-ARM64EC*.wcp` (and `.zip`)
+          8. **VKD3D-Proton (Std)**: `VKD3D-Proton-${VKD3D_VERSION}.wcp` (and `.zip`)
+          9. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-${VKD3D_ARM64EC_VERSION}.wcp` (and `.zip`)
           10. **DXVK**: `dxvk-gplasync-*.wcp` (and `.zip`)
           11. **DXVK (ARM64EC)**: `DXVK-ARM64EC-*.wcp` (and `.zip`)
           12. **Turnip GPU Driver**: `Turnip-v*.zip` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL

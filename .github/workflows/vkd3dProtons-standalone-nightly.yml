@@ -43,7 +43,8 @@ jobs:
           git clone --recursive https://github.com/HansKristian-Work/vkd3d-proton src
           cd src
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="3.0b-${COMMIT_HASH}"
+          LATEST_TAG=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
@@ -167,7 +168,8 @@ jobs:
           git clone --recursive https://github.com/HansKristian-Work/vkd3d-proton src
           cd src
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="arm64ec-3.0b-${COMMIT_HASH}"
+          LATEST_TAG=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          VERSION_NAME="arm64ec-${LATEST_TAG}-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
@@ -295,8 +297,8 @@ jobs:
             | **VKD3D-Proton (ARM64EC)** | [${{ needs.build-vkd3d-arm64ec.outputs.version }}](https://github.com/HansKristian-Work/vkd3d-proton/commit/${{ needs.build-vkd3d-arm64ec.outputs.commit }}) |
             
             ### 📦 Files Included
-            1. **VKD3D-Proton (Std)**: `VKD3D-Proton-3.0b*.wcp` (and `.zip`)
-            2. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-3.0b-ARM64EC*.wcp` (and `.zip`)
+            1. **VKD3D-Proton (Std)**: `VKD3D-Proton-${{ needs.build-vkd3d.outputs.version }}.wcp` (and `.zip`)
+            2. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-${{ needs.build-vkd3d-arm64ec.outputs.version }}.wcp` (and `.zip`)
             
             **The .wcp files are packaged for use with Winlator**
             **The .zip files are packaged for manual injection with Gamehub**
