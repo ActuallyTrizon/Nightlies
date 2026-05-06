@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-06T19:25:16Z",
+  "triggered_at": "2026-05-06T21:04:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e334894",
-      "new": "d15e1fd",
-      "full": "d15e1fd10888abd76f8ebda139387ddde218a59b",
-      "msg": "android_stub: sync Android 16 headers",
-      "date": "2026-05-06T18:40:02.000+00:00"
+      "old": "d15e1fd",
+      "new": "0f75fa5",
+      "full": "0f75fa5bfd29770128a412f1fcf5c4121f95e1bb",
+      "msg": "nir/tests: add partial unroll OOB tests",
+      "date": "2026-05-06T20:08:13.000+00:00"
     }
   ]
 }
