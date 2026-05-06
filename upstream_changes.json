@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-06T12:26:41Z",
+  "triggered_at": "2026-05-06T15:23:50Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b619090",
-      "new": "05b8d97",
-      "full": "05b8d9782397132fa92da162e03aff7fe030aecf",
-      "msg": "[WRAPPER] Add gnutls_free wrapped function for libgnutls (#3824)",
-      "date": "2026-05-06T12:00:43Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "3b10bd7",
+      "new": "64f5776",
+      "full": "64f5776fdb330abc53408de8b2b53e8e03fb49ca",
+      "msg": "vkd3d: Add descriptor heap retain workaround for Ark Ascended.",
+      "date": "2026-05-06T13:34:27Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "567a65b",
-      "new": "0d39d4e",
-      "full": "0d39d4e99ebb72a7f769deaf7da8a83ecaa99b9f",
-      "msg": "anv: expose VK_KHR_maintenance11",
-      "date": "2026-05-06T11:21:28.000+00:00"
+      "old": "0d39d4e",
+      "new": "2b9e491",
+      "full": "2b9e491b6789f60a7993cc9b74fe5ac7fa60c9c5",
+      "msg": "ddebug: Fix use of alloca() without #include \"c99_alloca.h\"",
+      "date": "2026-05-06T13:08:05.000+01:00"
     }
   ]
 }
