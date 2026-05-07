@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-07T21:48:03Z",
+  "triggered_at": "2026-05-07T22:53:05Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "7caa5a9",
+      "new": "2097f56",
+      "full": "2097f566e49882a13d362a06fa5b61366a7dbc52",
+      "msg": "[dxvk] Fix DxvkShaderPipelineLibraryKey::eq",
+      "date": "2026-05-07T22:10:29Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "439c112",
-      "new": "45706d3",
-      "full": "45706d39eae4d01cdc37494a5fd896f95569ff18",
-      "msg": "ci: stop skipping HIC tests on lavapipe",
-      "date": "2026-05-07T19:05:52.000+00:00"
+      "old": "45706d3",
+      "new": "c6ddfe1",
+      "full": "c6ddfe1a3ba666d0a64e3774ad2574441eee60ee",
+      "msg": "amd: add a tool that prints tiling layouts for all shim devices",
+      "date": "2026-05-07T21:41:01.000+00:00"
     }
   ]
 }
