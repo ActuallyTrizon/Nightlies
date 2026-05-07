@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-07T02:04:54Z",
+  "triggered_at": "2026-05-07T08:19:22Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "4db2a98",
-      "new": "ed216c8",
-      "full": "ed216c8d4d84ea2ecb140708b759a84a2080711b",
-      "msg": "Merge pull request #5449 from neobrain/opt_code_cache_writing",
-      "date": "2026-05-07T01:06:51Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "19c9af4",
+      "new": "ae18999",
+      "full": "ae1899941192392aa569bc8fe5fa997fe5791948",
+      "msg": "[LA64_DYNAREC] Added some F2/F3 faked prefix opcodes (#3827)",
+      "date": "2026-05-07T07:16:49Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2e9e8e9",
-      "new": "593e3b3",
-      "full": "593e3b3916da68e510e96678c678085db9846b07",
-      "msg": "panvk: Let the compiler handle texture queries on v9+",
-      "date": "2026-05-07T00:36:02.000+00:00"
+      "old": "593e3b3",
+      "new": "e5e3755",
+      "full": "e5e375593ba92f7a97dc2540a972c1d3eed2cac8",
+      "msg": "radv/tests: add tests for global pipeline keys compatibility",
+      "date": "2026-05-07T08:53:24.000+02:00"
     }
   ]
 }
