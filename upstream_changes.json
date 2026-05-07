@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-07T08:19:22Z",
+  "triggered_at": "2026-05-07T11:02:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "19c9af4",
-      "new": "ae18999",
-      "full": "ae1899941192392aa569bc8fe5fa997fe5791948",
-      "msg": "[LA64_DYNAREC] Added some F2/F3 faked prefix opcodes (#3827)",
-      "date": "2026-05-07T07:16:49Z"
+      "old": "ae18999",
+      "new": "469c420",
+      "full": "469c42062674aac8631003160cd6b0d37ba58671",
+      "msg": "[DOCS] Added a short advertisement text about our new paper (#3829)",
+      "date": "2026-05-07T10:43:25Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "593e3b3",
-      "new": "e5e3755",
-      "full": "e5e375593ba92f7a97dc2540a972c1d3eed2cac8",
-      "msg": "radv/tests: add tests for global pipeline keys compatibility",
-      "date": "2026-05-07T08:53:24.000+02:00"
+      "old": "e5e3755",
+      "new": "3afc792",
+      "full": "3afc792dc8969abb21dfd3395a19a4478ffca39e",
+      "msg": "pvr: setup viewindex if the shader wants it even when multiview disabled",
+      "date": "2026-05-07T10:41:37.000+00:00"
     }
   ]
 }
