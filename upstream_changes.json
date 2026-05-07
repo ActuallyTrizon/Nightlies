@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-07T18:17:22Z",
+  "triggered_at": "2026-05-07T20:07:56Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ed216c8",
-      "new": "e517f32",
-      "full": "e517f3259ca37a809c8eaec7a92e872d288b59a9",
-      "msg": "Merge pull request #5484 from neobrain/fix_code_cache_no_guest_wrappers",
-      "date": "2026-05-07T17:59:32Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5d2cc50",
-      "new": "4dc4012",
-      "full": "4dc4012c4ca8718c1f6c589f65c08d778b05a8a2",
-      "msg": "radv: fix an assertion with RADV_DEBUG=fullsync on GFX11+",
-      "date": "2026-05-07T17:47:25.000+00:00"
+      "old": "4dc4012",
+      "new": "439c112",
+      "full": "439c1123b0c0e10f48b88d1bc385c86c1b194826",
+      "msg": "docs/envvars: update the ANV_DEBUG documentation",
+      "date": "2026-05-07T18:59:29.000+00:00"
     }
   ]
 }
