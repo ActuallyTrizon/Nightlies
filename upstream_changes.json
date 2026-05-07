@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-07T11:02:09Z",
+  "triggered_at": "2026-05-07T13:44:32Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ae18999",
-      "new": "469c420",
-      "full": "469c42062674aac8631003160cd6b0d37ba58671",
-      "msg": "[DOCS] Added a short advertisement text about our new paper (#3829)",
-      "date": "2026-05-07T10:43:25Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a9bdb29",
+      "new": "7caa5a9",
+      "full": "7caa5a99dcd48f1cb3b2fef2396667393bc0eb5d",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-07T11:50:37Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e5e3755",
-      "new": "3afc792",
-      "full": "3afc792dc8969abb21dfd3395a19a4478ffca39e",
-      "msg": "pvr: setup viewindex if the shader wants it even when multiview disabled",
-      "date": "2026-05-07T10:41:37.000+00:00"
+      "old": "3afc792",
+      "new": "4714395",
+      "full": "4714395eb8bf9d0946331a108616a0496c5c62ce",
+      "msg": "pan/bi: Drop lower_index_to_offset from preprocess",
+      "date": "2026-05-07T13:11:08.000+00:00"
     }
   ]
 }
