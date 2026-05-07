@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-07T13:44:32Z",
+  "triggered_at": "2026-05-07T16:00:27Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "a9bdb29",
-      "new": "7caa5a9",
-      "full": "7caa5a99dcd48f1cb3b2fef2396667393bc0eb5d",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-05-07T11:50:37Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "64f5776",
+      "new": "ddcda06",
+      "full": "ddcda06e62d71e1b604900fa5d72109fb52bde30",
+      "msg": "vkd3d: Initialize heap bindless state.",
+      "date": "2026-05-07T15:39:41Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3afc792",
-      "new": "4714395",
-      "full": "4714395eb8bf9d0946331a108616a0496c5c62ce",
-      "msg": "pan/bi: Drop lower_index_to_offset from preprocess",
-      "date": "2026-05-07T13:11:08.000+00:00"
+      "old": "4714395",
+      "new": "5d2cc50",
+      "full": "5d2cc50247e0ea85082ea59484216982c3cb9001",
+      "msg": "pvr: add dri options used by common WSI code",
+      "date": "2026-05-07T15:33:01.000+00:00"
     }
   ]
 }
