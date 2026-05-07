@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-06T23:41:51Z",
+  "triggered_at": "2026-05-07T02:04:54Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "4db2a98",
+      "new": "ed216c8",
+      "full": "ed216c8d4d84ea2ecb140708b759a84a2080711b",
+      "msg": "Merge pull request #5449 from neobrain/opt_code_cache_writing",
+      "date": "2026-05-07T01:06:51Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f694b2a",
-      "new": "2e9e8e9",
-      "full": "2e9e8e9a3667c0669bce34df2f9e29e313caf0ac",
-      "msg": "lavapipe: fix setting colormasks when attachments get remapped",
-      "date": "2026-05-06T22:41:52.000+00:00"
+      "old": "2e9e8e9",
+      "new": "593e3b3",
+      "full": "593e3b3916da68e510e96678c678085db9846b07",
+      "msg": "panvk: Let the compiler handle texture queries on v9+",
+      "date": "2026-05-07T00:36:02.000+00:00"
     }
   ]
 }
