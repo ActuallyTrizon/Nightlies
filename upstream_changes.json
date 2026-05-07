@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-07T20:07:56Z",
+  "triggered_at": "2026-05-07T21:48:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4dc4012",
-      "new": "439c112",
-      "full": "439c1123b0c0e10f48b88d1bc385c86c1b194826",
-      "msg": "docs/envvars: update the ANV_DEBUG documentation",
-      "date": "2026-05-07T18:59:29.000+00:00"
+      "old": "439c112",
+      "new": "45706d3",
+      "full": "45706d39eae4d01cdc37494a5fd896f95569ff18",
+      "msg": "ci: stop skipping HIC tests on lavapipe",
+      "date": "2026-05-07T19:05:52.000+00:00"
     }
   ]
 }
