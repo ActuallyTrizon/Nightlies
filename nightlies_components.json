@@ -804,34 +804,28 @@
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-7cf0b003.zip"
   },
   {
-    "type": "Wine",
-    "verName": "wine-9.20",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.20.wcp"
-  },
-  {
     "type": "Proton",
     "verName": "proton-10-arm64ec-controller-fix",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-10-arm64ec-controller-fix.wcp"
   },
   {
-    "type": "Wine",
-    "verName": "wine-9.5_ref",
+    "type": "Proton",
+    "verName": "proton-10.99-arm64ec-NTSync-v5",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.5_ref.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-10.99-arm64ec-NTSync-v5.wcp"
   },
   {
-    "type": "Wine",
-    "verName": "wine-9.22_ref",
+    "type": "Proton",
+    "verName": "proton-9.0-arm64ec",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.22_ref.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-9.0-arm64ec.wcp"
   },
   {
-    "type": "Wine",
-    "verName": "wine-9.0_ref",
+    "type": "Proton",
+    "verName": "proton-9.0-x86_64",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.0_ref.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-9.0-x86_64.wcp"
   },
   {
     "type": "Wine",
@@ -841,15 +835,27 @@
   },
   {
     "type": "Wine",
+    "verName": "wine-11.3-x86_64",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-11.3-x86_64.wcp"
+  },
+  {
+    "type": "Wine",
     "verName": "wine-8.20-x86_64-ref",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-8.20-x86_64-ref.wcp"
   },
   {
     "type": "Wine",
-    "verName": "wine-9.13-x86_64-ref",
+    "verName": "wine-9.0.1-x86_64-ref",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.13-x86_64-ref.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.0.1-x86_64-ref.wcp"
+  },
+  {
+    "type": "Wine",
+    "verName": "wine-9.0_ref",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.0_ref.wcp"
   },
   {
     "type": "Wine",
@@ -859,9 +865,9 @@
   },
   {
     "type": "Wine",
-    "verName": "wine-9.0.1-x86_64-ref",
+    "verName": "wine-9.13-x86_64-ref",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.0.1-x86_64-ref.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.13-x86_64-ref.wcp"
   },
   {
     "type": "Wine",
@@ -889,6 +895,30 @@
   },
   {
     "type": "Wine",
+    "verName": "wine-9.20-x86_64-ref",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.20-x86_64-ref.wcp"
+  },
+  {
+    "type": "Wine",
+    "verName": "wine-9.20",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.20.wcp"
+  },
+  {
+    "type": "Wine",
+    "verName": "wine-9.21-x86_64-ref",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.21-x86_64-ref.wcp"
+  },
+  {
+    "type": "Wine",
+    "verName": "wine-9.22_ref",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.22_ref.wcp"
+  },
+  {
+    "type": "Wine",
     "verName": "wine-9.3-x86_64-ref",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.3-x86_64-ref.wcp"
@@ -901,39 +931,15 @@
   },
   {
     "type": "Wine",
+    "verName": "wine-9.5_ref",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.5_ref.wcp"
+  },
+  {
+    "type": "Wine",
     "verName": "wine-9.7-x86_64-ref",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.7-x86_64-ref.wcp"
-  },
-  {
-    "type": "Wine",
-    "verName": "wine-9.20-x86_64-ref",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.20-x86_64-ref.wcp"
-  },
-  {
-    "type": "Wine",
-    "verName": "wine-9.21-x86_64-ref",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.21-x86_64-ref.wcp"
-  },
-  {
-    "type": "Wine",
-    "verName": "wine-11.3-x86_64",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-11.3-x86_64.wcp"
-  },
-  {
-    "type": "Proton",
-    "verName": "proton-9.0-x86_64",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-9.0-x86_64.wcp"
-  },
-  {
-    "type": "Proton",
-    "verName": "proton-9.0-arm64ec",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-9.0-arm64ec.wcp"
   },
   {
     "type": "Proton",
