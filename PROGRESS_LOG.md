@@ -6,6 +6,50 @@
 
 ---
 
+## Session — 2026-05-08
+
+### [feat] — Add `.wcp.xz` Wine + Proton entries to components catalog (2026-05-08)
+**Commits:** `ff7c02c` (initial add) → re-applied as `d004d9d` after watcher wipe
+
+#### What changed
+- Manually added `wine-11.3-arm64ec` and `proton-10-arm64ec` to `nightlies_components.json` (158 → 160). Both back `.wcp.xz` assets in the `Proton/wine` release that the watcher's `.wcp` / `.zip` filter currently skips.
+- First add (`ff7c02c`) was wiped by the watcher (`86fec95`, regenerated back to 158). Recovered via rebase + re-insert in `d004d9d`.
+
+#### Files touched
+- `nightlies_components.json`
+
+#### Known follow-up
+- Watcher (`nightlies-components-json.yml`) only ingests `.wcp` / `.zip`; any `.wcp.xz` adds remain a manual-maintenance burden until the workflow is taught to include them.
+
+---
+
+### [docs] — Add Component Catalog (JSON Index) section to README (2026-05-08)
+**Commit:** `c42b2d1`
+
+#### What changed
+- New top-level section between the intro and "Latest Nightly Releases" pointing to `The412Banner/winlator-contents` and the raw `contents.json` URL, so Winlator-family clients have a discoverable entry point for the catalog.
+
+#### Files touched
+- `README.md`
+
+---
+
+### [chore] — Strip `nightly-latest` entries from components catalog (2026-05-08)
+**Commit:** `b2d392e`
+
+#### What changed
+- Removed all 22 `nightly-latest` rolling-tag entries (160 → 138): 8 Box64 · 4 DXVK · 4 VKD3D · 4 WOWBox64 · 2 FEXCore.
+- Reason: `nightly-latest` entries duplicated archived versions and carried type/filename mismatches (WOWBox64 builds filed under Box64 and vice versa).
+- Mirrored the same delete to `winlator-contents/contents.json` (`5b0bfc9` on that repo).
+
+#### Files touched
+- `nightlies_components.json`
+
+#### Known follow-up
+- Workflow `nightlies-components-json.yml` lines 98–115 unconditionally re-fetch the `nightly-latest` tag, so this delete will be reverted on the next workflow run unless those lines are removed.
+
+---
+
 ## Session — 2026-03-23
 
 ### [fix] — Add actions: write permission to Create Nightly Release job (2026-03-23)
@@ -226,6 +270,20 @@
 - `mtr_drivers.json` (two v3.0.0 entries added)
 - `drivers.json` (two v3.0.0 entries inserted after v2.0.0-p)
 - `.github/workflows/mtr-driver-mirror.yml` (new "Merge manual entries" step + manual_entries.json staged in commit)
+
+---
+
+### [feat] — Add MTR v3.2.0-b and v3.2.0-p to JSON tracking (2026-03-25)
+**Commit:** `9d2da14`
+
+#### What changed
+- Added `Turnip_MTR_v3.2.0-b_Axxx` and `Turnip_MTR_v3.2.0-p_Axxx` entries to `mtr/drivers.json` (total_assets 35→37)
+- Added matching `GpuDriver` entries to `mtr_drivers.json`
+- Both entries point to mirror URLs under the `mtr-drivers` release tag
+
+#### Files touched
+- `mtr/drivers.json`
+- `mtr_drivers.json`
 
 ---
 
