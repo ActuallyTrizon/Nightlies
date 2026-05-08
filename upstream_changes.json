@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-08T13:11:31Z",
+  "triggered_at": "2026-05-08T19:05:28Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d1e166f",
-      "new": "7cf0b00",
-      "full": "7cf0b003514752fe2c843079a6d3f8bc2536c76b",
-      "msg": "vkd3d: Expose larger than minimum descriptor heap limits if possible.",
-      "date": "2026-05-08T13:03:45Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "84a6eba",
+      "new": "70b6068",
+      "full": "70b6068ecba07f9fd0bc20fcba5edb072c0cf9c1",
+      "msg": "[RV64_DYNAREC] Fixed scratch register conflicts in a few opcodes (#3831)",
+      "date": "2026-05-08T18:42:59Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d2732fa",
-      "new": "1038877",
-      "full": "103887766cb288a7ec097af8c9f774ef6b0e1591",
-      "msg": "turnip: Add an override to uncached memory type",
-      "date": "2026-05-08T12:27:18.000+00:00"
+      "old": "1038877",
+      "new": "3eb5067",
+      "full": "3eb50679bb53df39ffa26474babf8feedcb13897",
+      "msg": "rusticl: enable freedreno by default",
+      "date": "2026-05-08T16:38:11.000+00:00"
     }
   ]
 }
