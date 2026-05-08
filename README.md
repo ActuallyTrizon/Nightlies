@@ -17,6 +17,17 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 
 ---
 
+## 📇 Component Catalog (JSON Index)
+
+A single JSON index of every component published here — point any compatible Winlator-family client at the raw URL below to auto-discover available `.wcp` / `.wcp.xz` builds.
+
+| | |
+| :--- | :--- |
+| **Repo** | [The412Banner/winlator-contents](https://github.com/The412Banner/winlator-contents) |
+| **Raw URL** | `https://raw.githubusercontent.com/The412Banner/winlator-contents/main/contents.json` |
+
+---
+
 ## 🌙 Latest Nightly Releases
 
 > ⚠️ Nightly builds are not always stable. Use at your own risk.
