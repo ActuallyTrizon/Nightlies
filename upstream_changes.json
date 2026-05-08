@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-07T22:53:05Z",
+  "triggered_at": "2026-05-08T02:12:13Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "7caa5a9",
-      "new": "2097f56",
-      "full": "2097f566e49882a13d362a06fa5b61366a7dbc52",
-      "msg": "[dxvk] Fix DxvkShaderPipelineLibraryKey::eq",
-      "date": "2026-05-07T22:10:29Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "45706d3",
-      "new": "c6ddfe1",
-      "full": "c6ddfe1a3ba666d0a64e3774ad2574441eee60ee",
-      "msg": "amd: add a tool that prints tiling layouts for all shim devices",
-      "date": "2026-05-07T21:41:01.000+00:00"
+      "old": "c6ddfe1",
+      "new": "ccdcbde",
+      "full": "ccdcbde6dd7ae610f955dfb59ae19dc7997f0b15",
+      "msg": "nak,compiler: Move FromVariants to common code",
+      "date": "2026-05-08T00:29:09.000+00:00"
     }
   ]
 }
