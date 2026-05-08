@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-08T19:05:28Z",
+  "triggered_at": "2026-05-08T20:49:48Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "84a6eba",
-      "new": "70b6068",
-      "full": "70b6068ecba07f9fd0bc20fcba5edb072c0cf9c1",
-      "msg": "[RV64_DYNAREC] Fixed scratch register conflicts in a few opcodes (#3831)",
-      "date": "2026-05-08T18:42:59Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1038877",
-      "new": "3eb5067",
-      "full": "3eb50679bb53df39ffa26474babf8feedcb13897",
-      "msg": "rusticl: enable freedreno by default",
-      "date": "2026-05-08T16:38:11.000+00:00"
+      "old": "3eb5067",
+      "new": "24aa771",
+      "full": "24aa7715cb8852f4278f3168de9df37dbfcd2910",
+      "msg": "intel/ds: Label selected draw events with vertex count",
+      "date": "2026-05-08T19:51:48.000+00:00"
     }
   ]
 }
