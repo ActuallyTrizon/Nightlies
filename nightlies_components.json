@@ -139,6 +139,12 @@
   },
   {
     "type": "WOWBox64",
+    "verName": "Wowbox64-0.3.4",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/Wowbox64-0.3.4.wcp"
+  },
+  {
+    "type": "WOWBox64",
     "verName": "wowbox64-0.3.6",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/wowbox64-0.3.6.wcp"
@@ -148,6 +154,12 @@
     "verName": "WowBox64-0.3.7-5768989",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/WowBox64-0.3.7-5768989.wcp"
+  },
+  {
+    "type": "WOWBox64",
+    "verName": "Wowbox64-0.3.7",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/Wowbox64-0.3.7.wcp"
   },
   {
     "type": "WOWBox64",
@@ -163,6 +175,12 @@
   },
   {
     "type": "WOWBox64",
+    "verName": "Wowbox64-0.3.9",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/Wowbox64-0.3.9.wcp"
+  },
+  {
+    "type": "WOWBox64",
     "verName": "wowbox64-0.4.0",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/wowbox64-0.4.0.wcp"
@@ -175,15 +193,117 @@
   },
   {
     "type": "WOWBox64",
+    "verName": "Wowbox64-0.4.1",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/Wowbox64-0.4.1.wcp"
+  },
+  {
+    "type": "WOWBox64",
     "verName": "wowbox64-0.4.2",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/wowbox64-0.4.2.wcp"
+  },
+  {
+    "type": "WOWBox64",
+    "verName": "WOWBox64-0.4.3",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Wowbox64/WOWBox64-0.4.3.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "Dxvk-sarek-1.12",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/Dxvk-sarek-1.12.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "DXVK-Sarek-11.1.0-249c45a",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/DXVK-Sarek-11.1.0-249c45a.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.4",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.4.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.5",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.5.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.6",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.6.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.7",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.7.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.8",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.8.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.10.9",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.10.9.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-v1.11.0",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.11.0.wcp"
   },
   {
     "type": "DXVK",
     "verName": "dxvk-sarek-async-1.11.0",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-1.11.0.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.4",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.4.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.5",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.5.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.6",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.6.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.7",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.7.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.8",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.8.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "dxvk-sarek-async-v1.10.9",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-v1.10.9.wcp"
   },
   {
     "type": "DXVK",
@@ -472,6 +592,12 @@
     "verName": "fexcore_2509.1",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/FexCore/fexcore_2509.1.wcp"
+  },
+  {
+    "type": "VKD3D",
+    "verName": "Vk3dk-3.0b-arm64ec-Tfix",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/VKD3D-PROTON-ARM/Vk3dk-3.0b-arm64ec-Tfix.wcp"
   },
   {
     "type": "VKD3D",
