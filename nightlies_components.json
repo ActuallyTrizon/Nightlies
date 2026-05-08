@@ -1,6 +1,18 @@
 [
   {
     "type": "Box64",
+    "verName": "Box64-0.3.2",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.3.2.wcp"
+  },
+  {
+    "type": "Box64",
+    "verName": "Box64-0.3.4",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.3.4.wcp"
+  },
+  {
+    "type": "Box64",
     "verName": "box64-0.3.5",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/box64-0.3.5.wcp"
@@ -25,6 +37,12 @@
   },
   {
     "type": "Box64",
+    "verName": "Box64-0.4.0",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.4.0.wcp"
+  },
+  {
+    "type": "Box64",
     "verName": "Box64-0.4.1-2-GH",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.4.1-2-GH.wcp"
@@ -46,6 +64,12 @@
     "verName": "Box64-0.4.2",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.4.2.wcp"
+  },
+  {
+    "type": "Box64",
+    "verName": "Box64-0.4.3",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Box64/Box64-0.4.3.wcp"
   },
   {
     "type": "Box64",
@@ -175,6 +199,12 @@
   },
   {
     "type": "DXVK",
+    "verName": "Dxvk-1.7.2",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/Dxvk-1.7.2.wcp"
+  },
+  {
+    "type": "DXVK",
     "verName": "dxvk-2.3.1",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/dxvk-2.3.1.wcp"
@@ -184,6 +214,12 @@
     "verName": "dxvk-2.4.1-pre-reg",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/dxvk-2.4.1-pre-reg.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "Dxvk-2.4.1.-special-d8",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/Dxvk-2.4.1.-special-d8.wcp"
   },
   {
     "type": "DXVK",
@@ -208,6 +244,12 @@
     "verName": "dxvk-2.7.1",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/dxvk-2.7.1.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "Dxvk-sarek-1.12",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/Dxvk-sarek-1.12.wcp"
   },
   {
     "type": "DXVK",
@@ -244,6 +286,12 @@
     "verName": "dxvk-arm64ec-2.7.1",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk-arm64ec/dxvk-arm64ec-2.7.1.wcp"
+  },
+  {
+    "type": "DXVK",
+    "verName": "Dxvk-2.6-2-gplasync",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk-gplasync/Dxvk-2.6-2-gplasync.wcp"
   },
   {
     "type": "DXVK",
@@ -592,6 +640,24 @@
     "verName": "VKD3D-Proton-arm64ec-3.0.1-d1e166fb",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-d1e166fb.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260508-r3-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260508-r3/Turnip-v26.2.0-20260508-r3-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260508-r3-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260508-r3/Turnip-v26.2.0-20260508-r3-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260508-r3",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260508-r3/Turnip-v26.2.0-20260508-r3.zip"
   },
   {
     "type": "GpuDriver",
