@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-08T09:06:44Z",
+  "triggered_at": "2026-05-08T11:04:06Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "ddcda06",
-      "new": "d1e166f",
-      "full": "d1e166fba39585ca838b20082ece5e1f2714c69d",
-      "msg": "vkd3d: Use VK_KHR_maintenance11.",
-      "date": "2026-05-08T08:47:47Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "469c420",
+      "new": "84a6eba",
+      "full": "84a6eba99f2407032e82b08a7bef732138e245b7",
+      "msg": "[SYSCALL] Added a new syscall (#3830)",
+      "date": "2026-05-08T10:50:51Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9dc8bb4",
-      "new": "0dd50a4",
-      "full": "0dd50a426e1e3010bb548ae0101a66b734ea4c94",
-      "msg": "nir: fix fp_math_ctrl in fisnan",
-      "date": "2026-05-08T08:20:16.000+00:00"
+      "old": "0dd50a4",
+      "new": "d2732fa",
+      "full": "d2732faac076e40389a0c0e06e031aa9da595e68",
+      "msg": "anv: enable VK_EXT_swapchain_compression_control when possible",
+      "date": "2026-05-08T13:24:47.000+03:00"
     }
   ]
 }
