@@ -34,6 +34,7 @@ jobs:
               ("Box64-Bionic",             "Box64"),
               ("Box64-Hybrid",             "Box64"),
               ("Wowbox64",                 "WOWBox64"),
+              ("DXVK-SAREK",               "DXVK"),
               ("DXVK-SAREK-ASYNC",         "DXVK"),
               ("DXVK-SAREK-ASYNC-ARM64EC", "DXVK"),
               ("Dxvk",                     "DXVK"),
