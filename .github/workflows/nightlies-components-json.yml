@@ -114,6 +114,46 @@ jobs:
               })
           print(f"  {len(nightly_assets)} assets")
 
+          # Mixed Wine/Proton releases — type derived from filename prefix.
+          # Proton/wine carries both wine-* and proton-* assets in one release;
+          # Proton-11 is proton-only. .wcp/.zip filter automatically skips
+          # the .wcp.xz / .sha256 sidecar files.
+          MIXED_WINE_PROTON = [
+              ("Proton/wine", "auto"),    # wine-* -> Wine, proton-* -> Proton
+              ("Proton-11",   "Proton"),  # all entries are Proton
+          ]
+
+          def classify_wine_proton(name, mode):
+              if mode == "Proton":
+                  return "Proton"
+              n = name.lower()
+              if n.startswith("wine-") or n.startswith("wine_"):
+                  return "Wine"
+              if n.startswith("proton-") or n.startswith("proton_"):
+                  return "Proton"
+              return None
+
+          for tag, mode in MIXED_WINE_PROTON:
+              print(f"Fetching {tag}...")
+              assets = fetch_assets(tag)
+              wp_added = 0
+              for asset in assets:
+                  name = asset["name"]
+                  if not (name.endswith(".wcp") or name.endswith(".zip")):
+                      continue
+                  comp_type = classify_wine_proton(name, mode)
+                  if not comp_type:
+                      continue
+                  ver_name = name.rsplit(".", 1)[0]
+                  entries.append({
+                      "type":      comp_type,
+                      "verName":   ver_name,
+                      "verCode":   "0",
+                      "remoteUrl": f"https://github.com/{repo}/releases/download/{tag}/{name}",
+                  })
+                  wp_added += 1
+              print(f"  {len(assets)} assets ({wp_added} Wine/Proton indexed)")
+
           # Banners-Turnip — all releases GPU driver
           print("Fetching Banners-Turnip all releases...")
           turnip_driver_entries = []
@@ -150,9 +190,11 @@ jobs:
                           "verCode":   "0",
                           "remoteUrl": asset["url"],
                       }
-                      entries.append(entry)
+                      # GpuDriver entries are NOT added to the components catalog (entries[]).
+                      # GPU drivers are tracked separately via drivers.json + banners-turnip_drivers.json
+                      # so the components catalog stays focused on emulator/translation layers.
                       turnip_driver_entries.append(entry)
-                      print(f"  Added Turnip: {name} (tag {tag})")
+                      print(f"  Added Turnip (drivers.json only): {name} (tag {tag})")
           else:
               print(f"  WARNING: could not list Banners-Turnip releases: {list_result.stderr.strip()}")
 
