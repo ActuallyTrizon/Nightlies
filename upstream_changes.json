@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-08T02:12:13Z",
+  "triggered_at": "2026-05-08T07:18:00Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c6ddfe1",
-      "new": "ccdcbde",
-      "full": "ccdcbde6dd7ae610f955dfb59ae19dc7997f0b15",
-      "msg": "nak,compiler: Move FromVariants to common code",
-      "date": "2026-05-08T00:29:09.000+00:00"
+      "old": "ccdcbde",
+      "new": "9dc8bb4",
+      "full": "9dc8bb4403796b7122cde6697fe2387b3f9c1238",
+      "msg": "ci/lava: Reduce LAVA job timeout to 20 minutes for Marge",
+      "date": "2026-05-08T05:55:24.000+00:00"
     }
   ]
 }
