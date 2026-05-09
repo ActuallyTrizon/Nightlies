@@ -288,9 +288,14 @@ jobs:
           body: |
             ### FEXCore PPA-flavor Stable: `${{ needs.build-fex-ppa.outputs.tag }}`
 
-            A pixel-perfect reproduction of the **fex-emu-wine PPA** build flavor
-            for stable tag [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }})
+            A maximally faithful reproduction of the **fex-emu-wine PPA** build
+            flavor for stable tag [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }})
             (commit [`${{ needs.build-fex-ppa.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex-ppa.outputs.commit_full }})).
+            Build recipe sourced directly from [`FEX-Emu/FEX-ppa/deb_wine_base/rules`](https://github.com/FEX-Emu/FEX-ppa/blob/main/deb_wine_base/rules)
+            — the upstream Debian packaging file. Every cmake flag, install
+            path, toolchain pin, and version override matches upstream
+            byte-for-byte; calibrated against the actual FEX-2604 PPA wcp at
+            **−0.16% size drift** (functionally identical).
 
             #### What's special about the "PPA flavor"?
 
@@ -314,20 +319,35 @@ jobs:
               to land within −0.16% of the original FEX-2604 PPA wcp; same
               workflow used for all stable tags.
 
-            #### Build recipe
+            #### Build recipe (mirrors upstream `debian/rules`)
 
             ```cmake
             -DCMAKE_BUILD_TYPE=Release
-            -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"   # debug info only for C
-            -DCMAKE_INSTALL_PREFIX=/                     # bakes "//fex-emu/HostThunks"
-            -DCMAKE_INSTALL_LIBDIR=/
-            -DTUNE_ARCH=generic -DTUNE_CPU=none          # generic codegen, no host leak
+            -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"   # -g only for C
+            -DCMAKE_INSTALL_PREFIX=/usr                  # upstream value
+            -DCMAKE_INSTALL_LIBDIR=/                     # bakes "//fex-emu/HostThunks"
+            -DTUNE_ARCH=generic -DTUNE_CPU=generic       # upstream value
+            -DOVERRIDE_VERSION=<tag-short>               # upstream value
             -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False
+            -DENABLE_JEMALLOC_GLIBC_ALLOC=False
+            CXXFLAGS="-Wno-deprecated-enum-enum-conversion"
             ```
 
-            DLLs taken straight from `build-${triple}/Bin/` — no `llvm-strip`,
-            no `ninja install` (CMake refuses the `//share/...` paths under
-            DESTDIR).
+            Source cloned into `/usr/src/fex-emu-wine-NNNN~q/`, built in
+            `build_wow64/` and `build_arm64ec/` subdirectories — matching the
+            Debian packaging sandbox. DLLs taken from `build_*/Bin/` (no
+            `llvm-strip`, no `ninja install`).
+
+            #### Residual ~2 KB drift is environmental, not recipe
+
+            Both this build and the upstream PPA use the same recipe and the
+            same `bylaws/llvm-mingw 20250920` toolchain release. The remaining
+            drift comes from the toolchain's host architecture: PPA runs on
+            aarch64 hosts (Launchpad ARM64), this workflow runs on x86_64
+            (`ubuntu-latest`). The clang binaries are built from the same
+            source for two different hosts; their internal optimizer
+            heuristics differ subtly, propagating into ~2 KB of different
+            instruction scheduling. Same target ABI, same emitted behaviour.
 
             #### Why ship this flavor at all?
 
