@@ -21,10 +21,11 @@ name: FEXCore PPA-flavor Stable
 #   - profile.json mirrors PPA byte-for-byte
 #     (versionName="2605", versionCode=0, no author,
 #      description="FEXCore Release from PPA")
-# NOTE: Debian dpkg-buildflags hardening (-fstack-protector-strong,
-# -fstack-clash-protection) was attempted but caused link failures (mingw
-# cross-compile uses -static -nostdlib so __stack_chk_fail isn't linked).
-# The PPA wcp must drop these too — confirmed by retry attempt failing.
+# Recipe sourced directly from FEX-Emu/FEX-ppa repo (deb_wine_base/rules)
+# — the upstream Debian packaging file. Confirms PPA explicitly disables
+# all Debian hardening via `DEB_BUILD_MAINT_OPTIONS = hardening=-all`,
+# which is why our earlier -fstack-protector-strong attempt link-failed
+# (correctly mirroring upstream behaviour: they don't pass it either).
 
 on:
   workflow_dispatch:
@@ -161,16 +162,21 @@ jobs:
             #   - Debian hardening flags injected     -> matches PPA's dpkg-buildflags
             #   - we deliberately do NOT run `ninja install`: CMake rejects the
             #     resulting "//share/fex-emu/AppConfig" path under DESTDIR.
+            # confflags + buildflags lifted directly from FEX-Emu/FEX-ppa
+            # (deb_wine_base/rules). The upstream debian/rules is the
+            # authoritative source for the PPA build recipe.
+            CXXFLAGS="-Wno-deprecated-enum-enum-conversion" \
             cmake -G Ninja -Wno-dev \
               -DCMAKE_BUILD_TYPE=Release \
               -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g" \
               -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
               -DMINGW_TRIPLE="${triple}-w64-mingw32" \
-              -DCMAKE_INSTALL_PREFIX=/ \
+              -DCMAKE_INSTALL_PREFIX=/usr \
               -DCMAKE_INSTALL_LIBDIR=/ \
               -DENABLE_JEMALLOC_GLIBC_ALLOC=False \
               -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False \
-              -DTUNE_ARCH=generic -DTUNE_CPU=none \
+              -DTUNE_ARCH=generic -DTUNE_CPU=generic \
+              -DOVERRIDE_VERSION="${VERSION_SHORT}" \
               ..
             ninja -j 2
             cd ..
