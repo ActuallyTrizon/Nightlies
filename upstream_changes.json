@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-09T09:09:56Z",
+  "triggered_at": "2026-05-09T10:49:42Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "70b6068",
-      "new": "d6810e8",
-      "full": "d6810e832c08b0478f5c58c97314346b1e2cc473",
-      "msg": "[RCFILE] Added a setting to Feishu (#3833)",
-      "date": "2026-05-09T08:34:40Z"
+      "old": "d6810e8",
+      "new": "ca432c6",
+      "full": "ca432c6ff484adbf32ed06a6ce8c8dcef1b7b2ae",
+      "msg": "[DYNACACHE] Bumped dynacache version for ARM64 and LA64",
+      "date": "2026-05-09T09:30:08Z"
     }
   ]
 }
