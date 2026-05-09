@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-08T23:48:28Z",
+  "triggered_at": "2026-05-09T05:40:51Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "e517f32",
-      "new": "1bfb3ae",
-      "full": "1bfb3aefcc190fc69c28786be8b27dd269a8d89e",
-      "msg": "Merge pull request #5485 from Sonicadvance1/150",
-      "date": "2026-05-08T22:58:43Z"
+      "old": "1bfb3ae",
+      "new": "a04b024",
+      "full": "a04b0241c2fe3911729842205cd8643981108aad",
+      "msg": "Docs: Update for release FEX-2605",
+      "date": "2026-05-09T02:28:30Z"
     }
   ]
 }
