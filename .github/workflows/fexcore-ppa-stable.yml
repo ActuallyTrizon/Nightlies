@@ -261,6 +261,14 @@ jobs:
             | FEX C++ JIT code | Release-optimised, no debug info | Release-optimised, no debug info |
             | Approx DLL size | ~5 MB each | ~3.6 MB each |
 
+            #### Toolchain
+
+            - **`bylaws/llvm-mingw` release [`20250920`](https://github.com/bylaws/llvm-mingw/releases/tag/20250920)**
+              — clang 21.1.0 from `bylaws/llvm-project` (FEX maintainer's LLVM
+              fork with ARM64EC/wow64 patches not yet in mainline). Calibrated
+              to land within −0.16% of the original FEX-2604 PPA wcp; same
+              workflow used for all stable tags.
+
             #### Build recipe
 
             ```cmake
@@ -268,6 +276,7 @@ jobs:
             -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"   # debug info only for C
             -DCMAKE_INSTALL_PREFIX=/                     # bakes "//fex-emu/HostThunks"
             -DCMAKE_INSTALL_LIBDIR=/
+            -DTUNE_ARCH=generic -DTUNE_CPU=none          # generic codegen, no host leak
             -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False
             ```
 
