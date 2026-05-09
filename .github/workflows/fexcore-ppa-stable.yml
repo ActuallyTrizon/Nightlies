@@ -5,15 +5,11 @@ name: FEXCore PPA-flavor Stable
 # inspecting DWARF metadata on the PPA wcp:
 #   - bylaws/llvm-mingw 20250920        (clang 21.1.0 from bylaws/llvm-project)
 #   - CMAKE_BUILD_TYPE=Release          (Release-optimised C++ — no debug info)
-#   - CMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g <hardening>"
+#   - CMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"
 #                                        (debug info ONLY for C files —
 #                                         Musl CRT, softfloat, cephes, rpmalloc,
 #                                         xxhash, tiny-json. The PPA wcp had
 #                                         88 CUs, all .c, no C++.)
-#   - Debian dpkg-buildflags hardening   (-fstack-protector-strong,
-#                                         -fstack-clash-protection,
-#                                         -Wformat -Werror=format-security —
-#                                         the cross-compile-safe subset)
 #   - TUNE_ARCH=generic + TUNE_CPU=none (generic codegen, no host CPU leak)
 #   - Source cloned into                  /usr/src/fex-emu-wine-NNNN~q/
 #                                        (matches PPA's debian build sandbox
@@ -25,6 +21,10 @@ name: FEXCore PPA-flavor Stable
 #   - profile.json mirrors PPA byte-for-byte
 #     (versionName="2605", versionCode=0, no author,
 #      description="FEXCore Release from PPA")
+# NOTE: Debian dpkg-buildflags hardening (-fstack-protector-strong,
+# -fstack-clash-protection) was attempted but caused link failures (mingw
+# cross-compile uses -static -nostdlib so __stack_chk_fail isn't linked).
+# The PPA wcp must drop these too — confirmed by retry attempt failing.
 
 on:
   workflow_dispatch:
@@ -126,24 +126,15 @@ jobs:
           echo "commit=${COMMIT_SHORT}"     >> $GITHUB_OUTPUT
           echo "commit_full=${COMMIT_FULL}" >> $GITHUB_OUTPUT
 
-      - name: Read Debian dpkg-buildflags (cross-compile-safe subset)
-        id: debflags
-        run: |
-          sudo apt-get install -y --no-install-recommends dpkg-dev
-          echo "Full Debian buildflags on this runner (for reference):"
-          dpkg-buildflags --get CFLAGS   2>&1 | sed 's/^/  CFLAGS:   /'
-          dpkg-buildflags --get CXXFLAGS 2>&1 | sed 's/^/  CXXFLAGS: /'
-          dpkg-buildflags --get LDFLAGS  2>&1 | sed 's/^/  LDFLAGS:  /'
-
-          # Cross-compile-safe subset: the hardening flags that work in mingw
-          # cross-compile context. We DROP:
-          #   - _FORTIFY_SOURCE       (glibc-specific; mingw uses ucrt)
-          #   - -fcf-protection       (x86-only; harmless but no-op on ARM64)
-          #   - -Wl,-z,relro/-z,now   (ELF-only; PE/COFF doesn't have them)
-          #   - -ffile-prefix-map     (would defeat our PPA path mirror)
-          DEB_HARDENING="-fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security"
-          echo "DEB_HARDENING=${DEB_HARDENING}" >> $GITHUB_ENV
-          echo "Will inject: ${DEB_HARDENING}"
+      # NOTE: We deliberately do NOT inject Debian dpkg-buildflags hardening
+      # (-fstack-protector-strong, -fstack-clash-protection, etc.). The mingw
+      # cross-compile context here uses -static -nostdlib -nostartfiles
+      # -nodefaultlibs, which means __stack_chk_fail / __stack_chk_guard
+      # symbols required by stack-protector are not linked, and the build
+      # fails. The actual upstream PPA wcp also can't be using these flags
+      # for the same reason — the +2KB .text delta vs our build is not
+      # caused by Debian hardening, it must come from something else (e.g.
+      # the specific mingw clang's default frame-pointer / inlining choices).
 
       - name: Build FEX (PPA recipe)
         run: |
@@ -172,8 +163,7 @@ jobs:
             #     resulting "//share/fex-emu/AppConfig" path under DESTDIR.
             cmake -G Ninja -Wno-dev \
               -DCMAKE_BUILD_TYPE=Release \
-              -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g ${DEB_HARDENING}" \
-              -DCMAKE_CXX_FLAGS_RELEASE="-O3 -DNDEBUG ${DEB_HARDENING}" \
+              -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g" \
               -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
               -DMINGW_TRIPLE="${triple}-w64-mingw32" \
               -DCMAKE_INSTALL_PREFIX=/ \
