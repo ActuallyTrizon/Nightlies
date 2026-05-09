@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-09T11:42:26Z",
+  "triggered_at": "2026-05-09T14:15:33Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ca432c6",
-      "new": "56cdd9f",
-      "full": "56cdd9f7325d78b6caf37a44fdd0bde6a93f2cce",
-      "msg": "[DOCS] Mark certain options as fragile or legacy (#3836)",
-      "date": "2026-05-09T11:06:19Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "24aa771",
-      "new": "3e1f06b",
-      "full": "3e1f06b0794bd831cbcd5f5ddfe58801c5dbeb19",
-      "msg": "tu: Don't leak pre_chain.rp_trace, and correct u_trace_move",
-      "date": "2026-05-09T10:31:41.000+00:00"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "7cf0b00",
+      "new": "ce3e3de",
+      "full": "ce3e3debe2ecbc1ce33497f95bae2c5d66e854c7",
+      "msg": "vkd3d: Resolve silly CI warnings.",
+      "date": "2026-05-09T13:14:18Z"
     }
   ]
 }
