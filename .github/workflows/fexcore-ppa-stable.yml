@@ -3,15 +3,25 @@ name: FEXCore PPA-flavor Stable
 # Builds a "PPA-flavor" wcp of a FEX-Emu stable tag (default FEX-2605),
 # matching the actual fex-emu-wine PPA build flavor as discovered by
 # inspecting DWARF metadata on the PPA wcp:
+#   - bylaws/llvm-mingw 20250920        (clang 21.1.0 from bylaws/llvm-project)
 #   - CMAKE_BUILD_TYPE=Release          (Release-optimised C++ — no debug info)
-#   - CMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"
+#   - CMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g <hardening>"
 #                                        (debug info ONLY for C files —
 #                                         Musl CRT, softfloat, cephes, rpmalloc,
 #                                         xxhash, tiny-json. The PPA wcp had
 #                                         88 CUs, all .c, no C++.)
+#   - Debian dpkg-buildflags hardening   (-fstack-protector-strong,
+#                                         -fstack-clash-protection,
+#                                         -Wformat -Werror=format-security —
+#                                         the cross-compile-safe subset)
+#   - TUNE_ARCH=generic + TUNE_CPU=none (generic codegen, no host CPU leak)
+#   - Source cloned into                  /usr/src/fex-emu-wine-NNNN~q/
+#                                        (matches PPA's debian build sandbox
+#                                         path so DWARF DW_AT_comp_dir reads
+#                                         identically to the upstream wcp)
+#   - Build dirs named build_wow64 and build_arm64ec (PPA convention)
 #   - No llvm-strip step                (preserves the C-file debug info)
-#   - CMAKE_INSTALL_LIBDIR=/            (bakes "//fex-emu/HostThunks" path,
-#                                        matching the PPA install layout)
+#   - CMAKE_INSTALL_LIBDIR=/            (bakes "//fex-emu/HostThunks" path)
 #   - profile.json mirrors PPA byte-for-byte
 #     (versionName="2605", versionCode=0, no author,
 #      description="FEXCore Release from PPA")
@@ -34,8 +44,8 @@ jobs:
     outputs:
       version: ${{ steps.version.outputs.version }}
       tag: ${{ steps.version.outputs.tag }}
-      commit: ${{ steps.version.outputs.commit }}
-      commit_full: ${{ steps.version.outputs.commit_full }}
+      commit: ${{ steps.clone.outputs.commit }}
+      commit_full: ${{ steps.clone.outputs.commit_full }}
     steps:
       - name: Install Dependencies
         run: |
@@ -64,22 +74,9 @@ jobs:
           sudo tar -C "$TOOLCHAIN_DIR" --strip-components=1 -xJf llvm.tar.xz
           echo "$TOOLCHAIN_DIR/bin" >> $GITHUB_PATH
 
-      - name: Clone and checkout target tag
-        run: |
-          git clone --recursive https://github.com/FEX-Emu/FEX.git source
-          cd source
-          TARGET_TAG="${{ github.event.inputs.tag }}"
-          echo "Checking out tag: $TARGET_TAG"
-          git fetch --all --tags
-          git checkout "$TARGET_TAG"
-          git submodule update --init --recursive
-
       - name: Determine version label
         id: version
         run: |
-          cd source
-          COMMIT_FULL=$(git rev-parse HEAD)
-          COMMIT_SHORT=$(git rev-parse --short HEAD)
           TAG_NAME="${{ github.event.inputs.tag }}"
 
           # "FEX-2605" -> "2605" for profile.json versionName (mirrors PPA exactly)
@@ -88,42 +85,95 @@ jobs:
           # File-stem follows the user's existing convention: FEXCore-2605-PPA.wcp
           FILE_STEM="FEXCore-${VERSION_SHORT}-PPA"
 
+          # Mirror the actual Launchpad PPA build path so DWARF DW_AT_comp_dir
+          # and DW_AT_name strings match: "/usr/src/fex-emu-wine-NNNN~q/..."
+          PPA_SRC_DIR="/usr/src/fex-emu-wine-${VERSION_SHORT}~q"
+
           {
             echo "VERSION_SHORT=${VERSION_SHORT}"
             echo "FILE_STEM=${FILE_STEM}"
             echo "TAG_NAME=${TAG_NAME}"
+            echo "PPA_SRC_DIR=${PPA_SRC_DIR}"
           } >> $GITHUB_ENV
 
-          echo "version=${VERSION_SHORT}" >> $GITHUB_OUTPUT
-          echo "tag=${TAG_NAME}"          >> $GITHUB_OUTPUT
-          echo "commit=${COMMIT_SHORT}"   >> $GITHUB_OUTPUT
+          echo "tag=${TAG_NAME}"            >> $GITHUB_OUTPUT
+          echo "version=${VERSION_SHORT}"   >> $GITHUB_OUTPUT
+
+          echo "Building PPA flavor: ${FILE_STEM} at ${PPA_SRC_DIR}"
+
+      - name: Clone FEX into PPA-style path
+        id: clone
+        run: |
+          # Clone into a temp area, then move to /usr/src/fex-emu-wine-NNNN~q/
+          # (the canonical Launchpad PPA build location). This causes DWARF
+          # DW_AT_comp_dir to read "/usr/src/fex-emu-wine-NNNN~q/build_wow64"
+          # exactly like the upstream PPA wcp.
+          git clone --recursive https://github.com/FEX-Emu/FEX.git /tmp/fex-source
+          cd /tmp/fex-source
+          git fetch --all --tags
+          git checkout "${TAG_NAME}"
+          git submodule update --init --recursive
+
+          # Move into canonical PPA path
+          sudo mkdir -p /usr/src
+          sudo rm -rf "${PPA_SRC_DIR}"
+          sudo mv /tmp/fex-source "${PPA_SRC_DIR}"
+          sudo chown -R "$USER:$USER" "${PPA_SRC_DIR}"
+
+          cd "${PPA_SRC_DIR}"
+          COMMIT_FULL=$(git rev-parse HEAD)
+          COMMIT_SHORT=$(git rev-parse --short HEAD)
+          echo "commit=${COMMIT_SHORT}"     >> $GITHUB_OUTPUT
           echo "commit_full=${COMMIT_FULL}" >> $GITHUB_OUTPUT
 
-          echo "Building PPA flavor: ${FILE_STEM} (tag=${TAG_NAME}, sha=${COMMIT_FULL})"
-
-      - name: Build FEX (RelWithDebInfo, PPA install paths)
+      - name: Read Debian dpkg-buildflags (cross-compile-safe subset)
+        id: debflags
         run: |
-          cd source
+          sudo apt-get install -y --no-install-recommends dpkg-dev
+          echo "Full Debian buildflags on this runner (for reference):"
+          dpkg-buildflags --get CFLAGS   2>&1 | sed 's/^/  CFLAGS:   /'
+          dpkg-buildflags --get CXXFLAGS 2>&1 | sed 's/^/  CXXFLAGS: /'
+          dpkg-buildflags --get LDFLAGS  2>&1 | sed 's/^/  LDFLAGS:  /'
+
+          # Cross-compile-safe subset: the hardening flags that work in mingw
+          # cross-compile context. We DROP:
+          #   - _FORTIFY_SOURCE       (glibc-specific; mingw uses ucrt)
+          #   - -fcf-protection       (x86-only; harmless but no-op on ARM64)
+          #   - -Wl,-z,relro/-z,now   (ELF-only; PE/COFF doesn't have them)
+          #   - -ffile-prefix-map     (would defeat our PPA path mirror)
+          DEB_HARDENING="-fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security"
+          echo "DEB_HARDENING=${DEB_HARDENING}" >> $GITHUB_ENV
+          echo "Will inject: ${DEB_HARDENING}"
+
+      - name: Build FEX (PPA recipe)
+        run: |
+          cd "${PPA_SRC_DIR}"
 
           build_arch() {
             local triple="$1"
-            local build_dir="build-${triple}"
+            local build_dir
+            # Match the Debian PPA's directory naming convention exactly:
+            #   aarch64 -> build_wow64    (wow64 target)
+            #   arm64ec -> build_arm64ec  (arm64ec target)
+            case "$triple" in
+              arm64ec) build_dir="build_arm64ec" ;;
+              aarch64) build_dir="build_wow64" ;;
+            esac
 
+            cd "${PPA_SRC_DIR}"
             rm -rf "$build_dir" && mkdir "$build_dir" && cd "$build_dir"
+
             # Differences vs nightly workflow:
             #   - Release + CFLAGS_RELEASE adds "-g"  -> debug info only for C
-            #     files (Musl CRT, softfloat, cephes, rpmalloc, xxhash,
-            #     tiny-json). C++ stays Release. This is what the PPA wcp
-            #     actually does — confirmed via DWARF inspection of FEX-2604-PPA.
             #   - INSTALL_LIBDIR=/                    -> bakes "//fex-emu/HostThunks"
-            #     (matches the FEX Launchpad PPA build; nightly bakes
-            #      /usr/lib/wine/aarch64-windows/fex-emu/HostThunks)
+            #   - TUNE_ARCH/TUNE_CPU explicit         -> generic codegen
+            #   - Debian hardening flags injected     -> matches PPA's dpkg-buildflags
             #   - we deliberately do NOT run `ninja install`: CMake rejects the
-            #     resulting "//share/fex-emu/AppConfig" path under DESTDIR as a
-            #     network path. The DLL is grabbed directly from build/Bin/.
+            #     resulting "//share/fex-emu/AppConfig" path under DESTDIR.
             cmake -G Ninja -Wno-dev \
               -DCMAKE_BUILD_TYPE=Release \
-              -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g" \
+              -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g ${DEB_HARDENING}" \
+              -DCMAKE_CXX_FLAGS_RELEASE="-O3 -DNDEBUG ${DEB_HARDENING}" \
               -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
               -DMINGW_TRIPLE="${triple}-w64-mingw32" \
               -DCMAKE_INSTALL_PREFIX=/ \
@@ -141,9 +191,8 @@ jobs:
 
       - name: Verify PPA-flavor traits
         run: |
-          cd source
-          DLL_EC=$(find build-arm64ec/Bin -type f -name 'libarm64ecfex.dll' | head -n 1)
-          DLL_WOW=$(find build-aarch64/Bin -type f -name 'libwow64fex.dll'  | head -n 1)
+          DLL_EC="${PPA_SRC_DIR}/build_arm64ec/Bin/libarm64ecfex.dll"
+          DLL_WOW="${PPA_SRC_DIR}/build_wow64/Bin/libwow64fex.dll"
           echo "DLL_EC=$DLL_EC"
           echo "DLL_WOW=$DLL_WOW"
           test -f "$DLL_EC"  || (echo "FAIL: arm64ec DLL not found" && exit 1)
@@ -171,8 +220,8 @@ jobs:
         run: |
           rm -rf final_package && mkdir -p final_package/system32
 
-          DLL_EC=$(find source/build-arm64ec/Bin -type f -name 'libarm64ecfex.dll' | head -n 1)
-          DLL_WOW=$(find source/build-aarch64/Bin -type f -name 'libwow64fex.dll'  | head -n 1)
+          DLL_EC="${PPA_SRC_DIR}/build_arm64ec/Bin/libarm64ecfex.dll"
+          DLL_WOW="${PPA_SRC_DIR}/build_wow64/Bin/libwow64fex.dll"
 
           cp "$DLL_EC"  final_package/system32/libarm64ecfex.dll
           cp "$DLL_WOW" final_package/system32/libwow64fex.dll
