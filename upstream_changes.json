@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-09T05:40:51Z",
+  "triggered_at": "2026-05-09T09:09:56Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "1bfb3ae",
-      "new": "a04b024",
-      "full": "a04b0241c2fe3911729842205cd8643981108aad",
-      "msg": "Docs: Update for release FEX-2605",
-      "date": "2026-05-09T02:28:30Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "70b6068",
+      "new": "d6810e8",
+      "full": "d6810e832c08b0478f5c58c97314346b1e2cc473",
+      "msg": "[RCFILE] Added a setting to Feishu (#3833)",
+      "date": "2026-05-09T08:34:40Z"
     }
   ]
 }
