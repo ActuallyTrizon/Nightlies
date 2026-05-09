@@ -1,0 +1,245 @@
+name: FEXCore PPA-flavor Stable
+
+# Builds a "PPA-flavor" wcp of a FEX-Emu stable tag (default FEX-2605):
+#   - CMAKE_BUILD_TYPE=RelWithDebInfo  (keeps DWARF .debug_* sections)
+#   - No llvm-strip step                (preserves symbol table + debug info)
+#   - CMAKE_INSTALL_LIBDIR=/            (bakes "//fex-emu/HostThunks" path,
+#                                        matching FEX-Emu's Launchpad PPA build)
+#   - profile.json mirrors PPA byte-for-byte
+#     (versionName="2605", versionCode=0, no author,
+#      description="FEXCore Release from PPA")
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'FEX-Emu stable tag to build (e.g. FEX-2605, FEX-2606)'
+        required: false
+        default: 'FEX-2605'
+
+jobs:
+  # ==================================================================
+  # JOB 1: FEXCore Build — PPA flavor
+  # ==================================================================
+  build-fex-ppa:
+    name: Build FEXCore (PPA flavor)
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
+      commit: ${{ steps.version.outputs.commit }}
+      commit_full: ${{ steps.version.outputs.commit_full }}
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends \
+            ca-certificates curl xz-utils jq git zip \
+            build-essential python3 pkg-config cmake zstd \
+            dos2unix perl tar unzip meson ninja-build wget
+
+      - name: Setup GLSLANG
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -q glslang-master-linux-Release.zip -d glslang
+          echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup Toolchain
+        run: |
+          LLVM_MINGW_TAG="20251104"
+          TOOLCHAIN_DIR="/opt/llvm-mingw"
+          wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+          sudo rm -rf "$TOOLCHAIN_DIR" && sudo mkdir -p "$TOOLCHAIN_DIR"
+          sudo tar -C "$TOOLCHAIN_DIR" --strip-components=1 -xJf llvm.tar.xz
+          echo "$TOOLCHAIN_DIR/bin" >> $GITHUB_PATH
+
+      - name: Clone and checkout target tag
+        run: |
+          git clone --recursive https://github.com/FEX-Emu/FEX.git source
+          cd source
+          TARGET_TAG="${{ github.event.inputs.tag }}"
+          echo "Checking out tag: $TARGET_TAG"
+          git fetch --all --tags
+          git checkout "$TARGET_TAG"
+          git submodule update --init --recursive
+
+      - name: Determine version label
+        id: version
+        run: |
+          cd source
+          COMMIT_FULL=$(git rev-parse HEAD)
+          COMMIT_SHORT=$(git rev-parse --short HEAD)
+          TAG_NAME="${{ github.event.inputs.tag }}"
+
+          # "FEX-2605" -> "2605" for profile.json versionName (mirrors PPA exactly)
+          VERSION_SHORT="${TAG_NAME#FEX-}"
+
+          # File-stem follows the user's existing convention: FEXCore-2605-PPA.wcp
+          FILE_STEM="FEXCore-${VERSION_SHORT}-PPA"
+
+          {
+            echo "VERSION_SHORT=${VERSION_SHORT}"
+            echo "FILE_STEM=${FILE_STEM}"
+            echo "TAG_NAME=${TAG_NAME}"
+          } >> $GITHUB_ENV
+
+          echo "version=${VERSION_SHORT}" >> $GITHUB_OUTPUT
+          echo "tag=${TAG_NAME}"          >> $GITHUB_OUTPUT
+          echo "commit=${COMMIT_SHORT}"   >> $GITHUB_OUTPUT
+          echo "commit_full=${COMMIT_FULL}" >> $GITHUB_OUTPUT
+
+          echo "Building PPA flavor: ${FILE_STEM} (tag=${TAG_NAME}, sha=${COMMIT_FULL})"
+
+      - name: Build FEX (RelWithDebInfo, PPA install paths)
+        run: |
+          cd source
+
+          build_arch() {
+            local triple="$1"
+            local dest="$2"
+            local build_dir="build-${triple}"
+
+            rm -rf "$build_dir" && mkdir "$build_dir" && cd "$build_dir"
+            # Differences vs nightly workflow:
+            #   - RelWithDebInfo (was Release)        -> emits DWARF debug sections
+            #   - INSTALL_LIBDIR=/                    -> bakes "//fex-emu/HostThunks"
+            #     (matches the FEX Launchpad PPA build; nightly bakes
+            #      /usr/lib/wine/aarch64-windows/fex-emu/HostThunks)
+            cmake -G Ninja -Wno-dev \
+              -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+              -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
+              -DMINGW_TRIPLE="${triple}-w64-mingw32" \
+              -DCMAKE_INSTALL_PREFIX=/ \
+              -DCMAKE_INSTALL_LIBDIR=/ \
+              -DENABLE_JEMALLOC_GLIBC_ALLOC=False \
+              -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False \
+              ..
+            ninja -j 2
+            DESTDIR="$dest" ninja install
+            cd ..
+          }
+
+          build_arch "arm64ec" "../../stage-ec"
+          build_arch "aarch64" "../../stage-wo"
+
+      - name: Verify PPA-flavor traits
+        run: |
+          cd source
+          DLL_EC=$(find ../stage-ec -type f -name 'libarm64ecfex.dll' | head -n 1)
+          DLL_WOW=$(find ../stage-wo -type f -name 'libwow64fex.dll'  | head -n 1)
+
+          echo "=== HostThunks path baked into libwow64fex ==="
+          if strings "$DLL_WOW" | grep -E '//fex-emu/HostThunks'; then
+            echo "OK: PPA-style path present"
+          else
+            echo "WARN: expected //fex-emu/HostThunks not found — printing actual:"
+            strings "$DLL_WOW" | grep -E 'fex-emu/HostThunks' || true
+          fi
+
+          echo "=== Debug sections in libwow64fex (expect .debug_*) ==="
+          /opt/llvm-mingw/bin/llvm-objdump -h "$DLL_WOW" | grep '\.debug_' \
+            && echo "OK: debug sections preserved" \
+            || (echo "FAIL: no debug sections present" && exit 1)
+
+          echo "=== Debug sections in libarm64ecfex (expect .debug_*) ==="
+          /opt/llvm-mingw/bin/llvm-objdump -h "$DLL_EC"  | grep '\.debug_' \
+            && echo "OK: debug sections preserved" \
+            || (echo "FAIL: no debug sections present" && exit 1)
+
+      - name: Package (no strip)
+        run: |
+          rm -rf final_package && mkdir -p final_package/system32
+
+          DLL_EC=$(find stage-ec -type f -name 'libarm64ecfex.dll' | head -n 1)
+          DLL_WOW=$(find stage-wo -type f -name 'libwow64fex.dll'  | head -n 1)
+
+          cp "$DLL_EC"  final_package/system32/libarm64ecfex.dll
+          cp "$DLL_WOW" final_package/system32/libwow64fex.dll
+          # NOTE: deliberately no llvm-strip — the whole point of the PPA flavor
+          # is preserving the .debug_* sections and full symbol table.
+
+          # profile.json — byte-for-byte mirror of the FEX-Emu PPA wcp metadata.
+          cat > final_package/profile.json << EOF
+          {
+            "type": "FEXCore",
+            "versionName": "${VERSION_SHORT}",
+            "versionCode": 0,
+            "description": "FEXCore Release from PPA",
+            "files": [
+              {
+                "source": "system32/libarm64ecfex.dll",
+                "target": "\${system32}/libarm64ecfex.dll"
+              },
+              {
+                "source": "system32/libwow64fex.dll",
+                "target": "\${system32}/libwow64fex.dll"
+              }
+            ]
+          }
+          EOF
+
+          cd final_package
+          tar -cJf "../${FILE_STEM}.wcp" .
+          zip  -r  "../${FILE_STEM}.zip" .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fex-ppa-stable
+          path: |
+            *.wcp
+            *.zip
+
+  # ==================================================================
+  # JOB 2: Release (standalone, separate from nightly tag namespace)
+  # ==================================================================
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: [build-fex-ppa]
+    permissions:
+      contents: write
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+          merge-multiple: true
+
+      - name: Set Release Variables
+        run: |
+          TAG="${{ needs.build-fex-ppa.outputs.tag }}"
+          SHA="${{ needs.build-fex-ppa.outputs.commit }}"
+          echo "REL_TAG=fexcore-ppa-${TAG}-${SHA}" >> $GITHUB_ENV
+          echo "REL_NAME=FEXCore PPA-flavor Stable - ${TAG}" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.REL_TAG }}
+          name: ${{ env.REL_NAME }}
+          prerelease: false
+          make_latest: false
+          body: |
+            ### FEXCore PPA-flavor Stable: `${{ needs.build-fex-ppa.outputs.tag }}`
+
+            Reproduces FEX-Emu's Launchpad PPA build of this tag — same FEX commit
+            as the regular nightly wcp, but built with `RelWithDebInfo` and **not
+            stripped**, so DWARF debug sections and the full symbol table are
+            retained. Also bakes `//fex-emu/HostThunks` instead of the
+            Winlator-style install path.
+
+            | Property | Value |
+            | :--- | :--- |
+            | **Source tag** | [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }}) |
+            | **Commit** | [`${{ needs.build-fex-ppa.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex-ppa.outputs.commit_full }}) |
+            | **Build type** | `RelWithDebInfo` (debug info preserved) |
+            | **HostThunks path** | `//fex-emu/HostThunks` |
+
+            ### Files
+            - `FEXCore-*-PPA.wcp` — Winlator component package
+            - `FEXCore-*-PPA.zip` — manual injection format (GameHub)
+          files: |
+            ./artifacts/*.wcp
+            ./artifacts/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
