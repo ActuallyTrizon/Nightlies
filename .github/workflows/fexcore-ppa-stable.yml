@@ -53,9 +53,13 @@ jobs:
 
       - name: Setup Toolchain
         run: |
-          LLVM_MINGW_TAG="20251104"
+          # Use bylaws/llvm-mingw 20250920 — the exact toolchain the FEX-Emu
+          # Launchpad PPA builds with (confirmed via DW_AT_producer in the
+          # PPA wcp: "clang 21.1.0 (bylaws/llvm-project ...)" and the comp_dir
+          # path "llvm-mingw-20250920-ucrt-ubuntu-22.04-aarch64").
+          LLVM_MINGW_TAG="20250920"
           TOOLCHAIN_DIR="/opt/llvm-mingw"
-          wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+          wget -q "https://github.com/bylaws/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
           sudo rm -rf "$TOOLCHAIN_DIR" && sudo mkdir -p "$TOOLCHAIN_DIR"
           sudo tar -C "$TOOLCHAIN_DIR" --strip-components=1 -xJf llvm.tar.xz
           echo "$TOOLCHAIN_DIR/bin" >> $GITHUB_PATH
