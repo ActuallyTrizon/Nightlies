@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-09T21:35:39Z",
+  "triggered_at": "2026-05-09T22:34:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3e1f06b",
-      "new": "1538621",
-      "full": "1538621f4650c11108bd1eae52b7612df139068a",
-      "msg": "tu: Disable storage image support for depth/stencil.",
-      "date": "2026-05-09T13:56:44.000-07:00"
+      "old": "1538621",
+      "new": "b1c3e36",
+      "full": "b1c3e36fe322a7330d60d4f70c37b64aff33d723",
+      "msg": "intel/dev: Expose list of known platform names",
+      "date": "2026-05-09T22:00:54.000+00:00"
     }
   ]
 }
