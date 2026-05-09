@@ -1214,19 +1214,19 @@ jobs:
           | **Turnip (A6xx/A7xx/A8xx)** | [${TURNIP_NAME}](https://github.com/The412Banner/Banners-Turnip/releases/tag/${TURNIP_TAG}) |
 
           ### 📦 Files Included
-          1. **Box64 Native**: `box64-*.wcp` (and `.zip`)
-          2. **Box64 Bionic**: `box64-bionic-*.wcp` (and `.zip`)
-          3. **WOWBox64**: `WOWBox64-*.wcp` (and `.zip`)
-          4. **Box64 Hybrid Native**: `Box64-Hybrid-Native-*.wcp` (and `.zip`)
-          5. **Box64 Hybrid Bionic**: `Box64-Hybrid-Bionic-*.wcp` (and `.zip`)
-          6. **WOWBox64 Hybrid**: `WOWBox64-Hybrid-*.wcp` (and `.zip`)
-          7. **FEXCore**: `FEX-*.wcp` (and `.zip`)
-          7b. **FEXCore PPA-flavor**: `FEX-*-PPA.wcp` (and `.zip`) — same FEX HEAD, built with `bylaws/llvm-mingw 20250920` and the calibrated PPA recipe (Release + C-only debug info, `//fex-emu/HostThunks` baked, `versionCode=0`, `description="FEXCore Release from PPA"`). Calibrated to land within −0.16% of the upstream PPA wcp.
-          8. **VKD3D-Proton (Std)**: `VKD3D-Proton-${VKD3D_VERSION}.wcp` (and `.zip`)
-          9. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-${VKD3D_ARM64EC_VERSION}.wcp` (and `.zip`)
-          10. **DXVK**: `dxvk-gplasync-*.wcp` (and `.zip`)
-          11. **DXVK (ARM64EC)**: `DXVK-ARM64EC-*.wcp` (and `.zip`)
-          12. **Turnip GPU Driver**: `Turnip-v*.zip` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL
+          1. **Box64 Native**: \`box64-*.wcp\` (and \`.zip\`)
+          2. **Box64 Bionic**: \`box64-bionic-*.wcp\` (and \`.zip\`)
+          3. **WOWBox64**: \`WOWBox64-*.wcp\` (and \`.zip\`)
+          4. **Box64 Hybrid Native**: \`Box64-Hybrid-Native-*.wcp\` (and \`.zip\`)
+          5. **Box64 Hybrid Bionic**: \`Box64-Hybrid-Bionic-*.wcp\` (and \`.zip\`)
+          6. **WOWBox64 Hybrid**: \`WOWBox64-Hybrid-*.wcp\` (and \`.zip\`)
+          7. **FEXCore**: \`FEX-*.wcp\` (and \`.zip\`)
+          7b. **FEXCore PPA-flavor**: \`FEX-*-PPA.wcp\` (and \`.zip\`) — same FEX HEAD, built with \`bylaws/llvm-mingw 20250920\` and the calibrated PPA recipe (Release + C-only debug info, \`//fex-emu/HostThunks\` baked, \`versionCode=0\`, \`description="FEXCore Release from PPA"\`). Calibrated to land within −0.16% of the upstream PPA wcp.
+          8. **VKD3D-Proton (Std)**: \`VKD3D-Proton-${VKD3D_VERSION}.wcp\` (and \`.zip\`)
+          9. **VKD3D-Proton (ARM64EC)**: \`VKD3D-Proton-${VKD3D_ARM64EC_VERSION}.wcp\` (and \`.zip\`)
+          10. **DXVK**: \`dxvk-gplasync-*.wcp\` (and \`.zip\`)
+          11. **DXVK (ARM64EC)**: \`DXVK-ARM64EC-*.wcp\` (and \`.zip\`)
+          12. **Turnip GPU Driver**: \`Turnip-v*.zip\` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL
 
           **The .wcp files are packaged for use with Winlator**
           **The .zip files are packaged for manual injection with Gamehub**
