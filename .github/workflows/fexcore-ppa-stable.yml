@@ -238,19 +238,56 @@ jobs:
           body: |
             ### FEXCore PPA-flavor Stable: `${{ needs.build-fex-ppa.outputs.tag }}`
 
-            Reproduces the actual fex-emu-wine PPA build flavor of this tag. The
-            FEX C++ JIT code is Release-optimised with no debug info; only the C
-            runtime support files (Musl CRT, softfloat, cephes 128-bit, rpmalloc,
-            xxhash, tiny-json) carry DWARF debug info — exactly matching what's
-            in the upstream PPA wcp. Also bakes `//fex-emu/HostThunks` instead of
-            the Winlator-style install path.
+            A pixel-perfect reproduction of the **fex-emu-wine PPA** build flavor
+            for stable tag [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }})
+            (commit [`${{ needs.build-fex-ppa.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex-ppa.outputs.commit_full }})).
 
-            | Property | Value |
-            | :--- | :--- |
-            | **Source tag** | [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }}) |
-            | **Commit** | [`${{ needs.build-fex-ppa.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex-ppa.outputs.commit_full }}) |
-            | **Build type** | `Release` + `CFLAGS=-g` (debug info only for C files) |
-            | **HostThunks path** | `//fex-emu/HostThunks` |
+            #### What's special about the "PPA flavor"?
+
+            The Launchpad PPA (`ppa:fex-emu/fex` → `fex-emu-wine` package) ships
+            a wcp with a build configuration that differs from FEX upstream's
+            own GitHub Actions wine_build workflow:
+
+            | Trait | This wcp / Original PPA wcp | Stripped nightly wcp |
+            | :--- | :--- | :--- |
+            | HostThunks path baked in | `//fex-emu/HostThunks` | `/usr/lib/wine/aarch64-windows/fex-emu/HostThunks` |
+            | DWARF debug sections | **Present** | None (stripped) |
+            | DWARF coverage | **Only C runtime helpers** (Musl CRT, softfloat, cephes, rpmalloc, xxhash, tiny-json) — ~88 CUs, 0 C++ | n/a |
+            | FEX C++ JIT code | Release-optimised, no debug info | Release-optimised, no debug info |
+            | Approx DLL size | ~5 MB each | ~3.6 MB each |
+
+            #### Build recipe
+
+            ```cmake
+            -DCMAKE_BUILD_TYPE=Release
+            -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"   # debug info only for C
+            -DCMAKE_INSTALL_PREFIX=/                     # bakes "//fex-emu/HostThunks"
+            -DCMAKE_INSTALL_LIBDIR=/
+            -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False
+            ```
+
+            DLLs taken straight from `build-${triple}/Bin/` — no `llvm-strip`,
+            no `ninja install` (CMake refuses the `//share/...` paths under
+            DESTDIR).
+
+            #### Why ship this flavor at all?
+
+            You get crash-grade backtraces with file:line if something explodes
+            inside the C math/runtime helpers (numerically-suspect zone), without
+            paying the size cost of full DWARF on the C++ JIT (which would
+            balloon the wcp from ~5 MB to ~37 MB for no practical debugging
+            benefit — those code paths are mature).
+
+            #### How we discovered the recipe
+
+            `llvm-dwarfdump` on the original `FEXcore-2604-PPA.wcp` revealed:
+            - `DW_AT_comp_dir` = `/usr/src/fex-emu-wine-2604~q/build_wow64`
+            - `DW_AT_producer` = clang from `bylaws/llvm-project`
+            - `DW_AT_language` = `DW_LANG_C11` on every CU
+            - 88 compile units, **all `.c` files**, none from FEX's C++ codebase
+
+            That language-and-file pattern is only possible if `-g` was passed
+            to the C compiler but not to C++ — i.e. `CFLAGS=-g` on Release mode.
 
             ### Files
             - `FEXCore-*-PPA.wcp` — Winlator component package
