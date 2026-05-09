@@ -1,10 +1,17 @@
 name: FEXCore PPA-flavor Stable
 
-# Builds a "PPA-flavor" wcp of a FEX-Emu stable tag (default FEX-2605):
-#   - CMAKE_BUILD_TYPE=RelWithDebInfo  (keeps DWARF .debug_* sections)
-#   - No llvm-strip step                (preserves symbol table + debug info)
+# Builds a "PPA-flavor" wcp of a FEX-Emu stable tag (default FEX-2605),
+# matching the actual fex-emu-wine PPA build flavor as discovered by
+# inspecting DWARF metadata on the PPA wcp:
+#   - CMAKE_BUILD_TYPE=Release          (Release-optimised C++ — no debug info)
+#   - CMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g"
+#                                        (debug info ONLY for C files —
+#                                         Musl CRT, softfloat, cephes, rpmalloc,
+#                                         xxhash, tiny-json. The PPA wcp had
+#                                         88 CUs, all .c, no C++.)
+#   - No llvm-strip step                (preserves the C-file debug info)
 #   - CMAKE_INSTALL_LIBDIR=/            (bakes "//fex-emu/HostThunks" path,
-#                                        matching FEX-Emu's Launchpad PPA build)
+#                                        matching the PPA install layout)
 #   - profile.json mirrors PPA byte-for-byte
 #     (versionName="2605", versionCode=0, no author,
 #      description="FEXCore Release from PPA")
@@ -100,7 +107,10 @@ jobs:
 
             rm -rf "$build_dir" && mkdir "$build_dir" && cd "$build_dir"
             # Differences vs nightly workflow:
-            #   - RelWithDebInfo (was Release)        -> emits DWARF debug sections
+            #   - Release + CFLAGS_RELEASE adds "-g"  -> debug info only for C
+            #     files (Musl CRT, softfloat, cephes, rpmalloc, xxhash,
+            #     tiny-json). C++ stays Release. This is what the PPA wcp
+            #     actually does — confirmed via DWARF inspection of FEX-2604-PPA.
             #   - INSTALL_LIBDIR=/                    -> bakes "//fex-emu/HostThunks"
             #     (matches the FEX Launchpad PPA build; nightly bakes
             #      /usr/lib/wine/aarch64-windows/fex-emu/HostThunks)
@@ -108,7 +118,8 @@ jobs:
             #     resulting "//share/fex-emu/AppConfig" path under DESTDIR as a
             #     network path. The DLL is grabbed directly from build/Bin/.
             cmake -G Ninja -Wno-dev \
-              -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+              -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG -g" \
               -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
               -DMINGW_TRIPLE="${triple}-w64-mingw32" \
               -DCMAKE_INSTALL_PREFIX=/ \
@@ -227,17 +238,18 @@ jobs:
           body: |
             ### FEXCore PPA-flavor Stable: `${{ needs.build-fex-ppa.outputs.tag }}`
 
-            Reproduces FEX-Emu's Launchpad PPA build of this tag — same FEX commit
-            as the regular nightly wcp, but built with `RelWithDebInfo` and **not
-            stripped**, so DWARF debug sections and the full symbol table are
-            retained. Also bakes `//fex-emu/HostThunks` instead of the
-            Winlator-style install path.
+            Reproduces the actual fex-emu-wine PPA build flavor of this tag. The
+            FEX C++ JIT code is Release-optimised with no debug info; only the C
+            runtime support files (Musl CRT, softfloat, cephes 128-bit, rpmalloc,
+            xxhash, tiny-json) carry DWARF debug info — exactly matching what's
+            in the upstream PPA wcp. Also bakes `//fex-emu/HostThunks` instead of
+            the Winlator-style install path.
 
             | Property | Value |
             | :--- | :--- |
             | **Source tag** | [`${{ needs.build-fex-ppa.outputs.tag }}`](https://github.com/FEX-Emu/FEX/releases/tag/${{ needs.build-fex-ppa.outputs.tag }}) |
             | **Commit** | [`${{ needs.build-fex-ppa.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex-ppa.outputs.commit_full }}) |
-            | **Build type** | `RelWithDebInfo` (debug info preserved) |
+            | **Build type** | `Release` + `CFLAGS=-g` (debug info only for C files) |
             | **HostThunks path** | `//fex-emu/HostThunks` |
 
             ### Files
