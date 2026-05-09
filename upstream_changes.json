@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-09T19:51:49Z",
+  "triggered_at": "2026-05-09T21:35:39Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "56cdd9f",
-      "new": "027c7e9",
-      "full": "027c7e9c05951f1a6188a2452e756403ed12eacf",
-      "msg": "[RV64_DYNAREC] Refined some !fastnan handling (#3838)",
-      "date": "2026-05-09T19:02:16Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "2097f56",
-      "new": "6e9b504",
-      "full": "6e9b5047218f6a9e720730140cb97c9abd8ed697",
-      "msg": "[d3d9] Fix PSShared BufferType value",
-      "date": "2026-05-09T19:09:30Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3e1f06b",
+      "new": "1538621",
+      "full": "1538621f4650c11108bd1eae52b7612df139068a",
+      "msg": "tu: Disable storage image support for depth/stencil.",
+      "date": "2026-05-09T13:56:44.000-07:00"
     }
   ]
 }
