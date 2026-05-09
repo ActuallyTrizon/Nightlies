@@ -130,6 +130,7 @@ jobs:
               -DCMAKE_INSTALL_LIBDIR=/ \
               -DENABLE_JEMALLOC_GLIBC_ALLOC=False \
               -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False \
+              -DTUNE_ARCH=generic -DTUNE_CPU=none \
               ..
             ninja -j 2
             cd ..
