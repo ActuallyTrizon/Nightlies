@@ -96,7 +96,6 @@ jobs:
 
           build_arch() {
             local triple="$1"
-            local dest="$2"
             local build_dir="build-${triple}"
 
             rm -rf "$build_dir" && mkdir "$build_dir" && cd "$build_dir"
@@ -105,6 +104,9 @@ jobs:
             #   - INSTALL_LIBDIR=/                    -> bakes "//fex-emu/HostThunks"
             #     (matches the FEX Launchpad PPA build; nightly bakes
             #      /usr/lib/wine/aarch64-windows/fex-emu/HostThunks)
+            #   - we deliberately do NOT run `ninja install`: CMake rejects the
+            #     resulting "//share/fex-emu/AppConfig" path under DESTDIR as a
+            #     network path. The DLL is grabbed directly from build/Bin/.
             cmake -G Ninja -Wno-dev \
               -DCMAKE_BUILD_TYPE=RelWithDebInfo \
               -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/toolchain_mingw.cmake \
@@ -115,18 +117,21 @@ jobs:
               -DENABLE_LTO=False -DENABLE_ASSERTIONS=False -DBUILD_TESTING=False \
               ..
             ninja -j 2
-            DESTDIR="$dest" ninja install
             cd ..
           }
 
-          build_arch "arm64ec" "../../stage-ec"
-          build_arch "aarch64" "../../stage-wo"
+          build_arch "arm64ec"
+          build_arch "aarch64"
 
       - name: Verify PPA-flavor traits
         run: |
           cd source
-          DLL_EC=$(find ../stage-ec -type f -name 'libarm64ecfex.dll' | head -n 1)
-          DLL_WOW=$(find ../stage-wo -type f -name 'libwow64fex.dll'  | head -n 1)
+          DLL_EC=$(find build-arm64ec/Bin -type f -name 'libarm64ecfex.dll' | head -n 1)
+          DLL_WOW=$(find build-aarch64/Bin -type f -name 'libwow64fex.dll'  | head -n 1)
+          echo "DLL_EC=$DLL_EC"
+          echo "DLL_WOW=$DLL_WOW"
+          test -f "$DLL_EC"  || (echo "FAIL: arm64ec DLL not found" && exit 1)
+          test -f "$DLL_WOW" || (echo "FAIL: wow64 DLL not found"   && exit 1)
 
           echo "=== HostThunks path baked into libwow64fex ==="
           if strings "$DLL_WOW" | grep -E '//fex-emu/HostThunks'; then
@@ -150,8 +155,8 @@ jobs:
         run: |
           rm -rf final_package && mkdir -p final_package/system32
 
-          DLL_EC=$(find stage-ec -type f -name 'libarm64ecfex.dll' | head -n 1)
-          DLL_WOW=$(find stage-wo -type f -name 'libwow64fex.dll'  | head -n 1)
+          DLL_EC=$(find source/build-arm64ec/Bin -type f -name 'libarm64ecfex.dll' | head -n 1)
+          DLL_WOW=$(find source/build-aarch64/Bin -type f -name 'libwow64fex.dll'  | head -n 1)
 
           cp "$DLL_EC"  final_package/system32/libarm64ecfex.dll
           cp "$DLL_WOW" final_package/system32/libwow64fex.dll
