@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-10T08:02:06Z",
+  "triggered_at": "2026-05-10T16:43:14Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "36003fd",
-      "new": "740d39c",
-      "full": "740d39c6d1ef6244c717441e6cf20fd0ed0a2d65",
-      "msg": "[LA64_DYNAREC] Supported fastround=2 (#3842)",
-      "date": "2026-05-10T07:14:20Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "46cd7b6",
+      "new": "d8e5061",
+      "full": "d8e50619ab3eadd041f30893f73e4d771f905f30",
+      "msg": "ci: lima farm maintenance",
+      "date": "2026-05-10T18:28:11.000+02:00"
     }
   ]
 }
