@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-10T05:56:17Z",
+  "triggered_at": "2026-05-10T08:02:06Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "027c7e9",
-      "new": "36003fd",
-      "full": "36003fd14a153e6b0dd59682dc0463252c9e95be",
-      "msg": "[LA64_DYNAREC] Refined MOVNT opcode modreg handling (#3839)",
-      "date": "2026-05-10T05:48:51Z"
+      "old": "36003fd",
+      "new": "740d39c",
+      "full": "740d39c6d1ef6244c717441e6cf20fd0ed0a2d65",
+      "msg": "[LA64_DYNAREC] Supported fastround=2 (#3842)",
+      "date": "2026-05-10T07:14:20Z"
     }
   ]
 }
