@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-09T22:34:30Z",
+  "triggered_at": "2026-05-10T02:06:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1538621",
-      "new": "b1c3e36",
-      "full": "b1c3e36fe322a7330d60d4f70c37b64aff33d723",
-      "msg": "intel/dev: Expose list of known platform names",
-      "date": "2026-05-09T22:00:54.000+00:00"
+      "old": "b1c3e36",
+      "new": "46cd7b6",
+      "full": "46cd7b6e28e457447f2179f8dbf5fcfd73363874",
+      "msg": "brw: Move brw_prog_data_init to a different file",
+      "date": "2026-05-10T00:07:15.000+00:00"
     }
   ]
 }
