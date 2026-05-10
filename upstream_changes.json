@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-10T02:06:39Z",
+  "triggered_at": "2026-05-10T05:56:17Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "b1c3e36",
-      "new": "46cd7b6",
-      "full": "46cd7b6e28e457447f2179f8dbf5fcfd73363874",
-      "msg": "brw: Move brw_prog_data_init to a different file",
-      "date": "2026-05-10T00:07:15.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "027c7e9",
+      "new": "36003fd",
+      "full": "36003fd14a153e6b0dd59682dc0463252c9e95be",
+      "msg": "[LA64_DYNAREC] Refined MOVNT opcode modreg handling (#3839)",
+      "date": "2026-05-10T05:48:51Z"
     }
   ]
 }
