@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-11T20:27:35Z",
+  "triggered_at": "2026-05-11T21:58:49Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "a04b024",
-      "new": "9be7d6d",
-      "full": "9be7d6d112da4b1dae6677c6814fbc63b26a6755",
-      "msg": "Merge pull request #5489 from neobrain/feature_better_fexbash",
-      "date": "2026-05-11T19:22:00Z"
+      "old": "9be7d6d",
+      "new": "0d72890",
+      "full": "0d728904829fc6b8550354cb34cca70ea73b7361",
+      "msg": "Merge pull request #5432 from pmatos/f64-fprem",
+      "date": "2026-05-11T21:31:31Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d8e1409",
-      "new": "7563432",
-      "full": "756343271acc7c8bb70722dc857220e40ee54316",
-      "msg": "anv: add and use a drirc option to enable FullyCovered for vkd3d",
-      "date": "2026-05-11T18:15:50.000+00:00"
+      "old": "7563432",
+      "new": "907cc49",
+      "full": "907cc49c3201170de01167a728bac0366066a6f2",
+      "msg": "brw: Calcuate divergence before brw_from_nir",
+      "date": "2026-05-11T21:03:19.000+00:00"
     }
   ]
 }
