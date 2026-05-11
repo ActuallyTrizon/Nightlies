@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-11T18:51:46Z",
+  "triggered_at": "2026-05-11T20:27:35Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "a04b024",
+      "new": "9be7d6d",
+      "full": "9be7d6d112da4b1dae6677c6814fbc63b26a6755",
+      "msg": "Merge pull request #5489 from neobrain/feature_better_fexbash",
+      "date": "2026-05-11T19:22:00Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7d63efb",
-      "new": "d8e1409",
-      "full": "d8e1409948af46cde76de50347b6d560cd434a89",
-      "msg": "ir3: don't cache driver param instructions",
-      "date": "2026-05-11T17:49:32.000+00:00"
+      "old": "d8e1409",
+      "new": "7563432",
+      "full": "756343271acc7c8bb70722dc857220e40ee54316",
+      "msg": "anv: add and use a drirc option to enable FullyCovered for vkd3d",
+      "date": "2026-05-11T18:15:50.000+00:00"
     }
   ]
 }
