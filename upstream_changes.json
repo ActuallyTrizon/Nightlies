@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-05-11T10:29:41Z",
+  "triggered_at": "2026-05-11T13:39:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "740d39c",
-      "new": "aec26f6",
-      "full": "aec26f67c3353cda25eeb4e532e619c6150add03",
-      "msg": "Fixed x87 FNSAVE/FRSTOR opcodes (#3851)",
-      "date": "2026-05-11T10:26:11Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "ce3e3de",
-      "new": "8ac3a9d",
-      "full": "8ac3a9da1d6538732e4cb177f17a0a5b9d2c4197",
-      "msg": "vkd3d: Fix subresource layer range merging",
-      "date": "2026-05-11T10:04:30Z"
+      "old": "aec26f6",
+      "new": "cf04087",
+      "full": "cf040876beda6fbcaaa423f6b3a271df91d240c3",
+      "msg": "Add strict EVEX dispatch for AVX512VL forms backed by existing AVX handlers (#38",
+      "date": "2026-05-11T12:36:23Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d8e5061",
-      "new": "2182160",
-      "full": "21821603709a9b9e9d51040060e9f3444e8d3fe7",
-      "msg": "kk: Enable remaining subgroup operations",
-      "date": "2026-05-11T09:50:28.000+00:00"
+      "old": "2182160",
+      "new": "5e698f8",
+      "full": "5e698f8369706acf36e6f2c298296a517732ab99",
+      "msg": "r300: drop TEX2/TXB2/TXL2 dead path from ntr",
+      "date": "2026-05-11T12:30:04.000+00:00"
     }
   ]
 }
