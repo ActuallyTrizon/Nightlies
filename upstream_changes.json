@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-12T16:18:20Z",
+  "triggered_at": "2026-05-12T18:51:17Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bc84149",
-      "new": "6e5bfc6",
-      "full": "6e5bfc678d9c37fbccbc056a859adb22ea6b1fd9",
-      "msg": "nvk: Store available and timestamps packed together",
-      "date": "2026-05-12T15:26:54.000+00:00"
+      "old": "6e5bfc6",
+      "new": "ee64cb2",
+      "full": "ee64cb2763df65ad7096ad8c5e921d4146762750",
+      "msg": "aco: add tests for cube txd to tex opt",
+      "date": "2026-05-12T18:17:22.000+00:00"
     }
   ]
 }
