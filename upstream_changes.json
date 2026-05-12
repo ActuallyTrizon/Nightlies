@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-11T21:58:49Z",
+  "triggered_at": "2026-05-12T08:43:22Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9be7d6d",
-      "new": "0d72890",
-      "full": "0d728904829fc6b8550354cb34cca70ea73b7361",
-      "msg": "Merge pull request #5432 from pmatos/f64-fprem",
-      "date": "2026-05-11T21:31:31Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cf04087",
+      "new": "ce3af2b",
+      "full": "ce3af2bd7a19ef9dfe4fc62a9b435f88199d242e",
+      "msg": "[INTERP][DYNAREC] Fixed XSAVE/XRSTOR opcodes (#3849)",
+      "date": "2026-05-12T08:13:02Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7563432",
-      "new": "907cc49",
-      "full": "907cc49c3201170de01167a728bac0366066a6f2",
-      "msg": "brw: Calcuate divergence before brw_from_nir",
-      "date": "2026-05-11T21:03:19.000+00:00"
+      "old": "907cc49",
+      "new": "975ae01",
+      "full": "975ae012087a74491c75972583ab6d3197566b80",
+      "msg": "spirv: preserve the explicit stride for untyped pointers with matrices",
+      "date": "2026-05-12T06:15:45.000+00:00"
     }
   ]
 }
