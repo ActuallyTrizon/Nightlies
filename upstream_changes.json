@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-12T18:51:17Z",
+  "triggered_at": "2026-05-12T20:26:39Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "37284f9",
+      "new": "d32df97",
+      "full": "d32df979a48492333e6546a190a9665dec777ec9",
+      "msg": "dynarec/arm64: reduce AVX dispatch and cache transform overhead (#3856)",
+      "date": "2026-05-12T18:53:14Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6e5bfc6",
-      "new": "ee64cb2",
-      "full": "ee64cb2763df65ad7096ad8c5e921d4146762750",
-      "msg": "aco: add tests for cube txd to tex opt",
-      "date": "2026-05-12T18:17:22.000+00:00"
+      "old": "ee64cb2",
+      "new": "e81a292",
+      "full": "e81a292165add2997276dd30cd65381aa49ca72d",
+      "msg": "nvk: Disable compression on Turing",
+      "date": "2026-05-12T19:19:54.000+00:00"
     }
   ]
 }
