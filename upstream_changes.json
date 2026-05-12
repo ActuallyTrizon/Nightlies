@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-12T22:05:33Z",
+  "triggered_at": "2026-05-12T23:52:27Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "0d72890",
-      "new": "50f4494",
-      "full": "50f44948750c87a71baea24aadc9346f23a1d157",
-      "msg": "Merge pull request #5490 from Sonicadvance1/152",
-      "date": "2026-05-12T20:32:04Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e81a292",
-      "new": "2f63d09",
-      "full": "2f63d09270880fc790b6c5f065e53937c11e398b",
-      "msg": "kk: Support shaderCullDistance",
-      "date": "2026-05-12T20:38:24.000+00:00"
+      "old": "2f63d09",
+      "new": "db95df3",
+      "full": "db95df3da453aa497715b7e07dfbecbcb0975afd",
+      "msg": "jay/opt_propagate: propagate undefs",
+      "date": "2026-05-12T22:46:36.000+00:00"
     }
   ]
 }
