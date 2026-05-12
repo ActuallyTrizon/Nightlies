@@ -37,15 +37,15 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260512-111856](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260512-111856) |
+| **Release** | [🔗 nightly-20260512-162538](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260512-162538) |
 | **FEXCore** | [`0d7289048`](https://github.com/FEX-Emu/FEX/commit/0d7289048) — FEX-2605-Nightly-0d7289048 |
-| **VKD3D-Proton (Std)** | [`4ed1fe7a`](https://github.com/HansKristian-Work/vkd3d-proton/commit/4ed1fe7a) |
-| **VKD3D-Proton (ARM64EC)** | [`4ed1fe7a`](https://github.com/HansKristian-Work/vkd3d-proton/commit/4ed1fe7a) |
-| **DXVK (GPLAsync)** | [`6e9b5047`](https://github.com/doitsujin/dxvk/commit/6e9b5047) |
-| **DXVK (ARM64EC)** | [`6e9b5047`](https://github.com/doitsujin/dxvk/commit/6e9b5047) |
+| **VKD3D-Proton (Std)** | [`e83dee2b`](https://github.com/HansKristian-Work/vkd3d-proton/commit/e83dee2b) |
+| **VKD3D-Proton (ARM64EC)** | [`e83dee2b`](https://github.com/HansKristian-Work/vkd3d-proton/commit/e83dee2b) |
+| **DXVK (GPLAsync)** | [`5d7cc493`](https://github.com/doitsujin/dxvk/commit/5d7cc493) |
+| **DXVK (ARM64EC)** | [`5d7cc493`](https://github.com/doitsujin/dxvk/commit/5d7cc493) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260512-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260512-r2) — Turnip v26.2.0-20260512-r2 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260512-111856) |
+| **Turnip** | [v26.2.0-20260512-r4](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260512-r4) — Turnip v26.2.0-20260512-r4 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260512-162538) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
