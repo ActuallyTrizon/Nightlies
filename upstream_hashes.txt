@@ -4,7 +4,7 @@ https://github.com/FEX-Emu/FEX: 0d728904829fc6b8550354cb34cca70ea73b7361
 https://github.com/HansKristian-Work/vkd3d-proton: 4ed1fe7a0d2a97f4d6fb6f5a46fe673cbaa303d1
 https://github.com/doitsujin/dxvk: 6e9b5047218f6a9e720730140cb97c9abd8ed697
 https://gitlab.freedesktop.org/mesa/mesa@main: 907cc49c3201170de01167a728bac0366066a6f2
-https://github.com/ValveSoftware/wine@bleeding-edge: 4531de842dd8309678977ae69e8bab4a7a62fa0a
+https://github.com/ValveSoftware/wine@bleeding-edge: eaff7e8f1057a8029f908a1aa5a3322d23d2c3b7
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
 https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: turnip_v26.3.0_r3
 https://github.com/whitebelyash/freedreno_turnip-CI@latest-release: tu_v26
