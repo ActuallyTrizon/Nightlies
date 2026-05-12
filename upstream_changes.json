@@ -1,14 +1,41 @@
 {
-  "triggered_at": "2026-05-12T11:13:37Z",
+  "triggered_at": "2026-05-12T13:58:50Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ce3af2b",
+      "new": "37284f9",
+      "full": "37284f9720c04db150fb957de4da29858a9c3e10",
+      "msg": "Added a fake x86_64 python for compitibility (#3844)",
+      "date": "2026-05-12T12:18:46Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "4ed1fe7",
+      "new": "e83dee2",
+      "full": "e83dee2b53049646b5b012236cbe41130f306fe2",
+      "msg": "vkd3d: Ensure static initializer for MSVC.",
+      "date": "2026-05-12T13:33:29Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6e9b504",
+      "new": "5d7cc49",
+      "full": "5d7cc49358dbf6e21c284a831794ddac764ed44b",
+      "msg": "[d3d9] Use roundEven in FF ubershader",
+      "date": "2026-05-12T12:29:49Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "975ae01",
-      "new": "7cbdb8e",
-      "full": "7cbdb8e667b5d099479b12e460ab97a11a69e39b",
-      "msg": "wsi/common: Report correct time domain in VkPresentTimingInfo.",
-      "date": "2026-05-12T10:24:41.000+00:00"
+      "old": "7cbdb8e",
+      "new": "bc84149",
+      "full": "bc841498f85fe40b10498072de38e40e9a96dda6",
+      "msg": "meson: update libdrm wrap",
+      "date": "2026-05-12T13:02:24.000+00:00"
     }
   ]
 }
