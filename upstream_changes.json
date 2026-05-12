@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-12T20:26:39Z",
+  "triggered_at": "2026-05-12T22:05:33Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "37284f9",
-      "new": "d32df97",
-      "full": "d32df979a48492333e6546a190a9665dec777ec9",
-      "msg": "dynarec/arm64: reduce AVX dispatch and cache transform overhead (#3856)",
-      "date": "2026-05-12T18:53:14Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "0d72890",
+      "new": "50f4494",
+      "full": "50f44948750c87a71baea24aadc9346f23a1d157",
+      "msg": "Merge pull request #5490 from Sonicadvance1/152",
+      "date": "2026-05-12T20:32:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ee64cb2",
-      "new": "e81a292",
-      "full": "e81a292165add2997276dd30cd65381aa49ca72d",
-      "msg": "nvk: Disable compression on Turing",
-      "date": "2026-05-12T19:19:54.000+00:00"
+      "old": "e81a292",
+      "new": "2f63d09",
+      "full": "2f63d09270880fc790b6c5f065e53937c11e398b",
+      "msg": "kk: Support shaderCullDistance",
+      "date": "2026-05-12T20:38:24.000+00:00"
     }
   ]
 }
