@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-13T22:58:13Z",
+  "triggered_at": "2026-05-13T23:58:01Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4463f5d",
-      "new": "a18c07d",
-      "full": "a18c07dc36f1c8462728dce2f214c1f72b00973a",
-      "msg": "anv: allocate tile sized temporary copy instead of whole size",
-      "date": "2026-05-13T22:14:20.000+00:00"
+      "old": "a18c07d",
+      "new": "f6debb8",
+      "full": "f6debb842d72203039e98900ec12fe7fd73944e6",
+      "msg": "jay: Gripe more clearly about dual source blending",
+      "date": "2026-05-13T23:03:15.000+00:00"
     }
   ]
 }
