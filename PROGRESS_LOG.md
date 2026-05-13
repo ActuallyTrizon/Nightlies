@@ -6,6 +6,23 @@
 
 ---
 
+## Session — 2026-05-13
+
+### [feat] — Surface Banners-Turnip releases in nightlies_components.json (2026-05-13)
+
+#### What changed
+- `nightlies-components-json.yml` already fetched all Banners-Turnip releases on every run, but the loop body appended only to `turnip_driver_entries[]` (→ `banners-turnip_drivers.json` + `drivers.json`) and explicitly skipped `entries[]` (→ `nightlies_components.json`), per a "catalog stays focused on emulator/translation layers" policy.
+- Flipped the policy: turnip entries now `entries.append(entry)` alongside the existing `turnip_driver_entries.append(entry)`. `banners-turnip_drivers.json` and `drivers.json` still written exactly as before (mirror workflows in kimchi/stevenmxz/mtr/white/all-in-one are unaffected).
+- Result: on next run of the watcher, `nightlies_components.json` gains a `type: "GpuDriver"` row per turnip `.zip` asset across all Banners-Turnip tags. Subsequent runs idempotently re-scan all tags, so new releases land automatically with no state file.
+
+#### Files touched
+- `.github/workflows/nightlies-components-json.yml` (lines 193-195: replaced 3-line "NOT added" comment + lone append with two appends)
+
+#### Trigger
+- Watcher runs on `workflow_run` (completed) + cron + `workflow_dispatch`. Will pick up automatically on the next trigger, or can be kicked manually with `gh workflow run nightlies-components-json.yml`.
+
+---
+
 ## Session — 2026-05-08
 
 ### [feat] — Add `.wcp.xz` Wine + Proton entries to components catalog (2026-05-08)

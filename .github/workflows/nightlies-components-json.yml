@@ -190,11 +190,9 @@ jobs:
                           "verCode":   "0",
                           "remoteUrl": asset["url"],
                       }
-                      # GpuDriver entries are NOT added to the components catalog (entries[]).
-                      # GPU drivers are tracked separately via drivers.json + banners-turnip_drivers.json
-                      # so the components catalog stays focused on emulator/translation layers.
+                      entries.append(entry)
                       turnip_driver_entries.append(entry)
-                      print(f"  Added Turnip (drivers.json only): {name} (tag {tag})")
+                      print(f"  Added Turnip: {name} (tag {tag})")
           else:
               print(f"  WARNING: could not list Banners-Turnip releases: {list_result.stderr.strip()}")
 
