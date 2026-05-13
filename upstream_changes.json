@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-13T21:18:38Z",
+  "triggered_at": "2026-05-13T22:58:13Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d1ab693",
-      "new": "4463f5d",
-      "full": "4463f5d3b0e71b6df8b391038a0748b6a0ad65ff",
-      "msg": "pan/nir/tex: use unsigned type for texture op lod_or_fetch",
-      "date": "2026-05-13T20:32:55.000+00:00"
+      "old": "4463f5d",
+      "new": "a18c07d",
+      "full": "a18c07dc36f1c8462728dce2f214c1f72b00973a",
+      "msg": "anv: allocate tile sized temporary copy instead of whole size",
+      "date": "2026-05-13T22:14:20.000+00:00"
     }
   ]
 }
