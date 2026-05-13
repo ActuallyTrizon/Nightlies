@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-05-13T14:17:37Z",
+  "triggered_at": "2026-05-13T17:09:37Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "f9fc55c",
-      "new": "3698195",
-      "full": "3698195c49ddf391c80a112552e5c1422ea7d132",
-      "msg": "Optimize ARM64 dynarec cache compilation for non-AVX paths (#3861)",
-      "date": "2026-05-13T13:01:59Z"
-    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "f4fe35c",
-      "new": "1b16db9",
-      "full": "1b16db99ac9ebab6fae1e11a0284ab3bde36ca1b",
-      "msg": "vkd3d: Add heap paths for root parameter invalidation.",
-      "date": "2026-05-13T13:10:35Z"
+      "old": "1b16db9",
+      "new": "0bd6f4f",
+      "full": "0bd6f4f62647d48e0c27d890ca8ef88500741f11",
+      "msg": "vkd3d: Use proper token types for DGC when heap is used.",
+      "date": "2026-05-13T15:09:02Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0429a73",
-      "new": "50fd51b",
-      "full": "50fd51bb9c55351f45b67537d4375098b211e1d4",
-      "msg": "pan/ci: fix gitlab rules after move",
-      "date": "2026-05-13T13:13:24.000+00:00"
+      "old": "50fd51b",
+      "new": "fb0123f",
+      "full": "fb0123f42ed099e348ca2ec7a55f20ba3570c9d4",
+      "msg": "egl/dri2: require valid render fd before advertising EGL_WL_bind_wayland_display",
+      "date": "2026-05-13T16:16:48.000+00:00"
     }
   ]
 }
