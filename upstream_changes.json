@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-13T11:56:22Z",
+  "triggered_at": "2026-05-13T14:17:37Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "6ccba47",
-      "new": "f9fc55c",
-      "full": "f9fc55cf3681f7f28d2ce598a66f12f9af7c06fe",
-      "msg": "[DYNACACHE] Added a new option to limit cache folder size (#3860)",
-      "date": "2026-05-13T10:36:09Z"
+      "old": "f9fc55c",
+      "new": "3698195",
+      "full": "3698195c49ddf391c80a112552e5c1422ea7d132",
+      "msg": "Optimize ARM64 dynarec cache compilation for non-AVX paths (#3861)",
+      "date": "2026-05-13T13:01:59Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "4d45810",
-      "new": "f4fe35c",
-      "full": "f4fe35cc63329f46cf7cd8448c01ad70a24759ba",
-      "msg": "tests: Add tests for bogus RTV formats.",
-      "date": "2026-05-13T11:44:56Z"
+      "old": "f4fe35c",
+      "new": "1b16db9",
+      "full": "1b16db99ac9ebab6fae1e11a0284ab3bde36ca1b",
+      "msg": "vkd3d: Add heap paths for root parameter invalidation.",
+      "date": "2026-05-13T13:10:35Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e3d5d13",
-      "new": "0429a73",
-      "full": "0429a73f47a1a814e75f47b1ee81a7a944af681a",
-      "msg": "mesa: fix typo in validation string",
-      "date": "2026-05-13T11:01:07.000+00:00"
+      "old": "0429a73",
+      "new": "50fd51b",
+      "full": "50fd51bb9c55351f45b67537d4375098b211e1d4",
+      "msg": "pan/ci: fix gitlab rules after move",
+      "date": "2026-05-13T13:13:24.000+00:00"
     }
   ]
 }
