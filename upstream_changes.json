@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-13T19:42:31Z",
+  "triggered_at": "2026-05-13T21:18:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fb0123f",
-      "new": "d1ab693",
-      "full": "d1ab6937bc380bc787e4eef29103fb2bc0d6306c",
-      "msg": "ir3: allow (ss) on all cat7 instructions",
-      "date": "2026-05-13T19:11:10.000+00:00"
+      "old": "d1ab693",
+      "new": "4463f5d",
+      "full": "4463f5d3b0e71b6df8b391038a0748b6a0ad65ff",
+      "msg": "pan/nir/tex: use unsigned type for texture op lod_or_fetch",
+      "date": "2026-05-13T20:32:55.000+00:00"
     }
   ]
 }
