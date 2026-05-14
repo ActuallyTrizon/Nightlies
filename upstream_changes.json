@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-13T23:58:01Z",
+  "triggered_at": "2026-05-14T03:21:45Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a18c07d",
-      "new": "f6debb8",
-      "full": "f6debb842d72203039e98900ec12fe7fd73944e6",
-      "msg": "jay: Gripe more clearly about dual source blending",
-      "date": "2026-05-13T23:03:15.000+00:00"
+      "old": "f6debb8",
+      "new": "6a7a46a",
+      "full": "6a7a46ac210e9b7aae02f80aa1781bf484bb5a4c",
+      "msg": "nir/coopmat: rename the box split variables.",
+      "date": "2026-05-14T02:15:05.000+00:00"
     }
   ]
 }
