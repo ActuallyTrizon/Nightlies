@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-14T20:23:55Z",
+  "triggered_at": "2026-05-14T22:03:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f9e7b95",
-      "new": "7f44fb2",
-      "full": "7f44fb2bf939cffd3ff10ce5574b41b536a9605d",
-      "msg": "docs/features: updates for Anv",
-      "date": "2026-05-14T18:44:16.000+00:00"
+      "old": "7f44fb2",
+      "new": "3831935",
+      "full": "3831935818a7d686b55645922452b6b7c3f5e16a",
+      "msg": "nir/opt_move_to_top: add an option to exclude moving at_offset/at_sample loads",
+      "date": "2026-05-14T16:48:39.000-04:00"
     }
   ]
 }
