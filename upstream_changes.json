@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-14T06:41:04Z",
+  "triggered_at": "2026-05-14T09:28:08Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "5d7cc49",
+      "new": "60978eb",
+      "full": "60978eb94c9ae51609b155f4f7e4c7f6f2fb6105",
+      "msg": "[dxvk] Re-add workaround for failed device creation with NVX extensions",
+      "date": "2026-05-14T08:16:17Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6a7a46a",
-      "new": "76c39ac",
-      "full": "76c39acad74d106900957ee46b7920feed606034",
-      "msg": "ci: Update VK CTS to 1.4.5.3 with fixes.",
-      "date": "2026-05-14T04:22:21.000+00:00"
+      "old": "76c39ac",
+      "new": "0b6be98",
+      "full": "0b6be987cad932c2ffe13c4dfb0ca91c1e4afa64",
+      "msg": "Revert \"ci: lima farm maintenance\"",
+      "date": "2026-05-14T10:50:27.000+02:00"
     }
   ]
 }
