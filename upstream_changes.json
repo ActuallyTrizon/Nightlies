@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-14T22:03:05Z",
+  "triggered_at": "2026-05-14T23:47:32Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f44fb2",
-      "new": "3831935",
-      "full": "3831935818a7d686b55645922452b6b7c3f5e16a",
-      "msg": "nir/opt_move_to_top: add an option to exclude moving at_offset/at_sample loads",
-      "date": "2026-05-14T16:48:39.000-04:00"
+      "old": "3831935",
+      "new": "1ab8f1e",
+      "full": "1ab8f1eb00acba8dcef75a96d5418ae12079559e",
+      "msg": "nak: add more sizes to assert in bindless_image_sparse_load",
+      "date": "2026-05-15T08:51:32.000+10:00"
     }
   ]
 }
