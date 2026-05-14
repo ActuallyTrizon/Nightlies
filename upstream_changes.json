@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-14T09:28:08Z",
+  "triggered_at": "2026-05-14T11:45:12Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5d7cc49",
-      "new": "60978eb",
-      "full": "60978eb94c9ae51609b155f4f7e4c7f6f2fb6105",
-      "msg": "[dxvk] Re-add workaround for failed device creation with NVX extensions",
-      "date": "2026-05-14T08:16:17Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3698195",
+      "new": "ae6fec3",
+      "full": "ae6fec30a449955c8a819a5ce18ba083bf8a5245",
+      "msg": "[WRAPPER] Added 1 more function to wrapped libpulse",
+      "date": "2026-05-14T09:34:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "76c39ac",
-      "new": "0b6be98",
-      "full": "0b6be987cad932c2ffe13c4dfb0ca91c1e4afa64",
-      "msg": "Revert \"ci: lima farm maintenance\"",
-      "date": "2026-05-14T10:50:27.000+02:00"
+      "old": "0b6be98",
+      "new": "e9d9612",
+      "full": "e9d96125e2d6ed091fdbaa06c7c4afab32a00ddd",
+      "msg": "kk: Query device for supported sample counts",
+      "date": "2026-05-14T04:12:26.000-07:00"
     }
   ]
 }
