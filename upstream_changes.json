@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-14T16:06:01Z",
+  "triggered_at": "2026-05-14T18:29:50Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "14a97c8",
-      "new": "4938a80",
-      "full": "4938a80c32c45a1a8dec020919751b0cae86e42b",
-      "msg": "Revert \"ci: igalia farm maintenance\"",
-      "date": "2026-05-14T15:22:31.000+00:00"
+      "old": "4938a80",
+      "new": "f9e7b95",
+      "full": "f9e7b9568b0b84e6b8bfe5d44413180b58a00048",
+      "msg": "util/format: add lower-bound assert on format",
+      "date": "2026-05-14T17:46:16.000+00:00"
     }
   ]
 }
