@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-15T13:45:29Z",
+  "triggered_at": "2026-05-15T17:26:09Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "f21e4e6",
-      "new": "d275718",
-      "full": "d27571805e44fffe3f3e91b2fb68f52bb785f5d4",
-      "msg": "vkd3d: Don't risk dangling pNext pointers for OMM.",
-      "date": "2026-05-15T13:22:35Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "0be2d71",
+      "new": "f7fed3b",
+      "full": "f7fed3bdf8532db9fe70e73da3d4dc4c42374836",
+      "msg": "intel/perf: Use intel_perf_context as ralloc parent of sample buffers",
+      "date": "2026-05-15T16:32:49.000+00:00"
     }
   ]
 }
