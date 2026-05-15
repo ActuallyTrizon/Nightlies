@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-15T02:26:35Z",
+  "triggered_at": "2026-05-15T06:25:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1ab8f1e",
-      "new": "a8e567c",
-      "full": "a8e567c0b70ecbc4b6b338a041f8b3f91d030e61",
-      "msg": "nvk: enable subgroupQuadOperationsInAllStages",
-      "date": "2026-05-15T00:43:00.000+00:00"
+      "old": "a8e567c",
+      "new": "d3cfe04",
+      "full": "d3cfe04b3d0816279e95be63b50d20d83fc194de",
+      "msg": "intel: Move cmat configurations to anv_physical_device",
+      "date": "2026-05-15T05:38:49.000+00:00"
     }
   ]
 }
