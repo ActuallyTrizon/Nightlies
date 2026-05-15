@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-15T11:48:46Z",
+  "triggered_at": "2026-05-15T13:45:29Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5e472e3",
-      "new": "0a7b7d4",
-      "full": "0a7b7d4f6b6fc7f25c951855bcb5d26e8f745af3",
-      "msg": "[DYNACACHE] Try to update mtime on cache read (#3866)",
-      "date": "2026-05-15T10:19:50Z"
-    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "0bd6f4f",
-      "new": "f21e4e6",
-      "full": "f21e4e6810221bbc647e5d09b599482cd69e6b58",
-      "msg": "tests: Add exploratory test for broken table VAs.",
-      "date": "2026-05-15T10:35:07Z"
+      "old": "f21e4e6",
+      "new": "d275718",
+      "full": "d27571805e44fffe3f3e91b2fb68f52bb785f5d4",
+      "msg": "vkd3d: Don't risk dangling pNext pointers for OMM.",
+      "date": "2026-05-15T13:22:35Z"
     }
   ]
 }
