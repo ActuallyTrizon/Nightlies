@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-14T23:47:32Z",
+  "triggered_at": "2026-05-15T02:26:35Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3831935",
-      "new": "1ab8f1e",
-      "full": "1ab8f1eb00acba8dcef75a96d5418ae12079559e",
-      "msg": "nak: add more sizes to assert in bindless_image_sparse_load",
-      "date": "2026-05-15T08:51:32.000+10:00"
+      "old": "1ab8f1e",
+      "new": "a8e567c",
+      "full": "a8e567c0b70ecbc4b6b338a041f8b3f91d030e61",
+      "msg": "nvk: enable subgroupQuadOperationsInAllStages",
+      "date": "2026-05-15T00:43:00.000+00:00"
     }
   ]
 }
