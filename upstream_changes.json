@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-15T09:39:52Z",
+  "triggered_at": "2026-05-15T11:48:46Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ae6fec3",
-      "new": "5e472e3",
-      "full": "5e472e3963e1bf6a20b26ebda984d910aea51de5",
-      "msg": "[DYNACACHE] Changed default compression of dynacache to fastest",
-      "date": "2026-05-15T08:56:26Z"
+      "old": "5e472e3",
+      "new": "0a7b7d4",
+      "full": "0a7b7d4f6b6fc7f25c951855bcb5d26e8f745af3",
+      "msg": "[DYNACACHE] Try to update mtime on cache read (#3866)",
+      "date": "2026-05-15T10:19:50Z"
     },
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "d3cfe04",
-      "new": "0be2d71",
-      "full": "0be2d71ad16cf07ac5dac2d3f4cc4fbe069bacfd",
-      "msg": "nir/opt_uniform_subgroup: preserve divergence during optimization",
-      "date": "2026-05-15T08:42:18.000+00:00"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "0bd6f4f",
+      "new": "f21e4e6",
+      "full": "f21e4e6810221bbc647e5d09b599482cd69e6b58",
+      "msg": "tests: Add exploratory test for broken table VAs.",
+      "date": "2026-05-15T10:35:07Z"
     }
   ]
 }
