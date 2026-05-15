@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-15T20:53:08Z",
+  "triggered_at": "2026-05-15T23:46:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0281eb2",
-      "new": "b24a4c3",
-      "full": "b24a4c3cd0bcf649b360eca5f7614a07e457a404",
-      "msg": "anv: temporarily reenable scratch page by default",
-      "date": "2026-05-15T19:47:12.000+00:00"
+      "old": "b24a4c3",
+      "new": "bd465e7",
+      "full": "bd465e710cc8cb152844776863e753140c69d61c",
+      "msg": "Revert \"rusticl: link the C++ runtime statically\"",
+      "date": "2026-05-15T22:59:58.000+00:00"
     }
   ]
 }
