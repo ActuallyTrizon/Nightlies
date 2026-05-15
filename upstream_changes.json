@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-15T17:26:09Z",
+  "triggered_at": "2026-05-15T19:19:23Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0be2d71",
-      "new": "f7fed3b",
-      "full": "f7fed3bdf8532db9fe70e73da3d4dc4c42374836",
-      "msg": "intel/perf: Use intel_perf_context as ralloc parent of sample buffers",
-      "date": "2026-05-15T16:32:49.000+00:00"
+      "old": "f7fed3b",
+      "new": "0281eb2",
+      "full": "0281eb2e983eb163106ab251fc1987606900d065",
+      "msg": "nir/instr_set: Fix multi-slot intrinsic index equality",
+      "date": "2026-05-15T18:13:15.000+00:00"
     }
   ]
 }
