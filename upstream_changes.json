@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-15T06:25:47Z",
+  "triggered_at": "2026-05-15T09:39:52Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ae6fec3",
+      "new": "5e472e3",
+      "full": "5e472e3963e1bf6a20b26ebda984d910aea51de5",
+      "msg": "[DYNACACHE] Changed default compression of dynacache to fastest",
+      "date": "2026-05-15T08:56:26Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a8e567c",
-      "new": "d3cfe04",
-      "full": "d3cfe04b3d0816279e95be63b50d20d83fc194de",
-      "msg": "intel: Move cmat configurations to anv_physical_device",
-      "date": "2026-05-15T05:38:49.000+00:00"
+      "old": "d3cfe04",
+      "new": "0be2d71",
+      "full": "0be2d71ad16cf07ac5dac2d3f4cc4fbe069bacfd",
+      "msg": "nir/opt_uniform_subgroup: preserve divergence during optimization",
+      "date": "2026-05-15T08:42:18.000+00:00"
     }
   ]
 }
