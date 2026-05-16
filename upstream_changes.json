@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-16T02:08:35Z",
+  "triggered_at": "2026-05-16T09:22:55Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bd465e7",
-      "new": "e76abd1",
-      "full": "e76abd1e3a69a10481cc5f5a1c9c3002551f27d3",
-      "msg": "nir/opt_constant_folding: Don't fight with nir_lower_bit_size",
-      "date": "2026-05-15T23:36:25.000+00:00"
+      "old": "e76abd1",
+      "new": "f22587a",
+      "full": "f22587abc3d47ec4878df9b4347927055bff57cc",
+      "msg": "docs/ci: ignore docs.redhat.com & registry.khronos.org links",
+      "date": "2026-05-16T10:16:56.000+02:00"
     }
   ]
 }
