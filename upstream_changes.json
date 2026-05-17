@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-17T20:01:48Z",
+  "triggered_at": "2026-05-17T22:44:44Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ab9a8c6",
+      "new": "af4da43",
+      "full": "af4da43bb896dcf64ad099470d92bba5b11c9656",
+      "msg": "Merge pull request #5494 from neobrain/fix_determine_va",
+      "date": "2026-05-17T21:51:59Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3f8a083",
-      "new": "f60749f",
-      "full": "f60749ff3c4b9b9e39b8ea18212ea18df571a74c",
-      "msg": "brw: Add support for ACCESS_CAN_REORDER memory ordering",
-      "date": "2026-05-17T19:03:24.000+00:00"
+      "old": "f60749f",
+      "new": "01a36c1",
+      "full": "01a36c15405ae66e5903cf52f1f42b171d16e022",
+      "msg": "radeonsi/video: Cleanup dpb buffer",
+      "date": "2026-05-17T21:51:09.000+00:00"
     }
   ]
 }
