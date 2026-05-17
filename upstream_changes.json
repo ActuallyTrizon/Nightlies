@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-17T15:52:06Z",
+  "triggered_at": "2026-05-17T16:47:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f22587a",
-      "new": "968a13a",
-      "full": "968a13a916bf2ae292ab5ba3f94e309d3a1b0d37",
-      "msg": "llvmpipe: fix UB and incorrect value in compute caps shift",
-      "date": "2026-05-17T11:52:13.000+00:00"
+      "old": "968a13a",
+      "new": "3f8a083",
+      "full": "3f8a083f28a90bc23e0d138f87c98b8caf89dacb",
+      "msg": "intel/perf: Show type, data type and units in intel_perf_query_layout",
+      "date": "2026-05-17T16:21:08.000+00:00"
     }
   ]
 }
