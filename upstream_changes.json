@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-17T17:51:10Z",
+  "triggered_at": "2026-05-17T20:01:48Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "60978eb",
-      "new": "2bfdc80",
-      "full": "2bfdc805641f74d724ab93462aeff7c510873333",
-      "msg": "[d3d9] Remove dead argument from fog calculation in VS FF",
-      "date": "2026-05-17T17:31:31Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3f8a083",
+      "new": "f60749f",
+      "full": "f60749ff3c4b9b9e39b8ea18212ea18df571a74c",
+      "msg": "brw: Add support for ACCESS_CAN_REORDER memory ordering",
+      "date": "2026-05-17T19:03:24.000+00:00"
     }
   ]
 }
