@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-16T09:22:55Z",
+  "triggered_at": "2026-05-17T15:52:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e76abd1",
-      "new": "f22587a",
-      "full": "f22587abc3d47ec4878df9b4347927055bff57cc",
-      "msg": "docs/ci: ignore docs.redhat.com & registry.khronos.org links",
-      "date": "2026-05-16T10:16:56.000+02:00"
+      "old": "f22587a",
+      "new": "968a13a",
+      "full": "968a13a916bf2ae292ab5ba3f94e309d3a1b0d37",
+      "msg": "llvmpipe: fix UB and incorrect value in compute caps shift",
+      "date": "2026-05-17T11:52:13.000+00:00"
     }
   ]
 }
