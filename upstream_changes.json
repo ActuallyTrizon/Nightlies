@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-17T16:47:39Z",
+  "triggered_at": "2026-05-17T17:51:10Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "968a13a",
-      "new": "3f8a083",
-      "full": "3f8a083f28a90bc23e0d138f87c98b8caf89dacb",
-      "msg": "intel/perf: Show type, data type and units in intel_perf_query_layout",
-      "date": "2026-05-17T16:21:08.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "60978eb",
+      "new": "2bfdc80",
+      "full": "2bfdc805641f74d724ab93462aeff7c510873333",
+      "msg": "[d3d9] Remove dead argument from fog calculation in VS FF",
+      "date": "2026-05-17T17:31:31Z"
     }
   ]
 }
