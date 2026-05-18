@@ -37,15 +37,15 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260518-120511](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260518-120511) |
+| **Release** | [🔗 nightly-20260518-143630](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260518-143630) |
 | **FEXCore** | [`af4da43bb`](https://github.com/FEX-Emu/FEX/commit/af4da43bb) — FEX-2605-Nightly-af4da43bb |
-| **VKD3D-Proton (Std)** | [`5da4f239`](https://github.com/HansKristian-Work/vkd3d-proton/commit/5da4f239) |
-| **VKD3D-Proton (ARM64EC)** | [`5da4f239`](https://github.com/HansKristian-Work/vkd3d-proton/commit/5da4f239) |
+| **VKD3D-Proton (Std)** | [`fce46882`](https://github.com/HansKristian-Work/vkd3d-proton/commit/fce46882) |
+| **VKD3D-Proton (ARM64EC)** | [`fce46882`](https://github.com/HansKristian-Work/vkd3d-proton/commit/fce46882) |
 | **DXVK (GPLAsync)** | [`e7ec5be5`](https://github.com/doitsujin/dxvk/commit/e7ec5be5) |
 | **DXVK (ARM64EC)** | [`e7ec5be5`](https://github.com/doitsujin/dxvk/commit/e7ec5be5) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260518-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260518-r2) — Turnip v26.2.0-20260518-r2 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260518-120511) |
+| **Turnip** | [v26.2.0-20260518-r3](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260518-r3) — Turnip v26.2.0-20260518-r3 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260518-143630) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
