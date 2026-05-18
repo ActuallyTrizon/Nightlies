@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-18T19:26:21Z",
+  "triggered_at": "2026-05-18T21:03:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6b8d8a7",
-      "new": "4cd9ccd",
-      "full": "4cd9ccd943d3312f312359b568f9d9324766cc8d",
-      "msg": "gfxstream: allow VK_GOOGLE_display_timing",
-      "date": "2026-05-18T18:54:08.000+00:00"
+      "old": "4cd9ccd",
+      "new": "28f3f25",
+      "full": "28f3f2569d2a57f8b746eede6c33ea3f08898cb3",
+      "msg": "meson/intel: only build libblorp_elk when requested",
+      "date": "2026-05-18T19:09:03.000+00:00"
     }
   ]
 }
