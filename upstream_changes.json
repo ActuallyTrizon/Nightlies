@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-18T14:31:33Z",
+  "triggered_at": "2026-05-18T17:26:13Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "5da4f23",
-      "new": "fce4688",
-      "full": "fce468824aaecd27ada38812a1de94e1990f04b5",
-      "msg": "vkd3d: Add proper path for ClearUAV for heap.",
-      "date": "2026-05-18T13:44:14Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e47ed60",
-      "new": "4542129",
-      "full": "45421292f16db43c5dd19e0b01fd8fc597a1b3c4",
-      "msg": "ac/nir/lower_tex_coord: update cursor when moving wqm coordinates",
-      "date": "2026-05-18T14:03:20.000+00:00"
+      "old": "4542129",
+      "new": "6b8d8a7",
+      "full": "6b8d8a70de59993bb6e420a8d0e5568a8d4123b6",
+      "msg": "pan/decode: Support INTERLEAVED_64K Z/S target dumps",
+      "date": "2026-05-18T16:44:14.000+00:00"
     }
   ]
 }
