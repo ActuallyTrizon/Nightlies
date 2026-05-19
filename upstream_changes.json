@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-19T18:54:24Z",
+  "triggered_at": "2026-05-19T20:25:39Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "e4daea4",
+      "new": "f66368b",
+      "full": "f66368b19194dfb1c65d0cb157ebec74e86a82c7",
+      "msg": "Merge pull request #5505 from fixedcat/main",
+      "date": "2026-05-19T19:28:23Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ec40c95",
-      "new": "2868b57",
-      "full": "2868b57abe8d0d9f54fa3ed2537faa199279e30d",
-      "msg": "ci/windows: add dEQP-VK.glsl.builtin.precision_double.mix.compute.vec3 fail",
-      "date": "2026-05-19T18:13:42.000+00:00"
+      "old": "2868b57",
+      "new": "180d8cb",
+      "full": "180d8cb5448c6958093477274c7e2dbe40fface6",
+      "msg": "intel/brw: Fix nir_intrinsic_load_inline_data_intel register offset calculation",
+      "date": "2026-05-19T19:30:18.000+00:00"
     }
   ]
 }
