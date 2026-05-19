@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-05-19T07:37:41Z",
+  "triggered_at": "2026-05-19T10:54:13Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "27324de",
-      "new": "d4c80d9",
-      "full": "d4c80d9094aa1ae19886fd4279af2a0a9ae841f4",
-      "msg": "Merge pull request #5422 from Sonicadvance1/138",
-      "date": "2026-05-19T05:11:04Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "129fc83",
+      "new": "024717c",
+      "full": "024717cb03356eb4e498ddf316bb442c23eaacc8",
+      "msg": "[DYNACACHE] Skipped stale blocks when reload cache (#3872)",
+      "date": "2026-05-19T10:10:01Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "fce4688",
+      "new": "2d3bb8c",
+      "full": "2d3bb8cfa18343c8afb9c04a8ff34807906895a5",
+      "msg": "vkd3d: Add heap meta paths for sampler feedback.",
+      "date": "2026-05-19T08:00:59Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "52d57d9",
-      "new": "2d44e1b",
-      "full": "2d44e1b9072ee4ce98b534cfd48cb16cd9e915a7",
-      "msg": "nir/tests: use ASSERT_EQ instead of ASSERT_TRUE in nir_opt_varyings tests",
-      "date": "2026-05-19T04:26:55.000+00:00"
+      "old": "2d44e1b",
+      "new": "a554dd0",
+      "full": "a554dd031a5b212b6e2a374b0b4873581b67d3f6",
+      "msg": "Revert \"ci/build: restore riscv64 build as it works again\"",
+      "date": "2026-05-19T11:34:42.000+02:00"
     }
   ]
 }
