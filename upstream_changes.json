@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-19T20:25:39Z",
+  "triggered_at": "2026-05-19T22:08:14Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "e4daea4",
-      "new": "f66368b",
-      "full": "f66368b19194dfb1c65d0cb157ebec74e86a82c7",
-      "msg": "Merge pull request #5505 from fixedcat/main",
-      "date": "2026-05-19T19:28:23Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2868b57",
-      "new": "180d8cb",
-      "full": "180d8cb5448c6958093477274c7e2dbe40fface6",
-      "msg": "intel/brw: Fix nir_intrinsic_load_inline_data_intel register offset calculation",
-      "date": "2026-05-19T19:30:18.000+00:00"
+      "old": "180d8cb",
+      "new": "617da94",
+      "full": "617da94f822fe3e5910f2c6f9700d6ce47c7721e",
+      "msg": "u_trace: Lazy init ut->linear_alloc",
+      "date": "2026-05-19T20:27:59.000+00:00"
     }
   ]
 }
