@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-19T16:46:06Z",
+  "triggered_at": "2026-05-19T18:54:24Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d4c80d9",
-      "new": "e4daea4",
-      "full": "e4daea406ed41cd0857e7413c598905ac8e4cf2d",
-      "msg": "Merge pull request #5503 from Sonicadvance1/154",
-      "date": "2026-05-19T16:22:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b108319",
-      "new": "ec40c95",
-      "full": "ec40c9538565ab2eb373d72e454f507d85f7d267",
-      "msg": "anv: Add transfer_src usage for ANDROID_external_format_resolve",
-      "date": "2026-05-19T15:41:52.000+00:00"
+      "old": "ec40c95",
+      "new": "2868b57",
+      "full": "2868b57abe8d0d9f54fa3ed2537faa199279e30d",
+      "msg": "ci/windows: add dEQP-VK.glsl.builtin.precision_double.mix.compute.vec3 fail",
+      "date": "2026-05-19T18:13:42.000+00:00"
     }
   ]
 }
