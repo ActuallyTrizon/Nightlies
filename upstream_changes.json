@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-19T13:51:40Z",
+  "triggered_at": "2026-05-19T16:46:06Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "2d3bb8c",
-      "new": "1a22711",
-      "full": "1a227114e88fafbbed7fbadff7b30570462e4621",
-      "msg": "vkd3d: Fix const-correctness on some inline helpers.",
-      "date": "2026-05-19T13:45:56Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "d4c80d9",
+      "new": "e4daea4",
+      "full": "e4daea406ed41cd0857e7413c598905ac8e4cf2d",
+      "msg": "Merge pull request #5503 from Sonicadvance1/154",
+      "date": "2026-05-19T16:22:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a554dd0",
-      "new": "b108319",
-      "full": "b1083190d02cb244718816dded908088959d8054",
-      "msg": "radv: enable radv_wait_for_vm_map_updates for Forza Horizon 6",
-      "date": "2026-05-19T12:33:10.000+00:00"
+      "old": "b108319",
+      "new": "ec40c95",
+      "full": "ec40c9538565ab2eb373d72e454f507d85f7d267",
+      "msg": "anv: Add transfer_src usage for ANDROID_external_format_resolve",
+      "date": "2026-05-19T15:41:52.000+00:00"
     }
   ]
 }
