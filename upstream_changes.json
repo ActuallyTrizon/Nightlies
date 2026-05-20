@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-19T23:55:57Z",
+  "triggered_at": "2026-05-20T02:40:17Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f66368b",
+      "new": "c98cef0",
+      "full": "c98cef0da152bc08574fd9c3d05d9a121ae96d51",
+      "msg": "Merge pull request #5506 from Sonicadvance1/154",
+      "date": "2026-05-20T02:29:11Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "617da94",
-      "new": "3d71e65",
-      "full": "3d71e6553ed8ff5fc02e2c4a6681b72a037e7ae0",
-      "msg": "wsi: correct the erroneous assertion",
-      "date": "2026-05-19T23:13:56.000+00:00"
+      "old": "3d71e65",
+      "new": "26752e0",
+      "full": "26752e00b516c154929115ea459f00d1ef15fe74",
+      "msg": "gfxstream: remove android conditioning for sampler extensions",
+      "date": "2026-05-19T23:40:54.000+00:00"
     }
   ]
 }
