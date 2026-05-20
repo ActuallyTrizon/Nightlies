@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-20T16:47:09Z",
+  "triggered_at": "2026-05-20T19:14:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5bbde67",
-      "new": "8b4ea1d",
-      "full": "8b4ea1d6581293a794e2528f824871cf90921de3",
-      "msg": "pan/kmod: Don't pass drmVersionPtr objects around",
-      "date": "2026-05-20T16:34:44.000+02:00"
+      "old": "8b4ea1d",
+      "new": "65b7513",
+      "full": "65b75137b4e463f76af2b8c89cf1c09a724baa04",
+      "msg": "zink: disable implicit sync handling for qcom proprietary",
+      "date": "2026-05-20T17:58:16.000+00:00"
     }
   ]
 }
