@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-20T13:32:44Z",
+  "triggered_at": "2026-05-20T16:47:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "326d7ea",
-      "new": "5bbde67",
-      "full": "5bbde670dd6414882b88dae404f73dd947cc0755",
-      "msg": "panvk/csf: Allow 256 layers per tiler descriptor on v14+",
-      "date": "2026-05-20T12:15:12.000+00:00"
+      "old": "5bbde67",
+      "new": "8b4ea1d",
+      "full": "8b4ea1d6581293a794e2528f824871cf90921de3",
+      "msg": "pan/kmod: Don't pass drmVersionPtr objects around",
+      "date": "2026-05-20T16:34:44.000+02:00"
     }
   ]
 }
