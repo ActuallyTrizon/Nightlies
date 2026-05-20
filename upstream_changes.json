@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-05-20T19:14:53Z",
+  "triggered_at": "2026-05-20T21:44:08Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "036978b",
+      "new": "ee42c71",
+      "full": "ee42c716c8bb6a1be06484407daa7e735aac6b63",
+      "msg": "[DYNAREC] Save temporary registers on the stack before calling PrintTrace (#3876",
+      "date": "2026-05-20T19:40:34Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "e7ec5be",
+      "new": "061202c",
+      "full": "061202cff8fa16418a5fc9f05673fca094419835",
+      "msg": "[d3d9] Hook up new compiler",
+      "date": "2026-05-20T21:09:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8b4ea1d",
-      "new": "65b7513",
-      "full": "65b75137b4e463f76af2b8c89cf1c09a724baa04",
-      "msg": "zink: disable implicit sync handling for qcom proprietary",
-      "date": "2026-05-20T17:58:16.000+00:00"
+      "old": "65b7513",
+      "new": "c775868",
+      "full": "c7758681f39f6fd7491ecb32903cddfe86360cbd",
+      "msg": "zink: rework custom sample locations",
+      "date": "2026-05-20T21:15:48.000+00:00"
     }
   ]
 }
