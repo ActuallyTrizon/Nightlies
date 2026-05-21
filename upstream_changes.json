@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-21T10:32:59Z",
+  "triggered_at": "2026-05-21T13:56:51Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ee42c71",
-      "new": "6f30f20",
-      "full": "6f30f20a4748762b46d0e923d56aa93ffaa2f010",
-      "msg": "[CMAKE] Updated minimum cmake version to be 3.19 (#3878)",
-      "date": "2026-05-21T07:57:24Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ca88f85",
-      "new": "b1c7222",
-      "full": "b1c72223af95281c35e95c70bc7111e9223e2719",
-      "msg": "kk: Support VK_KHR_unified_image_layouts",
-      "date": "2026-05-21T09:59:38.000+00:00"
+      "old": "b1c7222",
+      "new": "91cf0a6",
+      "full": "91cf0a6e6d2dc522bc3e5b2c726d455669b88afc",
+      "msg": "radv: use the new generation script for drirc",
+      "date": "2026-05-21T12:57:43.000+00:00"
     }
   ]
 }
