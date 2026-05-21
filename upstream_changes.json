@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-21T18:54:07Z",
+  "triggered_at": "2026-05-21T20:47:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d445a95",
-      "new": "821a812",
-      "full": "821a812c7d9758f5dcaa46d9997adddbbac95f25",
-      "msg": "brw: Don't directly use regs_read/regs_written/size_read as bound for non-trivia",
-      "date": "2026-05-21T18:04:14.000+00:00"
+      "old": "821a812",
+      "new": "17f7e7f",
+      "full": "17f7e7f96bae980844c16d787155dedadd8befb2",
+      "msg": "anv: Set execution mask based on SIMD size",
+      "date": "2026-05-21T20:25:46.000+00:00"
     }
   ]
 }
