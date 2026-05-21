@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-21T22:13:12Z",
+  "triggered_at": "2026-05-21T23:53:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "17f7e7f",
-      "new": "952b984",
-      "full": "952b984ecaa95f5beef1f059f0759489cfe2f278",
-      "msg": "freedreno/common: Fix X2-90, add X2-85",
-      "date": "2026-05-21T21:23:24.000+00:00"
+      "old": "952b984",
+      "new": "3522f0f",
+      "full": "3522f0f24c98a3f9bd04ee74c7dfb9efc4675d51",
+      "msg": "llvmpipe: stub other functions inside compute shaders for ORCJIT",
+      "date": "2026-05-21T22:36:35.000+00:00"
     }
   ]
 }
