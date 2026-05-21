@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-05-21T13:56:51Z",
+  "triggered_at": "2026-05-21T16:37:12Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "6f30f20",
+      "new": "8efb1f0",
+      "full": "8efb1f09bd6142b515926e5ed4d900cdfc6b08b1",
+      "msg": "[ELFLOADER] Try to add support for R_X86_64_TLSDESC with named symbol",
+      "date": "2026-05-21T14:31:44Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "061202c",
+      "new": "8564062",
+      "full": "85640624f28d8d40ad66f2959d8422ca17a7bd99",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-21T16:30:43Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b1c7222",
-      "new": "91cf0a6",
-      "full": "91cf0a6e6d2dc522bc3e5b2c726d455669b88afc",
-      "msg": "radv: use the new generation script for drirc",
-      "date": "2026-05-21T12:57:43.000+00:00"
+      "old": "91cf0a6",
+      "new": "d445a95",
+      "full": "d445a950fd0a620a224f71af06d73ac51b86af62",
+      "msg": "docs/zink: add maint5 to the list of required extensions",
+      "date": "2026-05-21T16:08:52.000+00:00"
     }
   ]
 }
