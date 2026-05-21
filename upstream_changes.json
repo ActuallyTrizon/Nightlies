@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-21T02:33:41Z",
+  "triggered_at": "2026-05-21T10:32:59Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c98cef0",
-      "new": "bb0d142",
-      "full": "bb0d142a65d8515f13f8adf1f82c25bb35ce31e6",
-      "msg": "Merge pull request #5441 from neobrain/feature_mmap_code_cache",
-      "date": "2026-05-21T00:19:11Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ee42c71",
+      "new": "6f30f20",
+      "full": "6f30f20a4748762b46d0e923d56aa93ffaa2f010",
+      "msg": "[CMAKE] Updated minimum cmake version to be 3.19 (#3878)",
+      "date": "2026-05-21T07:57:24Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "18ba81e",
-      "new": "ca88f85",
-      "full": "ca88f851c8b3f4063c15da725d35720ba524dbba",
-      "msg": "ac/nir/lower_tex_coord: basic lower tex coord test",
-      "date": "2026-05-21T00:54:56.000+00:00"
+      "old": "ca88f85",
+      "new": "b1c7222",
+      "full": "b1c72223af95281c35e95c70bc7111e9223e2719",
+      "msg": "kk: Support VK_KHR_unified_image_layouts",
+      "date": "2026-05-21T09:59:38.000+00:00"
     }
   ]
 }
