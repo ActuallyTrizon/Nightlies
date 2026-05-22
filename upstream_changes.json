@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-22T10:18:08Z",
+  "triggered_at": "2026-05-22T13:24:40Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8efb1f0",
-      "new": "cc3f099",
-      "full": "cc3f0997dc43781bbaefeac8e2899ad431f32391",
-      "msg": "[DYNAREC] Reworked invalidate dynablocks management (#3882)",
-      "date": "2026-05-22T09:17:20Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8ee652a",
+      "new": "bd3e0d6",
+      "full": "bd3e0d65693250323cf618d869f6dea5553ce599",
+      "msg": "[d3d9] Validate SM3 bytecode in shader analysis pass",
+      "date": "2026-05-22T11:41:05Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "73382c8",
-      "new": "e46b430",
-      "full": "e46b43080bbe6f0c6aac9a748eec9712e1cb0d9e",
-      "msg": "iris: Simplify code that calls brw/jay",
-      "date": "2026-05-22T00:57:20.000-07:00"
+      "old": "e46b430",
+      "new": "998e2a7",
+      "full": "998e2a70e7d7585cb821a1a32d845ed413a3a0dc",
+      "msg": "radeonsi: Add RADEON_FLUSH_FORCE and use it to force flush",
+      "date": "2026-05-22T10:49:22.000+00:00"
     }
   ]
 }
