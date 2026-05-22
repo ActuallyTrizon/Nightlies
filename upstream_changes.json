@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-05-22T13:24:40Z",
+  "triggered_at": "2026-05-22T16:16:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cc3f099",
+      "new": "8b5cc08",
+      "full": "8b5cc0888a913d2dcb9c22afb5e7baf8fe213497",
+      "msg": "[RV64_DYNAREC] Fixed ANDNPS/ANDNPD/PANDN register reuse conflict in vector path ",
+      "date": "2026-05-22T14:41:52Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "8ee652a",
-      "new": "bd3e0d6",
-      "full": "bd3e0d65693250323cf618d869f6dea5553ce599",
-      "msg": "[d3d9] Validate SM3 bytecode in shader analysis pass",
-      "date": "2026-05-22T11:41:05Z"
+      "old": "bd3e0d6",
+      "new": "877c012",
+      "full": "877c012000d459f41af8f54b2843e7e3ad41ac8e",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-22T15:39:00Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e46b430",
-      "new": "998e2a7",
-      "full": "998e2a70e7d7585cb821a1a32d845ed413a3a0dc",
-      "msg": "radeonsi: Add RADEON_FLUSH_FORCE and use it to force flush",
-      "date": "2026-05-22T10:49:22.000+00:00"
+      "old": "998e2a7",
+      "new": "fd11e4b",
+      "full": "fd11e4b4d31adde062b9f19a8eec82f06f832f00",
+      "msg": "intel: switch shader hash to 64bit value",
+      "date": "2026-05-22T15:05:30.000+00:00"
     }
   ]
 }
