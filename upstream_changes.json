@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-21T23:53:54Z",
+  "triggered_at": "2026-05-22T02:35:22Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8564062",
+      "new": "8ee652a",
+      "full": "8ee652a9c6c8ace506a09251d811b5f7dbedf645",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-22T01:07:30Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "952b984",
-      "new": "3522f0f",
-      "full": "3522f0f24c98a3f9bd04ee74c7dfb9efc4675d51",
-      "msg": "llvmpipe: stub other functions inside compute shaders for ORCJIT",
-      "date": "2026-05-21T22:36:35.000+00:00"
+      "old": "3522f0f",
+      "new": "73382c8",
+      "full": "73382c8126356c0344b7323d7555d8e4ba7af7db",
+      "msg": "brw/rt: Update committed hit leaf type properly",
+      "date": "2026-05-22T00:47:39.000+00:00"
     }
   ]
 }
