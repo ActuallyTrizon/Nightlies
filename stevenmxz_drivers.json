@@ -1,6 +1,12 @@
 [
   {
     "type": "GpuDriver",
+    "verName": "v863.1_a7xx \u2014 v863.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_a7xx_v863.1.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "v26.2.0-R4 \u2014 Turnio_v26.2.0_R4.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R4_Turnio_v26.2.0_R4.zip"
