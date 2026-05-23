@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-23T06:07:25Z",
+  "triggered_at": "2026-05-23T08:57:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8b5cc08",
+      "new": "86ff049",
+      "full": "86ff049f6b8e0910bb536a3564b1b64659e945bd",
+      "msg": "[RV64_DYNAREC] Fixed VBLENDVPS opcode (#3887)",
+      "date": "2026-05-23T07:45:01Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d74a03a",
-      "new": "c88e30f",
-      "full": "c88e30f0e4b8e31ce82e6b6b7d5bce8e78492e65",
-      "msg": "anv, brw: Use previous shader VUE map for FS input layout when available",
-      "date": "2026-05-23T05:17:37.000+00:00"
+      "old": "c88e30f",
+      "new": "e0eefe5",
+      "full": "e0eefe5999929039480de8515c2fe26f4ad6402c",
+      "msg": "gfxstream: codegen: drop const from let-param scalar cast",
+      "date": "2026-05-23T06:54:37.000+00:00"
     }
   ]
 }
