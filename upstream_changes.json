@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-24T06:29:31Z",
+  "triggered_at": "2026-05-24T09:15:10Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "07f7aa3",
-      "new": "1240a00",
-      "full": "1240a00fa50b48c1b5e0667e2281ba25e08fbd47",
-      "msg": "Merge pull request #5522 from Sonicadvance1/160",
-      "date": "2026-05-24T02:57:53Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "86ff049",
+      "new": "e7a0dc9",
+      "full": "e7a0dc92d73e9284bb282f46fef66ce837cbc07e",
+      "msg": "[RV64_DYNAREC] Fixed SBB16/SBB32 scratch register clobbering in flag calculation",
+      "date": "2026-05-24T07:15:29Z"
     }
   ]
 }
