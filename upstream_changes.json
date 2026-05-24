@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-24T09:15:10Z",
+  "triggered_at": "2026-05-24T11:08:46Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "86ff049",
-      "new": "e7a0dc9",
-      "full": "e7a0dc92d73e9284bb282f46fef66ce837cbc07e",
-      "msg": "[RV64_DYNAREC] Fixed SBB16/SBB32 scratch register clobbering in flag calculation",
-      "date": "2026-05-24T07:15:29Z"
+      "old": "e7a0dc9",
+      "new": "8707b8d",
+      "full": "8707b8d1edc8cc4c43b3566dc210cb3750d54c88",
+      "msg": "[DYNAREC] Optimized bigblock add_next performance with hash table (#3890)",
+      "date": "2026-05-24T10:14:54Z"
     }
   ]
 }
