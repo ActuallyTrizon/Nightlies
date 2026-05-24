@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-23T13:05:00Z",
+  "triggered_at": "2026-05-24T06:29:31Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "877c012",
-      "new": "02bcc98",
-      "full": "02bcc98cc45ffc83a318dc2380548ffb6dae3ecf",
-      "msg": "[dxvk] Also handle point size built-in in convertBuiltIn",
-      "date": "2026-05-23T10:47:35Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "07f7aa3",
+      "new": "1240a00",
+      "full": "1240a00fa50b48c1b5e0667e2281ba25e08fbd47",
+      "msg": "Merge pull request #5522 from Sonicadvance1/160",
+      "date": "2026-05-24T02:57:53Z"
     }
   ]
 }
