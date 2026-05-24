@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-24T11:08:46Z",
+  "triggered_at": "2026-05-24T13:03:49Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "e7a0dc9",
-      "new": "8707b8d",
-      "full": "8707b8d1edc8cc4c43b3566dc210cb3750d54c88",
-      "msg": "[DYNAREC] Optimized bigblock add_next performance with hash table (#3890)",
-      "date": "2026-05-24T10:14:54Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "e0eefe5",
+      "new": "b8fa4fd",
+      "full": "b8fa4fd2581166e5fcbaef7471dad11556572d4f",
+      "msg": "nak: Allow YY swizzle for SM20 and SM32 asserts",
+      "date": "2026-05-24T12:48:01.000+02:00"
     }
   ]
 }
