@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-25T20:57:20Z",
+  "triggered_at": "2026-05-25T23:57:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e824c30",
-      "new": "7f2130c",
-      "full": "7f2130c86e17f936be66fa6ad8eda85746b5fc6b",
-      "msg": "nir/opt_algebraic: add more ffract/ffloor/ftrunc/f2u/f2i patterns",
-      "date": "2026-05-25T20:02:30.000+00:00"
+      "old": "7f2130c",
+      "new": "af8c3eb",
+      "full": "af8c3eb3d6537eeda79258dd9fcc4178933d2ad8",
+      "msg": "ac/nir: Fix SMEM workaround with emulated RT",
+      "date": "2026-05-25T23:32:13.000+00:00"
     }
   ]
 }
