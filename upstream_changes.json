@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-25T14:37:29Z",
+  "triggered_at": "2026-05-25T17:00:37Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5873363",
-      "new": "c1d2de4",
-      "full": "c1d2de4538440c971f74ac5086d25d9e016a943b",
-      "msg": "[DYNAREC] Do not decrement db_size twice for invalidated block that are then del",
-      "date": "2026-05-25T13:55:34Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "1240a00",
+      "new": "53c269e",
+      "full": "53c269ee256b8bc6e1bad5972343188f487bff43",
+      "msg": "Merge pull request #5516 from peppergrayxyz/thunk_rootfs",
+      "date": "2026-05-25T16:08:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d1af3d9",
-      "new": "22f61a4",
-      "full": "22f61a4eb5f6c8bb336667bf2241511474e1ce22",
-      "msg": "kk: Fix pre-compiled compute grid size",
-      "date": "2026-05-25T14:08:30.000+00:00"
+      "old": "22f61a4",
+      "new": "e2631ec",
+      "full": "e2631eca0f5ffa85529e6076ea51248e1a5432c5",
+      "msg": "radv: close the local fd immediately after the winsys is created",
+      "date": "2026-05-25T16:26:19.000+00:00"
     }
   ]
 }
