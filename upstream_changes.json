@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-24T13:03:49Z",
+  "triggered_at": "2026-05-25T02:38:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e0eefe5",
-      "new": "b8fa4fd",
-      "full": "b8fa4fd2581166e5fcbaef7471dad11556572d4f",
-      "msg": "nak: Allow YY swizzle for SM20 and SM32 asserts",
-      "date": "2026-05-24T12:48:01.000+02:00"
+      "old": "b8fa4fd",
+      "new": "64eba87",
+      "full": "64eba87a676ddb294f0b3eafc4325ea55343603e",
+      "msg": "rusticl: more intel compat stuff",
+      "date": "2026-05-25T01:07:44.000+00:00"
     }
   ]
 }
