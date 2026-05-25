@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-25T17:00:37Z",
+  "triggered_at": "2026-05-25T19:16:32Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "1240a00",
-      "new": "53c269e",
-      "full": "53c269ee256b8bc6e1bad5972343188f487bff43",
-      "msg": "Merge pull request #5516 from peppergrayxyz/thunk_rootfs",
-      "date": "2026-05-25T16:08:45Z"
+      "old": "53c269e",
+      "new": "cae5da5",
+      "full": "cae5da57771bb11a6b21c60307e5241a5d5e47b4",
+      "msg": "Merge pull request #5530 from neobrain/fix_ccache_time_macros",
+      "date": "2026-05-25T17:55:27Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "22f61a4",
-      "new": "e2631ec",
-      "full": "e2631eca0f5ffa85529e6076ea51248e1a5432c5",
-      "msg": "radv: close the local fd immediately after the winsys is created",
-      "date": "2026-05-25T16:26:19.000+00:00"
+      "old": "e2631ec",
+      "new": "e824c30",
+      "full": "e824c30460449da57a67919d606415cf3e17cd87",
+      "msg": "mesa/st: remove redundant has_hw_atomics from st_context",
+      "date": "2026-05-25T17:22:46.000+00:00"
     }
   ]
 }
