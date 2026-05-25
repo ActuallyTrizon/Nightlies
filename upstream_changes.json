@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-25T19:16:32Z",
+  "triggered_at": "2026-05-25T20:57:20Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "53c269e",
-      "new": "cae5da5",
-      "full": "cae5da57771bb11a6b21c60307e5241a5d5e47b4",
-      "msg": "Merge pull request #5530 from neobrain/fix_ccache_time_macros",
-      "date": "2026-05-25T17:55:27Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e2631ec",
-      "new": "e824c30",
-      "full": "e824c30460449da57a67919d606415cf3e17cd87",
-      "msg": "mesa/st: remove redundant has_hw_atomics from st_context",
-      "date": "2026-05-25T17:22:46.000+00:00"
+      "old": "e824c30",
+      "new": "7f2130c",
+      "full": "7f2130c86e17f936be66fa6ad8eda85746b5fc6b",
+      "msg": "nir/opt_algebraic: add more ffract/ffloor/ftrunc/f2u/f2i patterns",
+      "date": "2026-05-25T20:02:30.000+00:00"
     }
   ]
 }
