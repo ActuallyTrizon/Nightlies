@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-05-25T11:44:45Z",
+  "triggered_at": "2026-05-25T14:37:29Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8707b8d",
-      "new": "5873363",
-      "full": "5873363e4cbcc17f5dad84ad2e56f08c4801b172",
-      "msg": "[SIGNAL] Added partial deferred signal support (#3892)",
-      "date": "2026-05-25T10:09:21Z"
+      "old": "5873363",
+      "new": "c1d2de4",
+      "full": "c1d2de4538440c971f74ac5086d25d9e016a943b",
+      "msg": "[DYNAREC] Do not decrement db_size twice for invalidated block that are then del",
+      "date": "2026-05-25T13:55:34Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64eba87",
-      "new": "d1af3d9",
-      "full": "d1af3d95c71a97e43d3fad841ea33c0afcb4a63e",
-      "msg": "gallium: add fp16_no_denorms cap",
-      "date": "2026-05-25T11:11:50.000+00:00"
+      "old": "d1af3d9",
+      "new": "22f61a4",
+      "full": "22f61a4eb5f6c8bb336667bf2241511474e1ce22",
+      "msg": "kk: Fix pre-compiled compute grid size",
+      "date": "2026-05-25T14:08:30.000+00:00"
     }
   ]
 }
