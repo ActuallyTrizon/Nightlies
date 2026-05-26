@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-25T23:57:53Z",
+  "triggered_at": "2026-05-26T07:36:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f2130c",
-      "new": "af8c3eb",
-      "full": "af8c3eb3d6537eeda79258dd9fcc4178933d2ad8",
-      "msg": "ac/nir: Fix SMEM workaround with emulated RT",
-      "date": "2026-05-25T23:32:13.000+00:00"
+      "old": "af8c3eb",
+      "new": "c41f88f",
+      "full": "c41f88fb3505590cf0e0847bfb4b5679243a072c",
+      "msg": "v3d/v3dv: use common compute limits",
+      "date": "2026-05-26T07:13:22.000+01:00"
     }
   ]
 }
