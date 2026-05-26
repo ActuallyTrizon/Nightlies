@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-26T07:36:41Z",
+  "triggered_at": "2026-05-26T14:48:01Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "02bcc98",
+      "new": "5462d19",
+      "full": "5462d19d39bbb6308c83ba6e0e2a87de01d0322b",
+      "msg": "[dxvk] Fix broken image copy region tracking",
+      "date": "2026-05-26T14:23:35Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "af8c3eb",
-      "new": "c41f88f",
-      "full": "c41f88fb3505590cf0e0847bfb4b5679243a072c",
-      "msg": "v3d/v3dv: use common compute limits",
-      "date": "2026-05-26T07:13:22.000+01:00"
+      "old": "c41f88f",
+      "new": "14be25c",
+      "full": "14be25c5fa88695282dbb6b3efa3541d0e9eb748",
+      "msg": "tu: Merge tu_image_init and tu_image_update_layout",
+      "date": "2026-05-26T13:51:07.000+00:00"
     }
   ]
 }
