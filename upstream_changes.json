@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-05-26T17:51:40Z",
+  "triggered_at": "2026-05-26T19:58:28Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "c1d2de4",
-      "new": "0bce9e5",
-      "full": "0bce9e56124e4c6330346e28ff1d9b7650fddcb0",
-      "msg": "[SYSCALL] Ignore PR_SET_SYSCALL_USER_DISPATCH (#3895)",
-      "date": "2026-05-26T17:00:21Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5462d19",
-      "new": "fbd59a3",
-      "full": "fbd59a3ed6684e482379ed937f9e3113eba1c220",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-05-26T14:50:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "14be25c",
-      "new": "f0a6360",
-      "full": "f0a6360e0547dd9863586a7b3bfc79609bd8d65b",
-      "msg": "vulkan/wsi/win32: Prefer the more popular surface format on Windows",
-      "date": "2026-05-26T15:23:24.000+00:00"
+      "old": "f0a6360",
+      "new": "7683d55",
+      "full": "7683d552be07d149ee34a7f9be242e441659b26c",
+      "msg": "docs: Add many missing features",
+      "date": "2026-05-26T20:54:24.000+02:00"
     }
   ]
 }
