@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-05-26T14:48:01Z",
+  "triggered_at": "2026-05-26T17:51:40Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c1d2de4",
+      "new": "0bce9e5",
+      "full": "0bce9e56124e4c6330346e28ff1d9b7650fddcb0",
+      "msg": "[SYSCALL] Ignore PR_SET_SYSCALL_USER_DISPATCH (#3895)",
+      "date": "2026-05-26T17:00:21Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "02bcc98",
-      "new": "5462d19",
-      "full": "5462d19d39bbb6308c83ba6e0e2a87de01d0322b",
-      "msg": "[dxvk] Fix broken image copy region tracking",
-      "date": "2026-05-26T14:23:35Z"
+      "old": "5462d19",
+      "new": "fbd59a3",
+      "full": "fbd59a3ed6684e482379ed937f9e3113eba1c220",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-26T14:50:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c41f88f",
-      "new": "14be25c",
-      "full": "14be25c5fa88695282dbb6b3efa3541d0e9eb748",
-      "msg": "tu: Merge tu_image_init and tu_image_update_layout",
-      "date": "2026-05-26T13:51:07.000+00:00"
+      "old": "14be25c",
+      "new": "f0a6360",
+      "full": "f0a6360e0547dd9863586a7b3bfc79609bd8d65b",
+      "msg": "vulkan/wsi/win32: Prefer the more popular surface format on Windows",
+      "date": "2026-05-26T15:23:24.000+00:00"
     }
   ]
 }
