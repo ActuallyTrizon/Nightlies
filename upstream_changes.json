@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-26T19:58:28Z",
+  "triggered_at": "2026-05-26T21:45:05Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "fbd59a3",
+      "new": "053c1cc",
+      "full": "053c1ccf993d02b7fb7e12109c02cb8562fb951c",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-26T20:11:54Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f0a6360",
-      "new": "7683d55",
-      "full": "7683d552be07d149ee34a7f9be242e441659b26c",
-      "msg": "docs: Add many missing features",
-      "date": "2026-05-26T20:54:24.000+02:00"
+      "old": "7683d55",
+      "new": "a1d6a34",
+      "full": "a1d6a341541e5170c7dcd147fd0a535a3b5b074a",
+      "msg": "panvk: fix executable properties handling for IDVS varying shaders",
+      "date": "2026-05-26T19:57:35.000+00:00"
     }
   ]
 }
