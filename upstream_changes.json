@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-26T21:45:05Z",
+  "triggered_at": "2026-05-26T23:02:32Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "fbd59a3",
-      "new": "053c1cc",
-      "full": "053c1ccf993d02b7fb7e12109c02cb8562fb951c",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-05-26T20:11:54Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7683d55",
-      "new": "a1d6a34",
-      "full": "a1d6a341541e5170c7dcd147fd0a535a3b5b074a",
-      "msg": "panvk: fix executable properties handling for IDVS varying shaders",
-      "date": "2026-05-26T19:57:35.000+00:00"
+      "old": "a1d6a34",
+      "new": "bec5d3f",
+      "full": "bec5d3fff51702fdf76cc397fec2b1a89a37a698",
+      "msg": "anv: Add workaround for vertex explosions in Split Fiction",
+      "date": "2026-05-26T21:21:55.000+00:00"
     }
   ]
 }
