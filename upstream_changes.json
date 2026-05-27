@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-05-27T06:56:25Z",
+  "triggered_at": "2026-05-27T10:52:35Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0bce9e5",
-      "new": "b946dea",
-      "full": "b946deaeeaff69dbabfcb5a101970a3c8de0f9bd",
-      "msg": "[SYSCALL] Added proper syscall user dispatch emulation (#3897)",
-      "date": "2026-05-27T06:10:20Z"
+      "old": "b946dea",
+      "new": "86c7d13",
+      "full": "86c7d13769e23689b52025a14fce960eca5a86b3",
+      "msg": "[STEAM] Added python support in pressure-vessel workaround",
+      "date": "2026-05-27T10:49:16Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "84a46a2",
+      "new": "34ab1ce",
+      "full": "34ab1cec5619bfc19d5e414437c31e5d52b8819f",
+      "msg": "vkd3d: Add KHR backend for OMM copy.",
+      "date": "2026-05-27T10:32:22Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bec5d3f",
-      "new": "691371a",
-      "full": "691371a176d9fd9ea16eb472c3986d41cab25bcd",
-      "msg": "radv/rra,rmv: fix device id written into trace files",
-      "date": "2026-05-27T06:10:48.000+00:00"
+      "old": "691371a",
+      "new": "5a9e40f",
+      "full": "5a9e40f028689d6c8f3a74a47034159e67319edf",
+      "msg": "v3dv: disable threadeded submissions under drm-shim",
+      "date": "2026-05-27T10:19:51.000+00:00"
     }
   ]
 }
