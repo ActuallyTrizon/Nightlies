@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-27T10:52:35Z",
+  "triggered_at": "2026-05-27T14:21:12Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "b946dea",
-      "new": "86c7d13",
-      "full": "86c7d13769e23689b52025a14fce960eca5a86b3",
-      "msg": "[STEAM] Added python support in pressure-vessel workaround",
-      "date": "2026-05-27T10:49:16Z"
+      "old": "86c7d13",
+      "new": "113b8b4",
+      "full": "113b8b427efd02a43f414a5e9dca048911ba1cbe",
+      "msg": "[DYNAREC] Fixed a regression introduced with #3898 when Defered block are part o",
+      "date": "2026-05-27T13:57:34Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "84a46a2",
-      "new": "34ab1ce",
-      "full": "34ab1cec5619bfc19d5e414437c31e5d52b8819f",
-      "msg": "vkd3d: Add KHR backend for OMM copy.",
-      "date": "2026-05-27T10:32:22Z"
+      "old": "34ab1ce",
+      "new": "b2d21dc",
+      "full": "b2d21dc0d71f9b8534beb2c5fd15acb5a7255607",
+      "msg": "vkd3d: Fix formatting warnings.",
+      "date": "2026-05-27T12:26:36Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "691371a",
-      "new": "5a9e40f",
-      "full": "5a9e40f028689d6c8f3a74a47034159e67319edf",
-      "msg": "v3dv: disable threadeded submissions under drm-shim",
-      "date": "2026-05-27T10:19:51.000+00:00"
+      "old": "5a9e40f",
+      "new": "70329cf",
+      "full": "70329cf51fabe2ef6922dab8968ede71d64bf731",
+      "msg": "radeonsi/mm: Remove comment about kernel AV1 instance scheduling bug",
+      "date": "2026-05-27T12:45:41.000+00:00"
     }
   ]
 }
