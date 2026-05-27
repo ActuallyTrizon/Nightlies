@@ -74,6 +74,9 @@ A single JSON index of every component published here — point any compatible W
 
 *For a comprehensive and up-to-date ranking of emulators, check out [this emulation guide](https://t3st31.github.io/Ranking-Emulators-Download/).*
 
+*Also for Turnip driver releases [Here](https://www.reddit.com/r/OdinHandheld/s/oAifHPSTlc) *
+
+
 ### Bionic Builds
 
 | Build | Description |
