@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-27T20:02:34Z",
+  "triggered_at": "2026-05-27T22:26:14Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "3897d03",
-      "new": "492fda4",
-      "full": "492fda4658ccdb9e5c24c16cbadcf3d906c8e732",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-05-27T18:33:07Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8dc4e80",
-      "new": "43f0cba",
-      "full": "43f0cbad78f2f819e3d033521ec3b7765a147bf6",
-      "msg": "gallium/vl: Fix RGB narrow range conversions",
-      "date": "2026-05-27T18:58:18.000+00:00"
+      "old": "43f0cba",
+      "new": "addd09f",
+      "full": "addd09fb764a437ba45187f8884042396a197529",
+      "msg": "lavapipe: correctly disable depth/stencil in secondaries",
+      "date": "2026-05-27T20:30:38.000+00:00"
     }
   ]
 }
