@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-27T14:21:12Z",
+  "triggered_at": "2026-05-27T17:52:57Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "86c7d13",
-      "new": "113b8b4",
-      "full": "113b8b427efd02a43f414a5e9dca048911ba1cbe",
-      "msg": "[DYNAREC] Fixed a regression introduced with #3898 when Defered block are part o",
-      "date": "2026-05-27T13:57:34Z"
+      "old": "113b8b4",
+      "new": "5687b46",
+      "full": "5687b460b9eddd0271b6f76076cf480e0b3d3a69",
+      "msg": "Remove a workaround on gnutls, it makes things worse with steamrt4",
+      "date": "2026-05-27T15:00:51Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "34ab1ce",
-      "new": "b2d21dc",
-      "full": "b2d21dc0d71f9b8534beb2c5fd15acb5a7255607",
-      "msg": "vkd3d: Fix formatting warnings.",
-      "date": "2026-05-27T12:26:36Z"
+      "old": "b2d21dc",
+      "new": "3897d03",
+      "full": "3897d03460b496fd2ce7096f32e935adf42270c6",
+      "msg": "meta: Bump project version to 3.1.",
+      "date": "2026-05-27T16:43:58Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5a9e40f",
-      "new": "70329cf",
-      "full": "70329cf51fabe2ef6922dab8968ede71d64bf731",
-      "msg": "radeonsi/mm: Remove comment about kernel AV1 instance scheduling bug",
-      "date": "2026-05-27T12:45:41.000+00:00"
+      "old": "70329cf",
+      "new": "8dc4e80",
+      "full": "8dc4e8094ee79ad3c38e2cd970f91d2b0e1150f1",
+      "msg": "nir/opt_algebraic: add missing fmadz lowering for lower_fmulz_with_abs_min",
+      "date": "2026-05-27T16:28:48.000+00:00"
     }
   ]
 }
