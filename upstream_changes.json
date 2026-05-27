@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-26T23:02:32Z",
+  "triggered_at": "2026-05-27T06:56:25Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "0bce9e5",
+      "new": "b946dea",
+      "full": "b946deaeeaff69dbabfcb5a101970a3c8de0f9bd",
+      "msg": "[SYSCALL] Added proper syscall user dispatch emulation (#3897)",
+      "date": "2026-05-27T06:10:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a1d6a34",
-      "new": "bec5d3f",
-      "full": "bec5d3fff51702fdf76cc397fec2b1a89a37a698",
-      "msg": "anv: Add workaround for vertex explosions in Split Fiction",
-      "date": "2026-05-26T21:21:55.000+00:00"
+      "old": "bec5d3f",
+      "new": "691371a",
+      "full": "691371a176d9fd9ea16eb472c3986d41cab25bcd",
+      "msg": "radv/rra,rmv: fix device id written into trace files",
+      "date": "2026-05-27T06:10:48.000+00:00"
     }
   ]
 }
