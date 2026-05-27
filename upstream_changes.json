@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-27T22:26:14Z",
+  "triggered_at": "2026-05-27T23:55:12Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "43f0cba",
-      "new": "addd09f",
-      "full": "addd09fb764a437ba45187f8884042396a197529",
-      "msg": "lavapipe: correctly disable depth/stencil in secondaries",
-      "date": "2026-05-27T20:30:38.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "053c1cc",
+      "new": "64df952",
+      "full": "64df95253247c74aaf7ff1a8cde029f90f9b2d29",
+      "msg": "[d3d9] Enable dxbc-spirv by default",
+      "date": "2026-05-27T23:03:39Z"
     }
   ]
 }

@@ -2,7 +2,7 @@ https://github.com/ptitSeb/box64: 5687b460b9eddd0271b6f76076cf480e0b3d3a69
 https://github.com/Pipetto-crypto/box64: c0cc2c254e24ae53bd435e4d3ff84e1a7fdb6399
 https://github.com/FEX-Emu/FEX: cae5da57771bb11a6b21c60307e5241a5d5e47b4
 https://github.com/HansKristian-Work/vkd3d-proton: 492fda4658ccdb9e5c24c16cbadcf3d906c8e732
-https://github.com/doitsujin/dxvk: 053c1ccf993d02b7fb7e12109c02cb8562fb951c
+https://github.com/doitsujin/dxvk: 64df95253247c74aaf7ff1a8cde029f90f9b2d29
 https://gitlab.freedesktop.org/mesa/mesa@main: addd09fb764a437ba45187f8884042396a197529
 https://github.com/ValveSoftware/wine@bleeding-edge: e085501a992238479c1273c357a883e2da28759f
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
