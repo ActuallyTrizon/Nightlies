@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-05-28T06:45:00Z",
+  "triggered_at": "2026-05-28T10:46:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "5687b46",
+      "new": "df37f6a",
+      "full": "df37f6acf0e5becb3b73fb546768273d29813053",
+      "msg": "[LA64_DYNAREC] Fixed some AVX issues (#3900)",
+      "date": "2026-05-28T09:18:12Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "492fda4",
+      "new": "815c284",
+      "full": "815c2848699c9dbecc87e2e389c25401d351403f",
+      "msg": "vkd3d: Fix more silly printf warnings.",
+      "date": "2026-05-28T08:33:22Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "addd09f",
-      "new": "e5d9cdb",
-      "full": "e5d9cdb62afffdb4156079544ff7af6cd502393f",
-      "msg": "radeonsi/tests: add an ordered append bandwidth test",
-      "date": "2026-05-27T23:46:01.000-04:00"
+      "old": "e5d9cdb",
+      "new": "5b40c77",
+      "full": "5b40c7713704438d1abfac8d7d13392ecd83e26f",
+      "msg": "pan/genxml: use consistent attribute order",
+      "date": "2026-05-28T09:51:42.000+00:00"
     }
   ]
 }
