@@ -1,32 +1,41 @@
 {
-  "triggered_at": "2026-05-28T14:30:43Z",
+  "triggered_at": "2026-05-28T17:57:51Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "df37f6a",
-      "new": "f05bdb1",
-      "full": "f05bdb1f938c16e75799b5528a002597574e4ce2",
-      "msg": "[ENV] Reworked a strange design for BOX64_AVX=2 (#3902)",
-      "date": "2026-05-28T10:53:57Z"
+      "old": "f05bdb1",
+      "new": "d39062d",
+      "full": "d39062d3d768fcf020d8e795c2fad818f5f55375",
+      "msg": "[WRAPPER] Fixed gstreamer not always finding the custom gstreamer folder of stea",
+      "date": "2026-05-28T14:34:34Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "815c284",
+      "new": "d30c5eb",
+      "full": "d30c5eb1baba8474cbdd3a220dc7f669a84e3780",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-05-28T14:31:17Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "64df952",
-      "new": "cf983c1",
-      "full": "cf983c1a87f3075a6b73ee4aa00d24db8c263cf5",
-      "msg": "[d3d9] Remove legacy fixed-function shader builder",
-      "date": "2026-05-28T11:08:44Z"
+      "old": "cf983c1",
+      "new": "b6f961f",
+      "full": "b6f961ff3f660fe71c9d596282fa2f0286863bfa",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-28T17:47:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5b40c77",
-      "new": "e48b440",
-      "full": "e48b440f1b2b62697b36b55ec49c21ba86599037",
-      "msg": "kk: Correctly report failures when compiling precompiled shaders",
-      "date": "2026-05-28T13:50:13.000+00:00"
+      "old": "e48b440",
+      "new": "feb9ac1",
+      "full": "feb9ac168b4fa5411aefea06e207c76b3bf862f5",
+      "msg": "jay: allow npot operands in RA",
+      "date": "2026-05-28T16:23:33.000+00:00"
     }
   ]
 }
