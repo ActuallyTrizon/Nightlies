@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-28T10:46:27Z",
+  "triggered_at": "2026-05-28T14:30:43Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5687b46",
-      "new": "df37f6a",
-      "full": "df37f6acf0e5becb3b73fb546768273d29813053",
-      "msg": "[LA64_DYNAREC] Fixed some AVX issues (#3900)",
-      "date": "2026-05-28T09:18:12Z"
+      "old": "df37f6a",
+      "new": "f05bdb1",
+      "full": "f05bdb1f938c16e75799b5528a002597574e4ce2",
+      "msg": "[ENV] Reworked a strange design for BOX64_AVX=2 (#3902)",
+      "date": "2026-05-28T10:53:57Z"
     },
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "492fda4",
-      "new": "815c284",
-      "full": "815c2848699c9dbecc87e2e389c25401d351403f",
-      "msg": "vkd3d: Fix more silly printf warnings.",
-      "date": "2026-05-28T08:33:22Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "64df952",
+      "new": "cf983c1",
+      "full": "cf983c1a87f3075a6b73ee4aa00d24db8c263cf5",
+      "msg": "[d3d9] Remove legacy fixed-function shader builder",
+      "date": "2026-05-28T11:08:44Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e5d9cdb",
-      "new": "5b40c77",
-      "full": "5b40c7713704438d1abfac8d7d13392ecd83e26f",
-      "msg": "pan/genxml: use consistent attribute order",
-      "date": "2026-05-28T09:51:42.000+00:00"
+      "old": "5b40c77",
+      "new": "e48b440",
+      "full": "e48b440f1b2b62697b36b55ec49c21ba86599037",
+      "msg": "kk: Correctly report failures when compiling precompiled shaders",
+      "date": "2026-05-28T13:50:13.000+00:00"
     }
   ]
 }
