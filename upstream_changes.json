@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-28T20:19:04Z",
+  "triggered_at": "2026-05-28T22:27:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "feb9ac1",
-      "new": "6de0025",
-      "full": "6de00252ff769445a8141b103f9f6f0496797d35",
-      "msg": "tu: Fix TU_CMD_DIRTY_DRAW_STATE value collision",
-      "date": "2026-05-28T19:29:54.000+00:00"
+      "old": "6de0025",
+      "new": "23f94c6",
+      "full": "23f94c692cb1d41a2193a80fa531922d386e8d5d",
+      "msg": "freedreno: Update A6XX_PC_MODE_CNTL definition and values",
+      "date": "2026-05-28T21:44:42.000+00:00"
     }
   ]
 }
