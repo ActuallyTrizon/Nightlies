@@ -1,41 +1,14 @@
 {
-  "triggered_at": "2026-05-28T17:57:51Z",
+  "triggered_at": "2026-05-28T20:19:04Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "f05bdb1",
-      "new": "d39062d",
-      "full": "d39062d3d768fcf020d8e795c2fad818f5f55375",
-      "msg": "[WRAPPER] Fixed gstreamer not always finding the custom gstreamer folder of stea",
-      "date": "2026-05-28T14:34:34Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "815c284",
-      "new": "d30c5eb",
-      "full": "d30c5eb1baba8474cbdd3a220dc7f669a84e3780",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-05-28T14:31:17Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "cf983c1",
-      "new": "b6f961f",
-      "full": "b6f961ff3f660fe71c9d596282fa2f0286863bfa",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-05-28T17:47:04Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e48b440",
-      "new": "feb9ac1",
-      "full": "feb9ac168b4fa5411aefea06e207c76b3bf862f5",
-      "msg": "jay: allow npot operands in RA",
-      "date": "2026-05-28T16:23:33.000+00:00"
+      "old": "feb9ac1",
+      "new": "6de0025",
+      "full": "6de00252ff769445a8141b103f9f6f0496797d35",
+      "msg": "tu: Fix TU_CMD_DIRTY_DRAW_STATE value collision",
+      "date": "2026-05-28T19:29:54.000+00:00"
     }
   ]
 }
