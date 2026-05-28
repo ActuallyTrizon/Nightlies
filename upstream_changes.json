@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-27T23:55:12Z",
+  "triggered_at": "2026-05-28T06:45:00Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "053c1cc",
-      "new": "64df952",
-      "full": "64df95253247c74aaf7ff1a8cde029f90f9b2d29",
-      "msg": "[d3d9] Enable dxbc-spirv by default",
-      "date": "2026-05-27T23:03:39Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "addd09f",
+      "new": "e5d9cdb",
+      "full": "e5d9cdb62afffdb4156079544ff7af6cd502393f",
+      "msg": "radeonsi/tests: add an ordered append bandwidth test",
+      "date": "2026-05-27T23:46:01.000-04:00"
     }
   ]
 }
