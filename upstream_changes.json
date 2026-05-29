@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-05-29T00:04:09Z",
+  "triggered_at": "2026-05-29T05:06:56Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "cae5da5",
+      "new": "5fd917e",
+      "full": "5fd917ec2f54a1fdf980baa4cdf9a67424710ecb",
+      "msg": "Merge pull request #5537 from Sonicadvance1/161",
+      "date": "2026-05-29T04:52:34Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "b6f961f",
+      "new": "94c313b",
+      "full": "94c313b5cc23e0c86f9293d22df5074a9b193bbf",
+      "msg": "[d3d9] Do not enable FP16 by default",
+      "date": "2026-05-29T02:49:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "23f94c6",
-      "new": "825df24",
-      "full": "825df24023a3cf1af2758786f6e18f1d712e1470",
-      "msg": "nvk: Implement VK_EXT_shader_atomic_float",
-      "date": "2026-05-28T23:04:32.000+00:00"
+      "old": "825df24",
+      "new": "26280cb",
+      "full": "26280cbc2344a3ce550175ea198d136eba454a51",
+      "msg": "mesa: flush bitmap cache when scissor box changes",
+      "date": "2026-05-29T03:38:55.000+00:00"
     }
   ]
 }
