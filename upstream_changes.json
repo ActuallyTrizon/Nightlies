@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-05-29T09:37:45Z",
+  "triggered_at": "2026-05-29T12:41:57Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d39062d",
-      "new": "5b7308f",
-      "full": "5b7308fecfac5104187ab7c577ae78655726f923",
-      "msg": "[ENV] Enabled AVX by default on LoongArch (#3907)",
-      "date": "2026-05-29T09:14:38Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5fd917e",
+      "new": "a1071ec",
+      "full": "a1071ec01ac4f5afed700a7b987bf6670ef6e639",
+      "msg": "Merge pull request #5538 from peppergrayxyz/syscall_headers",
+      "date": "2026-05-29T12:35:43Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "d30c5eb",
+      "new": "110e8bd",
+      "full": "110e8bd4ee09c40031f5513258a10df59d27fd94",
+      "msg": "vkd3d: Add AVOID_IMAGE_BUFFER_ALIASING to Crimson Desert as well.",
+      "date": "2026-05-29T12:33:04Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "94c313b",
+      "new": "3ff2a72",
+      "full": "3ff2a72ea9b94837fa51c291b73c69b665c54f60",
+      "msg": "[d3d9] Simplify shader creation",
+      "date": "2026-05-29T10:40:54Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "26280cb",
-      "new": "c501f3b",
-      "full": "c501f3b4c966555c4b8c6a12df3ea0a0e3a0070a",
-      "msg": "pvr: re-enable {EXT,KHR}_index_type_uint8",
-      "date": "2026-05-29T09:56:28.000+01:00"
+      "old": "c501f3b",
+      "new": "0106789",
+      "full": "010678968b4162aa6518220c0de44638a7272237",
+      "msg": "lavapipe: Enable extendedDynamicState3ColorBlendAdvanced",
+      "date": "2026-05-29T11:58:34.000+00:00"
     }
   ]
 }
