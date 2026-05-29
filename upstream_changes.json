@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-05-29T19:27:53Z",
+  "triggered_at": "2026-05-29T21:46:09Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ea33518",
-      "new": "194d577",
-      "full": "194d577d5153383e857b9ca85d918c490c484071",
-      "msg": "[WRAPPER] Added a workaround for system where libanl.so is gone completly",
-      "date": "2026-05-29T18:50:28Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "bedf300",
-      "new": "dbefb93",
-      "full": "dbefb934823858ecd432bf4d8336eacf97fdabdb",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-05-29T17:19:03Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9be2f6e",
-      "new": "2d3dc35",
-      "full": "2d3dc35d5578593b762a65f6ea975451e5397c49",
-      "msg": "anv: implement VK_KHR_copy_memory_indirect",
-      "date": "2026-05-29T18:12:37.000+00:00"
+      "old": "2d3dc35",
+      "new": "e24dc5b",
+      "full": "e24dc5bd1e7fe6101bdc866fb16a15a8fcae1aae",
+      "msg": "anv: fake VK_EXT_image_compression_control on Xe2+",
+      "date": "2026-05-29T23:50:54.000+03:00"
     }
   ]
 }
