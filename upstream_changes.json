@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-05-29T05:06:56Z",
+  "triggered_at": "2026-05-29T09:37:45Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "cae5da5",
-      "new": "5fd917e",
-      "full": "5fd917ec2f54a1fdf980baa4cdf9a67424710ecb",
-      "msg": "Merge pull request #5537 from Sonicadvance1/161",
-      "date": "2026-05-29T04:52:34Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "b6f961f",
-      "new": "94c313b",
-      "full": "94c313b5cc23e0c86f9293d22df5074a9b193bbf",
-      "msg": "[d3d9] Do not enable FP16 by default",
-      "date": "2026-05-29T02:49:20Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d39062d",
+      "new": "5b7308f",
+      "full": "5b7308fecfac5104187ab7c577ae78655726f923",
+      "msg": "[ENV] Enabled AVX by default on LoongArch (#3907)",
+      "date": "2026-05-29T09:14:38Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "825df24",
-      "new": "26280cb",
-      "full": "26280cbc2344a3ce550175ea198d136eba454a51",
-      "msg": "mesa: flush bitmap cache when scissor box changes",
-      "date": "2026-05-29T03:38:55.000+00:00"
+      "old": "26280cb",
+      "new": "c501f3b",
+      "full": "c501f3b4c966555c4b8c6a12df3ea0a0e3a0070a",
+      "msg": "pvr: re-enable {EXT,KHR}_index_type_uint8",
+      "date": "2026-05-29T09:56:28.000+01:00"
     }
   ]
 }
