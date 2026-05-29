@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-28T22:27:20Z",
+  "triggered_at": "2026-05-29T00:04:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6de0025",
-      "new": "23f94c6",
-      "full": "23f94c692cb1d41a2193a80fa531922d386e8d5d",
-      "msg": "freedreno: Update A6XX_PC_MODE_CNTL definition and values",
-      "date": "2026-05-28T21:44:42.000+00:00"
+      "old": "23f94c6",
+      "new": "825df24",
+      "full": "825df24023a3cf1af2758786f6e18f1d712e1470",
+      "msg": "nvk: Implement VK_EXT_shader_atomic_float",
+      "date": "2026-05-28T23:04:32.000+00:00"
     }
   ]
 }
