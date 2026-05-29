@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-05-29T16:37:28Z",
+  "triggered_at": "2026-05-29T19:27:53Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5b7308f",
-      "new": "ea33518",
-      "full": "ea33518f47a281dbb4d65e27a6ea5f4db708c92d",
-      "msg": "Fixed a regression introduced with 5c84eb6f3a76e2e771d358a3e76417026c26e2fc",
-      "date": "2026-05-29T14:45:14Z"
+      "old": "ea33518",
+      "new": "194d577",
+      "full": "194d577d5153383e857b9ca85d918c490c484071",
+      "msg": "[WRAPPER] Added a workaround for system where libanl.so is gone completly",
+      "date": "2026-05-29T18:50:28Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "3ff2a72",
-      "new": "bedf300",
-      "full": "bedf30089712198dd657c4b780eb41d104c00cb7",
-      "msg": "[d3d9] Use dxbc-spirv parser in shader validation",
-      "date": "2026-05-29T13:55:57Z"
+      "old": "bedf300",
+      "new": "dbefb93",
+      "full": "dbefb934823858ecd432bf4d8336eacf97fdabdb",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-05-29T17:19:03Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0106789",
-      "new": "9be2f6e",
-      "full": "9be2f6ea579d52848ece1a9a9469766f70228ff8",
-      "msg": "Revert \"drirc: move 00-$drv-defaults.conf to each driver's folder\"",
-      "date": "2026-05-29T16:01:06.000+00:00"
+      "old": "9be2f6e",
+      "new": "2d3dc35",
+      "full": "2d3dc35d5578593b762a65f6ea975451e5397c49",
+      "msg": "anv: implement VK_KHR_copy_memory_indirect",
+      "date": "2026-05-29T18:12:37.000+00:00"
     }
   ]
 }
