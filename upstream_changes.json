@@ -1,41 +1,32 @@
 {
-  "triggered_at": "2026-05-29T12:41:57Z",
+  "triggered_at": "2026-05-29T16:37:28Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5fd917e",
-      "new": "a1071ec",
-      "full": "a1071ec01ac4f5afed700a7b987bf6670ef6e639",
-      "msg": "Merge pull request #5538 from peppergrayxyz/syscall_headers",
-      "date": "2026-05-29T12:35:43Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d30c5eb",
-      "new": "110e8bd",
-      "full": "110e8bd4ee09c40031f5513258a10df59d27fd94",
-      "msg": "vkd3d: Add AVOID_IMAGE_BUFFER_ALIASING to Crimson Desert as well.",
-      "date": "2026-05-29T12:33:04Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "5b7308f",
+      "new": "ea33518",
+      "full": "ea33518f47a281dbb4d65e27a6ea5f4db708c92d",
+      "msg": "Fixed a regression introduced with 5c84eb6f3a76e2e771d358a3e76417026c26e2fc",
+      "date": "2026-05-29T14:45:14Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "94c313b",
-      "new": "3ff2a72",
-      "full": "3ff2a72ea9b94837fa51c291b73c69b665c54f60",
-      "msg": "[d3d9] Simplify shader creation",
-      "date": "2026-05-29T10:40:54Z"
+      "old": "3ff2a72",
+      "new": "bedf300",
+      "full": "bedf30089712198dd657c4b780eb41d104c00cb7",
+      "msg": "[d3d9] Use dxbc-spirv parser in shader validation",
+      "date": "2026-05-29T13:55:57Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c501f3b",
-      "new": "0106789",
-      "full": "010678968b4162aa6518220c0de44638a7272237",
-      "msg": "lavapipe: Enable extendedDynamicState3ColorBlendAdvanced",
-      "date": "2026-05-29T11:58:34.000+00:00"
+      "old": "0106789",
+      "new": "9be2f6e",
+      "full": "9be2f6ea579d52848ece1a9a9469766f70228ff8",
+      "msg": "Revert \"drirc: move 00-$drv-defaults.conf to each driver's folder\"",
+      "date": "2026-05-29T16:01:06.000+00:00"
     }
   ]
 }
