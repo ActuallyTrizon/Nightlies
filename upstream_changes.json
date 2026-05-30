@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-30T14:59:37Z",
+  "triggered_at": "2026-05-30T19:13:20Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "dbefb93",
-      "new": "9a1b240",
-      "full": "9a1b240d7f47a13ec15477683f811388ad67a620",
-      "msg": "[d3d9] Simplify SWVP shader building",
-      "date": "2026-05-30T13:38:17Z"
+      "old": "9a1b240",
+      "new": "be4ac08",
+      "full": "be4ac08faa1ba7546193995ac6e45ca8c07763d4",
+      "msg": "[d3d9] Adjust fixed function shaders HUD element",
+      "date": "2026-05-30T17:58:20Z"
     }
   ]
 }
