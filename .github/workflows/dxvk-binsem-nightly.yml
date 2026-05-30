@@ -1,0 +1,336 @@
+name: DXVK Binary-Semaphores Nightlies
+
+# Builds DXVK with leegao's "binary semaphore dxvk queue fallback" patch
+# (https://github.com/leegao/dxvk/commit/e950b4a90359acebf13f5a76cfa2cfaa7c238b74).
+# The patch is committed to this repo at patches/dxvk-binary-semaphores.patch so
+# it can be reused by any CI build. It adds the DXVK_DISABLE_TIMELINE_SEMAPHORES=1
+# runtime env var, which restores binary-semaphore inter-queue sync and works
+# around the Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+.
+#
+# The patch touches only src/dxvk/dxvk_cmdlist.{cpp,h} and dxvk_queue.{cpp,h},
+# which do NOT overlap the Ph42oN gplasync patch, so the two can be combined.
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: "Upstream doitsujin/dxvk ref to build (branch/tag/commit)"
+        required: false
+        default: "master"
+      gplasync:
+        description: "Also apply the Ph42oN gplasync patch"
+        type: boolean
+        required: false
+        default: true
+
+env:
+  BINSEM_PATCH: patches/dxvk-binary-semaphores.patch
+
+jobs:
+  # ==================================================================
+  # JOB 1: DXVK Binary-Semaphores (Standard x64/x86)
+  # ==================================================================
+  build-binsem:
+    name: Build DXVK BinSem (Standard)
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      commit: ${{ steps.version.outputs.commit }}
+    steps:
+      - name: Checkout (for patch file)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip
+
+      - name: Setup GLSLANG
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -q glslang-master-linux-Release.zip -d glslang
+          echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Clone & Patch DXVK
+        id: version
+        run: |
+          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          git checkout "${{ inputs.base_ref }}"
+          git submodule update --init --recursive
+          git fetch --tags || true
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "git")
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+
+          GPL_SUFFIX=""
+          if [ "${{ inputs.gplasync }}" = "true" ]; then
+            wget -q https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
+            git apply --verbose dxvk-gplasync-master.patch
+            GPL_SUFFIX="-gplasync"
+          fi
+
+          # leegao binary-semaphore fallback (committed in this repo)
+          git apply --verbose "$GITHUB_WORKSPACE/${{ env.BINSEM_PATCH }}"
+
+          VERSION_NAME="${LATEST_TAG}-binsem${GPL_SUFFIX}-${COMMIT_HASH}"
+          echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
+          echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
+          echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
+
+      - name: Build DXVK
+        run: |
+          cd dxvk
+          sed -i 's/ninja/ninja -j 2/g' package-release.sh
+          ./package-release.sh master ../dxvk-built --no-package
+
+      - name: Package
+        run: |
+          mkdir -p packaging
+          cp -r dxvk-built/dxvk-master/x64 packaging/system32
+          cp -r dxvk-built/dxvk-master/x32 packaging/syswow64
+
+          cat <<EOF > packaging/profile.json
+          {
+            "type": "DXVK",
+            "versionName": "${{ env.VERSION_NAME }}",
+            "versionCode": 0,
+            "description": "Banners Repo - Binary Semaphores (Upstream: Philip Rebohle, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback.",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+
+          # WCP
+          tar -cJf dxvk-binsem-${{ steps.version.outputs.commit }}.wcp -C packaging .
+
+          # ZIP
+          cd packaging
+          zip -r ../dxvk-binsem-${{ steps.version.outputs.commit }}.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dxvk-binsem-standard
+          path: |
+            *.wcp
+            *.zip
+
+  # ==================================================================
+  # JOB 2: DXVK Binary-Semaphores (ARM64EC)
+  # ==================================================================
+  build-binsem-arm64ec:
+    name: Build DXVK BinSem (ARM64EC)
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      commit: ${{ steps.version.outputs.commit }}
+    steps:
+      - name: Checkout (for patch file)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates curl xz-utils jq git build-essential \
+            python3 pkg-config zstd meson ninja-build wget unzip zip
+
+      - name: Setup Glslang
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -q glslang-master-linux-Release.zip -d glslang
+          echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup LLVM-MinGW
+        run: |
+          LLVM_MINGW_TAG="20251104"
+          wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+          tar -xf llvm.tar.xz
+          echo "$PWD/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64/bin" >> $GITHUB_PATH
+
+      - name: Clone & Patch DXVK
+        id: version
+        run: |
+          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          git checkout "${{ inputs.base_ref }}"
+          git submodule update --init --recursive
+          git fetch --tags || true
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "git")
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+
+          GPL_SUFFIX=""
+          if [ "${{ inputs.gplasync }}" = "true" ]; then
+            wget -q https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
+            git apply --verbose dxvk-gplasync-master.patch
+            GPL_SUFFIX="-gplasync"
+          fi
+
+          git apply --verbose "$GITHUB_WORKSPACE/${{ env.BINSEM_PATCH }}"
+
+          VERSION_NAME="${LATEST_TAG}-binsem${GPL_SUFFIX}-arm64ec-${COMMIT_HASH}"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
+          echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
+
+      - name: Configure Cross-Files
+        run: |
+          cat <<EOF > arm64ec.txt
+          [binaries]
+          c = 'arm64ec-w64-mingw32-clang'
+          cpp = 'arm64ec-w64-mingw32-clang++'
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'arm64ec-w64-mingw32-windres'
+          widl = 'arm64ec-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'aarch64'
+          cpu = 'aarch64'
+          endian = 'little'
+          EOF
+
+          cat <<EOF > x86.txt
+          [binaries]
+          c = 'i686-w64-mingw32-clang'
+          cpp = 'i686-w64-mingw32-clang++'
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'i686-w64-mingw32-windres'
+          widl = 'i686-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'x86'
+          cpu = 'i686'
+          endian = 'little'
+          EOF
+
+      - name: Build
+        run: |
+          cd dxvk
+          meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
+          meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true
+          ninja -C build-ec -j 2
+          ninja -C build-x86 -j 2
+
+      - name: Package
+        run: |
+          mkdir -p packaging/system32
+          mkdir -p packaging/syswow64
+
+          copy_dll() {
+            SRC_DIR=$1
+            DEST_DIR=$2
+            cp "dxvk/$SRC_DIR/src/d3d11/d3d11.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d10/d3d10core.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d9/d3d9.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d8/d3d8.dll" "$DEST_DIR/" || true
+            cp "dxvk/$SRC_DIR/src/dxgi/dxgi.dll" "$DEST_DIR/"
+          }
+          copy_dll "build-ec" "packaging/system32"
+          copy_dll "build-x86" "packaging/syswow64"
+          llvm-strip --strip-all packaging/system32/*.dll
+          llvm-strip --strip-all packaging/syswow64/*.dll
+
+          cat <<EOF > packaging/profile.json
+          {
+            "type": "DXVK",
+            "versionName": "${{ env.VERSION_NAME }}",
+            "versionCode": 0,
+            "description": "Banners Repo - Binary Semaphores ARM64EC (Upstream: Philip Rebohle, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback.",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+
+          cd packaging
+          # WCP
+          tar --zstd -cf ../DXVK-BINSEM-ARM64EC-${{ env.VERSION_NAME }}.wcp .
+          # ZIP
+          zip -r ../DXVK-BINSEM-ARM64EC-${{ env.VERSION_NAME }}.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dxvk-binsem-arm64ec
+          path: |
+            *.wcp
+            *.zip
+
+  # ==================================================================
+  # JOB 3: Release
+  # ==================================================================
+  create-release:
+    name: Create Nightly Release
+    runs-on: ubuntu-latest
+    needs: [build-binsem, build-binsem-arm64ec]
+    permissions:
+      contents: write
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+          merge-multiple: true
+
+      - name: Set Release Variables
+        run: |
+          TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
+          READABLE_DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')
+          echo "TAG_NAME=dxvk-binsem-nightly-$TIMESTAMP" >> $GITHUB_ENV
+          echo "RELEASE_NAME=DXVK Binary-Semaphores Nightly - $READABLE_DATE" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          name: ${{ env.RELEASE_NAME }}
+          prerelease: false
+          make_latest: false
+          body: |
+            ### 🚀 DXVK Binary-Semaphores Nightly: ${{ env.TAG_NAME }}
+
+            DXVK built with leegao's [binary semaphore queue fallback](https://github.com/leegao/dxvk/commit/e950b4a90359acebf13f5a76cfa2cfaa7c238b74).
+            Base ref: `${{ inputs.base_ref }}` · gplasync: `${{ inputs.gplasync }}`
+
+            | Variant | Version |
+            | :--- | :--- |
+            | **Standard (x64/x86)** | `${{ needs.build-binsem.outputs.version }}` |
+            | **ARM64EC** | `${{ needs.build-binsem-arm64ec.outputs.version }}` |
+
+            ### ⚙️ Enabling the fallback
+            Set the env var **`DXVK_DISABLE_TIMELINE_SEMAPHORES=1`** in your container/Wine
+            environment. This restores binary-semaphore inter-queue sync and works around the
+            Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+. Without the var set,
+            these DLLs behave like stock DXVK.
+
+            ### 📦 Files
+            - `dxvk-binsem-*.wcp` / `.zip` — Standard
+            - `DXVK-BINSEM-ARM64EC-*.wcp` / `.zip` — ARM64EC
+
+            **The .wcp files are for Winlator · the .zip files for manual Gamehub injection.**
+          files: |
+            ./artifacts/*.wcp
+            ./artifacts/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
