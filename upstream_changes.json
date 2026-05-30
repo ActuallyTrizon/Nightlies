@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-05-29T21:46:09Z",
+  "triggered_at": "2026-05-30T02:14:24Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "a1071ec",
+      "new": "f5fafa5",
+      "full": "f5fafa5b969333f964021b12443ba13fbacd620b",
+      "msg": "Merge pull request #5492 from FrontMage/codex/int29-failfast-probe",
+      "date": "2026-05-29T23:59:16Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2d3dc35",
-      "new": "e24dc5b",
-      "full": "e24dc5bd1e7fe6101bdc866fb16a15a8fcae1aae",
-      "msg": "anv: fake VK_EXT_image_compression_control on Xe2+",
-      "date": "2026-05-29T23:50:54.000+03:00"
+      "old": "e24dc5b",
+      "new": "154d3b5",
+      "full": "154d3b581246613beff1dea1bc6b47824bf3a7ad",
+      "msg": "nak: Simplify SSARef construction with try_push()",
+      "date": "2026-05-30T01:20:10.000+00:00"
     }
   ]
 }
