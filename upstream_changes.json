@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-30T02:14:24Z",
+  "triggered_at": "2026-05-30T14:59:37Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "a1071ec",
-      "new": "f5fafa5",
-      "full": "f5fafa5b969333f964021b12443ba13fbacd620b",
-      "msg": "Merge pull request #5492 from FrontMage/codex/int29-failfast-probe",
-      "date": "2026-05-29T23:59:16Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "e24dc5b",
-      "new": "154d3b5",
-      "full": "154d3b581246613beff1dea1bc6b47824bf3a7ad",
-      "msg": "nak: Simplify SSARef construction with try_push()",
-      "date": "2026-05-30T01:20:10.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "dbefb93",
+      "new": "9a1b240",
+      "full": "9a1b240d7f47a13ec15477683f811388ad67a620",
+      "msg": "[d3d9] Simplify SWVP shader building",
+      "date": "2026-05-30T13:38:17Z"
     }
   ]
 }
