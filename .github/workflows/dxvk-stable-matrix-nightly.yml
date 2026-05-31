@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ver: ["2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
+        ver: ["2.5", "2.5.1", "2.5.2", "2.5.3", "2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
         base: [regular, gplasync]
     steps:
       - name: Checkout (for patches)
@@ -97,6 +97,18 @@ jobs:
           COMMIT=$(git rev-parse --short HEAD)
           echo "COMMIT=$COMMIT" >> $GITHUB_ENV
 
+          # Resolve per-version patch filenames (a few are irregular).
+          # binsem: 2.5.x all share one rebased patch; others are per-version.
+          case "$TAG" in
+            2.5|2.5.1|2.5.2|2.5.3) BINSEM="dxvk-binary-semaphores-2.5.patch" ;;
+            *)                     BINSEM="dxvk-binary-semaphores-${TAG}.patch" ;;
+          esac
+          # gplasync: Ph42oN's revision suffix is usually -1, but 2.5.1 is -2.
+          case "$TAG" in
+            2.5.1) GPL="dxvk-gplasync-2.5.1-2.patch" ;;
+            *)     GPL="dxvk-gplasync-${TAG}-1.patch" ;;
+          esac
+
           # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
           # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
           # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
@@ -105,9 +117,9 @@ jobs:
           fi
 
           if [ "${{ matrix.base }}" = "gplasync" ]; then
-            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
+            git apply --verbose "$GITHUB_WORKSPACE/patches/$GPL"
           fi
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores-${TAG}.patch"
+          git apply --verbose "$GITHUB_WORKSPACE/patches/$BINSEM"
 
       - name: Build
         run: |
@@ -176,7 +188,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ver: ["2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
+        ver: ["2.5", "2.5.1", "2.5.2", "2.5.3", "2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
         base: [regular, gplasync]
     steps:
       - name: Checkout (for patches)
@@ -250,6 +262,18 @@ jobs:
           COMMIT=$(git rev-parse --short HEAD)
           echo "COMMIT=$COMMIT" >> $GITHUB_ENV
 
+          # Resolve per-version patch filenames (a few are irregular).
+          # binsem: 2.5.x all share one rebased patch; others are per-version.
+          case "$TAG" in
+            2.5|2.5.1|2.5.2|2.5.3) BINSEM="dxvk-binary-semaphores-2.5.patch" ;;
+            *)                     BINSEM="dxvk-binary-semaphores-${TAG}.patch" ;;
+          esac
+          # gplasync: Ph42oN's revision suffix is usually -1, but 2.5.1 is -2.
+          case "$TAG" in
+            2.5.1) GPL="dxvk-gplasync-2.5.1-2.patch" ;;
+            *)     GPL="dxvk-gplasync-${TAG}-1.patch" ;;
+          esac
+
           # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
           # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
           # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
@@ -258,9 +282,9 @@ jobs:
           fi
 
           if [ "${{ matrix.base }}" = "gplasync" ]; then
-            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
+            git apply --verbose "$GITHUB_WORKSPACE/patches/$GPL"
           fi
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores-${TAG}.patch"
+          git apply --verbose "$GITHUB_WORKSPACE/patches/$BINSEM"
 
       - name: Configure Cross-Files
         run: |
@@ -401,11 +425,8 @@ jobs:
             [binary-semaphore queue fallback](https://github.com/leegao) on top of
             the chosen base, for **standard (x64/x86)** and **ARM64EC**.
 
-            **Versions:** 2.6, 2.6.1, 2.6.2, 2.7, 2.7.1
+            **Versions:** 2.5, 2.5.1, 2.5.2, 2.5.3, 2.6, 2.6.1, 2.6.2, 2.7, 2.7.1
             **Flavors (each):** `regular` (vanilla + binsem) · `gplasync` (Ph42oN + binsem) · `async` (alias of gplasync + binsem)
-
-            > 2.5.x is not included yet — its submission API predates the `frameId`
-            > plumbing the patch relies on and needs a separate port.
 
             ### ⚙️ Activating the binary-semaphores fallback
             Set the following environment variable in your container/Wine environment:
@@ -442,13 +463,16 @@ jobs:
               (collision only on the ARM64EC / llvm-mingw path). Upstream's own 2.6.1 fix
               (`62b99d7b`, namespace-wrapping the declaration) was backported as a separate
               one-file patch. This is a toolchain fix, **not** part of the binsem change.
-            - **2.5.x** — deliberately **not** shipped here. Its submission API predates the
-              `frameId` plumbing entirely, so the patch can't be rebased; it needs a
-              from-scratch reimplementation, tracked as a separate follow-up.
+            - **2.5 / 2.5.1 / 2.5.2 / 2.5.3** — these predate the `frameId` plumbing entirely
+              (`submit(device, queue)` with no frameId), so the patch could **not** be rebased.
+              leegao's fallback was **reimplemented from scratch** against the older submission
+              API (fence shifted to the 3rd `submit` param, `trackedId` args dropped, latency
+              hooks omitted) — same binary-semaphore design, expressed against 2.5's API. The
+              four tags share one patch (`dxvk-binary-semaphores-2.5.patch`) since their
+              `dxvk_cmdlist`/`dxvk_queue` source is identical in the touched regions.
 
-            In short: for 2.6.x it is the *same* patch, machine-rebased onto matching-API
-            source — not a reinterpretation. Where the API genuinely diverged (2.5.x), the
-            version was left out rather than shipped broken.
+            In short: 2.6.x is the *same* patch machine-rebased onto matching-API source;
+            2.5.x is a faithful hand-reimplementation of the same design against the older API.
 
             > ℹ️ These builds are **compile-verified in CI**; the binary-semaphore code path
             > itself has not been GPU-runtime-verified on every older version. Default
