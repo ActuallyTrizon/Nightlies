@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-05-31T11:28:34Z",
+  "triggered_at": "2026-05-31T13:18:21Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "194d577",
-      "new": "3583d9c",
-      "full": "3583d9c90e042694a5b0ac2511603ba8230c2316",
-      "msg": "fix clang warnings (#3915)",
-      "date": "2026-05-31T10:25:52Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "154d3b5",
-      "new": "e22cdeb",
-      "full": "e22cdebfdce9afc9de86d1949c365950d5a11318",
-      "msg": "brw: nir_lower_constant_convert_alu_types only once",
-      "date": "2026-05-30T21:00:39.000-07:00"
+      "old": "e22cdeb",
+      "new": "f48f681",
+      "full": "f48f681fb5c5000afb190c96f09070671a034d30",
+      "msg": "nir: Duplicate the name in nir_def_set_name",
+      "date": "2026-05-31T13:31:55.000+02:00"
     }
   ]
 }
