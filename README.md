@@ -157,6 +157,7 @@ Third-party components used for packaging retain their original upstream license
 - **DXVK:** [Philip Rebohle (doitsujin)](https://github.com/doitsujin)
 - **DXVK-Sarek:** [pythonlover02](https://github.com/pythonlover02)
 - **DXVK-GPLAsync Patch:** [Ph42oN](https://gitlab.com/Ph42oN)
+- **DXVK Binary-Semaphores Patch:** [leegao](https://github.com/leegao)
 - **VKD3D-Proton:** [Hans-Kristian Arntzen](https://github.com/HansKristian-Work)
 - **Freedreno Turnip Driver:** [Mesa3D](https://mesa3d.org/)
 
