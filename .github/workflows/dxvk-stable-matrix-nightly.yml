@@ -191,7 +191,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ver: ["2.5", "2.5.1", "2.5.2", "2.5.3", "2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
+        # 2.5.x is Standard-only: its code predates the current llvm-mingw
+        # (Clang) toolchain and hits era-drift compile errors on the ARM64EC
+        # path (e.g. constexpr enum strictness). The binsem reimpl itself is
+        # fine — 2.5.x builds on the GCC-based Standard path.
+        ver: ["2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
         base: [regular, gplasync]
     steps:
       - name: Checkout (for patches)
@@ -432,6 +436,7 @@ jobs:
             the chosen base, for **standard (x64/x86)** and **ARM64EC**.
 
             **Versions:** 2.5, 2.5.1, 2.5.2, 2.5.3, 2.6, 2.6.1, 2.6.2, 2.7, 2.7.1
+            **Arches:** 2.6+ → Standard (x64/x86) **+** ARM64EC · 2.5.x → **Standard only**
             **Flavors (each):** `regular` (vanilla + binsem) · `gplasync` (Ph42oN + binsem) · `async` (alias of gplasync + binsem)
 
             ### ⚙️ Activating the binary-semaphores fallback
@@ -469,13 +474,16 @@ jobs:
               (collision only on the ARM64EC / llvm-mingw path). Upstream's own 2.6.1 fix
               (`62b99d7b`, namespace-wrapping the declaration) was backported as a separate
               one-file patch. This is a toolchain fix, **not** part of the binsem change.
-            - **2.5 / 2.5.1 / 2.5.2 / 2.5.3** — these predate the `frameId` plumbing entirely
-              (`submit(device, queue)` with no frameId), so the patch could **not** be rebased.
-              leegao's fallback was **reimplemented from scratch** against the older submission
-              API (fence shifted to the 3rd `submit` param, `trackedId` args dropped, latency
-              hooks omitted) — same binary-semaphore design, expressed against 2.5's API. The
-              four tags share one patch (`dxvk-binary-semaphores-2.5.patch`) since their
-              `dxvk_cmdlist`/`dxvk_queue` source is identical in the touched regions.
+            - **2.5 / 2.5.1 / 2.5.2 / 2.5.3** — *(Standard / x64-x86 only — see below)* these predate
+              the `frameId` plumbing entirely (`submit(device, queue)` with no frameId), so the
+              patch could **not** be rebased. leegao's fallback was **reimplemented from scratch**
+              against the older submission API (fence shifted to the 3rd `submit` param,
+              `trackedId` args dropped, latency hooks omitted) — same binary-semaphore design,
+              expressed against 2.5's API. The four tags share one patch
+              (`dxvk-binary-semaphores-2.5.patch`) since their `dxvk_cmdlist`/`dxvk_queue` source
+              is identical in the touched regions. **No ARM64EC builds for 2.5.x:** that code
+              predates the current llvm-mingw (Clang) toolchain and hits era-drift compile errors
+              on the ARM64EC path (the GCC-based Standard path is unaffected).
 
             In short: 2.6.x is the *same* patch machine-rebased onto matching-API source;
             2.5.x is a faithful hand-reimplementation of the same design against the older API.
