@@ -109,12 +109,15 @@ jobs:
             *)     GPL="dxvk-gplasync-${TAG}-1.patch" ;;
           esac
 
-          # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
-          # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
-          # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
-          if [ "$TAG" = "2.6" ]; then
-            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch"
-          fi
+          # Pre-2.6.1 releases redefine _D3DDEVINFO_RESOURCEMANAGER, which newer
+          # mingw headers now also define — a redefinition collision on the
+          # llvm-mingw (ARM64EC) path. Backport upstream's namespace-wrap fix
+          # (62b99d7b, shipped in 2.6.1). 2.5.x use a different comment context
+          # so they need their own copy of the same one-line fix.
+          case "$TAG" in
+            2.6)                   git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch" ;;
+            2.5|2.5.1|2.5.2|2.5.3) git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.5-d3d9-header-fix.patch" ;;
+          esac
 
           if [ "${{ matrix.base }}" = "gplasync" ]; then
             git apply --verbose "$GITHUB_WORKSPACE/patches/$GPL"
@@ -274,12 +277,15 @@ jobs:
             *)     GPL="dxvk-gplasync-${TAG}-1.patch" ;;
           esac
 
-          # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
-          # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
-          # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
-          if [ "$TAG" = "2.6" ]; then
-            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch"
-          fi
+          # Pre-2.6.1 releases redefine _D3DDEVINFO_RESOURCEMANAGER, which newer
+          # mingw headers now also define — a redefinition collision on the
+          # llvm-mingw (ARM64EC) path. Backport upstream's namespace-wrap fix
+          # (62b99d7b, shipped in 2.6.1). 2.5.x use a different comment context
+          # so they need their own copy of the same one-line fix.
+          case "$TAG" in
+            2.6)                   git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch" ;;
+            2.5|2.5.1|2.5.2|2.5.3) git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.5-d3d9-header-fix.patch" ;;
+          esac
 
           if [ "${{ matrix.base }}" = "gplasync" ]; then
             git apply --verbose "$GITHUB_WORKSPACE/patches/$GPL"

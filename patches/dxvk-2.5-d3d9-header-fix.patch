@@ -1,0 +1,24 @@
+diff --git a/src/d3d9/d3d9_include.h b/src/d3d9/d3d9_include.h
+index df35f10f..b39129a1 100644
+--- a/src/d3d9/d3d9_include.h
++++ b/src/d3d9/d3d9_include.h
+@@ -48,12 +48,14 @@
+ #define D3DSWAPEFFECT_COPY_VSYNC 4
+ #endif
+ 
+-// MinGW headers are broken. Who'dve guessed?
++// Missing in some versions of mingw headers
+ #ifndef _MSC_VER
+-typedef struct _D3DDEVINFO_RESOURCEMANAGER
+-{
+-  char dummy;
+-} D3DDEVINFO_RESOURCEMANAGER, * LPD3DDEVINFO_RESOURCEMANAGER;
++namespace dxvk {
++  typedef struct _D3DDEVINFO_RESOURCEMANAGER
++  {
++    char dummy;
++  } D3DDEVINFO_RESOURCEMANAGER, * LPD3DDEVINFO_RESOURCEMANAGER;
++}
+ #endif
+ 
+ // This is the managed pool on D3D9Ex, it's just hidden!
