@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-31T13:18:21Z",
+  "triggered_at": "2026-05-31T15:13:17Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e22cdeb",
-      "new": "f48f681",
-      "full": "f48f681fb5c5000afb190c96f09070671a034d30",
-      "msg": "nir: Duplicate the name in nir_def_set_name",
-      "date": "2026-05-31T13:31:55.000+02:00"
+      "old": "f48f681",
+      "new": "40087f9",
+      "full": "40087f9be2c5c7065c65b29408af12414f497c50",
+      "msg": "lavapipe: Perform shader object compatibility check early",
+      "date": "2026-05-31T12:36:29.000+00:00"
     }
   ]
 }
