@@ -447,7 +447,12 @@ jobs:
             ```
 
             This works around the Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+.
-            Without it set, the DLLs behave like stock DXVK.
+
+            **The patch is opt-in — these are safe drop-in replacements:**
+            - **Variable not set** → the DLLs behave exactly like stock DXVK; the fallback stays dormant.
+            - **`DXVK_DISABLE_TIMELINE_SEMAPHORES=1`** → the binary-semaphore fallback turns on.
+
+            Nothing changes unless you set it.
 
             ### 📂 File naming
             - `DXVK-<ver>-binsem-<commit>.wcp/.zip` — regular
