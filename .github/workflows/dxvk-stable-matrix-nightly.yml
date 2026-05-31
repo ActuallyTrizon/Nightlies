@@ -418,6 +418,37 @@ jobs:
             - `DXVK-<ver>-binsem-async-<commit>.wcp/.zip` — async (= gplasync build)
             - ARM64EC variants carry `-arm64ec-` before the commit.
 
+            ### 🔧 How the binary-semaphores patch works on releases older than 2.7
+            leegao's patch was authored against DXVK **master (~2.7.1)**, where command
+            submission flows through `DxvkCommandSubmission::submit(device, queue, frameId)`.
+            It does **not** apply unchanged to every older release — here's exactly what was
+            done per version:
+
+            - **2.7 / 2.7.1** — submission API is identical to the patch's base, so it applies
+              **verbatim**, unchanged.
+            - **2.6 / 2.6.1 / 2.6.2** — already carry the `submit(..., frameId)` signature the
+              patch is built around, but surrounding context (includes, nearby lines) had
+              drifted. The patch was **rebased via a 3-way merge** against each tag's exact
+              source blobs, yielding a per-version patch (`patches/dxvk-binary-semaphores-<ver>.patch`).
+              Because the underlying API matches, the merge is mechanical: the *logic* is
+              byte-for-byte leegao's, only the surrounding line context differs.
+            - **2.6.0 only** also needed an unrelated, well-known build fix — it redefines
+              `_D3DDEVINFO_RESOURCEMANAGER`, which newer mingw headers now also define
+              (collision only on the ARM64EC / llvm-mingw path). Upstream's own 2.6.1 fix
+              (`62b99d7b`, namespace-wrapping the declaration) was backported as a separate
+              one-file patch. This is a toolchain fix, **not** part of the binsem change.
+            - **2.5.x** — deliberately **not** shipped here. Its submission API predates the
+              `frameId` plumbing entirely, so the patch can't be rebased; it needs a
+              from-scratch reimplementation, tracked as a separate follow-up.
+
+            In short: for 2.6.x it is the *same* patch, machine-rebased onto matching-API
+            source — not a reinterpretation. Where the API genuinely diverged (2.5.x), the
+            version was left out rather than shipped broken.
+
+            > ℹ️ These builds are **compile-verified in CI**; the binary-semaphore code path
+            > itself has not been GPU-runtime-verified on every older version. Default
+            > (timeline) behaviour is unchanged and matches stock DXVK.
+
             **.wcp = Winlator · .zip = manual Gamehub injection.**
           files: |
             ./artifacts/*.wcp
