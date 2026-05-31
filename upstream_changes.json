@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-31T15:13:17Z",
+  "triggered_at": "2026-05-31T18:01:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f48f681",
-      "new": "40087f9",
-      "full": "40087f9be2c5c7065c65b29408af12414f497c50",
-      "msg": "lavapipe: Perform shader object compatibility check early",
-      "date": "2026-05-31T12:36:29.000+00:00"
+      "old": "40087f9",
+      "new": "364ae96",
+      "full": "364ae9647756d9045a632c32370181fd1606fd82",
+      "msg": "Revert \"lavapipe: Don't advertise support for multiplane drm formats\"",
+      "date": "2026-05-31T18:53:28.000+02:00"
     }
   ]
 }
