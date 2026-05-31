@@ -408,7 +408,12 @@ jobs:
             > plumbing the patch relies on and needs a separate port.
 
             ### ⚙️ Activating the binary-semaphores fallback
-            Set **`DXVK_DISABLE_TIMELINE_SEMAPHORES=1`** in your container/Wine environment.
+            Set the following environment variable in your container/Wine environment:
+
+            ```
+            DXVK_DISABLE_TIMELINE_SEMAPHORES=1
+            ```
+
             This works around the Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+.
             Without it set, the DLLs behave like stock DXVK.
 
