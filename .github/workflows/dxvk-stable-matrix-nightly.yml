@@ -1,0 +1,412 @@
+name: DXVK Stable-Version Matrix
+
+# Builds a matrix of PINNED stable DXVK releases, each carrying leegao's
+# binary-semaphore queue fallback patch (DXVK_DISABLE_TIMELINE_SEMAPHORES=1).
+# For every version we produce three flavors, all for standard (x64/x86) AND
+# ARM64EC:
+#   - regular   : vanilla DXVK + binsem
+#   - gplasync  : Ph42oN gplasync + binsem
+#   - async     : alias of the gplasync build (Sporif-style standalone async is
+#                 discontinued for 2.5+; gplasync IS the maintained async). Built
+#                 once with the gplasync flavor and re-packaged under the async name.
+#
+# Per-version patches live in this repo:
+#   patches/dxvk-gplasync-<ver>-1.patch       (Ph42oN, per release)
+#   patches/dxvk-binary-semaphores-<ver>.patch (leegao, rebased per release)
+#
+# These are pinned historical versions — they never change — so this is a
+# workflow_dispatch one-shot, NOT part of the nightly schedule.
+#
+# NOTE: 2.5.x is intentionally absent. Its submission API predates the frameId
+# plumbing leegao's patch is built around, so it needs a from-scratch port and
+# is being handled as a separate follow-up.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  # ==================================================================
+  # Standard (x64/x86) — 5 versions x {regular, gplasync} = 10 jobs
+  # ==================================================================
+  build-standard:
+    name: ${{ matrix.ver }} ${{ matrix.base }} (Standard)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ver: ["2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
+        base: [regular, gplasync]
+    steps:
+      - name: Checkout (for patches)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          # Pinned tag — source never changes, so the key is just ver+base
+          key: ccache-dxvk-matrix-std-${{ matrix.ver }}-${{ matrix.base }}
+          restore-keys: ccache-dxvk-matrix-std-${{ matrix.ver }}-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup ccache compiler wrappers
+        run: |
+          mkdir -p ~/ccache-bin
+          for compiler in \
+            x86_64-w64-mingw32-gcc \
+            x86_64-w64-mingw32-g++ \
+            i686-w64-mingw32-gcc \
+            i686-w64-mingw32-g++; do
+            ln -s "$(which ccache)" ~/ccache-bin/$compiler
+          done
+          echo "$HOME/ccache-bin" >> $GITHUB_PATH
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Clone & Patch DXVK ${{ matrix.ver }} (${{ matrix.base }})
+        run: |
+          TAG="${{ matrix.ver }}"
+          git clone --branch "v${TAG}" --recurse-submodules \
+            https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          COMMIT=$(git rev-parse --short HEAD)
+          echo "COMMIT=$COMMIT" >> $GITHUB_ENV
+
+          if [ "${{ matrix.base }}" = "gplasync" ]; then
+            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
+          fi
+          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores-${TAG}.patch"
+
+      - name: Build
+        run: |
+          cd dxvk
+          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
+          ./package-release.sh build ../dxvk-built --no-package
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package
+        run: |
+          TAG="${{ matrix.ver }}"
+          pkg() {
+            suffix="$1"; desc="$2"
+            vn="${TAG}-binsem${suffix}-${COMMIT}"
+            rm -rf packaging; mkdir -p packaging
+            cp -r dxvk-built/dxvk-build/x64 packaging/system32
+            cp -r dxvk-built/dxvk-build/x32 packaging/syswow64
+            cat > packaging/profile.json <<EOF
+          {
+            "type": "DXVK",
+            "versionName": "${vn}",
+            "versionCode": 0,
+            "description": "${desc}",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+            tar -cJf "DXVK-${vn}.wcp" -C packaging .
+            ( cd packaging && zip -qr "../DXVK-${vn}.zip" . )
+            echo "packaged DXVK-${vn}"
+          }
+
+          if [ "${{ matrix.base }}" = "regular" ]; then
+            pkg "" "DXVK ${TAG} + Binary Semaphores (Upstream: Philip Rebohle, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+          else
+            pkg "-gplasync" "DXVK ${TAG} + GPLAsync + Binary Semaphores (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+            # async == gplasync build, re-packaged under the async label
+            pkg "-async" "DXVK ${TAG} + Async (GPLAsync-based) + Binary Semaphores (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). async is aliased to the GPLAsync build. Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dxvk-std-${{ matrix.ver }}-${{ matrix.base }}
+          path: |
+            *.wcp
+            *.zip
+
+  # ==================================================================
+  # ARM64EC — 5 versions x {regular, gplasync} = 10 jobs
+  # ==================================================================
+  build-arm64ec:
+    name: ${{ matrix.ver }} ${{ matrix.base }} (ARM64EC)
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        ver: ["2.6", "2.6.1", "2.6.2", "2.7", "2.7.1"]
+        base: [regular, gplasync]
+    steps:
+      - name: Checkout (for patches)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates curl xz-utils jq git build-essential \
+            python3 pkg-config zstd meson ninja-build wget unzip zip ccache
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          key: ccache-dxvk-matrix-ec-${{ matrix.ver }}-${{ matrix.base }}
+          restore-keys: ccache-dxvk-matrix-ec-${{ matrix.ver }}-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Cache LLVM-MinGW
+        uses: actions/cache@v4
+        with:
+          path: /opt/llvm-mingw
+          key: llvm-mingw-20251104-ubuntu22
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup LLVM-MinGW
+        run: |
+          if [ ! -d "/opt/llvm-mingw/bin" ]; then
+            echo "Cache miss — downloading LLVM-MinGW..."
+            LLVM_MINGW_TAG="20251104"
+            wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+            sudo mkdir -p /opt/llvm-mingw
+            sudo tar -C /opt/llvm-mingw --strip-components=1 -xJf llvm.tar.xz
+          else
+            echo "Cache hit — LLVM-MinGW ready."
+          fi
+          echo "/opt/llvm-mingw/bin" >> $GITHUB_PATH
+
+      - name: Configure ccache
+        run: |
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Clone & Patch DXVK ${{ matrix.ver }} (${{ matrix.base }})
+        run: |
+          TAG="${{ matrix.ver }}"
+          git clone --branch "v${TAG}" --recurse-submodules \
+            https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          COMMIT=$(git rev-parse --short HEAD)
+          echo "COMMIT=$COMMIT" >> $GITHUB_ENV
+
+          if [ "${{ matrix.base }}" = "gplasync" ]; then
+            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
+          fi
+          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores-${TAG}.patch"
+
+      - name: Configure Cross-Files
+        run: |
+          cat <<EOF > arm64ec.txt
+          [binaries]
+          c = ['ccache', 'arm64ec-w64-mingw32-clang']
+          cpp = ['ccache', 'arm64ec-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'arm64ec-w64-mingw32-windres'
+          widl = 'arm64ec-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'aarch64'
+          cpu = 'aarch64'
+          endian = 'little'
+          EOF
+
+          cat <<EOF > x86.txt
+          [binaries]
+          c = ['ccache', 'i686-w64-mingw32-clang']
+          cpp = ['ccache', 'i686-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'i686-w64-mingw32-windres'
+          widl = 'i686-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'x86'
+          cpu = 'i686'
+          endian = 'little'
+          EOF
+
+      - name: Build
+        run: |
+          cd dxvk
+          meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
+          meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true
+          ninja -C build-ec -j$(nproc)
+          ninja -C build-x86 -j$(nproc)
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package
+        run: |
+          TAG="${{ matrix.ver }}"
+          copy_dll() {
+            SRC_DIR=$1; DEST_DIR=$2
+            cp "dxvk/$SRC_DIR/src/d3d11/d3d11.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d10/d3d10core.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d9/d3d9.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d8/d3d8.dll" "$DEST_DIR/" || true
+            cp "dxvk/$SRC_DIR/src/dxgi/dxgi.dll" "$DEST_DIR/"
+          }
+          pkg() {
+            suffix="$1"; desc="$2"
+            vn="${TAG}-binsem${suffix}-arm64ec-${COMMIT}"
+            rm -rf packaging; mkdir -p packaging/system32 packaging/syswow64
+            copy_dll "build-ec" "packaging/system32"
+            copy_dll "build-x86" "packaging/syswow64"
+            llvm-strip --strip-all packaging/system32/*.dll
+            llvm-strip --strip-all packaging/syswow64/*.dll
+            cat > packaging/profile.json <<EOF
+          {
+            "type": "DXVK",
+            "versionName": "${vn}",
+            "versionCode": 0,
+            "description": "${desc}",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+            ( cd packaging && tar --zstd -cf "../DXVK-${vn}.wcp" . && zip -qr "../DXVK-${vn}.zip" . )
+            echo "packaged DXVK-${vn}"
+          }
+
+          if [ "${{ matrix.base }}" = "regular" ]; then
+            pkg "" "DXVK ${TAG} ARM64EC + Binary Semaphores (Upstream: Philip Rebohle, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+          else
+            pkg "-gplasync" "DXVK ${TAG} ARM64EC + GPLAsync + Binary Semaphores (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+            pkg "-async" "DXVK ${TAG} ARM64EC + Async (GPLAsync-based) + Binary Semaphores (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). async is aliased to the GPLAsync build. Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback."
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dxvk-ec-${{ matrix.ver }}-${{ matrix.base }}
+          path: |
+            *.wcp
+            *.zip
+
+  # ==================================================================
+  # Release
+  # ==================================================================
+  create-release:
+    name: Create DXVK Stable-Matrix Release
+    runs-on: ubuntu-latest
+    needs: [build-standard, build-arm64ec]
+    permissions:
+      contents: write
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+          merge-multiple: true
+
+      - name: Set Release Variables
+        run: |
+          TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
+          READABLE_DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')
+          echo "TAG_NAME=dxvk-stable-matrix-$TIMESTAMP" >> $GITHUB_ENV
+          echo "RELEASE_NAME=DXVK Stable-Version Matrix - $READABLE_DATE" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          name: ${{ env.RELEASE_NAME }}
+          prerelease: false
+          make_latest: false
+          body: |
+            ### 📦 DXVK Stable-Version Matrix: ${{ env.TAG_NAME }}
+
+            Pinned stable DXVK releases, each carrying leegao's
+            [binary-semaphore queue fallback](https://github.com/leegao) on top of
+            the chosen base, for **standard (x64/x86)** and **ARM64EC**.
+
+            **Versions:** 2.6, 2.6.1, 2.6.2, 2.7, 2.7.1
+            **Flavors (each):** `regular` (vanilla + binsem) · `gplasync` (Ph42oN + binsem) · `async` (alias of gplasync + binsem)
+
+            > 2.5.x is not included yet — its submission API predates the `frameId`
+            > plumbing the patch relies on and needs a separate port.
+
+            ### ⚙️ Activating the binary-semaphores fallback
+            Set **`DXVK_DISABLE_TIMELINE_SEMAPHORES=1`** in your container/Wine environment.
+            This works around the Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+.
+            Without it set, the DLLs behave like stock DXVK.
+
+            ### 📂 File naming
+            - `DXVK-<ver>-binsem-<commit>.wcp/.zip` — regular
+            - `DXVK-<ver>-binsem-gplasync-<commit>.wcp/.zip` — gplasync
+            - `DXVK-<ver>-binsem-async-<commit>.wcp/.zip` — async (= gplasync build)
+            - ARM64EC variants carry `-arm64ec-` before the commit.
+
+            **.wcp = Winlator · .zip = manual Gamehub injection.**
+          files: |
+            ./artifacts/*.wcp
+            ./artifacts/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
