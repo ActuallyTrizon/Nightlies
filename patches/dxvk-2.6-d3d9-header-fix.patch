@@ -1,0 +1,32 @@
+commit 62b99d7b0fbe552d9abd2bd733028747c77a39fe
+Author: Philip Rebohle <philip.rebohle@tu-dortmund.de>
+Date:   Mon Mar 31 16:06:58 2025 +0200
+
+    [dxvk] Move custom D3DDEVINFO_RESOURCEMANAGER declaration into dxvk namespace
+    
+    Should fix #4813.
+
+diff --git a/src/d3d9/d3d9_include.h b/src/d3d9/d3d9_include.h
+index 533085e5..1d8ab50d 100644
+--- a/src/d3d9/d3d9_include.h
++++ b/src/d3d9/d3d9_include.h
+@@ -44,12 +44,14 @@
+ #define D3DPRESENT_FORCEIMMEDIATE              0x00000100L
+ #endif
+ 
+-// MinGW headers are broken. Who'dve guessed?
++// Missing in some versions of mingw headers
+ #ifndef _MSC_VER
+-typedef struct _D3DDEVINFO_RESOURCEMANAGER
+-{
+-  char dummy;
+-} D3DDEVINFO_RESOURCEMANAGER, * LPD3DDEVINFO_RESOURCEMANAGER;
++namespace dxvk {
++  typedef struct _D3DDEVINFO_RESOURCEMANAGER
++  {
++    char dummy;
++  } D3DDEVINFO_RESOURCEMANAGER, * LPD3DDEVINFO_RESOURCEMANAGER;
++}
+ #endif
+ 
+ // This is the managed pool on D3D9Ex, it's just hidden!

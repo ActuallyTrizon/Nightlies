@@ -97,6 +97,13 @@ jobs:
           COMMIT=$(git rev-parse --short HEAD)
           echo "COMMIT=$COMMIT" >> $GITHUB_ENV
 
+          # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
+          # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
+          # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
+          if [ "$TAG" = "2.6" ]; then
+            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch"
+          fi
+
           if [ "${{ matrix.base }}" = "gplasync" ]; then
             git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
           fi
@@ -242,6 +249,13 @@ jobs:
           cd dxvk
           COMMIT=$(git rev-parse --short HEAD)
           echo "COMMIT=$COMMIT" >> $GITHUB_ENV
+
+          # 2.6.0 only: backport upstream 62b99d7b (namespace-wrap
+          # _D3DDEVINFO_RESOURCEMANAGER) to fix the redefinition collision with
+          # newer mingw headers on the llvm-mingw path. Fixed upstream in 2.6.1.
+          if [ "$TAG" = "2.6" ]; then
+            git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-2.6-d3d9-header-fix.patch"
+          fi
 
           if [ "${{ matrix.base }}" = "gplasync" ]; then
             git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-${TAG}-1.patch"
