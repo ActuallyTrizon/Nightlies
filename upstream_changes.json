@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-05-31T18:01:11Z",
+  "triggered_at": "2026-06-01T04:13:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "40087f9",
-      "new": "364ae96",
-      "full": "364ae9647756d9045a632c32370181fd1606fd82",
-      "msg": "Revert \"lavapipe: Don't advertise support for multiplane drm formats\"",
-      "date": "2026-05-31T18:53:28.000+02:00"
+      "old": "364ae96",
+      "new": "fd9c2ce",
+      "full": "fd9c2ce73d05eaed611519b997aa45f7622b691e",
+      "msg": "compiler/rust/nir: Add helpers for getting ALU input/output types",
+      "date": "2026-06-01T03:24:17.000+00:00"
     }
   ]
 }
