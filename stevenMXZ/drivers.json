@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T09:41:20Z",
+  "updated_at": "2026-06-01T12:27:48Z",
   "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
   "total_releases": 62,
@@ -17,6 +17,37 @@
           "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v863.1_a7xx/v863.1.zip",
           "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_a7xx_v863.1.zip",
           "published_at": "2026-05-23T10:43:07Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.2.0-R5",
+      "name": "Turnip v26.2.0-R5",
+      "published_at": "2026-05-30T18:07:10Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.2.0-R5_OneUI.zip",
+          "mirror_name": "v26.2.0-R5_Turnip_v26.2.0-R5_OneUI.zip",
+          "size": 2712724,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0-R5_OneUI.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R5_Turnip_v26.2.0-R5_OneUI.zip",
+          "published_at": "2026-05-30T18:06:46Z"
+        },
+        {
+          "name": "Turnip_v26.2.0_R5.zip",
+          "mirror_name": "v26.2.0-R5_Turnip_v26.2.0_R5.zip",
+          "size": 2712437,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0_R5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R5_Turnip_v26.2.0_R5.zip",
+          "published_at": "2026-05-30T18:06:45Z"
+        },
+        {
+          "name": "Turnip_v26.2.0_R5_patched.zip",
+          "mirror_name": "v26.2.0-R5_Turnip_v26.2.0_R5_patched.zip",
+          "size": 2716215,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0_R5_patched.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R5_Turnip_v26.2.0_R5_patched.zip",
+          "published_at": "2026-05-30T18:06:48Z"
         }
       ]
     },
@@ -63,37 +94,6 @@
           "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_v26.2.0_R3.zip",
           "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.3.0_r3_Turnip_v26.2.0_R3.zip",
           "published_at": "2026-05-01T10:31:00Z"
-        }
-      ]
-    },
-    {
-      "tag": "turnip_v26.2.0_R5",
-      "name": "Turnip v26.2.0-R5",
-      "published_at": "2026-05-30T18:07:10Z",
-      "assets": [
-        {
-          "name": "Turnip_v26.2.0-R5_OneUI.zip",
-          "mirror_name": "turnip_v26.2.0_R5_Turnip_v26.2.0-R5_OneUI.zip",
-          "size": 2712724,
-          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.2.0_R5/Turnip_v26.2.0-R5_OneUI.zip",
-          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.2.0_R5_Turnip_v26.2.0-R5_OneUI.zip",
-          "published_at": "2026-05-30T18:06:46Z"
-        },
-        {
-          "name": "Turnip_v26.2.0_R5.zip",
-          "mirror_name": "turnip_v26.2.0_R5_Turnip_v26.2.0_R5.zip",
-          "size": 2712437,
-          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.2.0_R5/Turnip_v26.2.0_R5.zip",
-          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.2.0_R5_Turnip_v26.2.0_R5.zip",
-          "published_at": "2026-05-30T18:06:45Z"
-        },
-        {
-          "name": "Turnip_v26.2.0_R5_patched.zip",
-          "mirror_name": "turnip_v26.2.0_R5_Turnip_v26.2.0_R5_patched.zip",
-          "size": 2716215,
-          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.2.0_R5/Turnip_v26.2.0_R5_patched.zip",
-          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/turnip_v26.2.0_R5_Turnip_v26.2.0_R5_patched.zip",
-          "published_at": "2026-05-30T18:06:48Z"
         }
       ]
     },
