@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-06-01T10:12:16Z",
+  "triggered_at": "2026-06-01T16:32:02Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "f5fafa5",
-      "new": "65b05fa",
-      "full": "65b05fa8c122c33856bcaca30211e892bedf238d",
-      "msg": "Merge pull request #5540 from Sonicadvance1/163",
-      "date": "2026-06-01T09:41:34Z"
+      "old": "65b05fa",
+      "new": "a5c3fc4",
+      "full": "a5c3fc475145f269f511e9edce9afe28c188651a",
+      "msg": "Merge pull request #5514 from peppergrayxyz/snd_htimestamp_t",
+      "date": "2026-06-01T10:53:42Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "110e8bd",
+      "new": "ceccf0d",
+      "full": "ceccf0d9525cdaf55bdb44eac4c1300b92bf6f40",
+      "msg": "vkd3d: Route OMM copy through vkd3d_acceleration_structure_copy.",
+      "date": "2026-06-01T16:00:24Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "be4ac08",
+      "new": "3321d33",
+      "full": "3321d3318ff5360b9243a64fdf3bf089b8f6f9c0",
+      "msg": "[dxvk] Don't allocate destination images for inline resolves on desktop",
+      "date": "2026-06-01T15:57:30Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fd9c2ce",
-      "new": "19d786a",
-      "full": "19d786ae6ae635a17c6fd217ef7b569763618d28",
-      "msg": "pipe-loader: use zink for powervr device nodes",
-      "date": "2026-06-01T09:32:08.000+00:00"
+      "old": "19d786a",
+      "new": "74d38a6",
+      "full": "74d38a6271194fe5c9cf0203d2374285c15e6d43",
+      "msg": "intel/gen: Change validation test code to use the parser",
+      "date": "2026-06-01T16:02:41.000+00:00"
     }
   ]
 }
