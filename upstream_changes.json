@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-01T04:13:44Z",
+  "triggered_at": "2026-06-01T10:12:16Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f5fafa5",
+      "new": "65b05fa",
+      "full": "65b05fa8c122c33856bcaca30211e892bedf238d",
+      "msg": "Merge pull request #5540 from Sonicadvance1/163",
+      "date": "2026-06-01T09:41:34Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "364ae96",
-      "new": "fd9c2ce",
-      "full": "fd9c2ce73d05eaed611519b997aa45f7622b691e",
-      "msg": "compiler/rust/nir: Add helpers for getting ALU input/output types",
-      "date": "2026-06-01T03:24:17.000+00:00"
+      "old": "fd9c2ce",
+      "new": "19d786a",
+      "full": "19d786ae6ae635a17c6fd217ef7b569763618d28",
+      "msg": "pipe-loader: use zink for powervr device nodes",
+      "date": "2026-06-01T09:32:08.000+00:00"
     }
   ]
 }
