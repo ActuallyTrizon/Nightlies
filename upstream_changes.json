@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-01T20:50:59Z",
+  "triggered_at": "2026-06-01T22:57:04Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "3321d33",
-      "new": "3c6f508",
-      "full": "3c6f50836b704129b6d2c087c1accd8493333ab3",
-      "msg": "[d3d9] Declare spec constant layout as constant in FF shaders",
-      "date": "2026-06-01T17:09:17Z"
+      "old": "3c6f508",
+      "new": "602d7a8",
+      "full": "602d7a89747234447450218edf6cc3e80ac0b194",
+      "msg": "[dxvk] Adjust logic that assigns compile worker priorities",
+      "date": "2026-06-01T21:28:26Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "74d38a6",
-      "new": "00a407b",
-      "full": "00a407bbae241324ea7da4db5ce7afa2ca7c84f5",
-      "msg": "nak: Use EnumAsU8 for RegFile",
-      "date": "2026-06-01T19:51:17.000+00:00"
+      "old": "00a407b",
+      "new": "b4cd442",
+      "full": "b4cd4428b3b819c2054c5b7155a20a6cc5ff4f50",
+      "msg": "intel/gen: drop noisy build spam",
+      "date": "2026-06-01T21:02:09.000+00:00"
     }
   ]
 }
