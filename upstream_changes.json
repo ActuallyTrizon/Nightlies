@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-02T14:45:01Z",
+  "triggered_at": "2026-06-02T18:33:40Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "02d9784",
-      "new": "ab25913",
-      "full": "ab25913834c63633cf4bf53661e7407465383653",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-02T13:56:55Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c4a1d95",
-      "new": "3a30993",
-      "full": "3a3099369fbfa8bb5aea0d34a5967aae5535dc48",
-      "msg": "gallium: fix type size in z24_unorm_packed_pack_z_32unorm",
-      "date": "2026-06-02T13:49:08.000+00:00"
+      "old": "3a30993",
+      "new": "dcfc90a",
+      "full": "dcfc90a8fc0d59309e8c37926b9a2c6334356271",
+      "msg": "nir/algebraic: Convert bcsel of addition to addition of b2i or b2f",
+      "date": "2026-06-02T17:44:14.000+00:00"
     }
   ]
 }
