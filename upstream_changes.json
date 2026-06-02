@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-02T10:07:13Z",
+  "triggered_at": "2026-06-02T14:45:01Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "602d7a8",
-      "new": "02d9784",
-      "full": "02d97846562d3af23241543ce2985f815f9e2704",
-      "msg": "Clarify and correct Launcher.exe path in Fallout New Vegas PCR folder",
-      "date": "2026-06-02T09:47:11Z"
+      "old": "02d9784",
+      "new": "ab25913",
+      "full": "ab25913834c63633cf4bf53661e7407465383653",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-02T13:56:55Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ff67b27",
-      "new": "c4a1d95",
-      "full": "c4a1d9583cafed8d1e106138840542ec89513510",
-      "msg": "etnaviv/ml: derive stride-2 destriding offsets from padding",
-      "date": "2026-06-02T08:13:11.000+00:00"
+      "old": "c4a1d95",
+      "new": "3a30993",
+      "full": "3a3099369fbfa8bb5aea0d34a5967aae5535dc48",
+      "msg": "gallium: fix type size in z24_unorm_packed_pack_z_32unorm",
+      "date": "2026-06-02T13:49:08.000+00:00"
     }
   ]
 }
