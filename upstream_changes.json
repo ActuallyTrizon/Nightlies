@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-02T21:42:52Z",
+  "triggered_at": "2026-06-02T23:28:09Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "ab25913",
-      "new": "840d147",
-      "full": "840d1474871b3b820fc6cc963f53c4ef11f794bd",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-02T21:18:20Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dcfc90a",
-      "new": "a56079b",
-      "full": "a56079b3028ac907398ed1ded5694822643209fe",
-      "msg": "radv: emit_rast_samples_state uses uses_vrs_attachment only on gfx11+",
-      "date": "2026-06-02T20:38:06.000+00:00"
+      "old": "a56079b",
+      "new": "e68c9b7",
+      "full": "e68c9b791cad118effe20643715d70ab32d79e6e",
+      "msg": "compiler/rust: Fix inline wrapper include dir",
+      "date": "2026-06-02T22:53:26.000+00:00"
     }
   ]
 }
