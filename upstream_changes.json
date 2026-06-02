@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-02T00:10:53Z",
+  "triggered_at": "2026-06-02T10:07:13Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "602d7a8",
+      "new": "02d9784",
+      "full": "02d97846562d3af23241543ce2985f815f9e2704",
+      "msg": "Clarify and correct Launcher.exe path in Fallout New Vegas PCR folder",
+      "date": "2026-06-02T09:47:11Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b4cd442",
-      "new": "ff67b27",
-      "full": "ff67b27f485a944963ce0a0e83e53b68f100701a",
-      "msg": "gfxstream: disallow maintenance6 extension due to serialization bugs",
-      "date": "2026-06-01T22:41:37.000+00:00"
+      "old": "ff67b27",
+      "new": "c4a1d95",
+      "full": "c4a1d9583cafed8d1e106138840542ec89513510",
+      "msg": "etnaviv/ml: derive stride-2 destriding offsets from padding",
+      "date": "2026-06-02T08:13:11.000+00:00"
     }
   ]
 }
