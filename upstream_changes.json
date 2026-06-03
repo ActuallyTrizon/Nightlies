@@ -1,41 +1,23 @@
 {
-  "triggered_at": "2026-06-03T13:08:53Z",
+  "triggered_at": "2026-06-03T18:18:10Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3583d9c",
-      "new": "7fb417d",
-      "full": "7fb417db9813e44636e03f5e5d064ee9be8acb3b",
-      "msg": "[WRAPPER] Added libpipewire-0.3.so wrapping (#3921)",
-      "date": "2026-06-03T13:08:23Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "ceccf0d",
-      "new": "6062cc7",
-      "full": "6062cc7086a6be2b6764262f34813ffc3b6d4650",
-      "msg": "tests: fix few issues found with ASAN",
-      "date": "2026-06-03T12:49:30Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "840d147",
-      "new": "d7b1a29",
-      "full": "d7b1a29dcf931c2ddeeb4e26c9e6d32464e66306",
-      "msg": "[util] Extend Fallout NV regex to include the GOG release",
-      "date": "2026-06-03T10:20:56Z"
+      "old": "7fb417d",
+      "new": "419e095",
+      "full": "419e095ea01146bfec8466284760d4f3febea337",
+      "msg": "[SYSCALL] Support mmap for io_uring (#3920)",
+      "date": "2026-06-03T13:43:41Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "879dd9c",
-      "new": "4cebf8a",
-      "full": "4cebf8af543191bef3e4f24de45cb557c04b8407",
-      "msg": "pan/ci: recognize flaking test",
-      "date": "2026-06-03T12:14:08.000+00:00"
+      "old": "4cebf8a",
+      "new": "fea2af1",
+      "full": "fea2af1b7ba546de4fc5e92fa6ef6386a55f2f45",
+      "msg": "panfrost: Fix tiler_desc assignment",
+      "date": "2026-06-03T17:42:57.000+00:00"
     }
   ]
 }
