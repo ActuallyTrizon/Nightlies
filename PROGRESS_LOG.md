@@ -6,6 +6,48 @@
 
 ---
 
+## Session — 2026-06-03
+
+### [fix] — Rebase + vendor gplasync master patch (DXVK cc418519 broke it); fix build-dxvk checkout (2026-06-03)
+**Commits:** `84d41ff` (patch rebase + vendor), `b38eb9b` (build-dxvk checkout)
+
+#### Problem
+All 4 DXVK gplasync jobs went red starting 2026-06-01. Root cause: DXVK upstream
+commit `cc418519` ("[dxvk] Fix thread synchronization on pipeline compiles") rewrote
+`DxvkGraphicsPipeline::getOptimizedPipeline` in `src/dxvk/dxvk_graphics.cpp`:
+- `m_fastPipelines.insert({ key, handle })` → `m_fastPipelines.emplace(std::piecewise_construct, …)`
+- single compile path → `if (entry.second) { …compile…; return handle; } else { …spin-wait… }`
+
+Ph42oN's `dxvk-gplasync-master.patch` (upstream main, last touched 2025-12-29 — he had
+NOT fixed it) anchors `m_async = false;` on the old `insert` block → `patch does not apply`
+at `dxvk_graphics.cpp:1397`. Jobs clone DXVK `HEAD` (floating), so it broke live.
+
+#### Fix
+1. **Rebased the patch** — only one hunk changed: moved `m_async = false;` into the new
+   `if (entry.second)` compile branch, right before its `return handle;`. Preserves the
+   original semantics (reset on the actual-compile path only; cache-hit early-return does
+   not reset). All other hunks + the binsem patch (touches cmdlist/queue, unaffected) apply
+   clean. Verified `git apply --check` exit 0 on pristine DXVK HEAD `840d147`; binsem applies
+   on top.
+2. **Vendored** the rebased patch at `patches/dxvk-gplasync-master.patch` and switched all 4
+   DXVK jobs from `curl …Ph42oN…|git apply` to `git apply "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"`.
+   Trade-off: no longer auto-tracks Ph42oN — **revert to curl once he rebases upstream main.**
+3. `build-dxvk` (plain GPLAsync std job) had NO `actions/checkout` (it only ever curl'd the
+   patch) → first re-run failed with `can't open patch … No such file or directory`. Added a
+   `Checkout (for patch file)` step (the other 3 DXVK jobs already had one).
+
+#### Verification
+- Run `26873026129` — all 4 DXVK jobs green (compiled + packaged): Build DXVK (GPLAsync),
+  Build DXVK BinSem (GPLAsync), Build DXVK (ARM64EC), Build DXVK BinSem (ARM64EC).
+- Build-proven only; runtime async-correctness under the new sync model NOT device-tested.
+- Filed-issue-on-Ph42oN: drafted, not posted (no GitLab creds in env).
+
+#### Files touched
+- `patches/dxvk-gplasync-master.patch` (vendored, rebased)
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml` (4 jobs → local apply; build-dxvk checkout)
+
+---
+
 ## Session — 2026-05-13
 
 ### [feat] — Surface Banners-Turnip releases in nightlies_components.json (2026-05-13)
