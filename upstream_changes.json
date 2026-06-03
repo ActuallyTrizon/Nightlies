@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-03T21:43:02Z",
+  "triggered_at": "2026-06-03T23:27:10Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "d7b1a29",
-      "new": "4277b7e",
-      "full": "4277b7e501692e698d9c20a9755b440f10ef9fa3",
-      "msg": "[d3d11] Fail device creation for some cases unsupported on Windows",
-      "date": "2026-06-03T21:19:05Z"
+      "old": "4277b7e",
+      "new": "6eddf20",
+      "full": "6eddf20c9c4e10093a341971324a819bf5568a24",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-03T22:36:19Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fea2af1",
-      "new": "5caeb57",
-      "full": "5caeb57bceed56883de7adafc01d7d34c5233ed9",
-      "msg": "gfxstream: Override VkDeviceDeviceMemoryReportCreateInfoEXT vk.xml",
-      "date": "2026-06-03T21:19:45.000+00:00"
+      "old": "5caeb57",
+      "new": "75a0cd6",
+      "full": "75a0cd6e2cdcb32b0ff12be42175c0c4ba286459",
+      "msg": "mesa: Allow GL_TEXTURE_IMMUTABLE_LEVELS query on GLES3",
+      "date": "2026-06-03T21:53:19.000+00:00"
     }
   ]
 }
