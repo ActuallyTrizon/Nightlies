@@ -108,28 +108,6 @@ jobs:
             [ -n "$OLD_MESA" ] && NEW_HASHES="${NEW_HASHES}${MESA_KEY}: ${OLD_MESA}\n" || true
           fi
 
-          # ── Wine bleeding-edge — tracked separately for the Proton nightly ──
-          WINE_REPO="https://github.com/ValveSoftware/wine"
-          WINE_KEY="${WINE_REPO}@bleeding-edge"
-          WINE_HASH=$(git ls-remote "$WINE_REPO" refs/heads/bleeding-edge | awk '{print $1}')
-          WINE_OLD=$(grep "^${WINE_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
-          WINE_CHANGED=false
-
-          if [ -n "$WINE_HASH" ]; then
-            if [ -n "$WINE_OLD" ] && [ "$WINE_HASH" != "$WINE_OLD" ]; then
-              WINE_CHANGED=true
-              echo "Wine bleeding-edge changed: ${WINE_OLD:0:7} → ${WINE_HASH:0:7}"
-            elif [ -z "$WINE_OLD" ]; then
-              echo "Wine bleeding-edge first seen: ${WINE_HASH:0:7} (recording, no build triggered)"
-            fi
-            NEW_HASHES="${NEW_HASHES}${WINE_KEY}: ${WINE_HASH}\n"
-          else
-            echo "WARNING: could not fetch ValveSoftware/wine bleeding-edge HEAD"
-            # preserve existing hash so we don't falsely trigger
-            OLD_WINE_LINE=$(grep "^${WINE_KEY}:" "$HASH_FILE" 2>/dev/null || true)
-            [ -n "$OLD_WINE_LINE" ] && NEW_HASHES="${NEW_HASHES}${OLD_WINE_LINE#*: }\n" || true
-          fi
-
           # ── Driver mirror sources ──
           # Release-based: kimchi, stevenmxz, white — track latest release tag
           # Directory-based: mtr — track HEAD commit of main
@@ -210,7 +188,6 @@ jobs:
           fi
 
           echo "changed=$ANY_CHANGED"                           >> $GITHUB_OUTPUT
-          echo "wine_changed=$WINE_CHANGED"                   >> $GITHUB_OUTPUT
           echo "kimchi_changed=$KIMCHI_CHANGED"               >> $GITHUB_OUTPUT
           echo "smxz_changed=$SMXZ_CHANGED"                   >> $GITHUB_OUTPUT
           echo "white_changed=$WHITE_CHANGED"                 >> $GITHUB_OUTPUT
