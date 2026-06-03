@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-06-03T08:09:20Z",
+  "triggered_at": "2026-06-03T13:08:53Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ed6a178",
-      "new": "d848cbb",
-      "full": "d848cbbc0f35c5bb535107022cdbc4dfd8331824",
-      "msg": "Merge pull request #5543 from Sonicadvance1/165",
-      "date": "2026-06-03T03:39:02Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3583d9c",
+      "new": "7fb417d",
+      "full": "7fb417db9813e44636e03f5e5d064ee9be8acb3b",
+      "msg": "[WRAPPER] Added libpipewire-0.3.so wrapping (#3921)",
+      "date": "2026-06-03T13:08:23Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ceccf0d",
+      "new": "6062cc7",
+      "full": "6062cc7086a6be2b6764262f34813ffc3b6d4650",
+      "msg": "tests: fix few issues found with ASAN",
+      "date": "2026-06-03T12:49:30Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "840d147",
+      "new": "d7b1a29",
+      "full": "d7b1a29dcf931c2ddeeb4e26c9e6d32464e66306",
+      "msg": "[util] Extend Fallout NV regex to include the GOG release",
+      "date": "2026-06-03T10:20:56Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f1c30d6",
-      "new": "879dd9c",
-      "full": "879dd9ca8c37b2cedcd8c0b7626e36e57fd1faa3",
-      "msg": "tu: Advertise VK_KHR_internally_synchronized_queues",
-      "date": "2026-06-03T06:21:30.000+00:00"
+      "old": "879dd9c",
+      "new": "4cebf8a",
+      "full": "4cebf8af543191bef3e4f24de45cb557c04b8407",
+      "msg": "pan/ci: recognize flaking test",
+      "date": "2026-06-03T12:14:08.000+00:00"
     }
   ]
 }
