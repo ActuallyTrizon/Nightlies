@@ -601,9 +601,10 @@ jobs:
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
-          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Local rebased gplasync patch — upstream main is stale (last update 2025-12-29)
+          # and no longer applies past DXVK cc418519 (insert->emplace pipeline refactor).
+          # Revert to curl-ing Ph42oN/dxvk-gplasync once upstream rebases.
+          git apply "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
 
           # Use all available vCPUs (runners have 4; was hardcoded to 2)
           sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
@@ -874,9 +875,8 @@ jobs:
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Local rebased gplasync patch — see note in the gplasync (std) job above.
+          git apply "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
 
       - name: Configure Cross-Files
         run: |
@@ -1066,9 +1066,9 @@ jobs:
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
           # Ph42oN gplasync patch (always applied for this variant)
-          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply --verbose dxvk-gplasync-master.patch
+          # Local rebased copy — upstream main no longer applies past DXVK cc418519
+          # (insert->emplace pipeline refactor). Revert to curl once upstream rebases.
+          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
 
           # leegao binary-semaphore fallback (committed in this repo)
           git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
@@ -1220,9 +1220,9 @@ jobs:
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
 
           # Ph42oN gplasync patch (always applied for this variant)
-          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply --verbose dxvk-gplasync-master.patch
+          # Local rebased copy — upstream main no longer applies past DXVK cc418519
+          # (insert->emplace pipeline refactor). Revert to curl once upstream rebases.
+          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
 
           # leegao binary-semaphore fallback (committed in this repo)
           git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
