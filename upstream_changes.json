@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-03T18:18:10Z",
+  "triggered_at": "2026-06-03T21:43:02Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "7fb417d",
-      "new": "419e095",
-      "full": "419e095ea01146bfec8466284760d4f3febea337",
-      "msg": "[SYSCALL] Support mmap for io_uring (#3920)",
-      "date": "2026-06-03T13:43:41Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d7b1a29",
+      "new": "4277b7e",
+      "full": "4277b7e501692e698d9c20a9755b440f10ef9fa3",
+      "msg": "[d3d11] Fail device creation for some cases unsupported on Windows",
+      "date": "2026-06-03T21:19:05Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4cebf8a",
-      "new": "fea2af1",
-      "full": "fea2af1b7ba546de4fc5e92fa6ef6386a55f2f45",
-      "msg": "panfrost: Fix tiler_desc assignment",
-      "date": "2026-06-03T17:42:57.000+00:00"
+      "old": "fea2af1",
+      "new": "5caeb57",
+      "full": "5caeb57bceed56883de7adafc01d7d34c5233ed9",
+      "msg": "gfxstream: Override VkDeviceDeviceMemoryReportCreateInfoEXT vk.xml",
+      "date": "2026-06-03T21:19:45.000+00:00"
     }
   ]
 }
