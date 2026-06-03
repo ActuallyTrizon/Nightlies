@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-02T23:28:09Z",
+  "triggered_at": "2026-06-03T02:55:23Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "a5c3fc4",
+      "new": "ed6a178",
+      "full": "ed6a178ae33f81607946c2ebbcdd8fe3c92c5006",
+      "msg": "Merge pull request #5542 from Sonicadvance1/164",
+      "date": "2026-06-03T02:40:53Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a56079b",
-      "new": "e68c9b7",
-      "full": "e68c9b791cad118effe20643715d70ab32d79e6e",
-      "msg": "compiler/rust: Fix inline wrapper include dir",
-      "date": "2026-06-02T22:53:26.000+00:00"
+      "old": "e68c9b7",
+      "new": "f1c30d6",
+      "full": "f1c30d65e155effa4a746b89e038fc246ae3a23e",
+      "msg": "pan/v13: implement CS udiv",
+      "date": "2026-06-03T01:12:23.000+00:00"
     }
   ]
 }
