@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://github.com/The412Banner/Nightlies/actions/workflows/new-All-in-one-nightly+zips-latest-stable.yml"><img src="https://github.com/The412Banner/Nightlies/actions/workflows/new-All-in-one-nightly+zips-latest-stable.yml/badge.svg" alt="All-in-One Nightly"></a>
-  <a href="https://github.com/The412Banner/Nightlies/actions/workflows/proton-bleeding-edge-nightly.yml"><img src="https://github.com/The412Banner/Nightlies/actions/workflows/proton-bleeding-edge-nightly.yml/badge.svg" alt="Proton Bleeding Edge"></a>
 </p>
 
 Welcome to my nightly repository for Windows-emulation components on Android. This repository automatically builds and packages the latest upstream commits from projects like DXVK, VKD3D-Proton, Box64, and FEXCore into ready-to-use `.wcp` (Winlator Component Package) files.
@@ -49,17 +48,6 @@ A single JSON index of every component published here — point any compatible W
 | **Turnip** | [v26.2.0-20260603-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260603-r2) — Turnip v26.2.0-20260603-r2 |
 | **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260603-084205) |
 <!-- NIGHTLY-LATEST-END -->
-
-### 🍷 Proton Bleeding-Edge ARM64EC
-
-<!-- PROTON-LATEST-START -->
-| | |
-| :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260414-5edc831-run180](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run180) |
-| **Wine Commit** | [`5edc831`](https://github.com/ValveSoftware/wine/commit/5edc831e88430b5e71efae03d86b908070f05e0f) — atiadlxx: Add ADL2_Graphics_Versions_Get(). |
-| **Date** | 2026-04-14 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run180) |
-<!-- PROTON-LATEST-END -->
 
 ---
 

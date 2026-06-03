@@ -235,13 +235,6 @@ jobs:
         run: |
           gh workflow run "new-All-in-one-nightly+zips-latest-stable.yml"
 
-      - name: Trigger Proton Bleeding-Edge Nightly
-        if: steps.check.outputs.wine_changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh workflow run "proton-bleeding-edge-nightly.yml"
-
       - name: Trigger Kimchi Driver Mirror
         if: steps.check.outputs.kimchi_changed == 'true'
         env:
