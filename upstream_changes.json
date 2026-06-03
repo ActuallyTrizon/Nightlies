@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-03T02:55:23Z",
+  "triggered_at": "2026-06-03T08:09:20Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "a5c3fc4",
-      "new": "ed6a178",
-      "full": "ed6a178ae33f81607946c2ebbcdd8fe3c92c5006",
-      "msg": "Merge pull request #5542 from Sonicadvance1/164",
-      "date": "2026-06-03T02:40:53Z"
+      "old": "ed6a178",
+      "new": "d848cbb",
+      "full": "d848cbbc0f35c5bb535107022cdbc4dfd8331824",
+      "msg": "Merge pull request #5543 from Sonicadvance1/165",
+      "date": "2026-06-03T03:39:02Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e68c9b7",
-      "new": "f1c30d6",
-      "full": "f1c30d65e155effa4a746b89e038fc246ae3a23e",
-      "msg": "pan/v13: implement CS udiv",
-      "date": "2026-06-03T01:12:23.000+00:00"
+      "old": "f1c30d6",
+      "new": "879dd9c",
+      "full": "879dd9ca8c37b2cedcd8c0b7626e36e57fd1faa3",
+      "msg": "tu: Advertise VK_KHR_internally_synchronized_queues",
+      "date": "2026-06-03T06:21:30.000+00:00"
     }
   ]
 }
