@@ -529,6 +529,9 @@ jobs:
     outputs:
       commit: ${{ steps.version.outputs.commit }}
     steps:
+      - name: Checkout (for patch file)
+        uses: actions/checkout@v4
+
       - name: Install Dependencies
         run: |
           sudo apt-get update
