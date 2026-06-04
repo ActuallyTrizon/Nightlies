@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-04T07:17:42Z",
+  "triggered_at": "2026-06-04T10:55:45Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "419e095",
-      "new": "f7cede9",
-      "full": "f7cede9878b60562f4294954f0505c2f3fa33616",
-      "msg": "[SIGNAL] Fixed my_signal not reporting sigaction failure for SIGKILL/SIGSTOP (#3",
-      "date": "2026-06-04T06:16:40Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "6062cc7",
+      "new": "97a834b",
+      "full": "97a834b8473e700f3cb15567ba5f90b2236ecfc5",
+      "msg": "vkd3d: fix a memleak when destroying library entrypoints",
+      "date": "2026-06-04T10:31:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "095e4f5",
-      "new": "fdb9ce6",
-      "full": "fdb9ce608758bd63ff9cde151b31612f38cb3c84",
-      "msg": "anv: skip writing xfb buffer if we get null information",
-      "date": "2026-06-04T05:30:22.000+00:00"
+      "old": "fdb9ce6",
+      "new": "03dee27",
+      "full": "03dee27f4848be2176da256984352245ed944e6d",
+      "msg": "v3dv: expose the full simulator memory to applications",
+      "date": "2026-06-04T09:35:38.000+00:00"
     }
   ]
 }
