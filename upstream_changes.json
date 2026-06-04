@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-04T02:50:31Z",
+  "triggered_at": "2026-06-04T07:17:42Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d848cbb",
-      "new": "e02953d",
-      "full": "e02953dc174531551219712df20355dcf4afc089",
-      "msg": "Merge pull request #5548 from Sonicadvance1/166",
-      "date": "2026-06-04T01:20:20Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "419e095",
+      "new": "f7cede9",
+      "full": "f7cede9878b60562f4294954f0505c2f3fa33616",
+      "msg": "[SIGNAL] Fixed my_signal not reporting sigaction failure for SIGKILL/SIGSTOP (#3",
+      "date": "2026-06-04T06:16:40Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "75a0cd6",
-      "new": "095e4f5",
-      "full": "095e4f5f1bbf1c7cfd6fd3a34993347bfe03dbf4",
-      "msg": "brw: control cache_mode through bypass_{l1,l3} variables",
-      "date": "2026-06-04T00:08:44.000+00:00"
+      "old": "095e4f5",
+      "new": "fdb9ce6",
+      "full": "fdb9ce608758bd63ff9cde151b31612f38cb3c84",
+      "msg": "anv: skip writing xfb buffer if we get null information",
+      "date": "2026-06-04T05:30:22.000+00:00"
     }
   ]
 }
