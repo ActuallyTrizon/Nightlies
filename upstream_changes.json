@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-04T16:46:10Z",
+  "triggered_at": "2026-06-04T19:14:11Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8182d2b",
-      "new": "1a2ad94",
-      "full": "1a2ad946cbcd46dc97c212321ba99954ffc0ee6c",
-      "msg": "[DYNACACHE] Remove attempt to relocate Native function call, it's not a safe met",
-      "date": "2026-06-04T14:14:14Z"
+      "old": "1a2ad94",
+      "new": "dab3fdc",
+      "full": "dab3fdc351de1a1dc79b799283dfb6ef92085cbd",
+      "msg": "[LA64_DYNAREC] Added a dedicated vzero register (#3926)",
+      "date": "2026-06-04T16:57:07Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "60607fa",
-      "new": "03e9438",
-      "full": "03e9438d3d186375d9b241279549ea18fd2598ae",
-      "msg": "[d3d9] Unify specular state tracking and use",
-      "date": "2026-06-04T14:55:12Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "97a834b",
+      "new": "56a01d8",
+      "full": "56a01d84e3507750c2c392cc11dd6bf119e7c3e0",
+      "msg": "vkd3d: Add heap related quirks to World of Warcraft.",
+      "date": "2026-06-04T18:09:46Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "28e584b",
-      "new": "2b37a0b",
-      "full": "2b37a0b410689f878c99309646e167a07c3b6821",
-      "msg": "vulkan: use consistent module hashing for pipeline stages",
-      "date": "2026-06-04T16:01:55.000+00:00"
+      "old": "2b37a0b",
+      "new": "364b5f8",
+      "full": "364b5f806ccc7f27e97caef6a5abf995fb6c2b7f",
+      "msg": "compiler/rust/smallvec: Optimize extend()",
+      "date": "2026-06-04T18:09:19.000+00:00"
     }
   ]
 }
