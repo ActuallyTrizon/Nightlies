@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-04T10:55:45Z",
+  "triggered_at": "2026-06-04T13:54:09Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "6062cc7",
-      "new": "97a834b",
-      "full": "97a834b8473e700f3cb15567ba5f90b2236ecfc5",
-      "msg": "vkd3d: fix a memleak when destroying library entrypoints",
-      "date": "2026-06-04T10:31:43Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "f7cede9",
+      "new": "8182d2b",
+      "full": "8182d2b7c0531dabab72ee7bf8b4dc8917c3a34e",
+      "msg": "[WRAPPER] Wrapped more symbol for pipewire (#3925)",
+      "date": "2026-06-04T11:59:44Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6eddf20",
+      "new": "60607fa",
+      "full": "60607fa635cd2faeb4cb663f0708b54f13691fce",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-04T11:48:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fdb9ce6",
-      "new": "03dee27",
-      "full": "03dee27f4848be2176da256984352245ed944e6d",
-      "msg": "v3dv: expose the full simulator memory to applications",
-      "date": "2026-06-04T09:35:38.000+00:00"
+      "old": "03dee27",
+      "new": "28e584b",
+      "full": "28e584b6877e105312d43c8cc5ec3a6d4b871243",
+      "msg": "v3dv: enable lowered shaderFloat16/Int16/Int8 + VK_KHR_shader_float16_int8",
+      "date": "2026-06-04T13:29:39.000+00:00"
     }
   ]
 }
