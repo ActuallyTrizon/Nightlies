@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-04T13:54:09Z",
+  "triggered_at": "2026-06-04T16:46:10Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "f7cede9",
-      "new": "8182d2b",
-      "full": "8182d2b7c0531dabab72ee7bf8b4dc8917c3a34e",
-      "msg": "[WRAPPER] Wrapped more symbol for pipewire (#3925)",
-      "date": "2026-06-04T11:59:44Z"
+      "old": "8182d2b",
+      "new": "1a2ad94",
+      "full": "1a2ad946cbcd46dc97c212321ba99954ffc0ee6c",
+      "msg": "[DYNACACHE] Remove attempt to relocate Native function call, it's not a safe met",
+      "date": "2026-06-04T14:14:14Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "6eddf20",
-      "new": "60607fa",
-      "full": "60607fa635cd2faeb4cb663f0708b54f13691fce",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-04T11:48:47Z"
+      "old": "60607fa",
+      "new": "03e9438",
+      "full": "03e9438d3d186375d9b241279549ea18fd2598ae",
+      "msg": "[d3d9] Unify specular state tracking and use",
+      "date": "2026-06-04T14:55:12Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "03dee27",
-      "new": "28e584b",
-      "full": "28e584b6877e105312d43c8cc5ec3a6d4b871243",
-      "msg": "v3dv: enable lowered shaderFloat16/Int16/Int8 + VK_KHR_shader_float16_int8",
-      "date": "2026-06-04T13:29:39.000+00:00"
+      "old": "28e584b",
+      "new": "2b37a0b",
+      "full": "2b37a0b410689f878c99309646e167a07c3b6821",
+      "msg": "vulkan: use consistent module hashing for pipeline stages",
+      "date": "2026-06-04T16:01:55.000+00:00"
     }
   ]
 }
