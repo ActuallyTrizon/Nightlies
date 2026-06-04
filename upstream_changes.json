@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-03T23:27:10Z",
+  "triggered_at": "2026-06-04T02:50:31Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "4277b7e",
-      "new": "6eddf20",
-      "full": "6eddf20c9c4e10093a341971324a819bf5568a24",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-03T22:36:19Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "d848cbb",
+      "new": "e02953d",
+      "full": "e02953dc174531551219712df20355dcf4afc089",
+      "msg": "Merge pull request #5548 from Sonicadvance1/166",
+      "date": "2026-06-04T01:20:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5caeb57",
-      "new": "75a0cd6",
-      "full": "75a0cd6e2cdcb32b0ff12be42175c0c4ba286459",
-      "msg": "mesa: Allow GL_TEXTURE_IMMUTABLE_LEVELS query on GLES3",
-      "date": "2026-06-03T21:53:19.000+00:00"
+      "old": "75a0cd6",
+      "new": "095e4f5",
+      "full": "095e4f5f1bbf1c7cfd6fd3a34993347bfe03dbf4",
+      "msg": "brw: control cache_mode through bypass_{l1,l3} variables",
+      "date": "2026-06-04T00:08:44.000+00:00"
     }
   ]
 }
