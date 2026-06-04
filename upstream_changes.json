@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-06-04T19:14:11Z",
+  "triggered_at": "2026-06-04T21:25:06Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "1a2ad94",
-      "new": "dab3fdc",
-      "full": "dab3fdc351de1a1dc79b799283dfb6ef92085cbd",
-      "msg": "[LA64_DYNAREC] Added a dedicated vzero register (#3926)",
-      "date": "2026-06-04T16:57:07Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "97a834b",
-      "new": "56a01d8",
-      "full": "56a01d84e3507750c2c392cc11dd6bf119e7c3e0",
-      "msg": "vkd3d: Add heap related quirks to World of Warcraft.",
-      "date": "2026-06-04T18:09:46Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2b37a0b",
-      "new": "364b5f8",
-      "full": "364b5f806ccc7f27e97caef6a5abf995fb6c2b7f",
-      "msg": "compiler/rust/smallvec: Optimize extend()",
-      "date": "2026-06-04T18:09:19.000+00:00"
+      "old": "364b5f8",
+      "new": "c634bf1",
+      "full": "c634bf11ce0124a87405ff196fc953799a365e0b",
+      "msg": "drm-shim/freedreno: Report VM_BIND support.",
+      "date": "2026-06-04T20:17:38.000+00:00"
     }
   ]
 }
