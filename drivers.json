@@ -1921,6 +1921,18 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "tu_v28 \u2014 a8xx-turnip-gen8-sync-V28.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v28_a8xx-turnip-gen8-sync-V28.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v28 \u2014 a8xx-turnip-gen8-V28.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v28_a8xx-turnip-gen8-V28.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v27 \u2014 a8xx-turnip-gen8-sync-V27.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v27_a8xx-turnip-gen8-sync-V27.zip"
