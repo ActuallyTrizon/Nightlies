@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-05T09:05:18Z",
+  "triggered_at": "2026-06-05T11:04:35Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "dab3fdc",
-      "new": "09bce33",
-      "full": "09bce33a45b0693bc7abf9bd6db034bb2fc7b8ff",
-      "msg": "[RCFILE] Added 1 more program profile for steam",
-      "date": "2026-06-05T08:57:37Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e84e9dc",
-      "new": "e984014",
-      "full": "e984014d56f55b5d9f8b641e10ad3cc43e1b4e0c",
-      "msg": "turnip: declare common VK drirc options using the helper",
-      "date": "2026-06-05T09:14:45.000+02:00"
+      "old": "e984014",
+      "new": "b6661df",
+      "full": "b6661df5f055ae66898e5a4facb5d4e1b501a1ec",
+      "msg": "vulkan: Enable GOOGLE_display_timing on KHR_display across multiple drivers.",
+      "date": "2026-06-05T10:21:51.000+00:00"
     }
   ]
 }
