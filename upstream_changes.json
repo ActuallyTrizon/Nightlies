@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-05T20:35:54Z",
+  "triggered_at": "2026-06-05T23:26:42Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "cad3b16",
-      "new": "93abdcf",
-      "full": "93abdcf317bc26341c901dbe54274794aaf02c73",
-      "msg": "[INTERP] Fixed MOVSXD (#3928)",
-      "date": "2026-06-05T19:41:09Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "1d829f3",
+      "new": "a9b8c4b",
+      "full": "a9b8c4b5cc3d51ff19b57fcb15d1cc7aa79b25e0",
+      "msg": "r600/sfn: run additional optimization only after successful address split",
+      "date": "2026-06-05T22:41:05.000+00:00"
     }
   ]
 }
