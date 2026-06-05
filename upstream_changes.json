@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-05T18:37:39Z",
+  "triggered_at": "2026-06-05T20:35:54Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "0a65376",
-      "new": "1d829f3",
-      "full": "1d829f3a89dd053d286c6c60e19ebfe9c8df46a5",
-      "msg": "panfrost/ci: Switch traces over to gpu-trace-perf",
-      "date": "2026-06-05T17:35:35.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cad3b16",
+      "new": "93abdcf",
+      "full": "93abdcf317bc26341c901dbe54274794aaf02c73",
+      "msg": "[INTERP] Fixed MOVSXD (#3928)",
+      "date": "2026-06-05T19:41:09Z"
     }
   ]
 }
