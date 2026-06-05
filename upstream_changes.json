@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-05T12:56:49Z",
+  "triggered_at": "2026-06-05T15:11:23Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "09bce33",
+      "new": "a49be7e",
+      "full": "a49be7e78d09c00167c2313bd646c1e98025fb66",
+      "msg": "[LA64_DYNAREC] Push/Pop LBT.eflags to the stack in la4_next before calling LinkN",
+      "date": "2026-06-05T14:12:19Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "03e9438",
-      "new": "b4acecb",
-      "full": "b4acecb052d119b2ce7f66e936a78eee6d21bc77",
-      "msg": "[spirv] Remove SPIR-V compression",
-      "date": "2026-06-05T11:42:56Z"
+      "old": "b4acecb",
+      "new": "01c2b3e",
+      "full": "01c2b3e750fb3d9d5e2e2842b9ee82c3d575decb",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-05T14:22:12Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b6661df",
-      "new": "9f7f5a2",
-      "full": "9f7f5a27a7edc49487af3cd10633896934a47295",
-      "msg": "mesa/main: Auto-generate MESA_VERBOSE=api trace dispatch",
-      "date": "2026-06-05T11:57:29.000+00:00"
+      "old": "9f7f5a2",
+      "new": "0ec4cc9",
+      "full": "0ec4cc9cd5a09831b2447a342b44fcd05ae362f2",
+      "msg": "vulkan: Update spec to 1.4.353",
+      "date": "2026-06-05T16:11:45.000+02:00"
     }
   ]
 }
