@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-05T07:26:06Z",
+  "triggered_at": "2026-06-05T09:05:18Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "dab3fdc",
+      "new": "09bce33",
+      "full": "09bce33a45b0693bc7abf9bd6db034bb2fc7b8ff",
+      "msg": "[RCFILE] Added 1 more program profile for steam",
+      "date": "2026-06-05T08:57:37Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a6172f1",
-      "new": "e84e9dc",
-      "full": "e84e9dc582797b5e586ea4ff3ae7b5f3656968ee",
-      "msg": "gallivm: Fix armhf build against LLVM 22",
-      "date": "2026-06-05T05:47:39.000+00:00"
+      "old": "e84e9dc",
+      "new": "e984014",
+      "full": "e984014d56f55b5d9f8b641e10ad3cc43e1b4e0c",
+      "msg": "turnip: declare common VK drirc options using the helper",
+      "date": "2026-06-05T09:14:45.000+02:00"
     }
   ]
 }
