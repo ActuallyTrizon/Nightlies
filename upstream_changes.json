@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-05T15:11:23Z",
+  "triggered_at": "2026-06-05T16:47:43Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "09bce33",
-      "new": "a49be7e",
-      "full": "a49be7e78d09c00167c2313bd646c1e98025fb66",
-      "msg": "[LA64_DYNAREC] Push/Pop LBT.eflags to the stack in la4_next before calling LinkN",
-      "date": "2026-06-05T14:12:19Z"
+      "old": "a49be7e",
+      "new": "b7bf42c",
+      "full": "b7bf42c8b7a205dbd3d5be00e6606e44ae3e8ee9",
+      "msg": "[LA64_DYNAREC] Fix issues with s[ah][lr] in UpdateFlags",
+      "date": "2026-06-05T15:33:07Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "b4acecb",
-      "new": "01c2b3e",
-      "full": "01c2b3e750fb3d9d5e2e2842b9ee82c3d575decb",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-05T14:22:12Z"
+      "old": "01c2b3e",
+      "new": "bf583bc",
+      "full": "bf583bc4ab89c8dc3f9ed2ae12314d04e7d7e574",
+      "msg": "[d3d9] Fix bad move in shader creation",
+      "date": "2026-06-05T16:17:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9f7f5a2",
-      "new": "0ec4cc9",
-      "full": "0ec4cc9cd5a09831b2447a342b44fcd05ae362f2",
-      "msg": "vulkan: Update spec to 1.4.353",
-      "date": "2026-06-05T16:11:45.000+02:00"
+      "old": "0ec4cc9",
+      "new": "6a16319",
+      "full": "6a16319133d3d172f1c8fe5e213394ef831805e0",
+      "msg": "radv/rt: Cache stack sizes of ahit/isec shaders from imported NIR",
+      "date": "2026-06-05T15:13:09.000+00:00"
     }
   ]
 }
