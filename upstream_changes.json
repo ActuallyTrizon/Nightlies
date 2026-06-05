@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-04T23:24:49Z",
+  "triggered_at": "2026-06-05T07:26:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3a815a5",
-      "new": "a6172f1",
-      "full": "a6172f19a0915fc690104a02e894b263d982e247",
-      "msg": "vtn/opencl: fix edge case behavior for tanpi",
-      "date": "2026-06-04T21:39:02.000+00:00"
+      "old": "a6172f1",
+      "new": "e84e9dc",
+      "full": "e84e9dc582797b5e586ea4ff3ae7b5f3656968ee",
+      "msg": "gallivm: Fix armhf build against LLVM 22",
+      "date": "2026-06-05T05:47:39.000+00:00"
     }
   ]
 }
