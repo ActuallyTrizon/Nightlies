@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-05T17:35:29Z",
+  "triggered_at": "2026-06-05T18:37:39Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b7bf42c",
-      "new": "cad3b16",
-      "full": "cad3b16525ba9ee42ede3ddf9a784677c50881b8",
-      "msg": "[LA64_DYNAREC][RV64_DYNAREC] Tweaked an undefined behaviour (#3927)",
-      "date": "2026-06-05T17:14:35Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6a16319",
-      "new": "0a65376",
-      "full": "0a65376b2ecfea30a0e784dfdf70cde75193bf30",
-      "msg": "turnip/ci: Update ANGLE trace checksum",
-      "date": "2026-06-05T17:06:35.000+00:00"
+      "old": "0a65376",
+      "new": "1d829f3",
+      "full": "1d829f3a89dd053d286c6c60e19ebfe9c8df46a5",
+      "msg": "panfrost/ci: Switch traces over to gpu-trace-perf",
+      "date": "2026-06-05T17:35:35.000+00:00"
     }
   ]
 }
