@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-05T11:04:35Z",
+  "triggered_at": "2026-06-05T12:56:49Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "03e9438",
+      "new": "b4acecb",
+      "full": "b4acecb052d119b2ce7f66e936a78eee6d21bc77",
+      "msg": "[spirv] Remove SPIR-V compression",
+      "date": "2026-06-05T11:42:56Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e984014",
-      "new": "b6661df",
-      "full": "b6661df5f055ae66898e5a4facb5d4e1b501a1ec",
-      "msg": "vulkan: Enable GOOGLE_display_timing on KHR_display across multiple drivers.",
-      "date": "2026-06-05T10:21:51.000+00:00"
+      "old": "b6661df",
+      "new": "9f7f5a2",
+      "full": "9f7f5a27a7edc49487af3cd10633896934a47295",
+      "msg": "mesa/main: Auto-generate MESA_VERBOSE=api trace dispatch",
+      "date": "2026-06-05T11:57:29.000+00:00"
     }
   ]
 }
