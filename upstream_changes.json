@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-06T09:39:51Z",
+  "triggered_at": "2026-06-06T20:23:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bd40215",
-      "new": "25930db",
-      "full": "25930dbc34f69450bae553c35d7c7c60b21ec3f2",
-      "msg": "ethosu/mlw_codec: silence warnings in the vendored Regor encoder",
-      "date": "2026-06-06T08:56:12.000+00:00"
+      "old": "25930db",
+      "new": "e92c7ef",
+      "full": "e92c7efa21e38b8977b447fdc46819d994f8370f",
+      "msg": "rusticl: Drop custom `addr` implementation",
+      "date": "2026-06-06T17:17:11.000+02:00"
     }
   ]
 }
