@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-06T08:51:47Z",
+  "triggered_at": "2026-06-06T09:39:51Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "93abdcf",
-      "new": "e694f2c",
-      "full": "e694f2ca8b349436e483d1c54bc9f313e932208c",
-      "msg": "[WRAPPER] Add libmvec and sqlite3 symbols for Open WebUI (#3930)",
-      "date": "2026-06-06T07:11:51Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "31db17f",
-      "new": "bd40215",
-      "full": "bd402153afb2a5279414d156e34d23010af4e460",
-      "msg": "mesa/main: cast GLhandleARB to unsigned int in api trace",
-      "date": "2026-06-05T23:43:49.000-07:00"
+      "old": "bd40215",
+      "new": "25930db",
+      "full": "25930dbc34f69450bae553c35d7c7c60b21ec3f2",
+      "msg": "ethosu/mlw_codec: silence warnings in the vendored Regor encoder",
+      "date": "2026-06-06T08:56:12.000+00:00"
     }
   ]
 }
