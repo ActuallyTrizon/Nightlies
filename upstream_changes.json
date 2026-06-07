@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-06T23:21:16Z",
+  "triggered_at": "2026-06-07T10:43:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7089c67",
-      "new": "b9c7634",
-      "full": "b9c763454e6642dc90e47506d5b56f00c4b9b773",
-      "msg": "etnaviv: Use integer texture formats for R32/RG32 integer textures",
-      "date": "2026-06-06T22:20:56.000+00:00"
+      "old": "b9c7634",
+      "new": "3515c52",
+      "full": "3515c52e8cf31549b6068ef43c23c89830b6db46",
+      "msg": "ethosu/mlw_codec: silence -Wunused-const-variable in vendored encoder",
+      "date": "2026-06-06T21:44:50.000-07:00"
     }
   ]
 }
