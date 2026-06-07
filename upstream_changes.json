@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-07T17:28:10Z",
+  "triggered_at": "2026-06-07T20:25:19Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5ab2108",
-      "new": "7f1cae9",
-      "full": "7f1cae956cb6603adf5b8d77d6dcf2a5aabb6382",
-      "msg": "[LA64_DYNAREC] More alignment to ARM64_DYNAREC on UDF and Jump",
-      "date": "2026-06-07T16:31:33Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3515c52",
+      "new": "6094bed",
+      "full": "6094bed5a47f526a8bd3479e6d21ae4f6f53e0b5",
+      "msg": "llvmpipe: create a zeroed payload for use without task shaders",
+      "date": "2026-06-07T19:30:41.000+00:00"
     }
   ]
 }
