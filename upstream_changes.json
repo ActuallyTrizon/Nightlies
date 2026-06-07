@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-07T16:28:36Z",
+  "triggered_at": "2026-06-07T17:28:10Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ae53c4c",
-      "new": "5ab2108",
-      "full": "5ab21087dd7e4c9e742763d4f61e18dd2284cf83",
-      "msg": "[DYNAREC] Formating...",
-      "date": "2026-06-07T16:06:22Z"
+      "old": "5ab2108",
+      "new": "7f1cae9",
+      "full": "7f1cae956cb6603adf5b8d77d6dcf2a5aabb6382",
+      "msg": "[LA64_DYNAREC] More alignment to ARM64_DYNAREC on UDF and Jump",
+      "date": "2026-06-07T16:31:33Z"
     }
   ]
 }
