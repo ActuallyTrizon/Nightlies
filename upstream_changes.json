@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-07T20:25:19Z",
+  "triggered_at": "2026-06-07T22:21:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3515c52",
-      "new": "6094bed",
-      "full": "6094bed5a47f526a8bd3479e6d21ae4f6f53e0b5",
-      "msg": "llvmpipe: create a zeroed payload for use without task shaders",
-      "date": "2026-06-07T19:30:41.000+00:00"
+      "old": "6094bed",
+      "new": "9ec5e9a",
+      "full": "9ec5e9a34ec58fe212918f340a6083cc80a4ab2e",
+      "msg": "etnaviv: blt: Don't sRGB-roundtrip same-encoding copies",
+      "date": "2026-06-07T21:52:43.000+00:00"
     }
   ]
 }
