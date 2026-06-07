@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-07T15:29:21Z",
+  "triggered_at": "2026-06-07T16:28:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e694f2c",
-      "new": "ae53c4c",
-      "full": "ae53c4c8ae86cee3368eb7d49fc0756728a36f11",
-      "msg": "[LA64_DYNAREC][TRACE] Added self_loop mark to dynablocks opcodes",
-      "date": "2026-06-07T15:01:33Z"
+      "old": "ae53c4c",
+      "new": "5ab2108",
+      "full": "5ab21087dd7e4c9e742763d4f61e18dd2284cf83",
+      "msg": "[DYNAREC] Formating...",
+      "date": "2026-06-07T16:06:22Z"
     }
   ]
 }
