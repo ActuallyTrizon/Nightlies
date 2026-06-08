@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-08T09:32:31Z",
+  "triggered_at": "2026-06-08T11:34:51Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "7a52697",
-      "new": "e2345d7",
-      "full": "e2345d735af36f7915ab861a55b489d69f2350c7",
-      "msg": "[ARM64_DYNAREC] Fixed potential corruption on fastround=0 path for more trig x87",
-      "date": "2026-06-08T08:30:14Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "385e95b",
+      "new": "80c80bf",
+      "full": "80c80bf16022db039ef99582e7026e4cad73e2fd",
+      "msg": "[d3d11] Include all planes in subresource layout DepthPitch calculation.",
+      "date": "2026-06-08T10:01:07Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "76e600a",
-      "new": "1160606",
-      "full": "116060607472be26eeed18412a6816e61b718399",
-      "msg": "broadcom/compiler: fix payload-register liveness condition",
-      "date": "2026-06-08T08:48:23.000+00:00"
+      "old": "1160606",
+      "new": "c9c48f7",
+      "full": "c9c48f79a127cc0f8c0f440b2e963977f8315def",
+      "msg": "doc/ci: Add custom-kernel testing workflow",
+      "date": "2026-06-08T11:16:28.000+00:00"
     }
   ]
 }
