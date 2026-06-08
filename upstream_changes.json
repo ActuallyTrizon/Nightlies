@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-08T20:46:36Z",
+  "triggered_at": "2026-06-08T22:30:18Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "950b611",
-      "new": "2cae043",
-      "full": "2cae043bdf767c8a7a2e0ee8d41537acfe773e8e",
-      "msg": "[d3d9] Consolidate SWVP HUD",
-      "date": "2026-06-08T20:03:36Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e6f5d0c",
-      "new": "8245187",
-      "full": "824518737a25af7378b8afd8a5303d1893f12c67",
-      "msg": "zink: always return DMA_BUF type handles from resource_get_handle",
-      "date": "2026-06-08T19:41:41.000+00:00"
+      "old": "8245187",
+      "new": "301a1f9",
+      "full": "301a1f9a61fca7d6d883c3ff923f015800603c49",
+      "msg": "anv: fix lock scope in anv_ensure_fp64_shader",
+      "date": "2026-06-08T21:55:45.000+00:00"
     }
   ]
 }
