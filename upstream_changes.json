@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-08T07:37:05Z",
+  "triggered_at": "2026-06-08T09:32:31Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "7f1cae9",
-      "new": "7a52697",
-      "full": "7a52697f9a49c169e4f9647721b843ec88743348",
-      "msg": "[INTERP] Reworked on some undefined bahaviours and fixes (#3933)",
-      "date": "2026-06-08T06:43:02Z"
+      "old": "7a52697",
+      "new": "e2345d7",
+      "full": "e2345d735af36f7915ab861a55b489d69f2350c7",
+      "msg": "[ARM64_DYNAREC] Fixed potential corruption on fastround=0 path for more trig x87",
+      "date": "2026-06-08T08:30:14Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2cf1f6c",
-      "new": "76e600a",
-      "full": "76e600a868d7b063050acd5a6468b8116b8b62a0",
-      "msg": "tu/ci: Add coverage for emulated second graphics queue",
-      "date": "2026-06-08T07:00:00.000+00:00"
+      "old": "76e600a",
+      "new": "1160606",
+      "full": "116060607472be26eeed18412a6816e61b718399",
+      "msg": "broadcom/compiler: fix payload-register liveness condition",
+      "date": "2026-06-08T08:48:23.000+00:00"
     }
   ]
 }
