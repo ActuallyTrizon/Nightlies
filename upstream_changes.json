@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-08T18:47:18Z",
+  "triggered_at": "2026-06-08T19:42:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "718236e",
-      "new": "bcae3b8",
-      "full": "bcae3b8005bb22bd6cef38c5785bcbb8b5ce6989",
-      "msg": "radv: handle errors correctly when creating gang waits",
-      "date": "2026-06-08T17:57:42.000+00:00"
+      "old": "bcae3b8",
+      "new": "e6f5d0c",
+      "full": "e6f5d0c69136063448104d238c7f34e0ca749d3d",
+      "msg": "gfxstream: support testing d32 s8",
+      "date": "2026-06-08T19:26:52.000+00:00"
     }
   ]
 }
