@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-08T13:24:07Z",
+  "triggered_at": "2026-06-08T15:06:21Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "56a01d8",
+      "new": "d9c8090",
+      "full": "d9c80900d0093f30d53787922337cd8242fa869a",
+      "msg": "vkd3d: Massively simplify anti-lag implementation.",
+      "date": "2026-06-08T13:44:18Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c9c48f7",
-      "new": "127e5b5",
-      "full": "127e5b567c0fa7e801ae9a99a7e3c59cdd76e66d",
-      "msg": "broadcom/ci: update kernel for nightly jobs",
-      "date": "2026-06-08T12:10:56.000+00:00"
+      "old": "127e5b5",
+      "new": "f171793",
+      "full": "f17179357a50601e9f384b4db8f363c6a84e2022",
+      "msg": "radv/ci: run vkd3d jobs with ASAN by default",
+      "date": "2026-06-08T14:24:12.000+00:00"
     }
   ]
 }
