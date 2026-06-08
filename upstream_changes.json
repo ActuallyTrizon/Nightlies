@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-08T17:04:11Z",
+  "triggered_at": "2026-06-08T18:47:18Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "80c80bf",
-      "new": "950b611",
-      "full": "950b61132b53cbf575e42cf6de5844a6e750a83a",
-      "msg": "[dxvk] Enable descriptor heap on NVK by default",
-      "date": "2026-06-08T15:14:50Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f171793",
-      "new": "718236e",
-      "full": "718236ebb8f90eda2e08da0b8a9dfbd193040bff",
-      "msg": "ethosu: use FALLTHROUGH macro in ethosu_emit_operation_accesses",
-      "date": "2026-06-08T16:33:15.000+00:00"
+      "old": "718236e",
+      "new": "bcae3b8",
+      "full": "bcae3b8005bb22bd6cef38c5785bcbb8b5ce6989",
+      "msg": "radv: handle errors correctly when creating gang waits",
+      "date": "2026-06-08T17:57:42.000+00:00"
     }
   ]
 }
