@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-08T15:06:21Z",
+  "triggered_at": "2026-06-08T17:04:11Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "56a01d8",
-      "new": "d9c8090",
-      "full": "d9c80900d0093f30d53787922337cd8242fa869a",
-      "msg": "vkd3d: Massively simplify anti-lag implementation.",
-      "date": "2026-06-08T13:44:18Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "80c80bf",
+      "new": "950b611",
+      "full": "950b61132b53cbf575e42cf6de5844a6e750a83a",
+      "msg": "[dxvk] Enable descriptor heap on NVK by default",
+      "date": "2026-06-08T15:14:50Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "127e5b5",
-      "new": "f171793",
-      "full": "f17179357a50601e9f384b4db8f363c6a84e2022",
-      "msg": "radv/ci: run vkd3d jobs with ASAN by default",
-      "date": "2026-06-08T14:24:12.000+00:00"
+      "old": "f171793",
+      "new": "718236e",
+      "full": "718236ebb8f90eda2e08da0b8a9dfbd193040bff",
+      "msg": "ethosu: use FALLTHROUGH macro in ethosu_emit_operation_accesses",
+      "date": "2026-06-08T16:33:15.000+00:00"
     }
   ]
 }
