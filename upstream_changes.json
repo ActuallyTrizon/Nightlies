@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-07T22:21:59Z",
+  "triggered_at": "2026-06-08T05:33:04Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6094bed",
-      "new": "9ec5e9a",
-      "full": "9ec5e9a34ec58fe212918f340a6083cc80a4ab2e",
-      "msg": "etnaviv: blt: Don't sRGB-roundtrip same-encoding copies",
-      "date": "2026-06-07T21:52:43.000+00:00"
+      "old": "9ec5e9a",
+      "new": "2cf1f6c",
+      "full": "2cf1f6cb5088dcbe0523616169630e2e1f1de574",
+      "msg": "venus: fix unbound malloc leak in vn_ring_get_submits",
+      "date": "2026-06-08T03:32:20.000+00:00"
     }
   ]
 }
