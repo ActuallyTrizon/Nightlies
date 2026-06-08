@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-08T05:33:04Z",
+  "triggered_at": "2026-06-08T07:37:05Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7f1cae9",
+      "new": "7a52697",
+      "full": "7a52697f9a49c169e4f9647721b843ec88743348",
+      "msg": "[INTERP] Reworked on some undefined bahaviours and fixes (#3933)",
+      "date": "2026-06-08T06:43:02Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9ec5e9a",
-      "new": "2cf1f6c",
-      "full": "2cf1f6cb5088dcbe0523616169630e2e1f1de574",
-      "msg": "venus: fix unbound malloc leak in vn_ring_get_submits",
-      "date": "2026-06-08T03:32:20.000+00:00"
+      "old": "2cf1f6c",
+      "new": "76e600a",
+      "full": "76e600a868d7b063050acd5a6468b8116b8b62a0",
+      "msg": "tu/ci: Add coverage for emulated second graphics queue",
+      "date": "2026-06-08T07:00:00.000+00:00"
     }
   ]
 }
