@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-08T11:34:51Z",
+  "triggered_at": "2026-06-08T13:24:07Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "385e95b",
-      "new": "80c80bf",
-      "full": "80c80bf16022db039ef99582e7026e4cad73e2fd",
-      "msg": "[d3d11] Include all planes in subresource layout DepthPitch calculation.",
-      "date": "2026-06-08T10:01:07Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1160606",
-      "new": "c9c48f7",
-      "full": "c9c48f79a127cc0f8c0f440b2e963977f8315def",
-      "msg": "doc/ci: Add custom-kernel testing workflow",
-      "date": "2026-06-08T11:16:28.000+00:00"
+      "old": "c9c48f7",
+      "new": "127e5b5",
+      "full": "127e5b567c0fa7e801ae9a99a7e3c59cdd76e66d",
+      "msg": "broadcom/ci: update kernel for nightly jobs",
+      "date": "2026-06-08T12:10:56.000+00:00"
     }
   ]
 }
