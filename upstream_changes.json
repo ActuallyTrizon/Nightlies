@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-09T12:56:13Z",
+  "triggered_at": "2026-06-09T13:51:54Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "2cae043",
-      "new": "2d251a6",
-      "full": "2d251a6569730af8c9ec6dbfdef752f275a48973",
-      "msg": "[d3d9] Repurpose d3d9.deviceLocalConstantBuffers option",
-      "date": "2026-06-09T11:05:22Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "371ed09",
-      "new": "3da4653",
-      "full": "3da4653d46f5efa704e59b472bc6e61ac196ce1b",
-      "msg": "jay: Implement halt",
-      "date": "2026-06-09T11:47:33.000+00:00"
+      "old": "3da4653",
+      "new": "864bee8",
+      "full": "864bee8d4922607ac95721e716689f71a5f031c0",
+      "msg": "nir: Do not mask helper lanes of writes if ACCESS_INCLUDE_HELPERS is set",
+      "date": "2026-06-09T12:57:04.000+00:00"
     }
   ]
 }
