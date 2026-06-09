@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-08T23:25:26Z",
+  "triggered_at": "2026-06-09T00:30:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "301a1f9",
-      "new": "b340a00",
-      "full": "b340a00c29c512432e012e7fd1b753edb2c56ce1",
-      "msg": "tu: Un-open-code RB_A2D_PIXEL_CNTL",
-      "date": "2026-06-08T22:21:40.000+00:00"
+      "old": "b340a00",
+      "new": "2a1588c",
+      "full": "2a1588c09e05e96d18c1bab6ea003fa944540261",
+      "msg": "bin: add drm-shim script",
+      "date": "2026-06-08T23:07:43.000+00:00"
     }
   ]
 }
