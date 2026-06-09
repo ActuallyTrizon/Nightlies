@@ -1,41 +1,14 @@
 {
-  "triggered_at": "2026-06-09T16:52:36Z",
+  "triggered_at": "2026-06-09T17:39:02Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "15a165f",
-      "new": "c14f0ec",
-      "full": "c14f0eca8479779586ae4e9bb821d1b92c30969c",
-      "msg": "[ARM64_DYNAREC] Reworked flags and df handling (fixes new update of  SC2)",
-      "date": "2026-06-09T16:31:09Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d9c8090",
-      "new": "210e774",
-      "full": "210e7741c83fee4b383e723707e47a62c0ca3e58",
-      "msg": "vkd3d: Wire VK_KHR_index_type_uint8 and gate OMM R8_UINT on it.",
-      "date": "2026-06-09T14:22:22Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "2d251a6",
-      "new": "4291992",
-      "full": "42919925917c7fa42c7ae6744f8c05a40e5da494",
-      "msg": "[dxvk] Fix potential shader cache state tracking jank",
-      "date": "2026-06-09T16:26:45Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "864bee8",
-      "new": "156752f",
-      "full": "156752feb5094566b38d06f48a98c5581427e39e",
-      "msg": "radv/ci: skip all WSI tests on GFX1201",
-      "date": "2026-06-09T16:06:31.000+00:00"
+      "old": "156752f",
+      "new": "f6dd632",
+      "full": "f6dd632b313bad941118529ad68167f4c0572128",
+      "msg": "v3dv: drop legacy CPU queue fallback paths",
+      "date": "2026-06-09T16:53:48.000+00:00"
     }
   ]
 }
