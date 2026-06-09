@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T05:20:55Z",
+  "triggered_at": "2026-06-09T07:10:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9da4fb5",
-      "new": "fbd9c67",
-      "full": "fbd9c67e2afb0d4447ff6097eb9bd37fd9294ee9",
-      "msg": "drm-shim/freedreno: Fix VM_BIND support.",
-      "date": "2026-06-09T03:39:42.000+00:00"
+      "old": "fbd9c67",
+      "new": "936ceed",
+      "full": "936ceed0a6fc5149078dfdb780c066bb52037453",
+      "msg": "anv: amend missing shader dump finish upon device destruction",
+      "date": "2026-06-09T06:00:14.000+00:00"
     }
   ]
 }
