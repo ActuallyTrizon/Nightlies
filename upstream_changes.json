@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-09T22:30:01Z",
+  "triggered_at": "2026-06-09T23:27:56Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "4291992",
-      "new": "6e164fc",
-      "full": "6e164fc882da9bd0b486d6dafb2dc8d641686b02",
-      "msg": "[d3d9] Ignore fixed function lights with invalid types",
-      "date": "2026-06-09T22:24:32Z"
+      "old": "6e164fc",
+      "new": "9fbbc68",
+      "full": "9fbbc689e1741bf378ebc1be7b512a13b0ff8c24",
+      "msg": "[dxvk] Add timeout to write pending shaders to cache",
+      "date": "2026-06-09T23:24:07Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1ab1799",
-      "new": "4ac11c9",
-      "full": "4ac11c9006e67fa1ec6b3e9f539783cb63d55626",
-      "msg": "nak: block pipe_format from nak bindings.",
-      "date": "2026-06-09T22:06:55.000+00:00"
+      "old": "4ac11c9",
+      "new": "fbd2f14",
+      "full": "fbd2f140fe810af76cdbf1bccd3b10cb3087fb02",
+      "msg": "etnaviv: Drop unused num_loops shader stat",
+      "date": "2026-06-09T22:23:04.000+00:00"
     }
   ]
 }
