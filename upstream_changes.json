@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-09T09:05:00Z",
+  "triggered_at": "2026-06-09T11:02:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e2345d7",
-      "new": "665cacb",
-      "full": "665cacbe7c61aa3f7e2b306fd7d1d81c22a5f76c",
-      "msg": "[DYNAREC] Reverted a undefined behaviour change (#3934)",
-      "date": "2026-06-09T08:03:10Z"
+      "old": "665cacb",
+      "new": "15a165f",
+      "full": "15a165f842d932ac3adb8e83cfe337de95e6d812",
+      "msg": "[ARM64_DYNAREC] Fixed strings opcodes with 67 prefix",
+      "date": "2026-06-09T10:35:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "936ceed",
-      "new": "6b06f70",
-      "full": "6b06f70af0eb1b03ab0625199a2191f3e5f2f5cf",
-      "msg": "kk: Remove unused deprecated Metal APIs",
-      "date": "2026-06-09T07:17:29.000+00:00"
+      "old": "6b06f70",
+      "new": "371ed09",
+      "full": "371ed096596ace82f5bac36a2db6cd737ac7743c",
+      "msg": "kk: Work around crash with multiple concurrent MTL4Compiler",
+      "date": "2026-06-09T02:47:38.000-07:00"
     }
   ]
 }
