@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T17:39:02Z",
+  "triggered_at": "2026-06-09T18:41:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "156752f",
-      "new": "f6dd632",
-      "full": "f6dd632b313bad941118529ad68167f4c0572128",
-      "msg": "v3dv: drop legacy CPU queue fallback paths",
-      "date": "2026-06-09T16:53:48.000+00:00"
+      "old": "f6dd632",
+      "new": "0aff5e0",
+      "full": "0aff5e006c3d8fc773c05effa547b3ddccfec077",
+      "msg": "jay: Handle dpas_intel intrinsic",
+      "date": "2026-06-09T17:33:23.000+00:00"
     }
   ]
 }
