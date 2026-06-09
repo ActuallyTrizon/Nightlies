@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T03:03:54Z",
+  "triggered_at": "2026-06-09T05:20:55Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9d858b6",
-      "new": "9da4fb5",
-      "full": "9da4fb526aa5ae465736aa5ede0797674440f28c",
-      "msg": "nir/lower_tex: skip external texture YUV lowering for query instructions",
-      "date": "2026-06-09T01:26:45.000+00:00"
+      "old": "9da4fb5",
+      "new": "fbd9c67",
+      "full": "fbd9c67e2afb0d4447ff6097eb9bd37fd9294ee9",
+      "msg": "drm-shim/freedreno: Fix VM_BIND support.",
+      "date": "2026-06-09T03:39:42.000+00:00"
     }
   ]
 }
