@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-09T21:33:00Z",
+  "triggered_at": "2026-06-09T22:30:01Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "4291992",
+      "new": "6e164fc",
+      "full": "6e164fc882da9bd0b486d6dafb2dc8d641686b02",
+      "msg": "[d3d9] Ignore fixed function lights with invalid types",
+      "date": "2026-06-09T22:24:32Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "94c7ccb",
-      "new": "1ab1799",
-      "full": "1ab1799733c9d8a05b06178fdec4a49832f1fd14",
-      "msg": "freedreno/perfetto: Use sequence-scoped clk",
-      "date": "2026-06-09T20:33:11.000+00:00"
+      "old": "1ab1799",
+      "new": "4ac11c9",
+      "full": "4ac11c9006e67fa1ec6b3e9f539783cb63d55626",
+      "msg": "nak: block pipe_format from nak bindings.",
+      "date": "2026-06-09T22:06:55.000+00:00"
     }
   ]
 }
