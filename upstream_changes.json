@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-09T07:10:39Z",
+  "triggered_at": "2026-06-09T09:05:00Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "e2345d7",
+      "new": "665cacb",
+      "full": "665cacbe7c61aa3f7e2b306fd7d1d81c22a5f76c",
+      "msg": "[DYNAREC] Reverted a undefined behaviour change (#3934)",
+      "date": "2026-06-09T08:03:10Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fbd9c67",
-      "new": "936ceed",
-      "full": "936ceed0a6fc5149078dfdb780c066bb52037453",
-      "msg": "anv: amend missing shader dump finish upon device destruction",
-      "date": "2026-06-09T06:00:14.000+00:00"
+      "old": "936ceed",
+      "new": "6b06f70",
+      "full": "6b06f70af0eb1b03ab0625199a2191f3e5f2f5cf",
+      "msg": "kk: Remove unused deprecated Metal APIs",
+      "date": "2026-06-09T07:17:29.000+00:00"
     }
   ]
 }
