@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T01:35:46Z",
+  "triggered_at": "2026-06-09T03:03:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2a1588c",
-      "new": "9d858b6",
-      "full": "9d858b6719f5d5b0ed426cf6d136e8f0fd81c0c1",
-      "msg": "rusticl/program: implement CL_PROGRAM_BUILD_LOG without a copy",
-      "date": "2026-06-09T00:38:10.000+00:00"
+      "old": "9d858b6",
+      "new": "9da4fb5",
+      "full": "9da4fb526aa5ae465736aa5ede0797674440f28c",
+      "msg": "nir/lower_tex: skip external texture YUV lowering for query instructions",
+      "date": "2026-06-09T01:26:45.000+00:00"
     }
   ]
 }
