@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T20:38:56Z",
+  "triggered_at": "2026-06-09T21:33:00Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0aff5e0",
-      "new": "94c7ccb",
-      "full": "94c7ccbaa3540e384571c7438f48ca06cbac9cc6",
-      "msg": "radeonsi: remove duplicate '.bpp' initializer in si_sdma_copy_image",
-      "date": "2026-06-09T13:10:56.000-07:00"
+      "old": "94c7ccb",
+      "new": "1ab1799",
+      "full": "1ab1799733c9d8a05b06178fdec4a49832f1fd14",
+      "msg": "freedreno/perfetto: Use sequence-scoped clk",
+      "date": "2026-06-09T20:33:11.000+00:00"
     }
   ]
 }
