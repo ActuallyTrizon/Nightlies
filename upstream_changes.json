@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-09T11:02:09Z",
+  "triggered_at": "2026-06-09T12:56:13Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "665cacb",
-      "new": "15a165f",
-      "full": "15a165f842d932ac3adb8e83cfe337de95e6d812",
-      "msg": "[ARM64_DYNAREC] Fixed strings opcodes with 67 prefix",
-      "date": "2026-06-09T10:35:47Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "2cae043",
+      "new": "2d251a6",
+      "full": "2d251a6569730af8c9ec6dbfdef752f275a48973",
+      "msg": "[d3d9] Repurpose d3d9.deviceLocalConstantBuffers option",
+      "date": "2026-06-09T11:05:22Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6b06f70",
-      "new": "371ed09",
-      "full": "371ed096596ace82f5bac36a2db6cd737ac7743c",
-      "msg": "kk: Work around crash with multiple concurrent MTL4Compiler",
-      "date": "2026-06-09T02:47:38.000-07:00"
+      "old": "371ed09",
+      "new": "3da4653",
+      "full": "3da4653d46f5efa704e59b472bc6e61ac196ce1b",
+      "msg": "jay: Implement halt",
+      "date": "2026-06-09T11:47:33.000+00:00"
     }
   ]
 }
