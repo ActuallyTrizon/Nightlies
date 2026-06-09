@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-09T00:30:41Z",
+  "triggered_at": "2026-06-09T01:35:46Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b340a00",
-      "new": "2a1588c",
-      "full": "2a1588c09e05e96d18c1bab6ea003fa944540261",
-      "msg": "bin: add drm-shim script",
-      "date": "2026-06-08T23:07:43.000+00:00"
+      "old": "2a1588c",
+      "new": "9d858b6",
+      "full": "9d858b6719f5d5b0ed426cf6d136e8f0fd81c0c1",
+      "msg": "rusticl/program: implement CL_PROGRAM_BUILD_LOG without a copy",
+      "date": "2026-06-09T00:38:10.000+00:00"
     }
   ]
 }
