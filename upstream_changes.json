@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-10T11:13:48Z",
+  "triggered_at": "2026-06-10T13:04:52Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "210e774",
+      "new": "850c55c",
+      "full": "850c55c6cd1525a602d7d309481eaf4c64f3b50d",
+      "msg": "tests: Add exploratory test for retain resources.",
+      "date": "2026-06-10T11:16:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "db382b3",
-      "new": "1825627",
-      "full": "1825627cf86d3762217d0c3ff86628c899ca0d73",
-      "msg": "va: Set contiguous_planes for DMA-BUF imported surfaces",
-      "date": "2026-06-10T10:46:59.000+00:00"
+      "old": "1825627",
+      "new": "bed7ba2",
+      "full": "bed7ba27801e9b660780c43ec35532c9caf3d69c",
+      "msg": "aco: schedule split barriers",
+      "date": "2026-06-10T12:13:19.000+00:00"
     }
   ]
 }
