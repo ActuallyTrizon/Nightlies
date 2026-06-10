@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T17:01:55Z",
+  "triggered_at": "2026-06-10T18:49:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "94abf86",
-      "new": "178a3d7",
-      "full": "178a3d7396849f8dee99a4ee6048b2eef40190ec",
-      "msg": "egl/gbm: Eliminate local variable \"max_age\" in get_back_bo",
-      "date": "2026-06-10T16:21:59.000+00:00"
+      "old": "178a3d7",
+      "new": "6e57736",
+      "full": "6e5773687fb06d8f3a06d1b76a9d5408ea275607",
+      "msg": "kk,wsi/metal: Support VK_(KHR/EXT)_swapchain_maintenance1",
+      "date": "2026-06-10T17:41:01.000+00:00"
     }
   ]
 }
