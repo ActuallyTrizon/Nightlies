@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T12:56:42Z",
+  "updated_at": "2026-06-10T08:20:08Z",
   "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
   "total_releases": 64,
@@ -37,7 +37,7 @@
     },
     {
       "tag": "v26.2.0-R6",
-      "name": "Turnip v26.2.0 R6",
+      "name": "Turnip v26.2.0-R6",
       "published_at": "2026-06-09T12:54:40Z",
       "assets": [
         {
