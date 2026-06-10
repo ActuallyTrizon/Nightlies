@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-10T13:04:52Z",
+  "triggered_at": "2026-06-10T15:03:20Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "210e774",
-      "new": "850c55c",
-      "full": "850c55c6cd1525a602d7d309481eaf4c64f3b50d",
-      "msg": "tests: Add exploratory test for retain resources.",
-      "date": "2026-06-10T11:16:44Z"
+      "old": "850c55c",
+      "new": "c150088",
+      "full": "c15008837a578844b66f951bbbffc91e6ef09042",
+      "msg": "tests: Mark NVK as non conformant for D3D11.3 16.8.2 in test_derivative_hoisting",
+      "date": "2026-06-10T13:11:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1825627",
-      "new": "bed7ba2",
-      "full": "bed7ba27801e9b660780c43ec35532c9caf3d69c",
-      "msg": "aco: schedule split barriers",
-      "date": "2026-06-10T12:13:19.000+00:00"
+      "old": "bed7ba2",
+      "new": "94abf86",
+      "full": "94abf8656111f4fa70406c806c9c8a6c5089cc3f",
+      "msg": "v3dv: set non-zero array stride in null texture descriptor state",
+      "date": "2026-06-10T14:38:50.000+00:00"
     }
   ]
 }
