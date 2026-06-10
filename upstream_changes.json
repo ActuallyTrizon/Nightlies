@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-10T07:25:23Z",
+  "triggered_at": "2026-06-10T09:11:18Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "9fbbc68",
+      "new": "eae7563",
+      "full": "eae756358b52bed8399904010f676883e5b4af27",
+      "msg": "[dxvk] Dirty-check input layouts in the backend",
+      "date": "2026-06-10T08:16:16Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "489aa18",
-      "new": "1a9a0a1",
-      "full": "1a9a0a15f7cafdbdb3037bb109b6d77bf282d41c",
-      "msg": "ir3: lower undef booleans to zero",
-      "date": "2026-06-10T06:05:05.000+00:00"
+      "old": "1a9a0a1",
+      "new": "db382b3",
+      "full": "db382b3caeeb71af95717e8f27197018f8dd1d13",
+      "msg": "radeonsi: use exec_size from the aco prolog/epilog callback",
+      "date": "2026-06-10T08:23:01.000+00:00"
     }
   ]
 }
