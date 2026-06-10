@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T18:49:21Z",
+  "triggered_at": "2026-06-10T19:47:32Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "178a3d7",
-      "new": "6e57736",
-      "full": "6e5773687fb06d8f3a06d1b76a9d5408ea275607",
-      "msg": "kk,wsi/metal: Support VK_(KHR/EXT)_swapchain_maintenance1",
-      "date": "2026-06-10T17:41:01.000+00:00"
+      "old": "6e57736",
+      "new": "67471fe",
+      "full": "67471fed866f673ab1ee7fdc2babe145b899c1fd",
+      "msg": "tu: Enable texel buffer / SSBO emulation for known problematic games",
+      "date": "2026-06-10T18:15:01.000+00:00"
     }
   ]
 }
