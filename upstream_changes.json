@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T20:51:08Z",
+  "triggered_at": "2026-06-10T21:39:42Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "67471fe",
-      "new": "11334c4",
-      "full": "11334c438a48f63ee2b2fb63388fd52fc77d385a",
-      "msg": "ir3: fix possible signed overflow in ir3_link_add",
-      "date": "2026-06-10T20:07:01.000+00:00"
+      "old": "11334c4",
+      "new": "fd616ba",
+      "full": "fd616bab71a7b24b9b71588125fabea739f511cb",
+      "msg": "glx: avoid crash on glXBindTexImageEXT when no texture target set",
+      "date": "2026-06-10T20:57:35.000+00:00"
     }
   ]
 }
