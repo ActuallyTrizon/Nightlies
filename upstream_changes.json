@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T21:39:42Z",
+  "triggered_at": "2026-06-10T23:30:19Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "11334c4",
-      "new": "fd616ba",
-      "full": "fd616bab71a7b24b9b71588125fabea739f511cb",
-      "msg": "glx: avoid crash on glXBindTexImageEXT when no texture target set",
-      "date": "2026-06-10T20:57:35.000+00:00"
+      "old": "fd616ba",
+      "new": "56d7d55",
+      "full": "56d7d5522c95813013ffbd4ac3f0f51830ce7706",
+      "msg": "anv: Replace va.scratch_surface_state_pool access with a function",
+      "date": "2026-06-10T22:49:20.000+00:00"
     }
   ]
 }
