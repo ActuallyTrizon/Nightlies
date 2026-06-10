@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T19:47:32Z",
+  "triggered_at": "2026-06-10T20:51:08Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6e57736",
-      "new": "67471fe",
-      "full": "67471fed866f673ab1ee7fdc2babe145b899c1fd",
-      "msg": "tu: Enable texel buffer / SSBO emulation for known problematic games",
-      "date": "2026-06-10T18:15:01.000+00:00"
+      "old": "67471fe",
+      "new": "11334c4",
+      "full": "11334c438a48f63ee2b2fb63388fd52fc77d385a",
+      "msg": "ir3: fix possible signed overflow in ir3_link_add",
+      "date": "2026-06-10T20:07:01.000+00:00"
     }
   ]
 }
