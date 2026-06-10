@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-10T15:03:20Z",
+  "triggered_at": "2026-06-10T17:01:55Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "850c55c",
-      "new": "c150088",
-      "full": "c15008837a578844b66f951bbbffc91e6ef09042",
-      "msg": "tests: Mark NVK as non conformant for D3D11.3 16.8.2 in test_derivative_hoisting",
-      "date": "2026-06-10T13:11:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bed7ba2",
-      "new": "94abf86",
-      "full": "94abf8656111f4fa70406c806c9c8a6c5089cc3f",
-      "msg": "v3dv: set non-zero array stride in null texture descriptor state",
-      "date": "2026-06-10T14:38:50.000+00:00"
+      "old": "94abf86",
+      "new": "178a3d7",
+      "full": "178a3d7396849f8dee99a4ee6048b2eef40190ec",
+      "msg": "egl/gbm: Eliminate local variable \"max_age\" in get_back_bo",
+      "date": "2026-06-10T16:21:59.000+00:00"
     }
   ]
 }
