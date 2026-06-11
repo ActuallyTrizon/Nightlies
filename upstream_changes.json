@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-10T23:30:19Z",
+  "triggered_at": "2026-06-11T00:37:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fd616ba",
-      "new": "56d7d55",
-      "full": "56d7d5522c95813013ffbd4ac3f0f51830ce7706",
-      "msg": "anv: Replace va.scratch_surface_state_pool access with a function",
-      "date": "2026-06-10T22:49:20.000+00:00"
+      "old": "56d7d55",
+      "new": "28aba5f",
+      "full": "28aba5fba48ce98a2bd6d1994ae457006343cd99",
+      "msg": "anv: Set TRANSFER_DST_BIT for HiZ operations",
+      "date": "2026-06-10T23:23:59.000+00:00"
     }
   ]
 }
