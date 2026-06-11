@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-11T17:12:09Z",
+  "triggered_at": "2026-06-11T18:57:38Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "b7f82b8",
-      "new": "611e257",
-      "full": "611e257a923856253ef5ff4706ae39fdf462bb83",
-      "msg": "[d3d9] Fix dumb input layout bug with undefined vertex inputs",
-      "date": "2026-06-11T17:00:50Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6cb9aaa",
-      "new": "bb32d88",
-      "full": "bb32d88c6f16c417a9f7eadc8a573d4463a904f8",
-      "msg": "ac: set has_desc_resource_level to true for gfx1156",
-      "date": "2026-06-11T16:36:21.000+00:00"
+      "old": "bb32d88",
+      "new": "b941dd7",
+      "full": "b941dd736ffc1ea4768954ab79886445dcef5473",
+      "msg": "util: Fix float8 denorm rounding to min-normal",
+      "date": "2026-06-11T17:13:04.000+00:00"
     }
   ]
 }
