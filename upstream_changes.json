@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-11T15:09:15Z",
+  "triggered_at": "2026-06-11T17:12:09Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d6e26bc",
-      "new": "8d7f6a5",
-      "full": "8d7f6a54d78ab7c551367c0b43553c8b30dc6a39",
-      "msg": "[ENV] Moved dynacache out of fragile and reduced minimum cache file size to 30Ki",
-      "date": "2026-06-11T14:54:20Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "b7f82b8",
+      "new": "611e257",
+      "full": "611e257a923856253ef5ff4706ae39fdf462bb83",
+      "msg": "[d3d9] Fix dumb input layout bug with undefined vertex inputs",
+      "date": "2026-06-11T17:00:50Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9268636",
-      "new": "6cb9aaa",
-      "full": "6cb9aaa2b7853f6299cfe674a3e444b2f4ac8d78",
-      "msg": "aco/sched_vopd: fix v_dual_dot2acc_f32_f16 created from VOP2 with inline constan",
-      "date": "2026-06-11T14:46:38.000+00:00"
+      "old": "6cb9aaa",
+      "new": "bb32d88",
+      "full": "bb32d88c6f16c417a9f7eadc8a573d4463a904f8",
+      "msg": "ac: set has_desc_resource_level to true for gfx1156",
+      "date": "2026-06-11T16:36:21.000+00:00"
     }
   ]
 }
