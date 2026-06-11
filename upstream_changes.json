@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-11T20:47:16Z",
+  "triggered_at": "2026-06-11T21:39:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b941dd7",
-      "new": "62b90b0",
-      "full": "62b90b082916433dd137642ab11f174be14d4c15",
-      "msg": "meson: drop non-existent platforms=xcb check",
-      "date": "2026-06-11T18:14:54.000+00:00"
+      "old": "62b90b0",
+      "new": "924ccc2",
+      "full": "924ccc2f6c8edc7a42ee1f6e7ad2e637d87a3633",
+      "msg": "teflon: Ensure all TfLiteRegistration fields are 0",
+      "date": "2026-06-11T20:12:52.000+00:00"
     }
   ]
 }
