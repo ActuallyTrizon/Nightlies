@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-11T05:32:46Z",
+  "triggered_at": "2026-06-11T07:36:12Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c14f0ec",
+      "new": "c7d6dad",
+      "full": "c7d6dad1a866a1720b243d4032a51fc84573f21f",
+      "msg": "[WRAPPER] Wrapped 1 more symbol for dbus (#3936)",
+      "date": "2026-06-11T07:26:50Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9dfa65d",
-      "new": "2a681c4",
-      "full": "2a681c4f8b56b6f1eb70fbd7ab353be0068867eb",
-      "msg": "intel/decoder: Print more information in shader's headline",
-      "date": "2026-06-11T03:28:29.000+00:00"
+      "old": "2a681c4",
+      "new": "73017ea",
+      "full": "73017ea86a3bdadd89f03d871cb716351e75d33d",
+      "msg": "ac/video: drop an useless drm_minor check",
+      "date": "2026-06-11T07:06:20.000+00:00"
     }
   ]
 }
