@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-11T00:37:56Z",
+  "triggered_at": "2026-06-11T01:48:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "56d7d55",
-      "new": "28aba5f",
-      "full": "28aba5fba48ce98a2bd6d1994ae457006343cd99",
-      "msg": "anv: Set TRANSFER_DST_BIT for HiZ operations",
-      "date": "2026-06-10T23:23:59.000+00:00"
+      "old": "28aba5f",
+      "new": "9dfa65d",
+      "full": "9dfa65db44c603fbb9ee07e3a0138c402c9ea8b8",
+      "msg": "intel/dev: update PTL device names",
+      "date": "2026-06-11T01:02:57.000+00:00"
     }
   ]
 }
