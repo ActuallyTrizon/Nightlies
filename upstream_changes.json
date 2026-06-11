@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-11T09:26:27Z",
+  "triggered_at": "2026-06-11T11:29:46Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c7d6dad",
-      "new": "ad6b10f",
-      "full": "ad6b10f06087f78d2f44b2011638094d3aba8770",
-      "msg": "[CMAKE] Disable dynacache for ctest (#3938)",
-      "date": "2026-06-11T08:05:17Z"
+      "old": "ad6b10f",
+      "new": "be4db11",
+      "full": "be4db111990826ea860ca5e9e72a3b064bdb4e3e",
+      "msg": "[DYNAREC] Optimized a hot function seen in Wine 11.10 (#3941)",
+      "date": "2026-06-11T10:36:12Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "73017ea",
+      "new": "3660224",
+      "full": "366022458be9fa97866257be25c5a698b926c2c5",
+      "msg": "egl: fix _EGL_NATIVE_PLATFORM fallback for unrecognized native displays",
+      "date": "2026-06-11T10:00:34.000+00:00"
     }
   ]
 }
