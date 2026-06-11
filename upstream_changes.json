@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-06-11T13:13:08Z",
+  "triggered_at": "2026-06-11T15:09:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "be4db11",
-      "new": "d6e26bc",
-      "full": "d6e26bc9aa64bc73d570ed30e958649085209e26",
-      "msg": "[WRAPPER] Fix libresolv compatibility with older glibc (#3943)",
-      "date": "2026-06-11T13:04:39Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "eae7563",
-      "new": "b7f82b8",
-      "full": "b7f82b859993a3f69eea8e0af030184da947b317",
-      "msg": "[dxvk] Remove render state built-in lowering from backend",
-      "date": "2026-06-11T12:31:02Z"
+      "old": "d6e26bc",
+      "new": "8d7f6a5",
+      "full": "8d7f6a54d78ab7c551367c0b43553c8b30dc6a39",
+      "msg": "[ENV] Moved dynacache out of fragile and reduced minimum cache file size to 30Ki",
+      "date": "2026-06-11T14:54:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3660224",
-      "new": "9268636",
-      "full": "92686361656a72388ed0d6f79042f414ae68e699",
-      "msg": "ethosu: Fix -Werror=format build error on 32-bit",
-      "date": "2026-06-11T12:52:14.000+00:00"
+      "old": "9268636",
+      "new": "6cb9aaa",
+      "full": "6cb9aaa2b7853f6299cfe674a3e444b2f4ac8d78",
+      "msg": "aco/sched_vopd: fix v_dual_dot2acc_f32_f16 created from VOP2 with inline constan",
+      "date": "2026-06-11T14:46:38.000+00:00"
     }
   ]
 }
