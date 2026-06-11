@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-11T11:29:46Z",
+  "triggered_at": "2026-06-11T13:13:08Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ad6b10f",
-      "new": "be4db11",
-      "full": "be4db111990826ea860ca5e9e72a3b064bdb4e3e",
-      "msg": "[DYNAREC] Optimized a hot function seen in Wine 11.10 (#3941)",
-      "date": "2026-06-11T10:36:12Z"
+      "old": "be4db11",
+      "new": "d6e26bc",
+      "full": "d6e26bc9aa64bc73d570ed30e958649085209e26",
+      "msg": "[WRAPPER] Fix libresolv compatibility with older glibc (#3943)",
+      "date": "2026-06-11T13:04:39Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "eae7563",
+      "new": "b7f82b8",
+      "full": "b7f82b859993a3f69eea8e0af030184da947b317",
+      "msg": "[dxvk] Remove render state built-in lowering from backend",
+      "date": "2026-06-11T12:31:02Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "73017ea",
-      "new": "3660224",
-      "full": "366022458be9fa97866257be25c5a698b926c2c5",
-      "msg": "egl: fix _EGL_NATIVE_PLATFORM fallback for unrecognized native displays",
-      "date": "2026-06-11T10:00:34.000+00:00"
+      "old": "3660224",
+      "new": "9268636",
+      "full": "92686361656a72388ed0d6f79042f414ae68e699",
+      "msg": "ethosu: Fix -Werror=format build error on 32-bit",
+      "date": "2026-06-11T12:52:14.000+00:00"
     }
   ]
 }
