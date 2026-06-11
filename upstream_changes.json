@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-11T07:36:12Z",
+  "triggered_at": "2026-06-11T09:26:27Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c14f0ec",
-      "new": "c7d6dad",
-      "full": "c7d6dad1a866a1720b243d4032a51fc84573f21f",
-      "msg": "[WRAPPER] Wrapped 1 more symbol for dbus (#3936)",
-      "date": "2026-06-11T07:26:50Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "2a681c4",
-      "new": "73017ea",
-      "full": "73017ea86a3bdadd89f03d871cb716351e75d33d",
-      "msg": "ac/video: drop an useless drm_minor check",
-      "date": "2026-06-11T07:06:20.000+00:00"
+      "old": "c7d6dad",
+      "new": "ad6b10f",
+      "full": "ad6b10f06087f78d2f44b2011638094d3aba8770",
+      "msg": "[CMAKE] Disable dynacache for ctest (#3938)",
+      "date": "2026-06-11T08:05:17Z"
     }
   ]
 }
