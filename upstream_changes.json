@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-11T01:48:33Z",
+  "triggered_at": "2026-06-11T05:32:46Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "28aba5f",
-      "new": "9dfa65d",
-      "full": "9dfa65db44c603fbb9ee07e3a0138c402c9ea8b8",
-      "msg": "intel/dev: update PTL device names",
-      "date": "2026-06-11T01:02:57.000+00:00"
+      "old": "9dfa65d",
+      "new": "2a681c4",
+      "full": "2a681c4f8b56b6f1eb70fbd7ab353be0068867eb",
+      "msg": "intel/decoder: Print more information in shader's headline",
+      "date": "2026-06-11T03:28:29.000+00:00"
     }
   ]
 }
