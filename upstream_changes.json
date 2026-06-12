@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-12T15:01:30Z",
+  "triggered_at": "2026-06-12T16:57:38Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "9aa4e3d",
+      "new": "b21eafb",
+      "full": "b21eafb486050f1ae22ae6a75e1f7e9ae2667d09",
+      "msg": "[d3d9] Enable PUSH_ADDRESS path for dynamically indexed constants",
+      "date": "2026-06-12T16:47:17Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d7f8097",
-      "new": "7606854",
-      "full": "7606854f43972c780f03cbd851080edbf75114ec",
-      "msg": "pan/compiler: fix spilling for 64-bit values",
-      "date": "2026-06-12T14:12:27.000+00:00"
+      "old": "7606854",
+      "new": "18d7ab9",
+      "full": "18d7ab925a56c4ed58750076c5653886afd9a61c",
+      "msg": "radv: inline 8 and 16bit push constant loads",
+      "date": "2026-06-12T16:12:00.000+00:00"
     }
   ]
 }
