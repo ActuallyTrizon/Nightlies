@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-12T21:32:07Z",
+  "triggered_at": "2026-06-12T22:30:35Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "cb01825",
+      "new": "e12bd27",
+      "full": "e12bd2710616db6c65544bed4d4005918c51564d",
+      "msg": "Merge pull request #5536 from Sonicadvance1/105",
+      "date": "2026-06-12T22:14:38Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8aa1ad6",
-      "new": "d7f9fed",
-      "full": "d7f9fede8472f66f4949c92b93d075c350b0bd6a",
-      "msg": "kraid: Re-materialize constants",
-      "date": "2026-06-12T17:10:28.000-04:00"
+      "old": "d7f9fed",
+      "new": "4e2abd8",
+      "full": "4e2abd872a1ff1c470f33f21a76adfeece754e93",
+      "msg": "anv: align storage texel buffer support on image support",
+      "date": "2026-06-12T21:28:55.000+00:00"
     }
   ]
 }
