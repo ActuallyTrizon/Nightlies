@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-12T11:15:37Z",
+  "triggered_at": "2026-06-12T13:04:29Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8d7f6a5",
-      "new": "4f5d171",
-      "full": "4f5d17103238c4842345ce5f60a2e8c8d6e75f94",
-      "msg": "[ENV] Added box64-configurator GUI tool (#3946)",
-      "date": "2026-06-12T10:57:23Z"
+      "old": "4f5d171",
+      "new": "8f445d9",
+      "full": "8f445d9a0c52767274567f1a9bd76ef28e531ec7",
+      "msg": "[DYNAREC] Fixed a typo in flag transformation",
+      "date": "2026-06-12T12:47:36Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "5435618",
+      "new": "d7f8097",
+      "full": "d7f8097adf802cf8231612d2437c911e63512126",
+      "msg": "pan: Add G52 skip for xlib wsi failure",
+      "date": "2026-06-12T12:40:04.000+00:00"
     }
   ]
 }
