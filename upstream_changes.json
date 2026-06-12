@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-12T05:33:01Z",
+  "triggered_at": "2026-06-12T09:21:29Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "e02953d",
+      "new": "cb01825",
+      "full": "cb018257cf86a4fcd274e918307b95526732ed12",
+      "msg": "Merge pull request #5547 from neobrain/feature_fexofflinecompiler_process_all",
+      "date": "2026-06-12T09:11:33Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "42fd600",
-      "new": "a07ded8",
-      "full": "a07ded8e8cf1d2f2b758ebb0520a7845f608c284",
-      "msg": "kraid: Better document swizzles",
-      "date": "2026-06-12T00:13:08.000-04:00"
+      "old": "a07ded8",
+      "new": "5435618",
+      "full": "5435618d2e53fc77ee5d90f61e3f13435d818117",
+      "msg": "nvk: Implement support for non graphics timestamp",
+      "date": "2026-06-12T10:00:44.000+02:00"
     }
   ]
 }
