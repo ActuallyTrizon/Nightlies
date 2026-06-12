@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-12T13:04:29Z",
+  "triggered_at": "2026-06-12T15:01:30Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "4f5d171",
-      "new": "8f445d9",
-      "full": "8f445d9a0c52767274567f1a9bd76ef28e531ec7",
-      "msg": "[DYNAREC] Fixed a typo in flag transformation",
-      "date": "2026-06-12T12:47:36Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5435618",
-      "new": "d7f8097",
-      "full": "d7f8097adf802cf8231612d2437c911e63512126",
-      "msg": "pan: Add G52 skip for xlib wsi failure",
-      "date": "2026-06-12T12:40:04.000+00:00"
+      "old": "d7f8097",
+      "new": "7606854",
+      "full": "7606854f43972c780f03cbd851080edbf75114ec",
+      "msg": "pan/compiler: fix spilling for 64-bit values",
+      "date": "2026-06-12T14:12:27.000+00:00"
     }
   ]
 }
