@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-12T09:21:29Z",
+  "triggered_at": "2026-06-12T11:15:37Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "e02953d",
-      "new": "cb01825",
-      "full": "cb018257cf86a4fcd274e918307b95526732ed12",
-      "msg": "Merge pull request #5547 from neobrain/feature_fexofflinecompiler_process_all",
-      "date": "2026-06-12T09:11:33Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a07ded8",
-      "new": "5435618",
-      "full": "5435618d2e53fc77ee5d90f61e3f13435d818117",
-      "msg": "nvk: Implement support for non graphics timestamp",
-      "date": "2026-06-12T10:00:44.000+02:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8d7f6a5",
+      "new": "4f5d171",
+      "full": "4f5d17103238c4842345ce5f60a2e8c8d6e75f94",
+      "msg": "[ENV] Added box64-configurator GUI tool (#3946)",
+      "date": "2026-06-12T10:57:23Z"
     }
   ]
 }
