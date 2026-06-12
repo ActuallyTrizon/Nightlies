@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-12T03:04:52Z",
+  "triggered_at": "2026-06-12T05:33:01Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1f83be5",
-      "new": "42fd600",
-      "full": "42fd600dc066248f8f524b54eee6a2f969211b32",
-      "msg": "brw: Remove the brw assembler tests",
-      "date": "2026-06-12T01:32:12.000+00:00"
+      "old": "42fd600",
+      "new": "a07ded8",
+      "full": "a07ded8e8cf1d2f2b758ebb0520a7845f608c284",
+      "msg": "kraid: Better document swizzles",
+      "date": "2026-06-12T00:13:08.000-04:00"
     }
   ]
 }
