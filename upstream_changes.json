@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-12T17:48:58Z",
+  "triggered_at": "2026-06-12T18:37:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "18d7ab9",
-      "new": "860fe2d",
-      "full": "860fe2d7935d1d4e97dc9930785751915ce2c212",
-      "msg": "tu: Don't process A2R10G10B10 clear values via new pack function",
-      "date": "2026-06-12T16:58:38.000+00:00"
+      "old": "860fe2d",
+      "new": "6617b5b",
+      "full": "6617b5b3fb0354534330968f30fbab43ad527f01",
+      "msg": "mediafoundation: detach xThreadProc frame processing from apiLock to unblock con",
+      "date": "2026-06-12T17:49:48.000+00:00"
     }
   ]
 }
