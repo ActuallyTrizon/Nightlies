@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-12T00:38:39Z",
+  "triggered_at": "2026-06-12T01:47:14Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "41b4e04",
-      "new": "67ded3d",
-      "full": "67ded3d07939865edb581f23cbb0b82056dcdefb",
-      "msg": "panvk: Advertise VK_KHR_compute_shader_derivatives",
-      "date": "2026-06-11T23:58:56.000+00:00"
+      "old": "67ded3d",
+      "new": "1f83be5",
+      "full": "1f83be5eddc757a6fd8fdfb3eddc562223587f62",
+      "msg": "intel/gen: Drop unused format parameter from gen_inst_has_dst",
+      "date": "2026-06-12T01:10:22.000+00:00"
     }
   ]
 }
