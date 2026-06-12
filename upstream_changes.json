@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-12T19:37:45Z",
+  "triggered_at": "2026-06-12T21:32:07Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "b21eafb",
-      "new": "c655a16",
-      "full": "c655a1615d6c51260c28d990178d232e8b863b72",
-      "msg": "Revert \"[d3d9] Declare spec constant layout as constant in FF shaders\"",
-      "date": "2026-06-12T19:36:06Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6617b5b",
-      "new": "8aa1ad6",
-      "full": "8aa1ad6cd4fe725684d6c349f88dcca94b6e8cab",
-      "msg": "Uprev ANGLE to 8e09325ebad45c7e11630a79754361e965e5fab0",
-      "date": "2026-06-12T18:04:00.000+00:00"
+      "old": "8aa1ad6",
+      "new": "d7f9fed",
+      "full": "d7f9fede8472f66f4949c92b93d075c350b0bd6a",
+      "msg": "kraid: Re-materialize constants",
+      "date": "2026-06-12T17:10:28.000-04:00"
     }
   ]
 }
