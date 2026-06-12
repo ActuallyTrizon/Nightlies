@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-12T18:37:18Z",
+  "triggered_at": "2026-06-12T19:37:45Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "b21eafb",
+      "new": "c655a16",
+      "full": "c655a1615d6c51260c28d990178d232e8b863b72",
+      "msg": "Revert \"[d3d9] Declare spec constant layout as constant in FF shaders\"",
+      "date": "2026-06-12T19:36:06Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "860fe2d",
-      "new": "6617b5b",
-      "full": "6617b5b3fb0354534330968f30fbab43ad527f01",
-      "msg": "mediafoundation: detach xThreadProc frame processing from apiLock to unblock con",
-      "date": "2026-06-12T17:49:48.000+00:00"
+      "old": "6617b5b",
+      "new": "8aa1ad6",
+      "full": "8aa1ad6cd4fe725684d6c349f88dcca94b6e8cab",
+      "msg": "Uprev ANGLE to 8e09325ebad45c7e11630a79754361e965e5fab0",
+      "date": "2026-06-12T18:04:00.000+00:00"
     }
   ]
 }
