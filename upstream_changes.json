@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-12T23:29:14Z",
+  "triggered_at": "2026-06-13T13:32:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4e2abd8",
-      "new": "8faf71d",
-      "full": "8faf71d84f0ef92538107d132ff48f7179e922d4",
-      "msg": "aux/tc: enforce strict resolve semantics",
-      "date": "2026-06-12T21:55:41.000+00:00"
+      "old": "8faf71d",
+      "new": "8f272b1",
+      "full": "8f272b1fe18e95366386a075f2df0db4e9ea78b9",
+      "msg": "nouveau/mme: Add a test for MME Shadow RAM behavior",
+      "date": "2026-06-13T14:16:39.000+02:00"
     }
   ]
 }
