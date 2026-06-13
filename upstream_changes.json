@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-13T20:27:29Z",
+  "triggered_at": "2026-06-13T21:27:07Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "8f272b1",
-      "new": "ce4654e",
-      "full": "ce4654ead659aa68f88cfb898a0fcca4da6f329b",
-      "msg": "radv: rename vrs_coarse_shading -> vrs_flat_shading",
-      "date": "2026-06-13T19:29:59.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c655a16",
+      "new": "1a336f4",
+      "full": "1a336f4a5c5bff82fc97b038ce3dfaf9665fb271",
+      "msg": "[d3d9] Fix incorrect constant count being passed to vertex shader",
+      "date": "2026-06-13T21:10:47Z"
     }
   ]
 }
