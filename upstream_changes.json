@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-13T13:32:10Z",
+  "triggered_at": "2026-06-13T20:27:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8faf71d",
-      "new": "8f272b1",
-      "full": "8f272b1fe18e95366386a075f2df0db4e9ea78b9",
-      "msg": "nouveau/mme: Add a test for MME Shadow RAM behavior",
-      "date": "2026-06-13T14:16:39.000+02:00"
+      "old": "8f272b1",
+      "new": "ce4654e",
+      "full": "ce4654ead659aa68f88cfb898a0fcca4da6f329b",
+      "msg": "radv: rename vrs_coarse_shading -> vrs_flat_shading",
+      "date": "2026-06-13T19:29:59.000+00:00"
     }
   ]
 }
