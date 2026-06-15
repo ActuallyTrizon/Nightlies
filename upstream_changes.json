@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-15T10:05:11Z",
+  "triggered_at": "2026-06-15T13:02:42Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c150088",
-      "new": "34e4491",
-      "full": "34e4491c78719dad3a95d95729f9c195c9103ccb",
-      "msg": "vkd3d: workaround DCC stores glitches with SCP Secret Laboratory on RADV",
-      "date": "2026-06-15T09:11:30Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3f74772",
+      "new": "d0ab518",
+      "full": "d0ab518074f63a61d822fe3e75b1af73364071ae",
+      "msg": "Add null check for dynablock in arch_unaligned (#3945)",
+      "date": "2026-06-15T12:44:19Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "ea98788",
-      "new": "50c26a4",
-      "full": "50c26a49c7b9d8c458c5562e87aa5aaac847b232",
-      "msg": "[dxvk] Enable descriptor heap on Nvidia 610 drivers",
-      "date": "2026-06-15T08:51:01Z"
+      "old": "50c26a4",
+      "new": "760ec20",
+      "full": "760ec20ef632ad987084f32e449792748794f87f",
+      "msg": "[dxvk] Add debug name for sampler padding",
+      "date": "2026-06-15T10:29:51Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7c018be",
-      "new": "1981646",
-      "full": "1981646c4fb6ba33a4df7205583908c9760ba804",
-      "msg": "aco/tests: test creating v_dual_dot2acc_f32_f16 from v_dot2c_f32_f16 with inline",
-      "date": "2026-06-15T09:10:02.000+00:00"
+      "old": "1981646",
+      "new": "9ff341f",
+      "full": "9ff341ff5f63429c9b24b7561a23f6c4a83932c6",
+      "msg": "pvr/ci: add AXE-1-16M nightly Vulkan CTS testing",
+      "date": "2026-06-15T12:37:39.000+00:00"
     }
   ]
 }
