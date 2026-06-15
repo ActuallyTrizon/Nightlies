@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-15T21:00:56Z",
+  "triggered_at": "2026-06-15T22:39:30Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "d3c5044",
-      "new": "5134104",
-      "full": "5134104c9cf6bf7f883f672f1e160daf83bd9aa2",
-      "msg": "nir/skip_helpers: don't require helpers for non uniform descriptors",
-      "date": "2026-06-15T19:23:06.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "760ec20",
+      "new": "3ebea0c",
+      "full": "3ebea0c7549c000a8059dbdf61dc14208d903e5e",
+      "msg": "[dxvk] Fix accessing invalidated iterators in SPIR-V spec constant lowering",
+      "date": "2026-06-15T22:33:45Z"
     }
   ]
 }
