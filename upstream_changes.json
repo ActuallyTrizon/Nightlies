@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-14T17:28:52Z",
+  "triggered_at": "2026-06-15T07:52:57Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8f445d9",
-      "new": "3f74772",
-      "full": "3f747727f267f8ba820829699c0271a2ec059070",
-      "msg": "[ARM64_DYNAREC] Fixed rare case where TF would be restored at an IRET",
-      "date": "2026-06-14T17:05:51Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "1a336f4",
-      "new": "ea98788",
-      "full": "ea987889efefa0839fdbb889c6a14b29ba470da8",
-      "msg": "[d3d9] Only update buffer range when re-binding same vertex buffer",
-      "date": "2026-06-14T16:57:10Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "ce4654e",
+      "new": "7c018be",
+      "full": "7c018be258d107f74c79a4f0dd37cf42486889e1",
+      "msg": "ci: disable Collabora's farm due to maintenance",
+      "date": "2026-06-15T06:47:55.000+00:00"
     }
   ]
 }
