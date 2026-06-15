@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-15T19:17:32Z",
+  "triggered_at": "2026-06-15T21:00:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "68b21aa",
-      "new": "d3c5044",
-      "full": "d3c50442f9c1e99c5c7039f27b90a191fe991606",
-      "msg": "anv: Replace anv_descriptor_set_binding_layout::descriptor_data_sampler_size by ",
-      "date": "2026-06-15T18:33:32.000+00:00"
+      "old": "d3c5044",
+      "new": "5134104",
+      "full": "5134104c9cf6bf7f883f672f1e160daf83bd9aa2",
+      "msg": "nir/skip_helpers: don't require helpers for non uniform descriptors",
+      "date": "2026-06-15T19:23:06.000+00:00"
     }
   ]
 }
