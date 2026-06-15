@@ -1,10 +1,33 @@
 {
-  "updated_at": "2026-06-15T11:02:49Z",
+  "updated_at": "2026-06-15T17:42:33Z",
   "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
-  "total_releases": 39,
-  "total_assets": 48,
+  "total_releases": 40,
+  "total_assets": 50,
   "releases": [
+    {
+      "tag": "tu_v29",
+      "name": "Turnip A8XX v29",
+      "published_at": "2026-06-15T16:12:13Z",
+      "assets": [
+        {
+          "name": "a8xx-turnip-gen8-sync-V29.zip",
+          "mirror_name": "tu_v29_a8xx-turnip-gen8-sync-V29.zip",
+          "size": 2665349,
+          "original_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v29/a8xx-turnip-gen8-sync-V29.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v29_a8xx-turnip-gen8-sync-V29.zip",
+          "published_at": "2026-06-15T16:12:14Z"
+        },
+        {
+          "name": "a8xx-turnip-gen8-V29.zip",
+          "mirror_name": "tu_v29_a8xx-turnip-gen8-V29.zip",
+          "size": 2661564,
+          "original_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v29/a8xx-turnip-gen8-V29.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v29_a8xx-turnip-gen8-V29.zip",
+          "published_at": "2026-06-15T16:12:14Z"
+        }
+      ]
+    },
     {
       "tag": "tu_v28",
       "name": "Turnip A8XX v28",
