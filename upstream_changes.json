@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-15T07:52:57Z",
+  "triggered_at": "2026-06-15T10:05:11Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "c150088",
+      "new": "34e4491",
+      "full": "34e4491c78719dad3a95d95729f9c195c9103ccb",
+      "msg": "vkd3d: workaround DCC stores glitches with SCP Secret Laboratory on RADV",
+      "date": "2026-06-15T09:11:30Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "ea98788",
+      "new": "50c26a4",
+      "full": "50c26a49c7b9d8c458c5562e87aa5aaac847b232",
+      "msg": "[dxvk] Enable descriptor heap on Nvidia 610 drivers",
+      "date": "2026-06-15T08:51:01Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ce4654e",
-      "new": "7c018be",
-      "full": "7c018be258d107f74c79a4f0dd37cf42486889e1",
-      "msg": "ci: disable Collabora's farm due to maintenance",
-      "date": "2026-06-15T06:47:55.000+00:00"
+      "old": "7c018be",
+      "new": "1981646",
+      "full": "1981646c4fb6ba33a4df7205583908c9760ba804",
+      "msg": "aco/tests: test creating v_dual_dot2acc_f32_f16 from v_dot2c_f32_f16 with inline",
+      "date": "2026-06-15T09:10:02.000+00:00"
     }
   ]
 }
