@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-16T15:38:17Z",
+  "triggered_at": "2026-06-16T17:40:40Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8a3ecb8",
-      "new": "e823292",
-      "full": "e823292457fdc6af7bcb3020ac93698893bc564d",
-      "msg": "Improved flags handling in signal",
-      "date": "2026-06-16T14:49:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "44290e1",
-      "new": "9a2d718",
-      "full": "9a2d7186eb4cddf3fb6354e0b3d6e087e9622243",
-      "msg": "vulkan: fix lowering untyped accel struct with descriptor heap",
-      "date": "2026-06-16T15:12:33.000+00:00"
+      "old": "9a2d718",
+      "new": "e5b39e0",
+      "full": "e5b39e03b05b1facb9756e8479a3ee28b1f9b41a",
+      "msg": "kraid: OpShiftLop is unsigned",
+      "date": "2026-06-16T16:57:10.000+00:00"
     }
   ]
 }
