@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-16T09:46:07Z",
+  "triggered_at": "2026-06-16T11:45:42Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "fe86cb6",
-      "new": "e424cdb",
-      "full": "e424cdb94013380d9ed0b27e7f29fb884e6796cf",
-      "msg": "[LA64_DYNAREC] Refined iret_to_next (#3955)",
-      "date": "2026-06-16T09:40:25Z"
+      "old": "e424cdb",
+      "new": "8a3ecb8",
+      "full": "8a3ecb8cc540302ea14adf911c3cc68d9eea9aab",
+      "msg": "[DYNAREC] Improved tracking of executable memory",
+      "date": "2026-06-16T11:30:26Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "40d4cf7",
-      "new": "cff8dbd",
-      "full": "cff8dbd452b840edb0820b56be6b292cac2b4cc9",
-      "msg": "v3dv: rename format_plane unorm/snorm flags to sw_unorm/sw_snorm",
-      "date": "2026-06-16T10:46:39.000+02:00"
+      "old": "cff8dbd",
+      "new": "1845e53",
+      "full": "1845e538650738e7e7c01461b7dd94c36641dd1f",
+      "msg": "ac/lower_global_access: combine multiple 32-bit offsets",
+      "date": "2026-06-16T10:59:28.000+00:00"
     }
   ]
 }
