@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-16T05:48:22Z",
+  "triggered_at": "2026-06-16T07:53:20Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "80bdf9b",
+      "new": "fe86cb6",
+      "full": "fe86cb68f2dde70202de9ae70f2e7db84636c778",
+      "msg": "[PROFILE] Added a profile for explorer.exe (#3952)",
+      "date": "2026-06-16T07:49:19Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0b7dd78",
-      "new": "a7575d7",
-      "full": "a7575d7e981cac410752e047fa7922ef2d8425fa",
-      "msg": "kk: Respect precomp-compiler options when setting up kk_clc",
-      "date": "2026-06-15T20:39:44.000-07:00"
+      "old": "a7575d7",
+      "new": "40d4cf7",
+      "full": "40d4cf7a7040f382e87636d2821a38f20d4fd850",
+      "msg": "intel/gen: Explicitly declare gen_opcodes_private.h dependency",
+      "date": "2026-06-16T06:36:04.000+00:00"
     }
   ]
 }
