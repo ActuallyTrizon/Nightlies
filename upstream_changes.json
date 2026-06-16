@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-16T13:37:55Z",
+  "triggered_at": "2026-06-16T15:38:17Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "3ebea0c",
-      "new": "4322877",
-      "full": "4322877d3e5a41426fe1b988d3ab915fcf5e2daf",
-      "msg": "[d3d9] Batch draw calls with no state changes in between",
-      "date": "2026-06-16T13:26:23Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8a3ecb8",
+      "new": "e823292",
+      "full": "e823292457fdc6af7bcb3020ac93698893bc564d",
+      "msg": "Improved flags handling in signal",
+      "date": "2026-06-16T14:49:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1845e53",
-      "new": "44290e1",
-      "full": "44290e189951581691b4ad6d0d3c209b6b806e14",
-      "msg": "nir: Fix trailing comment generation for variable naming",
-      "date": "2026-06-16T12:20:38.000+00:00"
+      "old": "44290e1",
+      "new": "9a2d718",
+      "full": "9a2d7186eb4cddf3fb6354e0b3d6e087e9622243",
+      "msg": "vulkan: fix lowering untyped accel struct with descriptor heap",
+      "date": "2026-06-16T15:12:33.000+00:00"
     }
   ]
 }
