@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-16T01:52:51Z",
+  "triggered_at": "2026-06-16T03:06:02Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d3371e2",
-      "new": "d9263b6",
-      "full": "d9263b617c5a0269221b430fafade19d5879c0ec",
-      "msg": "anv/rt: Skip invalid node in child block count",
-      "date": "2026-06-16T01:00:55.000+00:00"
+      "old": "d9263b6",
+      "new": "0b7dd78",
+      "full": "0b7dd7881444b807104ddf7fc98f471895719522",
+      "msg": "intel: Add debug hook to dump out BVH after update",
+      "date": "2026-06-15T18:27:03.000-07:00"
     }
   ]
 }
