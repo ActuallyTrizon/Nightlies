@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-16T03:06:02Z",
+  "triggered_at": "2026-06-16T05:48:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d9263b6",
-      "new": "0b7dd78",
-      "full": "0b7dd7881444b807104ddf7fc98f471895719522",
-      "msg": "intel: Add debug hook to dump out BVH after update",
-      "date": "2026-06-15T18:27:03.000-07:00"
+      "old": "0b7dd78",
+      "new": "a7575d7",
+      "full": "a7575d7e981cac410752e047fa7922ef2d8425fa",
+      "msg": "kk: Respect precomp-compiler options when setting up kk_clc",
+      "date": "2026-06-15T20:39:44.000-07:00"
     }
   ]
 }
