@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-16T19:11:15Z",
+  "triggered_at": "2026-06-16T21:01:30Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "4322877",
-      "new": "660d382",
-      "full": "660d382288ac9d09c55d71e905cf50feee2c5772",
-      "msg": "[dxvk] Limit shader compiler threads to 8 on 32-bit",
-      "date": "2026-06-16T18:27:03Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e5b39e0",
-      "new": "9d55862",
-      "full": "9d558626ef13985e583e21318b43df6c32aed3d8",
-      "msg": "aco/assembler: pass std::vector to insert_code",
-      "date": "2026-06-16T18:16:15.000+00:00"
+      "old": "9d55862",
+      "new": "1e9fd4c",
+      "full": "1e9fd4ca5b1470a1c4ed6ca228a95be64de8ac01",
+      "msg": "spirv: set num_components for OpAtomicFlagTestAndSet",
+      "date": "2026-06-16T20:12:32.000+00:00"
     }
   ]
 }
