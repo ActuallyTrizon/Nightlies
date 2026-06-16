@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-16T22:36:47Z",
+  "triggered_at": "2026-06-16T23:30:15Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1e9fd4c",
-      "new": "e3903bc",
-      "full": "e3903bc647281ab1b29f9d0c92e86b9b5d3ed4d9",
-      "msg": "zink: fix import2d sampler view creation",
-      "date": "2026-06-16T21:18:54.000+00:00"
+      "old": "e3903bc",
+      "new": "4d92a06",
+      "full": "4d92a069ff93316aa7fb798ed8317476032c5e49",
+      "msg": "rusticl: validate input_programs binary type in clLinkProgram",
+      "date": "2026-06-16T23:02:34.000+00:00"
     }
   ]
 }
