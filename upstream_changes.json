@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-15T22:39:30Z",
+  "triggered_at": "2026-06-16T00:43:54Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "760ec20",
-      "new": "3ebea0c",
-      "full": "3ebea0c7549c000a8059dbdf61dc14208d903e5e",
-      "msg": "[dxvk] Fix accessing invalidated iterators in SPIR-V spec constant lowering",
-      "date": "2026-06-15T22:33:45Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "5134104",
+      "new": "d3371e2",
+      "full": "d3371e22d79af0feeeaf9769da4b9bee45805ed7",
+      "msg": "brw: don't preprocess software doubles if opts->softfp64 is not set",
+      "date": "2026-06-15T23:34:04.000+00:00"
     }
   ]
 }
