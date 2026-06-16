@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-16T17:40:40Z",
+  "triggered_at": "2026-06-16T19:11:15Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "4322877",
+      "new": "660d382",
+      "full": "660d382288ac9d09c55d71e905cf50feee2c5772",
+      "msg": "[dxvk] Limit shader compiler threads to 8 on 32-bit",
+      "date": "2026-06-16T18:27:03Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9a2d718",
-      "new": "e5b39e0",
-      "full": "e5b39e03b05b1facb9756e8479a3ee28b1f9b41a",
-      "msg": "kraid: OpShiftLop is unsigned",
-      "date": "2026-06-16T16:57:10.000+00:00"
+      "old": "e5b39e0",
+      "new": "9d55862",
+      "full": "9d558626ef13985e583e21318b43df6c32aed3d8",
+      "msg": "aco/assembler: pass std::vector to insert_code",
+      "date": "2026-06-16T18:16:15.000+00:00"
     }
   ]
 }
