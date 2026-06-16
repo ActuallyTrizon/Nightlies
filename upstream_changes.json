@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-16T00:43:54Z",
+  "triggered_at": "2026-06-16T01:52:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5134104",
-      "new": "d3371e2",
-      "full": "d3371e22d79af0feeeaf9769da4b9bee45805ed7",
-      "msg": "brw: don't preprocess software doubles if opts->softfp64 is not set",
-      "date": "2026-06-15T23:34:04.000+00:00"
+      "old": "d3371e2",
+      "new": "d9263b6",
+      "full": "d9263b617c5a0269221b430fafade19d5879c0ec",
+      "msg": "anv/rt: Skip invalid node in child block count",
+      "date": "2026-06-16T01:00:55.000+00:00"
     }
   ]
 }
