@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-16T11:45:42Z",
+  "triggered_at": "2026-06-16T13:37:55Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "e424cdb",
-      "new": "8a3ecb8",
-      "full": "8a3ecb8cc540302ea14adf911c3cc68d9eea9aab",
-      "msg": "[DYNAREC] Improved tracking of executable memory",
-      "date": "2026-06-16T11:30:26Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "3ebea0c",
+      "new": "4322877",
+      "full": "4322877d3e5a41426fe1b988d3ab915fcf5e2daf",
+      "msg": "[d3d9] Batch draw calls with no state changes in between",
+      "date": "2026-06-16T13:26:23Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cff8dbd",
-      "new": "1845e53",
-      "full": "1845e538650738e7e7c01461b7dd94c36641dd1f",
-      "msg": "ac/lower_global_access: combine multiple 32-bit offsets",
-      "date": "2026-06-16T10:59:28.000+00:00"
+      "old": "1845e53",
+      "new": "44290e1",
+      "full": "44290e189951581691b4ad6d0d3c209b6b806e14",
+      "msg": "nir: Fix trailing comment generation for variable naming",
+      "date": "2026-06-16T12:20:38.000+00:00"
     }
   ]
 }
