@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-16T07:53:20Z",
+  "triggered_at": "2026-06-16T09:46:07Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "80bdf9b",
-      "new": "fe86cb6",
-      "full": "fe86cb68f2dde70202de9ae70f2e7db84636c778",
-      "msg": "[PROFILE] Added a profile for explorer.exe (#3952)",
-      "date": "2026-06-16T07:49:19Z"
+      "old": "fe86cb6",
+      "new": "e424cdb",
+      "full": "e424cdb94013380d9ed0b27e7f29fb884e6796cf",
+      "msg": "[LA64_DYNAREC] Refined iret_to_next (#3955)",
+      "date": "2026-06-16T09:40:25Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a7575d7",
-      "new": "40d4cf7",
-      "full": "40d4cf7a7040f382e87636d2821a38f20d4fd850",
-      "msg": "intel/gen: Explicitly declare gen_opcodes_private.h dependency",
-      "date": "2026-06-16T06:36:04.000+00:00"
+      "old": "40d4cf7",
+      "new": "cff8dbd",
+      "full": "cff8dbd452b840edb0820b56be6b292cac2b4cc9",
+      "msg": "v3dv: rename format_plane unorm/snorm flags to sw_unorm/sw_snorm",
+      "date": "2026-06-16T10:46:39.000+02:00"
     }
   ]
 }
