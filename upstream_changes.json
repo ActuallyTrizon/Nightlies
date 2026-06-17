@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-16T23:30:15Z",
+  "triggered_at": "2026-06-17T03:05:20Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "e3903bc",
-      "new": "4d92a06",
-      "full": "4d92a069ff93316aa7fb798ed8317476032c5e49",
-      "msg": "rusticl: validate input_programs binary type in clLinkProgram",
-      "date": "2026-06-16T23:02:34.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "e12bd27",
+      "new": "9d5494d",
+      "full": "9d5494d9f0ed4683fcf3fc5b5b015888cfc1c765",
+      "msg": "Merge pull request #5555 from lioncash/alu",
+      "date": "2026-06-17T02:56:38Z"
     }
   ]
 }
