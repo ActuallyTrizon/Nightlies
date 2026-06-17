@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-17T05:36:29Z",
+  "triggered_at": "2026-06-17T07:45:21Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "e823292",
+      "new": "05136b7",
+      "full": "05136b7bfbd3b0df072e4b1c2a3410c6aa165152",
+      "msg": "[SIGNAL] Made SHOWSEGV safer (#3960)",
+      "date": "2026-06-17T07:37:51Z"
+    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "9d5494d",
-      "new": "223e0f4",
-      "full": "223e0f4e534cdecdb005b6e99a27831091605dbd",
-      "msg": "Merge pull request #5558 from lioncash/blend",
-      "date": "2026-06-17T05:34:32Z"
+      "old": "223e0f4",
+      "new": "99662b7",
+      "full": "99662b70ffbf24a9ad50f0317f75166e0822f5a4",
+      "msg": "Merge pull request #5560 from lioncash/psad",
+      "date": "2026-06-17T07:14:30Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4d92a06",
+      "new": "3d5d0b4",
+      "full": "3d5d0b4b23e0a84f9abc4efb57aaf488466ac802",
+      "msg": "nvk: Use meta for image copies where possible",
+      "date": "2026-06-17T06:57:04.000+00:00"
     }
   ]
 }
