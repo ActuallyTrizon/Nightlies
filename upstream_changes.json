@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-17T19:40:57Z",
+  "triggered_at": "2026-06-17T20:41:57Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d38eb68",
-      "new": "66611c5",
-      "full": "66611c569f610372a14cd195268d1075ff22a0eb",
-      "msg": "radv: fix setting COMPUTE_DISPATCH_INTERLEAVE on the gfx queue",
-      "date": "2026-06-17T18:27:36.000+00:00"
+      "old": "66611c5",
+      "new": "4bfc030",
+      "full": "4bfc03020ad76719b8932056fdabb0601ffb328b",
+      "msg": "gfxstream: Avoid transfering VkAllocationCallbacks between guest and host",
+      "date": "2026-06-17T19:41:54.000+00:00"
     }
   ]
 }
