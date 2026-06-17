@@ -36,8 +36,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260617-131606](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260617-131606) |
-| **FEXCore** | [`470aeab21`](https://github.com/FEX-Emu/FEX/commit/470aeab21) — FEX-2605-Nightly-470aeab21 |
+| **Release** | [🔗 nightly-20260617-171055](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260617-171055) |
+| **FEXCore** | [`adad3c27d`](https://github.com/FEX-Emu/FEX/commit/adad3c27d) — FEX-2605-Nightly-adad3c27d |
 | **VKD3D-Proton (Std)** | [`ee737e32`](https://github.com/HansKristian-Work/vkd3d-proton/commit/ee737e32) |
 | **VKD3D-Proton (ARM64EC)** | [`ee737e32`](https://github.com/HansKristian-Work/vkd3d-proton/commit/ee737e32) |
 | **DXVK (GPLAsync)** | [`7d9ec7d0`](https://github.com/doitsujin/dxvk/commit/7d9ec7d0) |
@@ -45,8 +45,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (GPLAsync)** | [`7d9ec7d0`](https://github.com/doitsujin/dxvk/commit/7d9ec7d0) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`7d9ec7d0`](https://github.com/doitsujin/dxvk/commit/7d9ec7d0) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260617-r3](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260617-r3) — Turnip v26.2.0-20260617-r3 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260617-131606) |
+| **Turnip** | [v26.2.0-20260617-r4](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260617-r4) — Turnip v26.2.0-20260617-r4 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260617-171055) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
