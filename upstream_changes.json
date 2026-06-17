@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-17T03:05:20Z",
+  "triggered_at": "2026-06-17T05:36:29Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "e12bd27",
-      "new": "9d5494d",
-      "full": "9d5494d9f0ed4683fcf3fc5b5b015888cfc1c765",
-      "msg": "Merge pull request #5555 from lioncash/alu",
-      "date": "2026-06-17T02:56:38Z"
+      "old": "9d5494d",
+      "new": "223e0f4",
+      "full": "223e0f4e534cdecdb005b6e99a27831091605dbd",
+      "msg": "Merge pull request #5558 from lioncash/blend",
+      "date": "2026-06-17T05:34:32Z"
     }
   ]
 }
