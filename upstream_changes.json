@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-17T17:00:38Z",
+  "triggered_at": "2026-06-17T18:46:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "14a5ed9",
-      "new": "6a01034",
-      "full": "6a010343d47b004cfd8ed859a8c35ebba0249a60",
-      "msg": "fd: lrz_block in fdl6_lrz_layout_init() should not be static",
-      "date": "2026-06-17T16:16:33.000+00:00"
+      "old": "6a01034",
+      "new": "d38eb68",
+      "full": "d38eb680a21e418605f826c49c7b7422353586f8",
+      "msg": "radeonsi: Implement SQTT CB_START and CB_END",
+      "date": "2026-06-17T17:12:14.000+00:00"
     }
   ]
 }
