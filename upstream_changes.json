@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-17T22:33:06Z",
+  "triggered_at": "2026-06-17T23:30:54Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "adad3c2",
+      "new": "2309910",
+      "full": "23099100b6e980c4946fb72e6e52f51a98289741",
+      "msg": "Merge pull request #5564 from lioncash/misc2",
+      "date": "2026-06-17T23:24:26Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "7d9ec7d",
+      "new": "e1c3403",
+      "full": "e1c3403f5468b55fc396c60d249c3f63772020c6",
+      "msg": "[CI] Update CI actions",
+      "date": "2026-06-17T23:14:48Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4bfc030",
-      "new": "e4d0b93",
-      "full": "e4d0b936fdd112dc2a95047f64facd0498084cd1",
-      "msg": "radeonsi/ci: change DEQP_TARGET to default for Wayland",
-      "date": "2026-06-17T22:13:49.000+00:00"
+      "old": "e4d0b93",
+      "new": "dde1709",
+      "full": "dde1709274f4575964be93e63207b2c37c7ffddd",
+      "msg": "anv/brw/jay: de-dynamify per-sample interpolation",
+      "date": "2026-06-17T22:29:44.000+00:00"
     }
   ]
 }
