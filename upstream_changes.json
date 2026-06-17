@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-17T18:46:18Z",
+  "triggered_at": "2026-06-17T19:40:57Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6a01034",
-      "new": "d38eb68",
-      "full": "d38eb680a21e418605f826c49c7b7422353586f8",
-      "msg": "radeonsi: Implement SQTT CB_START and CB_END",
-      "date": "2026-06-17T17:12:14.000+00:00"
+      "old": "d38eb68",
+      "new": "66611c5",
+      "full": "66611c569f610372a14cd195268d1075ff22a0eb",
+      "msg": "radv: fix setting COMPUTE_DISPATCH_INTERLEAVE on the gfx queue",
+      "date": "2026-06-17T18:27:36.000+00:00"
     }
   ]
 }
