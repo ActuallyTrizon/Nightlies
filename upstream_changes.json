@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-17T09:34:23Z",
+  "triggered_at": "2026-06-17T13:10:56Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "99662b7",
+      "new": "470aeab",
+      "full": "470aeab215009e95b57bb196371feda2eceb49d2",
+      "msg": "Merge pull request #5562 from lioncash/misc",
+      "date": "2026-06-17T12:54:59Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "660d382",
-      "new": "30f6f83",
-      "full": "30f6f8338e3f88aadfd38aa8fc6fc0d35b1c70cc",
-      "msg": "[dxvk] Always include depth and stencil aspects in barriers",
-      "date": "2026-06-16T23:42:20Z"
+      "old": "30f6f83",
+      "new": "7d9ec7d",
+      "full": "7d9ec7d0a5d44612944702de63308a410205e50e",
+      "msg": "[meta] Update profile",
+      "date": "2026-06-17T11:42:48Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3d5d0b4",
-      "new": "11c9032",
-      "full": "11c903246655184d12fcead8888486c5ae796eef",
-      "msg": "v3dv: use common multisync code",
-      "date": "2026-06-17T08:58:08.000+00:00"
+      "old": "11c9032",
+      "new": "14a5ed9",
+      "full": "14a5ed90667c88845c7c3e065c06e49571216ed0",
+      "msg": "rusticl/kernel: override libclc shader config helpers",
+      "date": "2026-06-17T12:04:00.000+00:00"
     }
   ]
 }
