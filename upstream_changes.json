@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-06-17T13:10:56Z",
+  "triggered_at": "2026-06-17T15:04:25Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "99662b7",
-      "new": "470aeab",
-      "full": "470aeab215009e95b57bb196371feda2eceb49d2",
-      "msg": "Merge pull request #5562 from lioncash/misc",
-      "date": "2026-06-17T12:54:59Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "30f6f83",
-      "new": "7d9ec7d",
-      "full": "7d9ec7d0a5d44612944702de63308a410205e50e",
-      "msg": "[meta] Update profile",
-      "date": "2026-06-17T11:42:48Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "11c9032",
-      "new": "14a5ed9",
-      "full": "14a5ed90667c88845c7c3e065c06e49571216ed0",
-      "msg": "rusticl/kernel: override libclc shader config helpers",
-      "date": "2026-06-17T12:04:00.000+00:00"
+      "old": "470aeab",
+      "new": "adad3c2",
+      "full": "adad3c27dd32a9bb01f2a67c12d417db11c50ce1",
+      "msg": "Merge pull request #5563 from lioncash/shift",
+      "date": "2026-06-17T15:02:41Z"
     }
   ]
 }
