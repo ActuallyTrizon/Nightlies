@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-18T00:39:45Z",
+  "triggered_at": "2026-06-18T01:49:37Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "2309910",
-      "new": "f98ac7f",
-      "full": "f98ac7f2687976c7b6266cdd5bdef67c4a27d866",
-      "msg": "Merge pull request #5565 from lioncash/xor",
-      "date": "2026-06-17T23:47:50Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "dde1709",
+      "new": "30ec583",
+      "full": "30ec583d7e3bf43a53a2d2d9774ccf356877c473",
+      "msg": "ci-farms/vmware: Disable vmware tests for now",
+      "date": "2026-06-17T18:11:48.000-07:00"
     }
   ]
 }
