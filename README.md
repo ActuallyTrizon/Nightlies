@@ -36,17 +36,17 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260618-153423](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260618-153423) |
+| **Release** | [🔗 nightly-20260618-182731](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260618-182731) |
 | **FEXCore** | [`ee4794c99`](https://github.com/FEX-Emu/FEX/commit/ee4794c99) — FEX-2605-Nightly-ee4794c99 |
 | **VKD3D-Proton (Std)** | [`b4bf24b7`](https://github.com/HansKristian-Work/vkd3d-proton/commit/b4bf24b7) |
 | **VKD3D-Proton (ARM64EC)** | [`b4bf24b7`](https://github.com/HansKristian-Work/vkd3d-proton/commit/b4bf24b7) |
 | **DXVK (GPLAsync)** | [`20b6b8f2`](https://github.com/doitsujin/dxvk/commit/20b6b8f2) |
 | **DXVK (ARM64EC)** | [`20b6b8f2`](https://github.com/doitsujin/dxvk/commit/20b6b8f2) |
-| **DXVK BinSem (GPLAsync)** | [`20b6b8f2`](https://github.com/doitsujin/dxvk/commit/20b6b8f2) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK BinSem (GPLAsync)** | [`b1ef9e7c`](https://github.com/doitsujin/dxvk/commit/b1ef9e7c) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`20b6b8f2`](https://github.com/doitsujin/dxvk/commit/20b6b8f2) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260618-r7](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260618-r7) — Turnip v26.2.0-20260618-r7 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260618-153423) |
+| **Turnip** | [v26.2.0-20260618-r8](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260618-r8) — Turnip v26.2.0-20260618-r8 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260618-182731) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
