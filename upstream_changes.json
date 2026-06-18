@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-18T05:33:46Z",
+  "triggered_at": "2026-06-18T07:36:45Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "3929d25",
-      "new": "ee4794c",
-      "full": "ee4794c99e256bcb4fcfc7f884200007990235dc",
-      "msg": "Merge pull request #5570 from lioncash/pmadd",
-      "date": "2026-06-18T05:21:16Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "05136b7",
+      "new": "befc90d",
+      "full": "befc90de1ce4214ac720b2f1c154b8c896d7d202",
+      "msg": "[LA64_DYNAEC] Fixed some flags emulation edge-cases (#3961)",
+      "date": "2026-06-18T07:03:29Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1e687cb",
-      "new": "dac0019",
-      "full": "dac0019373a2a2cb2ed8b68b066b13dd3d822ef2",
-      "msg": "radv/sqtt: add instruction timing SE mask controls",
-      "date": "2026-06-18T04:56:52.000+00:00"
+      "old": "dac0019",
+      "new": "67a88ee",
+      "full": "67a88ee9c8e146120346081eed8e3cf891cf9aa2",
+      "msg": "intel/gen/xe: Merge Xe2 compact 3src subreg HI2/LO3 into a gen_split_range",
+      "date": "2026-06-18T06:39:07.000+00:00"
     }
   ]
 }
