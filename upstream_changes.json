@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-18T09:28:38Z",
+  "triggered_at": "2026-06-18T11:21:29Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "e1c3403",
+      "new": "843b200",
+      "full": "843b200443e7c76215aefe6594937ddd0f0bd178",
+      "msg": "[dxvk] Do not fuse clears with feedback loops",
+      "date": "2026-06-18T11:12:18Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "67a88ee",
-      "new": "81daea6",
-      "full": "81daea66703eeea1a232446e3a36902353fc3045",
-      "msg": "panvk/csf: Use RUN_FULLSCREEN for cmd_draw_volume",
-      "date": "2026-06-18T08:34:59.000+00:00"
+      "old": "81daea6",
+      "new": "bcc8b44",
+      "full": "bcc8b44a8c0b0b3eda70de6fc1473441f334896b",
+      "msg": "v3d: create the compute job after the zero-sized dispatch check",
+      "date": "2026-06-18T10:07:41.000+00:00"
     }
   ]
 }
