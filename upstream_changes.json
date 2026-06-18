@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-18T18:45:33Z",
+  "triggered_at": "2026-06-18T19:43:18Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "20b6b8f",
-      "new": "f1fa1a5",
-      "full": "f1fa1a53ffcab8f2ae215642594ca541cc5efab2",
-      "msg": "[d3d8] Add a UAF texture guard config option",
-      "date": "2026-06-18T18:37:03Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "2b5dd5d",
+      "new": "97bfc0f",
+      "full": "97bfc0f88f43554b47f05ad37512f98cd086a80d",
+      "msg": "ac/nir/mem_vectorize: never create vec5 stores",
+      "date": "2026-06-18T18:53:19.000+00:00"
     }
   ]
 }
