@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-18T03:05:00Z",
+  "triggered_at": "2026-06-18T05:33:46Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "f98ac7f",
-      "new": "3929d25",
-      "full": "3929d25dcc2c298794da2ef7c415dfdf68288d5a",
-      "msg": "Merge pull request #5566 from lioncash/mov",
-      "date": "2026-06-18T01:55:22Z"
+      "old": "3929d25",
+      "new": "ee4794c",
+      "full": "ee4794c99e256bcb4fcfc7f884200007990235dc",
+      "msg": "Merge pull request #5570 from lioncash/pmadd",
+      "date": "2026-06-18T05:21:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "30ec583",
-      "new": "1e687cb",
-      "full": "1e687cb162b9fe66f182bb42f8c5df163daeef5c",
-      "msg": "intel: Add drirc option to write lookup maps unconditionally",
-      "date": "2026-06-18T01:20:51.000+00:00"
+      "old": "1e687cb",
+      "new": "dac0019",
+      "full": "dac0019373a2a2cb2ed8b68b066b13dd3d822ef2",
+      "msg": "radv/sqtt: add instruction timing SE mask controls",
+      "date": "2026-06-18T04:56:52.000+00:00"
     }
   ]
 }
