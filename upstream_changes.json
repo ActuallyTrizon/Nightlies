@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-18T11:21:29Z",
+  "triggered_at": "2026-06-18T13:04:54Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ee737e3",
+      "new": "b4bf24b",
+      "full": "b4bf24b788c6b92a7790fbe25c58bee39013dc7b",
+      "msg": "vkd3d: Block suspend-resume if there are non-trivial WBIs.",
+      "date": "2026-06-18T11:46:20Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "e1c3403",
-      "new": "843b200",
-      "full": "843b200443e7c76215aefe6594937ddd0f0bd178",
-      "msg": "[dxvk] Do not fuse clears with feedback loops",
-      "date": "2026-06-18T11:12:18Z"
+      "old": "843b200",
+      "new": "701579e",
+      "full": "701579e676f59e79ec889ae604800b5a127864b7",
+      "msg": "[dxvk] Hard-require 16-bit and 8-bit storage buffer access",
+      "date": "2026-06-18T11:43:39Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "81daea6",
-      "new": "bcc8b44",
-      "full": "bcc8b44a8c0b0b3eda70de6fc1473441f334896b",
-      "msg": "v3d: create the compute job after the zero-sized dispatch check",
-      "date": "2026-06-18T10:07:41.000+00:00"
+      "old": "bcc8b44",
+      "new": "6380717",
+      "full": "6380717956ac12a574948b644456957518b67b68",
+      "msg": "radv: clear gang cache flushes when the command buffer is reset",
+      "date": "2026-06-18T12:10:12.000+00:00"
     }
   ]
 }
