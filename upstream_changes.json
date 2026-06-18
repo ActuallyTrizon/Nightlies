@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-18T21:40:08Z",
+  "triggered_at": "2026-06-18T22:37:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "97bfc0f",
-      "new": "a4d9204",
-      "full": "a4d920454382d329658246a853df90a65f542dff",
-      "msg": "pvr/ci: add some timing out tests on AXE-1-16M to skips list",
-      "date": "2026-06-18T20:01:30.000+00:00"
+      "old": "a4d9204",
+      "new": "8b8603d",
+      "full": "8b8603df2be2a560b4a2c3864976ea53ba2afb90",
+      "msg": "ci: fix perfetto download in build-perfetto.sh",
+      "date": "2026-06-18T21:44:56.000+00:00"
     }
   ]
 }
