@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-18T17:01:18Z",
+  "triggered_at": "2026-06-18T18:45:33Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "6380717",
-      "new": "2b5dd5d",
-      "full": "2b5dd5dca11ee27cc9ce31f3d378fd84fd300bf4",
-      "msg": "panvk: Advertise VK_EXT_rasterization_order_attachment_access",
-      "date": "2026-06-18T16:16:50.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "20b6b8f",
+      "new": "f1fa1a5",
+      "full": "f1fa1a53ffcab8f2ae215642594ca541cc5efab2",
+      "msg": "[d3d8] Add a UAF texture guard config option",
+      "date": "2026-06-18T18:37:03Z"
     }
   ]
 }
