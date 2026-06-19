@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-19T03:08:34Z",
+  "triggered_at": "2026-06-19T05:41:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0541a7d",
-      "new": "d470487",
-      "full": "d470487004fd9a945083fd2765d14604076251b5",
-      "msg": "nak/instr_sched_prepass: Take predicate spilling into account when scheduling in",
-      "date": "2026-06-19T02:01:18.000+00:00"
+      "old": "d470487",
+      "new": "c08dba8",
+      "full": "c08dba83025533c3863349f147376b52528c4b3a",
+      "msg": "kk: Move to Metal4 command encoding",
+      "date": "2026-06-19T05:18:55.000+00:00"
     }
   ]
 }
