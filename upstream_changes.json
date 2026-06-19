@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-18T23:32:42Z",
+  "triggered_at": "2026-06-19T00:43:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8b8603d",
-      "new": "db25e87",
-      "full": "db25e87243ed60d4dc41df575d2229999ae3ba67",
-      "msg": "intel: Change dpas_intel source order to follow DPAS",
-      "date": "2026-06-18T22:17:29.000+00:00"
+      "old": "db25e87",
+      "new": "1dc34d6",
+      "full": "1dc34d6dbafafbef973f82ccdad4c8c97e4a409f",
+      "msg": "aco/assembler: don't reorder branch insertion block index twice",
+      "date": "2026-06-19T00:01:59.000+00:00"
     }
   ]
 }
