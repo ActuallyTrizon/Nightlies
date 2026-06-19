@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-19T00:43:29Z",
+  "triggered_at": "2026-06-19T01:55:48Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "db25e87",
-      "new": "1dc34d6",
-      "full": "1dc34d6dbafafbef973f82ccdad4c8c97e4a409f",
-      "msg": "aco/assembler: don't reorder branch insertion block index twice",
-      "date": "2026-06-19T00:01:59.000+00:00"
+      "old": "1dc34d6",
+      "new": "0541a7d",
+      "full": "0541a7d9131c3951ece83138c6cd98dddf55da26",
+      "msg": "Revert \"anv: Fix Wa_14021821874, Wa_14018813551, Wa_14026600921\"",
+      "date": "2026-06-19T01:01:49.000+00:00"
     }
   ]
 }
