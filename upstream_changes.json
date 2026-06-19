@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-19T17:34:55Z",
+  "triggered_at": "2026-06-19T18:34:13Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ee4794c",
-      "new": "f547703",
-      "full": "f5477039fa21d2d5a41027f9c89b1e9ebfc3b1e9",
-      "msg": "Merge pull request #5571 from simon902/16bitleave",
-      "date": "2026-06-19T17:27:33Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d40adda",
+      "new": "0dda09e",
+      "full": "0dda09e38792acaee84a9674eb6d0b5094830693",
+      "msg": "[d3d9] Remove legacy function to replace vector NaNs",
+      "date": "2026-06-19T17:44:10Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "08c2bb3",
+      "new": "df96a10",
+      "full": "df96a100aef520f8b7745fe2e962cce06df0c15e",
+      "msg": "v3dv: fix assertion on push constants",
+      "date": "2026-06-19T18:01:40.000+00:00"
     }
   ]
 }
