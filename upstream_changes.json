@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-19T11:30:58Z",
+  "triggered_at": "2026-06-19T13:07:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "956c89d",
-      "new": "514d5cd",
-      "full": "514d5cd7708991364b0db1fb1d203b111abdaf08",
-      "msg": "[TRACE] Avoid issue when tracing poll with NULL argument",
-      "date": "2026-06-19T11:18:35Z"
+      "old": "514d5cd",
+      "new": "df36391",
+      "full": "df36391e74a0f6772352f6a95fd4307dd87f8570",
+      "msg": "[LA64_DYNAREC] Implemented AAM/AAD opcodes and fixed AAD16 flags (#3965)",
+      "date": "2026-06-19T12:36:59Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "f1fa1a5",
-      "new": "299af25",
-      "full": "299af25c3c8fd8e07615e637bc5ad01d7e8a5ee5",
-      "msg": "[d3d9] Properly implement Z and W fog in programmable shaders",
-      "date": "2026-06-19T11:27:08Z"
+      "old": "299af25",
+      "new": "5651a38",
+      "full": "5651a3843578c639114ece66433e9ee5a94c5af3",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-19T12:36:44Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "44b82c7",
-      "new": "ad4e3ca",
-      "full": "ad4e3cad54dde5fbb97483d51a325039ab18fce2",
-      "msg": "etnaviv: Gate 128-bit render targets on HALF_FLOAT",
-      "date": "2026-06-19T10:49:24.000+00:00"
+      "old": "ad4e3ca",
+      "new": "07b53cd",
+      "full": "07b53cd328f8968b423258a43ba05e8fe70e787e",
+      "msg": "v3d/ci: update expected results and document failures",
+      "date": "2026-06-19T12:31:56.000+00:00"
     }
   ]
 }
