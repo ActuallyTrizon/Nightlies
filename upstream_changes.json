@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-19T05:41:44Z",
+  "triggered_at": "2026-06-19T07:47:48Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "befc90d",
+      "new": "cd15d45",
+      "full": "cd15d459b15a0cc7dfffe59ed0ea1052efaefd63",
+      "msg": "[CPUID] Fixed a regression introduced in f05bdb1f9 (#3963)",
+      "date": "2026-06-19T07:04:54Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d470487",
-      "new": "c08dba8",
-      "full": "c08dba83025533c3863349f147376b52528c4b3a",
-      "msg": "kk: Move to Metal4 command encoding",
-      "date": "2026-06-19T05:18:55.000+00:00"
+      "old": "c08dba8",
+      "new": "1b48450",
+      "full": "1b484501281816ff05b60832601286b1302ac72c",
+      "msg": "kk: Implement draw-related commands using device addresses",
+      "date": "2026-06-19T06:38:20.000+00:00"
     }
   ]
 }
