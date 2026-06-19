@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-19T21:23:46Z",
+  "triggered_at": "2026-06-19T22:18:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7695a27",
-      "new": "2ed09c8",
-      "full": "2ed09c8b110f913365ba0bfd7e7d34cea26030f0",
-      "msg": "kraid: Add OpRegIn and OpRegOut",
-      "date": "2026-06-19T20:52:05.000+00:00"
+      "old": "2ed09c8",
+      "new": "56eb387",
+      "full": "56eb3877c15845131c1b4603ee3c60832bd168f8",
+      "msg": "wsi/x11: Be more adaptive in how much the sleep is pulled back.",
+      "date": "2026-06-19T21:07:13.000+00:00"
     }
   ]
 }
