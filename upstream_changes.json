@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-19T01:55:48Z",
+  "triggered_at": "2026-06-19T03:08:34Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1dc34d6",
-      "new": "0541a7d",
-      "full": "0541a7d9131c3951ece83138c6cd98dddf55da26",
-      "msg": "Revert \"anv: Fix Wa_14021821874, Wa_14018813551, Wa_14026600921\"",
-      "date": "2026-06-19T01:01:49.000+00:00"
+      "old": "0541a7d",
+      "new": "d470487",
+      "full": "d470487004fd9a945083fd2765d14604076251b5",
+      "msg": "nak/instr_sched_prepass: Take predicate spilling into account when scheduling in",
+      "date": "2026-06-19T02:01:18.000+00:00"
     }
   ]
 }
