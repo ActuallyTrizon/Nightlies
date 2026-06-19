@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-19T22:18:54Z",
+  "triggered_at": "2026-06-19T23:21:13Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2ed09c8",
-      "new": "56eb387",
-      "full": "56eb3877c15845131c1b4603ee3c60832bd168f8",
-      "msg": "wsi/x11: Be more adaptive in how much the sleep is pulled back.",
-      "date": "2026-06-19T21:07:13.000+00:00"
+      "old": "56eb387",
+      "new": "59a9e21",
+      "full": "59a9e21652eaf7309b000a5ea751ec85a781f3ce",
+      "msg": "ac,radeonsi: remove uses_kernel_cu_mask and associated code",
+      "date": "2026-06-19T22:02:36.000+00:00"
     }
   ]
 }
