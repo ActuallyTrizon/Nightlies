@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-19T09:33:09Z",
+  "triggered_at": "2026-06-19T11:30:58Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "cd15d45",
-      "new": "956c89d",
-      "full": "956c89d8208d6b458f826a78606294ca0bdbecaa",
-      "msg": "[WRAPPER] Added a few more symbols to libssl.so.3 and libcrypto.so.3",
-      "date": "2026-06-19T08:33:42Z"
+      "old": "956c89d",
+      "new": "514d5cd",
+      "full": "514d5cd7708991364b0db1fb1d203b111abdaf08",
+      "msg": "[TRACE] Avoid issue when tracing poll with NULL argument",
+      "date": "2026-06-19T11:18:35Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "f1fa1a5",
+      "new": "299af25",
+      "full": "299af25c3c8fd8e07615e637bc5ad01d7e8a5ee5",
+      "msg": "[d3d9] Properly implement Z and W fog in programmable shaders",
+      "date": "2026-06-19T11:27:08Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1b48450",
-      "new": "44b82c7",
-      "full": "44b82c7576db6906987ccaf799a69dea28429cf0",
-      "msg": "ir3/opt_prefetch_descriptors: rematerialize defs at preamble start",
-      "date": "2026-06-19T08:47:11.000+00:00"
+      "old": "44b82c7",
+      "new": "ad4e3ca",
+      "full": "ad4e3cad54dde5fbb97483d51a325039ab18fce2",
+      "msg": "etnaviv: Gate 128-bit render targets on HALF_FLOAT",
+      "date": "2026-06-19T10:49:24.000+00:00"
     }
   ]
 }
