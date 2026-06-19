@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-06-19T16:47:38Z",
+  "triggered_at": "2026-06-19T17:34:55Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "4b669fb",
-      "new": "c018889",
-      "full": "c01888938978d85938205ac761327081d58d6ffd",
-      "msg": "[LA64_DYNAREC] Fixed deferred flags regression (#3970)",
-      "date": "2026-06-19T15:52:51Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "b4bf24b",
-      "new": "91b9ac9",
-      "full": "91b9ac91e96dd55f5a4aed8b36e074f2f8c30999",
-      "msg": "vkd3d: Disable float controls2 on NVIDIA.",
-      "date": "2026-06-19T16:25:46Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "5bb025f",
-      "new": "08c2bb3",
-      "full": "08c2bb3b31db0eb9414ca0c8455c7a962797369c",
-      "msg": "radeonsi/mm: Set correct usage in si_dec_fill_surface",
-      "date": "2026-06-19T15:18:03.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ee4794c",
+      "new": "f547703",
+      "full": "f5477039fa21d2d5a41027f9c89b1e9ebfc3b1e9",
+      "msg": "Merge pull request #5571 from simon902/16bitleave",
+      "date": "2026-06-19T17:27:33Z"
     }
   ]
 }
