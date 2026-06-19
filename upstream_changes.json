@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-19T15:01:42Z",
+  "triggered_at": "2026-06-19T16:47:38Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "df36391",
-      "new": "4b669fb",
-      "full": "4b669fbe99dfc6cc32aad465ee3ca485a9d4dee0",
-      "msg": "[INTERP] Fixed OF preserving for 16-bit ROL/ROR opcodes (#3966)",
-      "date": "2026-06-19T14:39:01Z"
+      "old": "4b669fb",
+      "new": "c018889",
+      "full": "c01888938978d85938205ac761327081d58d6ffd",
+      "msg": "[LA64_DYNAREC] Fixed deferred flags regression (#3970)",
+      "date": "2026-06-19T15:52:51Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5651a38",
-      "new": "d40adda",
-      "full": "d40adda34153a1c474c8bf988d756c4ab504001e",
-      "msg": "[d3d9] Fix invalid reinterpret_cast on CS data block",
-      "date": "2026-06-19T14:34:03Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "b4bf24b",
+      "new": "91b9ac9",
+      "full": "91b9ac91e96dd55f5a4aed8b36e074f2f8c30999",
+      "msg": "vkd3d: Disable float controls2 on NVIDIA.",
+      "date": "2026-06-19T16:25:46Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "07b53cd",
-      "new": "5bb025f",
-      "full": "5bb025f953af5795d2dc8fefc69ad22effb2a51b",
-      "msg": "gallivm: fix small_unorm -> unorm8 fetch path on big-endian",
-      "date": "2026-06-19T14:17:27.000+00:00"
+      "old": "5bb025f",
+      "new": "08c2bb3",
+      "full": "08c2bb3b31db0eb9414ca0c8455c7a962797369c",
+      "msg": "radeonsi/mm: Set correct usage in si_dec_fill_surface",
+      "date": "2026-06-19T15:18:03.000+00:00"
     }
   ]
 }
