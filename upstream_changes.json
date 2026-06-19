@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-19T13:07:36Z",
+  "triggered_at": "2026-06-19T15:01:42Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "514d5cd",
-      "new": "df36391",
-      "full": "df36391e74a0f6772352f6a95fd4307dd87f8570",
-      "msg": "[LA64_DYNAREC] Implemented AAM/AAD opcodes and fixed AAD16 flags (#3965)",
-      "date": "2026-06-19T12:36:59Z"
+      "old": "df36391",
+      "new": "4b669fb",
+      "full": "4b669fbe99dfc6cc32aad465ee3ca485a9d4dee0",
+      "msg": "[INTERP] Fixed OF preserving for 16-bit ROL/ROR opcodes (#3966)",
+      "date": "2026-06-19T14:39:01Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "299af25",
-      "new": "5651a38",
-      "full": "5651a3843578c639114ece66433e9ee5a94c5af3",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-19T12:36:44Z"
+      "old": "5651a38",
+      "new": "d40adda",
+      "full": "d40adda34153a1c474c8bf988d756c4ab504001e",
+      "msg": "[d3d9] Fix invalid reinterpret_cast on CS data block",
+      "date": "2026-06-19T14:34:03Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ad4e3ca",
-      "new": "07b53cd",
-      "full": "07b53cd328f8968b423258a43ba05e8fe70e787e",
-      "msg": "v3d/ci: update expected results and document failures",
-      "date": "2026-06-19T12:31:56.000+00:00"
+      "old": "07b53cd",
+      "new": "5bb025f",
+      "full": "5bb025f953af5795d2dc8fefc69ad22effb2a51b",
+      "msg": "gallivm: fix small_unorm -> unorm8 fetch path on big-endian",
+      "date": "2026-06-19T14:17:27.000+00:00"
     }
   ]
 }
