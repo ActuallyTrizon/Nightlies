@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-19T19:32:03Z",
+  "triggered_at": "2026-06-19T20:29:59Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "91b9ac9",
-      "new": "bee300e",
-      "full": "bee300e4caccbe25bd20b1e5f29d791f93c80987",
-      "msg": "vkd3d: Don't spam meaningless meta warnings when we're not using heap.",
-      "date": "2026-06-19T18:42:33Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "df96a10",
-      "new": "c95edad",
-      "full": "c95edade04a0fd146643fd72e7178c2b4bd4b1ae",
-      "msg": "panvk: Talk directly to pankmod when binding sparse resources",
-      "date": "2026-06-19T18:20:31.000+00:00"
+      "old": "c95edad",
+      "new": "7695a27",
+      "full": "7695a2729e743ee5290b7a7b3ef22c91a10cc2d6",
+      "msg": "zink: don't invalidate cbufs without inlined resolve",
+      "date": "2026-06-19T20:10:44.000+00:00"
     }
   ]
 }
