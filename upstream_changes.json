@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-20T12:33:35Z",
+  "triggered_at": "2026-06-20T13:32:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "03157ce",
+      "new": "53968e0",
+      "full": "53968e0d4e0824cae83e16e750a350b4047d99da",
+      "msg": "[RCFILE] Added 1 game profile",
+      "date": "2026-06-20T12:54:30Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c2e2cd5",
-      "new": "621f785",
-      "full": "621f785e2e005846c560175b6e60287ac335a2fd",
-      "msg": "doc/ci: Add drm-shim CI reproduction guide",
-      "date": "2026-06-20T12:20:25.000+00:00"
+      "old": "621f785",
+      "new": "304324e",
+      "full": "304324eb288de91ab6440d95a2d2e54e3d6573ee",
+      "msg": "nak: convert base to iadd for non-uniform ldcx lowering",
+      "date": "2026-06-20T12:36:45.000+00:00"
     }
   ]
 }
