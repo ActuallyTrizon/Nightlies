@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-20T11:37:13Z",
+  "triggered_at": "2026-06-20T12:33:35Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6f0d6f7",
-      "new": "c2e2cd5",
-      "full": "c2e2cd534c11deae210bc4c1ad0a956e0cc0cbd7",
-      "msg": "Uprev ANGLE to 836636df1b06034b39a4a2a68b811ecf6f9b674f",
-      "date": "2026-06-20T10:43:19.000+00:00"
+      "old": "c2e2cd5",
+      "new": "621f785",
+      "full": "621f785e2e005846c560175b6e60287ac335a2fd",
+      "msg": "doc/ci: Add drm-shim CI reproduction guide",
+      "date": "2026-06-20T12:20:25.000+00:00"
     }
   ]
 }
