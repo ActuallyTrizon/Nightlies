@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-20T09:01:58Z",
+  "triggered_at": "2026-06-20T10:46:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "27e63a9",
-      "new": "2046b79",
-      "full": "2046b79f2f043502a44bd86b64f2db256b002697",
-      "msg": "vulkan/wsi/wayland: Do a roundtrip after retiring the old swapchain.",
-      "date": "2026-06-20T08:15:44.000+00:00"
+      "old": "2046b79",
+      "new": "6f0d6f7",
+      "full": "6f0d6f7c044ab6a0d1a00d10367df01496c4eb16",
+      "msg": "meson: require r300 LLVM draw only on x86",
+      "date": "2026-06-20T09:51:17.000+00:00"
     }
   ]
 }
