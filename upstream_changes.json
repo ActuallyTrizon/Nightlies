@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-20T22:24:35Z",
+  "triggered_at": "2026-06-20T23:25:54Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9d0c05d",
-      "new": "c5880e7",
-      "full": "c5880e76180de1927c81769217a5be996305ad6c",
-      "msg": "Merge pull request #5572 from lioncash/str",
-      "date": "2026-06-20T22:13:21Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "4cd2a57",
+      "new": "8c9b482",
+      "full": "8c9b4822dd40d35c9c786cc1bb2e20cf49734ec5",
+      "msg": "[d3d9] Also enable W fog if PositionT is used",
+      "date": "2026-06-20T22:40:57Z"
     }
   ]
 }
