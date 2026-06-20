@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-20T07:17:27Z",
+  "triggered_at": "2026-06-20T09:01:58Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "c018889",
-      "new": "03157ce",
-      "full": "03157ce4426e5141a5934e7e5f1e784df03d2176",
-      "msg": "[WINLATOR] Disabled DYNACACHE by default for this config",
-      "date": "2026-06-20T06:01:28Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "27e63a9",
+      "new": "2046b79",
+      "full": "2046b79f2f043502a44bd86b64f2db256b002697",
+      "msg": "vulkan/wsi/wayland: Do a roundtrip after retiring the old swapchain.",
+      "date": "2026-06-20T08:15:44.000+00:00"
     }
   ]
 }
