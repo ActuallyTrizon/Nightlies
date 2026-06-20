@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-20T00:34:41Z",
+  "triggered_at": "2026-06-20T07:17:27Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "0dda09e",
-      "new": "b0bb947",
-      "full": "b0bb94758390ab49b2bed0686c6afe12d6bb82bf",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-19T23:32:07Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "59a9e21",
-      "new": "27e63a9",
-      "full": "27e63a959ee44b7b18bce07cb32d7f3c6a08fb4b",
-      "msg": "nak: normalize lop3 constant sources",
-      "date": "2026-06-20T00:03:22.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c018889",
+      "new": "03157ce",
+      "full": "03157ce4426e5141a5934e7e5f1e784df03d2176",
+      "msg": "[WINLATOR] Disabled DYNACACHE by default for this config",
+      "date": "2026-06-20T06:01:28Z"
     }
   ]
 }
