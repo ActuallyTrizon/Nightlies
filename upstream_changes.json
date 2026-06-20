@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-19T23:21:13Z",
+  "triggered_at": "2026-06-20T00:34:41Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "0dda09e",
+      "new": "b0bb947",
+      "full": "b0bb94758390ab49b2bed0686c6afe12d6bb82bf",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-19T23:32:07Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "56eb387",
-      "new": "59a9e21",
-      "full": "59a9e21652eaf7309b000a5ea751ec85a781f3ce",
-      "msg": "ac,radeonsi: remove uses_kernel_cu_mask and associated code",
-      "date": "2026-06-19T22:02:36.000+00:00"
+      "old": "59a9e21",
+      "new": "27e63a9",
+      "full": "27e63a959ee44b7b18bce07cb32d7f3c6a08fb4b",
+      "msg": "nak: normalize lop3 constant sources",
+      "date": "2026-06-20T00:03:22.000+00:00"
     }
   ]
 }
