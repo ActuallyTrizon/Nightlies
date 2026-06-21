@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-21T15:33:47Z",
+  "triggered_at": "2026-06-21T16:31:26Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "46ed65b",
-      "new": "b42d23c",
-      "full": "b42d23cfa0e7e2177ccc25a2820671294d22706b",
-      "msg": "[dxvk] Fix check for reverting unsynchronized render passes",
-      "date": "2026-06-21T14:56:53Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b4b83a5",
-      "new": "00ed4ed",
-      "full": "00ed4ed059e89e2a6e88d3bceccad373637d4034",
-      "msg": "zink: Also enable the nearest consistency workaround on anv.",
-      "date": "2026-06-21T14:48:15.000+00:00"
+      "old": "00ed4ed",
+      "new": "72f1a2d",
+      "full": "72f1a2d51d2e8f878a7603bd296aadb5f5a595ea",
+      "msg": "nak: run nir_opt_constant_folding after nak_nir_lower_load_store",
+      "date": "2026-06-21T15:19:26.000+00:00"
     }
   ]
 }
