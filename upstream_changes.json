@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-21T05:35:01Z",
+  "triggered_at": "2026-06-21T09:13:38Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c5880e7",
-      "new": "34344e5",
-      "full": "34344e576944fa016c376e7e32a71d5f0d33c707",
-      "msg": "Merge pull request #5576 from Sonicadvance1/167",
-      "date": "2026-06-21T03:18:33Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "50c8b90",
+      "new": "15cced7",
+      "full": "15cced707bc1a1364f68233d3ce426707f2cf954",
+      "msg": "[DOCS] Corrected some typos in the usage documentation (#3973)",
+      "date": "2026-06-21T08:13:38Z"
     }
   ]
 }
