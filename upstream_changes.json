@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-21T13:33:00Z",
+  "triggered_at": "2026-06-21T15:33:47Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "46ed65b",
+      "new": "b42d23c",
+      "full": "b42d23cfa0e7e2177ccc25a2820671294d22706b",
+      "msg": "[dxvk] Fix check for reverting unsynchronized render passes",
+      "date": "2026-06-21T14:56:53Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dec456d",
-      "new": "b4b83a5",
-      "full": "b4b83a54fc0fa490644526a2f80a16f2166112d0",
-      "msg": "nvk: Use I2M in CmdUpdateBuffer when possible",
-      "date": "2026-06-21T12:37:43.000+00:00"
+      "old": "b4b83a5",
+      "new": "00ed4ed",
+      "full": "00ed4ed059e89e2a6e88d3bceccad373637d4034",
+      "msg": "zink: Also enable the nearest consistency workaround on anv.",
+      "date": "2026-06-21T14:48:15.000+00:00"
     }
   ]
 }
