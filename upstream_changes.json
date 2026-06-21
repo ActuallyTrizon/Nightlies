@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-21T18:29:24Z",
+  "triggered_at": "2026-06-21T23:28:31Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "72f1a2d",
-      "new": "a86a30f",
-      "full": "a86a30fff2d7cae3783f7be3c7fee71a8262cdcd",
-      "msg": "rti: Initial commit",
-      "date": "2026-06-21T17:10:43.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "b42d23c",
+      "new": "39e1d41",
+      "full": "39e1d414ee8d34b5736538bd1fc7393b2f214142",
+      "msg": "[d3d9] Implement D3DTOP_PREMODULATE in fixed-function PS",
+      "date": "2026-06-21T16:56:30Z"
     }
   ]
 }
