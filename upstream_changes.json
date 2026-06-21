@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-21T09:13:38Z",
+  "triggered_at": "2026-06-21T12:36:51Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "50c8b90",
-      "new": "15cced7",
-      "full": "15cced707bc1a1364f68233d3ce426707f2cf954",
-      "msg": "[DOCS] Corrected some typos in the usage documentation (#3973)",
-      "date": "2026-06-21T08:13:38Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8c9b482",
+      "new": "46ed65b",
+      "full": "46ed65b07877307c375d98b0e09e8d20e6d20e6b",
+      "msg": "[d3d9] Factor out vertex transform in FFVS",
+      "date": "2026-06-21T11:37:38Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4a6f6dd",
+      "new": "dec456d",
+      "full": "dec456d02e364fd56e929208af2ce70f42595a7c",
+      "msg": "kk: Work around Metal index robustness gaps",
+      "date": "2026-06-21T11:20:49.000+00:00"
     }
   ]
 }
