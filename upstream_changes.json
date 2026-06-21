@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-20T23:25:54Z",
+  "triggered_at": "2026-06-21T03:05:53Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "4cd2a57",
-      "new": "8c9b482",
-      "full": "8c9b4822dd40d35c9c786cc1bb2e20cf49734ec5",
-      "msg": "[d3d9] Also enable W fog if PositionT is used",
-      "date": "2026-06-20T22:40:57Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "ed78163",
+      "new": "4a6f6dd",
+      "full": "4a6f6dd266cce89912d1eb093f141753626ef795",
+      "msg": "gallium/dri: fix redundant Meson condition",
+      "date": "2026-06-21T01:53:54.000+00:00"
     }
   ]
 }
