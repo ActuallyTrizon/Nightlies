@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-21T16:31:26Z",
+  "triggered_at": "2026-06-21T18:29:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "00ed4ed",
-      "new": "72f1a2d",
-      "full": "72f1a2d51d2e8f878a7603bd296aadb5f5a595ea",
-      "msg": "nak: run nir_opt_constant_folding after nak_nir_lower_load_store",
-      "date": "2026-06-21T15:19:26.000+00:00"
+      "old": "72f1a2d",
+      "new": "a86a30f",
+      "full": "a86a30fff2d7cae3783f7be3c7fee71a8262cdcd",
+      "msg": "rti: Initial commit",
+      "date": "2026-06-21T17:10:43.000+00:00"
     }
   ]
 }
