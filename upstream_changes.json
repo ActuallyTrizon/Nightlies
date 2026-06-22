@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-22T12:07:39Z",
+  "triggered_at": "2026-06-22T14:53:10Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "093e635",
-      "new": "59c6aa4",
-      "full": "59c6aa49325c8cd0704b08dfca734d09f9fca558",
-      "msg": "[WRAPPER] Fixed g_option_group_add_entries (#3977)",
-      "date": "2026-06-22T10:30:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8694ecf",
-      "new": "4bf8fd5",
-      "full": "4bf8fd5121122abd87aafb31e43bbbe9e3d2e921",
-      "msg": "kk: Add GPU hang detection",
-      "date": "2026-06-22T09:59:23.000+00:00"
+      "old": "4bf8fd5",
+      "new": "0c925e0",
+      "full": "0c925e0a3a04f825c6ad84e94e3c72ee9b4d05ae",
+      "msg": "vulkan: fix incorrect sType for VkDebugUtilsObjectTagInfoEXT",
+      "date": "2026-06-22T15:48:44.000+02:00"
     }
   ]
 }
