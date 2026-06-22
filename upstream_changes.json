@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-22T14:53:10Z",
+  "triggered_at": "2026-06-22T16:33:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4bf8fd5",
-      "new": "0c925e0",
-      "full": "0c925e0a3a04f825c6ad84e94e3c72ee9b4d05ae",
-      "msg": "vulkan: fix incorrect sType for VkDebugUtilsObjectTagInfoEXT",
-      "date": "2026-06-22T15:48:44.000+02:00"
+      "old": "0c925e0",
+      "new": "03ea3c1",
+      "full": "03ea3c1b504fe82b3f17fa70b043ccd717cde5ea",
+      "msg": "radv: workaround game bugs with Sniper Elite 5",
+      "date": "2026-06-22T14:50:08.000+00:00"
     }
   ]
 }
