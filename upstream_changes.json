@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-22T18:21:42Z",
+  "triggered_at": "2026-06-22T20:02:12Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "03ea3c1",
-      "new": "8e7d802",
-      "full": "8e7d802c1c12a5828f6c2e884a400c185ad6d8f2",
-      "msg": "venus: fix typo in vn_queue_submit_2_to_1",
-      "date": "2026-06-22T17:32:33.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "59c6aa4",
+      "new": "274c5a8",
+      "full": "274c5a8f11b46d0338cf0108f67ab375bf273aa3",
+      "msg": "[WRAPPER] Wrapped liblz4 (#3979)",
+      "date": "2026-06-22T18:53:50Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "280568d",
+      "new": "6f33d2b",
+      "full": "6f33d2b4c432ba352b7fa9675181221490f20b52",
+      "msg": "Merge pull request #5583 from lioncash/scalar",
+      "date": "2026-06-22T19:41:52Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d435948",
+      "new": "a465381",
+      "full": "a465381534cea1cdf12f08fc1ca9d10e7c083397",
+      "msg": "[d3d9] Discard fixed-function color output for depth-only rendering",
+      "date": "2026-06-22T19:12:47Z"
     }
   ]
 }
