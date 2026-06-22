@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-22T22:32:32Z",
+  "triggered_at": "2026-06-22T23:28:56Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "8e7d802",
-      "new": "22abfc0",
-      "full": "22abfc06d7cf4c115ca2e368505d75ba4af174b4",
-      "msg": "radv: Fix gnu-empty-initializer errors in ca9191a8",
-      "date": "2026-06-22T21:21:53.000+02:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "6f33d2b",
+      "new": "27acbba",
+      "full": "27acbba52eefb1a293e36044af80bf0b14186534",
+      "msg": "Merge pull request #5584 from lioncash/cmp_scalar",
+      "date": "2026-06-22T22:49:57Z"
     }
   ]
 }
