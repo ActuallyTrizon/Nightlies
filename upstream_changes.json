@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-22T09:59:20Z",
+  "triggered_at": "2026-06-22T12:07:39Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "15cced7",
-      "new": "093e635",
-      "full": "093e6353d7b28f16e6a247978ee3f7f388472933",
-      "msg": "[LA64_DYNAREC] More work on ROL/ROR opcodes OF emulation (#3975)",
-      "date": "2026-06-22T09:47:12Z"
+      "old": "093e635",
+      "new": "59c6aa4",
+      "full": "59c6aa49325c8cd0704b08dfca734d09f9fca558",
+      "msg": "[WRAPPER] Fixed g_option_group_add_entries (#3977)",
+      "date": "2026-06-22T10:30:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dc1db53",
-      "new": "8694ecf",
-      "full": "8694ecff3c2737de5f3f7ce6d9b6faba47c34f5d",
-      "msg": "zink+nvk/ci: fix duplicate fails",
-      "date": "2026-06-22T09:38:27.000+00:00"
+      "old": "8694ecf",
+      "new": "4bf8fd5",
+      "full": "4bf8fd5121122abd87aafb31e43bbbe9e3d2e921",
+      "msg": "kk: Add GPU hang detection",
+      "date": "2026-06-22T09:59:23.000+00:00"
     }
   ]
 }
