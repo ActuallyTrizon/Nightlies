@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-22T03:06:08Z",
+  "triggered_at": "2026-06-22T09:59:20Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "34344e5",
-      "new": "280568d",
-      "full": "280568df2f5429830b32e456f18610d48a04f8d9",
-      "msg": "Merge pull request #5581 from lioncash/fwd",
-      "date": "2026-06-22T03:05:23Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "15cced7",
+      "new": "093e635",
+      "full": "093e6353d7b28f16e6a247978ee3f7f388472933",
+      "msg": "[LA64_DYNAREC] More work on ROL/ROR opcodes OF emulation (#3975)",
+      "date": "2026-06-22T09:47:12Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "dc1db53",
+      "new": "8694ecf",
+      "full": "8694ecff3c2737de5f3f7ce6d9b6faba47c34f5d",
+      "msg": "zink+nvk/ci: fix duplicate fails",
+      "date": "2026-06-22T09:38:27.000+00:00"
     }
   ]
 }
