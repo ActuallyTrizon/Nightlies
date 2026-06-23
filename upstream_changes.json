@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-23T11:01:52Z",
+  "triggered_at": "2026-06-23T12:53:35Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "274c5a8",
-      "new": "758f352",
-      "full": "758f352bf5395cd92c50300e45ed21ccc03daa3b",
-      "msg": "[WRAPPER] Added 2 more wayland listeners (#3980)",
-      "date": "2026-06-23T09:48:11Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "bee300e",
+      "new": "753e42d",
+      "full": "753e42d026be34667f6c810ddd104a5145231c3e",
+      "msg": "vkd3d: Add missing barrier quirk for GotG.",
+      "date": "2026-06-23T11:47:12Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a465381",
+      "new": "67dba69",
+      "full": "67dba691fc01a0ae1b8821daafe97fbc53c5ceda",
+      "msg": "[dxgi] Create a windowed swapchain instead when the fullscreen mode scanline ord",
+      "date": "2026-06-23T11:41:15Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dc02a63",
-      "new": "b0d6b4c",
-      "full": "b0d6b4c402ff52ff2b670db5875671c436617896",
-      "msg": "r300: clean up endian swap selection",
-      "date": "2026-06-23T10:14:23.000+00:00"
+      "old": "b0d6b4c",
+      "new": "512fe5b",
+      "full": "512fe5b687ac41a58fcc3518f69dc1004db4d6f3",
+      "msg": "nir/opt_phi_precision: bail on load_const conversions between float and ints",
+      "date": "2026-06-23T11:23:53.000+00:00"
     }
   ]
 }
