@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-23T00:34:47Z",
+  "triggered_at": "2026-06-23T01:38:38Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "27acbba",
-      "new": "37e32fb",
-      "full": "37e32fbcb96159f826c0ca795bea43a734fd76ff",
-      "msg": "Merge pull request #5585 from lioncash/cmp-move",
-      "date": "2026-06-23T00:26:37Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "22abfc0",
+      "new": "501433d",
+      "full": "501433dff3dc46f1f3876dd32b6c1b731c7b2379",
+      "msg": "util: remove bogus const attribute",
+      "date": "2026-06-23T00:52:38.000+00:00"
     }
   ]
 }
