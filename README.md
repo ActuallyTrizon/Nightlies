@@ -36,17 +36,17 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260623-194017](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-194017) |
-| **FEXCore** | [`5ad06b025`](https://github.com/FEX-Emu/FEX/commit/5ad06b025) — FEX-2605-Nightly-5ad06b025 |
+| **Release** | [🔗 nightly-20260623-204659](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-204659) |
+| **FEXCore** | [`681c5e809`](https://github.com/FEX-Emu/FEX/commit/681c5e809) — FEX-2605-Nightly-681c5e809 |
 | **VKD3D-Proton (Std)** | [`753e42d0`](https://github.com/HansKristian-Work/vkd3d-proton/commit/753e42d0) |
 | **VKD3D-Proton (ARM64EC)** | [`753e42d0`](https://github.com/HansKristian-Work/vkd3d-proton/commit/753e42d0) |
-| **DXVK (GPLAsync)** | [`67dba691`](https://github.com/doitsujin/dxvk/commit/67dba691) |
-| **DXVK (ARM64EC)** | [`67dba691`](https://github.com/doitsujin/dxvk/commit/67dba691) |
-| **DXVK BinSem (GPLAsync)** | [`67dba691`](https://github.com/doitsujin/dxvk/commit/67dba691) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
-| **DXVK BinSem (ARM64EC)** | [`67dba691`](https://github.com/doitsujin/dxvk/commit/67dba691) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK (GPLAsync)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) |
+| **DXVK (ARM64EC)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) |
+| **DXVK BinSem (GPLAsync)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK BinSem (ARM64EC)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
 | **Turnip** | [v26.2.0-20260623-r11](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260623-r11) — Turnip v26.2.0-20260623-r11 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-194017) |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-204659) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
