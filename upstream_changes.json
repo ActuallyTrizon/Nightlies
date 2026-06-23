@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-23T18:39:01Z",
+  "triggered_at": "2026-06-23T19:34:59Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "a6f44ac",
-      "new": "95b0208",
-      "full": "95b02080ecae26392ffd621ed0c405e5d5e11170",
-      "msg": "[DYNAREC] Made NOHOTPAGE=1 and DIRTY=2 combonaison to actualy do something",
-      "date": "2026-06-23T18:22:30Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "1619374",
+      "new": "5ad06b0",
+      "full": "5ad06b0255f67219d6ee4d6a96d8fd234a44d2ab",
+      "msg": "Merge pull request #5588 from lioncash/pinsr",
+      "date": "2026-06-23T19:34:03Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a8f4c06",
-      "new": "bc649a0",
-      "full": "bc649a02d4c1ca2148ba6eb2e0a83fa774b4d037",
-      "msg": "tu: handle partially set resolve attachment info without crashing",
-      "date": "2026-06-23T18:13:50.000+00:00"
+      "old": "bc649a0",
+      "new": "ea0bc05",
+      "full": "ea0bc0578611f78cef40d31e4d1de284f9d2491b",
+      "msg": "mediafoundation: preserve low latency ping pong behavior between ProcessInput an",
+      "date": "2026-06-23T19:10:50.000+00:00"
     }
   ]
 }
