@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-23T19:34:59Z",
+  "triggered_at": "2026-06-23T20:41:25Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "1619374",
-      "new": "5ad06b0",
-      "full": "5ad06b0255f67219d6ee4d6a96d8fd234a44d2ab",
-      "msg": "Merge pull request #5588 from lioncash/pinsr",
-      "date": "2026-06-23T19:34:03Z"
+      "old": "5ad06b0",
+      "new": "681c5e8",
+      "full": "681c5e8097a045d9b5c9c7d0110816fe001bcf27",
+      "msg": "Merge pull request #5589 from lioncash/selector",
+      "date": "2026-06-23T20:01:41Z"
     },
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "bc649a0",
-      "new": "ea0bc05",
-      "full": "ea0bc0578611f78cef40d31e4d1de284f9d2491b",
-      "msg": "mediafoundation: preserve low latency ping pong behavior between ProcessInput an",
-      "date": "2026-06-23T19:10:50.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "67dba69",
+      "new": "8c3eaf9",
+      "full": "8c3eaf980d7ff934f1e4834568220a0b09cdbad8",
+      "msg": "[d3d9] Use correct type for constant buffer load in SWVP shaders",
+      "date": "2026-06-23T19:41:00Z"
     }
   ]
 }
