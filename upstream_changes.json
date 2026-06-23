@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-23T03:03:35Z",
+  "triggered_at": "2026-06-23T05:19:21Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "501433d",
-      "new": "475efed",
-      "full": "475efed859b667388d60df1f4c1df2f0af7ac8c0",
-      "msg": "Revert \"rusticl: fix leak in `util_queue`\"",
-      "date": "2026-06-23T02:18:50.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "37e32fb",
+      "new": "1619374",
+      "full": "161937425206f32b5e5c6605f682cb49224f9ada",
+      "msg": "Merge pull request #5587 from lioncash/pd",
+      "date": "2026-06-23T04:04:42Z"
     }
   ]
 }
