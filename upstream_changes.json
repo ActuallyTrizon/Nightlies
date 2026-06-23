@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-23T16:47:22Z",
+  "triggered_at": "2026-06-23T17:34:24Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "758f352",
+      "new": "a6f44ac",
+      "full": "a6f44ac2bdd15438215d824451e47ba6e72cf119",
+      "msg": "[CMAKE] Cleanup ctest (#3981)",
+      "date": "2026-06-23T17:06:34Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "04f5f08",
-      "new": "7a5bcaa",
-      "full": "7a5bcaa35fb88d9ca69b2b35f0f6e41e9cae66ed",
-      "msg": "brw: Add unit tests for brw_opt_predicate_logic",
-      "date": "2026-06-23T15:49:13.000+00:00"
+      "old": "7a5bcaa",
+      "new": "a8f4c06",
+      "full": "a8f4c069a7eaacde0bfb1ec3ee349f2fe881a734",
+      "msg": "brw: Fix INTEL_LOWER_DPAS=1 for Xe2+",
+      "date": "2026-06-23T16:27:42.000+00:00"
     }
   ]
 }
