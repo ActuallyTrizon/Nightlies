@@ -36,7 +36,7 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260623-014347](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-014347) |
+| **Release** | [🔗 nightly-20260623-030841](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-030841) |
 | **FEXCore** | [`37e32fbcb`](https://github.com/FEX-Emu/FEX/commit/37e32fbcb) — FEX-2605-Nightly-37e32fbcb |
 | **VKD3D-Proton (Std)** | [`bee300e4`](https://github.com/HansKristian-Work/vkd3d-proton/commit/bee300e4) |
 | **VKD3D-Proton (ARM64EC)** | [`bee300e4`](https://github.com/HansKristian-Work/vkd3d-proton/commit/bee300e4) |
@@ -46,7 +46,7 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (ARM64EC)** | [`a4653815`](https://github.com/doitsujin/dxvk/commit/a4653815) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
 | **Turnip** | [v26.2.0-20260623](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260623) — Turnip v26.2.0-20260623 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-014347) |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260623-030841) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
