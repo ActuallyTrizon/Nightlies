@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-23T15:00:35Z",
+  "triggered_at": "2026-06-23T16:47:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "512fe5b",
-      "new": "04f5f08",
-      "full": "04f5f08cc6cfd737735b6943a17fbe026f74eb54",
-      "msg": "brw: Drop dead spill_writes in brw_opt_fill_and_spill",
-      "date": "2026-06-23T14:36:11.000+00:00"
+      "old": "04f5f08",
+      "new": "7a5bcaa",
+      "full": "7a5bcaa35fb88d9ca69b2b35f0f6e41e9cae66ed",
+      "msg": "brw: Add unit tests for brw_opt_predicate_logic",
+      "date": "2026-06-23T15:49:13.000+00:00"
     }
   ]
 }
