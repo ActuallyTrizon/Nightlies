@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-23T17:34:24Z",
+  "triggered_at": "2026-06-23T18:39:01Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "758f352",
-      "new": "a6f44ac",
-      "full": "a6f44ac2bdd15438215d824451e47ba6e72cf119",
-      "msg": "[CMAKE] Cleanup ctest (#3981)",
-      "date": "2026-06-23T17:06:34Z"
+      "old": "a6f44ac",
+      "new": "95b0208",
+      "full": "95b02080ecae26392ffd621ed0c405e5d5e11170",
+      "msg": "[DYNAREC] Made NOHOTPAGE=1 and DIRTY=2 combonaison to actualy do something",
+      "date": "2026-06-23T18:22:30Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7a5bcaa",
-      "new": "a8f4c06",
-      "full": "a8f4c069a7eaacde0bfb1ec3ee349f2fe881a734",
-      "msg": "brw: Fix INTEL_LOWER_DPAS=1 for Xe2+",
-      "date": "2026-06-23T16:27:42.000+00:00"
+      "old": "a8f4c06",
+      "new": "bc649a0",
+      "full": "bc649a02d4c1ca2148ba6eb2e0a83fa774b4d037",
+      "msg": "tu: handle partially set resolve attachment info without crashing",
+      "date": "2026-06-23T18:13:50.000+00:00"
     }
   ]
 }
