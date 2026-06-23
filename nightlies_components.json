@@ -871,15 +871,15 @@
   },
   {
     "type": "Proton",
-    "verName": "Proton-11-b5-arm64ec-steam",
+    "verName": "Proton-11-B5-Arm64EC-Steam-FIXED",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/Proton-11-b5-arm64ec-steam.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/Proton-11-B5-Arm64EC-Steam-FIXED.wcp"
   },
   {
     "type": "Proton",
-    "verName": "Proton-11-b5-x86_64-steam",
+    "verName": "Proton-11-B5-x86-64-Steam-FIXED",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/Proton-11-b5-x86_64-steam.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/Proton-11-B5-x86-64-Steam-FIXED.wcp"
   },
   {
     "type": "Proton",
