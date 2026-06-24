@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-24T19:31:38Z",
+  "triggered_at": "2026-06-24T21:29:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "78e5559",
-      "new": "da325ef",
-      "full": "da325ef1d4c36dd29431ef7364b955fdea37c502",
-      "msg": "anv: Workaround game bug for Witcher3",
-      "date": "2026-06-24T18:46:28.000+00:00"
+      "old": "da325ef",
+      "new": "68468b6",
+      "full": "68468b6d1b918824ffa7de1dd11a29aff7c4781a",
+      "msg": "jay: add bfloat16 support",
+      "date": "2026-06-24T19:53:26.000+00:00"
     }
   ]
 }
