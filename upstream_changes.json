@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-24T07:08:11Z",
+  "triggered_at": "2026-06-24T09:03:27Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "95b0208",
-      "new": "0053799",
-      "full": "0053799955b4e9396d5b53433fcbd35fcdaa7e6a",
-      "msg": "[WRAPPER] Added more listener wrappers for wayland-client (#3983)",
-      "date": "2026-06-24T06:08:46Z"
+      "old": "0053799",
+      "new": "75c0edc",
+      "full": "75c0edc10005bf76212c6f860d777c9cfa5862b3",
+      "msg": "[CONFIG] Added often-used group and BOX64_PROFILE support (#3984)",
+      "date": "2026-06-24T07:32:12Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9f195ff",
+      "new": "b846cb6",
+      "full": "b846cb6c2cb9381bf746225e22c7e019b6e15c66",
+      "msg": "Merge pull request #5596 from lioncash/ilps",
+      "date": "2026-06-24T07:56:36Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7ccd70b",
-      "new": "f7e8fb4",
-      "full": "f7e8fb46b3d79ed49553448fbd8c2be33b83a278",
-      "msg": "gfxstream: link goldfish_address_space against perfetto",
-      "date": "2026-06-23T23:34:40.000-07:00"
+      "old": "f7e8fb4",
+      "new": "3b1f86d",
+      "full": "3b1f86d437fe61e740b75bee058737c5a8d65db9",
+      "msg": "panvk: Advertise VK_KHR_internally_synchronized_queues",
+      "date": "2026-06-24T08:36:58.000+00:00"
     }
   ]
 }
