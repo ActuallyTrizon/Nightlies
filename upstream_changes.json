@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-24T17:36:08Z",
+  "triggered_at": "2026-06-24T18:34:03Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "5881266",
-      "new": "ad618be",
-      "full": "ad618be979477047a3632111a1fa4cc8077bb850",
-      "msg": "Merge pull request #5599 from lioncash/unused",
-      "date": "2026-06-24T16:47:38Z"
+      "old": "ad618be",
+      "new": "ab4e0f6",
+      "full": "ab4e0f653a5859f95087675302709b018d47bd94",
+      "msg": "Merge pull request #5600 from lioncash/palign",
+      "date": "2026-06-24T18:18:51Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "8784152",
+      "new": "78e5559",
+      "full": "78e5559214ab95937030447b8170b2db50bd39ff",
+      "msg": "panvk: enable 8bit multiplanar YUV formats on v9+ to v13",
+      "date": "2026-06-24T18:02:34.000+00:00"
     }
   ]
 }
