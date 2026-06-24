@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-24T12:40:54Z",
+  "triggered_at": "2026-06-24T13:41:53Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "75c0edc",
-      "new": "153b661",
-      "full": "153b6613cc2cc5c39f2ba1aee9cc060418250f60",
-      "msg": "[RCFILE] Fine-tuned 2 game profiles",
-      "date": "2026-06-24T11:29:52Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "485f068",
-      "new": "5ba2818",
-      "full": "5ba2818fd12a767936e55b000e11b3c69c980208",
-      "msg": "virgl/ci: Retire disabled android-virgl-llvmpipe",
-      "date": "2026-06-24T12:18:03.000+00:00"
+      "old": "5ba2818",
+      "new": "afda3f3",
+      "full": "afda3f30cbb9b7b1f2e4247d59e1435596e3f244",
+      "msg": "pan/format: Prefer 16X16_BLOCK_U over INTERLEAVED_64K",
+      "date": "2026-06-24T13:07:03.000+00:00"
     }
   ]
 }
