@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-24T00:29:32Z",
+  "triggered_at": "2026-06-24T01:37:14Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7dc2dc8",
-      "new": "27a5f09",
-      "full": "27a5f09185d3c408a3f565eb6467421635a0cf0a",
-      "msg": "Merge pull request #5592 from ShadowCurse/fixes",
-      "date": "2026-06-24T00:15:07Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "b9b3e80",
+      "new": "43e9b44",
+      "full": "43e9b446abcfd7583610b47a2b59f7dff2ada127",
+      "msg": "glx/apple: Convert K&R-style declarations to ANSI prototypes",
+      "date": "2026-06-23T13:02:44.000-10:00"
     }
   ]
 }
