@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-24T03:03:53Z",
+  "triggered_at": "2026-06-24T05:18:18Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "27a5f09",
+      "new": "9f195ff",
+      "full": "9f195ff3771907ae5cea603e93f8104c6a9d62f2",
+      "msg": "Merge pull request #5594 from lioncash/pshuf",
+      "date": "2026-06-24T03:31:04Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "43e9b44",
-      "new": "114f3ff",
-      "full": "114f3ff0cc032284c7f93712e8329b6ed50f393a",
-      "msg": "anv/xe: prevent WaitIdle optimization for fences with exported sync_fd",
-      "date": "2026-06-24T02:36:05.000+00:00"
+      "old": "114f3ff",
+      "new": "7ccd70b",
+      "full": "7ccd70b9ec3853e05dde1dcc330fbc74331a5b51",
+      "msg": "kk: Reduce root buffer pointer by replacing it with the GPU address",
+      "date": "2026-06-24T03:32:28.000+00:00"
     }
   ]
 }
