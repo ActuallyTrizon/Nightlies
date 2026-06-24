@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-24T11:00:23Z",
+  "triggered_at": "2026-06-24T12:40:54Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "753e42d",
-      "new": "6ef5e11",
-      "full": "6ef5e11eed31db9e809b24ec19d5736bff62aaea",
-      "msg": "vkd3d: Gate OMM acceptance on supports_opacity_micromap, not tier 1.2.",
-      "date": "2026-06-24T09:21:17Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "75c0edc",
+      "new": "153b661",
+      "full": "153b6613cc2cc5c39f2ba1aee9cc060418250f60",
+      "msg": "[RCFILE] Fine-tuned 2 game profiles",
+      "date": "2026-06-24T11:29:52Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3b1f86d",
-      "new": "485f068",
-      "full": "485f06802aa5aa59ac3d6fe5f78dc44545f43151",
-      "msg": "radeonsi/mm: Fix setting VPE rotation when horizontal flip is enabled",
-      "date": "2026-06-24T10:32:10.000+00:00"
+      "old": "485f068",
+      "new": "5ba2818",
+      "full": "5ba2818fd12a767936e55b000e11b3c69c980208",
+      "msg": "virgl/ci: Retire disabled android-virgl-llvmpipe",
+      "date": "2026-06-24T12:18:03.000+00:00"
     }
   ]
 }
