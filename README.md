@@ -36,8 +36,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260624-174126](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260624-174126) |
-| **FEXCore** | [`ad618be97`](https://github.com/FEX-Emu/FEX/commit/ad618be97) — FEX-2605-Nightly-ad618be97 |
+| **Release** | [🔗 nightly-20260624-183905](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260624-183905) |
+| **FEXCore** | [`ab4e0f653`](https://github.com/FEX-Emu/FEX/commit/ab4e0f653) — FEX-2605-Nightly-ab4e0f653 |
 | **VKD3D-Proton (Std)** | [`6ef5e11e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/6ef5e11e) |
 | **VKD3D-Proton (ARM64EC)** | [`6ef5e11e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/6ef5e11e) |
 | **DXVK (GPLAsync)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) |
@@ -45,8 +45,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (GPLAsync)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`8c3eaf98`](https://github.com/doitsujin/dxvk/commit/8c3eaf98) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260624-r10](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260624-r10) — Turnip v26.2.0-20260624-r10 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260624-174126) |
+| **Turnip** | [v26.2.0-20260624-r11](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260624-r11) — Turnip v26.2.0-20260624-r11 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260624-183905) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
