@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-24T13:41:53Z",
+  "triggered_at": "2026-06-24T14:55:42Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "153b661",
+      "new": "6656708",
+      "full": "66567088314cc93089d94d7d5f33abe371b4ff56",
+      "msg": "[DYNACACHE] Added Compression % for dynacache-list",
+      "date": "2026-06-24T13:44:11Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5ba2818",
-      "new": "afda3f3",
-      "full": "afda3f30cbb9b7b1f2e4247d59e1435596e3f244",
-      "msg": "pan/format: Prefer 16X16_BLOCK_U over INTERLEAVED_64K",
-      "date": "2026-06-24T13:07:03.000+00:00"
+      "old": "afda3f3",
+      "new": "35bfb9f",
+      "full": "35bfb9fbd4b7305e7a461559597c313495a103d0",
+      "msg": "jay: Fix stack smashing with more than 16 FS inputs",
+      "date": "2026-06-24T14:23:15.000+00:00"
     }
   ]
 }
