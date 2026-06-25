@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-06-25T09:03:08Z",
+  "triggered_at": "2026-06-25T10:55:52Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "49e2489",
-      "new": "8e661d2",
-      "full": "8e661d29074f9a131a59cb02b1218ddd3f200d76",
-      "msg": "[DYNAREC] Always initialize jump table for DynaRec build (#3990)",
-      "date": "2026-06-25T08:02:30Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d93997c",
-      "new": "ec1b24d",
-      "full": "ec1b24d05b2e6a45b594a031ddf9653e185f2d49",
-      "msg": "Merge pull request #5603 from lioncash/permq",
-      "date": "2026-06-25T08:18:01Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b4e2c79",
-      "new": "b021008",
-      "full": "b021008183e80cf53ab12b3e6b41dc305ef3eff0",
-      "msg": "zink/ci: skip unvanquished-ultra trace on van gogh too",
-      "date": "2026-06-25T08:17:23.000+00:00"
+      "old": "b021008",
+      "new": "e5ec950",
+      "full": "e5ec9502a51a8424ec77eae3a9f4dec30faea990",
+      "msg": "radv: cleanup pCreateInfo uses for VkImage",
+      "date": "2026-06-25T09:26:27.000+00:00"
     }
   ]
 }
