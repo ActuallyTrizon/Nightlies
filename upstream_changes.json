@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-25T17:51:10Z",
+  "triggered_at": "2026-06-25T18:42:04Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ec1b24d",
-      "new": "3d66be9",
-      "full": "3d66be9e5ae15403387cf37acd62e240e7722fde",
-      "msg": "Merge pull request #5604 from lioncash/pcmpstr",
-      "date": "2026-06-25T17:23:59Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8c3eaf9",
+      "new": "bba3848",
+      "full": "bba3848221dee97869d0aea8e783b914c3d86fec",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-25T18:05:31Z"
     }
   ]
 }
