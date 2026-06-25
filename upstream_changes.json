@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-25T11:53:28Z",
+  "triggered_at": "2026-06-25T15:54:22Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8e661d2",
-      "new": "17865c3",
-      "full": "17865c3a9e6e67145b8e4c4fd1565269fc0d0c87",
-      "msg": "[WRAPPER] Simplified (and speed up) _dl_find_object function",
-      "date": "2026-06-25T11:35:05Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "e5ec950",
-      "new": "8b28b4d",
-      "full": "8b28b4d615999390455c237e38ed921881c21de7",
-      "msg": "doc/features.txt: enable VK_KHR_shader_float16_int8 for v3dv",
-      "date": "2026-06-25T11:36:20.000+00:00"
+      "old": "17865c3",
+      "new": "896b965",
+      "full": "896b965325916e5430b935d916e11638cf3a7e32",
+      "msg": "[LINUX] Small change in GetSegmentBase",
+      "date": "2026-06-25T14:58:02Z"
     }
   ]
 }
