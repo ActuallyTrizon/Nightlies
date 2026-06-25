@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-25T10:55:52Z",
+  "triggered_at": "2026-06-25T11:53:28Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8e661d2",
+      "new": "17865c3",
+      "full": "17865c3a9e6e67145b8e4c4fd1565269fc0d0c87",
+      "msg": "[WRAPPER] Simplified (and speed up) _dl_find_object function",
+      "date": "2026-06-25T11:35:05Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b021008",
-      "new": "e5ec950",
-      "full": "e5ec9502a51a8424ec77eae3a9f4dec30faea990",
-      "msg": "radv: cleanup pCreateInfo uses for VkImage",
-      "date": "2026-06-25T09:26:27.000+00:00"
+      "old": "e5ec950",
+      "new": "8b28b4d",
+      "full": "8b28b4d615999390455c237e38ed921881c21de7",
+      "msg": "doc/features.txt: enable VK_KHR_shader_float16_int8 for v3dv",
+      "date": "2026-06-25T11:36:20.000+00:00"
     }
   ]
 }
