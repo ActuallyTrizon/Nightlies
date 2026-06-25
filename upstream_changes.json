@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-25T18:42:04Z",
+  "triggered_at": "2026-06-25T19:34:24Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "3d66be9",
+      "new": "d5be15c",
+      "full": "d5be15c90e8a8f1552cca61a964d8f8411fe73a4",
+      "msg": "Merge pull request #5605 from lioncash/permq",
+      "date": "2026-06-25T18:51:25Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "8c3eaf9",
-      "new": "bba3848",
-      "full": "bba3848221dee97869d0aea8e783b914c3d86fec",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-25T18:05:31Z"
+      "old": "bba3848",
+      "new": "e496eae",
+      "full": "e496eae8f44eca4997f67f3f477fb54501418718",
+      "msg": "[util] Hide amd in Splinter Cell Double Agent",
+      "date": "2026-06-25T19:30:58Z"
     }
   ]
 }
