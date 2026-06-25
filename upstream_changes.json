@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-25T19:34:24Z",
+  "triggered_at": "2026-06-25T20:39:02Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "3d66be9",
-      "new": "d5be15c",
-      "full": "d5be15c90e8a8f1552cca61a964d8f8411fe73a4",
-      "msg": "Merge pull request #5605 from lioncash/permq",
-      "date": "2026-06-25T18:51:25Z"
-    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "bba3848",
-      "new": "e496eae",
-      "full": "e496eae8f44eca4997f67f3f477fb54501418718",
-      "msg": "[util] Hide amd in Splinter Cell Double Agent",
-      "date": "2026-06-25T19:30:58Z"
+      "old": "e496eae",
+      "new": "97fe0c6",
+      "full": "97fe0c66f89d3c8977578e1b500907306d4af536",
+      "msg": "[meta] Release 3.0",
+      "date": "2026-06-25T19:31:34Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "8b28b4d",
+      "new": "24c2057",
+      "full": "24c20578eed707c56729d5f18215e850905069e5",
+      "msg": "intel: make more multisampling/coarse state static",
+      "date": "2026-06-25T20:14:39.000+00:00"
     }
   ]
 }
