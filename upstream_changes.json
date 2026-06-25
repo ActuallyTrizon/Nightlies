@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-06-25T07:08:08Z",
+  "triggered_at": "2026-06-25T09:03:08Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "6656708",
-      "new": "49e2489",
-      "full": "49e248923ec93225285e68a6b23f9576916f00a4",
-      "msg": "[KDE_PLUGIN] Added KDE 5 support (#3987)",
-      "date": "2026-06-25T06:08:57Z"
+      "old": "49e2489",
+      "new": "8e661d2",
+      "full": "8e661d29074f9a131a59cb02b1218ddd3f200d76",
+      "msg": "[DYNAREC] Always initialize jump table for DynaRec build (#3990)",
+      "date": "2026-06-25T08:02:30Z"
     },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "ab4e0f6",
-      "new": "d93997c",
-      "full": "d93997c1cb7d4273d172a84dd4674ca404c5dd11",
-      "msg": "Merge pull request #5602 from lioncash/same",
-      "date": "2026-06-25T06:38:29Z"
+      "old": "d93997c",
+      "new": "ec1b24d",
+      "full": "ec1b24d05b2e6a45b594a031ddf9653e185f2d49",
+      "msg": "Merge pull request #5603 from lioncash/permq",
+      "date": "2026-06-25T08:18:01Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "da95960",
-      "new": "b4e2c79",
-      "full": "b4e2c7924a515b44accc5c06cb2f2442ace1f7e3",
-      "msg": "radv: remove redundant memory initialization on the CPU",
-      "date": "2026-06-25T06:05:33.000+00:00"
+      "old": "b4e2c79",
+      "new": "b021008",
+      "full": "b021008183e80cf53ab12b3e6b41dc305ef3eff0",
+      "msg": "zink/ci: skip unvanquished-ultra trace on van gogh too",
+      "date": "2026-06-25T08:17:23.000+00:00"
     }
   ]
 }
