@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-25T00:34:30Z",
+  "triggered_at": "2026-06-25T07:08:08Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "6656708",
+      "new": "49e2489",
+      "full": "49e248923ec93225285e68a6b23f9576916f00a4",
+      "msg": "[KDE_PLUGIN] Added KDE 5 support (#3987)",
+      "date": "2026-06-25T06:08:57Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ab4e0f6",
+      "new": "d93997c",
+      "full": "d93997c1cb7d4273d172a84dd4674ca404c5dd11",
+      "msg": "Merge pull request #5602 from lioncash/same",
+      "date": "2026-06-25T06:38:29Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "68468b6",
-      "new": "da95960",
-      "full": "da959603a5fe273f77bff7cf5260a0b3d9b82745",
-      "msg": "kraid/hw_tests: Use preloaded registers",
-      "date": "2026-06-24T23:02:03.000+00:00"
+      "old": "da95960",
+      "new": "b4e2c79",
+      "full": "b4e2c7924a515b44accc5c06cb2f2442ace1f7e3",
+      "msg": "radv: remove redundant memory initialization on the CPU",
+      "date": "2026-06-25T06:05:33.000+00:00"
     }
   ]
 }
