@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-25T20:39:02Z",
+  "triggered_at": "2026-06-25T21:31:50Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "e496eae",
-      "new": "97fe0c6",
-      "full": "97fe0c66f89d3c8977578e1b500907306d4af536",
-      "msg": "[meta] Release 3.0",
-      "date": "2026-06-25T19:31:34Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8b28b4d",
-      "new": "24c2057",
-      "full": "24c20578eed707c56729d5f18215e850905069e5",
-      "msg": "intel: make more multisampling/coarse state static",
-      "date": "2026-06-25T20:14:39.000+00:00"
+      "old": "24c2057",
+      "new": "4734636",
+      "full": "47346366b6bafb4fb39bff74c8b45f6a98ff9aab",
+      "msg": "mesa3d: gfxstream: Add P210 format support",
+      "date": "2026-06-25T21:14:01.000+00:00"
     }
   ]
 }
