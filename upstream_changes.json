@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-25T15:54:22Z",
+  "triggered_at": "2026-06-25T16:45:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "17865c3",
-      "new": "896b965",
-      "full": "896b965325916e5430b935d916e11638cf3a7e32",
-      "msg": "[LINUX] Small change in GetSegmentBase",
-      "date": "2026-06-25T14:58:02Z"
+      "old": "896b965",
+      "new": "3bf34a7",
+      "full": "3bf34a77c79438ceaf7c76c86da9a4de7507df1b",
+      "msg": "[DYNAREC] Try to limit number of times blocks are invalidated, especialy those o",
+      "date": "2026-06-25T16:21:22Z"
     }
   ]
 }
