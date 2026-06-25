@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-24T21:29:28Z",
+  "triggered_at": "2026-06-25T00:34:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "da325ef",
-      "new": "68468b6",
-      "full": "68468b6d1b918824ffa7de1dd11a29aff7c4781a",
-      "msg": "jay: add bfloat16 support",
-      "date": "2026-06-24T19:53:26.000+00:00"
+      "old": "68468b6",
+      "new": "da95960",
+      "full": "da959603a5fe273f77bff7cf5260a0b3d9b82745",
+      "msg": "kraid/hw_tests: Use preloaded registers",
+      "date": "2026-06-24T23:02:03.000+00:00"
     }
   ]
 }
