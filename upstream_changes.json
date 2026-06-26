@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-26T12:45:36Z",
+  "triggered_at": "2026-06-26T13:38:56Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "97fe0c6",
+      "new": "73345af",
+      "full": "73345afd7813136673951975fb3c78867838a73a",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-26T13:31:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5d8c4c1",
-      "new": "6adb0d5",
-      "full": "6adb0d5e01dca952fcb04b7773ad92b0ab2e132d",
-      "msg": "etnaviv: blt: Zero-initialize conv_swizzle",
-      "date": "2026-06-26T11:44:24.000+00:00"
+      "old": "6adb0d5",
+      "new": "ce6647d",
+      "full": "ce6647daa543690eff8a72c080eee118fb1a63bf",
+      "msg": "vulkan: condition cmd_queue initialization to driver need",
+      "date": "2026-06-26T12:43:03.000+00:00"
     }
   ]
 }
