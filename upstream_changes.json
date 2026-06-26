@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-26T03:04:26Z",
+  "triggered_at": "2026-06-26T05:24:40Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "d5be15c",
+      "new": "7ae55d7",
+      "full": "7ae55d73c1cc0fa0c0bf984ec4d43e9a5ae32efc",
+      "msg": "Merge pull request #5607 from lioncash/broadcast",
+      "date": "2026-06-26T03:23:55Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b723e99",
-      "new": "0e9dfa7",
-      "full": "0e9dfa72019612dd604b6fb6b831b3119bba05e6",
-      "msg": "intel/executor: Enable Xe3P",
-      "date": "2026-06-26T02:47:00.000+00:00"
+      "old": "0e9dfa7",
+      "new": "2ce9bc6",
+      "full": "2ce9bc68585af69cd8e46d38139f82b0efdc4ecc",
+      "msg": "panvk: Fix DRM format modifiers for multi-planar YUV formats",
+      "date": "2026-06-26T04:31:59.000+00:00"
     }
   ]
 }
