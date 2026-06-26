@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T01:41:42Z",
+  "triggered_at": "2026-06-26T03:04:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "db82288",
-      "new": "b723e99",
-      "full": "b723e99a54b786d15486a480bb55d6401a4b5b4d",
-      "msg": "Add offset getter for image intrinsics",
-      "date": "2026-06-26T00:28:45.000+00:00"
+      "old": "b723e99",
+      "new": "0e9dfa7",
+      "full": "0e9dfa72019612dd604b6fb6b831b3119bba05e6",
+      "msg": "intel/executor: Enable Xe3P",
+      "date": "2026-06-26T02:47:00.000+00:00"
     }
   ]
 }
