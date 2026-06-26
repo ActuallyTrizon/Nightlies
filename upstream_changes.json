@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T17:32:46Z",
+  "triggered_at": "2026-06-26T19:31:48Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "0151fed",
-      "new": "c41d800",
-      "full": "c41d800a3091a55c0ce3a06aedfea57bda1b9fd4",
-      "msg": "nil: Pick tiling params closer to proprietary",
-      "date": "2026-06-26T16:31:07.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9ac608c",
+      "new": "43bd243",
+      "full": "43bd243457332a30dd253b41bd73d061b2f8ebc8",
+      "msg": "Merge pull request #5609 from Sonicadvance1/170",
+      "date": "2026-06-26T19:30:00Z"
     }
   ]
 }
