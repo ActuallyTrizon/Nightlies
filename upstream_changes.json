@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-26T14:52:24Z",
+  "triggered_at": "2026-06-26T16:38:28Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "73345af",
-      "new": "0b49a39",
-      "full": "0b49a39896f25896b83ed01c0609393dfc3bb85c",
-      "msg": "[d3d9] Return null vector when sampling null texture in fixed-function",
-      "date": "2026-06-26T14:19:35Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3bf34a7",
+      "new": "7da44e5",
+      "full": "7da44e5d7e51acb0f6579cf222dabcbc78fe2b80",
+      "msg": "[RV64_DYNAREC] Fixed GETEW delta parameter for ROL/ROR/RCL/RCR (#3992)",
+      "date": "2026-06-26T15:48:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ce6647d",
-      "new": "4c79551",
-      "full": "4c79551a86383a25902afde91a0d50a9ce533b5a",
-      "msg": "zink: a618 ci updates",
-      "date": "2026-06-26T14:18:45.000+00:00"
+      "old": "4c79551",
+      "new": "0151fed",
+      "full": "0151fedf47288088b99057db82ff9df65f4d8d93",
+      "msg": "zink: reset usage following SHADER_WRITE access",
+      "date": "2026-06-26T16:05:07.000+00:00"
     }
   ]
 }
