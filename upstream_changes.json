@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T11:56:11Z",
+  "triggered_at": "2026-06-26T12:45:36Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ce81244",
-      "new": "5d8c4c1",
-      "full": "5d8c4c1880942107f287551eb46efd8cff6b8134",
-      "msg": "radv/ci: skip compression_control cases",
-      "date": "2026-06-26T11:06:33.000+00:00"
+      "old": "5d8c4c1",
+      "new": "6adb0d5",
+      "full": "6adb0d5e01dca952fcb04b7773ad92b0ab2e132d",
+      "msg": "etnaviv: blt: Zero-initialize conv_swizzle",
+      "date": "2026-06-26T11:44:24.000+00:00"
     }
   ]
 }
