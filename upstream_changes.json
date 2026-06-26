@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T22:24:56Z",
+  "triggered_at": "2026-06-26T23:24:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "421b7fe",
-      "new": "5bd6134",
-      "full": "5bd61342d349c3d768b916e7c7523855330a6c0c",
-      "msg": "mr-label-maker: Add rule for rust files",
-      "date": "2026-06-26T21:39:49.000+00:00"
+      "old": "5bd6134",
+      "new": "2725b63",
+      "full": "2725b6333bfb759f694d121622b2645b6c3e2b49",
+      "msg": "intel/perf: map ray tracing counters to RAYTRACING group",
+      "date": "2026-06-26T22:21:54.000+00:00"
     }
   ]
 }
