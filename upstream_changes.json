@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T07:14:35Z",
+  "triggered_at": "2026-06-26T09:03:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2ce9bc6",
-      "new": "cef20f5",
-      "full": "cef20f5a006f96c335370fe8004a21acc9966a44",
-      "msg": "pan/crc: Optimize clear color hashing",
-      "date": "2026-06-26T06:30:50.000+00:00"
+      "old": "cef20f5",
+      "new": "8e0914e",
+      "full": "8e0914ee315109a0d99cdb40e0645d1dc38023a6",
+      "msg": "drirc: add a callback mechanism do deal with shader hash & options",
+      "date": "2026-06-26T07:30:08.000+00:00"
     }
   ]
 }
