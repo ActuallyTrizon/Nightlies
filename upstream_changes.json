@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-25T23:28:10Z",
+  "triggered_at": "2026-06-26T00:35:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "791cf54",
-      "new": "34fbf35",
-      "full": "34fbf35b97ce28fe7510fbe99bdc7389ac3a6644",
-      "msg": "anv: fix descriptor heap indexing of YCbCr embedded samplers",
-      "date": "2026-06-25T23:00:49.000+00:00"
+      "old": "34fbf35",
+      "new": "db82288",
+      "full": "db82288ede5b738a819b93c5010f0be1e68644aa",
+      "msg": "vulkan/runtime: fixup group building with shaders from libraries",
+      "date": "2026-06-25T23:52:17.000+00:00"
     }
   ]
 }
