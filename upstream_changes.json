@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T00:35:39Z",
+  "triggered_at": "2026-06-26T01:41:42Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "34fbf35",
-      "new": "db82288",
-      "full": "db82288ede5b738a819b93c5010f0be1e68644aa",
-      "msg": "vulkan/runtime: fixup group building with shaders from libraries",
-      "date": "2026-06-25T23:52:17.000+00:00"
+      "old": "db82288",
+      "new": "b723e99",
+      "full": "b723e99a54b786d15486a480bb55d6401a4b5b4d",
+      "msg": "Add offset getter for image intrinsics",
+      "date": "2026-06-26T00:28:45.000+00:00"
     }
   ]
 }
