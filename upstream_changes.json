@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-27T00:33:10Z",
+  "triggered_at": "2026-06-27T03:03:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2725b63",
-      "new": "a87b488",
-      "full": "a87b488e22178a63bfb362cc7b88e6ac0b83a7ad",
-      "msg": "docs: fix references to moved crates",
-      "date": "2026-06-26T23:30:46.000+00:00"
+      "old": "a87b488",
+      "new": "d3c2dab",
+      "full": "d3c2dab2073a8604e2fec1367165fba54edad5fa",
+      "msg": "panvk: add P010 native YUV support",
+      "date": "2026-06-27T01:01:55.000+00:00"
     }
   ]
 }
