@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-26T23:24:41Z",
+  "triggered_at": "2026-06-27T00:33:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5bd6134",
-      "new": "2725b63",
-      "full": "2725b6333bfb759f694d121622b2645b6c3e2b49",
-      "msg": "intel/perf: map ray tracing counters to RAYTRACING group",
-      "date": "2026-06-26T22:21:54.000+00:00"
+      "old": "2725b63",
+      "new": "a87b488",
+      "full": "a87b488e22178a63bfb362cc7b88e6ac0b83a7ad",
+      "msg": "docs: fix references to moved crates",
+      "date": "2026-06-26T23:30:46.000+00:00"
     }
   ]
 }
