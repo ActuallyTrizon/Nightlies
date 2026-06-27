@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-27T17:23:24Z",
+  "triggered_at": "2026-06-27T20:22:40Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "4bf6f9c",
-      "new": "4c1d39f",
-      "full": "4c1d39fa98f7b2b3ac6cdfd4ce171b61ed618a9c",
-      "msg": "compiler/rust: Add more methods/traits to U8EnumSet",
-      "date": "2026-06-27T15:47:52.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "0b49a39",
+      "new": "a4f7d10",
+      "full": "a4f7d1064d68f41d878c98a7ff22389c672b0704",
+      "msg": "[d3d9] Fix compiler warning",
+      "date": "2026-06-27T19:51:08Z"
     }
   ]
 }
