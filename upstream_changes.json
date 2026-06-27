@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-27T13:31:04Z",
+  "triggered_at": "2026-06-27T15:26:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "019ee85",
-      "new": "88bc7f1",
-      "full": "88bc7f1afd125512e2188c561fc373d2872efed8",
-      "msg": "nir/to_lcssa: do not sort predecessors for phi sources",
-      "date": "2026-06-27T12:09:38.000+00:00"
+      "old": "88bc7f1",
+      "new": "4a1a8a1",
+      "full": "4a1a8a1f0449a8cb97d1c8471216fd4cb7ffabe5",
+      "msg": "anv: add missing handling of push pointers in gfx dgc",
+      "date": "2026-06-27T14:41:35.000+00:00"
     }
   ]
 }
