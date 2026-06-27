@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-27T16:23:03Z",
+  "triggered_at": "2026-06-27T17:23:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4a1a8a1",
-      "new": "4bf6f9c",
-      "full": "4bf6f9c41c855e5e24f7d1ff1bb2fc67f72c2e1c",
-      "msg": "kraid: Add OpLd/StCvt and plumb them through",
-      "date": "2026-06-27T15:06:14.000+00:00"
+      "old": "4bf6f9c",
+      "new": "4c1d39f",
+      "full": "4c1d39fa98f7b2b3ac6cdfd4ce171b61ed618a9c",
+      "msg": "compiler/rust: Add more methods/traits to U8EnumSet",
+      "date": "2026-06-27T15:47:52.000+00:00"
     }
   ]
 }
