@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-27T15:26:07Z",
+  "triggered_at": "2026-06-27T16:23:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "88bc7f1",
-      "new": "4a1a8a1",
-      "full": "4a1a8a1f0449a8cb97d1c8471216fd4cb7ffabe5",
-      "msg": "anv: add missing handling of push pointers in gfx dgc",
-      "date": "2026-06-27T14:41:35.000+00:00"
+      "old": "4a1a8a1",
+      "new": "4bf6f9c",
+      "full": "4bf6f9c41c855e5e24f7d1ff1bb2fc67f72c2e1c",
+      "msg": "kraid: Add OpLd/StCvt and plumb them through",
+      "date": "2026-06-27T15:06:14.000+00:00"
     }
   ]
 }
