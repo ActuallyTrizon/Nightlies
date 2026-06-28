@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-28T13:31:43Z",
+  "triggered_at": "2026-06-28T15:27:20Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "ea72882",
-      "new": "99734aa",
-      "full": "99734aa206f5ee3e2b2a394b488566235afa956d",
-      "msg": "anv: add infrastructure to deal with missing barriers in applications",
-      "date": "2026-06-28T12:01:35.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a4f7d10",
+      "new": "788b37e",
+      "full": "788b37e1bfbcc66407abada0a4656136fd4b9b33",
+      "msg": "N/A",
+      "date": "unknown"
     }
   ]
 }
