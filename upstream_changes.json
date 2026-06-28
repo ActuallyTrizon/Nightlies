@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-28T18:22:40Z",
+  "triggered_at": "2026-06-28T19:29:32Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "b23fa30",
-      "new": "c85e426",
-      "full": "c85e426cc55c60b0c633fb1e0aa878c853fbd632",
-      "msg": "Merge pull request #5622 from lioncash/perm",
-      "date": "2026-06-28T18:01:49Z"
+      "old": "c85e426",
+      "new": "9740f48",
+      "full": "9740f488cf9369af7c60eb9b7c5ca75c338a0b1b",
+      "msg": "N/A",
+      "date": "unknown"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "788b37e",
-      "new": "49a1619",
-      "full": "49a161918dc4b5e957d5a7e78d5ba9ee6acd1fc1",
-      "msg": "N/A",
-      "date": "unknown"
+      "old": "49a1619",
+      "new": "e0be8e8",
+      "full": "e0be8e84be6704c0b33425f5234a7dc462309b81",
+      "msg": "[dxvk] Disable GPL on Intel's Windows driver",
+      "date": "2026-06-28T19:04:39Z"
     }
   ]
 }
