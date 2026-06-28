@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-28T20:24:45Z",
+  "triggered_at": "2026-06-28T21:22:33Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9740f48",
-      "new": "24da43f",
-      "full": "24da43f8239cc8c907b9100f18c8fa94f584acb6",
-      "msg": "N/A",
-      "date": "unknown"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "99734aa",
+      "new": "2f5aee0",
+      "full": "2f5aee03ceeb7c9ac38c06d0799380232ed3e693",
+      "msg": "nil: enable PLC for compressed data",
+      "date": "2026-06-28T22:02:11.000+04:00"
     }
   ]
 }
