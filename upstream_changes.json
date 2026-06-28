@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-28T09:01:13Z",
+  "triggered_at": "2026-06-28T11:32:41Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a7d8f5d",
-      "new": "ea72882",
-      "full": "ea72882df13e275473b2a9c83e93786b58fadc80",
-      "msg": "glx/apple: Add create_context_attribs entry to the applegl_screen_vtable",
-      "date": "2026-06-28T01:27:05.000-07:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7da44e5",
+      "new": "d7b78a0",
+      "full": "d7b78a092f3d60ab30c0a93d753bc9c0d61dd107",
+      "msg": "N/A",
+      "date": "unknown"
     }
   ]
 }
