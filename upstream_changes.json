@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-28T21:22:33Z",
+  "triggered_at": "2026-06-28T23:22:35Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "99734aa",
-      "new": "2f5aee0",
-      "full": "2f5aee03ceeb7c9ac38c06d0799380232ed3e693",
-      "msg": "nil: enable PLC for compressed data",
-      "date": "2026-06-28T22:02:11.000+04:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "24da43f",
+      "new": "32b96c2",
+      "full": "32b96c259b7846575610f79d636d15767dc4ddca",
+      "msg": "Merge pull request #5623 from Sonicadvance1/176",
+      "date": "2026-06-28T22:44:35Z"
     }
   ]
 }
