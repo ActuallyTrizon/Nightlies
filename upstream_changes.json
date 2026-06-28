@@ -1,12 +1,12 @@
 {
-  "triggered_at": "2026-06-28T15:27:20Z",
+  "triggered_at": "2026-06-28T16:25:12Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "a4f7d10",
-      "new": "788b37e",
-      "full": "788b37e1bfbcc66407abada0a4656136fd4b9b33",
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "78832cc",
+      "new": "848c4b2",
+      "full": "848c4b2d68123ddc8f056c10e51fb6c989c8ab53",
       "msg": "N/A",
       "date": "unknown"
     }
