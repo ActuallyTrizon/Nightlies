@@ -1,12 +1,21 @@
 {
-  "triggered_at": "2026-06-28T17:25:28Z",
+  "triggered_at": "2026-06-28T18:22:40Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "848c4b2",
-      "new": "b23fa30",
-      "full": "b23fa30099d399a1e888ace979c99c05bc81a2ff",
+      "old": "b23fa30",
+      "new": "c85e426",
+      "full": "c85e426cc55c60b0c633fb1e0aa878c853fbd632",
+      "msg": "Merge pull request #5622 from lioncash/perm",
+      "date": "2026-06-28T18:01:49Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "788b37e",
+      "new": "49a1619",
+      "full": "49a161918dc4b5e957d5a7e78d5ba9ee6acd1fc1",
       "msg": "N/A",
       "date": "unknown"
     }
