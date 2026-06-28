@@ -1,12 +1,12 @@
 {
-  "triggered_at": "2026-06-28T16:25:12Z",
+  "triggered_at": "2026-06-28T17:25:28Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "78832cc",
-      "new": "848c4b2",
-      "full": "848c4b2d68123ddc8f056c10e51fb6c989c8ab53",
+      "old": "848c4b2",
+      "new": "b23fa30",
+      "full": "b23fa30099d399a1e888ace979c99c05bc81a2ff",
       "msg": "N/A",
       "date": "unknown"
     }
