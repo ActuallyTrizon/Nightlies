@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-28T11:32:41Z",
+  "triggered_at": "2026-06-28T13:31:43Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "7da44e5",
-      "new": "d7b78a0",
-      "full": "d7b78a092f3d60ab30c0a93d753bc9c0d61dd107",
-      "msg": "N/A",
-      "date": "unknown"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "ea72882",
+      "new": "99734aa",
+      "full": "99734aa206f5ee3e2b2a394b488566235afa956d",
+      "msg": "anv: add infrastructure to deal with missing barriers in applications",
+      "date": "2026-06-28T12:01:35.000+00:00"
     }
   ]
 }
