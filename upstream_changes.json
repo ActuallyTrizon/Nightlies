@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-29T15:08:11Z",
+  "triggered_at": "2026-06-29T16:59:03Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "0aea852",
-      "new": "6454283",
-      "full": "64542839fedb9684a5636660d1d138121ee17eec",
-      "msg": "[util] Actually return proper refresh period",
-      "date": "2026-06-29T14:48:22Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "148a1a2",
+      "new": "83d9c30",
+      "full": "83d9c30aa48ac59c95bd10666937f72d278881ff",
+      "msg": "[WRAPPER] Wrapped 1 more symbol for wayland-client (#3996)",
+      "date": "2026-06-29T16:54:28Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4cbf95e",
-      "new": "99d6770",
-      "full": "99d67700d0640053058b596ab963e742b2975e24",
-      "msg": "pvr/ci: enable PVR_IGNORE_FINISHME_WARNINGS",
-      "date": "2026-06-29T14:35:36.000+00:00"
+      "old": "99d6770",
+      "new": "a5d96cd",
+      "full": "a5d96cd6cda0bd1b358468f00530bb6535e6ef14",
+      "msg": "r300: move r500 FS derivative fixup to nir_to_rc translation",
+      "date": "2026-06-29T16:30:43.000+00:00"
     }
   ]
 }
