@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-29T17:54:45Z",
+  "triggered_at": "2026-06-29T19:32:37Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "3e60aa5",
-      "new": "9f2e982",
-      "full": "9f2e9829449d478cdf13d7bc1f6b0782963b90a2",
-      "msg": "Merge pull request #5617 from simon902/vcvtps2ph",
-      "date": "2026-06-29T17:40:45Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6454283",
+      "new": "a9ab43b",
+      "full": "a9ab43b31d6ee5054a69d31080d43f867bed1d15",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-06-29T19:22:06Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a5d96cd",
-      "new": "e9115e4",
-      "full": "e9115e448f7bf1ee36d162be36b009f031e9821d",
-      "msg": "freedreno/drm: Fix uninitialized read of BO metadata on import",
-      "date": "2026-06-29T17:14:46.000+00:00"
+      "old": "e9115e4",
+      "new": "f39e380",
+      "full": "f39e380bd1aa5a340f60f05d6ec96caf2811972a",
+      "msg": "ci/windows: Update WARP to 1.0.20",
+      "date": "2026-06-29T18:59:45.000+00:00"
     }
   ]
 }
