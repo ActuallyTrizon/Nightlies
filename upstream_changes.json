@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-29T16:59:03Z",
+  "triggered_at": "2026-06-29T17:54:45Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "148a1a2",
-      "new": "83d9c30",
-      "full": "83d9c30aa48ac59c95bd10666937f72d278881ff",
-      "msg": "[WRAPPER] Wrapped 1 more symbol for wayland-client (#3996)",
-      "date": "2026-06-29T16:54:28Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "3e60aa5",
+      "new": "9f2e982",
+      "full": "9f2e9829449d478cdf13d7bc1f6b0782963b90a2",
+      "msg": "Merge pull request #5617 from simon902/vcvtps2ph",
+      "date": "2026-06-29T17:40:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "99d6770",
-      "new": "a5d96cd",
-      "full": "a5d96cd6cda0bd1b358468f00530bb6535e6ef14",
-      "msg": "r300: move r500 FS derivative fixup to nir_to_rc translation",
-      "date": "2026-06-29T16:30:43.000+00:00"
+      "old": "a5d96cd",
+      "new": "e9115e4",
+      "full": "e9115e448f7bf1ee36d162be36b009f031e9821d",
+      "msg": "freedreno/drm: Fix uninitialized read of BO metadata on import",
+      "date": "2026-06-29T17:14:46.000+00:00"
     }
   ]
 }
