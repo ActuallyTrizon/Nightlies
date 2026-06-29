@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-29T13:24:25Z",
+  "triggered_at": "2026-06-29T15:08:11Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "60f032d",
-      "new": "0aea852",
-      "full": "0aea8528a40834423ef120062e7a001c1c78c831",
-      "msg": "[util] Avoid division by zero with invalid refresh rates",
-      "date": "2026-06-29T12:31:34Z"
+      "old": "0aea852",
+      "new": "6454283",
+      "full": "64542839fedb9684a5636660d1d138121ee17eec",
+      "msg": "[util] Actually return proper refresh period",
+      "date": "2026-06-29T14:48:22Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4cbf95e",
+      "new": "99d6770",
+      "full": "99d67700d0640053058b596ab963e742b2975e24",
+      "msg": "pvr/ci: enable PVR_IGNORE_FINISHME_WARNINGS",
+      "date": "2026-06-29T14:35:36.000+00:00"
     }
   ]
 }
