@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-06-29T09:32:56Z",
+  "triggered_at": "2026-06-29T11:38:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d7b78a0",
+      "new": "148a1a2",
+      "full": "148a1a21e87d67f81bfa39ae5c91076e53dcc1dd",
+      "msg": "N/A",
+      "date": "unknown"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "6ef5e11",
+      "new": "074c5b6",
+      "full": "074c5b6352d58f41e65392a9c979af86c39de3f5",
+      "msg": "vkd3d: Add another no-stagger workaround.",
+      "date": "2026-06-29T09:47:16Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "e0be8e8",
-      "new": "8dc0423",
-      "full": "8dc04230705481734d67875c34a7e8801c850c28",
+      "old": "8dc0423",
+      "new": "60f032d",
+      "full": "60f032d23d880923aeb1344dcf86dceb66ad8ba4",
       "msg": "N/A",
       "date": "unknown"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c5f0ccc",
-      "new": "b773000",
-      "full": "b773000de187f5e88afab71b0da68d8014ee49a8",
-      "msg": "docs/features: Mark VK_EXT_descriptor_heap done for anv",
-      "date": "2026-06-29T02:06:57.000-07:00"
+      "old": "b773000",
+      "new": "4cbf95e",
+      "full": "4cbf95e1b52716ac74416a83874db523e7367ea4",
+      "msg": "v3dv: remove unused no-op job allocation setup",
+      "date": "2026-06-29T10:55:06.000+00:00"
     }
   ]
 }
