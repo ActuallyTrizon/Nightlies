@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-29T19:32:37Z",
+  "triggered_at": "2026-06-29T20:35:47Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "6454283",
-      "new": "a9ab43b",
-      "full": "a9ab43b31d6ee5054a69d31080d43f867bed1d15",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-06-29T19:22:06Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9f2e982",
+      "new": "72e0127",
+      "full": "72e01274c9d5efcd860fc36ebaee37072528c8be",
+      "msg": "Merge pull request #5627 from lioncash/vpblendw",
+      "date": "2026-06-29T20:03:49Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e9115e4",
-      "new": "f39e380",
-      "full": "f39e380bd1aa5a340f60f05d6ec96caf2811972a",
-      "msg": "ci/windows: Update WARP to 1.0.20",
-      "date": "2026-06-29T18:59:45.000+00:00"
+      "old": "f39e380",
+      "new": "b0050c4",
+      "full": "b0050c4e754172c1c986f34e4ac0333d3d01479b",
+      "msg": "meson: drop misleading `-D egl-native-platform` values",
+      "date": "2026-06-29T21:58:30.000+02:00"
     }
   ]
 }
