@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-29T00:34:33Z",
+  "triggered_at": "2026-06-29T07:37:05Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "32b96c2",
-      "new": "83a989c",
-      "full": "83a989c6dc2790bd9f36f97c3f34493b9373ff77",
-      "msg": "Merge pull request #5625 from lioncash/perm",
-      "date": "2026-06-29T00:08:48Z"
+      "old": "83a989c",
+      "new": "3e60aa5",
+      "full": "3e60aa5738bfb22757905a9307fcdee3f53b4761",
+      "msg": "N/A",
+      "date": "unknown"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "2f5aee0",
+      "new": "c5f0ccc",
+      "full": "c5f0ccc62ad6c1453c5dff0075275e3a2f6f4b80",
+      "msg": "panvk: set cfg cull status according to primitive topology",
+      "date": "2026-06-29T07:01:42.000+00:00"
     }
   ]
 }
