@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-06-29T07:37:05Z",
+  "triggered_at": "2026-06-29T09:32:56Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "83a989c",
-      "new": "3e60aa5",
-      "full": "3e60aa5738bfb22757905a9307fcdee3f53b4761",
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "e0be8e8",
+      "new": "8dc0423",
+      "full": "8dc04230705481734d67875c34a7e8801c850c28",
       "msg": "N/A",
       "date": "unknown"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2f5aee0",
-      "new": "c5f0ccc",
-      "full": "c5f0ccc62ad6c1453c5dff0075275e3a2f6f4b80",
-      "msg": "panvk: set cfg cull status according to primitive topology",
-      "date": "2026-06-29T07:01:42.000+00:00"
+      "old": "c5f0ccc",
+      "new": "b773000",
+      "full": "b773000de187f5e88afab71b0da68d8014ee49a8",
+      "msg": "docs/features: Mark VK_EXT_descriptor_heap done for anv",
+      "date": "2026-06-29T02:06:57.000-07:00"
     }
   ]
 }
