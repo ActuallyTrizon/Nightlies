@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-30T17:34:11Z",
+  "triggered_at": "2026-06-30T18:33:48Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "417bd86",
+      "new": "a79c471",
+      "full": "a79c471c31d4af6e045068852ff701a89f71fc94",
+      "msg": "Merge pull request #5634 from lioncash/shuffle",
+      "date": "2026-06-30T18:26:09Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "16ba3cf",
-      "new": "45b8dfc",
-      "full": "45b8dfc0b8d350cc797c085a0e0ed26a40d87be2",
-      "msg": "freedreno: Add some gen8 control registers",
-      "date": "2026-06-30T16:30:07.000+00:00"
+      "old": "45b8dfc",
+      "new": "a472df7",
+      "full": "a472df72eb67591454756c522c2eacbc69b65088",
+      "msg": "intel/executor: inform oa not available if that's the case",
+      "date": "2026-06-30T17:48:09.000+00:00"
     }
   ]
 }
