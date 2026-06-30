@@ -27,7 +27,7 @@ jobs:
       - name: Build DXVK
         id: version
         run: |
-          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          git clone --recursive --branch v3.0 https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           git fetch --tags
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -36,8 +36,12 @@ jobs:
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
           
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Official Ph42oN gplasync-3.0-1 patch (built against the pinned DXVK v3.0 tag).
+          # Applied with `patch --fuzz` rather than `git apply`: the 3.0-1 patch has minor
+          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which patch
+          # tolerates and git apply rejects. Replaces the stale upstream master patch.
+          curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
           
           sed -i 's/ninja/ninja -j 2/g' package-release.sh
           ./package-release.sh master ../dxvk-built --no-package
@@ -119,7 +123,7 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          git clone --recursive --branch v3.0 https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           git fetch --tags
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -128,8 +132,12 @@ jobs:
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Official Ph42oN gplasync-3.0-1 patch (built against the pinned DXVK v3.0 tag).
+          # Applied with `patch --fuzz` rather than `git apply`: the 3.0-1 patch has minor
+          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which patch
+          # tolerates and git apply rejects. Replaces the stale upstream master patch.
+          curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
       - name: Configure Cross-Files
         run: |
@@ -246,12 +254,16 @@ jobs:
       - name: Clone DXVK & Apply Patch
         id: version
         run: |
-          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          git clone --recursive --branch v3.0 https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           COMMIT_HASH=$(git rev-parse --short HEAD)
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Official Ph42oN gplasync-3.0-1 patch (built against the pinned DXVK v3.0 tag).
+          # Applied with `patch --fuzz` rather than `git apply`: the 3.0-1 patch has minor
+          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which patch
+          # tolerates and git apply rejects. Replaces the stale upstream master patch.
+          curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
           # Build DXVK
           sed -i 's/ninja/ninja -j 2/g' package-release.sh
           ./package-release.sh master ../dxvk-built --no-package
@@ -372,12 +384,16 @@ jobs:
       - name: Clone DXVK & Apply Patch
         id: version
         run: |
-          git clone --recursive https://github.com/doitsujin/dxvk.git dxvk
+          git clone --recursive --branch v3.0 https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           COMMIT_HASH=$(git rev-parse --short HEAD)
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-          git apply dxvk-gplasync-master.patch
+          # Official Ph42oN gplasync-3.0-1 patch (built against the pinned DXVK v3.0 tag).
+          # Applied with `patch --fuzz` rather than `git apply`: the 3.0-1 patch has minor
+          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which patch
+          # tolerates and git apply rejects. Replaces the stale upstream master patch.
+          curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
       - name: Clone DXVK-NVAPI
         run: git clone --recursive https://github.com/jp7677/dxvk-nvapi.git dxvk-nvapi
