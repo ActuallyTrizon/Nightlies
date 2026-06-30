@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-30T16:42:28Z",
+  "triggered_at": "2026-06-30T17:34:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fa8fa25",
-      "new": "16ba3cf",
-      "full": "16ba3cf32a8d7fffd5854e3ffdc190098146caef",
-      "msg": "d3d12: d3d12_create_fence_raw to lazily register fence event on waits",
-      "date": "2026-06-30T16:12:30.000+00:00"
+      "old": "16ba3cf",
+      "new": "45b8dfc",
+      "full": "45b8dfc0b8d350cc797c085a0e0ed26a40d87be2",
+      "msg": "freedreno: Add some gen8 control registers",
+      "date": "2026-06-30T16:30:07.000+00:00"
     }
   ]
 }
