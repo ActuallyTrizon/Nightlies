@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-06-30T09:03:56Z",
+  "triggered_at": "2026-06-30T11:00:33Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "074c5b6",
+      "new": "6225738",
+      "full": "62257383045ad9a4ed8583dd3c33a0cabb7cfc1b",
+      "msg": "vkd3d: Wire NVAPI OMM enable into RayQuery and RTPSO opt-in paths.",
+      "date": "2026-06-30T09:49:35Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "141bd65",
-      "new": "f5e4233",
-      "full": "f5e423312d3a9f8b653d2b41ff48195fdea91020",
-      "msg": "lavapipe: lower array-deref-of-vec for mesh shader outputs",
-      "date": "2026-06-30T08:03:50.000+00:00"
+      "old": "f5e4233",
+      "new": "7fa1b48",
+      "full": "7fa1b48755647b9468f5c603810260edea9de996",
+      "msg": "radv: disable AMD_device_coherent_memory on gfx12 due to out of order behavior",
+      "date": "2026-06-30T10:25:26.000+00:00"
     }
   ]
 }
