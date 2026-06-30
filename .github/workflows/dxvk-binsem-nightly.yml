@@ -16,7 +16,7 @@ on:
       base_ref:
         description: "Upstream doitsujin/dxvk ref to build (branch/tag/commit)"
         required: false
-        default: "master"
+        default: "v3.0"
       gplasync:
         description: "Also apply the Ph42oN gplasync patch"
         type: boolean
@@ -64,8 +64,12 @@ jobs:
 
           GPL_SUFFIX=""
           if [ "${{ inputs.gplasync }}" = "true" ]; then
-            wget -q https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-            git apply --verbose dxvk-gplasync-master.patch
+            # Official Ph42oN gplasync-3.0-1 patch (built against DXVK 3.0; default
+            # base_ref is the v3.0 tag). Applied with `patch --fuzz` rather than
+            # `git apply`: the 3.0-1 patch has minor context drift vs the exact v3.0
+            # tag tree (one hunk needs fuzz 1), which patch tolerates and git apply does not.
+            curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+            patch -p1 --fuzz=3 < /tmp/gplasync.patch
             GPL_SUFFIX="-gplasync"
           fi
 
@@ -170,8 +174,12 @@ jobs:
 
           GPL_SUFFIX=""
           if [ "${{ inputs.gplasync }}" = "true" ]; then
-            wget -q https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
-            git apply --verbose dxvk-gplasync-master.patch
+            # Official Ph42oN gplasync-3.0-1 patch (built against DXVK 3.0; default
+            # base_ref is the v3.0 tag). Applied with `patch --fuzz` rather than
+            # `git apply`: the 3.0-1 patch has minor context drift vs the exact v3.0
+            # tag tree (one hunk needs fuzz 1), which patch tolerates and git apply does not.
+            curl -L -o /tmp/gplasync.patch https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+            patch -p1 --fuzz=3 < /tmp/gplasync.patch
             GPL_SUFFIX="-gplasync"
           fi
 

@@ -535,7 +535,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache
+          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache patch
 
       - name: Get DXVK Upstream Commit
         id: dxvk-hash
@@ -593,9 +593,9 @@ jobs:
       - name: Build DXVK
         id: version
         run: |
-          # Full clone — git describe requires commit history to locate the nearest tag.
-          # Submodules stay shallow since they don't need git describe.
-          git clone --recurse-submodules --shallow-submodules \
+          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
+          # The v3.0 tag is fetched with the shallow clone, so git describe still works.
+          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -604,10 +604,14 @@ jobs:
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
-          # Local rebased gplasync patch — upstream main is stale (last update 2025-12-29)
-          # and no longer applies past DXVK cc418519 (insert->emplace pipeline refactor).
-          # Revert to curl-ing Ph42oN/dxvk-gplasync once upstream rebases.
-          git apply "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
+          # Official Ph42oN gplasync-3.0-1 patch (published 2026-06-28, built against
+          # DXVK 3.0), replacing the stale locally-rebased dxvk-gplasync-master.patch.
+          # Applied with `patch` rather than `git apply`: the 3.0-1 patch has minor
+          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which
+          # `patch --fuzz` tolerates but `git apply` rejects.
+          curl -L -o /tmp/gplasync.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
           # Use all available vCPUs (runners have 4; was hardcoded to 2)
           sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
@@ -801,7 +805,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             ca-certificates curl xz-utils jq git build-essential \
-            python3 pkg-config zstd meson ninja-build wget unzip zip ccache
+            python3 pkg-config zstd meson ninja-build wget unzip zip ccache patch
 
       - name: Get DXVK Upstream Commit
         id: dxvk-hash
@@ -867,9 +871,9 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          # Full clone — git describe requires commit history to locate the nearest tag.
-          # Submodules stay shallow since they don't need git describe.
-          git clone --recurse-submodules --shallow-submodules \
+          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
+          # The v3.0 tag is fetched with the shallow clone, so git describe still works.
+          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -878,8 +882,11 @@ jobs:
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-          # Local rebased gplasync patch — see note in the gplasync (std) job above.
-          git apply "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
+          # Official Ph42oN gplasync-3.0-1 patch — see note in the gplasync (std) job above.
+          # gplasync is always applied for this ARM64EC variant.
+          curl -L -o /tmp/gplasync.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
       - name: Configure Cross-Files
         run: |
@@ -1004,7 +1011,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache
+          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache patch
 
       - name: Get DXVK Upstream Commit
         id: dxvk-hash
@@ -1058,7 +1065,8 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          git clone --recurse-submodules --shallow-submodules \
+          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
+          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -1068,12 +1076,15 @@ jobs:
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
-          # Ph42oN gplasync patch (always applied for this variant)
-          # Local rebased copy — upstream main no longer applies past DXVK cc418519
-          # (insert->emplace pipeline refactor). Revert to curl once upstream rebases.
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
+          # Ph42oN gplasync patch (always applied for this variant). Official
+          # gplasync-3.0-1 (built against DXVK 3.0) via `patch --fuzz` — see the
+          # gplasync (std) job above for why git apply is not used here.
+          curl -L -o /tmp/gplasync.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
-          # leegao binary-semaphore fallback (committed in this repo)
+          # leegao binary-semaphore fallback (committed in this repo) — applies cleanly
+          # against v3.0; touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync.
           git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
 
       - name: Build DXVK
@@ -1147,7 +1158,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             ca-certificates curl xz-utils jq git build-essential \
-            python3 pkg-config zstd meson ninja-build wget unzip zip ccache
+            python3 pkg-config zstd meson ninja-build wget unzip zip ccache patch
 
       - name: Get DXVK Upstream Commit
         id: dxvk-hash
@@ -1212,7 +1223,8 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          git clone --recurse-submodules --shallow-submodules \
+          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
+          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
           LATEST_TAG=$(git describe --tags --abbrev=0)
@@ -1222,12 +1234,15 @@ jobs:
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
 
-          # Ph42oN gplasync patch (always applied for this variant)
-          # Local rebased copy — upstream main no longer applies past DXVK cc418519
-          # (insert->emplace pipeline refactor). Revert to curl once upstream rebases.
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-gplasync-master.patch"
+          # Ph42oN gplasync patch (always applied for this variant). Official
+          # gplasync-3.0-1 (built against DXVK 3.0) via `patch --fuzz` — see the
+          # gplasync (std) job above for why git apply is not used here.
+          curl -L -o /tmp/gplasync.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
+          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
-          # leegao binary-semaphore fallback (committed in this repo)
+          # leegao binary-semaphore fallback (committed in this repo) — applies cleanly
+          # against v3.0; touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync.
           git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
 
       - name: Configure Cross-Files
