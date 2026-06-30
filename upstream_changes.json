@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-06-30T11:00:33Z",
+  "triggered_at": "2026-06-30T12:37:37Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "83d9c30",
+      "new": "fc8a8d0",
+      "full": "fc8a8d0b83f929bbd9f920d25ace4384cebe5e36",
+      "msg": "[WRAPPER] Simplified 148a1a2 by add wrpper as part of the hash key for bridge se",
+      "date": "2026-06-30T11:32:34Z"
+    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "074c5b6",
-      "new": "6225738",
-      "full": "62257383045ad9a4ed8583dd3c33a0cabb7cfc1b",
-      "msg": "vkd3d: Wire NVAPI OMM enable into RayQuery and RTPSO opt-in paths.",
-      "date": "2026-06-30T09:49:35Z"
+      "old": "6225738",
+      "new": "4232071",
+      "full": "4232071c346c0a7e01400ce0301c0f35d40a5b8b",
+      "msg": "vkd3d: Add Witcher 3 workaround for missing RTAS flags.",
+      "date": "2026-06-30T12:05:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f5e4233",
-      "new": "7fa1b48",
-      "full": "7fa1b48755647b9468f5c603810260edea9de996",
-      "msg": "radv: disable AMD_device_coherent_memory on gfx12 due to out of order behavior",
-      "date": "2026-06-30T10:25:26.000+00:00"
+      "old": "7fa1b48",
+      "new": "7fb22ad",
+      "full": "7fb22ad1a0c51b76eab7f7d122caa816135af289",
+      "msg": "panfrost/ci: turn bifrost / valhall rules into per-kernel driver",
+      "date": "2026-06-30T11:40:12.000+00:00"
     }
   ]
 }
