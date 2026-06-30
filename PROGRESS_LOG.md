@@ -6,6 +6,65 @@
 
 ---
 
+## Session — 2026-06-30
+
+### [fix] — Pin DXVK v3.0 + switch to Ph42oN's official gplasync-3.0-1 patch (the "revert to curl once upstream rebases" follow-up) (2026-06-30)
+**Branch:** `fix/dxvk-gplasync-3.0-pin` (`c6e81909`) → **merged to `main` via merge commit `f881c5ce`** (no-ff; main had advanced to `65a6041` w/ a components-json auto-commit, so a real merge — no conflicts, only the 3 DXVK workflow YAMLs).
+
+#### Problem
+The vendored `patches/dxvk-gplasync-master.patch` from the 2026-06-03 session drifted AGAIN.
+All 4 DXVK jobs went red for 30+ consecutive "All-in-One Emulation Nightlies" runs (Box64 /
+VKD3D / FEXCore stayed green), failing at the **"Clone & Patch DXVK"** step. DXVK `HEAD`
+(floating) moved past the rebased patch → hunks no longer apply:
+- `src/dxvk/dxvk_context.cpp:6668` → patch does not apply
+- `src/dxvk/dxvk_graphics.cpp:1415` → patch does not apply
+Last failed run at diagnosis: `28432926425`.
+
+#### Fix
+The 2026-06-03 note said "revert to curl once he rebases upstream main." That condition is
+now MET: DXVK upstream tagged **`v3.0`**, and Ph42oN published **`dxvk-gplasync-3.0-1.patch`**
+(2026-06-28, GitLab `Ph42oN/dxvk-gplasync`). So we stop chasing floating `HEAD`:
+1. **Pin the clone** to `--branch v3.0` in all DXVK jobs (no more `git describe` of a moving
+   target driving the build source).
+2. **Switch the gplasync source** from the vendored master patch back to the official tagged
+   patch, curl'd from `https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch`.
+3. ⚠️ **Applied via `patch -p1 --fuzz=3`, NOT `git apply`** — the official 3.0-1 patch was built
+   against a slightly different DXVK 3.0 source blob than the `v3.0` git tag (context.cpp blob
+   `c84cf342` vs tag `d8da03e3`; one hunk's leading context line is `GpIndependentSets);` in the
+   patch vs `GpDirtyDepthBias));` in the tag). `git apply` refuses on that context mismatch;
+   `patch --fuzz=3` applies cleanly (one hunk needs fuzz 1, rest are pure offsets, anchoring on
+   the unique `getPipelineHandle`/`updateRenderTargets` lines). Documented inline in the YAML.
+   Added `patch` to the 4 DXVK apt installs.
+4. The 2 BinSem jobs **keep `git apply` for `dxvk-binary-semaphores.patch`** — it still applies
+   clean against `v3.0` with no rebase (touches only `dxvk_cmdlist.{cpp,h}` / `dxvk_queue.{cpp,h}`,
+   no gplasync overlap). Verified locally (exit 0) and on CI.
+
+#### Verification
+- **Branch CI run `28435269627`** — all 14 build jobs green incl. all 4 DXVK
+  (GPLAsync / ARM64EC / BinSem GPLAsync / BinSem ARM64EC), all built from DXVK `v3.0` commit
+  `97fe0c66`. (The branch run's only red was the `Update README` push step — it auto-commits +
+  pushes and only works on the default branch; irrelevant to DXVK.)
+- **Post-merge manual dispatch on `main` — run `28436548767`: `success`, ALL jobs green**,
+  including `Create Nightly Release` and its `Update README` step (confirming the branch-run
+  red was purely a non-default-branch artifact). Release `nightly-20260630-101231` published
+  (Latest) + rolling `nightly-latest` refreshed, both carrying v3.0-built DXVK.
+- Build-proven + release-published. DXVK 3.0 runtime rendering NOT yet device-tested.
+
+#### Files touched
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml` (orchestrator — 4 DXVK jobs)
+- `.github/workflows/dxvk-binsem-nightly.yml` (`base_ref` default `master`→`v3.0`; both BinSem jobs)
+- `.github/workflows/dxvk-standalone-nightly.yml` (all 4 jobs)
+
+#### Flagged / not done
+- `dxvk-stable-matrix-nightly.yml` **intentionally untouched** — no drift bug (it already pins
+  per-version tags + version-matched local patches for 2.5–2.7.1, never the master patch).
+  Adding a 3.0 row = separate enhancement (needs committed local `dxvk-gplasync-3.0-1.patch` +
+  `dxvk-binary-semaphores-3.0.patch`).
+- Optional hardening: guard the `Update README` step with `if: github.ref == 'refs/heads/main'`
+  so non-default-branch dispatches go fully green. Out of scope here.
+
+---
+
 ## Session — 2026-06-03
 
 ### [fix] — Rebase + vendor gplasync master patch (DXVK cc418519 broke it); fix build-dxvk checkout (2026-06-03)
