@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-30T07:14:28Z",
+  "triggered_at": "2026-06-30T09:03:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9710884",
-      "new": "141bd65",
-      "full": "141bd6548345242843a63c41886d8fa49e382c57",
-      "msg": "radv: Support explicit DRM format modifier from android gralloc",
-      "date": "2026-06-30T06:46:05.000+00:00"
+      "old": "141bd65",
+      "new": "f5e4233",
+      "full": "f5e423312d3a9f8b653d2b41ff48195fdea91020",
+      "msg": "lavapipe: lower array-deref-of-vec for mesh shader outputs",
+      "date": "2026-06-30T08:03:50.000+00:00"
     }
   ]
 }
