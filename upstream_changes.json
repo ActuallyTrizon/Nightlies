@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-30T18:33:48Z",
+  "triggered_at": "2026-06-30T19:33:15Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "417bd86",
-      "new": "a79c471",
-      "full": "a79c471c31d4af6e045068852ff701a89f71fc94",
-      "msg": "Merge pull request #5634 from lioncash/shuffle",
-      "date": "2026-06-30T18:26:09Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "45b8dfc",
-      "new": "a472df7",
-      "full": "a472df72eb67591454756c522c2eacbc69b65088",
-      "msg": "intel/executor: inform oa not available if that's the case",
-      "date": "2026-06-30T17:48:09.000+00:00"
+      "old": "a472df7",
+      "new": "0983c72",
+      "full": "0983c72a7ed9907cb494079260f1e15dd695ea42",
+      "msg": "anv: fix push pointer optimization with DGC",
+      "date": "2026-06-30T18:58:46.000+00:00"
     }
   ]
 }
