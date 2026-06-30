@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-06-30T20:36:23Z",
+  "triggered_at": "2026-06-30T21:30:29Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "a79c471",
-      "new": "a4f89b7",
-      "full": "a4f89b79a3cbe8954bec222e1d20162ee802786f",
-      "msg": "Merge pull request #5636 from lioncash/move",
-      "date": "2026-06-30T19:35:13Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0983c72",
-      "new": "fd16393",
-      "full": "fd16393e56ac4b3fe213048f45e4f2477cbb43c1",
-      "msg": "intel/ci: Remove nightly CML jobs, retire runner",
-      "date": "2026-06-30T19:18:54.000+00:00"
+      "old": "fd16393",
+      "new": "8cf9a06",
+      "full": "8cf9a06e154dec3854d3bdc1d050769e3d560423",
+      "msg": "st/pbo_compute: account for drivers failing to create cs shaders",
+      "date": "2026-06-30T20:49:43.000+00:00"
     }
   ]
 }
