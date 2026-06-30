@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-06-30T14:50:20Z",
+  "triggered_at": "2026-06-30T15:49:08Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "fc8a8d0",
+      "new": "dd18047",
+      "full": "dd180478f1dd3b0c407d3f31771b358f3c81b59e",
+      "msg": "[TRACE] Support configuring trace address list through BOX64_TRACE (#3998)",
+      "date": "2026-06-30T15:47:28Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a9ab43b",
+      "new": "cdbccfe",
+      "full": "cdbccfe9709cb60b20d682aa39b1d67f2926fe3d",
+      "msg": "[dxvk] Remove Intel workaround to disable GPL",
+      "date": "2026-06-30T15:12:36Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "57f136e",
-      "new": "c053340",
-      "full": "c05334058d5417b0986578c94b9aa6ab601f3ba8",
-      "msg": "pco: allow non-pure integer formats for image xchg atomics",
-      "date": "2026-06-30T13:42:03.000+00:00"
+      "old": "c053340",
+      "new": "fa8fa25",
+      "full": "fa8fa25d6077eac3d0206495b5ecb1ddc5066a1c",
+      "msg": "glx: fix per-display drawHash / zombieGLXDrawable / dri2Hash leak on GLX_USE_APP",
+      "date": "2026-06-30T15:16:17.000+00:00"
     }
   ]
 }
