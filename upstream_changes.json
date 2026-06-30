@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-06-30T21:30:29Z",
+  "triggered_at": "2026-06-30T22:25:52Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "fd16393",
-      "new": "8cf9a06",
-      "full": "8cf9a06e154dec3854d3bdc1d050769e3d560423",
-      "msg": "st/pbo_compute: account for drivers failing to create cs shaders",
-      "date": "2026-06-30T20:49:43.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "a4f89b7",
+      "new": "3d593ce",
+      "full": "3d593ce87dadd063832ce444dbb1081c0b214802",
+      "msg": "Merge pull request #5626 from Sonicadvance1/177",
+      "date": "2026-06-30T22:15:17Z"
     }
   ]
 }
