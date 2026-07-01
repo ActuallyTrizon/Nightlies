@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-01T18:37:07Z",
+  "triggered_at": "2026-07-01T19:32:09Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "f2f7b50",
-      "new": "eea51ba",
-      "full": "eea51bab77ec0449ab16f354af0747d7931400be",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-07-01T18:27:25Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "60ef62f",
-      "new": "66d84e2",
-      "full": "66d84e2df8d1dc8c7c2f68fc53a49dea29de4693",
-      "msg": "zink: noop per-resource synchronization for unordered->ordered access",
-      "date": "2026-07-01T17:46:09.000+00:00"
+      "old": "66d84e2",
+      "new": "6fa81ed",
+      "full": "6fa81edf350ab680292e767ba407fc89f88b8da9",
+      "msg": "dzn: silence PREfast C33010 warnings",
+      "date": "2026-07-01T11:58:25.000-07:00"
     }
   ]
 }
