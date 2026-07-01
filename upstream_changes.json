@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-01T20:33:42Z",
+  "triggered_at": "2026-07-01T21:31:04Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "7fa4d78",
-      "new": "5d8d052",
-      "full": "5d8d052a77c5e330fecf24e0ad79feb46a49a812",
-      "msg": "Merge pull request #5640 from lioncash/move",
-      "date": "2026-07-01T19:41:03Z"
+      "old": "5d8d052",
+      "new": "16f90b3",
+      "full": "16f90b33f33a79e20f378d2877276477eac1e3e0",
+      "msg": "Merge pull request #5641 from lioncash/minmax",
+      "date": "2026-07-01T21:17:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6fa81ed",
-      "new": "92d452c",
-      "full": "92d452cb2345df4f7e0d8318a1709abe451f56b2",
-      "msg": "nvk/ci: update nightly job expectations",
-      "date": "2026-07-01T19:49:51.000+00:00"
+      "old": "92d452c",
+      "new": "790bebe",
+      "full": "790bebe7ca0d9625dc378a805540da07523b17ef",
+      "msg": "intel/gen: Use lookup tables for Gfx12+ short type encoding/decoding",
+      "date": "2026-07-01T20:47:28.000+00:00"
     }
   ]
 }
