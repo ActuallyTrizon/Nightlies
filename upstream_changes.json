@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-01T13:46:37Z",
+  "triggered_at": "2026-07-01T14:57:46Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5592223",
-      "new": "90dffce",
-      "full": "90dffce78a8297b31dab47e1be3a3cfc0fc103b5",
-      "msg": "[INTERP] Improve handling of fprem x87 opcode ([DYNAREC] too)",
-      "date": "2026-07-01T13:29:55Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "cdbccfe",
+      "new": "f2f7b50",
+      "full": "f2f7b5080b79835ae45ddc38a555004739dfbfaf",
+      "msg": "[util] Add FPS limit for Manhunt",
+      "date": "2026-07-01T13:46:34Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "58b14a6",
+      "new": "4309489",
+      "full": "43094891c9ba32e862eefc85b042e331d2b0bd59",
+      "msg": "docs: add sha sum for 26.1.4",
+      "date": "2026-07-01T16:33:17.000+02:00"
     }
   ]
 }
