@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-01T11:03:38Z",
+  "triggered_at": "2026-07-01T12:54:48Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "38a4a2c",
+      "new": "5592223",
+      "full": "55922238d3b37bf690b1d5c56f59149b95509add",
+      "msg": "[TRACE] Improved trace for x87 register that have valid 80bits value",
+      "date": "2026-07-01T11:30:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b100edb",
-      "new": "c2e02de",
-      "full": "c2e02de11b6cb231a8a5ce6e2b5398f350ab8b4c",
-      "msg": "ci/panfrost: add piglit OpenCL testing for G610",
-      "date": "2026-07-01T10:11:18.000+00:00"
+      "old": "c2e02de",
+      "new": "58b14a6",
+      "full": "58b14a6f563c7e75f798c7ceacc832dea1de9bcc",
+      "msg": "kk: refold combined image/sampler packing after vars_to_ssa",
+      "date": "2026-07-01T12:07:39.000+00:00"
     }
   ]
 }
