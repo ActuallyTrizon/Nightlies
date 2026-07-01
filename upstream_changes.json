@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-01T09:06:04Z",
+  "triggered_at": "2026-07-01T11:03:38Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "2f850d4",
-      "new": "38a4a2c",
-      "full": "38a4a2c7515c5b686010bee4f0d6c7e5e77602da",
-      "msg": "[DYNAREC] Mark a hopage before changing protection",
-      "date": "2026-07-01T08:56:21Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0c195a0",
-      "new": "b100edb",
-      "full": "b100edba5c0107e63181168c00179425b2772209",
-      "msg": "zink/ci: drop leftover anv-cml deqp suite",
-      "date": "2026-07-01T08:46:35.000+00:00"
+      "old": "b100edb",
+      "new": "c2e02de",
+      "full": "c2e02de11b6cb231a8a5ce6e2b5398f350ab8b4c",
+      "msg": "ci/panfrost: add piglit OpenCL testing for G610",
+      "date": "2026-07-01T10:11:18.000+00:00"
     }
   ]
 }
