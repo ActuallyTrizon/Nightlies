@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-01T00:34:23Z",
+  "triggered_at": "2026-07-01T05:31:06Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "44e24c9",
-      "new": "110313e",
-      "full": "110313e7de47233c93ef3c746823a8d6899d5f40",
-      "msg": "Merge pull request #5638 from lioncash/swap",
-      "date": "2026-06-30T23:38:56Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "d02b251",
+      "new": "a6bb4bb",
+      "full": "a6bb4bbd1eaa8b1b8ba9e5df98ed2c9958393e40",
+      "msg": "intel/brw: Factor out combinable_ordered_pipe() helper",
+      "date": "2026-07-01T04:13:52.000+00:00"
     }
   ]
 }
