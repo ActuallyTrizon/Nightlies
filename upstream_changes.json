@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-01T21:31:04Z",
+  "triggered_at": "2026-07-01T22:27:31Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5d8d052",
-      "new": "16f90b3",
-      "full": "16f90b33f33a79e20f378d2877276477eac1e3e0",
-      "msg": "Merge pull request #5641 from lioncash/minmax",
-      "date": "2026-07-01T21:17:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "92d452c",
-      "new": "790bebe",
-      "full": "790bebe7ca0d9625dc378a805540da07523b17ef",
-      "msg": "intel/gen: Use lookup tables for Gfx12+ short type encoding/decoding",
-      "date": "2026-07-01T20:47:28.000+00:00"
+      "old": "790bebe",
+      "new": "114e6ef",
+      "full": "114e6ef02d32a15373419078e1037680934ba139",
+      "msg": "intel/blorp: memset(0) blorp keys during initialization",
+      "date": "2026-07-01T22:03:17.000+00:00"
     }
   ]
 }
