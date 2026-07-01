@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-01T15:55:11Z",
+  "triggered_at": "2026-07-01T16:46:26Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "110313e",
-      "new": "7fa4d78",
-      "full": "7fa4d7826918981aa92e0457cbeeec157fc9d8c9",
-      "msg": "Merge pull request #5635 from Sonicadvance1/178",
-      "date": "2026-07-01T15:15:13Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4309489",
-      "new": "6674dc9",
-      "full": "6674dc92b87f201f9809a6655b5ae69174143164",
-      "msg": "tu: Emit bin info in Perfetto render_pass",
-      "date": "2026-07-01T14:59:25.000+00:00"
+      "old": "6674dc9",
+      "new": "16d454c",
+      "full": "16d454c2d1fc03d5cd99a90281e55f1251e90917",
+      "msg": "kraid/nir: Allow i8v3 ops",
+      "date": "2026-07-01T16:10:44.000+00:00"
     }
   ]
 }
