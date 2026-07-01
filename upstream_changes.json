@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-01T16:46:26Z",
+  "triggered_at": "2026-07-01T17:35:35Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6674dc9",
-      "new": "16d454c",
-      "full": "16d454c2d1fc03d5cd99a90281e55f1251e90917",
-      "msg": "kraid/nir: Allow i8v3 ops",
-      "date": "2026-07-01T16:10:44.000+00:00"
+      "old": "16d454c",
+      "new": "60ef62f",
+      "full": "60ef62fba63a94290df96729bf6c6b246c5d0bc5",
+      "msg": "zink: fix a memleak in zink_init_format_props()",
+      "date": "2026-07-01T16:53:06.000+00:00"
     }
   ]
 }
