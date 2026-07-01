@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-01T22:27:31Z",
+  "triggered_at": "2026-07-01T23:27:58Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "16f90b3",
+      "new": "b9aeccf",
+      "full": "b9aeccf13b2d4c6e4fc4f1ba4db860f312e1347c",
+      "msg": "Merge pull request #5642 from lioncash/feature",
+      "date": "2026-07-01T22:29:02Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "790bebe",
-      "new": "114e6ef",
-      "full": "114e6ef02d32a15373419078e1037680934ba139",
-      "msg": "intel/blorp: memset(0) blorp keys during initialization",
-      "date": "2026-07-01T22:03:17.000+00:00"
+      "old": "114e6ef",
+      "new": "0d82e6c",
+      "full": "0d82e6c4072c4fd7b551cf871ae5d81ea804d553",
+      "msg": "nvk: Interp frag_coord at centroid for min_sample_shading",
+      "date": "2026-07-01T22:26:13.000+00:00"
     }
   ]
 }
