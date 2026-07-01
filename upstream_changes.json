@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-01T14:57:46Z",
+  "triggered_at": "2026-07-01T15:55:11Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "cdbccfe",
-      "new": "f2f7b50",
-      "full": "f2f7b5080b79835ae45ddc38a555004739dfbfaf",
-      "msg": "[util] Add FPS limit for Manhunt",
-      "date": "2026-07-01T13:46:34Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "110313e",
+      "new": "7fa4d78",
+      "full": "7fa4d7826918981aa92e0457cbeeec157fc9d8c9",
+      "msg": "Merge pull request #5635 from Sonicadvance1/178",
+      "date": "2026-07-01T15:15:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "58b14a6",
-      "new": "4309489",
-      "full": "43094891c9ba32e862eefc85b042e331d2b0bd59",
-      "msg": "docs: add sha sum for 26.1.4",
-      "date": "2026-07-01T16:33:17.000+02:00"
+      "old": "4309489",
+      "new": "6674dc9",
+      "full": "6674dc92b87f201f9809a6655b5ae69174143164",
+      "msg": "tu: Emit bin info in Perfetto render_pass",
+      "date": "2026-07-01T14:59:25.000+00:00"
     }
   ]
 }
