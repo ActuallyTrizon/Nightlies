@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-01T07:26:11Z",
+  "triggered_at": "2026-07-01T09:06:04Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "dd18047",
-      "new": "2f850d4",
-      "full": "2f850d4e881ad8da8d729077696bb5139bd3f39a",
-      "msg": "[CORE] Add MallocHookRun to call startMallocHook before RunElfInit (#3999)",
-      "date": "2026-07-01T07:04:49Z"
+      "old": "2f850d4",
+      "new": "38a4a2c",
+      "full": "38a4a2c7515c5b686010bee4f0d6c7e5e77602da",
+      "msg": "[DYNAREC] Mark a hopage before changing protection",
+      "date": "2026-07-01T08:56:21Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a6bb4bb",
-      "new": "0c195a0",
-      "full": "0c195a01b06d693274b51af58d921071643fb5a7",
-      "msg": "drm-shim: Fix racy initialization.",
-      "date": "2026-07-01T05:09:19.000+00:00"
+      "old": "0c195a0",
+      "new": "b100edb",
+      "full": "b100edba5c0107e63181168c00179425b2772209",
+      "msg": "zink/ci: drop leftover anv-cml deqp suite",
+      "date": "2026-07-01T08:46:35.000+00:00"
     }
   ]
 }
