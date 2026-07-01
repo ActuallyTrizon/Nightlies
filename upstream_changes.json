@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-01T19:32:09Z",
+  "triggered_at": "2026-07-01T20:33:42Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "7fa4d78",
+      "new": "5d8d052",
+      "full": "5d8d052a77c5e330fecf24e0ad79feb46a49a812",
+      "msg": "Merge pull request #5640 from lioncash/move",
+      "date": "2026-07-01T19:41:03Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "66d84e2",
-      "new": "6fa81ed",
-      "full": "6fa81edf350ab680292e767ba407fc89f88b8da9",
-      "msg": "dzn: silence PREfast C33010 warnings",
-      "date": "2026-07-01T11:58:25.000-07:00"
+      "old": "6fa81ed",
+      "new": "92d452c",
+      "full": "92d452cb2345df4f7e0d8318a1709abe451f56b2",
+      "msg": "nvk/ci: update nightly job expectations",
+      "date": "2026-07-01T19:49:51.000+00:00"
     }
   ]
 }
