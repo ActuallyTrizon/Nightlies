@@ -370,11 +370,12 @@ jobs:
           # NOTE: deliberately no llvm-strip — preserves the C-only debug
           # sections that define the PPA flavor.
 
-          # profile.json mirrors the FEX-Emu PPA wcp metadata byte-for-byte.
+          # profile.json follows the FEX-Emu PPA wcp metadata, except versionName is
+          # prefixed so component pickers show a self-identifying, PPA-distinct name.
           cat > final_package/profile.json <<EOF
           {
             "type": "FEXCore",
-            "versionName": "${VERSION_SHORT}",
+            "versionName": "FEX-${VERSION_SHORT}-PPA",
             "versionCode": 0,
             "description": "FEXCore Release from PPA",
             "files": [
@@ -495,7 +496,7 @@ jobs:
             "type": "VKD3D",
             "versionName": "${{ env.VERSION_NAME }}",
             "versionCode": 1,
-            "description": "${{ steps.version.outputs.commit }}",
+            "description": "Banners Repo - VKD3D-Proton master nightly (Upstream: HansKristian-Work)",
             "files": [
               {"source": "system32/d3d12.dll", "target": "\${system32}/d3d12.dll"},
               {"source": "system32/d3d12core.dll", "target": "\${system32}/d3d12core.dll"},
@@ -771,7 +772,7 @@ jobs:
             "type": "VKD3D",
             "versionName": "${{ env.VERSION_NAME }}",
             "versionCode": 1,
-            "description": "${{ steps.version.outputs.commit }}",
+            "description": "Banners Repo - VKD3D-Proton master nightly ARM64EC (Upstream: HansKristian-Work)",
             "files": [
               {"source": "system32/d3d12.dll", "target": "\${system32}/d3d12.dll"},
               {"source": "system32/d3d12core.dll", "target": "\${system32}/d3d12core.dll"},
