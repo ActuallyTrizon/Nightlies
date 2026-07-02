@@ -36,17 +36,17 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260702-003905](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260702-003905) |
+| **Release** | [🔗 nightly-20260702-011327](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260702-011327) |
 | **FEXCore** | [`6bcadde65`](https://github.com/FEX-Emu/FEX/commit/6bcadde65) — FEX-2605-Nightly-6bcadde65 |
 | **VKD3D-Proton (Std)** | [`4232071c`](https://github.com/HansKristian-Work/vkd3d-proton/commit/4232071c) |
 | **VKD3D-Proton (ARM64EC)** | [`4232071c`](https://github.com/HansKristian-Work/vkd3d-proton/commit/4232071c) |
-| **DXVK (GPLAsync)** | [`97fe0c66`](https://github.com/doitsujin/dxvk/commit/97fe0c66) |
-| **DXVK (ARM64EC)** | [`97fe0c66`](https://github.com/doitsujin/dxvk/commit/97fe0c66) |
-| **DXVK BinSem (GPLAsync)** | [`97fe0c66`](https://github.com/doitsujin/dxvk/commit/97fe0c66) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
-| **DXVK BinSem (ARM64EC)** | [`97fe0c66`](https://github.com/doitsujin/dxvk/commit/97fe0c66) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK (GPLAsync)** | [`eea51bab`](https://github.com/doitsujin/dxvk/commit/eea51bab) |
+| **DXVK (ARM64EC)** | [`eea51bab`](https://github.com/doitsujin/dxvk/commit/eea51bab) |
+| **DXVK BinSem (GPLAsync)** | [`eea51bab`](https://github.com/doitsujin/dxvk/commit/eea51bab) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK BinSem (ARM64EC)** | [`eea51bab`](https://github.com/doitsujin/dxvk/commit/eea51bab) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
 | **Turnip** | [v26.2.0-20260701-r15](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701-r15) — Turnip v26.2.0-20260701-r15 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260702-003905) |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260702-011327) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
