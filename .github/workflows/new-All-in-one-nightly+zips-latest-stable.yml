@@ -593,25 +593,34 @@ jobs:
       - name: Build DXVK
         id: version
         run: |
-          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
-          # The v3.0 tag is fetched with the shallow clone, so git describe still works.
-          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: build upstream doitsujin/dxvk MASTER (latest commit) and apply
+          # Ph42oN's newest MASTER gplasync patch (vendored under patches/) for a "true"
+          # gplasync. If master ever drifts past what that patch can absorb, fall back to
+          # the last-good release (v3.0 + gplasync-3.0-1) so the nightly still ships.
+          git clone --recurse-submodules --shallow-submodules \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
+          git fetch --tags --force >/dev/null 2>&1 || true
+          # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
+          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
+            echo "Applying vendored MASTER gplasync patch onto dxvk master"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
+          else
+            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            cd ..
+            rm -rf dxvk
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+          fi
+          # Version from whichever tree actually built (master, or the v3.0 fallback).
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-gplasync-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
-
-          # Official Ph42oN gplasync-3.0-1 patch (published 2026-06-28, built against
-          # DXVK 3.0), replacing the stale locally-rebased dxvk-gplasync-master.patch.
-          # Applied with `patch` rather than `git apply`: the 3.0-1 patch has minor
-          # context drift vs the exact v3.0 tag tree (one hunk needs fuzz 1), which
-          # `patch --fuzz` tolerates but `git apply` rejects.
-          curl -L -o /tmp/gplasync.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
-          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
           # Use all available vCPUs (runners have 4; was hardcoded to 2)
           sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
@@ -871,22 +880,32 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
-          # The v3.0 tag is fetched with the shallow clone, so git describe still works.
-          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
+          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
+          # if master drifts past what the master patch can absorb. See gplasync (std) job.
+          git clone --recurse-submodules --shallow-submodules \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
+          git fetch --tags --force >/dev/null 2>&1 || true
+          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
+            echo "Applying vendored MASTER gplasync patch onto dxvk master"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
+          else
+            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            cd ..
+            rm -rf dxvk
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+          fi
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-gplasync-arm64ec-${COMMIT_HASH}"
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-          # Official Ph42oN gplasync-3.0-1 patch — see note in the gplasync (std) job above.
-          # gplasync is always applied for this ARM64EC variant.
-          curl -L -o /tmp/gplasync.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
-          patch -p1 --fuzz=3 < /tmp/gplasync.patch
 
       - name: Configure Cross-Files
         run: |
@@ -1065,10 +1084,26 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
-          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
+          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
+          # if master drifts past what the master patch can absorb. See gplasync (std) job.
+          git clone --recurse-submodules --shallow-submodules \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
+          git fetch --tags --force >/dev/null 2>&1 || true
+          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
+            echo "Applying vendored MASTER gplasync patch onto dxvk master"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
+          else
+            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            cd ..
+            rm -rf dxvk
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+          fi
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-binsem-gplasync-${COMMIT_HASH}"
@@ -1076,16 +1111,10 @@ jobs:
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
-          # Ph42oN gplasync patch (always applied for this variant). Official
-          # gplasync-3.0-1 (built against DXVK 3.0) via `patch --fuzz` — see the
-          # gplasync (std) job above for why git apply is not used here.
-          curl -L -o /tmp/gplasync.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
-          patch -p1 --fuzz=3 < /tmp/gplasync.patch
-
-          # leegao binary-semaphore fallback (committed in this repo) — applies cleanly
-          # against v3.0; touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync.
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
+          # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
+          # Touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync. Applied with
+          # `patch --fuzz` so it tolerates master drift the same way the gplasync patch does.
+          patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
 
       - name: Build DXVK
         run: |
@@ -1223,10 +1252,26 @@ jobs:
       - name: Clone & Patch DXVK
         id: version
         run: |
-          # Pin the DXVK v3.0 tag (fixed target) instead of the moving main HEAD.
-          git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
+          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
+          # if master drifts past what the master patch can absorb. See gplasync (std) job.
+          git clone --recurse-submodules --shallow-submodules \
             https://github.com/doitsujin/dxvk.git dxvk
           cd dxvk
+          git fetch --tags --force >/dev/null 2>&1 || true
+          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
+            echo "Applying vendored MASTER gplasync patch onto dxvk master"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
+          else
+            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            cd ..
+            rm -rf dxvk
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+          fi
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-binsem-gplasync-arm64ec-${COMMIT_HASH}"
@@ -1234,16 +1279,10 @@ jobs:
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
 
-          # Ph42oN gplasync patch (always applied for this variant). Official
-          # gplasync-3.0-1 (built against DXVK 3.0) via `patch --fuzz` — see the
-          # gplasync (std) job above for why git apply is not used here.
-          curl -L -o /tmp/gplasync.patch \
-            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-3.0-1.patch
-          patch -p1 --fuzz=3 < /tmp/gplasync.patch
-
-          # leegao binary-semaphore fallback (committed in this repo) — applies cleanly
-          # against v3.0; touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync.
-          git apply --verbose "$GITHUB_WORKSPACE/patches/dxvk-binary-semaphores.patch"
+          # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
+          # Touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync. Applied with
+          # `patch --fuzz` so it tolerates master drift the same way the gplasync patch does.
+          patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
 
       - name: Configure Cross-Files
         run: |
@@ -1353,6 +1392,10 @@ jobs:
   create-release:
     name: Create Nightly Release
     runs-on: ubuntu-latest
+    # Only publish/refresh nightly-latest from the default branch. Feature-branch
+    # workflow_dispatch runs still build every job (validating the build) but never
+    # publish a release or clobber the production nightly-latest that clients pull.
+    if: github.ref == 'refs/heads/main'
     needs: [build-box64-matrix, build-fex, build-fex-ppa, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec, build-dxvk-binsem, build-dxvk-binsem-arm64ec]
     permissions:
       contents: write
