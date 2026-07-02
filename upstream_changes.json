@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-02T22:00:25Z",
+  "triggered_at": "2026-07-02T23:56:30Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "1db45e2",
+      "new": "b4e2f51",
+      "full": "b4e2f5118a30050987af8b9843a366dba12716c8",
+      "msg": "Merge pull request #5645 from Sonicadvance1/180",
+      "date": "2026-07-02T23:33:37Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "57df60b",
-      "new": "f25147f",
-      "full": "f25147f9756eebc0b6f12b7b6907b6e69c44e5a7",
-      "msg": "intel/ci: Fix xfails for nightlies.",
-      "date": "2026-07-02T21:05:30.000+00:00"
+      "old": "f25147f",
+      "new": "9963753",
+      "full": "99637537e1b33afb21b21bb39290b647b7b67e59",
+      "msg": "kraid/nir: Plumb through texture ops",
+      "date": "2026-07-02T23:16:50.000+00:00"
     }
   ]
 }
