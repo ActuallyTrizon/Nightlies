@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-02T17:54:04Z",
+  "triggered_at": "2026-07-02T19:11:12Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "166da9f",
-      "new": "f98e13c",
-      "full": "f98e13c1119f06c1d2f5f26e9393db980d7874b3",
-      "msg": "panvk/v10+: Fix size gt -> gte for 64k alignment",
-      "date": "2026-07-02T17:09:25.000+00:00"
+      "old": "f98e13c",
+      "new": "5875055",
+      "full": "5875055a74ad15702ee467c2f6fa27bd6c0e9835",
+      "msg": "nvk: Fix DGC localsize computation",
+      "date": "2026-07-02T18:46:55.000+00:00"
     }
   ]
 }
