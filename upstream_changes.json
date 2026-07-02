@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-07-02T05:50:54Z",
+  "triggered_at": "2026-07-02T08:46:36Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "90dffce",
+      "new": "89a2e7d",
+      "full": "89a2e7d66aa2e8cb648ae1070fae855622b21c39",
+      "msg": "[RCFILE] Added a profile for Death Stranding 2 (#4005)",
+      "date": "2026-07-02T06:05:36Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "6bcadde",
+      "new": "1db45e2",
+      "full": "1db45e2a70072b8b1b668b3b690b20502ce1a8ce",
+      "msg": "Merge pull request #5639 from Sonicadvance1/179",
+      "date": "2026-07-02T08:03:48Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "844516d",
-      "new": "5d4b3d6",
-      "full": "5d4b3d64982c42614873880764d3ae392cf1ca0d",
-      "msg": "glx/apple: return CGLError from apple_visual_create_pfobj instead of aborting",
-      "date": "2026-07-01T20:28:29.000-07:00"
+      "old": "5d4b3d6",
+      "new": "ae96aa2",
+      "full": "ae96aa2173b1b6deec53dbd23fe0e40feb45568c",
+      "msg": "gallivm: honour exec mask in EmitMeshTasksEXT",
+      "date": "2026-07-02T07:56:14.000+00:00"
     }
   ]
 }
