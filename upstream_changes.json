@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-02T01:39:46Z",
+  "triggered_at": "2026-07-02T05:50:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0d82e6c",
-      "new": "844516d",
-      "full": "844516d03999e1c212d4e52fda834decee9cda54",
-      "msg": "kraid/parallel_copy: Emit small constants directly",
-      "date": "2026-07-01T20:07:37.000-04:00"
+      "old": "844516d",
+      "new": "5d4b3d6",
+      "full": "5d4b3d64982c42614873880764d3ae392cf1ca0d",
+      "msg": "glx/apple: return CGLError from apple_visual_create_pfobj instead of aborting",
+      "date": "2026-07-01T20:28:29.000-07:00"
     }
   ]
 }
