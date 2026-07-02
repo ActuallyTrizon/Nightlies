@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-07-02T08:46:36Z",
+  "triggered_at": "2026-07-02T11:27:02Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "90dffce",
-      "new": "89a2e7d",
-      "full": "89a2e7d66aa2e8cb648ae1070fae855622b21c39",
-      "msg": "[RCFILE] Added a profile for Death Stranding 2 (#4005)",
-      "date": "2026-07-02T06:05:36Z"
+      "old": "89a2e7d",
+      "new": "b1d094f",
+      "full": "b1d094f9bd37cd69865c56d72a94747b22c16dd6",
+      "msg": "[INTERP] Added unaligned handling for many opcodes (#4006)",
+      "date": "2026-07-02T10:07:36Z"
     },
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "6bcadde",
-      "new": "1db45e2",
-      "full": "1db45e2a70072b8b1b668b3b690b20502ce1a8ce",
-      "msg": "Merge pull request #5639 from Sonicadvance1/179",
-      "date": "2026-07-02T08:03:48Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "4232071",
+      "new": "85fb5de",
+      "full": "85fb5de5066309649b717c8940f904a9c47d6c6b",
+      "msg": "vkd3d: Unwrap potentially hooked queue interface before assuming that is our obj",
+      "date": "2026-07-02T09:41:07Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5d4b3d6",
-      "new": "ae96aa2",
-      "full": "ae96aa2173b1b6deec53dbd23fe0e40feb45568c",
-      "msg": "gallivm: honour exec mask in EmitMeshTasksEXT",
-      "date": "2026-07-02T07:56:14.000+00:00"
+      "old": "ae96aa2",
+      "new": "09724ad",
+      "full": "09724adf773372ebd8784c2704a3d4b3e79cdef6",
+      "msg": "panvk: Drop empty SYNC_ONLY bind queue ops",
+      "date": "2026-07-02T10:45:47.000+00:00"
     }
   ]
 }
