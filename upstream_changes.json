@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-02T20:55:20Z",
+  "triggered_at": "2026-07-02T22:00:25Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "eea51ba",
-      "new": "cc13f9d",
-      "full": "cc13f9deb35d710ed9f20881afe6e104a19bb3cb",
-      "msg": "Revert \"[d3d9] Ignore buffer lock range for static D3DPOOL_DEFAULT buffers\"",
-      "date": "2026-07-02T20:24:32Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5875055",
-      "new": "57df60b",
-      "full": "57df60ba2819a0d11451591d67111e94bb033ac7",
-      "msg": "nvk: Serialize shaders with asm",
-      "date": "2026-07-02T20:11:35.000+00:00"
+      "old": "57df60b",
+      "new": "f25147f",
+      "full": "f25147f9756eebc0b6f12b7b6907b6e69c44e5a7",
+      "msg": "intel/ci: Fix xfails for nightlies.",
+      "date": "2026-07-02T21:05:30.000+00:00"
     }
   ]
 }
