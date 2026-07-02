@@ -6,6 +6,42 @@
 
 ---
 
+## Session — 2026-07-02
+
+### [feat] — All-in-one DXVK builds track upstream master + vendored Ph42oN master gplasync patch (2026-07-02)
+**Branch:** `feat/dxvk-master-gplasync` (`5056457a`) → **merged to `main` via merge commit `0ca2ebe2`** (no-ff, branch deleted).
+
+#### Problem
+The 2026-06-30 v3.0 pin fixed the red runs but froze all 4 gplasync DXVK assets at the
+v3.0 commit `97fe0c66` — every hourly release republished a byte-identical DXVK while the
+release header looked new. Requirement: every DXVK build = upstream `doitsujin/dxvk`
+**latest master commit** + Ph42oN's **newest master gplasync patch** ("true gplasync"),
+with the patch vendored in this repo. Scope: all-in-one workflow only (nvapi no longer
+built; standalone workflow left pinned/untouched).
+
+#### Fix (`new-All-in-one-nightly+zips-latest-stable.yml`, all 4 gplasync jobs: std / arm64ec / binsem / binsem-arm64ec)
+- Clone dxvk **master** (dropped `--branch v3.0`) and apply the vendored
+  `patches/dxvk-gplasync-master.patch` via `patch -p1 --fuzz=3` (`git apply` rejects it on
+  master due to context drift; fuzz applies it — 1 hunk at fuzz 2).
+- **Refreshed the stale vendored master patch** to Ph42oN's newest (`40b31c3`, 2026-06-28)
+  — the stale local copy was the root cause of the 6/30 breakage.
+- **Fallback, never hard-fail:** dry-run the master patch first; on failure → re-clone
+  `v3.0` + newly vendored `patches/dxvk-gplasync-3.0-1.patch` + `::warning::` telling us to
+  re-vendor. Version/hash computed from whichever tree actually built.
+- binsem layer switched `git apply` → `patch --fuzz=3` for the same drift tolerance
+  (verified it applies cleanly on today's master).
+- **Safety:** `create-release` gated `if: github.ref == 'refs/heads/main'` — branch
+  dispatches build everything but can never publish or clobber `nightly-latest`.
+
+#### Proof
+Branch dispatch run `28557132326`: **all 14 jobs green**, release correctly skipped.
+Artifacts confirm the master path executed (not the fallback): all 4 variants =
+`…-eea51bab.wcp` (dxvk master HEAD at build time), not `97fe0c66`. Filenames keep the
+dynamic `v3.0-` `git describe` prefix by choice (rolls to v3.1 automatically when upstream
+tags it). Build-proven only — not device-tested.
+
+---
+
 ## Session — 2026-06-30
 
 ### [fix] — Pin DXVK v3.0 + switch to Ph42oN's official gplasync-3.0-1 patch (the "revert to curl once upstream rebases" follow-up) (2026-06-30)
