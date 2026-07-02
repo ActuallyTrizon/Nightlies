@@ -40,6 +40,18 @@ Artifacts confirm the master path executed (not the fallback): all 4 variants =
 dynamic `v3.0-` `git describe` prefix by choice (rolls to v3.1 automatically when upstream
 tags it). Build-proven only — not device-tested.
 
+#### Shipped + follow-ups (same session)
+- Manual `main` dispatch run `28557928482` all-green → **release `nightly-20260702-011327`
+  published and `nightly-latest` refreshed with all 4 DXVK variants at `eea51bab`** —
+  the fix is live in production.
+- **Issue #7** (Betaminos, "DXVK stuck at 97fe0c66?") — the report that surfaced the bug —
+  answered with the full root-cause/fix explanation and **closed** with the release as proof.
+- `3e2bdc97` (display-only metadata, ships from the *next* nightly): VKD3D profile.json
+  `description` raw-hash → attribution line matching the DXVK style; FEX-PPA `versionName`
+  bare `2605` → `FEX-2605-PPA` (deliberately overrides the old byte-for-byte PPA-metadata
+  mirror on that one field; comment updated). `versionCode` 0/1 values left alone by
+  decision — nothing version-compares wcps today.
+
 ---
 
 ## Session — 2026-06-30
