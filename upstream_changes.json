@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-02T13:40:39Z",
+  "triggered_at": "2026-07-02T16:00:05Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "85fb5de",
-      "new": "6c8a31f",
-      "full": "6c8a31f864d9d74ec331c9374d328450f3e8639b",
-      "msg": "ci: Get rid of clang 32-bit build for now.",
-      "date": "2026-07-02T12:34:46Z"
+      "old": "6c8a31f",
+      "new": "976a1cd",
+      "full": "976a1cd6e25d8f7add089a793aeb60601425b5c0",
+      "msg": "vkd3d: Skip setting the ALLOW_IMAGE_SUBALLOCATION flag for pageable.",
+      "date": "2026-07-02T14:32:22Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "09724ad",
-      "new": "d26e849",
-      "full": "d26e8493907cdd16cf15d48e64d9c082cc489dff",
-      "msg": "kk: defer cmd buffer submission and lighten compute barriers",
-      "date": "2026-07-02T12:44:04.000+00:00"
+      "old": "d26e849",
+      "new": "166da9f",
+      "full": "166da9fe46c6038a44b5ef9d01a57fe43d69a822",
+      "msg": "radv: set RADV_CMD_DIRTY_GFX12_HIZ_WA_STATE around attachment clears",
+      "date": "2026-07-02T15:35:01.000+00:00"
     }
   ]
 }
