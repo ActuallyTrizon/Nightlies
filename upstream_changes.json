@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-03T20:54:12Z",
+  "triggered_at": "2026-07-03T21:58:19Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "82d8be5",
-      "new": "fe54903",
-      "full": "fe549034510744348b51df3f3e521670341fec14",
-      "msg": "kraid: dead-code elimination pass",
-      "date": "2026-07-03T20:34:14.000+00:00"
+      "old": "fe54903",
+      "new": "77338bc",
+      "full": "77338bc274a02d6335813f786c7db780db99c848",
+      "msg": "va: Stop using vl_compositor",
+      "date": "2026-07-03T21:31:05.000+00:00"
     }
   ]
 }
