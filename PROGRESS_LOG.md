@@ -6,6 +6,66 @@
 
 ---
 
+## Session — 2026-07-03
+
+### [feat] — FEX build naming: stable (on-tag) vs nightly (+N drift) (2026-07-03)
+**PR #8 → merged to `main` (squash, tip `5a64177`).**
+
+#### Problem
+`git describe --tags --abbrev=0` strips the `-N-gSHA` suffix, so a FEX build cut from a
+commit *past* a release tag was named identically to the true on-tag release. Today's HEAD
+`1d695f6db` is **2 commits past the `FEX-2607` tag** (tag at `1cc4b93e`) yet shipped as clean
+`FEX-2607` — indistinguishable from an exact-tag release.
+
+#### Fix
+Name by distance from the nearest FEX tag (`git rev-list <tag>..HEAD --count`):
+- exactly on tag → **`FEXCore-<ver>-stable`** (non-PPA) / **`FEXCore-<ver>-stable-ppa`** (PPA)
+- N past tag → **`FEX-<ver>+N-Nightly-<sha>`** / `…-PPA`
+
+Applied to both FEX blocks in the all-in-one nightly (non-PPA + PPA; PPA `VERSION_SHORT`
+flows to profile.json), the standalone-nightly fallback, and the PPA-stable file-stem.
+VKD3D/DXVK/Box64 untouched. `+` survives GitHub asset upload. Post-merge test runs:
+standalone auto-produced `FEX-2607+2-Nightly-1d695f6db`; all-in-one produced both flavors'
+drift names. Retro-renamed today's mislabeled `nightly-latest` FEX assets to `+2` and
+repointed the 4 pinned URLs in `nightlies_components.json`.
+
+#### Files touched
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
+- `.github/workflows/fexcore-standalone-nightly.yml`
+- `.github/workflows/fexcore-ppa-stable.yml` (file-stem → `FEXCore-<ver>-stable-ppa`)
+- `nightlies_components.json`
+
+---
+
+### [chore] — Cut FEXCore 2607 stables (non-PPA + PPA) from the exact tag (2026-07-03)
+Built from `FEX-2607` (commit `1cc4b93e`), delivered to device `/sdcard/Download`:
+- Non-PPA: release `fexcore-nightly-20260703-142726` → `FEXCore-2607-stable.wcp/.zip`
+- PPA: release `fexcore-ppa-FEX-2607-1cc4b93e7` → `FEXCore-2607-stable-ppa.wcp/.zip`
+
+Cleanups: deleted a stray `glslang-master-linux-Release.zip` swept into both releases by the
+`*.zip` upload glob (**TODO:** exclude glslang from the glob). Note the standalone workflow
+hardcodes `make_latest:true`; `nightly-latest` is a prerelease so can't hold Latest anyway.
+
+**PPA-fidelity decompile (ours vs `nickppa` vs official-2605):** no official 2607 PPA exists
+yet (Launchpad newest = 2605). Ours = faithful mirror (bylaws clang 21.1.0, DWARF,
+`//fex-emu/HostThunks`, +0.2% size vs official 2605). `nickppa` = genuine 2607 (99.99%
+instruction-identical) but NOT PPA-faithful ("PPA build flags" false — standard HostThunks
+path; "No strip" misleading — zero DWARF). All run games identically.
+
+---
+
+### [research] — FEXCore unixlib transition (2607+): DECISION = WAIT (2026-07-03)
+FEX 2607 now ships **4 files** for Wine (2 PE DLL + 2 native `.so` unixlib); `.so` is a
+companion, not a replacement. Optional now, likely mandatory "in a few months" (FEX PRs
+#5612/#5637, merged 06-28→06-30). Loads via custom `NtQueryVirtualMemory(MemoryWineLoadUnixLibByName)`
+needing FEX-patched Wine. Bannerlator's Protons (9.0 + 11.0-5) are **bionic NDK** builds
+with **no loader** → adding `.so` to the FEX nightly wcp does nothing (glibc ABI, wrong dir,
+no loader). `.so` belong in a rebuilt bionic Proton, not the FEX wcp. **Decision: keep FEX
+nightlies DLL-only; do NOT rebuild Proton yet** — wait for FEX to stabilize (triggers:
+official 2607 PPA / 2608 tag / unixlib made non-optional). No workflow change.
+
+---
+
 ## Session — 2026-07-02
 
 ### [feat] — All-in-one DXVK builds track upstream master + vendored Ph42oN master gplasync patch (2026-07-02)
