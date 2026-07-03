@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-02T23:56:30Z",
+  "triggered_at": "2026-07-03T02:30:24Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "1db45e2",
-      "new": "b4e2f51",
-      "full": "b4e2f5118a30050987af8b9843a366dba12716c8",
-      "msg": "Merge pull request #5645 from Sonicadvance1/180",
-      "date": "2026-07-02T23:33:37Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "f25147f",
-      "new": "9963753",
-      "full": "99637537e1b33afb21b21bb39290b647b7b67e59",
-      "msg": "kraid/nir: Plumb through texture ops",
-      "date": "2026-07-02T23:16:50.000+00:00"
+      "old": "b4e2f51",
+      "new": "1d695f6",
+      "full": "1d695f6db40489d0f015a1e1b8632aee0a16613d",
+      "msg": "Merge pull request #5646 from Sonicadvance1/181",
+      "date": "2026-07-03T02:22:45Z"
     }
   ]
 }
