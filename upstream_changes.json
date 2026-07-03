@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-03T17:14:40Z",
+  "triggered_at": "2026-07-03T19:04:17Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "705146f",
-      "new": "64763b2",
-      "full": "64763b243c07104b73893af7cf8e2c96c9eece34",
-      "msg": "v3d: fix slot and input indexing in v3d_set_global_binding",
-      "date": "2026-07-03T16:53:51.000+00:00"
+      "old": "64763b2",
+      "new": "82d8be5",
+      "full": "82d8be576d822c8cbeca4ea3aa97470b3fab4fe1",
+      "msg": "nir/algebraic: pattern-match manual iadd64",
+      "date": "2026-07-03T18:17:09.000+00:00"
     }
   ]
 }
