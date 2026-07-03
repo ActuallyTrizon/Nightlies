@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-03T02:30:24Z",
+  "triggered_at": "2026-07-03T06:22:35Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "b4e2f51",
-      "new": "1d695f6",
-      "full": "1d695f6db40489d0f015a1e1b8632aee0a16613d",
-      "msg": "Merge pull request #5646 from Sonicadvance1/181",
-      "date": "2026-07-03T02:22:45Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "9963753",
+      "new": "daa9780",
+      "full": "daa97802f56ecd98dbebe2a06f524869b984881b",
+      "msg": "etnaviv: Implement unified sampler allocation",
+      "date": "2026-07-03T05:03:14.000+00:00"
     }
   ]
 }
