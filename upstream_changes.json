@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-03T21:58:19Z",
+  "triggered_at": "2026-07-03T23:03:35Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "1d695f6",
+      "new": "91017db",
+      "full": "91017dbedbddca65888b69e7399511cd0b6d4712",
+      "msg": "Merge pull request #5647 from lioncash/perm128",
+      "date": "2026-07-03T22:32:34Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fe54903",
-      "new": "77338bc",
-      "full": "77338bc274a02d6335813f786c7db780db99c848",
-      "msg": "va: Stop using vl_compositor",
-      "date": "2026-07-03T21:31:05.000+00:00"
+      "old": "77338bc",
+      "new": "218c19b",
+      "full": "218c19b513c3979c569f693969e1fd28f82a156a",
+      "msg": "kraid: Add a word-based copy propagation pass",
+      "date": "2026-07-03T22:37:11.000+00:00"
     }
   ]
 }
