@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-03T15:02:24Z",
+  "triggered_at": "2026-07-03T17:14:40Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5000d66",
-      "new": "705146f",
-      "full": "705146f62779c261320404b89e26fdca3fe5c37a",
-      "msg": "ci/vulkan: remove long outdated skips",
-      "date": "2026-07-03T14:08:36.000+00:00"
+      "old": "705146f",
+      "new": "64763b2",
+      "full": "64763b243c07104b73893af7cf8e2c96c9eece34",
+      "msg": "v3d: fix slot and input indexing in v3d_set_global_binding",
+      "date": "2026-07-03T16:53:51.000+00:00"
     }
   ]
 }
