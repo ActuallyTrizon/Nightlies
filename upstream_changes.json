@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-03T19:04:17Z",
+  "triggered_at": "2026-07-03T20:54:12Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64763b2",
-      "new": "82d8be5",
-      "full": "82d8be576d822c8cbeca4ea3aa97470b3fab4fe1",
-      "msg": "nir/algebraic: pattern-match manual iadd64",
-      "date": "2026-07-03T18:17:09.000+00:00"
+      "old": "82d8be5",
+      "new": "fe54903",
+      "full": "fe549034510744348b51df3f3e521670341fec14",
+      "msg": "kraid: dead-code elimination pass",
+      "date": "2026-07-03T20:34:14.000+00:00"
     }
   ]
 }
