@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-03T12:01:34Z",
+  "triggered_at": "2026-07-03T15:02:24Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "cc13f9d",
-      "new": "568b883",
-      "full": "568b88360e286ada803ee9e25d47c8c06bc6380f",
-      "msg": "[util] Remove floatEmulation config for Gothic 3",
-      "date": "2026-07-03T10:46:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5d276f3",
-      "new": "5000d66",
-      "full": "5000d6644db4f3f1893cd69e46f204eb5e6fc6e1",
-      "msg": "tu/util: Fix tile division algorithm",
-      "date": "2026-07-03T11:36:02.000+00:00"
+      "old": "5000d66",
+      "new": "705146f",
+      "full": "705146f62779c261320404b89e26fdca3fe5c37a",
+      "msg": "ci/vulkan: remove long outdated skips",
+      "date": "2026-07-03T14:08:36.000+00:00"
     }
   ]
 }
