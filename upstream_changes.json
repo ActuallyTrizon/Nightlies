@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-07-03T06:22:35Z",
+  "triggered_at": "2026-07-03T09:50:30Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b1d094f",
+      "new": "0c3d239",
+      "full": "0c3d2391f01e9044ce9857f3c314022155a01d54",
+      "msg": "[DYNAREC] Fixed a potential regression of f1f572a  with large page size",
+      "date": "2026-07-03T07:29:14Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "976a1cd",
+      "new": "f1338a5",
+      "full": "f1338a56c0c1323148fccbb8cc7713254cca6c5d",
+      "msg": "vkd3d: Add 6_9 to VKD3D_SHADER_MODEL override",
+      "date": "2026-07-03T09:47:08Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9963753",
-      "new": "daa9780",
-      "full": "daa97802f56ecd98dbebe2a06f524869b984881b",
-      "msg": "etnaviv: Implement unified sampler allocation",
-      "date": "2026-07-03T05:03:14.000+00:00"
+      "old": "daa9780",
+      "new": "5d276f3",
+      "full": "5d276f3ffbaea18bbb722f5a1ad7e13178767cb8",
+      "msg": "radv,anv: Enable BVH updates",
+      "date": "2026-07-03T09:23:23.000+00:00"
     }
   ]
 }
