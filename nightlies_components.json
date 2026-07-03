@@ -757,39 +757,39 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-30b5dcf67",
+    "verName": "Box64-Hybrid-Bionic-d623242d2",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-30b5dcf67.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-d623242d2.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-30b5dcf67",
+    "verName": "Box64-Hybrid-Bionic-d623242d2",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-30b5dcf67.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-d623242d2.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-5e4c286c1",
+    "verName": "Box64-Hybrid-Native-3381e3f7d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-5e4c286c1.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-3381e3f7d.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-5e4c286c1",
+    "verName": "Box64-Hybrid-Native-3381e3f7d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-5e4c286c1.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-3381e3f7d.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-c3c60d83f",
+    "verName": "Box64-Hybrid-WOW64-1dbd6d156",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-c3c60d83f.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-1dbd6d156.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-c3c60d83f",
+    "verName": "Box64-Hybrid-WOW64-1dbd6d156",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-c3c60d83f.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-1dbd6d156.zip"
   },
   {
     "type": "DXVK",
@@ -841,27 +841,27 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2605-Nightly-1db45e2a7-PPA",
+    "verName": "FEX-2605-Nightly-b4e2f5118-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-1db45e2a7-PPA.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-b4e2f5118-PPA.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2605-Nightly-1db45e2a7-PPA",
+    "verName": "FEX-2605-Nightly-b4e2f5118-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-1db45e2a7-PPA.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-b4e2f5118-PPA.zip"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2605-Nightly-1db45e2a7",
+    "verName": "FEX-2605-Nightly-b4e2f5118",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-1db45e2a7.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-b4e2f5118.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2605-Nightly-1db45e2a7",
+    "verName": "FEX-2605-Nightly-b4e2f5118",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-1db45e2a7.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2605-Nightly-b4e2f5118.zip"
   },
   {
     "type": "VKD3D",
@@ -1054,6 +1054,24 @@
     "verName": "proton-11.0-arm64ec-20260422.1559",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton-11/proton-11.0-arm64ec-20260422.1559.wcp"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260703-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260703/Turnip-v26.2.0-20260703-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260703-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260703/Turnip-v26.2.0-20260703-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.2.0-20260703",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260703/Turnip-v26.2.0-20260703.zip"
   },
   {
     "type": "GpuDriver",
@@ -2824,23 +2842,5 @@
     "verName": "Turnip-v26.2.0-20260624-r4",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260624-r4/Turnip-v26.2.0-20260624-r4.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.2.0-20260624-r3-710-720-Test",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260624-r3/Turnip-v26.2.0-20260624-r3-710-720-Test.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.2.0-20260624-r3-A8xx",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260624-r3/Turnip-v26.2.0-20260624-r3-A8xx.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.2.0-20260624-r3",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260624-r3/Turnip-v26.2.0-20260624-r3.zip"
   }
 ]
