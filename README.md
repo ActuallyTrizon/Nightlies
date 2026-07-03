@@ -71,6 +71,7 @@ A single JSON index of every component published here — point any compatible W
 
 | Build | Description |
 |:---:|---|
+| [**Bannerlator**](https://github.com/The412Banner/Bannerlator/releases) | The412Banner's own Winlator build — fully rebuilt Jetpack Compose / Material 3 UI, built-in Steam store (JavaSteam) with Goldberg auto-patching, in-game ReShade, themeable accents, and a file manager with favorites. |
 | [**Winlator-CMod**](https://github.com/coffincolors/winlator/releases) | Baseline Bionic build with excellent controller support. |
 | [**Winlator-Ludashi**](https://github.com/StevenMXZ/Winlator-Ludashi/releases) | Keeps up with the latest upstream code while remaining close to vanilla. Great performance. |
 | [**GameNative**](https://github.com/utkarshdalal/GameNative/releases) | Supports both glibc and bionic, featuring a sleek UI and Steam, Epic, GOG, and Amazon Games integration. |
