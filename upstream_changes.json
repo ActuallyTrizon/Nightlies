@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-04T09:14:22Z",
+  "triggered_at": "2026-07-04T11:18:40Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "568b883",
-      "new": "82bf8b1",
-      "full": "82bf8b1e95599a488adbdf2143813479507e2351",
-      "msg": "[d3d9] Do not transform normals if WorldView is not invertible",
-      "date": "2026-07-04T08:23:57Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4274cd9",
-      "new": "831b9b3",
-      "full": "831b9b32ee4932f0d0096367803e13fa1c512183",
-      "msg": "rocket: drop wrong assert(input_op_1) in ADD fuse path",
-      "date": "2026-07-04T08:39:33.000+00:00"
+      "old": "831b9b3",
+      "new": "75d5cde",
+      "full": "75d5cded5a582f721f1cebc7b97d1366eb3e1d85",
+      "msg": "rocket: fix mmap leak in buffer map/unmap",
+      "date": "2026-07-04T09:46:48.000+00:00"
     }
   ]
 }
