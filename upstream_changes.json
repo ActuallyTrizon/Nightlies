@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-03T23:03:35Z",
+  "triggered_at": "2026-07-04T02:04:16Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "1d695f6",
-      "new": "91017db",
-      "full": "91017dbedbddca65888b69e7399511cd0b6d4712",
-      "msg": "Merge pull request #5647 from lioncash/perm128",
-      "date": "2026-07-03T22:32:34Z"
+      "old": "91017db",
+      "new": "f8967aa",
+      "full": "f8967aa2079b0bcec513f233f9da055fc21adf7f",
+      "msg": "Merge pull request #5649 from lioncash/pclmul256",
+      "date": "2026-07-04T01:33:53Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "77338bc",
-      "new": "218c19b",
-      "full": "218c19b513c3979c569f693969e1fd28f82a156a",
-      "msg": "kraid: Add a word-based copy propagation pass",
-      "date": "2026-07-03T22:37:11.000+00:00"
+      "old": "218c19b",
+      "new": "4274cd9",
+      "full": "4274cd9ca6ba528651fc60eb035e3b1154cd5b2d",
+      "msg": "kraid: Add OpAtom* and plumb them through",
+      "date": "2026-07-04T01:40:26.000+00:00"
     }
   ]
 }
