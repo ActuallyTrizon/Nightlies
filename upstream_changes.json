@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-04T11:18:40Z",
+  "triggered_at": "2026-07-04T13:03:04Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "831b9b3",
-      "new": "75d5cde",
-      "full": "75d5cded5a582f721f1cebc7b97d1366eb3e1d85",
-      "msg": "rocket: fix mmap leak in buffer map/unmap",
-      "date": "2026-07-04T09:46:48.000+00:00"
+      "old": "75d5cde",
+      "new": "6ff5ff2",
+      "full": "6ff5ff273649a2b6d81febe50f9b161054fcd27d",
+      "msg": "nir/opt_varyings: move (c ? interp_input0 : interp_input1) into the prev shader",
+      "date": "2026-07-04T11:46:45.000+00:00"
     }
   ]
 }
