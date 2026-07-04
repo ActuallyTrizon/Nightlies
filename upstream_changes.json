@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-04T17:57:21Z",
+  "triggered_at": "2026-07-04T20:44:24Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0c3d239",
-      "new": "b47131c",
-      "full": "b47131c1e4aa68d1d31ed4696868b655b2189fb0",
-      "msg": "[RCFILE] Added 1 more game profile",
-      "date": "2026-07-04T16:03:01Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "17e5637",
+      "new": "3f98202",
+      "full": "3f98202b0f17eac98e41975d6b702dd60aac8cbd",
+      "msg": "Merge pull request #5651 from lioncash/perm",
+      "date": "2026-07-04T19:13:24Z"
     }
   ]
 }
