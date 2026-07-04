@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-04T13:03:04Z",
+  "triggered_at": "2026-07-04T14:58:55Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "75d5cde",
-      "new": "6ff5ff2",
-      "full": "6ff5ff273649a2b6d81febe50f9b161054fcd27d",
-      "msg": "nir/opt_varyings: move (c ? interp_input0 : interp_input1) into the prev shader",
-      "date": "2026-07-04T11:46:45.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "82bf8b1",
+      "new": "fc099e4",
+      "full": "fc099e49967f8f95de9ed5dd7135ad2067ad8fcc",
+      "msg": "[dxvk] Enable descriptor buffer on Alchemist or older",
+      "date": "2026-07-04T13:41:55Z"
     }
   ]
 }
