@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-05T16:57:38Z",
+  "triggered_at": "2026-07-05T20:06:29Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "031a33b",
-      "new": "d117019",
-      "full": "d117019f48ff136d89e40451f863d0e336664de9",
-      "msg": "[d3d9] Remove old unmapping code",
-      "date": "2026-07-05T16:53:19Z"
+      "old": "d117019",
+      "new": "c850747",
+      "full": "c850747f1df24180ce97b7a9094603f39da1251d",
+      "msg": "[meta] Release 3.0.1",
+      "date": "2026-07-05T17:31:56Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "19b7200",
+      "new": "8d839e9",
+      "full": "8d839e912544df2a132f6edde3c89ea4d3114a5a",
+      "msg": "ci/piglit: fix nightly expectations after piglit uprev",
+      "date": "2026-07-05T20:38:20.000+02:00"
     }
   ]
 }
