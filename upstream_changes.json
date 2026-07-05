@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-05T20:06:29Z",
+  "triggered_at": "2026-07-05T21:53:23Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "d117019",
-      "new": "c850747",
-      "full": "c850747f1df24180ce97b7a9094603f39da1251d",
-      "msg": "[meta] Release 3.0.1",
-      "date": "2026-07-05T17:31:56Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "19b7200",
-      "new": "8d839e9",
-      "full": "8d839e912544df2a132f6edde3c89ea4d3114a5a",
-      "msg": "ci/piglit: fix nightly expectations after piglit uprev",
-      "date": "2026-07-05T20:38:20.000+02:00"
+      "old": "8d839e9",
+      "new": "114ec04",
+      "full": "114ec04a6063041524cefd69426eff86f7b141c1",
+      "msg": "glx: extract drawable lifecycle into a vtable",
+      "date": "2026-07-05T20:01:25.000+00:00"
     }
   ]
 }
