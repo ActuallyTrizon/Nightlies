@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-05T13:11:57Z",
+  "triggered_at": "2026-07-05T15:06:33Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "b47131c",
-      "new": "d701932",
-      "full": "d701932fe65661447e38803453212eb5441aa4aa",
-      "msg": "[RCFILE] Fine-tuned some more porfiles",
-      "date": "2026-07-05T12:16:20Z"
+      "old": "d701932",
+      "new": "c08554e",
+      "full": "c08554e3f3c0a1604f9d183c4f6acd348148ff3f",
+      "msg": "Try to fix the build from previous commit",
+      "date": "2026-07-05T14:49:46Z"
     }
   ]
 }
