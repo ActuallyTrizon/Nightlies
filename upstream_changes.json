@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-05T11:24:19Z",
+  "triggered_at": "2026-07-05T13:11:57Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "fc099e4",
-      "new": "031a33b",
-      "full": "031a33b3b8638170980a3870b8545c022c6641b2",
-      "msg": "[d3d9] Properly propagate bump mapping textures to next stage",
-      "date": "2026-07-05T10:16:05Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b47131c",
+      "new": "d701932",
+      "full": "d701932fe65661447e38803453212eb5441aa4aa",
+      "msg": "[RCFILE] Fine-tuned some more porfiles",
+      "date": "2026-07-05T12:16:20Z"
     }
   ]
 }
