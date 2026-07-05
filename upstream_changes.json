@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-05T21:53:23Z",
+  "triggered_at": "2026-07-05T23:59:01Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8d839e9",
-      "new": "114ec04",
-      "full": "114ec04a6063041524cefd69426eff86f7b141c1",
-      "msg": "glx: extract drawable lifecycle into a vtable",
-      "date": "2026-07-05T20:01:25.000+00:00"
+      "old": "114ec04",
+      "new": "6b5b7d4",
+      "full": "6b5b7d405cee79cee97044710fe273f0aa331f09",
+      "msg": "glx: remove GLX_USE_APPLE and collapse the guards it gated",
+      "date": "2026-07-05T13:22:59.000-07:00"
     }
   ]
 }
