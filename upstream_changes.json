@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-04T20:44:24Z",
+  "triggered_at": "2026-07-05T06:31:58Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "17e5637",
-      "new": "3f98202",
-      "full": "3f98202b0f17eac98e41975d6b702dd60aac8cbd",
-      "msg": "Merge pull request #5651 from lioncash/perm",
-      "date": "2026-07-04T19:13:24Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "6ff5ff2",
+      "new": "0b17f5d",
+      "full": "0b17f5d2f2858650c19f666337d590ca35591912",
+      "msg": "rocket: simplify input/output tensor creation",
+      "date": "2026-07-05T05:59:21.000+00:00"
     }
   ]
 }
