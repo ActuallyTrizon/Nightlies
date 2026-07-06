@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-06T08:11:49Z",
+  "triggered_at": "2026-07-06T12:37:46Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c08554e",
+      "new": "2a54806",
+      "full": "2a5480652a4beedd6cb8ae4e1090928581f9270d",
+      "msg": "[RCFILE] Added 1 more game profile",
+      "date": "2026-07-06T08:36:37Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "97da377",
-      "new": "2bd8bb7",
-      "full": "2bd8bb785c0eb6f7cd41b3309196a879c56fa430",
-      "msg": "radv: Advertise msrtss in features.txt",
-      "date": "2026-07-06T07:25:36.000+00:00"
+      "old": "2bd8bb7",
+      "new": "8aa0199",
+      "full": "8aa0199f35b324a370353dc91fc85ccb1e1bf899",
+      "msg": "mesa: Allow GL_SRGB_ALPHA_EXT as color-renderable when EXT_sRGB is supported",
+      "date": "2026-07-06T11:32:28.000+00:00"
     }
   ]
 }
