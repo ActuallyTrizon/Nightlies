@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-06T16:12:51Z",
+  "triggered_at": "2026-07-06T18:50:17Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5b91642",
-      "new": "444c37f",
-      "full": "444c37fe2e0b2e3d493d9accefc18d2547d96a77",
-      "msg": "Merge pull request #5656 from neobrain/fix_invalid_iterator_deref",
-      "date": "2026-07-06T14:13:04Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c850747",
+      "new": "c2f9dfc",
+      "full": "c2f9dfca3321299c50ec2a2b6e2684001d2854c7",
+      "msg": "[util] Enable ignoring default lock ranges for Splinter Cell Chaos Theory",
+      "date": "2026-07-06T18:47:34Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8aa0199",
-      "new": "48658bc",
-      "full": "48658bc1a7bb997e18c5feba8233b06c565f0ae4",
-      "msg": "img/ci: add `farm:imagination` tag to all jobs",
-      "date": "2026-07-06T15:35:31.000+00:00"
+      "old": "48658bc",
+      "new": "d1ebb4c",
+      "full": "d1ebb4c8083ee522899afdbd1a2dc10cbd7262a9",
+      "msg": "bin/drm-shim: forward the error code from the command to the user",
+      "date": "2026-07-06T18:32:25.000+00:00"
     }
   ]
 }
