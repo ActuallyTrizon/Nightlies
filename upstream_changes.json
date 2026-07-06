@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-06T20:47:12Z",
+  "triggered_at": "2026-07-06T22:06:43Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "444c37f",
-      "new": "db9414a",
-      "full": "db9414a756b71d8593d60094636e817a0399bc1d",
-      "msg": "Merge pull request #5655 from neobrain/feature_woa_cache_loading",
-      "date": "2026-07-06T19:40:40Z"
+      "old": "db9414a",
+      "new": "7a6f0de",
+      "full": "7a6f0def8524501b7eb9bc525bdff37f1a1a2df0",
+      "msg": "Merge pull request #5653 from Sonicadvance1/182",
+      "date": "2026-07-06T21:01:55Z"
     },
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "d1ebb4c",
-      "new": "c73ebcd",
-      "full": "c73ebcd8119d01c1289ca75d1c6e9e2ea00ec079",
-      "msg": "broadcom/ci: mark fixed tests as such",
-      "date": "2026-07-06T19:57:28.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c2f9dfc",
+      "new": "deed337",
+      "full": "deed3379a0061257504fbdcc2a386cd06fe06ffd",
+      "msg": "[dxgi] Use singleton for DXGI options",
+      "date": "2026-07-06T21:10:23Z"
     }
   ]
 }
