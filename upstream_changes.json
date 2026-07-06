@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-06T12:37:46Z",
+  "triggered_at": "2026-07-06T16:12:51Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "c08554e",
-      "new": "2a54806",
-      "full": "2a5480652a4beedd6cb8ae4e1090928581f9270d",
-      "msg": "[RCFILE] Added 1 more game profile",
-      "date": "2026-07-06T08:36:37Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5b91642",
+      "new": "444c37f",
+      "full": "444c37fe2e0b2e3d493d9accefc18d2547d96a77",
+      "msg": "Merge pull request #5656 from neobrain/fix_invalid_iterator_deref",
+      "date": "2026-07-06T14:13:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2bd8bb7",
-      "new": "8aa0199",
-      "full": "8aa0199f35b324a370353dc91fc85ccb1e1bf899",
-      "msg": "mesa: Allow GL_SRGB_ALPHA_EXT as color-renderable when EXT_sRGB is supported",
-      "date": "2026-07-06T11:32:28.000+00:00"
+      "old": "8aa0199",
+      "new": "48658bc",
+      "full": "48658bc1a7bb997e18c5feba8233b06c565f0ae4",
+      "msg": "img/ci: add `farm:imagination` tag to all jobs",
+      "date": "2026-07-06T15:35:31.000+00:00"
     }
   ]
 }
