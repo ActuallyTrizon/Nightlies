@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-07T10:47:18Z",
+  "triggered_at": "2026-07-07T13:12:21Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2a54806",
+      "new": "462b3c0",
+      "full": "462b3c0d7829d42109c6e6c09d56679ebe7b3faf",
+      "msg": "[RCFILE] Add more game profiles",
+      "date": "2026-07-07T12:56:19Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "79d7e93",
-      "new": "865940b",
-      "full": "865940b052674072eb56d6fe91b624b9cb838e26",
-      "msg": "v3dv: report maxDrawIndirectCount of 1 without multiDrawIndirect",
-      "date": "2026-07-07T10:18:37.000+00:00"
+      "old": "865940b",
+      "new": "19a58c4",
+      "full": "19a58c4b4f5f83e2a16c768ec1afe2011ee76460",
+      "msg": "llvmpipe: Enable PIPE_CAP_SHAREABLE_SHADERS",
+      "date": "2026-07-07T12:25:13.000+00:00"
     }
   ]
 }
