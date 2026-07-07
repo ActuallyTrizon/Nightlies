@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-07T03:51:29Z",
+  "triggered_at": "2026-07-07T07:30:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6a50eba",
-      "new": "eaa4b57",
-      "full": "eaa4b57774d1f8825dcdfc280ceb8adbecfd19d3",
-      "msg": "anv: Initialize shader debug archive key size",
-      "date": "2026-07-07T02:43:23.000+00:00"
+      "old": "eaa4b57",
+      "new": "79d7e93",
+      "full": "79d7e938e06c11b12898195d39e4fe1630d3d425",
+      "msg": "etnaviv: Add perf debug for texture descriptor recompose",
+      "date": "2026-07-07T06:20:25.000+00:00"
     }
   ]
 }
