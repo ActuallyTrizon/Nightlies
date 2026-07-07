@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-07T00:00:01Z",
+  "triggered_at": "2026-07-07T03:51:29Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7a6f0de",
-      "new": "dddad1c",
-      "full": "dddad1c2caca9925301978bd54919d30c6361700",
-      "msg": "Merge pull request #5659 from lioncash/shuf",
-      "date": "2026-07-06T22:50:08Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c73ebcd",
-      "new": "6a50eba",
-      "full": "6a50eba471c56c045a07b00811cc95246de7faa7",
-      "msg": "anv: Bump subgroup size for histogram and prefix shader",
-      "date": "2026-07-06T23:31:36.000+00:00"
+      "old": "6a50eba",
+      "new": "eaa4b57",
+      "full": "eaa4b57774d1f8825dcdfc280ceb8adbecfd19d3",
+      "msg": "anv: Initialize shader debug archive key size",
+      "date": "2026-07-07T02:43:23.000+00:00"
     }
   ]
 }
