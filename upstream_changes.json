@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-06T22:06:43Z",
+  "triggered_at": "2026-07-07T00:00:01Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "db9414a",
-      "new": "7a6f0de",
-      "full": "7a6f0def8524501b7eb9bc525bdff37f1a1a2df0",
-      "msg": "Merge pull request #5653 from Sonicadvance1/182",
-      "date": "2026-07-06T21:01:55Z"
+      "old": "7a6f0de",
+      "new": "dddad1c",
+      "full": "dddad1c2caca9925301978bd54919d30c6361700",
+      "msg": "Merge pull request #5659 from lioncash/shuf",
+      "date": "2026-07-06T22:50:08Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "c2f9dfc",
-      "new": "deed337",
-      "full": "deed3379a0061257504fbdcc2a386cd06fe06ffd",
-      "msg": "[dxgi] Use singleton for DXGI options",
-      "date": "2026-07-06T21:10:23Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "c73ebcd",
+      "new": "6a50eba",
+      "full": "6a50eba471c56c045a07b00811cc95246de7faa7",
+      "msg": "anv: Bump subgroup size for histogram and prefix shader",
+      "date": "2026-07-06T23:31:36.000+00:00"
     }
   ]
 }
