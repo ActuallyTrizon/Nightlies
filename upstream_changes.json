@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-07T18:55:25Z",
+  "triggered_at": "2026-07-07T20:45:51Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "dddad1c",
-      "new": "b90c983",
-      "full": "b90c9836cb4b124d962e06c212021264daf19243",
-      "msg": "Merge pull request #5662 from lioncash/alias",
-      "date": "2026-07-07T18:22:59Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d4ee4a6",
-      "new": "cff43b5",
-      "full": "cff43b5af37049b167d4a6046c65f3cef32cce1c",
-      "msg": "v3dv: enable VK_KHR_shader_subgroup_rotate / rotate subgroups",
-      "date": "2026-07-07T17:52:52.000+00:00"
+      "old": "cff43b5",
+      "new": "fb3e58f",
+      "full": "fb3e58f4d849545533388e7e29cf54f67a8835f7",
+      "msg": "radv/meta: fix restoring descriptor heaps",
+      "date": "2026-07-07T20:17:21.000+00:00"
     }
   ]
 }
