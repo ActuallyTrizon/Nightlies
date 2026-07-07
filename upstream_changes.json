@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-07T13:12:21Z",
+  "triggered_at": "2026-07-07T16:20:06Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "2a54806",
-      "new": "462b3c0",
-      "full": "462b3c0d7829d42109c6e6c09d56679ebe7b3faf",
-      "msg": "[RCFILE] Add more game profiles",
-      "date": "2026-07-07T12:56:19Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "f1338a5",
+      "new": "ce3c862",
+      "full": "ce3c862c26ef5b1b74a3a24cf637bddb1adb7a7c",
+      "msg": "vkd3d: Add feedback loop workaround to SOTTR.",
+      "date": "2026-07-07T14:52:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "865940b",
-      "new": "19a58c4",
-      "full": "19a58c4b4f5f83e2a16c768ec1afe2011ee76460",
-      "msg": "llvmpipe: Enable PIPE_CAP_SHAREABLE_SHADERS",
-      "date": "2026-07-07T12:25:13.000+00:00"
+      "old": "19a58c4",
+      "new": "d4ee4a6",
+      "full": "d4ee4a62885e230a9712c9737f7e6e0dd7991c61",
+      "msg": "v3dv: honor wait dependencies for job-less submissions",
+      "date": "2026-07-07T15:39:21.000+00:00"
     }
   ]
 }
