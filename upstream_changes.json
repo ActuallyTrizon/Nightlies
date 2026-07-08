@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-08T10:55:11Z",
+  "triggered_at": "2026-07-08T12:14:34Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "462b3c0",
+      "new": "17b0ca1",
+      "full": "17b0ca1d43504be4d048d9be338adb01f38dfada",
+      "msg": "[CMAKE] Remove the trailing '/' from INSTALL_PATH (#4015)",
+      "date": "2026-07-08T11:54:29Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c1f982a",
-      "new": "b820907",
-      "full": "b8209078389c19d79e81639732f00a62fc2425ae",
-      "msg": "vulkan: use center/extent form for instance node AABB transform",
-      "date": "2026-07-08T09:03:49.000+00:00"
+      "old": "b820907",
+      "new": "06cdc6a",
+      "full": "06cdc6a653ced42539eb01e5d4b71a278ef3e2be",
+      "msg": "ethosu: Preserve fused pad extents",
+      "date": "2026-07-08T11:43:13.000+00:00"
     }
   ]
 }
