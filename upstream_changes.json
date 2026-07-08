@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-08T01:53:16Z",
+  "triggered_at": "2026-07-08T05:13:39Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "b90c983",
+      "new": "71d4e2c",
+      "full": "71d4e2c3202028f8b547cfed5ae4640545828b95",
+      "msg": "Merge pull request #5660 from Sonicadvance1/183",
+      "date": "2026-07-08T02:53:50Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64578c2",
-      "new": "fb8742a",
-      "full": "fb8742a4b97bb1bef0fc2f2902523e766bb78e2d",
-      "msg": "util/tests: fix unused variable warnings in cache List test",
-      "date": "2026-07-08T01:16:23.000+00:00"
+      "old": "fb8742a",
+      "new": "f4d815d",
+      "full": "f4d815d11d6bc2b54ab7e00a3f8c3dbe7ce20a60",
+      "msg": "mr-label-maker: Apply `Rust` label whenever crate dependencies are changed",
+      "date": "2026-07-08T05:04:16.000+00:00"
     }
   ]
 }
