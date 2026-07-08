@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-07-08T15:10:48Z",
+  "triggered_at": "2026-07-08T17:20:39Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "ce3c862",
-      "new": "c52b49b",
-      "full": "c52b49ba3c81b28edaba99d29450ed13b6236b5d",
-      "msg": "vkd3d: Use storageBuffer16Bit instead of UBOs too.",
-      "date": "2026-07-08T12:56:50Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "deed337",
-      "new": "46a183b",
-      "full": "46a183b55b29e5e62e88ddb1c798efcb1555893e",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-07-08T13:44:28Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "06cdc6a",
-      "new": "601343f",
-      "full": "601343f4050c4c5bb47bc1e086e15ccecebb3511",
-      "msg": "anv/ci: turn on astc emulation testing",
-      "date": "2026-07-08T13:51:54.000+00:00"
+      "old": "601343f",
+      "new": "3db7625",
+      "full": "3db76251251c91885e488fdfc5b68644890eef10",
+      "msg": "jay: add real cycle model",
+      "date": "2026-07-08T15:33:47.000+00:00"
     }
   ]
 }
