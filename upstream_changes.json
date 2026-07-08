@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-08T17:20:39Z",
+  "triggered_at": "2026-07-08T19:09:43Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "71d4e2c",
+      "new": "21a968b",
+      "full": "21a968b84dd006f3a912577704c73b88f3f9374a",
+      "msg": "Merge pull request #5663 from simon902/PDEPoverlap",
+      "date": "2026-07-08T18:08:12Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "601343f",
-      "new": "3db7625",
-      "full": "3db76251251c91885e488fdfc5b68644890eef10",
-      "msg": "jay: add real cycle model",
-      "date": "2026-07-08T15:33:47.000+00:00"
+      "old": "3db7625",
+      "new": "da13afb",
+      "full": "da13afb9476fd906d2ac3a5f38252974e91956a9",
+      "msg": "aco: Remove SMEM offset optimization for non-buffer loads",
+      "date": "2026-07-08T17:41:22.000+00:00"
     }
   ]
 }
