@@ -36,8 +36,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260708-015827](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260708-015827) |
-| **FEXCore** | [`b90c9836c`](https://github.com/FEX-Emu/FEX/commit/b90c9836c) — FEX-2607+36-Nightly-b90c9836c |
+| **Release** | [🔗 nightly-20260708-051902](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260708-051902) |
+| **FEXCore** | [`71d4e2c32`](https://github.com/FEX-Emu/FEX/commit/71d4e2c32) — FEX-2607+38-Nightly-71d4e2c32 |
 | **VKD3D-Proton (Std)** | [`ce3c862c`](https://github.com/HansKristian-Work/vkd3d-proton/commit/ce3c862c) |
 | **VKD3D-Proton (ARM64EC)** | [`ce3c862c`](https://github.com/HansKristian-Work/vkd3d-proton/commit/ce3c862c) |
 | **DXVK (GPLAsync)** | [`deed3379`](https://github.com/doitsujin/dxvk/commit/deed3379) |
@@ -45,8 +45,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (GPLAsync)** | [`deed3379`](https://github.com/doitsujin/dxvk/commit/deed3379) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`deed3379`](https://github.com/doitsujin/dxvk/commit/deed3379) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.2.0-20260708](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260708) — Turnip v26.2.0-20260708 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260708-015827) |
+| **Turnip** | [v26.2.0-20260708-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260708-r2) — Turnip v26.2.0-20260708-r2 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260708-051902) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
