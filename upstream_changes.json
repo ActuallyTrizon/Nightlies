@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-08T19:09:43Z",
+  "triggered_at": "2026-07-08T20:57:36Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "71d4e2c",
-      "new": "21a968b",
-      "full": "21a968b84dd006f3a912577704c73b88f3f9374a",
-      "msg": "Merge pull request #5663 from simon902/PDEPoverlap",
-      "date": "2026-07-08T18:08:12Z"
+      "old": "21a968b",
+      "new": "1bd3945",
+      "full": "1bd3945dd9a1520120b1d6f9d42e3c7970e55e9e",
+      "msg": "Merge pull request #5577 from Sonicadvance1/168",
+      "date": "2026-07-08T19:47:28Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3db7625",
-      "new": "da13afb",
-      "full": "da13afb9476fd906d2ac3a5f38252974e91956a9",
-      "msg": "aco: Remove SMEM offset optimization for non-buffer loads",
-      "date": "2026-07-08T17:41:22.000+00:00"
+      "old": "da13afb",
+      "new": "5ec0125",
+      "full": "5ec01259be367766c2bd1aad4fcef49e79c4c574",
+      "msg": "Revert \"spirv: allow mapping readonly buffers with struct members\"",
+      "date": "2026-07-08T19:53:41.000+00:00"
     }
   ]
 }
