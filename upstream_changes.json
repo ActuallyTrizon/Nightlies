@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-08T20:57:36Z",
+  "triggered_at": "2026-07-08T22:03:04Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "21a968b",
-      "new": "1bd3945",
-      "full": "1bd3945dd9a1520120b1d6f9d42e3c7970e55e9e",
-      "msg": "Merge pull request #5577 from Sonicadvance1/168",
-      "date": "2026-07-08T19:47:28Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "da13afb",
-      "new": "5ec0125",
-      "full": "5ec01259be367766c2bd1aad4fcef49e79c4c574",
-      "msg": "Revert \"spirv: allow mapping readonly buffers with struct members\"",
-      "date": "2026-07-08T19:53:41.000+00:00"
+      "old": "5ec0125",
+      "new": "d8bda1b",
+      "full": "d8bda1b651002e8b6585a672125550255c8bdf7c",
+      "msg": "mediafoundation: ask for temporal delimiter for AV1 via raw header",
+      "date": "2026-07-08T20:33:40.000+00:00"
     }
   ]
 }
