@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-07T23:50:01Z",
+  "triggered_at": "2026-07-08T01:53:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9e24785",
-      "new": "64578c2",
-      "full": "64578c2de5a06ac2b1e03b70ab5e5a39abc3b316",
-      "msg": "kraid: Stop re-sorting blocks with CFGBuilder",
-      "date": "2026-07-07T22:53:34.000+00:00"
+      "old": "64578c2",
+      "new": "fb8742a",
+      "full": "fb8742a4b97bb1bef0fc2f2902523e766bb78e2d",
+      "msg": "util/tests: fix unused variable warnings in cache List test",
+      "date": "2026-07-08T01:16:23.000+00:00"
     }
   ]
 }
