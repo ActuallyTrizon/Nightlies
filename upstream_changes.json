@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-08T08:10:06Z",
+  "triggered_at": "2026-07-08T10:55:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f4d815d",
-      "new": "c1f982a",
-      "full": "c1f982af998de92052901e73aefe486620867e06",
-      "msg": "kraid/copy-prop: Treat F16ToF32 as a widening copy",
-      "date": "2026-07-08T07:13:46.000+00:00"
+      "old": "c1f982a",
+      "new": "b820907",
+      "full": "b8209078389c19d79e81639732f00a62fc2425ae",
+      "msg": "vulkan: use center/extent form for instance node AABB transform",
+      "date": "2026-07-08T09:03:49.000+00:00"
     }
   ]
 }
