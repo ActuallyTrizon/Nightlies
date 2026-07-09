@@ -1960,6 +1960,8 @@ jobs:
           6. **WOWBox64 Hybrid**: \`WOWBox64-Hybrid-*.wcp\` (and \`.zip\`)
           7. **FEXCore**: \`FEX-*.wcp\` (and \`.zip\`)
           7b. **FEXCore PPA-flavor**: \`FEX-*-PPA.wcp\` (and \`.zip\`) — same FEX HEAD, built with \`bylaws/llvm-mingw 20250920\` and the calibrated PPA recipe (Release + C-only debug info, \`//fex-emu/HostThunks\` baked, \`versionCode=0\`, \`description="FEXCore Release from PPA"\`). Calibrated to land within −0.16% of the upstream PPA wcp.
+          7c. **FEXCore +unix libs**: \`FEX-*-unix.wcp\` — the FEX DLLs **plus** the native aarch64 \`.so\` unixlib companions (\`libarm64ecfex.so\`/\`libwow64fex.so\`, shm-stubbed, executable). Requires a Proton built with the FEX unixlib loader (Proton 11.0-1+ with \`MemoryWineLoadUnixLibByName\`); on older Proton the \`.so\` is ignored and it runs DLL-only.
+          7d. **FEXCore PPA +unix libs**: \`FEX-*-PPA-unix.wcp\` — same \`.so\` unixlib companions paired with the PPA-flavor (bylaws / DWARF) DLLs.
           8. **VKD3D-Proton (Std)**: \`VKD3D-Proton-${VKD3D_VERSION}.wcp\` (and \`.zip\`)
           9. **VKD3D-Proton (ARM64EC)**: \`VKD3D-Proton-${VKD3D_ARM64EC_VERSION}.wcp\` (and \`.zip\`)
           10. **DXVK**: \`dxvk-gplasync-*.wcp\` (and \`.zip\`)
