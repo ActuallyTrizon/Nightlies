@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-09T00:01:07Z",
+  "triggered_at": "2026-07-09T04:42:46Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "1bd3945",
-      "new": "5f2455c",
-      "full": "5f2455c502be7e629b33c96371fd7870c491b63a",
-      "msg": "Merge pull request #5665 from lioncash/blendop",
-      "date": "2026-07-08T23:43:20Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d8bda1b",
-      "new": "39d5668",
-      "full": "39d5668fbec0ad1243116e7d3af3d94f98f9d9ab",
-      "msg": "os_misc.c: add missing include for mach_host_self()",
-      "date": "2026-07-08T23:01:07.000+00:00"
+      "old": "39d5668",
+      "new": "c771beb",
+      "full": "c771beb89939cb3c54d2d0c49605b4e95a14ae79",
+      "msg": "freedreno/decode: Fix shader stats in summary mode",
+      "date": "2026-07-09T03:57:29.000+00:00"
     }
   ]
 }
