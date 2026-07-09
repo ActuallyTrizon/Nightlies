@@ -290,6 +290,112 @@ jobs:
             *.wcp
             *.zip
 
+      # --- Unix (.so) variant: same FEX checkout as the DLLs above, so the
+      #     DLLs + native aarch64 .so stay a matched pair for this exact commit.
+      - name: Cache Android NDK
+        id: cache-ndk
+        uses: actions/cache@v4
+        with:
+          path: /opt/android-ndk
+          key: android-ndk-r27c
+
+      - name: Setup Android NDK
+        if: steps.cache-ndk.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          NDK_VER="r27c"
+          wget -q "https://dl.google.com/android/repository/android-ndk-${NDK_VER}-linux.zip" -O ndk.zip
+          rm -rf /tmp/ndk-x && mkdir -p /tmp/ndk-x
+          unzip -q ndk.zip -d /tmp/ndk-x
+          sudo rm -rf /opt/android-ndk
+          sudo mv "/tmp/ndk-x/android-ndk-${NDK_VER}" /opt/android-ndk
+          rm -rf ndk.zip /tmp/ndk-x
+
+      - name: Build unix libs (aarch64 bionic .so)
+        run: |
+          set -euo pipefail
+          # Native aarch64 FEX UnixLib .so, built for BIONIC (Android NDK r27c,
+          # API 28) so it loads in WinNative/Bannerlator bionic wine — NOT glibc.
+          # Built from THIS job's own FEX checkout (source/) so the DLLs + .so
+          # remain a matched pair for this exact commit.
+          # HARD-FAIL on an older FEX ref that lacks UnixLib — never emit a
+          # DLL-only "-unix" wcp.
+          if [ ! -f source/Source/Windows/UnixLib/FEXUnixLib.cpp ]; then
+            echo "::error::No source/Source/Windows/UnixLib/FEXUnixLib.cpp in this FEX checkout (older ref) — cannot build unix .so"
+            exit 1
+          fi
+
+          NDK="/opt/android-ndk"
+          API=28
+          CXX="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang++"
+          "$CXX" --version | head -1
+
+          # bionic lacks shm_open/shm_unlink; declare them and leave them as
+          # UNDEFINED symbols, resolved at runtime by the wine host process
+          # (-Wl,--allow-shlib-undefined). No -lrt (bionic folds it into libc).
+          cat > /tmp/bionic_shm_decl.h <<'HDR'
+          #pragma once
+          #include <sys/types.h>
+          extern "C" {
+          int shm_open(const char* name, int oflag, mode_t mode);
+          int shm_unlink(const char* name);
+          }
+          HDR
+
+          mkdir -p unixlibs
+          CXXFLAGS="-shared -fPIC -O2 -std=c++17 -g3 -gdwarf-4 -fno-omit-frame-pointer \
+            -fasynchronous-unwind-tables -funwind-tables -mtune=generic \
+            -include /tmp/bionic_shm_decl.h \
+            -Wl,--allow-shlib-undefined"
+          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical).
+          for name in libwow64fex libarm64ecfex; do
+            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" source/Source/Windows/UnixLib/FEXUnixLib.cpp
+          done
+          echo "Built bionic unix .so:"
+          file unixlibs/*.so
+
+      - name: Package (unix wcp)
+        run: |
+          set -euo pipefail
+          rm -rf final_package_unix
+          mkdir -p final_package_unix/system32 final_package_unix/aarch64-unix
+
+          # DLLs: reuse THIS job's already-built, matched DLLs (from final_package).
+          cp final_package/system32/libarm64ecfex.dll final_package_unix/system32/libarm64ecfex.dll
+          cp final_package/system32/libwow64fex.dll   final_package_unix/system32/libwow64fex.dll
+          # .so: this job's matched bionic unix libs.
+          cp unixlibs/libarm64ecfex.so final_package_unix/aarch64-unix/libarm64ecfex.so
+          cp unixlibs/libwow64fex.so   final_package_unix/aarch64-unix/libwow64fex.so
+
+          # TODO(delivery-path): confirm the .so target dir from the proton
+          # loader-search spike. On Bannerlator ${libdir}=imagefs/usr/lib, where
+          # the FEX loader does NOT search — swap SO_TARGET_DIR when the spike
+          # lands. Single-quoted so ${libdir} stays literal in the JSON below.
+          SO_TARGET_DIR='${libdir}/wine/aarch64-unix'
+
+          cat > final_package_unix/profile.json <<EOF
+          {
+            "type": "FEXCore",
+            "versionName": "${VERSION_NAME}-unix",
+            "versionCode": 0,
+            "description": "FEXCore ${VERSION_NAME} +unix libs",
+            "files": [
+              { "source": "aarch64-unix/libarm64ecfex.so", "target": "${SO_TARGET_DIR}/libarm64ecfex.so" },
+              { "source": "aarch64-unix/libwow64fex.so",   "target": "${SO_TARGET_DIR}/libwow64fex.so" },
+              { "source": "system32/libarm64ecfex.dll",    "target": "\${system32}/libarm64ecfex.dll" },
+              { "source": "system32/libwow64fex.dll",      "target": "\${system32}/libwow64fex.dll" }
+            ]
+          }
+          EOF
+
+          cd final_package_unix
+          tar -cJf "../${VERSION_NAME}-unix.wcp" .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fex-nightly-unix
+          path: '*-unix.wcp'
+
   # ==================================================================
   # JOB 2b: FEXCore Nightly — PPA flavor
   # Same FEX HEAD as build-fex; different toolchain + recipe to mirror
@@ -424,6 +530,112 @@ jobs:
           path: |
             *.wcp
             *.zip
+
+      # --- Unix (.so) variant: same FEX checkout as the PPA DLLs above, so the
+      #     DLLs + native aarch64 .so stay a matched pair for this exact commit.
+      - name: Cache Android NDK
+        id: cache-ndk
+        uses: actions/cache@v4
+        with:
+          path: /opt/android-ndk
+          key: android-ndk-r27c
+
+      - name: Setup Android NDK
+        if: steps.cache-ndk.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          NDK_VER="r27c"
+          wget -q "https://dl.google.com/android/repository/android-ndk-${NDK_VER}-linux.zip" -O ndk.zip
+          rm -rf /tmp/ndk-x && mkdir -p /tmp/ndk-x
+          unzip -q ndk.zip -d /tmp/ndk-x
+          sudo rm -rf /opt/android-ndk
+          sudo mv "/tmp/ndk-x/android-ndk-${NDK_VER}" /opt/android-ndk
+          rm -rf ndk.zip /tmp/ndk-x
+
+      - name: Build unix libs (aarch64 bionic .so)
+        run: |
+          set -euo pipefail
+          # Native aarch64 FEX UnixLib .so, built for BIONIC (Android NDK r27c,
+          # API 28) so it loads in WinNative/Bannerlator bionic wine — NOT glibc.
+          # Built from THIS job's own FEX checkout (source/) so the DLLs + .so
+          # remain a matched pair for this exact commit.
+          # HARD-FAIL on an older FEX ref that lacks UnixLib — never emit a
+          # DLL-only "-unix" wcp.
+          if [ ! -f source/Source/Windows/UnixLib/FEXUnixLib.cpp ]; then
+            echo "::error::No source/Source/Windows/UnixLib/FEXUnixLib.cpp in this FEX checkout (older ref) — cannot build unix .so"
+            exit 1
+          fi
+
+          NDK="/opt/android-ndk"
+          API=28
+          CXX="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang++"
+          "$CXX" --version | head -1
+
+          # bionic lacks shm_open/shm_unlink; declare them and leave them as
+          # UNDEFINED symbols, resolved at runtime by the wine host process
+          # (-Wl,--allow-shlib-undefined). No -lrt (bionic folds it into libc).
+          cat > /tmp/bionic_shm_decl.h <<'HDR'
+          #pragma once
+          #include <sys/types.h>
+          extern "C" {
+          int shm_open(const char* name, int oflag, mode_t mode);
+          int shm_unlink(const char* name);
+          }
+          HDR
+
+          mkdir -p unixlibs
+          CXXFLAGS="-shared -fPIC -O2 -std=c++17 -g3 -gdwarf-4 -fno-omit-frame-pointer \
+            -fasynchronous-unwind-tables -funwind-tables -mtune=generic \
+            -include /tmp/bionic_shm_decl.h \
+            -Wl,--allow-shlib-undefined"
+          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical).
+          for name in libwow64fex libarm64ecfex; do
+            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" source/Source/Windows/UnixLib/FEXUnixLib.cpp
+          done
+          echo "Built bionic unix .so:"
+          file unixlibs/*.so
+
+      - name: Package (unix wcp)
+        run: |
+          set -euo pipefail
+          rm -rf final_package_unix
+          mkdir -p final_package_unix/system32 final_package_unix/aarch64-unix
+
+          # DLLs: reuse THIS job's already-built, matched DLLs (from final_package).
+          cp final_package/system32/libarm64ecfex.dll final_package_unix/system32/libarm64ecfex.dll
+          cp final_package/system32/libwow64fex.dll   final_package_unix/system32/libwow64fex.dll
+          # .so: this job's matched bionic unix libs.
+          cp unixlibs/libarm64ecfex.so final_package_unix/aarch64-unix/libarm64ecfex.so
+          cp unixlibs/libwow64fex.so   final_package_unix/aarch64-unix/libwow64fex.so
+
+          # TODO(delivery-path): confirm the .so target dir from the proton
+          # loader-search spike. On Bannerlator ${libdir}=imagefs/usr/lib, where
+          # the FEX loader does NOT search — swap SO_TARGET_DIR when the spike
+          # lands. Single-quoted so ${libdir} stays literal in the JSON below.
+          SO_TARGET_DIR='${libdir}/wine/aarch64-unix'
+
+          cat > final_package_unix/profile.json <<EOF
+          {
+            "type": "FEXCore",
+            "versionName": "${VERSION_NAME}-unix",
+            "versionCode": 0,
+            "description": "FEXCore ${VERSION_NAME} +unix libs",
+            "files": [
+              { "source": "aarch64-unix/libarm64ecfex.so", "target": "${SO_TARGET_DIR}/libarm64ecfex.so" },
+              { "source": "aarch64-unix/libwow64fex.so",   "target": "${SO_TARGET_DIR}/libwow64fex.so" },
+              { "source": "system32/libarm64ecfex.dll",    "target": "\${system32}/libarm64ecfex.dll" },
+              { "source": "system32/libwow64fex.dll",      "target": "\${system32}/libwow64fex.dll" }
+            ]
+          }
+          EOF
+
+          cd final_package_unix
+          tar -cJf "../${VERSION_NAME}-unix.wcp" .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fex-nightly-ppa-unix
+          path: '*-unix.wcp'
 
   # ==================================================================
   # JOB 3: VKD3D-Proton (Standard)
