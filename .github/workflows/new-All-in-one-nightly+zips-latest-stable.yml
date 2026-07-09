@@ -330,9 +330,16 @@ jobs:
           CXX="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang++"
           "$CXX" --version | head -1
 
-          # bionic lacks shm_open/shm_unlink; declare them and leave them as
-          # UNDEFINED symbols, resolved at runtime by the wine host process
-          # (-Wl,--allow-shlib-undefined). No -lrt (bionic folds it into libc).
+          # bionic libc does NOT provide shm_open/shm_unlink, and nothing else
+          # does either. Wine's loader dlopen()s this .so with RTLD_NOW, which
+          # requires EVERY symbol resolved — an undefined shm_open makes dlopen
+          # return NULL and the unixlib silently never loads. So DEFINE ENOSYS
+          # stubs and compile them straight INTO the .so (FEX's SHM stats are
+          # non-essential to translation; a failing stub is fine — FEX skips them).
+          #
+          # Header = DECLARATIONS only, force-included so FEXUnixLib.cpp (which
+          # calls shm_open/shm_unlink via <sys/mman.h>, where bionic omits their
+          # prototypes) still compiles.
           cat > /tmp/bionic_shm_decl.h <<'HDR'
           #pragma once
           #include <sys/types.h>
@@ -342,17 +349,47 @@ jobs:
           }
           HDR
 
+          # Stub = DEFINITIONS, compiled to an object and linked into each .so so
+          # there are NO unresolved shm_open/shm_unlink symbols left for RTLD_NOW.
+          cat > /tmp/fex_bionic_shm_stub.c <<'STUB'
+          #include <errno.h>
+          int shm_open(const char* n, int o, unsigned m){ (void)n; (void)o; (void)m; errno = ENOSYS; return -1; }
+          int shm_unlink(const char* n){ (void)n; errno = ENOSYS; return -1; }
+          STUB
+          NDK_CC="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang"
+          "$NDK_CC" -c -fPIC -O2 -o /tmp/fex_bionic_shm_stub.o /tmp/fex_bionic_shm_stub.c
+
           mkdir -p unixlibs
+          # No -lrt (bionic folds it into libc); no --allow-shlib-undefined — with
+          # the stub linked in, shm_open/shm_unlink are defined and the only
+          # remaining UND symbols are libc (@LIBC) + libc++ (NEEDED
+          # libc++_shared.so), which resolve at load from imagefs/usr/lib on
+          # LD_LIBRARY_PATH.
           CXXFLAGS="-shared -fPIC -O2 -std=c++17 -g3 -gdwarf-4 -fno-omit-frame-pointer \
             -fasynchronous-unwind-tables -funwind-tables -mtune=generic \
-            -include /tmp/bionic_shm_decl.h \
-            -Wl,--allow-shlib-undefined"
-          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical).
+            -include /tmp/bionic_shm_decl.h"
+          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical),
+          # each with the shm stub object linked in.
           for name in libwow64fex libarm64ecfex; do
-            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" source/Source/Windows/UnixLib/FEXUnixLib.cpp
+            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" \
+              source/Source/Windows/UnixLib/FEXUnixLib.cpp /tmp/fex_bionic_shm_stub.o
           done
-          echo "Built bionic unix .so:"
+
+          # Wine libs are executable (0771); a 0600 .so cannot be dlopen'd on
+          # Android. Make them executable so the packaged wcp carries the exec bit.
+          chmod 0755 unixlibs/*.so
+
+          echo "Built bionic unix .so (shm stubs compiled in):"
           file unixlibs/*.so
+          # Self-check: hard-fail if shm_open/shm_unlink are still undefined.
+          RE="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
+          for name in libwow64fex libarm64ecfex; do
+            BAD=$("$RE" --dyn-syms "unixlibs/${name}.so" | grep ' UND ' | grep -E 'shm_open|shm_unlink' || true)
+            if [ -n "$BAD" ]; then
+              echo "::error::${name}.so still has undefined shm symbols:"; echo "$BAD"; exit 1
+            fi
+          done
+          echo "OK: no undefined shm_open/shm_unlink in the unix .so"
 
       - name: Package (unix wcp)
         run: |
@@ -363,9 +400,12 @@ jobs:
           # DLLs: reuse THIS job's already-built, matched DLLs (from final_package).
           cp final_package/system32/libarm64ecfex.dll final_package_unix/system32/libarm64ecfex.dll
           cp final_package/system32/libwow64fex.dll   final_package_unix/system32/libwow64fex.dll
-          # .so: this job's matched bionic unix libs.
+          # .so: this job's matched bionic unix libs. Force the execute bit so
+          # the wcp tar stores them 0755 (a 0600 .so cannot be dlopen'd on
+          # Android; wine libs are 0771).
           cp unixlibs/libarm64ecfex.so final_package_unix/aarch64-unix/libarm64ecfex.so
           cp unixlibs/libwow64fex.so   final_package_unix/aarch64-unix/libwow64fex.so
+          chmod 0755 final_package_unix/aarch64-unix/*.so
 
           # TODO(delivery-path): confirm the .so target dir from the proton
           # loader-search spike. On Bannerlator ${libdir}=imagefs/usr/lib, where
@@ -571,9 +611,16 @@ jobs:
           CXX="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang++"
           "$CXX" --version | head -1
 
-          # bionic lacks shm_open/shm_unlink; declare them and leave them as
-          # UNDEFINED symbols, resolved at runtime by the wine host process
-          # (-Wl,--allow-shlib-undefined). No -lrt (bionic folds it into libc).
+          # bionic libc does NOT provide shm_open/shm_unlink, and nothing else
+          # does either. Wine's loader dlopen()s this .so with RTLD_NOW, which
+          # requires EVERY symbol resolved — an undefined shm_open makes dlopen
+          # return NULL and the unixlib silently never loads. So DEFINE ENOSYS
+          # stubs and compile them straight INTO the .so (FEX's SHM stats are
+          # non-essential to translation; a failing stub is fine — FEX skips them).
+          #
+          # Header = DECLARATIONS only, force-included so FEXUnixLib.cpp (which
+          # calls shm_open/shm_unlink via <sys/mman.h>, where bionic omits their
+          # prototypes) still compiles.
           cat > /tmp/bionic_shm_decl.h <<'HDR'
           #pragma once
           #include <sys/types.h>
@@ -583,17 +630,47 @@ jobs:
           }
           HDR
 
+          # Stub = DEFINITIONS, compiled to an object and linked into each .so so
+          # there are NO unresolved shm_open/shm_unlink symbols left for RTLD_NOW.
+          cat > /tmp/fex_bionic_shm_stub.c <<'STUB'
+          #include <errno.h>
+          int shm_open(const char* n, int o, unsigned m){ (void)n; (void)o; (void)m; errno = ENOSYS; return -1; }
+          int shm_unlink(const char* n){ (void)n; errno = ENOSYS; return -1; }
+          STUB
+          NDK_CC="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${API}-clang"
+          "$NDK_CC" -c -fPIC -O2 -o /tmp/fex_bionic_shm_stub.o /tmp/fex_bionic_shm_stub.c
+
           mkdir -p unixlibs
+          # No -lrt (bionic folds it into libc); no --allow-shlib-undefined — with
+          # the stub linked in, shm_open/shm_unlink are defined and the only
+          # remaining UND symbols are libc (@LIBC) + libc++ (NEEDED
+          # libc++_shared.so), which resolve at load from imagefs/usr/lib on
+          # LD_LIBRARY_PATH.
           CXXFLAGS="-shared -fPIC -O2 -std=c++17 -g3 -gdwarf-4 -fno-omit-frame-pointer \
             -fasynchronous-unwind-tables -funwind-tables -mtune=generic \
-            -include /tmp/bionic_shm_decl.h \
-            -Wl,--allow-shlib-undefined"
-          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical).
+            -include /tmp/bionic_shm_decl.h"
+          # Same TU built twice, named for FEX's two UnixLib targets (byte-identical),
+          # each with the shm stub object linked in.
           for name in libwow64fex libarm64ecfex; do
-            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" source/Source/Windows/UnixLib/FEXUnixLib.cpp
+            "$CXX" $CXXFLAGS -o "unixlibs/${name}.so" \
+              source/Source/Windows/UnixLib/FEXUnixLib.cpp /tmp/fex_bionic_shm_stub.o
           done
-          echo "Built bionic unix .so:"
+
+          # Wine libs are executable (0771); a 0600 .so cannot be dlopen'd on
+          # Android. Make them executable so the packaged wcp carries the exec bit.
+          chmod 0755 unixlibs/*.so
+
+          echo "Built bionic unix .so (shm stubs compiled in):"
           file unixlibs/*.so
+          # Self-check: hard-fail if shm_open/shm_unlink are still undefined.
+          RE="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
+          for name in libwow64fex libarm64ecfex; do
+            BAD=$("$RE" --dyn-syms "unixlibs/${name}.so" | grep ' UND ' | grep -E 'shm_open|shm_unlink' || true)
+            if [ -n "$BAD" ]; then
+              echo "::error::${name}.so still has undefined shm symbols:"; echo "$BAD"; exit 1
+            fi
+          done
+          echo "OK: no undefined shm_open/shm_unlink in the unix .so"
 
       - name: Package (unix wcp)
         run: |
@@ -604,9 +681,12 @@ jobs:
           # DLLs: reuse THIS job's already-built, matched DLLs (from final_package).
           cp final_package/system32/libarm64ecfex.dll final_package_unix/system32/libarm64ecfex.dll
           cp final_package/system32/libwow64fex.dll   final_package_unix/system32/libwow64fex.dll
-          # .so: this job's matched bionic unix libs.
+          # .so: this job's matched bionic unix libs. Force the execute bit so
+          # the wcp tar stores them 0755 (a 0600 .so cannot be dlopen'd on
+          # Android; wine libs are 0771).
           cp unixlibs/libarm64ecfex.so final_package_unix/aarch64-unix/libarm64ecfex.so
           cp unixlibs/libwow64fex.so   final_package_unix/aarch64-unix/libwow64fex.so
+          chmod 0755 final_package_unix/aarch64-unix/*.so
 
           # TODO(delivery-path): confirm the .so target dir from the proton
           # loader-search spike. On Bannerlator ${libdir}=imagefs/usr/lib, where
