@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-08T22:03:04Z",
+  "triggered_at": "2026-07-09T00:01:07Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "1bd3945",
+      "new": "5f2455c",
+      "full": "5f2455c502be7e629b33c96371fd7870c491b63a",
+      "msg": "Merge pull request #5665 from lioncash/blendop",
+      "date": "2026-07-08T23:43:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5ec0125",
-      "new": "d8bda1b",
-      "full": "d8bda1b651002e8b6585a672125550255c8bdf7c",
-      "msg": "mediafoundation: ask for temporal delimiter for AV1 via raw header",
-      "date": "2026-07-08T20:33:40.000+00:00"
+      "old": "d8bda1b",
+      "new": "39d5668",
+      "full": "39d5668fbec0ad1243116e7d3af3d94f98f9d9ab",
+      "msg": "os_misc.c: add missing include for mach_host_self()",
+      "date": "2026-07-08T23:01:07.000+00:00"
     }
   ]
 }
