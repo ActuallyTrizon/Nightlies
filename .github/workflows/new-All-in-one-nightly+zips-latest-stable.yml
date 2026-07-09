@@ -1862,7 +1862,7 @@ jobs:
           CUTOFF_24H=$(date -u -d '24 hours ago' +%s)
 
           # ── Fetch current status for all upstreams ──────────────────────
-          STATUS_TABLE="### 📊 All Upstream Status\n| Component | Latest Commit | Last Updated |\n| :--- | :--- | :--- |\n"
+          STATUS_TABLE="<details><summary>📊 <b>All upstream component status</b></summary>\n\n| Component | Latest Commit | Last Updated |\n| :--- | :--- | :--- |\n"
 
           for i in "${!REPOS[@]}"; do
             REPO="${REPOS[$i]}"
@@ -1900,7 +1900,7 @@ jobs:
             # Only show "what changed" section if watcher ran within the last 3 hours
             # (avoids stale data from a previous watcher run on scheduler-triggered builds)
             if [ "$CHANGED_COUNT" -gt "0" ] && [ "$AGE" -lt "10800" ]; then
-              TRIGGER_SECTION="### 🔄 What Triggered This Build\n> ${CHANGED_COUNT} upstream component(s) updated since last build\n\n| Component | Old Commit | New Commit | Change |\n| :--- | :--- | :--- | :--- |\n"
+              TRIGGER_SECTION="### 🔄 What changed\n> ${CHANGED_COUNT} upstream component(s) updated since last build\n\n| Component | Old Commit | New Commit | Change |\n| :--- | :--- | :--- | :--- |\n"
               while IFS= read -r row; do
                 R_NAME=$(echo "$row" | jq -r '.name')
                 R_REPO=$(echo "$row" | jq -r '.repo')
@@ -1916,11 +1916,11 @@ jobs:
 
           # ── Write the full release body ─────────────────────────────────
           cat > release_body.md << BODYEOF
-          > ⚠️ **DISCLAIMER: NIGHTLY BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK! STABLE RELEASES ARE ALWAYS BEST TO USE!**
+          > ⚠️ **Nightly build — not always stable. Use at your own risk; stable releases are best.**
 
           ---
 
-          ### 🚀 Nightly Build: ${{ env.TAG_NAME }}
+          ## 🚀 Nightly Build: ${{ env.TAG_NAME }}
 
           BODYEOF
 
@@ -1929,14 +1929,14 @@ jobs:
             printf "%b\n" "$TRIGGER_SECTION" >> release_body.md
           fi
 
-          # Append upstream status table
-          printf "%b\n\n" "$STATUS_TABLE" >> release_body.md
+          # Append upstream status table (wrapped in a collapsed <details>)
+          printf "%b\n</details>\n\n" "$STATUS_TABLE" >> release_body.md
 
           # Append built component versions table + files list
           cat >> release_body.md << BODYEOF
           ---
 
-          ### 📦 Built Components
+          <details><summary>📦 <b>Built components</b></summary>
 
           | Component | Source / Commit |
           | :--- | :--- |
@@ -1951,7 +1951,10 @@ jobs:
           | **DXVK BinSem (ARM64EC)** | [${DXVK_BINSEM_ARM64EC_VERSION}](https://github.com/doitsujin/dxvk/commit/${DXVK_BINSEM_ARM64EC_COMMIT}) |
           | **Turnip (A6xx/A7xx/A8xx)** | [${TURNIP_NAME}](https://github.com/The412Banner/Banners-Turnip/releases/tag/${TURNIP_TAG}) |
 
-          ### 📦 Files Included
+          </details>
+
+          <details><summary>📁 <b>Files included</b> — what each .wcp / .zip is</summary>
+
           1. **Box64 Native**: \`box64-*.wcp\` (and \`.zip\`)
           2. **Box64 Bionic**: \`box64-bionic-*.wcp\` (and \`.zip\`)
           3. **WOWBox64**: \`WOWBox64-*.wcp\` (and \`.zip\`)
@@ -1970,9 +1973,9 @@ jobs:
           13. **DXVK BinSem (ARM64EC)**: \`DXVK-*-binsem-gplasync-arm64ec-*.wcp\` (and \`.zip\`)
           14. **Turnip GPU Driver**: \`Turnip-v*.zip\` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL
 
-          ---
+          </details>
 
-          ### ⚙️ Activating the DXVK BinSem fallback
+          <details><summary>⚙️ <b>DXVK BinSem fallback</b> — how to enable</summary>
 
           The **DXVK BinSem** builds (\`*-binsem-gplasync-*\`) ship leegao's [binary-semaphore queue fallback](https://github.com/leegao/dxvk/commit/e950b4a90359acebf13f5a76cfa2cfaa7c238b74) on top of the usual GPLAsync patch. The fallback is **opt-in** — set the environment variable in your container/Wine environment:
 
@@ -1982,8 +1985,11 @@ jobs:
 
           This restores binary-semaphore inter-queue sync and works around the Turnip-kgsl timeline-semaphore FPS regression in DXVK 2.5+. **Without the variable set, these DLLs behave like stock DXVK**, so the BinSem builds are safe drop-in replacements either way.
 
-          **The .wcp files are packaged for use with Winlator**
-          **The .zip files are packaged for manual injection with Gamehub**
+          </details>
+
+          ---
+
+          **\`.wcp\`** → for Winlator · **\`.zip\`** → for GameHub manual injection
           BODYEOF
 
       - name: Create GitHub Release
