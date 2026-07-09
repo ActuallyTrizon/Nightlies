@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-09T21:13:42Z",
+  "triggered_at": "2026-07-09T23:03:31Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "e508b6d",
-      "new": "92a171c",
-      "full": "92a171ce53f67ac57e1d30c40be0f5f8ff8b5e86",
-      "msg": "Merge pull request #5675 from lioncash/branch",
-      "date": "2026-07-09T20:58:54Z"
+      "old": "92a171c",
+      "new": "37265b1",
+      "full": "37265b109a4bba9e10241972dfcb3d1fdb8f3f9a",
+      "msg": "Merge pull request #5676 from Sonicadvance1/185",
+      "date": "2026-07-09T22:39:36Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f01ea0",
-      "new": "703e89a",
-      "full": "703e89a219f6eb6f62e8c394bfe4a9b9fcdef44e",
-      "msg": "lavapipe: advertise dynamicRenderingLocalReadDepthStencilAttachments",
-      "date": "2026-07-09T20:33:08.000+00:00"
+      "old": "703e89a",
+      "new": "ef024af",
+      "full": "ef024af866ce81369ce35c1e962f14248e540636",
+      "msg": "vulkan/meta: Allow resolving a 2D MSAA image to a 3D image",
+      "date": "2026-07-09T22:16:24.000+00:00"
     }
   ]
 }
