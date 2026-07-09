@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-09T04:42:46Z",
+  "triggered_at": "2026-07-09T08:24:35Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "17b0ca1",
+      "new": "5a1114c",
+      "full": "5a1114c76ef61b2011467e2b28412a7b0253b1be",
+      "msg": "[INTERP] Fixed a typo in F0 66 0F C1 opcode",
+      "date": "2026-07-09T08:03:51Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "39d5668",
-      "new": "c771beb",
-      "full": "c771beb89939cb3c54d2d0c49605b4e95a14ae79",
-      "msg": "freedreno/decode: Fix shader stats in summary mode",
-      "date": "2026-07-09T03:57:29.000+00:00"
+      "old": "c771beb",
+      "new": "058b45e",
+      "full": "058b45eede94f3912a1ab3ee2e3c556ede040730",
+      "msg": "anv: fill min_array_element with indirect descriptors",
+      "date": "2026-07-09T07:42:25.000+00:00"
     }
   ]
 }
