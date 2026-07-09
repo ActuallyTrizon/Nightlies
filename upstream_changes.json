@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-09T14:34:23Z",
+  "triggered_at": "2026-07-09T17:12:54Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5f2455c",
-      "new": "6cd2a48",
-      "full": "6cd2a489102b5615744c899672d2b7447feb0b21",
-      "msg": "Merge pull request #5666 from Sonicadvance1/184",
-      "date": "2026-07-09T14:16:06Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dcceedf",
-      "new": "ed59bf8",
-      "full": "ed59bf892aed9313dc382c382480b1f6593f70bb",
-      "msg": "anv: Drop the anv_disable_hiz drirc option",
-      "date": "2026-07-09T13:36:11.000+00:00"
+      "old": "ed59bf8",
+      "new": "8ccc7f5",
+      "full": "8ccc7f5632ad21e821e32902173256dfff85a2de",
+      "msg": "nvk: Add an NVK_DEBUG=no_compression flag",
+      "date": "2026-07-09T14:57:31.000+00:00"
     }
   ]
 }
