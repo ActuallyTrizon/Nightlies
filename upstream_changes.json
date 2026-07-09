@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-09T11:51:37Z",
+  "triggered_at": "2026-07-09T14:34:23Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5a1114c",
-      "new": "384972d",
-      "full": "384972df38d1b6be58918666def7ee9edb2437d2",
-      "msg": "[CI] Fix CI (#4021)",
-      "date": "2026-07-09T10:13:50Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5f2455c",
+      "new": "6cd2a48",
+      "full": "6cd2a489102b5615744c899672d2b7447feb0b21",
+      "msg": "Merge pull request #5666 from Sonicadvance1/184",
+      "date": "2026-07-09T14:16:06Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "058b45e",
-      "new": "dcceedf",
-      "full": "dcceedff82a9037812f7d1d13b646869ac90f436",
-      "msg": "xfiles: update expectations based on 2026-7-8 nightly",
-      "date": "2026-07-09T09:32:25.000+00:00"
+      "old": "dcceedf",
+      "new": "ed59bf8",
+      "full": "ed59bf892aed9313dc382c382480b1f6593f70bb",
+      "msg": "anv: Drop the anv_disable_hiz drirc option",
+      "date": "2026-07-09T13:36:11.000+00:00"
     }
   ]
 }
