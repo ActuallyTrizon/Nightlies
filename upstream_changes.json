@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-09T17:12:54Z",
+  "triggered_at": "2026-07-09T19:24:05Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "6cd2a48",
+      "new": "e508b6d",
+      "full": "e508b6df0d948b1d20f6135177fa2e7f2a996dd0",
+      "msg": "Merge pull request #5673 from lioncash/vbitwise",
+      "date": "2026-07-09T18:42:37Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ed59bf8",
-      "new": "8ccc7f5",
-      "full": "8ccc7f5632ad21e821e32902173256dfff85a2de",
-      "msg": "nvk: Add an NVK_DEBUG=no_compression flag",
-      "date": "2026-07-09T14:57:31.000+00:00"
+      "old": "8ccc7f5",
+      "new": "7f01ea0",
+      "full": "7f01ea0094dda7614287912c9922ad7d3e761507",
+      "msg": "Revert \"pvr: Fix for depth stencil 2d array writes.\"",
+      "date": "2026-07-09T18:18:25.000+00:00"
     }
   ]
 }
