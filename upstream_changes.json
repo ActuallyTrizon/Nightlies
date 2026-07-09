@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-09T19:24:05Z",
+  "triggered_at": "2026-07-09T21:13:42Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "6cd2a48",
-      "new": "e508b6d",
-      "full": "e508b6df0d948b1d20f6135177fa2e7f2a996dd0",
-      "msg": "Merge pull request #5673 from lioncash/vbitwise",
-      "date": "2026-07-09T18:42:37Z"
+      "old": "e508b6d",
+      "new": "92a171c",
+      "full": "92a171ce53f67ac57e1d30c40be0f5f8ff8b5e86",
+      "msg": "Merge pull request #5675 from lioncash/branch",
+      "date": "2026-07-09T20:58:54Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8ccc7f5",
-      "new": "7f01ea0",
-      "full": "7f01ea0094dda7614287912c9922ad7d3e761507",
-      "msg": "Revert \"pvr: Fix for depth stencil 2d array writes.\"",
-      "date": "2026-07-09T18:18:25.000+00:00"
+      "old": "7f01ea0",
+      "new": "703e89a",
+      "full": "703e89a219f6eb6f62e8c394bfe4a9b9fcdef44e",
+      "msg": "lavapipe: advertise dynamicRenderingLocalReadDepthStencilAttachments",
+      "date": "2026-07-09T20:33:08.000+00:00"
     }
   ]
 }
