@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-10T02:04:48Z",
+  "triggered_at": "2026-07-10T06:34:57Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "384972d",
+      "new": "24d5501",
+      "full": "24d550147f80562305d0c237bd54e1b6085bcc25",
+      "msg": "[LA64_DYNAREC] Added upper 32bits zero tracking (#4016)",
+      "date": "2026-07-10T06:19:51Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ef024af",
-      "new": "593e886",
-      "full": "593e886c984651ed64c6e31236afe2df313f3bad",
-      "msg": "radv/nir_trim_fs_color_exports: remove mrt0.w if alpha_to_one makes it dead",
-      "date": "2026-07-10T01:31:40.000+00:00"
+      "old": "593e886",
+      "new": "a1b50db",
+      "full": "a1b50dbcd751bbb24ac717927c627a30e5969657",
+      "msg": "vulkan/screenshot-layer: replace itoa/sprintf with snprintf",
+      "date": "2026-07-09T20:14:11.000-07:00"
     }
   ]
 }
