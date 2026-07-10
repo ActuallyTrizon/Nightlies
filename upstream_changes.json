@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-09T23:03:31Z",
+  "triggered_at": "2026-07-10T02:04:48Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "92a171c",
-      "new": "37265b1",
-      "full": "37265b109a4bba9e10241972dfcb3d1fdb8f3f9a",
-      "msg": "Merge pull request #5676 from Sonicadvance1/185",
-      "date": "2026-07-09T22:39:36Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "703e89a",
-      "new": "ef024af",
-      "full": "ef024af866ce81369ce35c1e962f14248e540636",
-      "msg": "vulkan/meta: Allow resolving a 2D MSAA image to a 3D image",
-      "date": "2026-07-09T22:16:24.000+00:00"
+      "old": "ef024af",
+      "new": "593e886",
+      "full": "593e886c984651ed64c6e31236afe2df313f3bad",
+      "msg": "radv/nir_trim_fs_color_exports: remove mrt0.w if alpha_to_one makes it dead",
+      "date": "2026-07-10T01:31:40.000+00:00"
     }
   ]
 }
