@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-10T18:17:18Z",
+  "triggered_at": "2026-07-10T20:15:30Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5f2d19c",
-      "new": "87301ca",
-      "full": "87301ca154d91d9400130c5fec6847be2c79a4ca",
-      "msg": "Merge pull request #5700 from lioncash/bitset",
-      "date": "2026-07-10T17:35:45Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6d51a04",
-      "new": "ec2a340",
-      "full": "ec2a3402c2977ee050aa80eb9cdf1a5b2b678122",
-      "msg": "nak/hw_tests: add F2I test for NaN behavior",
-      "date": "2026-07-10T17:41:31.000+00:00"
+      "old": "ec2a340",
+      "new": "578bf3c",
+      "full": "578bf3cf273a46f36a9b89f2591fc071216484ad",
+      "msg": "intel/gen: allow dead loops",
+      "date": "2026-07-10T19:34:24.000+00:00"
     }
   ]
 }
