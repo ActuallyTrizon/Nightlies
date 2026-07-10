@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-10T20:15:30Z",
+  "triggered_at": "2026-07-10T21:52:31Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2d5d7d1",
+      "new": "1953db9",
+      "full": "1953db9145ee831c5b4cd22eb6d032d6687d200b",
+      "msg": "Support libpipewire bundle (#4019)",
+      "date": "2026-07-10T20:30:53Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ec2a340",
-      "new": "578bf3c",
-      "full": "578bf3cf273a46f36a9b89f2591fc071216484ad",
-      "msg": "intel/gen: allow dead loops",
-      "date": "2026-07-10T19:34:24.000+00:00"
+      "old": "578bf3c",
+      "new": "b16af1f",
+      "full": "b16af1f337c3de61aa4da7349bde5061b1736170",
+      "msg": "d3d12: Use res_device to import resource from different device via handle",
+      "date": "2026-07-10T21:12:44.000+00:00"
     }
   ]
 }
