@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-07-10T06:34:57Z",
+  "triggered_at": "2026-07-10T10:15:57Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "384972d",
-      "new": "24d5501",
-      "full": "24d550147f80562305d0c237bd54e1b6085bcc25",
-      "msg": "[LA64_DYNAREC] Added upper 32bits zero tracking (#4016)",
-      "date": "2026-07-10T06:19:51Z"
+      "old": "24d5501",
+      "new": "d53d99e",
+      "full": "d53d99ebcfc3042d92b35b76f3636d9571cd83b7",
+      "msg": "[LA64_DYNAREC] Preserves liveness across internal unconditional jumps (#4025)",
+      "date": "2026-07-10T09:28:56Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "37265b1",
+      "new": "8347566",
+      "full": "8347566815149379bee5f848fb390ad49fac6f57",
+      "msg": "Merge pull request #5681 from lioncash/timer",
+      "date": "2026-07-10T09:51:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "593e886",
-      "new": "a1b50db",
-      "full": "a1b50dbcd751bbb24ac717927c627a30e5969657",
-      "msg": "vulkan/screenshot-layer: replace itoa/sprintf with snprintf",
-      "date": "2026-07-09T20:14:11.000-07:00"
+      "old": "a1b50db",
+      "new": "64ba60c",
+      "full": "64ba60cb329c834a7e0c0a30223daeb84331acc1",
+      "msg": "freedreno/blitter: copy full depth of src box in resource_copy_region",
+      "date": "2026-07-10T08:27:08.000+00:00"
     }
   ]
 }
