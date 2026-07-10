@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-10T16:15:28Z",
+  "triggered_at": "2026-07-10T18:17:18Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c52b49b",
-      "new": "3dfc6f0",
-      "full": "3dfc6f07d0953b1e8b41705275c2c59cc7374fc5",
-      "msg": "vkd3d: Enable descriptor heap for World of Warcraft Classic and Retail.",
-      "date": "2026-07-10T15:43:57Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5f2d19c",
+      "new": "87301ca",
+      "full": "87301ca154d91d9400130c5fec6847be2c79a4ca",
+      "msg": "Merge pull request #5700 from lioncash/bitset",
+      "date": "2026-07-10T17:35:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2a33545",
-      "new": "6d51a04",
-      "full": "6d51a0420a80fe26e3b486e809d93cae93965d0a",
-      "msg": "radv: force late-Z with fragment shaders that use fbfetch",
-      "date": "2026-07-10T15:44:56.000+00:00"
+      "old": "6d51a04",
+      "new": "ec2a340",
+      "full": "ec2a3402c2977ee050aa80eb9cdf1a5b2b678122",
+      "msg": "nak/hw_tests: add F2I test for NaN behavior",
+      "date": "2026-07-10T17:41:31.000+00:00"
     }
   ]
 }
