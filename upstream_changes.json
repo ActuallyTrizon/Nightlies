@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-07-10T10:15:57Z",
+  "triggered_at": "2026-07-10T13:04:38Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "24d5501",
-      "new": "d53d99e",
-      "full": "d53d99ebcfc3042d92b35b76f3636d9571cd83b7",
-      "msg": "[LA64_DYNAREC] Preserves liveness across internal unconditional jumps (#4025)",
-      "date": "2026-07-10T09:28:56Z"
+      "old": "d53d99e",
+      "new": "2d5d7d1",
+      "full": "2d5d7d1a417ee8ca96559de175dcff3ada6408fb",
+      "msg": "[LA64_DYNAREC] Fixed some issues in up32 tracking (#4026)",
+      "date": "2026-07-10T11:18:19Z"
     },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "37265b1",
-      "new": "8347566",
-      "full": "8347566815149379bee5f848fb390ad49fac6f57",
-      "msg": "Merge pull request #5681 from lioncash/timer",
-      "date": "2026-07-10T09:51:20Z"
+      "old": "8347566",
+      "new": "5f2d19c",
+      "full": "5f2d19c7aad88ff05b083b009c987ac2cd877a7b",
+      "msg": "Merge pull request #5685 from lioncash/faddv",
+      "date": "2026-07-10T10:33:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a1b50db",
-      "new": "64ba60c",
-      "full": "64ba60cb329c834a7e0c0a30223daeb84331acc1",
-      "msg": "freedreno/blitter: copy full depth of src box in resource_copy_region",
-      "date": "2026-07-10T08:27:08.000+00:00"
+      "old": "64ba60c",
+      "new": "2a33545",
+      "full": "2a33545d981dcc9f9d84be3ea93ab2bb55991db6",
+      "msg": "radv: Delay lowering printf",
+      "date": "2026-07-10T12:25:37.000+00:00"
     }
   ]
 }
