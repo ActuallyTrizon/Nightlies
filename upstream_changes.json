@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-07-10T13:04:38Z",
+  "triggered_at": "2026-07-10T16:15:28Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d53d99e",
-      "new": "2d5d7d1",
-      "full": "2d5d7d1a417ee8ca96559de175dcff3ada6408fb",
-      "msg": "[LA64_DYNAREC] Fixed some issues in up32 tracking (#4026)",
-      "date": "2026-07-10T11:18:19Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "8347566",
-      "new": "5f2d19c",
-      "full": "5f2d19c7aad88ff05b083b009c987ac2cd877a7b",
-      "msg": "Merge pull request #5685 from lioncash/faddv",
-      "date": "2026-07-10T10:33:43Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "c52b49b",
+      "new": "3dfc6f0",
+      "full": "3dfc6f07d0953b1e8b41705275c2c59cc7374fc5",
+      "msg": "vkd3d: Enable descriptor heap for World of Warcraft Classic and Retail.",
+      "date": "2026-07-10T15:43:57Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64ba60c",
-      "new": "2a33545",
-      "full": "2a33545d981dcc9f9d84be3ea93ab2bb55991db6",
-      "msg": "radv: Delay lowering printf",
-      "date": "2026-07-10T12:25:37.000+00:00"
+      "old": "2a33545",
+      "new": "6d51a04",
+      "full": "6d51a0420a80fe26e3b486e809d93cae93965d0a",
+      "msg": "radv: force late-Z with fragment shaders that use fbfetch",
+      "date": "2026-07-10T15:44:56.000+00:00"
     }
   ]
 }
