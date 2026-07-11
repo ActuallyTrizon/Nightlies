@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-11T10:56:06Z",
+  "triggered_at": "2026-07-11T11:47:29Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "74b5819",
-      "new": "93dc351",
-      "full": "93dc3517e870f80821542dd6d8e5edb63cdf68b3",
-      "msg": "panvk: simplify non_polygon calculation",
-      "date": "2026-07-11T09:08:14.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "862fef5",
+      "new": "8ee3d8f",
+      "full": "8ee3d8f2c83696ed72582801d22cc4480f2fcfdc",
+      "msg": "[ARM64_DYNAREC] Fixed more ROL/ROR opcodes OF emulation (#4030)",
+      "date": "2026-07-11T11:26:27Z"
     }
   ]
 }
