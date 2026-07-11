@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-11T09:18:33Z",
+  "triggered_at": "2026-07-11T10:56:06Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "1953db9",
-      "new": "862fef5",
-      "full": "862fef5e0fa963f1b07f126675c24068fb58c449",
-      "msg": "[INTERP] Fixed SSE4a opcodes EXTRQ and INSERTQ (#4028)",
-      "date": "2026-07-11T09:05:48Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "74b5819",
+      "new": "93dc351",
+      "full": "93dc3517e870f80821542dd6d8e5edb63cdf68b3",
+      "msg": "panvk: simplify non_polygon calculation",
+      "date": "2026-07-11T09:08:14.000+00:00"
     }
   ]
 }
