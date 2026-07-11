@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-11T14:22:06Z",
+  "triggered_at": "2026-07-11T16:43:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "44be0a7",
-      "new": "03696e9",
-      "full": "03696e9a6d73d46a6cc4cbdb378ddaac02efd42a",
-      "msg": "Uprev VVL to e875181c4f0fab1bd0c4926c21a21de0bd967bb3",
-      "date": "2026-07-11T12:56:41.000+00:00"
+      "old": "03696e9",
+      "new": "2d21262",
+      "full": "2d212623b38423e9c0754d79f2323bd6cabf25b3",
+      "msg": "kraid/nir: Implement nir_op_[iu]mul_2x32_64",
+      "date": "2026-07-11T15:11:14.000+00:00"
     }
   ]
 }
