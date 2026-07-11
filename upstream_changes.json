@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-11T16:43:59Z",
+  "triggered_at": "2026-07-11T18:47:17Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "d2f0961",
+      "new": "48ce5bf",
+      "full": "48ce5bf6e60927d6d7077c6e39cbe90ae745a936",
+      "msg": "Merge pull request #5714 from lioncash/readahead",
+      "date": "2026-07-11T18:20:49Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "03696e9",
-      "new": "2d21262",
-      "full": "2d212623b38423e9c0754d79f2323bd6cabf25b3",
-      "msg": "kraid/nir: Implement nir_op_[iu]mul_2x32_64",
-      "date": "2026-07-11T15:11:14.000+00:00"
+      "old": "2d21262",
+      "new": "2e0ad86",
+      "full": "2e0ad862b586804965889307d4dae54dc8a77c17",
+      "msg": "nvk: Use ?: in nvk_physical_device_compiler_flags",
+      "date": "2026-07-11T18:06:16.000+00:00"
     }
   ]
 }
