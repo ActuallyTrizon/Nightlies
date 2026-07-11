@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-11T12:58:32Z",
+  "triggered_at": "2026-07-11T14:22:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "93dc351",
-      "new": "44be0a7",
-      "full": "44be0a749aec7f3da73a1251b00a3eea535abb4e",
-      "msg": "pan: Use Kraid's NIR options when it's enabled",
-      "date": "2026-07-11T12:24:27.000+00:00"
+      "old": "44be0a7",
+      "new": "03696e9",
+      "full": "03696e9a6d73d46a6cc4cbdb378ddaac02efd42a",
+      "msg": "Uprev VVL to e875181c4f0fab1bd0c4926c21a21de0bd967bb3",
+      "date": "2026-07-11T12:56:41.000+00:00"
     }
   ]
 }
