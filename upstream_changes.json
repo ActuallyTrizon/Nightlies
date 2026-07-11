@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-11T11:47:29Z",
+  "triggered_at": "2026-07-11T12:58:32Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "862fef5",
-      "new": "8ee3d8f",
-      "full": "8ee3d8f2c83696ed72582801d22cc4480f2fcfdc",
-      "msg": "[ARM64_DYNAREC] Fixed more ROL/ROR opcodes OF emulation (#4030)",
-      "date": "2026-07-11T11:26:27Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "93dc351",
+      "new": "44be0a7",
+      "full": "44be0a749aec7f3da73a1251b00a3eea535abb4e",
+      "msg": "pan: Use Kraid's NIR options when it's enabled",
+      "date": "2026-07-11T12:24:27.000+00:00"
     }
   ]
 }
