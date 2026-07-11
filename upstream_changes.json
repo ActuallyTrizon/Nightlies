@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-11T04:56:36Z",
+  "triggered_at": "2026-07-11T07:08:19Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "46a183b",
-      "new": "c8c49cc",
-      "full": "c8c49cc156f5044f9046ae5a8396a3a3aec2ed00",
-      "msg": "[d3d11] Remove draw buffer validation from front-end",
-      "date": "2026-07-11T02:17:46Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "b193a0c",
+      "new": "d2f0961",
+      "full": "d2f096187ce74ed6f70617b629bdd86b5e55c75d",
+      "msg": "Merge pull request #5705 from lioncash/thread3",
+      "date": "2026-07-11T05:34:04Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "b16af1f",
+      "new": "74b5819",
+      "full": "74b5819d5ff2d5a9435c9ff4bad44a70f18b6780",
+      "msg": "gfxstream: Validate guest mapped-memory ranges in flush/invalidate",
+      "date": "2026-07-10T21:54:24.000+00:00"
     }
   ]
 }
