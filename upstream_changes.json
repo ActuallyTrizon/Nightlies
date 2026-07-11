@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-10T23:51:11Z",
+  "triggered_at": "2026-07-11T04:56:36Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "87301ca",
-      "new": "b193a0c",
-      "full": "b193a0c9fd1913d25be0ec50a027e998fb51bd48",
-      "msg": "Merge pull request #5702 from lioncash/sbss",
-      "date": "2026-07-10T23:38:07Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "46a183b",
+      "new": "c8c49cc",
+      "full": "c8c49cc156f5044f9046ae5a8396a3a3aec2ed00",
+      "msg": "[d3d11] Remove draw buffer validation from front-end",
+      "date": "2026-07-11T02:17:46Z"
     }
   ]
 }
