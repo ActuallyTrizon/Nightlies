@@ -62,7 +62,7 @@ A single JSON index of every component published here — point any compatible W
 
 ## 🎮 Recommended Emulators & Builds
 
-*For a comprehensive and up-to-date ranking of emulators, check out [this emulation guide](https://t3st31.github.io/Ranking-Emulators-Download/).*
+*For a comprehensive and up-to-date ranking of emulators, check out [this emulation guide](https://the412banner.github.io/emulator-ranking/).*
 
 *Also for Turnip driver releases [Here](https://www.reddit.com/r/OdinHandheld/s/oAifHPSTlc) *
 
