@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-12T11:52:04Z",
+  "triggered_at": "2026-07-12T12:59:06Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8ee3d8f",
-      "new": "a963969",
-      "full": "a96396985e6cd8ab14afc6147744c5e34e325d7f",
-      "msg": "[ARM64_DYNAREC] Fixed some rare occurence where some native flags would be lost ",
-      "date": "2026-07-12T10:59:34Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "eeb5d83",
-      "new": "5098f1d",
-      "full": "5098f1d0bd3e737ef0509ec51180cd01cfddd403",
-      "msg": "[dxvk] Add option to disable NV_raw_access_chains",
-      "date": "2026-07-12T10:56:42Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "9e6e6e5",
+      "new": "584a099",
+      "full": "584a0997c8e4e93cfd517abe7db41c369642460a",
+      "msg": "tu: Propagate allocation failures for tu_cs_* functions",
+      "date": "2026-07-12T12:21:54.000+00:00"
     }
   ]
 }
