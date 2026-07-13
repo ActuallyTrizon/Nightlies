@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-07-13T11:53:14Z",
+  "triggered_at": "2026-07-13T14:09:33Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "1dd0323",
+      "new": "4bf60de",
+      "full": "4bf60dec658670c727368a7d1d685c4003517b5a",
+      "msg": "[RV64_DYNAREC] Ported 0ccd7513 to SS variants (#4036)",
+      "date": "2026-07-13T13:28:54Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "46ec279",
+      "new": "356d461",
+      "full": "356d4611237cce68ec741bbd781cb81079c45684",
+      "msg": "Merge pull request #5734 from lioncash/bytes",
+      "date": "2026-07-13T14:07:00Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9dc6035",
-      "new": "3ae3633",
-      "full": "3ae3633545bd68d037a35d30de45f5794a5232b3",
-      "msg": "kk: Metal's precise functions are only fp32",
-      "date": "2026-07-13T10:58:59.000+00:00"
+      "old": "3ae3633",
+      "new": "9cbb427",
+      "full": "9cbb427506da0222696c326c57ff7ef979c9cb63",
+      "msg": "Revert \"ci: disable Collabora's farm due to maintenance\"",
+      "date": "2026-07-13T11:27:38.000+00:00"
     }
   ]
 }
