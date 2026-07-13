@@ -733,75 +733,75 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.3-1dd0323f8-Bionic",
+    "verName": "Box64-0.4.3-4bf60dec6-Bionic",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-Bionic.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-Bionic.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.3-1dd0323f8-Bionic",
+    "verName": "Box64-0.4.3-4bf60dec6-Bionic",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-Bionic.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-Bionic.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.3-1dd0323f8-Native",
+    "verName": "Box64-0.4.3-4bf60dec6-Native",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-Native.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-Native.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.3-1dd0323f8-Native",
+    "verName": "Box64-0.4.3-4bf60dec6-Native",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-Native.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-Native.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-0.4.3-1dd0323f8-WOW64",
+    "verName": "Box64-0.4.3-4bf60dec6-WOW64",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-WOW64.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-WOW64.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-0.4.3-1dd0323f8-WOW64",
+    "verName": "Box64-0.4.3-4bf60dec6-WOW64",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-1dd0323f8-WOW64.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.3-4bf60dec6-WOW64.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-16cbd5229",
+    "verName": "Box64-Hybrid-Bionic-17fb5168f",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-16cbd5229.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-17fb5168f.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-16cbd5229",
+    "verName": "Box64-Hybrid-Bionic-17fb5168f",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-16cbd5229.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-17fb5168f.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-080d29e77",
+    "verName": "Box64-Hybrid-Native-342e88e24",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-080d29e77.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-342e88e24.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-080d29e77",
+    "verName": "Box64-Hybrid-Native-342e88e24",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-080d29e77.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-342e88e24.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-578809907",
+    "verName": "Box64-Hybrid-WOW64-7bb85feed",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-578809907.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-7bb85feed.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-578809907",
+    "verName": "Box64-Hybrid-WOW64-7bb85feed",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-578809907.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-7bb85feed.zip"
   },
   {
     "type": "DXVK",
@@ -853,39 +853,39 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f-PPA-unix",
+    "verName": "FEX-2607+188-Nightly-356d46112-PPA-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f-PPA-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112-PPA-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f-PPA",
+    "verName": "FEX-2607+188-Nightly-356d46112-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f-PPA.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112-PPA.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f-PPA",
+    "verName": "FEX-2607+188-Nightly-356d46112-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f-PPA.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112-PPA.zip"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f-unix",
+    "verName": "FEX-2607+188-Nightly-356d46112-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f",
+    "verName": "FEX-2607+188-Nightly-356d46112",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2607+183-Nightly-46ec2797f",
+    "verName": "FEX-2607+188-Nightly-356d46112",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+183-Nightly-46ec2797f.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2607+188-Nightly-356d46112.zip"
   },
   {
     "type": "VKD3D",
