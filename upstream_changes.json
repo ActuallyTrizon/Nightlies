@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-07-13T14:09:33Z",
+  "triggered_at": "2026-07-13T17:08:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "1dd0323",
-      "new": "4bf60de",
-      "full": "4bf60dec658670c727368a7d1d685c4003517b5a",
-      "msg": "[RV64_DYNAREC] Ported 0ccd7513 to SS variants (#4036)",
-      "date": "2026-07-13T13:28:54Z"
+      "old": "4bf60de",
+      "new": "eb3cd0c",
+      "full": "eb3cd0c1bd7bdf2852bd2758b5910d29ce57970b",
+      "msg": "[RV64_DYNAREC] Added !fastnan path for more opcodes (#4041)",
+      "date": "2026-07-13T16:36:40Z"
     },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "46ec279",
-      "new": "356d461",
-      "full": "356d4611237cce68ec741bbd781cb81079c45684",
-      "msg": "Merge pull request #5734 from lioncash/bytes",
-      "date": "2026-07-13T14:07:00Z"
+      "old": "356d461",
+      "new": "28cdae4",
+      "full": "28cdae46874e28f50d0db8f151a31c65ce454bbc",
+      "msg": "Merge pull request #5737 from lioncash/bsl",
+      "date": "2026-07-13T17:05:08Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3ae3633",
-      "new": "9cbb427",
-      "full": "9cbb427506da0222696c326c57ff7ef979c9cb63",
-      "msg": "Revert \"ci: disable Collabora's farm due to maintenance\"",
-      "date": "2026-07-13T11:27:38.000+00:00"
+      "old": "9cbb427",
+      "new": "f534140",
+      "full": "f534140fa599fda9adc8dd9833b14fee4b82241d",
+      "msg": "draw: Avoid warnings for maybe-unused variable",
+      "date": "2026-07-13T16:35:02.000+00:00"
     }
   ]
 }
