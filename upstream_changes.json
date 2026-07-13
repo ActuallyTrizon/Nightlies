@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-07-13T17:08:19Z",
+  "triggered_at": "2026-07-13T19:13:53Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "4bf60de",
-      "new": "eb3cd0c",
-      "full": "eb3cd0c1bd7bdf2852bd2758b5910d29ce57970b",
-      "msg": "[RV64_DYNAREC] Added !fastnan path for more opcodes (#4041)",
-      "date": "2026-07-13T16:36:40Z"
-    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "356d461",
-      "new": "28cdae4",
-      "full": "28cdae46874e28f50d0db8f151a31c65ce454bbc",
-      "msg": "Merge pull request #5737 from lioncash/bsl",
-      "date": "2026-07-13T17:05:08Z"
+      "old": "28cdae4",
+      "new": "7efc3ec",
+      "full": "7efc3ecabac507d9079934ecc6be36236d5f45cd",
+      "msg": "Merge pull request #5739 from lioncash/zero",
+      "date": "2026-07-13T18:59:22Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9cbb427",
-      "new": "f534140",
-      "full": "f534140fa599fda9adc8dd9833b14fee4b82241d",
-      "msg": "draw: Avoid warnings for maybe-unused variable",
-      "date": "2026-07-13T16:35:02.000+00:00"
+      "old": "f534140",
+      "new": "f40b8e1",
+      "full": "f40b8e19bad7a2e0d1a3d8b041f7e091ccc9bec3",
+      "msg": "jay: Track max stack size for bindless shaders",
+      "date": "2026-07-13T18:40:26.000+00:00"
     }
   ]
 }
