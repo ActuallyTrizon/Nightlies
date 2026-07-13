@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-12T23:43:43Z",
+  "triggered_at": "2026-07-13T08:51:36Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "850ef70",
-      "new": "46ec279",
-      "full": "46ec2797ffa89f5754d3c42e09850352175c4d13",
-      "msg": "Merge pull request #5732 from lioncash/vec",
-      "date": "2026-07-12T23:14:26Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "a963969",
+      "new": "1dd0323",
+      "full": "1dd0323f8f0863a7612d03f87559eda30a483992",
+      "msg": "[LA64_DYNAREC] Fixed gpr upper tracking non-lbt path (#4034)",
+      "date": "2026-07-13T08:00:25Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "f768c98",
+      "new": "9dc6035",
+      "full": "9dc6035bb5b328dda1bf7b4e25840baf577f16d8",
+      "msg": "pan/bi: Lower 64-bit hadd on v9/v10",
+      "date": "2026-07-13T07:36:02.000+00:00"
     }
   ]
 }
