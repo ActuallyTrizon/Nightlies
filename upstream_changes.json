@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-13T19:13:53Z",
+  "triggered_at": "2026-07-13T20:50:55Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "28cdae4",
-      "new": "7efc3ec",
-      "full": "7efc3ecabac507d9079934ecc6be36236d5f45cd",
-      "msg": "Merge pull request #5739 from lioncash/zero",
-      "date": "2026-07-13T18:59:22Z"
+      "old": "7efc3ec",
+      "new": "ce27754",
+      "full": "ce27754b9d600ed0cce24fe568aeee0997a3db1f",
+      "msg": "Merge pull request #5740 from lioncash/ra",
+      "date": "2026-07-13T19:42:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f534140",
-      "new": "f40b8e1",
-      "full": "f40b8e19bad7a2e0d1a3d8b041f7e091ccc9bec3",
-      "msg": "jay: Track max stack size for bindless shaders",
-      "date": "2026-07-13T18:40:26.000+00:00"
+      "old": "f40b8e1",
+      "new": "079d247",
+      "full": "079d247d84026a69c0878bf1ddb138de46f84ff7",
+      "msg": "panfrost: Promote constants to FAU",
+      "date": "2026-07-13T19:38:48.000+00:00"
     }
   ]
 }
