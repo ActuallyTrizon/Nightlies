@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T21:49:30Z",
+  "triggered_at": "2026-07-14T22:48:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f72c93c",
-      "new": "3f9451b",
-      "full": "3f9451b54c42a37b41246de3ceea991111389c37",
-      "msg": "meson: add rusticl to with_driver_using_cl",
-      "date": "2026-07-14T21:20:46.000+00:00"
+      "old": "3f9451b",
+      "new": "fb2e7af",
+      "full": "fb2e7af27ecfd5a3707ac17205467c2df5050bd5",
+      "msg": "brw: Rework FS SIMD selection to follow requirements over debug flags",
+      "date": "2026-07-14T22:21:40.000+00:00"
     }
   ]
 }
