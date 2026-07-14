@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T04:42:57Z",
+  "triggered_at": "2026-07-14T07:04:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4def7fb",
-      "new": "ca08532",
-      "full": "ca08532f91e3efc551d6284f99ba39861dbb3e6f",
-      "msg": "venus: allow to use vtest as a fallback for virtgpu",
-      "date": "2026-07-14T04:01:25.000+00:00"
+      "old": "ca08532",
+      "new": "dea6244",
+      "full": "dea624494db61509646ef2406393a3298c9c6d62",
+      "msg": "r300: fix swtcl per-vertex point size",
+      "date": "2026-07-14T05:54:07.000+00:00"
     }
   ]
 }
