@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-14T09:48:06Z",
+  "triggered_at": "2026-07-14T11:18:58Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "eb3cd0c",
-      "new": "900d327",
-      "full": "900d327aa1f7241e5cac76be71393e094fbba324",
-      "msg": "[DOCS] Add Chinese version of WINE.md (#4042)",
-      "date": "2026-07-14T07:14:11Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dea6244",
-      "new": "9a8d947",
-      "full": "9a8d9478c6bb749f850514876c0ab94063cfc5cd",
-      "msg": "pipe: Remove pipe_video_codec::expect_chunked_decode",
-      "date": "2026-07-14T09:17:15.000+00:00"
+      "old": "9a8d947",
+      "new": "84f2f1f",
+      "full": "84f2f1fddfcd11f2a3d4c6d4d1bd1a35aac494f5",
+      "msg": "vc4: free vertex and constant buffers on context destroy",
+      "date": "2026-07-14T10:48:12.000+00:00"
     }
   ]
 }
