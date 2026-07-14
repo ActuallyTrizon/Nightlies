@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-14T20:51:04Z",
+  "triggered_at": "2026-07-14T21:49:30Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "12e8cf0",
-      "new": "30f2a7b",
-      "full": "30f2a7b23b86fdb4589a98337369bd92c8dd374f",
-      "msg": "Merge pull request #5746 from lioncash/shadow",
-      "date": "2026-07-14T20:32:13Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "62c2d96",
-      "new": "f72c93c",
-      "full": "f72c93ca8aacbcecaa86103c56656282bdfb6c71",
-      "msg": "brw/predicate: Add missing test with farther_flags",
-      "date": "2026-07-14T20:02:32.000+00:00"
+      "old": "f72c93c",
+      "new": "3f9451b",
+      "full": "3f9451b54c42a37b41246de3ceea991111389c37",
+      "msg": "meson: add rusticl to with_driver_using_cl",
+      "date": "2026-07-14T21:20:46.000+00:00"
     }
   ]
 }
