@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-13T23:44:02Z",
+  "triggered_at": "2026-07-14T01:43:39Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "76c4ebb",
-      "new": "12e8cf0",
-      "full": "12e8cf008a7ccfea09098d08596d3c21554f113e",
-      "msg": "Merge pull request #5744 from lioncash/telem",
-      "date": "2026-07-13T23:37:51Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "865d2c9",
-      "new": "ef330b6",
-      "full": "ef330b6e3cdfbb61eb5bed383729ae1a22c20dd9",
-      "msg": "mailmap: update my email address",
-      "date": "2026-07-13T22:57:29.000+00:00"
+      "old": "ef330b6",
+      "new": "4def7fb",
+      "full": "4def7fb90a9b39367f819275ff9af93965679dd1",
+      "msg": "brw: Fix GS EOTs to not have an empty channel mask on LSC platforms",
+      "date": "2026-07-13T17:26:31.000-07:00"
     }
   ]
 }
