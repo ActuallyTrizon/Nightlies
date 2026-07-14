@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-14T19:04:33Z",
+  "triggered_at": "2026-07-14T20:51:04Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "12e8cf0",
+      "new": "30f2a7b",
+      "full": "30f2a7b23b86fdb4589a98337369bd92c8dd374f",
+      "msg": "Merge pull request #5746 from lioncash/shadow",
+      "date": "2026-07-14T20:32:13Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "08c1041",
-      "new": "62c2d96",
-      "full": "62c2d96247de306d68c9d811dc38c95ec168ff21",
-      "msg": "radeonsi: convert gather_instruction to nir_function_instructions_pass",
-      "date": "2026-07-14T18:35:21.000+00:00"
+      "old": "62c2d96",
+      "new": "f72c93c",
+      "full": "f72c93ca8aacbcecaa86103c56656282bdfb6c71",
+      "msg": "brw/predicate: Add missing test with farther_flags",
+      "date": "2026-07-14T20:02:32.000+00:00"
     }
   ]
 }
