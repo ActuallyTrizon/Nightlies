@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T01:43:39Z",
+  "triggered_at": "2026-07-14T04:42:57Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ef330b6",
-      "new": "4def7fb",
-      "full": "4def7fb90a9b39367f819275ff9af93965679dd1",
-      "msg": "brw: Fix GS EOTs to not have an empty channel mask on LSC platforms",
-      "date": "2026-07-13T17:26:31.000-07:00"
+      "old": "4def7fb",
+      "new": "ca08532",
+      "full": "ca08532f91e3efc551d6284f99ba39861dbb3e6f",
+      "msg": "venus: allow to use vtest as a fallback for virtgpu",
+      "date": "2026-07-14T04:01:25.000+00:00"
     }
   ]
 }
