@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T17:04:24Z",
+  "triggered_at": "2026-07-14T19:04:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "423f8b9",
-      "new": "08c1041",
-      "full": "08c1041db9f4c2c73278ec9dd93704154d8d313d",
-      "msg": "jay: allocate shader under memctx",
-      "date": "2026-07-14T16:36:16.000+00:00"
+      "old": "08c1041",
+      "new": "62c2d96",
+      "full": "62c2d96247de306d68c9d811dc38c95ec168ff21",
+      "msg": "radeonsi: convert gather_instruction to nir_function_instructions_pass",
+      "date": "2026-07-14T18:35:21.000+00:00"
     }
   ]
 }
