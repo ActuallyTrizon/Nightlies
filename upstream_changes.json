@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T11:18:58Z",
+  "triggered_at": "2026-07-14T13:12:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9a8d947",
-      "new": "84f2f1f",
-      "full": "84f2f1fddfcd11f2a3d4c6d4d1bd1a35aac494f5",
-      "msg": "vc4: free vertex and constant buffers on context destroy",
-      "date": "2026-07-14T10:48:12.000+00:00"
+      "old": "84f2f1f",
+      "new": "c459e13",
+      "full": "c459e13d7e522c8fdad30e18a16b5e4c7698a4ed",
+      "msg": "pco: allow fence ops to be legalized if they come last in a block",
+      "date": "2026-07-14T12:42:17.000+00:00"
     }
   ]
 }
