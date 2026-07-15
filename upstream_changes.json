@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-15T09:52:02Z",
+  "triggered_at": "2026-07-15T11:22:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "e016c5a",
+      "new": "894a183",
+      "full": "894a18318043656278019e601da03141df4f550b",
+      "msg": "[DYNAREC][ENV] Disabled SEP by default (#4045)",
+      "date": "2026-07-15T11:09:32Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c00a5eb",
-      "new": "ca7b41f",
-      "full": "ca7b41f1e10a45fa7200a520e78c3c825a7ee0a7",
-      "msg": "kk: Only support 1 sample for storage images",
-      "date": "2026-07-15T09:30:37.000+00:00"
+      "old": "ca7b41f",
+      "new": "48d3a8d",
+      "full": "48d3a8d8371ac488767e870b8c7497b32d8d9b30",
+      "msg": "tu: Enable tu_allow_oob_indirect_ubo_loads for Clausewitz engine",
+      "date": "2026-07-15T10:37:59.000+00:00"
     }
   ]
 }
