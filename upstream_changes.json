@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-15T07:07:31Z",
+  "triggered_at": "2026-07-15T09:52:02Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "900d327",
-      "new": "e016c5a",
-      "full": "e016c5a6cd0e331dcff70f40ff1a1863dab54c24",
-      "msg": "[LA64_DYNAREC] Added basic arch state gathering support and enabled up32 (#4044)",
-      "date": "2026-07-15T06:48:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0f90865",
-      "new": "c00a5eb",
-      "full": "c00a5eb353fad3517fbd99127a553d4b11745540",
-      "msg": "r300: emulate gl_FrontFacing on R3xx/R4xx",
-      "date": "2026-07-15T06:34:39.000+00:00"
+      "old": "c00a5eb",
+      "new": "ca7b41f",
+      "full": "ca7b41f1e10a45fa7200a520e78c3c825a7ee0a7",
+      "msg": "kk: Only support 1 sample for storage images",
+      "date": "2026-07-15T09:30:37.000+00:00"
     }
   ]
 }
