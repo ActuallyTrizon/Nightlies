@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-15T01:29:38Z",
+  "triggered_at": "2026-07-15T04:42:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fb2e7af",
-      "new": "4195130",
-      "full": "4195130407d4c9256d29baac001c49dc98bf2906",
-      "msg": "jay: Add loop_once_halt opcode",
-      "date": "2026-07-15T00:37:50.000+00:00"
+      "old": "4195130",
+      "new": "0f90865",
+      "full": "0f9086520f0ed1ba8fdd81548e6b4e1a6dc2ad65",
+      "msg": "panvk/csf: flush primitives generated query writes from CSF",
+      "date": "2026-07-15T02:26:06.000+00:00"
     }
   ]
 }
