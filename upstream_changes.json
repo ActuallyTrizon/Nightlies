@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-15T04:42:38Z",
+  "triggered_at": "2026-07-15T07:07:31Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "900d327",
+      "new": "e016c5a",
+      "full": "e016c5a6cd0e331dcff70f40ff1a1863dab54c24",
+      "msg": "[LA64_DYNAREC] Added basic arch state gathering support and enabled up32 (#4044)",
+      "date": "2026-07-15T06:48:18Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4195130",
-      "new": "0f90865",
-      "full": "0f9086520f0ed1ba8fdd81548e6b4e1a6dc2ad65",
-      "msg": "panvk/csf: flush primitives generated query writes from CSF",
-      "date": "2026-07-15T02:26:06.000+00:00"
+      "old": "0f90865",
+      "new": "c00a5eb",
+      "full": "c00a5eb353fad3517fbd99127a553d4b11745540",
+      "msg": "r300: emulate gl_FrontFacing on R3xx/R4xx",
+      "date": "2026-07-15T06:34:39.000+00:00"
     }
   ]
 }
