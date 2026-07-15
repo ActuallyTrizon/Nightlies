@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-15T18:57:01Z",
+  "triggered_at": "2026-07-15T20:04:57Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "3e7367f",
-      "new": "724e309",
-      "full": "724e309304e4e0546e9b3f062643658d29895963",
-      "msg": "Revert \"dxgi: Support modifying swapchain flags in DxgiSwapChain::ResizeBuffers1",
-      "date": "2026-07-15T18:12:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fb7300c",
-      "new": "f449a3a",
-      "full": "f449a3ae575910ab6ee06d9607d2ffcdf442aae2",
-      "msg": "freedreno/a6xx: Split VS driver params",
-      "date": "2026-07-15T18:17:03.000+00:00"
+      "old": "f449a3a",
+      "new": "1be67a7",
+      "full": "1be67a7d22c33095381206dcecda9a0c26980b26",
+      "msg": "nir/opt_vectorize: handle commutative ALU sources",
+      "date": "2026-07-15T19:27:25.000+00:00"
     }
   ]
 }
