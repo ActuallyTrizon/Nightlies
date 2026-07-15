@@ -19,6 +19,18 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "v26.3.0-R1 \u2014 Turnip_v26.3.0-R1-Oneui.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.3.0-R1_Turnip_v26.3.0-R1-Oneui.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.3.0-R1 \u2014 Turnip_v26.3.0-R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.3.0-R1_Turnip_v26.3.0-R1.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "v26.2.0-R8 \u2014 Turnip_v26.2.0-R8.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R8_Turnip_v26.2.0-R8.zip"
