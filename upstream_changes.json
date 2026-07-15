@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-14T22:48:39Z",
+  "triggered_at": "2026-07-15T01:29:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3f9451b",
-      "new": "fb2e7af",
-      "full": "fb2e7af27ecfd5a3707ac17205467c2df5050bd5",
-      "msg": "brw: Rework FS SIMD selection to follow requirements over debug flags",
-      "date": "2026-07-14T22:21:40.000+00:00"
+      "old": "fb2e7af",
+      "new": "4195130",
+      "full": "4195130407d4c9256d29baac001c49dc98bf2906",
+      "msg": "jay: Add loop_once_halt opcode",
+      "date": "2026-07-15T00:37:50.000+00:00"
     }
   ]
 }
