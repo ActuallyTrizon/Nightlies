@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-15T20:04:57Z",
+  "triggered_at": "2026-07-15T21:50:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f449a3a",
-      "new": "1be67a7",
-      "full": "1be67a7d22c33095381206dcecda9a0c26980b26",
-      "msg": "nir/opt_vectorize: handle commutative ALU sources",
-      "date": "2026-07-15T19:27:25.000+00:00"
+      "old": "1be67a7",
+      "new": "779cdb8",
+      "full": "779cdb8eaaffc05ce56f197ea6a955b9edca8967",
+      "msg": "freedreno/a6xx: Fix query barriers for gen8+",
+      "date": "2026-07-15T21:10:36.000+00:00"
     }
   ]
 }
