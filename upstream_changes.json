@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-15T11:22:49Z",
+  "triggered_at": "2026-07-15T13:16:15Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "e016c5a",
-      "new": "894a183",
-      "full": "894a18318043656278019e601da03141df4f550b",
-      "msg": "[DYNAREC][ENV] Disabled SEP by default (#4045)",
-      "date": "2026-07-15T11:09:32Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "5098f1d",
+      "new": "3e7367f",
+      "full": "3e7367fdba211532906b648bed36b957734c11c5",
+      "msg": "dxgi: Support modifying swapchain flags in DxgiSwapChain::ResizeBuffers1().",
+      "date": "2026-07-15T11:47:42Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ca7b41f",
-      "new": "48d3a8d",
-      "full": "48d3a8d8371ac488767e870b8c7497b32d8d9b30",
-      "msg": "tu: Enable tu_allow_oob_indirect_ubo_loads for Clausewitz engine",
-      "date": "2026-07-15T10:37:59.000+00:00"
+      "old": "48d3a8d",
+      "new": "91b68c0",
+      "full": "91b68c0bc325d86b60e16752b7d35ead5ffc957e",
+      "msg": "jay: add geometry shader support.",
+      "date": "2026-07-15T12:46:41.000+00:00"
     }
   ]
 }
