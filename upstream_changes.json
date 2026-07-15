@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-15T13:16:15Z",
+  "triggered_at": "2026-07-15T15:19:12Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5098f1d",
-      "new": "3e7367f",
-      "full": "3e7367fdba211532906b648bed36b957734c11c5",
-      "msg": "dxgi: Support modifying swapchain flags in DxgiSwapChain::ResizeBuffers1().",
-      "date": "2026-07-15T11:47:42Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "48d3a8d",
-      "new": "91b68c0",
-      "full": "91b68c0bc325d86b60e16752b7d35ead5ffc957e",
-      "msg": "jay: add geometry shader support.",
-      "date": "2026-07-15T12:46:41.000+00:00"
+      "old": "91b68c0",
+      "new": "7aeab89",
+      "full": "7aeab89318ceae974772daa10d999f65873eae67",
+      "msg": "pipe: Remove pipe_video_codec::chroma_format",
+      "date": "2026-07-15T14:02:32.000+00:00"
     }
   ]
 }
