@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-07-15T17:06:53Z",
+  "triggered_at": "2026-07-15T18:57:01Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "894a183",
-      "new": "0910384",
-      "full": "0910384e6f83ba5f8c9de2b0c65479061f451b20",
-      "msg": "[LA64_DYNAREC] Added 66 F5 /5 IMUL opcode (#4047)",
-      "date": "2026-07-15T15:53:32Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "30f2a7b",
-      "new": "31c2449",
-      "full": "31c2449d6ebefa399fea9395935ae6d70fa4127e",
-      "msg": "Merge pull request #5752 from lioncash/config",
-      "date": "2026-07-15T16:48:49Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "3e7367f",
+      "new": "724e309",
+      "full": "724e309304e4e0546e9b3f062643658d29895963",
+      "msg": "Revert \"dxgi: Support modifying swapchain flags in DxgiSwapChain::ResizeBuffers1",
+      "date": "2026-07-15T18:12:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7aeab89",
-      "new": "fb7300c",
-      "full": "fb7300c6da2b740b0605b1562fe569391f33be94",
-      "msg": "v3dv: record the no-op fragment shader with its Vulkan stage bit",
-      "date": "2026-07-15T16:12:33.000+00:00"
+      "old": "fb7300c",
+      "new": "f449a3a",
+      "full": "f449a3ae575910ab6ee06d9607d2ffcdf442aae2",
+      "msg": "freedreno/a6xx: Split VS driver params",
+      "date": "2026-07-15T18:17:03.000+00:00"
     }
   ]
 }
