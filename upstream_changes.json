@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-16T13:23:21Z",
+  "triggered_at": "2026-07-16T17:04:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6541c05",
-      "new": "87afa31",
-      "full": "87afa3193eee4c6dbdef4306a7c6ead6a5a4d825",
-      "msg": "iris: set 3DSTATE_SF::LastPixelEnable with smooth lines",
-      "date": "2026-07-16T12:29:34.000+00:00"
+      "old": "87afa31",
+      "new": "cde03ff",
+      "full": "cde03ff17ccfa0e38109b2dd0551492a590fd3f1",
+      "msg": "d3d12: Video Encode slice fallback to support AUTO if FULL_FRAME unavailable",
+      "date": "2026-07-16T16:38:16.000+00:00"
     }
   ]
 }
