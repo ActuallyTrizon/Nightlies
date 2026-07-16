@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-16T07:17:12Z",
+  "triggered_at": "2026-07-16T09:58:35Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0910384",
-      "new": "373e130",
-      "full": "373e1306ad476d29c19bb5429a71487939adb951",
-      "msg": "[LA64_DYNAREC] Added a fast path for 66 25 AND opcode (#4048)",
-      "date": "2026-07-16T07:09:36Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "09180f0",
-      "new": "c470bb0",
-      "full": "c470bb08c4e0f196f1c2b54aa9e3f3906adebced",
-      "msg": "isl: fix FCV_CCS_E and ZCS usage asserts for gfx12, gfx125",
-      "date": "2026-07-16T06:42:32.000+00:00"
+      "old": "c470bb0",
+      "new": "ba868a6",
+      "full": "ba868a6f4a6d720854823a2a87f6539bb8b6b1c2",
+      "msg": "mesa/main: use marshal_count if present",
+      "date": "2026-07-16T09:22:49.000+00:00"
     }
   ]
 }
