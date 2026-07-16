@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-07-16T09:58:35Z",
+  "triggered_at": "2026-07-16T11:39:30Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "373e130",
+      "new": "a107c2a",
+      "full": "a107c2a52b97ae0a40b8e9f1dee0f9d1456bba2e",
+      "msg": "[LA64] SIGBUS special cases for LA64 ABI 1.0 (#4050)",
+      "date": "2026-07-16T11:08:16Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "724e309",
+      "new": "a137f78",
+      "full": "a137f78453239ae1e71c421770d7a4fe4f6c28aa",
+      "msg": "[dxvk] Add option to enable descriptor update templates on legacy",
+      "date": "2026-07-16T11:10:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c470bb0",
-      "new": "ba868a6",
-      "full": "ba868a6f4a6d720854823a2a87f6539bb8b6b1c2",
-      "msg": "mesa/main: use marshal_count if present",
-      "date": "2026-07-16T09:22:49.000+00:00"
+      "old": "ba868a6",
+      "new": "6541c05",
+      "full": "6541c057a93806255354455a61015bf29e5d36bd",
+      "msg": "anv: defer batch BO allocation for command buffers until recording",
+      "date": "2026-07-16T10:58:43.000+00:00"
     }
   ]
 }
