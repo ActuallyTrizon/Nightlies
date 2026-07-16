@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-16T18:57:41Z",
+  "triggered_at": "2026-07-16T20:01:12Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "31c2449",
+      "new": "6846f10",
+      "full": "6846f10510609b9462ad77dc83b3c46f37d107da",
+      "msg": "Merge pull request #5758 from lioncash/x87",
+      "date": "2026-07-16T19:39:08Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cde03ff",
-      "new": "b473d5d",
-      "full": "b473d5ddf62c0dadf544ff866eb9b766adf86d15",
-      "msg": "gfxstream: add build system TOML files",
-      "date": "2026-07-16T10:37:42.000-07:00"
+      "old": "b473d5d",
+      "new": "3e21310",
+      "full": "3e21310d5c94c8fe9a51310494d4ce73830db582",
+      "msg": "anv: add per-shader brw_prefer_simd32_fs driconf option",
+      "date": "2026-07-16T18:38:34.000+00:00"
     }
   ]
 }
