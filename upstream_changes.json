@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-16T17:04:47Z",
+  "triggered_at": "2026-07-16T18:57:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "87afa31",
-      "new": "cde03ff",
-      "full": "cde03ff17ccfa0e38109b2dd0551492a590fd3f1",
-      "msg": "d3d12: Video Encode slice fallback to support AUTO if FULL_FRAME unavailable",
-      "date": "2026-07-16T16:38:16.000+00:00"
+      "old": "cde03ff",
+      "new": "b473d5d",
+      "full": "b473d5ddf62c0dadf544ff866eb9b766adf86d15",
+      "msg": "gfxstream: add build system TOML files",
+      "date": "2026-07-16T10:37:42.000-07:00"
     }
   ]
 }
