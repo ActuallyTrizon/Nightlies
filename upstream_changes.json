@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-16T01:50:04Z",
+  "triggered_at": "2026-07-16T04:52:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "48297c8",
-      "new": "c6b5729",
-      "full": "c6b5729a78343383ff43cf2883c04e08e6fd62cd",
-      "msg": "brw: Ignore source modifiers in needs_dst_copy",
-      "date": "2026-07-16T01:14:18.000+00:00"
+      "old": "c6b5729",
+      "new": "09180f0",
+      "full": "09180f0eed603872b75f44b398048db06f236f54",
+      "msg": "zink: fix swap interval changes being dropped",
+      "date": "2026-07-16T02:31:20.000+00:00"
     }
   ]
 }
