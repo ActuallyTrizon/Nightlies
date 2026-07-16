@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-16T20:01:12Z",
+  "triggered_at": "2026-07-16T21:58:07Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "31c2449",
-      "new": "6846f10",
-      "full": "6846f10510609b9462ad77dc83b3c46f37d107da",
-      "msg": "Merge pull request #5758 from lioncash/x87",
-      "date": "2026-07-16T19:39:08Z"
+      "old": "6846f10",
+      "new": "0467d52",
+      "full": "0467d523c0fcb026e74d3b9c0b1181afdabd0790",
+      "msg": "Merge pull request #5759 from neobrain/fix_codebuffer_max_size",
+      "date": "2026-07-16T20:53:42Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b473d5d",
-      "new": "3e21310",
-      "full": "3e21310d5c94c8fe9a51310494d4ce73830db582",
-      "msg": "anv: add per-shader brw_prefer_simd32_fs driconf option",
-      "date": "2026-07-16T18:38:34.000+00:00"
+      "old": "3e21310",
+      "new": "3e3c41b",
+      "full": "3e3c41be1c10e759b39e0a01472d09acaf55d656",
+      "msg": "lvp: add linker script to fix android symbols",
+      "date": "2026-07-16T21:11:37.000+00:00"
     }
   ]
 }
