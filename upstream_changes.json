@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-16T04:52:52Z",
+  "triggered_at": "2026-07-16T07:17:12Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "0910384",
+      "new": "373e130",
+      "full": "373e1306ad476d29c19bb5429a71487939adb951",
+      "msg": "[LA64_DYNAREC] Added a fast path for 66 25 AND opcode (#4048)",
+      "date": "2026-07-16T07:09:36Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c6b5729",
-      "new": "09180f0",
-      "full": "09180f0eed603872b75f44b398048db06f236f54",
-      "msg": "zink: fix swap interval changes being dropped",
-      "date": "2026-07-16T02:31:20.000+00:00"
+      "old": "09180f0",
+      "new": "c470bb0",
+      "full": "c470bb08c4e0f196f1c2b54aa9e3f3906adebced",
+      "msg": "isl: fix FCV_CCS_E and ZCS usage asserts for gfx12, gfx125",
+      "date": "2026-07-16T06:42:32.000+00:00"
     }
   ]
 }
