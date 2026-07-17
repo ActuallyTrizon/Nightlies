@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-17T15:06:43Z",
+  "triggered_at": "2026-07-17T17:02:05Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "83f4c9d",
-      "new": "941f0fb",
-      "full": "941f0fbf8da412e7e16e610da8c59545a6f81fd7",
-      "msg": "Merge pull request #5764 from lioncash/alloc",
-      "date": "2026-07-17T15:00:25Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "86f3d6d",
+      "new": "3ac45c1",
+      "full": "3ac45c1ac6140a5ace5ddc11e2289dbbc2a9f7af",
+      "msg": "[LA64_DYNAREC] Added push/pop rsp merge optimization (#4054)",
+      "date": "2026-07-17T16:13:38Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "92f4f40",
-      "new": "74a9470",
-      "full": "74a947082e896661d4f2e9176f10da744bbe7a8e",
-      "msg": "freedreno/ci: Limit edgeflag and stipple skips to Piglit tests",
-      "date": "2026-07-17T14:10:52.000+00:00"
+      "old": "74a9470",
+      "new": "eb79e32",
+      "full": "eb79e323da0fc25e21e2eb2cc676274ebb2b6f9a",
+      "msg": "jay/schedule: add post-RA scheduling",
+      "date": "2026-07-17T15:39:23.000+00:00"
     }
   ]
 }
