@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-17T18:54:25Z",
+  "triggered_at": "2026-07-17T20:58:09Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "eb79e32",
-      "new": "80e1e58",
-      "full": "80e1e584d734797b33352881872bf6bc5d497c8d",
-      "msg": "kraid: Validate swizzle invariants",
-      "date": "2026-07-17T17:19:25.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "941f0fb",
+      "new": "aa26a78",
+      "full": "aa26a780ed9b80a33a292f4b80703eda7167c249",
+      "msg": "Merge pull request #5767 from Sonicadvance1/188",
+      "date": "2026-07-17T20:56:23Z"
     }
   ]
 }
