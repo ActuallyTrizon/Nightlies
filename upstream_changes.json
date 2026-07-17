@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-17T17:02:05Z",
+  "triggered_at": "2026-07-17T18:54:25Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "86f3d6d",
-      "new": "3ac45c1",
-      "full": "3ac45c1ac6140a5ace5ddc11e2289dbbc2a9f7af",
-      "msg": "[LA64_DYNAREC] Added push/pop rsp merge optimization (#4054)",
-      "date": "2026-07-17T16:13:38Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "74a9470",
-      "new": "eb79e32",
-      "full": "eb79e323da0fc25e21e2eb2cc676274ebb2b6f9a",
-      "msg": "jay/schedule: add post-RA scheduling",
-      "date": "2026-07-17T15:39:23.000+00:00"
+      "old": "eb79e32",
+      "new": "80e1e58",
+      "full": "80e1e584d734797b33352881872bf6bc5d497c8d",
+      "msg": "kraid: Validate swizzle invariants",
+      "date": "2026-07-17T17:19:25.000+00:00"
     }
   ]
 }
