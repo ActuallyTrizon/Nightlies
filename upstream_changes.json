@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-17T07:12:21Z",
+  "triggered_at": "2026-07-17T09:48:42Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "a107c2a",
-      "new": "c5215cb",
-      "full": "c5215cb2f59edbbe7851cc0d06649cce2da03a42",
-      "msg": "[ENV] Disable dynacache when dynarec_trace or dynarec_dump are enabled (#4051)",
-      "date": "2026-07-17T06:58:19Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "0467d52",
-      "new": "2ac95f4",
-      "full": "2ac95f446b44ac31b7e1fa3d2e54e7087bb786f0",
-      "msg": "Merge pull request #5762 from lioncash/core",
-      "date": "2026-07-17T07:04:47Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "20f4f9f",
+      "new": "f4dd8a1",
+      "full": "f4dd8a15eda786a5a623905d251f403e079c1217",
+      "msg": "nir: return intrinsic in nir_store_reg",
+      "date": "2026-07-17T07:36:04.000+00:00"
     }
   ]
 }
