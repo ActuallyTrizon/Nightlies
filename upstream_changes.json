@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-16T23:51:43Z",
+  "triggered_at": "2026-07-17T04:56:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3e3c41b",
-      "new": "99bf1b9",
-      "full": "99bf1b953cba11d41dbee519ae1b53387477df9e",
-      "msg": "intel/compiler: Add assertion to help coverity out",
-      "date": "2026-07-16T22:36:51.000+00:00"
+      "old": "99bf1b9",
+      "new": "20f4f9f",
+      "full": "20f4f9f45057559475600b60364b60643011990f",
+      "msg": "kraid/ra: Rework the RA flow",
+      "date": "2026-07-17T04:06:03.000+00:00"
     }
   ]
 }
