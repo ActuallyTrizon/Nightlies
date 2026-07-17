@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-17T21:53:23Z",
+  "triggered_at": "2026-07-17T22:39:59Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "a137f78",
-      "new": "dbfb867",
-      "full": "dbfb8677186c5b9e7bab408d1b94905274e2f47e",
-      "msg": "[dxgi] Hide Intel vendor ID for XeSS < 2.0.2.68 (#5798)",
-      "date": "2026-07-17T21:40:52Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "80e1e58",
-      "new": "4ce4fef",
-      "full": "4ce4feff89bad1ffd2ac7933ab25b44b6cca38d9",
-      "msg": "nv30: fix an issue when this push buffer is NULL",
-      "date": "2026-07-17T21:15:35.000+00:00"
+      "old": "dbfb867",
+      "new": "6b20f62",
+      "full": "6b20f622a77b87b2921fe5d2c1774d2f2ba3e9b7",
+      "msg": "[meta] Release 3.0.2",
+      "date": "2026-07-17T21:41:54Z"
     }
   ]
 }
