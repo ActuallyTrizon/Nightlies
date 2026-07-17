@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-17T04:56:16Z",
+  "triggered_at": "2026-07-17T07:12:21Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "99bf1b9",
-      "new": "20f4f9f",
-      "full": "20f4f9f45057559475600b60364b60643011990f",
-      "msg": "kraid/ra: Rework the RA flow",
-      "date": "2026-07-17T04:06:03.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "a107c2a",
+      "new": "c5215cb",
+      "full": "c5215cb2f59edbbe7851cc0d06649cce2da03a42",
+      "msg": "[ENV] Disable dynacache when dynarec_trace or dynarec_dump are enabled (#4051)",
+      "date": "2026-07-17T06:58:19Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "0467d52",
+      "new": "2ac95f4",
+      "full": "2ac95f446b44ac31b7e1fa3d2e54e7087bb786f0",
+      "msg": "Merge pull request #5762 from lioncash/core",
+      "date": "2026-07-17T07:04:47Z"
     }
   ]
 }
