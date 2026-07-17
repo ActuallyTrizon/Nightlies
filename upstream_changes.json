@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-17T20:58:09Z",
+  "triggered_at": "2026-07-17T21:53:23Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "941f0fb",
-      "new": "aa26a78",
-      "full": "aa26a780ed9b80a33a292f4b80703eda7167c249",
-      "msg": "Merge pull request #5767 from Sonicadvance1/188",
-      "date": "2026-07-17T20:56:23Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a137f78",
+      "new": "dbfb867",
+      "full": "dbfb8677186c5b9e7bab408d1b94905274e2f47e",
+      "msg": "[dxgi] Hide Intel vendor ID for XeSS < 2.0.2.68 (#5798)",
+      "date": "2026-07-17T21:40:52Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "80e1e58",
+      "new": "4ce4fef",
+      "full": "4ce4feff89bad1ffd2ac7933ab25b44b6cca38d9",
+      "msg": "nv30: fix an issue when this push buffer is NULL",
+      "date": "2026-07-17T21:15:35.000+00:00"
     }
   ]
 }
