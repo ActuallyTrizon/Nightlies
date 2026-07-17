@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-17T11:15:35Z",
+  "triggered_at": "2026-07-17T13:07:56Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "2ac95f4",
-      "new": "83f4c9d",
-      "full": "83f4c9d101501a3db8d49280a46a6e2699c52376",
-      "msg": "Merge pull request #5760 from neobrain/fix_emitter_constants",
-      "date": "2026-07-17T11:05:50Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c5215cb",
+      "new": "86f3d6d",
+      "full": "86f3d6d316037a12a41cfecca3ad0c2061fbd17f",
+      "msg": "[BUNDLE] Add 'libpolkit-gobject-1.so.0' (#4043)",
+      "date": "2026-07-17T12:34:33Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f4dd8a1",
-      "new": "d4d1634",
-      "full": "d4d1634bbb02124b496d78a01f78ffb397813924",
-      "msg": "gfxstream: Fixes for physical device property overwrites",
-      "date": "2026-07-17T10:23:17.000+00:00"
+      "old": "d4d1634",
+      "new": "92f4f40",
+      "full": "92f4f409d4eaf1990142d1614ade0745ed8d2139",
+      "msg": "radeonsi: run nir_copy_prop after nir_lower_load_const_to_scalar",
+      "date": "2026-07-17T12:36:24.000+00:00"
     }
   ]
 }
