@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-18T04:40:59Z",
+  "triggered_at": "2026-07-18T08:43:44Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3ac45c1",
+      "new": "0dc712c",
+      "full": "0dc712cec007f5726c43c481da49631c718876f1",
+      "msg": "[LA64_DYNAREC] Added a fast path for 66 33 XOR opcode (#4058)",
+      "date": "2026-07-18T08:31:26Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f773b1f",
-      "new": "4b9c74d",
-      "full": "4b9c74d0af56b7a9cea3384965934a20ce95bfc4",
-      "msg": "tu: Don't truncate subdraw size",
-      "date": "2026-07-18T01:51:51.000+00:00"
+      "old": "4b9c74d",
+      "new": "cf0588a",
+      "full": "cf0588a5b835916ec031d9f47d0a0b6ef6c9745e",
+      "msg": "vulkan: Implement a late triangles -> quads pass",
+      "date": "2026-07-18T09:06:03.000+02:00"
     }
   ]
 }
