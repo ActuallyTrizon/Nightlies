@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-18T11:45:34Z",
+  "triggered_at": "2026-07-18T17:48:34Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "cf0588a",
-      "new": "879365e",
-      "full": "879365ec9f06adef47f116d11b88632264c1f271",
-      "msg": "vulkan/runtime: fixup vk_shader leak on RT group recompile",
-      "date": "2026-07-18T12:44:46.000+03:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8ace918",
+      "new": "ceb5c13",
+      "full": "ceb5c1382274d51825d50fd6947f305bae848e0b",
+      "msg": "[LA64_DYNAREC] Added more fast paths and micro optimizations (#4061)",
+      "date": "2026-07-18T16:45:04Z"
     }
   ]
 }
