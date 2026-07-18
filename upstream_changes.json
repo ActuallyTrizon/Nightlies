@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-18T10:11:01Z",
+  "triggered_at": "2026-07-18T11:45:34Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0dc712c",
-      "new": "8ace918",
-      "full": "8ace9188e868894d27e46324a707b8b2b749b7bc",
-      "msg": "[LA64_DYNAREC] Added a fast path for 66 C1/D1 /5 SHR opcode (#4060)",
-      "date": "2026-07-18T09:31:20Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "cf0588a",
+      "new": "879365e",
+      "full": "879365ec9f06adef47f116d11b88632264c1f271",
+      "msg": "vulkan/runtime: fixup vk_shader leak on RT group recompile",
+      "date": "2026-07-18T12:44:46.000+03:00"
     }
   ]
 }
