@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-17T22:39:59Z",
+  "triggered_at": "2026-07-18T01:43:50Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "dbfb867",
-      "new": "6b20f62",
-      "full": "6b20f622a77b87b2921fe5d2c1774d2f2ba3e9b7",
-      "msg": "[meta] Release 3.0.2",
-      "date": "2026-07-17T21:41:54Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4ce4fef",
+      "new": "f773b1f",
+      "full": "f773b1f3a7e7067bb08d7596d51a7e4474ea82f8",
+      "msg": "ac/llvm: remove the optimization barrier from ac_build_ballot",
+      "date": "2026-07-18T00:15:09.000+00:00"
     }
   ]
 }
