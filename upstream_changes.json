@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-18T17:48:34Z",
+  "triggered_at": "2026-07-18T20:52:32Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8ace918",
-      "new": "ceb5c13",
-      "full": "ceb5c1382274d51825d50fd6947f305bae848e0b",
-      "msg": "[LA64_DYNAREC] Added more fast paths and micro optimizations (#4061)",
-      "date": "2026-07-18T16:45:04Z"
+      "old": "ceb5c13",
+      "new": "2544543",
+      "full": "2544543b3ace019bf2c9073a3afdb49b68d28bb1",
+      "msg": "[CORE] Don't consume guest t/test arguments (#4062)",
+      "date": "2026-07-18T20:00:19Z"
     }
   ]
 }
