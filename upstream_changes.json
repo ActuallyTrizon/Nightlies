@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-18T20:52:32Z",
+  "triggered_at": "2026-07-18T22:39:42Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ceb5c13",
-      "new": "2544543",
-      "full": "2544543b3ace019bf2c9073a3afdb49b68d28bb1",
-      "msg": "[CORE] Don't consume guest t/test arguments (#4062)",
-      "date": "2026-07-18T20:00:19Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "879365e",
+      "new": "db128e2",
+      "full": "db128e2f552610de79e2912925929c40c9a55652",
+      "msg": "Uprev VVL to 6727ae4734bf9e1e6f6954254bbc382687a3866d",
+      "date": "2026-07-18T21:31:28.000+00:00"
     }
   ]
 }
