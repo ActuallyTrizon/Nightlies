@@ -1,0 +1,188 @@
+name: DXVK Clean ARM64EC (vanilla)
+
+# Builds a CLEAN, vanilla (no gplasync, no binsem) ARM64EC DXVK for a single
+# pinned release tag, packaged in the clean-stable naming used by the
+# Dxvk-arm64ec release tag / app catalog:
+#   file        : dxvk-arm64ec-<ver>.wcp
+#   versionName : <ver>-arm64ec
+#   description : Built on the Winlator WCP Hub (Upstream: Philip Rebohle)
+#
+# Upstream ships no ARM64EC binaries, and the all-in-one nightly only produces
+# gplasync ARM64EC — so the vanilla ARM64EC flavor is the one clean-stable
+# variant that has to be source-compiled. The regular x64/x32 flavor comes
+# straight from the upstream release tarball, and both gplasync flavors are
+# repackaged from the nightly, so this workflow only needs to make ARM64EC.
+#
+# Recipe mirrors the ARM64EC path of dxvk-stable-matrix-nightly.yml, minus the
+# binsem/gplasync patches. Artifact-only: no release step (the wcp is uploaded
+# to the fixed Dxvk-arm64ec tag by hand after verification).
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "DXVK release tag to build (without leading v), e.g. 3.0.2"
+        required: true
+        default: "3.0.2"
+
+jobs:
+  build-arm64ec-vanilla:
+    name: DXVK ${{ inputs.version }} vanilla (ARM64EC)
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates curl xz-utils jq git build-essential \
+            python3 pkg-config zstd meson ninja-build wget unzip zip ccache
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          key: ccache-dxvk-clean-ec-${{ inputs.version }}
+          restore-keys: ccache-dxvk-clean-ec-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Cache LLVM-MinGW
+        uses: actions/cache@v4
+        with:
+          path: /opt/llvm-mingw
+          key: llvm-mingw-20251104-ubuntu22
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup LLVM-MinGW
+        run: |
+          if [ ! -d "/opt/llvm-mingw/bin" ]; then
+            echo "Cache miss — downloading LLVM-MinGW..."
+            LLVM_MINGW_TAG="20251104"
+            wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+            sudo mkdir -p /opt/llvm-mingw
+            sudo tar -C /opt/llvm-mingw --strip-components=1 -xJf llvm.tar.xz
+          else
+            echo "Cache hit — LLVM-MinGW ready."
+          fi
+          echo "/opt/llvm-mingw/bin" >> $GITHUB_PATH
+
+      - name: Configure ccache
+        run: |
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Clone DXVK ${{ inputs.version }} (vanilla, no patches)
+        run: |
+          TAG="${{ inputs.version }}"
+          git clone --branch "v${TAG}" --recurse-submodules \
+            https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          echo "COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - name: Configure Cross-Files
+        run: |
+          cat <<EOF > arm64ec.txt
+          [binaries]
+          c = ['ccache', 'arm64ec-w64-mingw32-clang']
+          cpp = ['ccache', 'arm64ec-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'arm64ec-w64-mingw32-windres'
+          widl = 'arm64ec-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'aarch64'
+          cpu = 'aarch64'
+          endian = 'little'
+          EOF
+
+          cat <<EOF > x86.txt
+          [binaries]
+          c = ['ccache', 'i686-w64-mingw32-clang']
+          cpp = ['ccache', 'i686-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'i686-w64-mingw32-windres'
+          widl = 'i686-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'x86'
+          cpu = 'i686'
+          endian = 'little'
+          EOF
+
+      - name: Build
+        run: |
+          cd dxvk
+          meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
+          meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true
+          ninja -C build-ec -j$(nproc)
+          ninja -C build-x86 -j$(nproc)
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package (clean stable naming)
+        run: |
+          TAG="${{ inputs.version }}"
+          copy_dll() {
+            SRC_DIR=$1; DEST_DIR=$2
+            cp "dxvk/$SRC_DIR/src/d3d11/d3d11.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d10/d3d10core.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d9/d3d9.dll" "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d8/d3d8.dll" "$DEST_DIR/" || true
+            cp "dxvk/$SRC_DIR/src/dxgi/dxgi.dll" "$DEST_DIR/"
+          }
+          rm -rf packaging; mkdir -p packaging/system32 packaging/syswow64
+          copy_dll "build-ec" "packaging/system32"
+          copy_dll "build-x86" "packaging/syswow64"
+          llvm-strip --strip-all packaging/system32/*.dll
+          llvm-strip --strip-all packaging/syswow64/*.dll
+          cat > packaging/profile.json <<EOF
+          {
+            "type": "DXVK",
+            "versionName": "${TAG}-arm64ec",
+            "versionCode": 0,
+            "description": "Built on the Winlator WCP Hub (Upstream: Philip Rebohle)",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+          ( cd packaging && ZSTD_CLEVEL=19 tar --zstd -cf "../dxvk-arm64ec-${TAG}.wcp" profile.json system32 syswow64 )
+          echo "packaged dxvk-arm64ec-${TAG}.wcp (commit ${COMMIT})"
+          ls -la dxvk-arm64ec-${TAG}.wcp
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dxvk-arm64ec-vanilla-${{ inputs.version }}
+          path: dxvk-arm64ec-${{ inputs.version }}.wcp
