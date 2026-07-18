@@ -41,6 +41,8 @@ jobs:
               ("Dxvk-arm64ec",             "DXVK"),
               ("Dxvk-gplasync",            "DXVK"),
               ("Dxvk-gplasync-arm64ec",    "DXVK"),
+              ("Dxvk-binsem-gplasync",         "DXVK"),
+              ("Dxvk-binsem-gplasync-arm64ec", "DXVK"),
               ("FexCore",                  "FEXCore"),
               ("VKD3D-PROTON-ARM",         "VKD3D"),
               ("Vkd3d-proton",             "VKD3D"),
