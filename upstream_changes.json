@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-19T14:22:11Z",
+  "triggered_at": "2026-07-19T18:53:04Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a11215b",
-      "new": "3bf5a8d",
-      "full": "3bf5a8d0b0ea547c965bc02fdd9137e2f9189213",
-      "msg": "kosmickrisp: don't cache a NULL Metal compiler",
-      "date": "2026-07-19T13:42:21.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "58c247b",
+      "new": "3bd4d24",
+      "full": "3bd4d244a4d1deecedf26644bf411f95dd65a990",
+      "msg": "Merge pull request #5771 from lioncash/fmt",
+      "date": "2026-07-19T18:50:58Z"
     }
   ]
 }
