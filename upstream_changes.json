@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-18T22:39:42Z",
+  "triggered_at": "2026-07-19T01:52:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "879365e",
-      "new": "db128e2",
-      "full": "db128e2f552610de79e2912925929c40c9a55652",
-      "msg": "Uprev VVL to 6727ae4734bf9e1e6f6954254bbc382687a3866d",
-      "date": "2026-07-18T21:31:28.000+00:00"
+      "old": "db128e2",
+      "new": "a11215b",
+      "full": "a11215b318f6208cca39b49315a3856d4870210b",
+      "msg": "kk: call opt_licm to lighten loop executions",
+      "date": "2026-07-19T00:53:48.000+00:00"
     }
   ]
 }
