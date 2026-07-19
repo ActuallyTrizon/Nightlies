@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-19T08:01:28Z",
+  "triggered_at": "2026-07-19T14:22:11Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "2544543",
-      "new": "d8cb528",
-      "full": "d8cb528a2d1d64e4a51b90eacccf1856dade2ad9",
-      "msg": "[BOX32][WRAPPER] Added 2 new wrapped functions (for #4063)",
-      "date": "2026-07-19T07:52:30Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "f374b47",
-      "new": "58c247b",
-      "full": "58c247b30ce11fb4bb9a81c55c96837c6bed0f3a",
-      "msg": "Merge pull request #5770 from lioncash/cast",
-      "date": "2026-07-19T07:57:29Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "a11215b",
+      "new": "3bf5a8d",
+      "full": "3bf5a8d0b0ea547c965bc02fdd9137e2f9189213",
+      "msg": "kosmickrisp: don't cache a NULL Metal compiler",
+      "date": "2026-07-19T13:42:21.000+00:00"
     }
   ]
 }
