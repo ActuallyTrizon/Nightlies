@@ -36,8 +36,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260719-185847](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260719-185847) |
-| **FEXCore** | [`3bd4d244a`](https://github.com/FEX-Emu/FEX/commit/3bd4d244a) — FEX-2607+270-Nightly-3bd4d244a |
+| **Release** | [🔗 nightly-20260720-021526](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260720-021526) |
+| **FEXCore** | [`eb7e02ea1`](https://github.com/FEX-Emu/FEX/commit/eb7e02ea1) — FEX-2607+283-Nightly-eb7e02ea1 |
 | **VKD3D-Proton (Std)** | [`3dfc6f07`](https://github.com/HansKristian-Work/vkd3d-proton/commit/3dfc6f07) |
 | **VKD3D-Proton (ARM64EC)** | [`3dfc6f07`](https://github.com/HansKristian-Work/vkd3d-proton/commit/3dfc6f07) |
 | **DXVK (GPLAsync)** | [`6b20f622`](https://github.com/doitsujin/dxvk/commit/6b20f622) |
@@ -45,8 +45,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (GPLAsync)** | [`6b20f622`](https://github.com/doitsujin/dxvk/commit/6b20f622) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`6b20f622`](https://github.com/doitsujin/dxvk/commit/6b20f622) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.3.0-20260719-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260719-r2) — Turnip v26.3.0-20260719-r2 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260719-185847) |
+| **Turnip** | [v26.3.0-20260720](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260720) — Turnip v26.3.0-20260720 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260720-021526) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
