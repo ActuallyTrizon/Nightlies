@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-20T02:09:53Z",
+  "triggered_at": "2026-07-20T06:07:22Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "3bf5a8d",
-      "new": "df73bd9",
-      "full": "df73bd930ae57bc1928beb1fdfb30bc3ab41b684",
-      "msg": "util: add Blockland workaround for crash",
-      "date": "2026-07-20T00:23:16.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d8cb528",
+      "new": "f19936e",
+      "full": "f19936e53b8115f81282f2be14acfa90fad18b5b",
+      "msg": "[LA64_DYNAREC] Disabled rsp merging when cosim is enabled (#4066)",
+      "date": "2026-07-20T05:44:53Z"
     }
   ]
 }
