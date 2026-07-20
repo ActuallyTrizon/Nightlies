@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-07-20T17:26:12Z",
+  "triggered_at": "2026-07-20T19:27:03Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d22f9e6",
-      "new": "8b1fbc1",
-      "full": "8b1fbc150d704cf4bfb5bdcf660f37e97b5cabb3",
-      "msg": "[ELFLOADER] A bit more work on staticaly linked binary (for #4071)",
-      "date": "2026-07-20T16:18:23Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "6b20f62",
-      "new": "0ff9cd3",
-      "full": "0ff9cd328ca23b4da0f525bdded98a01d7e547a7",
-      "msg": "[util] Print performance warning if frame rate limiter is enabled",
-      "date": "2026-07-20T16:06:11Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "208edab",
-      "new": "7f540b0",
-      "full": "7f540b051c40cfc0c5ed0c48fd70c0309fb82b37",
-      "msg": "kk: Fix Vulkan to Metal stage translation for timestamps",
-      "date": "2026-07-20T16:45:03.000+00:00"
+      "old": "7f540b0",
+      "new": "42f636b",
+      "full": "42f636bee95409f8ac89a453ab0edcbe58530180",
+      "msg": "d3d12/video: Don't reset batches in fence_wait",
+      "date": "2026-07-20T18:43:49.000+00:00"
     }
   ]
 }
