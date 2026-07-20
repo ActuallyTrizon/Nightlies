@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-20T19:27:03Z",
+  "triggered_at": "2026-07-20T22:48:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f540b0",
-      "new": "42f636b",
-      "full": "42f636bee95409f8ac89a453ab0edcbe58530180",
-      "msg": "d3d12/video: Don't reset batches in fence_wait",
-      "date": "2026-07-20T18:43:49.000+00:00"
+      "old": "42f636b",
+      "new": "9adc7dd",
+      "full": "9adc7dd3fa68d4ef659364075c8583f873d8a464",
+      "msg": "anv: Use quad primitives for BVH encoding",
+      "date": "2026-07-20T21:19:30.000+00:00"
     }
   ]
 }
