@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-20T06:07:22Z",
+  "triggered_at": "2026-07-20T09:50:44Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "d8cb528",
-      "new": "f19936e",
-      "full": "f19936e53b8115f81282f2be14acfa90fad18b5b",
-      "msg": "[LA64_DYNAREC] Disabled rsp merging when cosim is enabled (#4066)",
-      "date": "2026-07-20T05:44:53Z"
+      "old": "f19936e",
+      "new": "f79babc",
+      "full": "f79babc54184ff3f337f0bf0572be9299eb1de60",
+      "msg": "[DYNACACHE] Restricted last_mmap to executable images (#4068)",
+      "date": "2026-07-20T08:55:37Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "df73bd9",
+      "new": "07e937f",
+      "full": "07e937fdb73195e1962c5cbf306f6e427178f9ab",
+      "msg": "panfrost/midgard: Fix fau max not initialized",
+      "date": "2026-07-20T09:04:38.000+00:00"
     }
   ]
 }
