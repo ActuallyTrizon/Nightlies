@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-20T22:48:53Z",
+  "triggered_at": "2026-07-20T23:48:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "42f636b",
-      "new": "9adc7dd",
-      "full": "9adc7dd3fa68d4ef659364075c8583f873d8a464",
-      "msg": "anv: Use quad primitives for BVH encoding",
-      "date": "2026-07-20T21:19:30.000+00:00"
+      "old": "9adc7dd",
+      "new": "8abf7d1",
+      "full": "8abf7d19736e5b0bf4112cbb3787f9a7b2c4f2c9",
+      "msg": "anv/rt: Add parent child count map instead of using pad field",
+      "date": "2026-07-20T15:08:59.000-07:00"
     }
   ]
 }
