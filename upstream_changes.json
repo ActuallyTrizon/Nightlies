@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-20T09:50:44Z",
+  "triggered_at": "2026-07-20T12:09:46Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "f19936e",
-      "new": "f79babc",
-      "full": "f79babc54184ff3f337f0bf0572be9299eb1de60",
-      "msg": "[DYNACACHE] Restricted last_mmap to executable images (#4068)",
-      "date": "2026-07-20T08:55:37Z"
+      "old": "f79babc",
+      "new": "d22f9e6",
+      "full": "d22f9e6169653a3b3a2ae890989809de77377e6b",
+      "msg": "[LA64_DYNAREC] Added comis fusion (#4072)",
+      "date": "2026-07-20T11:44:10Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "df73bd9",
-      "new": "07e937f",
-      "full": "07e937fdb73195e1962c5cbf306f6e427178f9ab",
-      "msg": "panfrost/midgard: Fix fau max not initialized",
-      "date": "2026-07-20T09:04:38.000+00:00"
+      "old": "07e937f",
+      "new": "208edab",
+      "full": "208edabb69d2dba9518c29b7f351f0db637a66ba",
+      "msg": "mesa/glapi: trace bitfields symbolically",
+      "date": "2026-07-20T10:34:31.000+00:00"
     }
   ]
 }
