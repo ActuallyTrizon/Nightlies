@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-07-21T14:56:30Z",
+  "triggered_at": "2026-07-21T18:10:39Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "603730d",
-      "new": "67962cd",
-      "full": "67962cd10d3e9e3eb833d3e013b5d87b5df05ba6",
-      "msg": "Fixed skip/max cpu guessing for other process",
-      "date": "2026-07-21T14:02:24Z"
+      "old": "67962cd",
+      "new": "6994c01",
+      "full": "6994c012b822afa1616c5b3a0de393839cfd7cf3",
+      "msg": "[DYNAREC] Fixed CALL FAR/RET with callret=2 (#4083)",
+      "date": "2026-07-21T18:01:41Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "a652a58",
+      "new": "f2e35f3",
+      "full": "f2e35f336f0b8bb0df979ffe10e7c6ffbd8af89c",
+      "msg": "Merge pull request #5778 from lioncash/buf",
+      "date": "2026-07-21T16:18:25Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8b79064",
-      "new": "cf3da2a",
-      "full": "cf3da2abcb0b8b85cd721f22865645324c4f77e4",
-      "msg": "kraid: Add fsin/fcos and wire them up with tests",
-      "date": "2026-07-21T15:20:44.000+02:00"
+      "old": "cf3da2a",
+      "new": "61aaad5",
+      "full": "61aaad5a1add1bcea822c9ad8334dd52cb950254",
+      "msg": "virtio: magma-gpu-rs: add android to supported systems",
+      "date": "2026-07-21T17:42:36.000+00:00"
     }
   ]
 }
