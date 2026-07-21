@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-20T23:48:47Z",
+  "triggered_at": "2026-07-21T01:51:52Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "eb7e02e",
+      "new": "2464633",
+      "full": "2464633431e3fbeca2050a82fe1149cd47f3ae0e",
+      "msg": "Merge pull request #5776 from Sonicadvance1/190",
+      "date": "2026-07-21T01:07:23Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9adc7dd",
-      "new": "8abf7d1",
-      "full": "8abf7d19736e5b0bf4112cbb3787f9a7b2c4f2c9",
-      "msg": "anv/rt: Add parent child count map instead of using pad field",
-      "date": "2026-07-20T15:08:59.000-07:00"
+      "old": "8abf7d1",
+      "new": "772cb76",
+      "full": "772cb76cc80ed5bde9c8a3972f0852d68fa54f9d",
+      "msg": "venus: relax SYNC_FD fence export requirement",
+      "date": "2026-07-20T23:53:19.000+00:00"
     }
   ]
 }
