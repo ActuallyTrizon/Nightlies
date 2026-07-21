@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-21T21:56:51Z",
+  "triggered_at": "2026-07-21T22:51:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "20b39ff",
-      "new": "be8bcf1",
-      "full": "be8bcf120e3bd719ba20c10aaf066e61619b0450",
-      "msg": "ethosu: Emit explicit convolution activation ranges",
-      "date": "2026-07-21T21:21:26.000+00:00"
+      "old": "be8bcf1",
+      "new": "6b89caf",
+      "full": "6b89caf0e02686ddf2afaac53280d1a1d2d5b79b",
+      "msg": "tu: AVOID_CCU should avoid depth CCU if custom resolve writes D/S",
+      "date": "2026-07-21T21:50:46.000+00:00"
     }
   ]
 }
