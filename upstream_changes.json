@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-21T20:14:40Z",
+  "triggered_at": "2026-07-21T21:56:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "61aaad5",
-      "new": "20b39ff",
-      "full": "20b39ff044a5223a3f14b8eb115054c4bc37a345",
-      "msg": "nir/meson: Add idep_nir_headers as a _libnir dependency",
-      "date": "2026-07-21T18:31:07.000+00:00"
+      "old": "20b39ff",
+      "new": "be8bcf1",
+      "full": "be8bcf120e3bd719ba20c10aaf066e61619b0450",
+      "msg": "ethosu: Emit explicit convolution activation ranges",
+      "date": "2026-07-21T21:21:26.000+00:00"
     }
   ]
 }
