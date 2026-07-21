@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-07-21T18:10:39Z",
+  "triggered_at": "2026-07-21T20:14:40Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "67962cd",
-      "new": "6994c01",
-      "full": "6994c012b822afa1616c5b3a0de393839cfd7cf3",
-      "msg": "[DYNAREC] Fixed CALL FAR/RET with callret=2 (#4083)",
-      "date": "2026-07-21T18:01:41Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "a652a58",
-      "new": "f2e35f3",
-      "full": "f2e35f336f0b8bb0df979ffe10e7c6ffbd8af89c",
-      "msg": "Merge pull request #5778 from lioncash/buf",
-      "date": "2026-07-21T16:18:25Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cf3da2a",
-      "new": "61aaad5",
-      "full": "61aaad5a1add1bcea822c9ad8334dd52cb950254",
-      "msg": "virtio: magma-gpu-rs: add android to supported systems",
-      "date": "2026-07-21T17:42:36.000+00:00"
+      "old": "61aaad5",
+      "new": "20b39ff",
+      "full": "20b39ff044a5223a3f14b8eb115054c4bc37a345",
+      "msg": "nir/meson: Add idep_nir_headers as a _libnir dependency",
+      "date": "2026-07-21T18:31:07.000+00:00"
     }
   ]
 }
