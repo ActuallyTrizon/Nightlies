@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-21T01:51:52Z",
+  "triggered_at": "2026-07-21T08:09:43Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "eb7e02e",
-      "new": "2464633",
-      "full": "2464633431e3fbeca2050a82fe1149cd47f3ae0e",
-      "msg": "Merge pull request #5776 from Sonicadvance1/190",
-      "date": "2026-07-21T01:07:23Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8b1fbc1",
+      "new": "d9df72e",
+      "full": "d9df72e6021a39ee07a609d7e9d29f1938e082d2",
+      "msg": "Try to use SKIPCPU for get/set affinity done on another (box64) process too",
+      "date": "2026-07-21T08:06:20Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8abf7d1",
-      "new": "772cb76",
-      "full": "772cb76cc80ed5bde9c8a3972f0852d68fa54f9d",
-      "msg": "venus: relax SYNC_FD fence export requirement",
-      "date": "2026-07-20T23:53:19.000+00:00"
+      "old": "772cb76",
+      "new": "817eb95",
+      "full": "817eb9548fd8d4ad6545dab9e45dd639c1f160cb",
+      "msg": "brw: Make brw_geometry_stage_dispatch_width available to C code",
+      "date": "2026-07-21T07:42:22.000+00:00"
     }
   ]
 }
