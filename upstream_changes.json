@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-21T08:09:43Z",
+  "triggered_at": "2026-07-21T10:57:39Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8b1fbc1",
-      "new": "d9df72e",
-      "full": "d9df72e6021a39ee07a609d7e9d29f1938e082d2",
-      "msg": "Try to use SKIPCPU for get/set affinity done on another (box64) process too",
-      "date": "2026-07-21T08:06:20Z"
+      "old": "d9df72e",
+      "new": "603730d",
+      "full": "603730dd3cb71cc1d897d1b2af73fd4e34e7005a",
+      "msg": "[LA64_DYNAREC] Fixed more up32 issues (#4082)",
+      "date": "2026-07-21T10:54:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "772cb76",
-      "new": "817eb95",
-      "full": "817eb9548fd8d4ad6545dab9e45dd639c1f160cb",
-      "msg": "brw: Make brw_geometry_stage_dispatch_width available to C code",
-      "date": "2026-07-21T07:42:22.000+00:00"
+      "old": "817eb95",
+      "new": "38169ed",
+      "full": "38169ede9b24ccadd84e972bbc39feb4c042e9c5",
+      "msg": "broadcom/ci: updated expected results",
+      "date": "2026-07-21T10:19:31.000+00:00"
     }
   ]
 }
