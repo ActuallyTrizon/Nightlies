@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-22T01:50:52Z",
+  "triggered_at": "2026-07-22T08:10:16Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "6b89caf",
-      "new": "d49a00b",
-      "full": "d49a00bdf15fd48b31af93aaf5feed3eebcbda12",
-      "msg": "r300: fixes for UB around left shifts",
-      "date": "2026-07-22T00:54:29.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "6994c01",
+      "new": "66e9f12",
+      "full": "66e9f120bb38038c1d30c4fe47f43df402612684",
+      "msg": "[RV64_DYNAREC] Reduce instruction count for GETSEB/GETSGW by risc-v zbb (#4090)",
+      "date": "2026-07-22T07:31:38Z"
     }
   ]
 }
