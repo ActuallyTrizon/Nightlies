@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-22T18:03:00Z",
+  "triggered_at": "2026-07-22T20:09:02Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "0ff9cd3",
-      "new": "1a5919b",
-      "full": "1a5919b7edd111887648d1e8bf0c32733e2e00d3",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-07-22T17:09:12Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0aba464",
-      "new": "a1b2939",
-      "full": "a1b2939cbd3bb7054a85bd0150e36f0c85cbcdcf",
-      "msg": "panfrost: v12+ fixes for run_fullscreen blits",
-      "date": "2026-07-22T16:47:15.000+00:00"
+      "old": "a1b2939",
+      "new": "fe0ce23",
+      "full": "fe0ce230f3a9b94106f35bf262ba1179c5e0a9db",
+      "msg": "jay: lower vote_any after opt_uniform_subgroups",
+      "date": "2026-07-22T19:14:54.000+00:00"
     }
   ]
 }
