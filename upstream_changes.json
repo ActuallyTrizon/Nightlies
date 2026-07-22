@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-22T20:09:02Z",
+  "triggered_at": "2026-07-22T21:58:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a1b2939",
-      "new": "fe0ce23",
-      "full": "fe0ce230f3a9b94106f35bf262ba1179c5e0a9db",
-      "msg": "jay: lower vote_any after opt_uniform_subgroups",
-      "date": "2026-07-22T19:14:54.000+00:00"
+      "old": "fe0ce23",
+      "new": "52ee87d",
+      "full": "52ee87d6dcac1f2e3c1b086d0fc53e526d904ad0",
+      "msg": "intel/executor: Add block2d example for Xe2",
+      "date": "2026-07-22T20:17:13.000+00:00"
     }
   ]
 }
