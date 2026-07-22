@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-22T10:59:11Z",
+  "triggered_at": "2026-07-22T12:25:26Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "66e9f12",
-      "new": "ef8b463",
-      "full": "ef8b463a25da93d916782379d88dac3a5080e5bb",
-      "msg": "[DYNAREC] Ported the alternate fix from Arm to others (#4091)",
-      "date": "2026-07-22T09:15:58Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d49a00b",
-      "new": "38ba9dd",
-      "full": "38ba9dd991a2a221719212740222f048c070aeeb",
-      "msg": "kk: Remove unused mtl_drawable_present",
-      "date": "2026-07-22T02:33:25.000-07:00"
+      "old": "38ba9dd",
+      "new": "d3d45a7",
+      "full": "d3d45a7fb41433149924d0bbbf9d9bd1ddb9c33a",
+      "msg": "pvr: Implementation of VK_KHR_maintenance7",
+      "date": "2026-07-22T11:46:38.000+00:00"
     }
   ]
 }
