@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-22T12:25:26Z",
+  "triggered_at": "2026-07-22T14:57:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ef8b463",
+      "new": "ff943b5",
+      "full": "ff943b5d5a6986a59553ae19b069bec0fedc6525",
+      "msg": "Removed useless files (#4092)",
+      "date": "2026-07-22T13:16:06Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "38ba9dd",
-      "new": "d3d45a7",
-      "full": "d3d45a7fb41433149924d0bbbf9d9bd1ddb9c33a",
-      "msg": "pvr: Implementation of VK_KHR_maintenance7",
-      "date": "2026-07-22T11:46:38.000+00:00"
+      "old": "d3d45a7",
+      "new": "c43cac7",
+      "full": "c43cac7264b36b3e3c30408d1b4ad99655293af9",
+      "msg": "pan/bi: enable late_lower_int64 on Valhall (v9+)",
+      "date": "2026-07-22T14:03:05.000+00:00"
     }
   ]
 }
