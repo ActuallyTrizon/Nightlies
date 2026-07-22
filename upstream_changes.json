@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-22T08:10:16Z",
+  "triggered_at": "2026-07-22T10:59:11Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "6994c01",
-      "new": "66e9f12",
-      "full": "66e9f120bb38038c1d30c4fe47f43df402612684",
-      "msg": "[RV64_DYNAREC] Reduce instruction count for GETSEB/GETSGW by risc-v zbb (#4090)",
-      "date": "2026-07-22T07:31:38Z"
+      "old": "66e9f12",
+      "new": "ef8b463",
+      "full": "ef8b463a25da93d916782379d88dac3a5080e5bb",
+      "msg": "[DYNAREC] Ported the alternate fix from Arm to others (#4091)",
+      "date": "2026-07-22T09:15:58Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "d49a00b",
+      "new": "38ba9dd",
+      "full": "38ba9dd991a2a221719212740222f048c070aeeb",
+      "msg": "kk: Remove unused mtl_drawable_present",
+      "date": "2026-07-22T02:33:25.000-07:00"
     }
   ]
 }
