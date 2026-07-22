@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-22T16:17:52Z",
+  "triggered_at": "2026-07-22T18:03:00Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ff943b5",
-      "new": "b442786",
-      "full": "b4427868119d07a158af2f476fe582357b7dd209",
-      "msg": "[RCFILE] Updated 2 profiles (for UPlay games)",
-      "date": "2026-07-22T15:28:08Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "0ff9cd3",
+      "new": "1a5919b",
+      "full": "1a5919b7edd111887648d1e8bf0c32733e2e00d3",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-07-22T17:09:12Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c43cac7",
-      "new": "0aba464",
-      "full": "0aba464832e3f2bae16fb47a825cdbcfa68246d4",
-      "msg": "kraid/v9: Fix op_dst_supported_lanes() for vecsize dsts",
-      "date": "2026-07-22T15:04:46.000+00:00"
+      "old": "0aba464",
+      "new": "a1b2939",
+      "full": "a1b2939cbd3bb7054a85bd0150e36f0c85cbcdcf",
+      "msg": "panfrost: v12+ fixes for run_fullscreen blits",
+      "date": "2026-07-22T16:47:15.000+00:00"
     }
   ]
 }
