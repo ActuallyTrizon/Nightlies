@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-23T20:51:53Z",
+  "triggered_at": "2026-07-23T21:57:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5c4ec0c",
-      "new": "eadcadf",
-      "full": "eadcadf067ede525b5f511d22215272bb31eaa41",
-      "msg": "nvk: report fills from memory correctly",
-      "date": "2026-07-23T19:22:01.000+00:00"
+      "old": "eadcadf",
+      "new": "8b794a5",
+      "full": "8b794a5167a729758cac9bde45fbe1886eb89c91",
+      "msg": "venus: document timeline semaphore implementation",
+      "date": "2026-07-23T21:12:07.000+00:00"
     }
   ]
 }
