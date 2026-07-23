@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-23T17:10:11Z",
+  "triggered_at": "2026-07-23T19:00:50Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "537d92b",
-      "new": "e3cb94f",
-      "full": "e3cb94f490b37bb8d48a27f9c40c6a87851fd295",
-      "msg": "[LA64_DYNAREC] Optimized SHA1 opcodes (#4102)",
-      "date": "2026-07-23T17:05:13Z"
+      "old": "e3cb94f",
+      "new": "40a841d",
+      "full": "40a841df8ff3ab7dd01587cb77bf038070a661eb",
+      "msg": "Small tweaks to the profile (#4105)",
+      "date": "2026-07-23T18:03:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "594f44b",
-      "new": "a0052e8",
-      "full": "a0052e8ebc3b8f58445dc9664e867ba711a6ea02",
-      "msg": "brw: Make sure all coalesced source slots are filled",
-      "date": "2026-07-23T08:16:56.000-07:00"
+      "old": "a0052e8",
+      "new": "5c4ec0c",
+      "full": "5c4ec0c99dc9c32f489276a6de141199afb13600",
+      "msg": "pick-ui: require reverts to be explicitly nominated for backport",
+      "date": "2026-07-23T17:27:09.000+00:00"
     }
   ]
 }
