@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-23T08:13:42Z",
+  "triggered_at": "2026-07-23T11:01:29Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b442786",
-      "new": "c08644a",
-      "full": "c08644a729b0bb594421eb1ec425985b74dffaae",
-      "msg": "[RV64_DYNAREC] Support some bmi and bmi2 instructions for risc-v (#4098)",
-      "date": "2026-07-23T07:09:35Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fa95a76",
-      "new": "42f591b",
-      "full": "42f591b906b7e8a966cc339f84d2671f423d48c4",
-      "msg": "v3d,v3dv: commonize timestamp query",
-      "date": "2026-07-23T06:16:22.000+00:00"
+      "old": "42f591b",
+      "new": "2e8e61c",
+      "full": "2e8e61c1fb1a77d72d31ca010ed90c516e45f849",
+      "msg": "v3dv: propagate failure when getting a stage's NIR fails",
+      "date": "2026-07-23T10:39:25.000+00:00"
     }
   ]
 }
