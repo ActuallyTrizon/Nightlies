@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-22T21:58:18Z",
+  "triggered_at": "2026-07-23T01:58:11Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f2e35f3",
+      "new": "cfa3dfa",
+      "full": "cfa3dfaac766cea18e49ee4ce21ef2f09558bbb9",
+      "msg": "Merge pull request #5780 from mrpippy/unicode",
+      "date": "2026-07-23T01:48:52Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fe0ce23",
-      "new": "52ee87d",
-      "full": "52ee87d6dcac1f2e3c1b086d0fc53e526d904ad0",
-      "msg": "intel/executor: Add block2d example for Xe2",
-      "date": "2026-07-22T20:17:13.000+00:00"
+      "old": "52ee87d",
+      "new": "fa95a76",
+      "full": "fa95a76636f25ee3399f72b86e1c0648af333991",
+      "msg": "nir/lower_io_indirect_loads: implement lowering indirect vertex index",
+      "date": "2026-07-22T23:52:31.000+00:00"
     }
   ]
 }
