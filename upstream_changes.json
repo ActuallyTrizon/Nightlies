@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-23T11:01:29Z",
+  "triggered_at": "2026-07-23T13:26:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "42f591b",
-      "new": "2e8e61c",
-      "full": "2e8e61c1fb1a77d72d31ca010ed90c516e45f849",
-      "msg": "v3dv: propagate failure when getting a stage's NIR fails",
-      "date": "2026-07-23T10:39:25.000+00:00"
+      "old": "2e8e61c",
+      "new": "7193e63",
+      "full": "7193e63ef562f4ca4d18613d68ede849e6cbb4c3",
+      "msg": "kk: Set store action dynamically",
+      "date": "2026-07-23T12:56:13.000+00:00"
     }
   ]
 }
