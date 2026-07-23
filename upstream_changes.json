@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-23T01:58:11Z",
+  "triggered_at": "2026-07-23T05:24:33Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "f2e35f3",
-      "new": "cfa3dfa",
-      "full": "cfa3dfaac766cea18e49ee4ce21ef2f09558bbb9",
-      "msg": "Merge pull request #5780 from mrpippy/unicode",
-      "date": "2026-07-23T01:48:52Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "52ee87d",
-      "new": "fa95a76",
-      "full": "fa95a76636f25ee3399f72b86e1c0648af333991",
-      "msg": "nir/lower_io_indirect_loads: implement lowering indirect vertex index",
-      "date": "2026-07-22T23:52:31.000+00:00"
+      "old": "cfa3dfa",
+      "new": "0589d9b",
+      "full": "0589d9b872861970b9085f114a261a0885b6ccb6",
+      "msg": "Merge pull request #5779 from lioncash/x87",
+      "date": "2026-07-23T01:58:17Z"
     }
   ]
 }
