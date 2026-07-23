@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-23T15:48:05Z",
+  "triggered_at": "2026-07-23T17:10:11Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c08644a",
-      "new": "537d92b",
-      "full": "537d92bf5757a59ead1fd2d87e398802eba78bee",
-      "msg": "[LA64_DYNAREC] Fixed a typo in VPXOR opcode (#4101)",
-      "date": "2026-07-23T15:10:39Z"
+      "old": "537d92b",
+      "new": "e3cb94f",
+      "full": "e3cb94f490b37bb8d48a27f9c40c6a87851fd295",
+      "msg": "[LA64_DYNAREC] Optimized SHA1 opcodes (#4102)",
+      "date": "2026-07-23T17:05:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7193e63",
-      "new": "594f44b",
-      "full": "594f44bdf48ceea0591c928a8cdb13f56d009899",
-      "msg": "mediafoundation: removing dependency of pipe_screen from CD3D12BitstreamMFBuffer",
-      "date": "2026-07-23T14:20:25.000+00:00"
+      "old": "594f44b",
+      "new": "a0052e8",
+      "full": "a0052e8ebc3b8f58445dc9664e867ba711a6ea02",
+      "msg": "brw: Make sure all coalesced source slots are filled",
+      "date": "2026-07-23T08:16:56.000-07:00"
     }
   ]
 }
