@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-23T05:24:33Z",
+  "triggered_at": "2026-07-23T08:13:42Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "cfa3dfa",
-      "new": "0589d9b",
-      "full": "0589d9b872861970b9085f114a261a0885b6ccb6",
-      "msg": "Merge pull request #5779 from lioncash/x87",
-      "date": "2026-07-23T01:58:17Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b442786",
+      "new": "c08644a",
+      "full": "c08644a729b0bb594421eb1ec425985b74dffaae",
+      "msg": "[RV64_DYNAREC] Support some bmi and bmi2 instructions for risc-v (#4098)",
+      "date": "2026-07-23T07:09:35Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "fa95a76",
+      "new": "42f591b",
+      "full": "42f591b906b7e8a966cc339f84d2671f423d48c4",
+      "msg": "v3d,v3dv: commonize timestamp query",
+      "date": "2026-07-23T06:16:22.000+00:00"
     }
   ]
 }
