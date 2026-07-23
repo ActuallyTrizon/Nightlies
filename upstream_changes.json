@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-23T13:26:47Z",
+  "triggered_at": "2026-07-23T15:48:05Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c08644a",
+      "new": "537d92b",
+      "full": "537d92bf5757a59ead1fd2d87e398802eba78bee",
+      "msg": "[LA64_DYNAREC] Fixed a typo in VPXOR opcode (#4101)",
+      "date": "2026-07-23T15:10:39Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2e8e61c",
-      "new": "7193e63",
-      "full": "7193e63ef562f4ca4d18613d68ede849e6cbb4c3",
-      "msg": "kk: Set store action dynamically",
-      "date": "2026-07-23T12:56:13.000+00:00"
+      "old": "7193e63",
+      "new": "594f44b",
+      "full": "594f44bdf48ceea0591c928a8cdb13f56d009899",
+      "msg": "mediafoundation: removing dependency of pipe_screen from CD3D12BitstreamMFBuffer",
+      "date": "2026-07-23T14:20:25.000+00:00"
     }
   ]
 }
