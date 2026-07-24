@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-07-24T14:46:18Z",
+  "triggered_at": "2026-07-24T18:11:57Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3698562",
-      "new": "93fe536",
-      "full": "93fe536549f150ab1507a4c7512a4e48c2b9fe36",
-      "msg": "[RV64_DYNAREC] Add Zicbom and Zicbop disassemble case (#4111)",
-      "date": "2026-07-24T12:24:01Z"
+      "old": "93fe536",
+      "new": "f4ee1c1",
+      "full": "f4ee1c1b53398cc07b39b4c77bdc37bae34c9765",
+      "msg": "[RV64_DYNAREC] Support bmi2 PDEP/MULX/SHRX instruction (#4110)",
+      "date": "2026-07-24T18:05:17Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "464ec9d",
+      "new": "7a3fdef",
+      "full": "7a3fdefafba15c4856a6e1cbaf0cfdb236369515",
+      "msg": "Merge pull request #5786 from OFFTKP/fist",
+      "date": "2026-07-24T16:27:22Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0409984",
-      "new": "95cf4cc",
-      "full": "95cf4cca42bd40289d4d1d8e56c8e3c54ebe9344",
-      "msg": "st: invalidate shader constants on clip plane state changes",
-      "date": "2026-07-24T13:27:54.000+00:00"
+      "old": "95cf4cc",
+      "new": "b277a49",
+      "full": "b277a4925a161592801d711a8258433e2e2cda42",
+      "msg": "nir: Account for cmat memory accesses in copy_prop_vars",
+      "date": "2026-07-24T17:26:53.000+00:00"
     }
   ]
 }
