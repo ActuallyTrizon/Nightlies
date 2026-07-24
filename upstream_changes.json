@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-23T22:53:58Z",
+  "triggered_at": "2026-07-24T01:53:39Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "0589d9b",
-      "new": "d028c79",
-      "full": "d028c7942b4b85c73aee11695b9bb011faecef11",
-      "msg": "Merge pull request #5782 from lioncash/validation",
-      "date": "2026-07-23T22:44:48Z"
+      "old": "d028c79",
+      "new": "464ec9d",
+      "full": "464ec9d0bcc73342f5721016fc7df5b3600237ab",
+      "msg": "Merge pull request #5783 from FrontMage/fix/inactive-jit-guard-range",
+      "date": "2026-07-24T00:50:51Z"
     }
   ]
 }
