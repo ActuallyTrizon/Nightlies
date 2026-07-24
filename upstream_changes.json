@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-24T10:54:52Z",
+  "triggered_at": "2026-07-24T12:13:32Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d8df33a",
-      "new": "3698562",
-      "full": "3698562aae0e07101a7e1fd3c810fb3679263bab",
-      "msg": "[INTERPRETER] Improve x87 long double classification (#4107)",
-      "date": "2026-07-24T09:09:40Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "479773c",
-      "new": "1d899a4",
-      "full": "1d899a489de21796a28075b8a4aed8a5954b0057",
-      "msg": "pvr: Fix for depth stencil 2d array writes.",
-      "date": "2026-07-24T08:56:47.000+00:00"
+      "old": "1d899a4",
+      "new": "0409984",
+      "full": "0409984f27a183d833c6633b0981f1d99208400f",
+      "msg": "lavapipe: add tensorlayout and blockloads NV_cooperative_matrix2 support",
+      "date": "2026-07-24T11:42:42.000+00:00"
     }
   ]
 }
