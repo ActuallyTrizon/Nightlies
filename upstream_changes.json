@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-24T08:09:34Z",
+  "triggered_at": "2026-07-24T10:54:52Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "40a841d",
-      "new": "d8df33a",
-      "full": "d8df33a9cb73214cb955a88af0554cf04c5d3686",
-      "msg": "[LA64_DYNAREC] Added simplewrapper float parameter support (#4109)",
-      "date": "2026-07-24T07:24:57Z"
+      "old": "d8df33a",
+      "new": "3698562",
+      "full": "3698562aae0e07101a7e1fd3c810fb3679263bab",
+      "msg": "[INTERPRETER] Improve x87 long double classification (#4107)",
+      "date": "2026-07-24T09:09:40Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8b794a5",
-      "new": "479773c",
-      "full": "479773c7e4264506f2d9ec4bf15c6bf677f0d67a",
-      "msg": "mesa/st: Invalidate FS sampler views after PBO texture transfers",
-      "date": "2026-07-24T05:14:06.000+00:00"
+      "old": "479773c",
+      "new": "1d899a4",
+      "full": "1d899a489de21796a28075b8a4aed8a5954b0057",
+      "msg": "pvr: Fix for depth stencil 2d array writes.",
+      "date": "2026-07-24T08:56:47.000+00:00"
     }
   ]
 }
