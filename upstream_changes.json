@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-24T01:53:39Z",
+  "triggered_at": "2026-07-24T08:09:34Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d028c79",
-      "new": "464ec9d",
-      "full": "464ec9d0bcc73342f5721016fc7df5b3600237ab",
-      "msg": "Merge pull request #5783 from FrontMage/fix/inactive-jit-guard-range",
-      "date": "2026-07-24T00:50:51Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "40a841d",
+      "new": "d8df33a",
+      "full": "d8df33a9cb73214cb955a88af0554cf04c5d3686",
+      "msg": "[LA64_DYNAREC] Added simplewrapper float parameter support (#4109)",
+      "date": "2026-07-24T07:24:57Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "8b794a5",
+      "new": "479773c",
+      "full": "479773c7e4264506f2d9ec4bf15c6bf677f0d67a",
+      "msg": "mesa/st: Invalidate FS sampler views after PBO texture transfers",
+      "date": "2026-07-24T05:14:06.000+00:00"
     }
   ]
 }
