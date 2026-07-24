@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-24T20:11:41Z",
+  "triggered_at": "2026-07-24T21:57:03Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "f4ee1c1",
-      "new": "a2ae050",
-      "full": "a2ae0500d85f04c2fbf957f4326757a274a04ac8",
-      "msg": "[LA64_DYNAREC] Extended nativeflags to 1+N pattern (#4113)",
-      "date": "2026-07-24T19:10:46Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b277a49",
-      "new": "254943a",
-      "full": "254943add03f7ecdbe0feb70a4e85d855e1c611b",
-      "msg": "nv30: reorder binding steps to match draw module intended behavior",
-      "date": "2026-07-24T18:49:21.000+00:00"
+      "old": "254943a",
+      "new": "d0a72a2",
+      "full": "d0a72a261e1b79b5951491160a7384e8079d6243",
+      "msg": "intel/gen: print sr0 subregisters",
+      "date": "2026-07-24T21:03:31.000+00:00"
     }
   ]
 }
