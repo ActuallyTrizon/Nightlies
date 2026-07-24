@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-24T12:13:32Z",
+  "triggered_at": "2026-07-24T14:46:18Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3698562",
+      "new": "93fe536",
+      "full": "93fe536549f150ab1507a4c7512a4e48c2b9fe36",
+      "msg": "[RV64_DYNAREC] Add Zicbom and Zicbop disassemble case (#4111)",
+      "date": "2026-07-24T12:24:01Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1d899a4",
-      "new": "0409984",
-      "full": "0409984f27a183d833c6633b0981f1d99208400f",
-      "msg": "lavapipe: add tensorlayout and blockloads NV_cooperative_matrix2 support",
-      "date": "2026-07-24T11:42:42.000+00:00"
+      "old": "0409984",
+      "new": "95cf4cc",
+      "full": "95cf4cca42bd40289d4d1d8e56c8e3c54ebe9344",
+      "msg": "st: invalidate shader constants on clip plane state changes",
+      "date": "2026-07-24T13:27:54.000+00:00"
     }
   ]
 }
