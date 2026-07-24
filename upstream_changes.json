@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-24T21:57:03Z",
+  "triggered_at": "2026-07-24T22:58:04Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "254943a",
-      "new": "d0a72a2",
-      "full": "d0a72a261e1b79b5951491160a7384e8079d6243",
-      "msg": "intel/gen: print sr0 subregisters",
-      "date": "2026-07-24T21:03:31.000+00:00"
+      "old": "d0a72a2",
+      "new": "1b0f0e0",
+      "full": "1b0f0e0a83c4b20a0a24df41bafc6d0ca88d5fcb",
+      "msg": "rusticl/memory: return 0 for CL_IMAGE_SLICE_PITCH also for 2d images",
+      "date": "2026-07-24T22:29:35.000+00:00"
     }
   ]
 }
