@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-07-24T18:11:57Z",
+  "triggered_at": "2026-07-24T20:11:41Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "93fe536",
-      "new": "f4ee1c1",
-      "full": "f4ee1c1b53398cc07b39b4c77bdc37bae34c9765",
-      "msg": "[RV64_DYNAREC] Support bmi2 PDEP/MULX/SHRX instruction (#4110)",
-      "date": "2026-07-24T18:05:17Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "464ec9d",
-      "new": "7a3fdef",
-      "full": "7a3fdefafba15c4856a6e1cbaf0cfdb236369515",
-      "msg": "Merge pull request #5786 from OFFTKP/fist",
-      "date": "2026-07-24T16:27:22Z"
+      "old": "f4ee1c1",
+      "new": "a2ae050",
+      "full": "a2ae0500d85f04c2fbf957f4326757a274a04ac8",
+      "msg": "[LA64_DYNAREC] Extended nativeflags to 1+N pattern (#4113)",
+      "date": "2026-07-24T19:10:46Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "95cf4cc",
-      "new": "b277a49",
-      "full": "b277a4925a161592801d711a8258433e2e2cda42",
-      "msg": "nir: Account for cmat memory accesses in copy_prop_vars",
-      "date": "2026-07-24T17:26:53.000+00:00"
+      "old": "b277a49",
+      "new": "254943a",
+      "full": "254943add03f7ecdbe0feb70a4e85d855e1c611b",
+      "msg": "nv30: reorder binding steps to match draw module intended behavior",
+      "date": "2026-07-24T18:49:21.000+00:00"
     }
   ]
 }
