@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-25T03:57:13Z",
+  "triggered_at": "2026-07-25T06:14:12Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1b0f0e0",
-      "new": "7a6f569",
-      "full": "7a6f5690575edc7113ff0da4281d8a646114be28",
-      "msg": "radeonsi: add handling of PERSP_PULL_MODEL",
-      "date": "2026-07-25T02:49:25.000+00:00"
+      "old": "7a6f569",
+      "new": "c403949",
+      "full": "c4039495967db0bff1ffaf2c955bc8586ce9c269",
+      "msg": "anv: Include build and device identity in shader binary UUID",
+      "date": "2026-07-25T05:41:01.000+00:00"
     }
   ]
 }
