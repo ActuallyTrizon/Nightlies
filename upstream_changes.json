@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-25T06:14:12Z",
+  "triggered_at": "2026-07-25T08:54:46Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "7a6f569",
-      "new": "c403949",
-      "full": "c4039495967db0bff1ffaf2c955bc8586ce9c269",
-      "msg": "anv: Include build and device identity in shader binary UUID",
-      "date": "2026-07-25T05:41:01.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "a2ae050",
+      "new": "c32ebc7",
+      "full": "c32ebc76fde5a1a680f50acee2b52b36d3961d28",
+      "msg": "[LA64_DYNAREC] Extended nativeflags SF fusion (#4115)",
+      "date": "2026-07-25T07:06:58Z"
     }
   ]
 }
