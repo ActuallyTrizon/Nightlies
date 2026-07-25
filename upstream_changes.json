@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-25T11:57:28Z",
+  "triggered_at": "2026-07-25T21:44:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c403949",
-      "new": "d18d598",
-      "full": "d18d598e275d1ab4634381c5414affe1319af6b1",
-      "msg": "Uprev VVL to 8dc2d227ef6ca2fa7c4cca5711b0856b8dc18dff",
-      "date": "2026-07-25T09:31:41.000+00:00"
+      "old": "d18d598",
+      "new": "3e2d851",
+      "full": "3e2d8517b897026377267c09975db83525d2fc95",
+      "msg": "lavapipe: Fix gnu-empty-initializer error in 0409984f",
+      "date": "2026-07-25T21:31:28.000+02:00"
     }
   ]
 }
