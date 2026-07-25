@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-25T10:21:36Z",
+  "triggered_at": "2026-07-25T11:57:28Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "c32ebc7",
-      "new": "588f1d9",
-      "full": "588f1d9c932929bb0801cfe9faa91db2f7e150b6",
-      "msg": "[LA64_DYNAREC] Optimized jump safe macros (#4114)",
-      "date": "2026-07-25T08:59:17Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "c403949",
+      "new": "d18d598",
+      "full": "d18d598e275d1ab4634381c5414affe1319af6b1",
+      "msg": "Uprev VVL to 8dc2d227ef6ca2fa7c4cca5711b0856b8dc18dff",
+      "date": "2026-07-25T09:31:41.000+00:00"
     }
   ]
 }
