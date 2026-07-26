@@ -102,13 +102,24 @@ jobs:
           MAJOR=$(grep '#define BOX64_MAJOR' src/box64version.h | awk '{print $3}')
           MINOR=$(grep '#define BOX64_MINOR' src/box64version.h | awk '{print $3}')
           REVISION=$(grep '#define BOX64_REVISION' src/box64version.h | awk '{print $3}')
+          VER="${MAJOR}.${MINOR}.${REVISION}"
+
+          # WOW64 builds ship wowbox64.dll -> name them WOWBox64-* with the type
+          # implied (no trailing -WOW64). Native/Bionic keep Box64-*-<type>.
+          if [ "${{ matrix.type }}" == "WOW64" ]; then
+            PREFIX="WOWBox64"
+            TYPE_SUFFIX=""
+          else
+            PREFIX="Box64"
+            TYPE_SUFFIX="-${{ matrix.type }}"
+          fi
 
           if [ "${{ matrix.source }}" == "Official" ]; then
-            echo "FULL_VERSION=Box64-${MAJOR}.${MINOR}.${REVISION}-${COMMIT}-${{ matrix.type }}" >> $GITHUB_ENV
+            echo "FULL_VERSION=${PREFIX}-${VER}-${COMMIT}${TYPE_SUFFIX}" >> $GITHUB_ENV
           else
             # Hybrid: use the ptitSeb base sha (BASE_COMMIT), NOT the local merge
             # commit HEAD, so the name matches Official + "Hybrid".
-            echo "FULL_VERSION=Box64-${MAJOR}.${MINOR}.${REVISION}-Hybrid-${BASE_COMMIT}-${{ matrix.type }}" >> $GITHUB_ENV
+            echo "FULL_VERSION=${PREFIX}-${VER}-Hybrid-${BASE_COMMIT}${TYPE_SUFFIX}" >> $GITHUB_ENV
           fi
 
       - name: Configure and Build
@@ -1962,10 +1973,10 @@ jobs:
 
           1. **Box64 Native**: \`Box64-*-Native.wcp\` (and \`.zip\`)
           2. **Box64 Bionic**: \`Box64-*-Bionic.wcp\` (and \`.zip\`)
-          3. **WOWBox64**: \`Box64-*-WOW64.wcp\` (and \`.zip\`)
+          3. **WOWBox64**: \`WOWBox64-*.wcp\` (and \`.zip\`)
           4. **Box64 Hybrid Native**: \`Box64-*-Hybrid-*-Native.wcp\` (and \`.zip\`)
           5. **Box64 Hybrid Bionic**: \`Box64-*-Hybrid-*-Bionic.wcp\` (and \`.zip\`)
-          6. **WOWBox64 Hybrid**: \`Box64-*-Hybrid-*-WOW64.wcp\` (and \`.zip\`)
+          6. **WOWBox64 Hybrid**: \`WOWBox64-*-Hybrid-*.wcp\` (and \`.zip\`)
           7. **FEXCore**: \`FEX-*.wcp\` (and \`.zip\`)
           7b. **FEXCore PPA-flavor**: \`FEX-*-PPA.wcp\` (and \`.zip\`) — same FEX HEAD, built with \`bylaws/llvm-mingw 20250920\` and the calibrated PPA recipe (Release + C-only debug info, \`//fex-emu/HostThunks\` baked, \`versionCode=0\`, \`description="FEXCore Release from PPA"\`). Calibrated to land within −0.16% of the upstream PPA wcp.
           7c. **FEXCore +unix libs**: \`FEX-*-unix.wcp\` — the FEX DLLs **plus** the native aarch64 \`.so\` unixlib companions (\`libarm64ecfex.so\`/\`libwow64fex.so\`, shm-stubbed, executable). Requires a Proton built with the FEX unixlib loader (Proton 11.0-1+ with \`MemoryWineLoadUnixLibByName\`); on older Proton the \`.so\` is ignored and it runs DLL-only.
