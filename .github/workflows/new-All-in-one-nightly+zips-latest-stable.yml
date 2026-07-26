@@ -77,6 +77,9 @@ jobs:
         run: |
           git clone https://github.com/ptitSeb/box64 source
           cd source
+          # ptitSeb base commit, captured BEFORE any merge so Hybrid names carry
+          # the same base sha as Official (the Pipetto merge is implied by "Hybrid").
+          echo "BASE_COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
           if [ "${{ matrix.source }}" == "Hybrid" ]; then
             git remote add pipetto https://github.com/Pipetto-crypto/box64
@@ -96,14 +99,16 @@ jobs:
         run: |
           cd source
           COMMIT=$(git rev-parse --short HEAD)
+          MAJOR=$(grep '#define BOX64_MAJOR' src/box64version.h | awk '{print $3}')
+          MINOR=$(grep '#define BOX64_MINOR' src/box64version.h | awk '{print $3}')
+          REVISION=$(grep '#define BOX64_REVISION' src/box64version.h | awk '{print $3}')
 
           if [ "${{ matrix.source }}" == "Official" ]; then
-            MAJOR=$(grep '#define BOX64_MAJOR' src/box64version.h | awk '{print $3}')
-            MINOR=$(grep '#define BOX64_MINOR' src/box64version.h | awk '{print $3}')
-            REVISION=$(grep '#define BOX64_REVISION' src/box64version.h | awk '{print $3}')
             echo "FULL_VERSION=Box64-${MAJOR}.${MINOR}.${REVISION}-${COMMIT}-${{ matrix.type }}" >> $GITHUB_ENV
           else
-            echo "FULL_VERSION=Box64-Hybrid-${{ matrix.type }}-${COMMIT}" >> $GITHUB_ENV
+            # Hybrid: use the ptitSeb base sha (BASE_COMMIT), NOT the local merge
+            # commit HEAD, so the name matches Official + "Hybrid".
+            echo "FULL_VERSION=Box64-${MAJOR}.${MINOR}.${REVISION}-Hybrid-${BASE_COMMIT}-${{ matrix.type }}" >> $GITHUB_ENV
           fi
 
       - name: Configure and Build
@@ -1955,12 +1960,12 @@ jobs:
 
           <details><summary>📁 <b>Files included</b> — what each .wcp / .zip is</summary>
 
-          1. **Box64 Native**: \`box64-*.wcp\` (and \`.zip\`)
-          2. **Box64 Bionic**: \`box64-bionic-*.wcp\` (and \`.zip\`)
-          3. **WOWBox64**: \`WOWBox64-*.wcp\` (and \`.zip\`)
-          4. **Box64 Hybrid Native**: \`Box64-Hybrid-Native-*.wcp\` (and \`.zip\`)
-          5. **Box64 Hybrid Bionic**: \`Box64-Hybrid-Bionic-*.wcp\` (and \`.zip\`)
-          6. **WOWBox64 Hybrid**: \`WOWBox64-Hybrid-*.wcp\` (and \`.zip\`)
+          1. **Box64 Native**: \`Box64-*-Native.wcp\` (and \`.zip\`)
+          2. **Box64 Bionic**: \`Box64-*-Bionic.wcp\` (and \`.zip\`)
+          3. **WOWBox64**: \`Box64-*-WOW64.wcp\` (and \`.zip\`)
+          4. **Box64 Hybrid Native**: \`Box64-*-Hybrid-*-Native.wcp\` (and \`.zip\`)
+          5. **Box64 Hybrid Bionic**: \`Box64-*-Hybrid-*-Bionic.wcp\` (and \`.zip\`)
+          6. **WOWBox64 Hybrid**: \`Box64-*-Hybrid-*-WOW64.wcp\` (and \`.zip\`)
           7. **FEXCore**: \`FEX-*.wcp\` (and \`.zip\`)
           7b. **FEXCore PPA-flavor**: \`FEX-*-PPA.wcp\` (and \`.zip\`) — same FEX HEAD, built with \`bylaws/llvm-mingw 20250920\` and the calibrated PPA recipe (Release + C-only debug info, \`//fex-emu/HostThunks\` baked, \`versionCode=0\`, \`description="FEXCore Release from PPA"\`). Calibrated to land within −0.16% of the upstream PPA wcp.
           7c. **FEXCore +unix libs**: \`FEX-*-unix.wcp\` — the FEX DLLs **plus** the native aarch64 \`.so\` unixlib companions (\`libarm64ecfex.so\`/\`libwow64fex.so\`, shm-stubbed, executable). Requires a Proton built with the FEX unixlib loader (Proton 11.0-1+ with \`MemoryWineLoadUnixLibByName\`); on older Proton the \`.so\` is ignored and it runs DLL-only.
