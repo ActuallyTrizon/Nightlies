@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-26T05:29:22Z",
+  "triggered_at": "2026-07-26T08:10:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3e2d851",
-      "new": "1863e52",
-      "full": "1863e52e5ce30f3e773c4f15c9abad47e2b92964",
-      "msg": "kraid/nir: Implement fquantize2f16",
-      "date": "2026-07-26T03:51:25.000+00:00"
+      "old": "1863e52",
+      "new": "9512f46",
+      "full": "9512f46818de8ee10efb671fc661a0cff685a8f4",
+      "msg": "meson: give names to libdrm drivers attributes checks",
+      "date": "2026-07-26T06:43:29.000+00:00"
     }
   ]
 }
