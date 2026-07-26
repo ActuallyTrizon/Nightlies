@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-25T21:44:33Z",
+  "triggered_at": "2026-07-26T05:29:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d18d598",
-      "new": "3e2d851",
-      "full": "3e2d8517b897026377267c09975db83525d2fc95",
-      "msg": "lavapipe: Fix gnu-empty-initializer error in 0409984f",
-      "date": "2026-07-25T21:31:28.000+02:00"
+      "old": "3e2d851",
+      "new": "1863e52",
+      "full": "1863e52e5ce30f3e773c4f15c9abad47e2b92964",
+      "msg": "kraid/nir: Implement fquantize2f16",
+      "date": "2026-07-26T03:51:25.000+00:00"
     }
   ]
 }
