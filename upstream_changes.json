@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-26T16:58:52Z",
+  "triggered_at": "2026-07-26T21:51:10Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "588f1d9",
-      "new": "9e2fa9e",
-      "full": "9e2fa9e3605d1f6a630c05d33bcabddbbda7726a",
-      "msg": "[RCFILE] Added 1 more game profile",
-      "date": "2026-07-26T13:35:21Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e233788",
-      "new": "780727e",
-      "full": "780727e68adc62f446dc1df7bcaf86f20b6c03d1",
-      "msg": "rusticl/kernel: add libclc source hash to kernel shader keys",
-      "date": "2026-07-26T12:46:51.000+00:00"
+      "old": "780727e",
+      "new": "19ffa05",
+      "full": "19ffa058b441e7f25f9cec774e26b0c1ac29f03d",
+      "msg": "anv: add infrastructure to force tagged compute shaders to SIMD32",
+      "date": "2026-07-26T21:23:37.000+00:00"
     }
   ]
 }
