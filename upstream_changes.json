@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-26T08:10:30Z",
+  "triggered_at": "2026-07-26T11:55:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1863e52",
-      "new": "9512f46",
-      "full": "9512f46818de8ee10efb671fc661a0cff685a8f4",
-      "msg": "meson: give names to libdrm drivers attributes checks",
-      "date": "2026-07-26T06:43:29.000+00:00"
+      "old": "9512f46",
+      "new": "e233788",
+      "full": "e2337881c46d8b09276c13fdf1ad04db462e1228",
+      "msg": "nir: Add options to nir_lower_xfb_to_stores",
+      "date": "2026-07-26T10:59:00.000+00:00"
     }
   ]
 }
