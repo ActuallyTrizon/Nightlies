@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-26T21:51:10Z",
+  "triggered_at": "2026-07-27T02:05:12Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "780727e",
-      "new": "19ffa05",
-      "full": "19ffa058b441e7f25f9cec774e26b0c1ac29f03d",
-      "msg": "anv: add infrastructure to force tagged compute shaders to SIMD32",
-      "date": "2026-07-26T21:23:37.000+00:00"
+      "old": "19ffa05",
+      "new": "0d4d190",
+      "full": "0d4d1907bd35acfe80208d10deeb0cb134f79c60",
+      "msg": "freedreno/a702: drop passing test",
+      "date": "2026-07-27T02:50:55.000+03:00"
     }
   ]
 }
