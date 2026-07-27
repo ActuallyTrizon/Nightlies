@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-27T21:57:16Z",
+  "triggered_at": "2026-07-27T22:57:59Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7097ead",
+      "new": "2dd1600",
+      "full": "2dd1600cdda7b29b3e0a7aa674346f870bb44ad3",
+      "msg": "[SYSCALL] Add more syscalls for Magisk (#4136)",
+      "date": "2026-07-27T22:24:26Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ad0cdde",
-      "new": "c276444",
-      "full": "c276444b7190c2feaa722168253baaf9f3c737e9",
-      "msg": "asahi: ci: Add failing b10g11r11 and e5b9g9r9 copy tests",
-      "date": "2026-07-27T21:24:20.000+00:00"
+      "old": "c276444",
+      "new": "c5f10a8",
+      "full": "c5f10a8501ca964ef24570f430a99633c689f656",
+      "msg": "anv: Enable the temporary RE engine workaround for several titles",
+      "date": "2026-07-27T21:51:14.000+00:00"
     }
   ]
 }
