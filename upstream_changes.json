@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-07-27T02:05:12Z",
+  "triggered_at": "2026-07-27T10:33:25Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9e2fa9e",
+      "new": "5101489",
+      "full": "5101489d21a6f554dabb4fb4c9c1c4132e64617a",
+      "msg": "[RV64_DYNAREC] Refined rotate opcodes (#4122)",
+      "date": "2026-07-27T08:42:26Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "3dfc6f0",
+      "new": "49eff6d",
+      "full": "49eff6dc87b784c161185078956ff91f1525a7cd",
+      "msg": "vkd3d: Load Intel vendor hack DLLs similar to amdxc64.",
+      "date": "2026-07-27T10:00:41Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "19ffa05",
-      "new": "0d4d190",
-      "full": "0d4d1907bd35acfe80208d10deeb0cb134f79c60",
-      "msg": "freedreno/a702: drop passing test",
-      "date": "2026-07-27T02:50:55.000+03:00"
+      "old": "0d4d190",
+      "new": "6015d5e",
+      "full": "6015d5e538d531f230bb102e0af10eed566e6900",
+      "msg": "pan/perf: Fix 32bit build of panquick",
+      "date": "2026-07-27T10:10:53.000+02:00"
     }
   ]
 }
