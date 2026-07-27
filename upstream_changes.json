@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-07-27T20:14:31Z",
+  "triggered_at": "2026-07-27T21:57:16Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7a3fdef",
-      "new": "d295d9f",
-      "full": "d295d9f08e143fe8258d2a0e07ca480b1d52999c",
-      "msg": "Merge pull request #5789 from lioncash/sig",
-      "date": "2026-07-27T20:14:14Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "767f5f0",
-      "new": "30a2193",
-      "full": "30a2193f91e3dec4ab6589f06cd8cb3831ad92fe",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-07-27T18:55:19Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "adca1f2",
-      "new": "ad0cdde",
-      "full": "ad0cdded0e439515155677941cada1cb4bb4d388",
-      "msg": "radv: fix RADV_PERFTEST=nircache enablement",
-      "date": "2026-07-27T19:36:31.000+00:00"
+      "old": "ad0cdde",
+      "new": "c276444",
+      "full": "c276444b7190c2feaa722168253baaf9f3c737e9",
+      "msg": "asahi: ci: Add failing b10g11r11 and e5b9g9r9 copy tests",
+      "date": "2026-07-27T21:24:20.000+00:00"
     }
   ]
 }
