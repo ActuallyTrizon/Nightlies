@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-07-27T13:32:35Z",
+  "triggered_at": "2026-07-27T16:08:27Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5101489",
-      "new": "e67bd4b",
-      "full": "e67bd4b6f62cc398e56760b95632b282fba21638",
-      "msg": "[RV64_DYNAREC] Fixed conditional move macros (#4124)",
-      "date": "2026-07-27T11:10:19Z"
+      "old": "e67bd4b",
+      "new": "e058be7",
+      "full": "e058be73ca21909195f5919364645ae57be67ab0",
+      "msg": "[RV64_DYNAREC] Fixed VSQRTPD opcode (#4129)",
+      "date": "2026-07-27T15:28:11Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "49eff6d",
+      "new": "767f5f0",
+      "full": "767f5f0222af3341317e752e37ed8d23a0fedbcf",
+      "msg": "dxil-spirv: Update submodule",
+      "date": "2026-07-27T13:45:30Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6015d5e",
-      "new": "3fb6907",
-      "full": "3fb69077ed183f8baaa95912e16c643cbf447e0b",
-      "msg": "broadcom/ci: update fractions for non-full jobs",
-      "date": "2026-07-27T12:44:05.000+00:00"
+      "old": "3fb6907",
+      "new": "f19d604",
+      "full": "f19d60467092a2ab4484f2ad3feed03bc0042510",
+      "msg": "pan/bi: Vectorize load/store before lower_mem_access_bit_sizes()",
+      "date": "2026-07-27T15:13:47.000+00:00"
     }
   ]
 }
