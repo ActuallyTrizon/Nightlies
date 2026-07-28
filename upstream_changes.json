@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-28T22:07:15Z",
+  "triggered_at": "2026-07-28T23:52:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6804cd3",
-      "new": "7f28365",
-      "full": "7f283654f602088d0ecb4f022eaa105629a5515e",
-      "msg": "etnaviv: Set the ASTC sRGB bit in the texture descriptor",
-      "date": "2026-07-28T21:42:46.000+00:00"
+      "old": "7f28365",
+      "new": "d265315",
+      "full": "d265315064bc0b27a82362d550049e7b3c42abd4",
+      "msg": "kraid: Pass scale to FEXP.f32 instead of arg",
+      "date": "2026-07-28T23:18:09.000+00:00"
     }
   ]
 }
