@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-28T17:35:42Z",
+  "triggered_at": "2026-07-28T19:10:00Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "30a2193",
-      "new": "414786b",
-      "full": "414786b98864039d772159843c930f3b0d8250c7",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-07-28T16:40:38Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "18456c4",
-      "new": "1d8d746",
-      "full": "1d8d7469892b3162ec3d269c1e1b81718847612d",
-      "msg": "anv/video: don't report VK_IMAGE_CREATE_VIDEO_PROFILE_INDEPENDENT_BIT_KHR",
-      "date": "2026-07-28T16:36:01.000+00:00"
+      "old": "1d8d746",
+      "new": "090fecc",
+      "full": "090fecc2fc9f14bfde473e076136a19af279c4eb",
+      "msg": "intel/compiler/brw: Use moves instead of copies in scoreboarding pass",
+      "date": "2026-07-28T18:21:50.000+00:00"
     }
   ]
 }
