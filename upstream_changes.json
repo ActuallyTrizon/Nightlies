@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-28T06:18:54Z",
+  "triggered_at": "2026-07-28T09:30:43Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2dd1600",
+      "new": "35ea2ee",
+      "full": "35ea2eedcd82a4430deb140d76e45802d328bcd2",
+      "msg": "[RV64_DYNAREC] Fixed VPADDQ opcode (#4138)",
+      "date": "2026-07-28T07:01:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3db12cf",
-      "new": "114ca57",
-      "full": "114ca57fd288c1a84a1525dd3ee9f13528a353c2",
-      "msg": "kraid: Implement shader_clock",
-      "date": "2026-07-28T05:21:57.000+00:00"
+      "old": "114ca57",
+      "new": "10b99d5",
+      "full": "10b99d5d2e386140070465358f3ccffbf834cf1c",
+      "msg": "pvr: enable VK_KHR_synchronization2",
+      "date": "2026-07-28T08:49:48.000+00:00"
     }
   ]
 }
