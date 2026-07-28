@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-28T13:42:37Z",
+  "triggered_at": "2026-07-28T15:58:59Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "1a5919b",
+      "new": "c96835b",
+      "full": "c96835baa0cca4f425113a3f5715edc8d58e3984",
+      "msg": "[dxvk] Do not enable descriptor update templates by default on legacy",
+      "date": "2026-07-28T15:20:58Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4cbcea7",
-      "new": "3e21bf9",
-      "full": "3e21bf95cd0a0f9b34e7ba663f543b9f59701221",
-      "msg": "nir/opt_uub: optimize shr(iadd(src0, src1), #c) when src1 is fully shifted away",
-      "date": "2026-07-28T12:54:29.000+00:00"
+      "old": "3e21bf9",
+      "new": "18456c4",
+      "full": "18456c4eeddb9be64f29d3c74a632ebcdcfa8e1a",
+      "msg": "anv: Convert oversubscription ANV_DEBUG to drirc",
+      "date": "2026-07-28T15:21:52.000+00:00"
     }
   ]
 }
