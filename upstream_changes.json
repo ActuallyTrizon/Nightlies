@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-27T22:57:59Z",
+  "triggered_at": "2026-07-28T03:55:01Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "7097ead",
-      "new": "2dd1600",
-      "full": "2dd1600cdda7b29b3e0a7aa674346f870bb44ad3",
-      "msg": "[SYSCALL] Add more syscalls for Magisk (#4136)",
-      "date": "2026-07-27T22:24:26Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c276444",
-      "new": "c5f10a8",
-      "full": "c5f10a8501ca964ef24570f430a99633c689f656",
-      "msg": "anv: Enable the temporary RE engine workaround for several titles",
-      "date": "2026-07-27T21:51:14.000+00:00"
+      "old": "c5f10a8",
+      "new": "3db12cf",
+      "full": "3db12cfcecade2764c2a80e3c1e3ce8ed34639c2",
+      "msg": "radv: stop using nir_lower_io_vars_to_temporaries to move and lower FS inputs",
+      "date": "2026-07-28T03:24:56.000+00:00"
     }
   ]
 }
