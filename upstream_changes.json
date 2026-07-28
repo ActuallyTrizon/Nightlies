@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-28T19:10:00Z",
+  "triggered_at": "2026-07-28T20:59:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1d8d746",
-      "new": "090fecc",
-      "full": "090fecc2fc9f14bfde473e076136a19af279c4eb",
-      "msg": "intel/compiler/brw: Use moves instead of copies in scoreboarding pass",
-      "date": "2026-07-28T18:21:50.000+00:00"
+      "old": "090fecc",
+      "new": "6804cd3",
+      "full": "6804cd3a6bf37c1f69f1016ec7a7c831217ec7ff",
+      "msg": "mesa: inline bug report url",
+      "date": "2026-07-28T20:02:00.000+00:00"
     }
   ]
 }
