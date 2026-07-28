@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-28T11:50:40Z",
+  "triggered_at": "2026-07-28T13:42:37Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "10b99d5",
-      "new": "4cbcea7",
-      "full": "4cbcea7fc583bbb5a1796524ab18fd44a9ddb63e",
-      "msg": "intel: Disable 16x MSAA support",
-      "date": "2026-07-28T10:25:37.000+00:00"
+      "old": "4cbcea7",
+      "new": "3e21bf9",
+      "full": "3e21bf95cd0a0f9b34e7ba663f543b9f59701221",
+      "msg": "nir/opt_uub: optimize shr(iadd(src0, src1), #c) when src1 is fully shifted away",
+      "date": "2026-07-28T12:54:29.000+00:00"
     }
   ]
 }
