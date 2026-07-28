@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-28T03:55:01Z",
+  "triggered_at": "2026-07-28T06:18:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c5f10a8",
-      "new": "3db12cf",
-      "full": "3db12cfcecade2764c2a80e3c1e3ce8ed34639c2",
-      "msg": "radv: stop using nir_lower_io_vars_to_temporaries to move and lower FS inputs",
-      "date": "2026-07-28T03:24:56.000+00:00"
+      "old": "3db12cf",
+      "new": "114ca57",
+      "full": "114ca57fd288c1a84a1525dd3ee9f13528a353c2",
+      "msg": "kraid: Implement shader_clock",
+      "date": "2026-07-28T05:21:57.000+00:00"
     }
   ]
 }
