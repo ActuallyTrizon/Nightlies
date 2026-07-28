@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-28T15:58:59Z",
+  "triggered_at": "2026-07-28T17:35:42Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "1a5919b",
-      "new": "c96835b",
-      "full": "c96835baa0cca4f425113a3f5715edc8d58e3984",
-      "msg": "[dxvk] Do not enable descriptor update templates by default on legacy",
-      "date": "2026-07-28T15:20:58Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "30a2193",
+      "new": "414786b",
+      "full": "414786b98864039d772159843c930f3b0d8250c7",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-07-28T16:40:38Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3e21bf9",
-      "new": "18456c4",
-      "full": "18456c4eeddb9be64f29d3c74a632ebcdcfa8e1a",
-      "msg": "anv: Convert oversubscription ANV_DEBUG to drirc",
-      "date": "2026-07-28T15:21:52.000+00:00"
+      "old": "18456c4",
+      "new": "1d8d746",
+      "full": "1d8d7469892b3162ec3d269c1e1b81718847612d",
+      "msg": "anv/video: don't report VK_IMAGE_CREATE_VIDEO_PROFILE_INDEPENDENT_BIT_KHR",
+      "date": "2026-07-28T16:36:01.000+00:00"
     }
   ]
 }
