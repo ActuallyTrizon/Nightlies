@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-29T11:14:50Z",
+  "triggered_at": "2026-07-29T13:48:03Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c96835b",
+      "new": "6c7162f",
+      "full": "6c7162fb10e1efb6e31e8cc3eb09a4afd6954e88",
+      "msg": "[d3d8] Rework legacy D3D compatibility mode handling",
+      "date": "2026-07-29T13:17:36Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f44a6b5",
-      "new": "2a46b60",
-      "full": "2a46b601be9403db3f26b9f8313127b676d9563d",
-      "msg": "turnip/ci: drop invalid FREEDRENO_HANGCHECK_MS in a618 and a750 toml suites",
-      "date": "2026-07-29T10:36:40.000+00:00"
+      "old": "2a46b60",
+      "new": "68ee90c",
+      "full": "68ee90c22ecf30fa8135b37cd8abbee8b33b73aa",
+      "msg": "nvk: Reenable compression support on Turing with nouveau 1.4.3",
+      "date": "2026-07-29T13:13:20.000+00:00"
     }
   ]
 }
