@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-29T08:23:12Z",
+  "triggered_at": "2026-07-29T11:14:50Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "35ea2ee",
-      "new": "23f8db6",
-      "full": "23f8db631d48ad246f71dec47f1afa2133687f60",
-      "msg": "[RV64_DYNAREC] Support HSUBPS and MOVDQ2Q (#4141)",
-      "date": "2026-07-29T08:13:00Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5b7bcac",
-      "new": "f44a6b5",
-      "full": "f44a6b57f0b83b952144b7210831b6f82f507627",
-      "msg": "radv/nir/opt_tid_function: optimize (local_index & #c)  even with large workgrou",
-      "date": "2026-07-29T07:16:40.000+00:00"
+      "old": "f44a6b5",
+      "new": "2a46b60",
+      "full": "2a46b601be9403db3f26b9f8313127b676d9563d",
+      "msg": "turnip/ci: drop invalid FREEDRENO_HANGCHECK_MS in a618 and a750 toml suites",
+      "date": "2026-07-29T10:36:40.000+00:00"
     }
   ]
 }
