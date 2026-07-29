@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-28T23:52:21Z",
+  "triggered_at": "2026-07-29T01:48:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f28365",
-      "new": "d265315",
-      "full": "d265315064bc0b27a82362d550049e7b3c42abd4",
-      "msg": "kraid: Pass scale to FEXP.f32 instead of arg",
-      "date": "2026-07-28T23:18:09.000+00:00"
+      "old": "d265315",
+      "new": "21dc9d4",
+      "full": "21dc9d41551d94cb0a28a1a2a904a2c179c47b25",
+      "msg": "anv: delay binding point state allocations",
+      "date": "2026-07-28T23:34:04.000+00:00"
     }
   ]
 }
