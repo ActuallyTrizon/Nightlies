@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-29T18:59:32Z",
+  "triggered_at": "2026-07-29T20:13:16Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b7ed2c5",
+      "new": "178e344",
+      "full": "178e344b98a3849e43cc9e52cac2d66d17be2441",
+      "msg": "[RCFILE] Added game profile for VRChat (#4153)",
+      "date": "2026-07-29T19:04:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c2dd50c",
-      "new": "e36f7e6",
-      "full": "e36f7e6e092c485a72415b4fd54efe80b17b9b49",
-      "msg": "iris: fix barrier for Wa_1508744258 / Wa_14024015672",
-      "date": "2026-07-29T18:14:27.000+00:00"
+      "old": "e36f7e6",
+      "new": "564ed33",
+      "full": "564ed330dfdde4cd2b12042725902d7bdb34f9f8",
+      "msg": "zink+radv/ci: document more navi10 flakes",
+      "date": "2026-07-29T19:21:00.000+00:00"
     }
   ]
 }
