@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-29T05:13:05Z",
+  "triggered_at": "2026-07-29T08:23:12Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "35ea2ee",
+      "new": "23f8db6",
+      "full": "23f8db631d48ad246f71dec47f1afa2133687f60",
+      "msg": "[RV64_DYNAREC] Support HSUBPS and MOVDQ2Q (#4141)",
+      "date": "2026-07-29T08:13:00Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "21dc9d4",
-      "new": "5b7bcac",
-      "full": "5b7bcac9bab7044034a6031fdf46ea803f92e861",
-      "msg": "brw: Respect LSC data sizes and address alignment",
-      "date": "2026-07-29T02:11:00.000+00:00"
+      "old": "5b7bcac",
+      "new": "f44a6b5",
+      "full": "f44a6b57f0b83b952144b7210831b6f82f507627",
+      "msg": "radv/nir/opt_tid_function: optimize (local_index & #c)  even with large workgrou",
+      "date": "2026-07-29T07:16:40.000+00:00"
     }
   ]
 }
