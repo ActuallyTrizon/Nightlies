@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-29T15:44:26Z",
+  "triggered_at": "2026-07-29T17:05:18Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "23f8db6",
+      "new": "b7ed2c5",
+      "full": "b7ed2c57f50bece166e7666a8224dae0a5b43d3b",
+      "msg": "[BUNDLE] Generate checksums (#4151)",
+      "date": "2026-07-29T15:48:30Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "68ee90c",
-      "new": "de40450",
-      "full": "de40450ca19cf17f7a390088c83f1a185f8f860c",
-      "msg": "panvk/decode: implement nop strings",
-      "date": "2026-07-29T13:59:35.000+00:00"
+      "old": "de40450",
+      "new": "c2dd50c",
+      "full": "c2dd50cb516ab42d8c880f9114bd046e51bc20a2",
+      "msg": "zink: gate some EXT_descriptor_indexing related code",
+      "date": "2026-07-29T15:56:33.000+00:00"
     }
   ]
 }
