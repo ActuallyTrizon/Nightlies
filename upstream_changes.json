@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-07-29T17:05:18Z",
+  "triggered_at": "2026-07-29T18:59:32Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "23f8db6",
-      "new": "b7ed2c5",
-      "full": "b7ed2c57f50bece166e7666a8224dae0a5b43d3b",
-      "msg": "[BUNDLE] Generate checksums (#4151)",
-      "date": "2026-07-29T15:48:30Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "de40450",
-      "new": "c2dd50c",
-      "full": "c2dd50cb516ab42d8c880f9114bd046e51bc20a2",
-      "msg": "zink: gate some EXT_descriptor_indexing related code",
-      "date": "2026-07-29T15:56:33.000+00:00"
+      "old": "c2dd50c",
+      "new": "e36f7e6",
+      "full": "e36f7e6e092c485a72415b4fd54efe80b17b9b49",
+      "msg": "iris: fix barrier for Wa_1508744258 / Wa_14024015672",
+      "date": "2026-07-29T18:14:27.000+00:00"
     }
   ]
 }
