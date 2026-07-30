@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-29T21:51:50Z",
+  "triggered_at": "2026-07-30T04:49:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "564ed33",
-      "new": "4e2e284",
-      "full": "4e2e284654faf92b3cb755f0bd1bd4d7e158b0bc",
-      "msg": "panvk: advertise VK_KHR_maintenance6 on v6-7",
-      "date": "2026-07-29T19:57:50.000+00:00"
+      "old": "4e2e284",
+      "new": "13e6e00",
+      "full": "13e6e00b1a56a21392bdd43c8f1154eb4063cfa4",
+      "msg": "kraid: Implement derivatives",
+      "date": "2026-07-30T03:14:38.000+00:00"
     }
   ]
 }
