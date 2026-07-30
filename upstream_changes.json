@@ -1,41 +1,14 @@
 {
-  "triggered_at": "2026-07-30T15:03:22Z",
+  "triggered_at": "2026-07-30T17:16:14Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "30b1bf2",
-      "new": "ffeff65",
-      "full": "ffeff6599b12adb631620d30fa1aabe59bfc4d1a",
-      "msg": "[SYSCALL] Add various simple syscalls (#4144)",
-      "date": "2026-07-30T14:35:32Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "414786b",
-      "new": "66da249",
-      "full": "66da249279ea2809247f9ea643ebd2fc2c9455ca",
-      "msg": "vkd3d: vkGetPhysicalDeviceCooperativeMatrixPropertiesKHR is optional.",
-      "date": "2026-07-30T13:17:21Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "83f167d",
-      "new": "6227b63",
-      "full": "6227b633e8d528952873c4c146773663964fcb31",
-      "msg": "[d3d8] Warn on unhandled tokens in TranslateVertexShader8",
-      "date": "2026-07-30T12:52:37Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4b37c2f",
-      "new": "97d586c",
-      "full": "97d586cc66406277f0035ec25a1fa847b5307151",
-      "msg": "zink/ci: switch zink/anv jobs to surfaceless+i915",
-      "date": "2026-07-30T14:23:30.000+00:00"
+      "old": "97d586c",
+      "new": "318240f",
+      "full": "318240f418cad33ec63e43e28533782bd62b8fe7",
+      "msg": "kk: Fix up M5 robustness2 behavior when LOD is out of bounds",
+      "date": "2026-07-30T15:48:49.000+00:00"
     }
   ]
 }
