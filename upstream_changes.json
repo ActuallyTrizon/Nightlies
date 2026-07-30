@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-30T10:14:04Z",
+  "triggered_at": "2026-07-30T12:24:13Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "178e344",
-      "new": "30b1bf2",
-      "full": "30b1bf210d99860a093adba6eafa20f2b7e0975f",
-      "msg": "[SYSCALL] Add syscall 32 (#4156)",
-      "date": "2026-07-30T09:27:01Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6c7162f",
+      "new": "83f167d",
+      "full": "83f167d2739a7e34d364a00e176731d2d75a2c59",
+      "msg": "[d3d11] Load Intel vendor hack DLL",
+      "date": "2026-07-30T12:02:29Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c13d920",
-      "new": "395de86",
-      "full": "395de865be7bc1cf07538340753942884e547b21",
-      "msg": "poly: Fix comment after moving passthrough_gs",
-      "date": "2026-07-30T09:45:39.000+00:00"
+      "old": "395de86",
+      "new": "4b37c2f",
+      "full": "4b37c2f5cb546d948b7afdfe647cab7a43fe8a4b",
+      "msg": "v3dv: advertise VK_EXT_device_memory_report",
+      "date": "2026-07-30T11:38:31.000+00:00"
     }
   ]
 }
