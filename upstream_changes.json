@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-30T04:49:56Z",
+  "triggered_at": "2026-07-30T07:28:34Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4e2e284",
-      "new": "13e6e00",
-      "full": "13e6e00b1a56a21392bdd43c8f1154eb4063cfa4",
-      "msg": "kraid: Implement derivatives",
-      "date": "2026-07-30T03:14:38.000+00:00"
+      "old": "13e6e00",
+      "new": "c13d920",
+      "full": "c13d920dda2c799eb8322fd79478b0ae36c93c8b",
+      "msg": "jay: Drop assertion which doesn't hold true anymore",
+      "date": "2026-07-30T06:35:28.000+00:00"
     }
   ]
 }
