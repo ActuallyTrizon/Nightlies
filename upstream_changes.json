@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-30T07:28:34Z",
+  "triggered_at": "2026-07-30T10:14:04Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "178e344",
+      "new": "30b1bf2",
+      "full": "30b1bf210d99860a093adba6eafa20f2b7e0975f",
+      "msg": "[SYSCALL] Add syscall 32 (#4156)",
+      "date": "2026-07-30T09:27:01Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "13e6e00",
-      "new": "c13d920",
-      "full": "c13d920dda2c799eb8322fd79478b0ae36c93c8b",
-      "msg": "jay: Drop assertion which doesn't hold true anymore",
-      "date": "2026-07-30T06:35:28.000+00:00"
+      "old": "c13d920",
+      "new": "395de86",
+      "full": "395de865be7bc1cf07538340753942884e547b21",
+      "msg": "poly: Fix comment after moving passthrough_gs",
+      "date": "2026-07-30T09:45:39.000+00:00"
     }
   ]
 }
