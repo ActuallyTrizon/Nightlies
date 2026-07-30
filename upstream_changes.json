@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-30T22:03:28Z",
+  "triggered_at": "2026-07-30T23:54:34Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "d295d9f",
-      "new": "2fdbff3",
-      "full": "2fdbff3d1c0058b5851b84ae9db2c00d88f02b60",
-      "msg": "Merge pull request #5790 from mstorsjo/libc++23",
-      "date": "2026-07-30T21:29:13Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "209e682",
+      "new": "a62bd97",
+      "full": "a62bd97754eb52d2ba875528f832c5acbcf9d2db",
+      "msg": "jay: copy resource_intel surface handle value",
+      "date": "2026-07-30T21:51:30.000+00:00"
     }
   ]
 }
