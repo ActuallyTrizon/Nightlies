@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-07-30T12:24:13Z",
+  "triggered_at": "2026-07-30T15:03:22Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "30b1bf2",
+      "new": "ffeff65",
+      "full": "ffeff6599b12adb631620d30fa1aabe59bfc4d1a",
+      "msg": "[SYSCALL] Add various simple syscalls (#4144)",
+      "date": "2026-07-30T14:35:32Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "414786b",
+      "new": "66da249",
+      "full": "66da249279ea2809247f9ea643ebd2fc2c9455ca",
+      "msg": "vkd3d: vkGetPhysicalDeviceCooperativeMatrixPropertiesKHR is optional.",
+      "date": "2026-07-30T13:17:21Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "6c7162f",
-      "new": "83f167d",
-      "full": "83f167d2739a7e34d364a00e176731d2d75a2c59",
-      "msg": "[d3d11] Load Intel vendor hack DLL",
-      "date": "2026-07-30T12:02:29Z"
+      "old": "83f167d",
+      "new": "6227b63",
+      "full": "6227b633e8d528952873c4c146773663964fcb31",
+      "msg": "[d3d8] Warn on unhandled tokens in TranslateVertexShader8",
+      "date": "2026-07-30T12:52:37Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "395de86",
-      "new": "4b37c2f",
-      "full": "4b37c2f5cb546d948b7afdfe647cab7a43fe8a4b",
-      "msg": "v3dv: advertise VK_EXT_device_memory_report",
-      "date": "2026-07-30T11:38:31.000+00:00"
+      "old": "4b37c2f",
+      "new": "97d586c",
+      "full": "97d586cc66406277f0035ec25a1fa847b5307151",
+      "msg": "zink/ci: switch zink/anv jobs to surfaceless+i915",
+      "date": "2026-07-30T14:23:30.000+00:00"
     }
   ]
 }
