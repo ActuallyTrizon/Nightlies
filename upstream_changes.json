@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-30T19:11:25Z",
+  "triggered_at": "2026-07-30T20:57:27Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "66da249",
+      "new": "651f177",
+      "full": "651f17762e439feeef22dbb4ee7eff167ee503d4",
+      "msg": "vkd3d: Intel vendor hack DLL fix",
+      "date": "2026-07-30T20:31:41Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "318240f",
-      "new": "fa01834",
-      "full": "fa0183466d7be5ce337980aeb71df74e2b6deb07",
-      "msg": "radv/nir/opt_tid_function: try to use amd permute intrinsics",
-      "date": "2026-07-30T18:36:51.000+00:00"
+      "old": "fa01834",
+      "new": "209e682",
+      "full": "209e68250df169301db18c4cce8f512d67f2faf4",
+      "msg": "rusticl: Stop taking references to temporaries",
+      "date": "2026-07-30T20:26:56.000+00:00"
     }
   ]
 }
