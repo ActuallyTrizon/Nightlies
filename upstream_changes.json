@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-30T17:16:14Z",
+  "triggered_at": "2026-07-30T19:11:25Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "97d586c",
-      "new": "318240f",
-      "full": "318240f418cad33ec63e43e28533782bd62b8fe7",
-      "msg": "kk: Fix up M5 robustness2 behavior when LOD is out of bounds",
-      "date": "2026-07-30T15:48:49.000+00:00"
+      "old": "318240f",
+      "new": "fa01834",
+      "full": "fa0183466d7be5ce337980aeb71df74e2b6deb07",
+      "msg": "radv/nir/opt_tid_function: try to use amd permute intrinsics",
+      "date": "2026-07-30T18:36:51.000+00:00"
     }
   ]
 }
