@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-31T11:22:16Z",
+  "triggered_at": "2026-07-31T13:43:14Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0f6b8cc",
-      "new": "bc181e7",
-      "full": "bc181e78121eef90ced069f957027e5b8301f2c8",
-      "msg": "[SYSCALL] Fixed a bad bad bug (#4161)",
-      "date": "2026-07-31T10:08:38Z"
+      "old": "bc181e7",
+      "new": "15e065a",
+      "full": "15e065ae5dd0207fe4f6cfce565884f68567d64f",
+      "msg": "[WRAPPER] Wrapped isoc23_[v]scanf (#4162)",
+      "date": "2026-07-31T11:44:09Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "edaa36d",
-      "new": "b3f90ce",
-      "full": "b3f90cea88602d8bec6ea2bb48c6650329aef852",
-      "msg": "pan: check full fb coverage on has_partial_tiles",
-      "date": "2026-07-31T08:52:35.000+00:00"
+      "old": "b3f90ce",
+      "new": "271ad6c",
+      "full": "271ad6c5cdc4cf5c062c82a5972720a449ae06df",
+      "msg": "radeonsi: emit MESHLET registers for mesh shaders in gfx10_emit_shader_ngg",
+      "date": "2026-07-31T12:59:25.000+00:00"
     }
   ]
 }
