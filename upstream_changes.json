@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-31T15:55:38Z",
+  "triggered_at": "2026-07-31T19:10:32Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "271ad6c",
-      "new": "15c7cc5",
-      "full": "15c7cc550a05ba6ea34799a16f64a8689d1abc76",
-      "msg": "pan/rusticl: Update the last OpenCL conformance version passed value",
-      "date": "2026-07-31T14:05:36.000+00:00"
+      "old": "15c7cc5",
+      "new": "cc82e15",
+      "full": "cc82e157111d488c5c7540f4042884803293ebf7",
+      "msg": "pan/compiler/stats: Fix ALU not being used in instruction bounds",
+      "date": "2026-07-31T17:24:03.000+00:00"
     }
   ]
 }
