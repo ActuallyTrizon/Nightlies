@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-07-31T01:59:20Z",
+  "triggered_at": "2026-07-31T08:36:15Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ffeff65",
+      "new": "0f6b8cc",
+      "full": "0f6b8ccc68fd4aadd4d65e8a174e8c7c379a54c1",
+      "msg": "[DOCS] Recommend SteamRT3/SteamRT64 (#4157)",
+      "date": "2026-07-31T06:56:12Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a62bd97",
-      "new": "32b2249",
-      "full": "32b22499f488c169d2d5d5d00b6f299b17839f82",
-      "msg": "glx/apple: implement swap control on top of kCGLCPSwapInterval",
-      "date": "2026-07-31T01:20:36.000+00:00"
+      "old": "32b2249",
+      "new": "edaa36d",
+      "full": "edaa36d969a43c1142c8e8a0a9c9451ae81df643",
+      "msg": "radv: replace PS_STATE_LINE_RAST_MODE with SMOOTH_LINES, make it accurate",
+      "date": "2026-07-31T07:15:55.000+00:00"
     }
   ]
 }
