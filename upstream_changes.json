@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-07-31T08:36:15Z",
+  "triggered_at": "2026-07-31T11:22:16Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ffeff65",
-      "new": "0f6b8cc",
-      "full": "0f6b8ccc68fd4aadd4d65e8a174e8c7c379a54c1",
-      "msg": "[DOCS] Recommend SteamRT3/SteamRT64 (#4157)",
-      "date": "2026-07-31T06:56:12Z"
+      "old": "0f6b8cc",
+      "new": "bc181e7",
+      "full": "bc181e78121eef90ced069f957027e5b8301f2c8",
+      "msg": "[SYSCALL] Fixed a bad bad bug (#4161)",
+      "date": "2026-07-31T10:08:38Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "32b2249",
-      "new": "edaa36d",
-      "full": "edaa36d969a43c1142c8e8a0a9c9451ae81df643",
-      "msg": "radv: replace PS_STATE_LINE_RAST_MODE with SMOOTH_LINES, make it accurate",
-      "date": "2026-07-31T07:15:55.000+00:00"
+      "old": "edaa36d",
+      "new": "b3f90ce",
+      "full": "b3f90cea88602d8bec6ea2bb48c6650329aef852",
+      "msg": "pan: check full fb coverage on has_partial_tiles",
+      "date": "2026-07-31T08:52:35.000+00:00"
     }
   ]
 }
