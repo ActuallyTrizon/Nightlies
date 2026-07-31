@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-31T20:55:05Z",
+  "triggered_at": "2026-07-31T22:58:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cc82e15",
-      "new": "6c306fd",
-      "full": "6c306fd75a9a3bad31ef779f8607d557524e2277",
-      "msg": "d3d12: Disable vao fast path for AMD",
-      "date": "2026-07-31T17:45:35.000+00:00"
+      "old": "6c306fd",
+      "new": "707cc8f",
+      "full": "707cc8f5ab97485a0c4cf1a2ab13dbdf5c9469c4",
+      "msg": "svga: fix shared memory index for svga driver",
+      "date": "2026-07-31T14:30:31.000-07:00"
     }
   ]
 }
