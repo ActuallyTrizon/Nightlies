@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-31T19:10:32Z",
+  "triggered_at": "2026-07-31T20:55:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "15c7cc5",
-      "new": "cc82e15",
-      "full": "cc82e157111d488c5c7540f4042884803293ebf7",
-      "msg": "pan/compiler/stats: Fix ALU not being used in instruction bounds",
-      "date": "2026-07-31T17:24:03.000+00:00"
+      "old": "cc82e15",
+      "new": "6c306fd",
+      "full": "6c306fd75a9a3bad31ef779f8607d557524e2277",
+      "msg": "d3d12: Disable vao fast path for AMD",
+      "date": "2026-07-31T17:45:35.000+00:00"
     }
   ]
 }
