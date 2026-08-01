@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-07-31T22:58:10Z",
+  "triggered_at": "2026-08-01T00:00:45Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6c306fd",
-      "new": "707cc8f",
-      "full": "707cc8f5ab97485a0c4cf1a2ab13dbdf5c9469c4",
-      "msg": "svga: fix shared memory index for svga driver",
-      "date": "2026-07-31T14:30:31.000-07:00"
+      "old": "707cc8f",
+      "new": "3e3631d",
+      "full": "3e3631d98d0a0a3ba3f6ea71ea398bde2002c8e8",
+      "msg": "brw: Enforce Gfx9 restriction 3-source destination must be GRF",
+      "date": "2026-07-31T15:43:44.000-07:00"
     }
   ]
 }
