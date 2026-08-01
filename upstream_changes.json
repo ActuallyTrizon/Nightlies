@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-01T15:53:42Z",
+  "triggered_at": "2026-08-01T17:53:59Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ebccae4",
-      "new": "7838390",
-      "full": "78383901f22ae39a3339c9747feab6c08d1e6dad",
-      "msg": "[RV64_DYNAREC] Fixed PEXT opcode (#4170)",
-      "date": "2026-08-01T15:43:51Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "959d6a4",
+      "new": "84f0901",
+      "full": "84f090168c2e5248acd930f5c201c6d3ecda3c87",
+      "msg": "ir3: Don't use alias.tex inside predt/predf/prede sequence",
+      "date": "2026-08-01T16:25:46.000+00:00"
     }
   ]
 }
