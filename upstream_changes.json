@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-01T14:27:45Z",
+  "triggered_at": "2026-08-01T15:53:42Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a5ab305",
-      "new": "959d6a4",
-      "full": "959d6a425da065879e181726603b7b76d435b109",
-      "msg": "radv: Fix gnu-empty-initializer error in 6cad4ee1",
-      "date": "2026-08-01T15:29:23.000+02:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ebccae4",
+      "new": "7838390",
+      "full": "78383901f22ae39a3339c9747feab6c08d1e6dad",
+      "msg": "[RV64_DYNAREC] Fixed PEXT opcode (#4170)",
+      "date": "2026-08-01T15:43:51Z"
     }
   ]
 }
