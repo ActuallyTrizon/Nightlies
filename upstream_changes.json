@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-01T17:53:59Z",
+  "triggered_at": "2026-08-01T21:44:55Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "959d6a4",
-      "new": "84f0901",
-      "full": "84f090168c2e5248acd930f5c201c6d3ecda3c87",
-      "msg": "ir3: Don't use alias.tex inside predt/predf/prede sequence",
-      "date": "2026-08-01T16:25:46.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6227b63",
+      "new": "19dd2bb",
+      "full": "19dd2bb4510757739bf35e73d7154fae4be85e1b",
+      "msg": "[d3d9] Use fixed-up format for fine-grained MSAA support check",
+      "date": "2026-08-01T20:30:52Z"
     }
   ]
 }
