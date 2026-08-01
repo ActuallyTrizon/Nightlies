@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-01T00:00:45Z",
+  "triggered_at": "2026-08-01T04:16:08Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "707cc8f",
-      "new": "3e3631d",
-      "full": "3e3631d98d0a0a3ba3f6ea71ea398bde2002c8e8",
-      "msg": "brw: Enforce Gfx9 restriction 3-source destination must be GRF",
-      "date": "2026-07-31T15:43:44.000-07:00"
+      "old": "3e3631d",
+      "new": "a8259a8",
+      "full": "a8259a857aa9c90eef3ffecca4ccea35a3492b55",
+      "msg": "compiler/rust/cfg: Remap node edges in remove_unreachable()",
+      "date": "2026-08-01T02:41:01.000+00:00"
     }
   ]
 }
