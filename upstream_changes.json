@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-01T07:23:10Z",
+  "triggered_at": "2026-08-01T09:52:25Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "15e065a",
-      "new": "80b5e38",
-      "full": "80b5e387d27c356b8ab0bbb017764450f7039689",
-      "msg": "[RV64_DYNAREC] Fixed PDEP opcode (#4167)",
-      "date": "2026-08-01T06:49:59Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a8259a8",
-      "new": "a5ab305",
-      "full": "a5ab30520c7b29b519dd1464e8af8b27c9a37cb3",
-      "msg": "mesa/st: approximate fog distance in the frag shader",
-      "date": "2026-08-01T05:32:13.000+00:00"
+      "old": "80b5e38",
+      "new": "ebccae4",
+      "full": "ebccae45e33ba7ec9b1febd1a515bdbe5d801e2c",
+      "msg": "[RV64_DYNAREC] Fixed a long standing typo in CALL opcode (#4168)",
+      "date": "2026-08-01T09:40:18Z"
     }
   ]
 }
