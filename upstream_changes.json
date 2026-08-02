@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-02T08:07:26Z",
+  "triggered_at": "2026-08-02T10:26:28Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "7838390",
-      "new": "fb5294a",
-      "full": "fb5294a1252094b407bd26fb62660ffe23569f60",
-      "msg": "[SIGNAL] Preserve TF handling when resuming signals with Dynarec (#4174)",
-      "date": "2026-08-02T07:00:50Z"
+      "old": "fb5294a",
+      "new": "2f130fa",
+      "full": "2f130fab1d6e1a4ee8a71dc60cfdfcc839ad192a",
+      "msg": "Bumped version to v0.4.4",
+      "date": "2026-08-02T09:31:59Z"
     }
   ]
 }
