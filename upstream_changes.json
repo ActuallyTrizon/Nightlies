@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-02T16:49:35Z",
+  "triggered_at": "2026-08-02T22:46:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "84f0901",
-      "new": "f375241",
-      "full": "f375241f91404b2289378e8d628f8e36020a555d",
-      "msg": "aco: do not require wqm for mbcnt",
-      "date": "2026-08-02T15:44:24.000+00:00"
+      "old": "f375241",
+      "new": "99098b3",
+      "full": "99098b31471dc07c815a421c56da243b79c73b26",
+      "msg": "intel/nir: Allow V8 load/stores when known to be SIMD16 or smaller",
+      "date": "2026-08-02T14:52:38.000-07:00"
     }
   ]
 }
