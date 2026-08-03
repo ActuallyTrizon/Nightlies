@@ -1,41 +1,32 @@
 {
-  "triggered_at": "2026-08-03T12:50:45Z",
+  "triggered_at": "2026-08-03T15:38:30Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e0ae94d",
-      "new": "064c922",
-      "full": "064c9222ed39916150ff9f9e7b27375a50f77a2d",
-      "msg": "[INTERP] Refined canonical NaN handling for RISC-V (#4166)",
-      "date": "2026-08-03T10:34:30Z"
+      "old": "064c922",
+      "new": "dd97435",
+      "full": "dd9743513e599956d3840f93cc896403b2f956d1",
+      "msg": "[RV64_DYNAREC] Removed a hack on MOVAPS (#4179)",
+      "date": "2026-08-03T14:16:32Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "651f177",
-      "new": "66b94d0",
-      "full": "66b94d09e9d32d3803ff23a79a68b2fac11f9d40",
-      "msg": "dxil-spirv: Update submodule",
-      "date": "2026-08-03T12:32:55Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "19dd2bb",
-      "new": "bee7816",
-      "full": "bee7816e5cbd07e843799c9a684af2a5fd0c4b76",
-      "msg": "[d3d9] Handle D3D9Ex checks with the D3D compatibility flags",
-      "date": "2026-08-03T10:01:29Z"
+      "old": "66b94d0",
+      "new": "216b3a0",
+      "full": "216b3a0101e1e14edd06c10032339fc2fbcc0180",
+      "msg": "android: allow native Android build using NDK",
+      "date": "2026-08-03T15:21:54Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1700065",
-      "new": "cf41ce6",
-      "full": "cf41ce6ac45c97fb8565e6e4326380955f922f50",
-      "msg": "nir/opt_varyings: fix incorrect counting of emit_vertex within a block",
-      "date": "2026-08-03T11:42:01.000+00:00"
+      "old": "cf41ce6",
+      "new": "84acd84",
+      "full": "84acd8488ad671d17bcdaf432b01a2e06db34fb3",
+      "msg": "anv: Return early in anv_reloc_list_append() when relocs are not in use",
+      "date": "2026-08-03T15:04:06.000+00:00"
     }
   ]
 }
