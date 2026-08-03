@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-08-03T15:38:30Z",
+  "triggered_at": "2026-08-03T17:46:37Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "064c922",
-      "new": "dd97435",
-      "full": "dd9743513e599956d3840f93cc896403b2f956d1",
-      "msg": "[RV64_DYNAREC] Removed a hack on MOVAPS (#4179)",
-      "date": "2026-08-03T14:16:32Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "66b94d0",
-      "new": "216b3a0",
-      "full": "216b3a0101e1e14edd06c10032339fc2fbcc0180",
-      "msg": "android: allow native Android build using NDK",
-      "date": "2026-08-03T15:21:54Z"
+      "old": "dd97435",
+      "new": "372739d",
+      "full": "372739d07f6aa66529c5e4e27a94213314f5d68a",
+      "msg": "[WRAPPER][WAYLAND] Added 2 listener to waylandclient",
+      "date": "2026-08-03T17:10:50Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cf41ce6",
-      "new": "84acd84",
-      "full": "84acd8488ad671d17bcdaf432b01a2e06db34fb3",
-      "msg": "anv: Return early in anv_reloc_list_append() when relocs are not in use",
-      "date": "2026-08-03T15:04:06.000+00:00"
+      "old": "84acd84",
+      "new": "a2feaa6",
+      "full": "a2feaa67a07ed02450d17c020e0cf3704964ffd5",
+      "msg": "intel/gen: decode type of src1 in basic 2 source after setting IMM",
+      "date": "2026-08-03T17:16:43.000+00:00"
     }
   ]
 }
