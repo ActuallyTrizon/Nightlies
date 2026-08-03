@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-02T22:46:06Z",
+  "triggered_at": "2026-08-03T09:26:36Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2f130fa",
+      "new": "e0ae94d",
+      "full": "e0ae94d742b983c61379c36bf5ebdca1e414957d",
+      "msg": "[LA64_DYNAREC] Speed up crc validation (#4178)",
+      "date": "2026-08-03T07:42:02Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f375241",
-      "new": "99098b3",
-      "full": "99098b31471dc07c815a421c56da243b79c73b26",
-      "msg": "intel/nir: Allow V8 load/stores when known to be SIMD16 or smaller",
-      "date": "2026-08-02T14:52:38.000-07:00"
+      "old": "99098b3",
+      "new": "1700065",
+      "full": "1700065f4cf7492684ed3eeadf542ad3c7e5ddd5",
+      "msg": "wsi/metal: use correct macOS 26 version macro",
+      "date": "2026-08-03T08:40:39.000+00:00"
     }
   ]
 }
