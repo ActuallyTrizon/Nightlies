@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-08-03T09:26:36Z",
+  "triggered_at": "2026-08-03T12:50:45Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "2f130fa",
-      "new": "e0ae94d",
-      "full": "e0ae94d742b983c61379c36bf5ebdca1e414957d",
-      "msg": "[LA64_DYNAREC] Speed up crc validation (#4178)",
-      "date": "2026-08-03T07:42:02Z"
+      "old": "e0ae94d",
+      "new": "064c922",
+      "full": "064c9222ed39916150ff9f9e7b27375a50f77a2d",
+      "msg": "[INTERP] Refined canonical NaN handling for RISC-V (#4166)",
+      "date": "2026-08-03T10:34:30Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "651f177",
+      "new": "66b94d0",
+      "full": "66b94d09e9d32d3803ff23a79a68b2fac11f9d40",
+      "msg": "dxil-spirv: Update submodule",
+      "date": "2026-08-03T12:32:55Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "19dd2bb",
+      "new": "bee7816",
+      "full": "bee7816e5cbd07e843799c9a684af2a5fd0c4b76",
+      "msg": "[d3d9] Handle D3D9Ex checks with the D3D compatibility flags",
+      "date": "2026-08-03T10:01:29Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "99098b3",
-      "new": "1700065",
-      "full": "1700065f4cf7492684ed3eeadf542ad3c7e5ddd5",
-      "msg": "wsi/metal: use correct macOS 26 version macro",
-      "date": "2026-08-03T08:40:39.000+00:00"
+      "old": "1700065",
+      "new": "cf41ce6",
+      "full": "cf41ce6ac45c97fb8565e6e4326380955f922f50",
+      "msg": "nir/opt_varyings: fix incorrect counting of emit_vertex within a block",
+      "date": "2026-08-03T11:42:01.000+00:00"
     }
   ]
 }
