@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-03T19:20:36Z",
+  "triggered_at": "2026-08-03T20:55:49Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a2feaa6",
-      "new": "0200462",
-      "full": "0200462978a19f55ab5f893fbfa4b7c8f078d251",
-      "msg": "svga: fix shader leakage for emulated code path",
-      "date": "2026-08-03T18:43:36.000+00:00"
+      "old": "0200462",
+      "new": "b683b5a",
+      "full": "b683b5a33e7a9fba20bb872c0772c886dcfc8ace",
+      "msg": "anv: fixup the logic dealing with STATE_BYTE_STRIDE",
+      "date": "2026-08-03T19:52:35.000+00:00"
     }
   ]
 }
