@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-03T17:46:37Z",
+  "triggered_at": "2026-08-03T19:20:36Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "dd97435",
-      "new": "372739d",
-      "full": "372739d07f6aa66529c5e4e27a94213314f5d68a",
-      "msg": "[WRAPPER][WAYLAND] Added 2 listener to waylandclient",
-      "date": "2026-08-03T17:10:50Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "84acd84",
-      "new": "a2feaa6",
-      "full": "a2feaa67a07ed02450d17c020e0cf3704964ffd5",
-      "msg": "intel/gen: decode type of src1 in basic 2 source after setting IMM",
-      "date": "2026-08-03T17:16:43.000+00:00"
+      "old": "a2feaa6",
+      "new": "0200462",
+      "full": "0200462978a19f55ab5f893fbfa4b7c8f078d251",
+      "msg": "svga: fix shader leakage for emulated code path",
+      "date": "2026-08-03T18:43:36.000+00:00"
     }
   ]
 }
