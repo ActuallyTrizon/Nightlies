@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-04T20:18:34Z",
+  "triggered_at": "2026-08-04T22:04:24Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "d276233",
-      "new": "1aecb5d",
-      "full": "1aecb5d9f5ea1fad4aabcd598b8a84db45ac243b",
-      "msg": "[dxvk] Add Kosmickrisp to tilers",
-      "date": "2026-08-04T18:41:08Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b11bdf7",
-      "new": "c6fd3e0",
-      "full": "c6fd3e0037a882032a24b64637d58be0c1249cb3",
-      "msg": "nir/opt_algebraic: Fix fmul fadd compilation fixpoint",
-      "date": "2026-08-04T19:33:14.000+00:00"
+      "old": "c6fd3e0",
+      "new": "38ba6ef",
+      "full": "38ba6ef02d1ce1f80cb1f7d7d671b29d89a196ae",
+      "msg": "bvh/meson: Add -g option to glslang for debug information",
+      "date": "2026-08-04T21:36:10.000+00:00"
     }
   ]
 }
