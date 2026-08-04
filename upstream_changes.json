@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-04T13:59:48Z",
+  "triggered_at": "2026-08-04T16:13:25Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5656dec",
-      "new": "55ed7e9",
-      "full": "55ed7e9edb3161b0cafc1daad587aaeb5646bfb8",
-      "msg": "[ELFLOADER] Added support for BIND_NOW dynamic tags (#4186)",
-      "date": "2026-08-04T13:21:49Z"
+      "old": "55ed7e9",
+      "new": "3c670ef",
+      "full": "3c670efe6fe07ce290a1496ce750c064d0c6a052",
+      "msg": "[MMAP] Fixed wine mappings on 16K hosts (#4187)",
+      "date": "2026-08-04T14:46:23Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6dadf99",
-      "new": "8259e8f",
-      "full": "8259e8f783f6413f5cbf170a377955a38ce026f3",
-      "msg": "tu: Don't expose BV_ counters in perfcraw queries",
-      "date": "2026-08-04T13:20:00.000+00:00"
+      "old": "8259e8f",
+      "new": "0973b92",
+      "full": "0973b92ec25a73c30ef53e4d79b6b5d5b845e075",
+      "msg": "radv: Support video_encode_feedback2 (frame) stats",
+      "date": "2026-08-04T14:23:50.000+00:00"
     }
   ]
 }
