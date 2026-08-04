@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-04T18:22:52Z",
+  "triggered_at": "2026-08-04T20:18:34Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "bee7816",
-      "new": "d276233",
-      "full": "d2762330fbc0d7921ed30a7f5069eca60f79456b",
-      "msg": "[d3d9] Ignore zero extent stretch rect",
-      "date": "2026-08-04T16:56:37Z"
+      "old": "d276233",
+      "new": "1aecb5d",
+      "full": "1aecb5d9f5ea1fad4aabcd598b8a84db45ac243b",
+      "msg": "[dxvk] Add Kosmickrisp to tilers",
+      "date": "2026-08-04T18:41:08Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0973b92",
-      "new": "b11bdf7",
-      "full": "b11bdf7d3197f3c63c522c94985c5eee90ce4c60",
-      "msg": "kk: Fix icd json api version",
-      "date": "2026-08-04T17:52:54.000+00:00"
+      "old": "b11bdf7",
+      "new": "c6fd3e0",
+      "full": "c6fd3e0037a882032a24b64637d58be0c1249cb3",
+      "msg": "nir/opt_algebraic: Fix fmul fadd compilation fixpoint",
+      "date": "2026-08-04T19:33:14.000+00:00"
     }
   ]
 }
