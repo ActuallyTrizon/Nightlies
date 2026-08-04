@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-08-04T09:33:43Z",
+  "triggered_at": "2026-08-04T11:56:52Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "372739d",
-      "new": "0db8df7",
-      "full": "0db8df7757b523e41cf31b6204c47d22b8fb4f08",
-      "msg": "[ELFLOADER] Preserved overlapping ELF segments (#4182)",
-      "date": "2026-08-04T06:58:44Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "216b3a0",
-      "new": "2c7ba22",
-      "full": "2c7ba22c53261458a7a204c55f3098ad9855cb15",
-      "msg": "tests: fix test_fp_truncate_roundtrips when it's skipped",
-      "date": "2026-08-04T08:16:14Z"
+      "old": "0db8df7",
+      "new": "5656dec",
+      "full": "5656decbdecc5fa2cc0fbad8335a2fbe72689974",
+      "msg": "[MMAP] Fixed 4k mmap canary pages handling (#4184)",
+      "date": "2026-08-04T10:49:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0269993",
-      "new": "7af5c50",
-      "full": "7af5c5006f7be4a3e343e6539cd0887fb9106411",
-      "msg": "vulkan/runtime: avoid rehashing shader stage hashes",
-      "date": "2026-08-04T08:38:57.000+00:00"
+      "old": "7af5c50",
+      "new": "6dadf99",
+      "full": "6dadf993f9913e08d891517ea7f359324117d48a",
+      "msg": "radv: enable more features with shaderObject",
+      "date": "2026-08-04T11:30:13.000+00:00"
     }
   ]
 }
