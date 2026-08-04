@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-04T22:04:24Z",
+  "triggered_at": "2026-08-04T23:55:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c6fd3e0",
-      "new": "38ba6ef",
-      "full": "38ba6ef02d1ce1f80cb1f7d7d671b29d89a196ae",
-      "msg": "bvh/meson: Add -g option to glslang for debug information",
-      "date": "2026-08-04T21:36:10.000+00:00"
+      "old": "38ba6ef",
+      "new": "ec34234",
+      "full": "ec3423445db1ebb62945e5651223e25e18617926",
+      "msg": "kraid: Build variant without psiz",
+      "date": "2026-08-04T23:28:19.000+00:00"
     }
   ]
 }
