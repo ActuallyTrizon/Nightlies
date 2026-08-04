@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-03T10:31:10Z",
+  "updated_at": "2026-08-04T09:31:58Z",
   "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
-  "total_releases": 69,
-  "total_assets": 91,
+  "total_releases": 70,
+  "total_assets": 92,
   "releases": [
     {
       "tag": "v863.1_a7xx",
@@ -17,6 +17,21 @@
           "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v863.1_a7xx/v863.1.zip",
           "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_a7xx_v863.1.zip",
           "published_at": "2026-05-23T10:43:07Z"
+        }
+      ]
+    },
+    {
+      "tag": "v34",
+      "name": "Turnip Gen8 V34",
+      "published_at": "2026-08-04T08:55:45Z",
+      "assets": [
+        {
+          "name": "Turnip_Gen8_V34.zip",
+          "mirror_name": "v34_Turnip_Gen8_V34.zip",
+          "size": 2800551,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v34/Turnip_Gen8_V34.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v34_Turnip_Gen8_V34.zip",
+          "published_at": "2026-08-04T08:55:23Z"
         }
       ]
     },
