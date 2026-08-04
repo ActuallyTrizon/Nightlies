@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-03T20:55:49Z",
+  "triggered_at": "2026-08-04T00:00:24Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "2fdbff3",
+      "new": "68740b3",
+      "full": "68740b3c6550981fbd2716f2025c0818fd81919c",
+      "msg": "Merge pull request #5792 from Sonicadvance1/192",
+      "date": "2026-08-03T22:30:52Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0200462",
-      "new": "b683b5a",
-      "full": "b683b5a33e7a9fba20bb872c0772c886dcfc8ace",
-      "msg": "anv: fixup the logic dealing with STATE_BYTE_STRIDE",
-      "date": "2026-08-03T19:52:35.000+00:00"
+      "old": "b683b5a",
+      "new": "b460cff",
+      "full": "b460cff22a56043e48e9ba083a8314b9a52840b4",
+      "msg": "svga: Pass buffer handle for fd handles for resource_from_handle()",
+      "date": "2026-08-03T22:49:18.000+00:00"
     }
   ]
 }
