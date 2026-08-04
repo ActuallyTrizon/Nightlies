@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-04T11:56:52Z",
+  "triggered_at": "2026-08-04T13:59:48Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0db8df7",
-      "new": "5656dec",
-      "full": "5656decbdecc5fa2cc0fbad8335a2fbe72689974",
-      "msg": "[MMAP] Fixed 4k mmap canary pages handling (#4184)",
-      "date": "2026-08-04T10:49:13Z"
+      "old": "5656dec",
+      "new": "55ed7e9",
+      "full": "55ed7e9edb3161b0cafc1daad587aaeb5646bfb8",
+      "msg": "[ELFLOADER] Added support for BIND_NOW dynamic tags (#4186)",
+      "date": "2026-08-04T13:21:49Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7af5c50",
-      "new": "6dadf99",
-      "full": "6dadf993f9913e08d891517ea7f359324117d48a",
-      "msg": "radv: enable more features with shaderObject",
-      "date": "2026-08-04T11:30:13.000+00:00"
+      "old": "6dadf99",
+      "new": "8259e8f",
+      "full": "8259e8f783f6413f5cbf170a377955a38ce026f3",
+      "msg": "tu: Don't expose BV_ counters in perfcraw queries",
+      "date": "2026-08-04T13:20:00.000+00:00"
     }
   ]
 }
