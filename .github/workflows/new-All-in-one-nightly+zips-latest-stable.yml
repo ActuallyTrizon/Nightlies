@@ -745,9 +745,14 @@ jobs:
   #                 build-fex already built (upstream ships NO unix .so —
   #                 the arm64ec/wow64 design is PE-only, so the .so is our
   #                 Android host shim; there is no "official" .so).
-  # Only fires on a STABLE FEX tag (the PPA only publishes releases) and
-  # skips gracefully (job still succeeds) if the .deb is not up yet — the
-  # PPA typically lags the git tag by a bit.
+  # Runs EVERY build: independently grabs whatever the newest release currently
+  # PUBLISHED on the PPA is (decoupled from the nightly's FEX HEAD), so the
+  # genuine upstream release is attached reliably, not only when a nightly happens
+  # to land on a release tag. status=Published skips a yanked/failed build; the job
+  # still succeeds and emits nothing if the PPA has no published arm64 build at all.
+  # NOTE: the -unix variant pairs the genuine release DLLs with build-fex's HEAD
+  # unixlib .so (upstream ships no unix .so); the .so may be newer than the release
+  # DLLs, which is fine — it's the shm-stub UnixLib companion, ABI-stable.
   # ==================================================================
   repack-fex-ppa-official:
     name: Repack FEXCore (official PPA .deb)
@@ -760,61 +765,48 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             ca-certificates curl jq xz-utils
 
-      - name: Resolve stable version
-        id: ver
-        run: |
-          VERSION_NAME="${{ needs.build-fex.outputs.version }}"
-          # Only stable tags land in the PPA. build-fex names those
-          # "FEXCore-<ver>-stable"; anything else is a nightly -> skip.
-          if [[ "$VERSION_NAME" =~ ^FEXCore-([0-9]+(\.[0-9]+)?)-stable$ ]]; then
-            echo "ver=${BASH_REMATCH[1]}" >> "$GITHUB_OUTPUT"
-            echo "stable=true" >> "$GITHUB_OUTPUT"
-            echo "Stable ${BASH_REMATCH[1]} -> will repack official PPA .deb"
-          else
-            echo "stable=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::'${VERSION_NAME}' is a nightly (no PPA release) — official repack skipped."
-          fi
-
-      - name: Locate & download official .deb
-        id: deb
-        if: steps.ver.outputs.stable == 'true'
+      - name: Resolve latest published PPA release & download .deb
+        id: rel
         run: |
           set -euo pipefail
-          VER="${{ steps.ver.outputs.ver }}"
           API="https://api.launchpad.net/devel/~fex-emu/+archive/ubuntu/fex"
-          # Currently-published fex-emu-wine binaries. status=Published keeps the
-          # set tiny AND is a safety gate: if FEX-Emu PULLS a bad release (its
-          # binaries flip to status=Deleted, as happened to 2608-1 briefly), it
-          # simply won't match here and we skip rather than ship a yanked build.
-          # Version boundary is separator-agnostic: the PPA has used BOTH "-" and
-          # "~" after the release number (e.g. 2608-1~j vs 2607~1-1~q vs 2601~p).
-          # Suffix is the Ubuntu series (~j jammy / ~n noble / ~r resolute / ~o /
-          # ~p / ~q ...) — prefer jammy (the arm64ec toolchain's target), else any.
+          # DECOUPLED from the nightly's FEX HEAD: always grab whatever the NEWEST
+          # release currently PUBLISHED on the fex-emu-wine PPA is, so every AIO run
+          # attaches the genuine upstream release regardless of nightly timing.
+          #   - status=Published is the yank gate: a pulled/failed build (status
+          #     Deleted, as 2608-1 was briefly) is invisible here, so we grab the
+          #     newest release that is actually LIVE — never a retracted one.
+          #   - "newest" = highest leading release number (YYMM). The suffix scheme
+          #     is inconsistent (2608-1~j vs 2608~1-3~r vs 2607~1-1~q vs 2601~p), so
+          #     rank by the leading integer, then prefer ~j (jammy, the arm64ec
+          #     toolchain target) else any arm64 build of that release.
           curl -sG "$API" \
             --data-urlencode "ws.op=getPublishedBinaries" \
             --data-urlencode "binary_name=fex-emu-wine" \
             --data-urlencode "exact_match=true" \
             --data-urlencode "status=Published" -o bins.json
-          SELF=$(jq -r --arg v "$VER" '
-            [ .entries[]
-              | select((.binary_package_version | startswith($v + "-"))
-                       or (.binary_package_version | startswith($v + "~")))
-              | select(.distro_arch_series_link | endswith("/arm64")) ] as $c
+          ENTRY=$(jq -c '
+            [ .entries[] | select(.distro_arch_series_link | endswith("/arm64")) ] as $all
+            | ( $all | map(.binary_package_version | capture("^(?<n>[0-9]+)").n | tonumber) | max ) as $mx
+            | [ $all[] | select((.binary_package_version | capture("^(?<n>[0-9]+)").n | tonumber) == $mx) ] as $c
             | ( $c | map(select(.binary_package_version | endswith("~j"))) ) as $j
-            | ( if ($j|length) > 0 then $j else $c end ) | .[0].self_link // empty' bins.json)
-          if [ -z "$SELF" ]; then
-            echo "::warning::No published fex-emu-wine arm64 .deb for ${VER} yet — skipping official repack (PPA lags the tag)."
-            echo "found=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            | ( if ($j|length) > 0 then $j else $c end ) | .[0] // empty' bins.json)
+          if [ -z "$ENTRY" ] || [ "$ENTRY" = "null" ]; then
+            echo "::warning::No published fex-emu-wine arm64 build on the PPA — skipping official repack."
+            echo "found=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          VER=$(jq -r '.binary_package_version | capture("^(?<n>[0-9]+)").n' <<<"$ENTRY")
+          FULLVER=$(jq -r '.binary_package_version' <<<"$ENTRY")
+          SELF=$(jq -r '.self_link' <<<"$ENTRY")
           DEB_URL=$(curl -sG "$SELF" --data-urlencode "ws.op=binaryFileUrls" \
             | jq -r '.[] | select(endswith(".deb"))' | head -1)
-          echo "Official .deb: $DEB_URL"
+          echo "Latest published PPA release: fex-emu-wine ${FULLVER}  ->  FEXCore-${VER}-official-ppa"
           curl -sL "$DEB_URL" -o official.deb
+          echo "ver=${VER}" >> "$GITHUB_OUTPUT"
           echo "found=true" >> "$GITHUB_OUTPUT"
 
       - name: Extract official PE DLLs
-        if: steps.deb.outputs.found == 'true'
+        if: steps.rel.outputs.found == 'true'
         run: |
           set -euo pipefail
           # dpkg-deb (preinstalled) handles the zstd-compressed data tree.
@@ -825,7 +817,7 @@ jobs:
           echo "Official DLL sha256:"; sha256sum pe/*.dll
 
       - name: Get bionic unix .so from build-fex
-        if: steps.deb.outputs.found == 'true'
+        if: steps.rel.outputs.found == 'true'
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -833,10 +825,10 @@ jobs:
           path: unixwcp
 
       - name: Package official-ppa wcps
-        if: steps.deb.outputs.found == 'true'
+        if: steps.rel.outputs.found == 'true'
         run: |
           set -euo pipefail
-          VER="${{ steps.ver.outputs.ver }}"
+          VER="${{ steps.rel.outputs.ver }}"
 
           # ---- PE-only: FEXCore-<ver>-official-ppa.wcp (genuine bytes) ----
           rm -rf pkg; mkdir -p pkg/system32
@@ -866,7 +858,7 @@ jobs:
           echo "== official-ppa artifacts =="; ls -la *.wcp; sha256sum *.wcp
 
       - uses: actions/upload-artifact@v4
-        if: steps.deb.outputs.found == 'true'
+        if: steps.rel.outputs.found == 'true'
         with:
           name: fex-ppa-official
           path: '*-official-ppa*.wcp'
