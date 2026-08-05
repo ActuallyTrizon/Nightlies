@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-05T01:52:13Z",
+  "triggered_at": "2026-08-05T04:57:52Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "68740b3",
-      "new": "e869aa6",
-      "full": "e869aa644a16e4332cdc15c1ea0b4d13d482385d",
-      "msg": "Docs: Update for release FEX-2608",
-      "date": "2026-08-04T23:55:43Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ec34234",
-      "new": "8b1b2aa",
-      "full": "8b1b2aa47cdb63e99829d6171f3c72ddbb1c4080",
-      "msg": "panvk: Advertise VK_KHR_cooperative_matrix",
-      "date": "2026-08-05T00:51:23.000+00:00"
+      "old": "8b1b2aa",
+      "new": "ffd7011",
+      "full": "ffd70117562145c05b81b8554e4a573b5adf547b",
+      "msg": "panfrost: Lower gl_FragColor in the frontend only on Midgard",
+      "date": "2026-08-05T03:54:49.000+00:00"
     }
   ]
 }
