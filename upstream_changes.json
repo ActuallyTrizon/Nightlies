@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-08-05T07:36:36Z",
+  "triggered_at": "2026-08-05T10:26:47Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3c670ef",
-      "new": "61d01a4",
-      "full": "61d01a4c2c7220b57952b83c270df3f058180095",
-      "msg": "[PAGESIZE] Fixed Proton support and ported elfloader to Box32 (#4189)",
-      "date": "2026-08-05T07:10:36Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "e869aa6",
-      "new": "9686454",
-      "full": "968645416106cc42b2178d2e0843e7a3bdebf232",
-      "msg": "Merge pull request #5804 from sunshineinabox/PR_thunkgen",
-      "date": "2026-08-05T06:51:02Z"
+      "old": "61d01a4",
+      "new": "5afc665",
+      "full": "5afc665420a67a7f6780d3c5bb41adba0ab3ca8f",
+      "msg": "[RV64_DYNAREC] Fix RDTSC and RDTSCP (#4190)",
+      "date": "2026-08-05T08:29:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ffd7011",
-      "new": "64f9ff1",
-      "full": "64f9ff1d26fe56acedc50f484bc0e2bb2ed07942",
-      "msg": "nir/nir_builder: inline dst_bit_size calculation in assert",
-      "date": "2026-08-05T05:10:13.000+00:00"
+      "old": "64f9ff1",
+      "new": "418f296",
+      "full": "418f2963a1500481b97afeecd94959588434ad4a",
+      "msg": "freedreno: Fix VPC_RAST_STREAM_CNTL register layouts",
+      "date": "2026-08-05T09:27:08.000+00:00"
     }
   ]
 }
