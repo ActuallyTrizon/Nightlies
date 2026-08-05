@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-04T23:55:59Z",
+  "triggered_at": "2026-08-05T01:52:13Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "68740b3",
+      "new": "e869aa6",
+      "full": "e869aa644a16e4332cdc15c1ea0b4d13d482385d",
+      "msg": "Docs: Update for release FEX-2608",
+      "date": "2026-08-04T23:55:43Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "38ba6ef",
-      "new": "ec34234",
-      "full": "ec3423445db1ebb62945e5651223e25e18617926",
-      "msg": "kraid: Build variant without psiz",
-      "date": "2026-08-04T23:28:19.000+00:00"
+      "old": "ec34234",
+      "new": "8b1b2aa",
+      "full": "8b1b2aa47cdb63e99829d6171f3c72ddbb1c4080",
+      "msg": "panvk: Advertise VK_KHR_cooperative_matrix",
+      "date": "2026-08-05T00:51:23.000+00:00"
     }
   ]
 }
