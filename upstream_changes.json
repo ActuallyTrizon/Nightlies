@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-05T15:08:51Z",
+  "triggered_at": "2026-08-05T17:21:38Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cec0f61",
+      "new": "5d881fd",
+      "full": "5d881fd59d192d3ca917d4220c1dc7165d7f3ce8",
+      "msg": "[ELFLOADER] Fixed RELRO relocation again (#4195)",
+      "date": "2026-08-05T15:19:36Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c1ca2c8",
-      "new": "a53480a",
-      "full": "a53480aa227924dcda63f853e8f267254b977e81",
-      "msg": "ci: Uprev virglrenderer",
-      "date": "2026-08-05T14:06:26.000+00:00"
+      "old": "a53480a",
+      "new": "a0fb4dd",
+      "full": "a0fb4dd492078a5d972e1a64f5c2c4cd628356a9",
+      "msg": "kk: Support VK_EXT_image_view_min_lod",
+      "date": "2026-08-05T16:43:55.000+00:00"
     }
   ]
 }
