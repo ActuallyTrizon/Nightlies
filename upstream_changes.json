@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-05T22:12:16Z",
+  "triggered_at": "2026-08-05T23:51:14Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9686454",
-      "new": "c171c06",
-      "full": "c171c0619207fe9316d107c3e6b839fb3db8554f",
-      "msg": "Merge pull request #5806 from simon902/F64ToI32Precision",
-      "date": "2026-08-05T21:40:41Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ab9632d",
-      "new": "93a1ab8",
-      "full": "93a1ab86ffa11f65a0906244b31260f50f4a0dbd",
-      "msg": "etnaviv: Turn the sampler parameter loads into constants",
-      "date": "2026-08-05T21:28:52.000+00:00"
+      "old": "93a1ab8",
+      "new": "1e2a9c2",
+      "full": "1e2a9c2217273a71cee4e27baa743b68df19178e",
+      "msg": "docs: add release dates for the 26.2.x cycle",
+      "date": "2026-08-05T23:22:05.000+00:00"
     }
   ]
 }
