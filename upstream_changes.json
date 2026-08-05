@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-05T12:47:54Z",
+  "triggered_at": "2026-08-05T15:08:51Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5afc665",
-      "new": "cec0f61",
-      "full": "cec0f61e0efeb52477d1b5c3764cecb691f42118",
-      "msg": "[SIGNAL] Preserved previous handlers, flags, masks, restorer, and alternate-stac",
-      "date": "2026-08-05T12:25:37Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "418f296",
-      "new": "c1ca2c8",
-      "full": "c1ca2c890eb8a6a3a2ea61011b635f62bf2d2e98",
-      "msg": "virgl: Support tiled gbm modifiers",
-      "date": "2026-08-05T11:50:36.000+00:00"
+      "old": "c1ca2c8",
+      "new": "a53480a",
+      "full": "a53480aa227924dcda63f853e8f267254b977e81",
+      "msg": "ci: Uprev virglrenderer",
+      "date": "2026-08-05T14:06:26.000+00:00"
     }
   ]
 }
