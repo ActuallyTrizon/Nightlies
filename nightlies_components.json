@@ -901,6 +901,18 @@
   },
   {
     "type": "FEXCore",
+    "verName": "FEXCore-2608-official-ppa-unix",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEXCore-2608-official-ppa-unix.wcp"
+  },
+  {
+    "type": "FEXCore",
+    "verName": "FEXCore-2608-official-ppa",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEXCore-2608-official-ppa.wcp"
+  },
+  {
+    "type": "FEXCore",
     "verName": "FEXCore-2608-stable-ppa-unix",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEXCore-2608-stable-ppa-unix.wcp"
