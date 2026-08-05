@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-05T10:26:47Z",
+  "triggered_at": "2026-08-05T12:47:54Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "61d01a4",
-      "new": "5afc665",
-      "full": "5afc665420a67a7f6780d3c5bb41adba0ab3ca8f",
-      "msg": "[RV64_DYNAREC] Fix RDTSC and RDTSCP (#4190)",
-      "date": "2026-08-05T08:29:45Z"
+      "old": "5afc665",
+      "new": "cec0f61",
+      "full": "cec0f61e0efeb52477d1b5c3764cecb691f42118",
+      "msg": "[SIGNAL] Preserved previous handlers, flags, masks, restorer, and alternate-stac",
+      "date": "2026-08-05T12:25:37Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64f9ff1",
-      "new": "418f296",
-      "full": "418f2963a1500481b97afeecd94959588434ad4a",
-      "msg": "freedreno: Fix VPC_RAST_STREAM_CNTL register layouts",
-      "date": "2026-08-05T09:27:08.000+00:00"
+      "old": "418f296",
+      "new": "c1ca2c8",
+      "full": "c1ca2c890eb8a6a3a2ea61011b635f62bf2d2e98",
+      "msg": "virgl: Support tiled gbm modifiers",
+      "date": "2026-08-05T11:50:36.000+00:00"
     }
   ]
 }
