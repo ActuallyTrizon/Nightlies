@@ -734,6 +734,137 @@ jobs:
           path: '*-unix.wcp'
 
   # ==================================================================
+  # JOB 2c: FEXCore — OFFICIAL PPA repack (genuine .deb bytes)
+  # Downloads the REAL fex-emu-wine .deb from the FEX-Emu Launchpad PPA
+  # (ppa:fex-emu/fex) and repackages its two PE DLLs *verbatim* into a
+  # wcp — the literal shipped bytes, NOT a source rebuild (that is what
+  # build-fex-ppa does; this is one notch more authentic).
+  #   - PE-only:  FEXCore-<ver>-official-ppa.wcp
+  #   - unix:     FEXCore-<ver>-official-ppa-unix.wcp
+  #               = official PE DLLs + the bionic UnixLib .so that
+  #                 build-fex already built (upstream ships NO unix .so —
+  #                 the arm64ec/wow64 design is PE-only, so the .so is our
+  #                 Android host shim; there is no "official" .so).
+  # Runs EVERY build: independently grabs whatever the newest release currently
+  # PUBLISHED on the PPA is (decoupled from the nightly's FEX HEAD), so the
+  # genuine upstream release is attached reliably, not only when a nightly happens
+  # to land on a release tag. status=Published skips a yanked/failed build; the job
+  # still succeeds and emits nothing if the PPA has no published arm64 build at all.
+  # NOTE: the -unix variant pairs the genuine release DLLs with build-fex's HEAD
+  # unixlib .so (upstream ships no unix .so); the .so may be newer than the release
+  # DLLs, which is fine — it's the shm-stub UnixLib companion, ABI-stable.
+  # ==================================================================
+  repack-fex-ppa-official:
+    name: Repack FEXCore (official PPA .deb)
+    runs-on: ubuntu-latest
+    needs: build-fex
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends \
+            ca-certificates curl jq xz-utils
+
+      - name: Resolve latest published PPA release & download .deb
+        id: rel
+        run: |
+          set -euo pipefail
+          API="https://api.launchpad.net/devel/~fex-emu/+archive/ubuntu/fex"
+          # DECOUPLED from the nightly's FEX HEAD: always grab whatever the NEWEST
+          # release currently PUBLISHED on the fex-emu-wine PPA is, so every AIO run
+          # attaches the genuine upstream release regardless of nightly timing.
+          #   - status=Published is the yank gate: a pulled/failed build (status
+          #     Deleted, as 2608-1 was briefly) is invisible here, so we grab the
+          #     newest release that is actually LIVE — never a retracted one.
+          #   - "newest" = highest leading release number (YYMM). The suffix scheme
+          #     is inconsistent (2608-1~j vs 2608~1-3~r vs 2607~1-1~q vs 2601~p), so
+          #     rank by the leading integer, then prefer ~j (jammy, the arm64ec
+          #     toolchain target) else any arm64 build of that release.
+          curl -sG "$API" \
+            --data-urlencode "ws.op=getPublishedBinaries" \
+            --data-urlencode "binary_name=fex-emu-wine" \
+            --data-urlencode "exact_match=true" \
+            --data-urlencode "status=Published" -o bins.json
+          ENTRY=$(jq -c '
+            [ .entries[] | select(.distro_arch_series_link | endswith("/arm64")) ] as $all
+            | ( $all | map(.binary_package_version | capture("^(?<n>[0-9]+)").n | tonumber) | max ) as $mx
+            | [ $all[] | select((.binary_package_version | capture("^(?<n>[0-9]+)").n | tonumber) == $mx) ] as $c
+            | ( $c | map(select(.binary_package_version | endswith("~j"))) ) as $j
+            | ( if ($j|length) > 0 then $j else $c end ) | .[0] // empty' bins.json)
+          if [ -z "$ENTRY" ] || [ "$ENTRY" = "null" ]; then
+            echo "::warning::No published fex-emu-wine arm64 build on the PPA — skipping official repack."
+            echo "found=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          VER=$(jq -r '.binary_package_version | capture("^(?<n>[0-9]+)").n' <<<"$ENTRY")
+          FULLVER=$(jq -r '.binary_package_version' <<<"$ENTRY")
+          SELF=$(jq -r '.self_link' <<<"$ENTRY")
+          DEB_URL=$(curl -sG "$SELF" --data-urlencode "ws.op=binaryFileUrls" \
+            | jq -r '.[] | select(endswith(".deb"))' | head -1)
+          echo "Latest published PPA release: fex-emu-wine ${FULLVER}  ->  FEXCore-${VER}-official-ppa"
+          curl -sL "$DEB_URL" -o official.deb
+          echo "ver=${VER}" >> "$GITHUB_OUTPUT"
+          echo "found=true" >> "$GITHUB_OUTPUT"
+
+      - name: Extract official PE DLLs
+        if: steps.rel.outputs.found == 'true'
+        run: |
+          set -euo pipefail
+          # dpkg-deb (preinstalled) handles the zstd-compressed data tree.
+          dpkg-deb -x official.deb debroot
+          mkdir -p pe
+          cp debroot/usr/lib/wine/aarch64-windows/libarm64ecfex.dll pe/
+          cp debroot/usr/lib/wine/aarch64-windows/libwow64fex.dll   pe/
+          echo "Official DLL sha256:"; sha256sum pe/*.dll
+
+      - name: Get bionic unix .so from build-fex
+        if: steps.rel.outputs.found == 'true'
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: fex-nightly-unix
+          path: unixwcp
+
+      - name: Package official-ppa wcps
+        if: steps.rel.outputs.found == 'true'
+        run: |
+          set -euo pipefail
+          VER="${{ steps.rel.outputs.ver }}"
+
+          # ---- PE-only: FEXCore-<ver>-official-ppa.wcp (genuine bytes) ----
+          rm -rf pkg; mkdir -p pkg/system32
+          cp pe/*.dll pkg/system32/
+          chmod 0755 pkg/system32/*.dll
+          printf '{\n  "type": "FEXCore",\n  "versionName": "%s",\n  "versionCode": 0,\n  "description": "FEXCore Release from PPA",\n  "files": [\n    { "source": "system32/libarm64ecfex.dll", "target": "${system32}/libarm64ecfex.dll" },\n    { "source": "system32/libwow64fex.dll", "target": "${system32}/libwow64fex.dll" }\n  ]\n}\n' "$VER" > pkg/profile.json
+          ( cd pkg && tar -cJf "../FEXCore-${VER}-official-ppa.wcp" . )
+          echo "Built FEXCore-${VER}-official-ppa.wcp"
+
+          # ---- unix variant: official DLLs + build-fex's bionic UnixLib .so ----
+          SO_SRC=$(find unixwcp -name '*-unix.wcp' 2>/dev/null | head -1 || true)
+          if [ -n "${SO_SRC:-}" ]; then
+            mkdir -p sotmp && tar -xJf "$SO_SRC" -C sotmp
+            rm -rf upkg; mkdir -p upkg/system32 upkg/aarch64-unix
+            cp pe/*.dll upkg/system32/
+            cp sotmp/aarch64-unix/libarm64ecfex.so upkg/aarch64-unix/
+            cp sotmp/aarch64-unix/libwow64fex.so   upkg/aarch64-unix/
+            chmod 0755 upkg/system32/*.dll upkg/aarch64-unix/*.so
+            # ${libdir}/${system32} are wcp installer placeholders — keep literal.
+            printf '{\n  "type": "FEXCore",\n  "versionName": "%s",\n  "versionCode": 0,\n  "description": "FEXCore Release from PPA +unix libs",\n  "files": [\n    { "source": "aarch64-unix/libarm64ecfex.so", "target": "${libdir}/wine/aarch64-unix/libarm64ecfex.so" },\n    { "source": "aarch64-unix/libwow64fex.so", "target": "${libdir}/wine/aarch64-unix/libwow64fex.so" },\n    { "source": "system32/libarm64ecfex.dll", "target": "${system32}/libarm64ecfex.dll" },\n    { "source": "system32/libwow64fex.dll", "target": "${system32}/libwow64fex.dll" }\n  ]\n}\n' "$VER" > upkg/profile.json
+            ( cd upkg && tar -cJf "../FEXCore-${VER}-official-ppa-unix.wcp" . )
+            echo "Built FEXCore-${VER}-official-ppa-unix.wcp"
+          else
+            echo "::warning::build-fex unix .so artifact missing — emitting PE-only official wcp, no -unix variant."
+          fi
+
+          echo "== official-ppa artifacts =="; ls -la *.wcp; sha256sum *.wcp
+
+      - uses: actions/upload-artifact@v4
+        if: steps.rel.outputs.found == 'true'
+        with:
+          name: fex-ppa-official
+          path: '*-official-ppa*.wcp'
+          if-no-files-found: ignore
+
+  # ==================================================================
   # JOB 3: VKD3D-Proton (Standard)
   # ==================================================================
   build-vkd3d:
@@ -1734,7 +1865,7 @@ jobs:
     # workflow_dispatch runs still build every job (validating the build) but never
     # publish a release or clobber the production nightly-latest that clients pull.
     if: github.ref == 'refs/heads/main'
-    needs: [build-box64-matrix, build-fex, build-fex-ppa, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec, build-dxvk-binsem, build-dxvk-binsem-arm64ec]
+    needs: [build-box64-matrix, build-fex, build-fex-ppa, repack-fex-ppa-official, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec, build-dxvk-binsem, build-dxvk-binsem-arm64ec]
     permissions:
       contents: write
       actions: write
@@ -1981,6 +2112,8 @@ jobs:
           7b. **FEXCore PPA-flavor**: \`FEX-*-PPA.wcp\` (and \`.zip\`) — same FEX HEAD, built with \`bylaws/llvm-mingw 20250920\` and the calibrated PPA recipe (Release + C-only debug info, \`//fex-emu/HostThunks\` baked, \`versionCode=0\`, \`description="FEXCore Release from PPA"\`). Calibrated to land within −0.16% of the upstream PPA wcp.
           7c. **FEXCore +unix libs**: \`FEX-*-unix.wcp\` — the FEX DLLs **plus** the native aarch64 \`.so\` unixlib companions (\`libarm64ecfex.so\`/\`libwow64fex.so\`, shm-stubbed, executable). Requires a Proton built with the FEX unixlib loader (Proton 11.0-1+ with \`MemoryWineLoadUnixLibByName\`); on older Proton the \`.so\` is ignored and it runs DLL-only.
           7d. **FEXCore PPA +unix libs**: \`FEX-*-PPA-unix.wcp\` — same \`.so\` unixlib companions paired with the PPA-flavor (bylaws / DWARF) DLLs.
+          7e. **FEXCore Official PPA (genuine upstream)**: \`FEXCore-*-official-ppa.wcp\` — the real \`fex-emu-wine\` DLLs pulled straight from the FEX-Emu Launchpad PPA \`.deb\` and repackaged **byte-for-byte** (NOT a rebuild — this is upstream's own shipped file). Only appears for a stable release whose \`.deb\` is currently published on the PPA.
+          7f. **FEXCore Official PPA +unix libs**: \`FEXCore-*-official-ppa-unix.wcp\` — those genuine upstream DLLs paired with the bionic \`.so\` unixlib companions. The DLLs are upstream's; the \`.so\` is our host shim (upstream ships no unix lib).
           8. **VKD3D-Proton (Std)**: \`VKD3D-Proton-${VKD3D_VERSION}.wcp\` (and \`.zip\`)
           9. **VKD3D-Proton (ARM64EC)**: \`VKD3D-Proton-${VKD3D_ARM64EC_VERSION}.wcp\` (and \`.zip\`)
           10. **DXVK**: \`dxvk-gplasync-*.wcp\` (and \`.zip\`)
