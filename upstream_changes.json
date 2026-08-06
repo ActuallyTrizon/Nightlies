@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-06T07:36:54Z",
+  "triggered_at": "2026-08-06T10:29:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5d881fd",
-      "new": "5ca4b91",
-      "full": "5ca4b91e00b98092b83ad1ae492d3e621a72ab04",
-      "msg": "[DYNAREC] Reset jumptable entry when an alternate is added (#4196)",
-      "date": "2026-08-06T07:32:36Z"
+      "old": "5ca4b91",
+      "new": "62cb817",
+      "full": "62cb8170ccdbb7504dfd4ad338337b8f2238bc67",
+      "msg": "[STEAM] Refined pressure vessal emulation for Protontricks (#4199)",
+      "date": "2026-08-06T09:20:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "43ec7c6",
-      "new": "ee6bb7e",
-      "full": "ee6bb7e763848cb32bb706e0a03636c7ad976190",
-      "msg": "docs/features: Mark VK_KHR_maintenance9 as done on Turnip",
-      "date": "2026-08-06T07:28:40.000+00:00"
+      "old": "ee6bb7e",
+      "new": "4b3a40c",
+      "full": "4b3a40c4c2a8e80b6caf0e340d58473ffca9c15a",
+      "msg": "nir/range_analysis: skip caching unsupported UUB ALU ops",
+      "date": "2026-08-06T08:35:35.000+00:00"
     }
   ]
 }
