@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-08-06T12:51:19Z",
+  "triggered_at": "2026-08-06T15:06:55Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "62cb817",
-      "new": "607c22d",
-      "full": "607c22d22ab0eff3c7ca5cbf024b3e8d96772fcd",
-      "msg": "[RCFILE] Added Linux cs2 profile (#4202)",
-      "date": "2026-08-06T12:07:27Z"
+      "old": "607c22d",
+      "new": "ba373ab",
+      "full": "ba373ab4b3ae2ecbc9aeeece309817cad47ba421",
+      "msg": "[WRAPPER] Fix strlcat and strcpy corn cases (#4204)",
+      "date": "2026-08-06T13:46:47Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "2c7ba22",
-      "new": "29af449",
-      "full": "29af4495c873a283aed7e3a5dd346096f7ab4a4e",
-      "msg": "vkd3d: Add wave32 workaround for Empire of the Ants.",
-      "date": "2026-08-06T12:49:18Z"
+      "old": "29af449",
+      "new": "84c87c8",
+      "full": "84c87c8390d9df75ba41d911496296fe13f0e275",
+      "msg": "vkd3d: Detect broken application pattern with RTAS scratch.",
+      "date": "2026-08-06T13:11:03Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4b3a40c",
-      "new": "410a764",
-      "full": "410a764236d2918fba636330a978ce6ab53d22b2",
-      "msg": "util/dynarray: outline the growth slow path",
-      "date": "2026-08-06T10:50:22.000+00:00"
+      "old": "410a764",
+      "new": "0c006c5",
+      "full": "0c006c5624820b75730e77d2dc530d2a84374eb2",
+      "msg": "radv: remove deprecated RADV_DEBUG=nocompute",
+      "date": "2026-08-06T14:14:12.000+00:00"
     }
   ]
 }
