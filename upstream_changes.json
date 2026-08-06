@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-06T04:57:51Z",
+  "triggered_at": "2026-08-06T07:36:54Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c171c06",
-      "new": "92e43c2",
-      "full": "92e43c25d4d74b74081605534ff7fca2fa911465",
-      "msg": "Merge pull request #5807 from Sonicadvance1/196",
-      "date": "2026-08-06T02:56:21Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "5d881fd",
+      "new": "5ca4b91",
+      "full": "5ca4b91e00b98092b83ad1ae492d3e621a72ab04",
+      "msg": "[DYNAREC] Reset jumptable entry when an alternate is added (#4196)",
+      "date": "2026-08-06T07:32:36Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "43ec7c6",
+      "new": "ee6bb7e",
+      "full": "ee6bb7e763848cb32bb706e0a03636c7ad976190",
+      "msg": "docs/features: Mark VK_KHR_maintenance9 as done on Turnip",
+      "date": "2026-08-06T07:28:40.000+00:00"
     }
   ]
 }
