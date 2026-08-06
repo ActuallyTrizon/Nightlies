@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-06T10:29:36Z",
+  "triggered_at": "2026-08-06T12:51:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5ca4b91",
-      "new": "62cb817",
-      "full": "62cb8170ccdbb7504dfd4ad338337b8f2238bc67",
-      "msg": "[STEAM] Refined pressure vessal emulation for Protontricks (#4199)",
-      "date": "2026-08-06T09:20:16Z"
+      "old": "62cb817",
+      "new": "607c22d",
+      "full": "607c22d22ab0eff3c7ca5cbf024b3e8d96772fcd",
+      "msg": "[RCFILE] Added Linux cs2 profile (#4202)",
+      "date": "2026-08-06T12:07:27Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "2c7ba22",
+      "new": "29af449",
+      "full": "29af4495c873a283aed7e3a5dd346096f7ab4a4e",
+      "msg": "vkd3d: Add wave32 workaround for Empire of the Ants.",
+      "date": "2026-08-06T12:49:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ee6bb7e",
-      "new": "4b3a40c",
-      "full": "4b3a40c4c2a8e80b6caf0e340d58473ffca9c15a",
-      "msg": "nir/range_analysis: skip caching unsupported UUB ALU ops",
-      "date": "2026-08-06T08:35:35.000+00:00"
+      "old": "4b3a40c",
+      "new": "410a764",
+      "full": "410a764236d2918fba636330a978ce6ab53d22b2",
+      "msg": "util/dynarray: outline the growth slow path",
+      "date": "2026-08-06T10:50:22.000+00:00"
     }
   ]
 }
