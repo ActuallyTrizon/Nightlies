@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-06T21:57:47Z",
+  "triggered_at": "2026-08-06T23:50:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0c006c5",
-      "new": "12af35c",
-      "full": "12af35ca13ba7c7a3f046b617cdee3e68f0d2f94",
-      "msg": "gallium/va: fix build-order edge for libva win32 headers on Windows",
-      "date": "2026-08-06T20:06:08.000+00:00"
+      "old": "12af35c",
+      "new": "a962b84",
+      "full": "a962b84f2f6a875434d4468d32cabe10b665f248",
+      "msg": "gen_calendar_entries: fix datetime for newer Python",
+      "date": "2026-08-06T23:15:27.000+00:00"
     }
   ]
 }
