@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-08-06T15:06:55Z",
+  "triggered_at": "2026-08-06T21:57:47Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "607c22d",
-      "new": "ba373ab",
-      "full": "ba373ab4b3ae2ecbc9aeeece309817cad47ba421",
-      "msg": "[WRAPPER] Fix strlcat and strcpy corn cases (#4204)",
-      "date": "2026-08-06T13:46:47Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "29af449",
-      "new": "84c87c8",
-      "full": "84c87c8390d9df75ba41d911496296fe13f0e275",
-      "msg": "vkd3d: Detect broken application pattern with RTAS scratch.",
-      "date": "2026-08-06T13:11:03Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "410a764",
-      "new": "0c006c5",
-      "full": "0c006c5624820b75730e77d2dc530d2a84374eb2",
-      "msg": "radv: remove deprecated RADV_DEBUG=nocompute",
-      "date": "2026-08-06T14:14:12.000+00:00"
+      "old": "0c006c5",
+      "new": "12af35c",
+      "full": "12af35ca13ba7c7a3f046b617cdee3e68f0d2f94",
+      "msg": "gallium/va: fix build-order edge for libva win32 headers on Windows",
+      "date": "2026-08-06T20:06:08.000+00:00"
     }
   ]
 }
