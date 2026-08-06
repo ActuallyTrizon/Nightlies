@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-06T01:47:23Z",
+  "triggered_at": "2026-08-06T04:57:51Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "1e2a9c2",
-      "new": "43ec7c6",
-      "full": "43ec7c6b0bca7d405a5e69bf7743afc92600268f",
-      "msg": "kk: Disable allowGPUOptimizedContents on M5 for e5b9g9r9",
-      "date": "2026-08-06T00:05:51.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "c171c06",
+      "new": "92e43c2",
+      "full": "92e43c25d4d74b74081605534ff7fca2fa911465",
+      "msg": "Merge pull request #5807 from Sonicadvance1/196",
+      "date": "2026-08-06T02:56:21Z"
     }
   ]
 }
