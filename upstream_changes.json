@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-07T06:05:02Z",
+  "triggered_at": "2026-08-07T08:07:38Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "92e43c2",
-      "new": "fd141ed",
-      "full": "fd141ed6d721d03062619e4702bca1a0c93b6dd9",
-      "msg": "Merge pull request #5811 from Claudemirovsky/fix/compilation/archlinux-mingw-llv",
-      "date": "2026-08-07T05:00:10Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ba373ab",
+      "new": "491ab0e",
+      "full": "491ab0e3047d590134a115caa8c79d22ed8f88c6",
+      "msg": "[NON4K] Added fake 4k protection tracking (#4207)",
+      "date": "2026-08-07T07:18:09Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fde6d51",
-      "new": "58af0e1",
-      "full": "58af0e12abafaaa84f045b944f381c9260ca28e8",
-      "msg": "kraid: Add OpMMul* and plumb them through",
-      "date": "2026-08-07T05:15:31.000+00:00"
+      "old": "58af0e1",
+      "new": "33780ef",
+      "full": "33780ef17231d34dc2c1348e9b967fb0f1f37cda",
+      "msg": "docs: fix reporting VK_KHR_index_type_uint8 on RADV",
+      "date": "2026-08-07T08:16:24.000+02:00"
     }
   ]
 }
