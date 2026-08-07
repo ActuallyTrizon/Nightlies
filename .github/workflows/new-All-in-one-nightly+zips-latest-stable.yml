@@ -1856,6 +1856,143 @@ jobs:
             *.zip
 
   # ==================================================================
+  # JOB 8c: D7VK (DirectDraw / Direct3D 7·6·5·3 -> Vulkan)
+  # WinterSnowfall/d7vk — a DXVK spin-off that ships ONLY ddraw.dll.
+  # 32-bit ONLY: its package-release.sh defaults to opt_32_only=1, and every
+  # DirectDraw/D3D7 title is 32-bit. ddraw.dll statically links d7vk's own
+  # d3d9 backend, so it is self-contained and does NOT touch the container's
+  # DXVK d3d9/d3d11/dxgi — it occupies the independent `ddraw` wrapper slot.
+  # Publishes: a .tzst (exact bundled-asset layout: syswow64/ddraw.dll, to
+  # refresh assets/ddrawrapper/d7vk.tzst in the app) PLUS a .wcp + .zip for
+  # manual / Winlator install.
+  # ==================================================================
+  build-d7vk:
+    name: Build D7VK (DirectDraw/D3D7)
+    runs-on: ubuntu-latest
+    outputs:
+      commit: ${{ steps.version.outputs.commit }}
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mingw-w64 wget git xz-utils zstd python3 meson ninja-build build-essential unzip zip ccache
+
+      - name: Get D7VK Upstream Commit
+        id: d7vk-hash
+        run: echo "hash=$(git ls-remote https://github.com/WinterSnowfall/d7vk.git HEAD | cut -f1)" >> $GITHUB_OUTPUT
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          # Key tied to exact upstream commit — auto-busts when d7vk has new commits
+          key: ccache-d7vk-${{ steps.d7vk-hash.outputs.hash }}
+          restore-keys: ccache-d7vk-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup ccache compiler wrappers
+        run: |
+          mkdir -p ~/ccache-bin
+          for compiler in \
+            x86_64-w64-mingw32-gcc \
+            x86_64-w64-mingw32-g++ \
+            i686-w64-mingw32-gcc \
+            i686-w64-mingw32-g++; do
+            ln -s "$(which ccache)" ~/ccache-bin/$compiler
+          done
+          echo "$HOME/ccache-bin" >> $GITHUB_PATH
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Build D7VK (master HEAD)
+        id: version
+        run: |
+          # Bleeding edge: build WinterSnowfall/d7vk master (latest commits).
+          # No patch to vendor — d7vk is a standalone repo, not a patched dxvk tree.
+          git clone --recurse-submodules --shallow-submodules \
+            https://github.com/WinterSnowfall/d7vk.git d7vk
+          cd d7vk
+          git fetch --tags --force >/dev/null 2>&1 || true
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "d7vk")
+          VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
+          echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
+          echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
+          echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
+
+          # package-release.sh calls bare `ninja` — use all vCPUs.
+          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
+          # 32-bit only (opt_32_only=1 default) -> emits ../d7vk-built/d7vk-master/x32/
+          ./package-release.sh master ../d7vk-built --no-package
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package
+        run: |
+          # d7vk names the tree "d7vk-master"; at 32-bit-only, x32/ holds
+          # ddraw.dll (+ d3d9.dll, which we DROP — the container keeps its own
+          # DXVK d3d9; d7vk's ddraw statically links its own copy anyway).
+          SRC="d7vk-built/d7vk-master/x32"
+          echo "Built files:"; ls -la "$SRC"
+
+          # ---- (1) .tzst — exact bundled-asset format the app consumes ------
+          # XServerDisplayActivity extracts ddrawrapper/d7vk.tzst expecting
+          # syswow64/ddraw.dll. Rename this to d7vk.tzst to refresh the APK asset.
+          mkdir -p tzstroot/syswow64
+          cp "$SRC/ddraw.dll" tzstroot/syswow64/ddraw.dll
+          tar --zstd -cf "d7vk-${{ steps.version.outputs.commit }}.tzst" -C tzstroot .
+
+          # ---- (2) .wcp + .zip — manual / Winlator install -----------------
+          mkdir -p packaging/syswow64
+          cp "$SRC/ddraw.dll" packaging/syswow64/ddraw.dll
+          cat <<EOF > packaging/profile.json
+          {
+            "type": "DXVK",
+            "versionName": "${{ env.VERSION_NAME }}",
+            "versionCode": 0,
+            "description": "D7VK — DirectDraw/Direct3D 7 (Upstream: WinterSnowfall)",
+            "files": [
+              { "source": "syswow64/ddraw.dll", "target": "\${syswow64}/ddraw.dll" }
+            ]
+          }
+          EOF
+          # WCP (xz, matching the flagship DXVK job)
+          tar -cJf "d7vk-${{ steps.version.outputs.commit }}.wcp" -C packaging .
+          # ZIP
+          cd packaging
+          zip -r "../d7vk-${{ steps.version.outputs.commit }}.zip" .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: d7vk-nightly
+          path: |
+            *.wcp
+            *.zip
+            *.tzst
+
+  # ==================================================================
   # JOB 9: Release
   # ==================================================================
   create-release:
@@ -1865,7 +2002,7 @@ jobs:
     # workflow_dispatch runs still build every job (validating the build) but never
     # publish a release or clobber the production nightly-latest that clients pull.
     if: github.ref == 'refs/heads/main'
-    needs: [build-box64-matrix, build-fex, build-fex-ppa, repack-fex-ppa-official, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec, build-dxvk-binsem, build-dxvk-binsem-arm64ec]
+    needs: [build-box64-matrix, build-fex, build-fex-ppa, repack-fex-ppa-official, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec, build-dxvk-binsem, build-dxvk-binsem-arm64ec, build-d7vk]
     permissions:
       contents: write
       actions: write
@@ -1988,6 +2125,8 @@ jobs:
           DXVK_BINSEM_COMMIT: ${{ needs.build-dxvk-binsem.outputs.commit }}
           DXVK_BINSEM_ARM64EC_VERSION: ${{ needs.build-dxvk-binsem-arm64ec.outputs.version }}
           DXVK_BINSEM_ARM64EC_COMMIT: ${{ needs.build-dxvk-binsem-arm64ec.outputs.commit }}
+          D7VK_VERSION: ${{ needs.build-d7vk.outputs.version }}
+          D7VK_COMMIT: ${{ needs.build-d7vk.outputs.commit }}
         run: |
           REPOS=(
             "ptitSeb/box64"
@@ -1995,6 +2134,7 @@ jobs:
             "FEX-Emu/FEX"
             "HansKristian-Work/vkd3d-proton"
             "doitsujin/dxvk"
+            "WinterSnowfall/d7vk"
             "The412Banner/Banners-Turnip"
           )
           NAMES=(
@@ -2003,6 +2143,7 @@ jobs:
             "FEX"
             "VKD3D-Proton"
             "DXVK"
+            "D7VK (DDraw/D3D7)"
             "Turnip (Banners)"
           )
 
@@ -2096,6 +2237,7 @@ jobs:
           | **DXVK (ARM64EC)** | [${DXVK_ARM64EC_VERSION}](https://github.com/doitsujin/dxvk/commit/${DXVK_ARM64EC_COMMIT}) |
           | **DXVK BinSem (GPLAsync)** | [${DXVK_BINSEM_VERSION}](https://github.com/doitsujin/dxvk/commit/${DXVK_BINSEM_COMMIT}) |
           | **DXVK BinSem (ARM64EC)** | [${DXVK_BINSEM_ARM64EC_VERSION}](https://github.com/doitsujin/dxvk/commit/${DXVK_BINSEM_ARM64EC_COMMIT}) |
+          | **D7VK (DDraw/D3D7)** | [${D7VK_VERSION}](https://github.com/WinterSnowfall/d7vk/commit/${D7VK_COMMIT}) |
           | **Turnip (A6xx/A7xx/A8xx)** | [${TURNIP_NAME}](https://github.com/The412Banner/Banners-Turnip/releases/tag/${TURNIP_TAG}) |
 
           </details>
@@ -2120,7 +2262,8 @@ jobs:
           11. **DXVK (ARM64EC)**: \`DXVK-ARM64EC-*.wcp\` (and \`.zip\`)
           12. **DXVK BinSem (GPLAsync)**: \`DXVK-*-binsem-gplasync-*.wcp\` (and \`.zip\`) — adds the \`DXVK_DISABLE_TIMELINE_SEMAPHORES=1\` runtime fallback (Turnip-kgsl timeline-semaphore FPS workaround)
           13. **DXVK BinSem (ARM64EC)**: \`DXVK-*-binsem-gplasync-arm64ec-*.wcp\` (and \`.zip\`)
-          14. **Turnip GPU Driver**: \`Turnip-v*.zip\` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL
+          14. **D7VK (DDraw/D3D7)**: \`d7vk-*.tzst\` + \`d7vk-*.wcp\` (and \`.zip\`) — DirectDraw / Direct3D 7·6·5·3 → Vulkan (WinterSnowfall/d7vk, master). Ships **only** a 32-bit \`syswow64/ddraw.dll\`; occupies the **DDraw Wrapper** slot (independent of DXVK/VKD3D). The **\`.tzst\`** is the drop-in refresh for the app's bundled \`assets/ddrawrapper/d7vk.tzst\` (rename to \`d7vk.tzst\`); the \`.wcp\`/\`.zip\` are for manual / Winlator install.
+          15. **Turnip GPU Driver**: \`Turnip-v*.zip\` — latest release from [Banners-Turnip](https://github.com/The412Banner/Banners-Turnip/releases), Adreno A6xx/A7xx/A8xx, KGSL
 
           </details>
 
@@ -2152,6 +2295,7 @@ jobs:
           files: |
             ./artifacts/*.wcp
             ./artifacts/*.zip
+            ./artifacts/*.tzst
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -2178,8 +2322,8 @@ jobs:
           done
           echo "Cleared old assets from $LATEST_TAG"
 
-          # Upload all wcp and zip artifacts
-          for f in ./artifacts/*.wcp ./artifacts/*.zip; do
+          # Upload all wcp, zip and tzst artifacts
+          for f in ./artifacts/*.wcp ./artifacts/*.zip ./artifacts/*.tzst; do
             [ -f "$f" ] || continue
             gh release upload "$LATEST_TAG" "$f" --clobber
             echo "Uploaded $(basename $f) to $LATEST_TAG"
@@ -2204,6 +2348,7 @@ jobs:
           DXVK_ARM64EC_COMMIT: ${{ needs.build-dxvk-arm64ec.outputs.commit }}
           DXVK_BINSEM_COMMIT: ${{ needs.build-dxvk-binsem.outputs.commit }}
           DXVK_BINSEM_ARM64EC_COMMIT: ${{ needs.build-dxvk-binsem-arm64ec.outputs.commit }}
+          D7VK_COMMIT: ${{ needs.build-d7vk.outputs.commit }}
         run: |
           python3 <<'PY'
           import re, os
@@ -2221,6 +2366,7 @@ jobs:
           dxvk_ec_commit   = os.environ.get("DXVK_ARM64EC_COMMIT", "")
           dxvk_bs_commit   = os.environ.get("DXVK_BINSEM_COMMIT", "")
           dxvk_bs_ec_commit = os.environ.get("DXVK_BINSEM_ARM64EC_COMMIT", "")
+          d7vk_commit      = os.environ.get("D7VK_COMMIT", "")
           turnip_tag       = os.environ.get("TURNIP_TAG", "unknown")
           turnip_name      = os.environ.get("TURNIP_NAME", "")
 
@@ -2236,6 +2382,7 @@ jobs:
               f"| **DXVK (ARM64EC)** | [`{dxvk_ec_commit}`](https://github.com/doitsujin/dxvk/commit/{dxvk_ec_commit}) |",
               f"| **DXVK BinSem (GPLAsync)** | [`{dxvk_bs_commit}`](https://github.com/doitsujin/dxvk/commit/{dxvk_bs_commit}) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |",
               f"| **DXVK BinSem (ARM64EC)** | [`{dxvk_bs_ec_commit}`](https://github.com/doitsujin/dxvk/commit/{dxvk_bs_ec_commit}) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |",
+              f"| **D7VK (DDraw/D3D7)** | [`{d7vk_commit}`](https://github.com/WinterSnowfall/d7vk/commit/{d7vk_commit}) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |",
               f"| **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |",
               f"| **Turnip** | [{turnip_tag}](https://github.com/The412Banner/Banners-Turnip/releases/tag/{turnip_tag}) — {turnip_name} |",
               f"| **Files** | [`.wcp` and `.zip` — scroll to Assets]({release_url}) |",
