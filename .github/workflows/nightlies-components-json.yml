@@ -54,6 +54,8 @@ jobs:
                   return "WOWBox64"
               if "box64" in n:
                   return "Box64"
+              if "d7vk" in n:
+                  return "D7VK"
               if "dxvk" in n:
                   return "DXVK"
               if "vkd3d" in n:

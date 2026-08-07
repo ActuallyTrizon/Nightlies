@@ -1880,7 +1880,10 @@ jobs:
 
       - name: Get D7VK Upstream Commit
         id: d7vk-hash
-        run: echo "hash=$(git ls-remote https://github.com/WinterSnowfall/d7vk.git HEAD | cut -f1)" >> $GITHUB_OUTPUT
+        # Track the `devel` branch specifically — that is d7vk's 2.x PRODUCT line
+        # (latest v2.x tags live there). `master` is a separate DXVK-3.0.2 rebase
+        # line we deliberately do NOT ship.
+        run: echo "hash=$(git ls-remote https://github.com/WinterSnowfall/d7vk.git refs/heads/devel | cut -f1)" >> $GITHUB_OUTPUT
 
       - name: Get week number (for glslang cache key)
         id: date
@@ -1929,15 +1932,18 @@ jobs:
         id: version
         run: |
           set -e
-          # Bleeding edge: build WinterSnowfall/d7vk master (latest commits).
-          # No patch to vendor — d7vk is a standalone repo, not a patched dxvk tree.
-          git clone --recurse-submodules --shallow-submodules \
+          # Build the d7vk 2.x PRODUCT line (latest commits) from the `devel`
+          # branch. IMPORTANT: `devel` carries the v2.x tags (latest = v2.1) and
+          # is what we ship. The separate `master` branch is a DXVK-3.0.2 rebase
+          # line (its v3.0.2 tag + meson `version:'3.0.2'` are the *DXVK base*, not
+          # the d7vk product version) — we deliberately do NOT build it.
+          git clone --recurse-submodules --shallow-submodules --branch devel \
             https://github.com/WinterSnowfall/d7vk.git d7vk
           cd d7vk
           git fetch --tags --force >/dev/null 2>&1 || true
 
           # ── GCC/mingw-w64 compat shim ──────────────────────────────────
-          # Upstream's cross-files target GCC, but master occasionally uses the
+          # Upstream's cross-files target GCC, but devel occasionally uses the
           # clang-friendly `std::sqrtf`, which libstdc++ on mingw-w64 does NOT
           # expose in namespace std (GCC-vs-Clang divergence). Rewrite to
           # `std::sqrt` — its float overload gives an identical float-precision
@@ -1948,16 +1954,19 @@ jobs:
           # package-release.sh calls bare `ninja` — use all vCPUs.
           sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
 
-          # Try master; if it still fails to build with GCC (some other upstream
-          # breakage the shim can't absorb), fall back to the last release tag so
-          # the nightly always ships — same philosophy as the DXVK job.
+          # LATEST_TAG on devel = the newest d7vk product tag (v2.1 now, v2.2 later).
+          # Nightly label = "<tag>-<commit>-nightly", e.g. v2.1-bc3b29b9e-nightly.
           LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "d7vk")
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          if ./package-release.sh master ../d7vk-built --no-package; then
-            echo "Built d7vk master (${COMMIT_HASH})"
-            VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
+          # First arg to package-release.sh is only a folder label -> d7vk-nightly/.
+          if ./package-release.sh nightly ../d7vk-built --no-package; then
+            echo "Built d7vk devel (${LATEST_TAG} @ ${COMMIT_HASH})"
+            VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}-nightly"
           else
-            echo "::warning::d7vk master (${COMMIT_HASH}) failed to build with GCC/mingw even after the std::sqrtf shim; falling back to last release tag ${LATEST_TAG}."
+            # If devel still fails to build with GCC (some other upstream breakage
+            # the shim can't absorb), fall back to the last product tag so the
+            # nightly always ships — same philosophy as the DXVK job.
+            echo "::warning::d7vk devel (${COMMIT_HASH}) failed to build with GCC/mingw even after the std::sqrtf shim; falling back to last product tag ${LATEST_TAG}."
             cd ..
             rm -rf d7vk d7vk-built
             git clone --recurse-submodules --shallow-submodules --branch "$LATEST_TAG" \
@@ -1966,9 +1975,9 @@ jobs:
             apply_gcc_shim
             sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
             COMMIT_HASH=$(git rev-parse --short HEAD)
-            VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
-            # 32-bit only (opt_32_only=1 default) -> emits ../d7vk-built/d7vk-master/x32/
-            ./package-release.sh master ../d7vk-built --no-package
+            # Fallback built the actual product tag — no -nightly marker.
+            VERSION_NAME="${LATEST_TAG}"
+            ./package-release.sh nightly ../d7vk-built --no-package
           fi
 
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
@@ -1980,10 +1989,11 @@ jobs:
 
       - name: Package
         run: |
-          # d7vk names the tree "d7vk-master"; at 32-bit-only, x32/ holds
+          NAME="d7vk-${{ env.VERSION_NAME }}"   # e.g. d7vk-v2.1-bc3b29b9e-nightly
+          # package-release.sh built into d7vk-nightly/; at 32-bit-only, x32/ holds
           # ddraw.dll (+ d3d9.dll, which we DROP — the container keeps its own
           # DXVK d3d9; d7vk's ddraw statically links its own copy anyway).
-          SRC="d7vk-built/d7vk-master/x32"
+          SRC="d7vk-built/d7vk-nightly/x32"
           echo "Built files:"; ls -la "$SRC"
 
           # ---- (1) .tzst — exact bundled-asset format the app consumes ------
@@ -1991,14 +2001,14 @@ jobs:
           # syswow64/ddraw.dll. Rename this to d7vk.tzst to refresh the APK asset.
           mkdir -p tzstroot/syswow64
           cp "$SRC/ddraw.dll" tzstroot/syswow64/ddraw.dll
-          tar --zstd -cf "d7vk-${{ steps.version.outputs.commit }}.tzst" -C tzstroot .
+          tar --zstd -cf "${NAME}.tzst" -C tzstroot .
 
           # ---- (2) .wcp + .zip — manual / Winlator install -----------------
           mkdir -p packaging/syswow64
           cp "$SRC/ddraw.dll" packaging/syswow64/ddraw.dll
           cat <<EOF > packaging/profile.json
           {
-            "type": "DXVK",
+            "type": "D7VK",
             "versionName": "${{ env.VERSION_NAME }}",
             "versionCode": 0,
             "description": "D7VK — DirectDraw/Direct3D 7 (Upstream: WinterSnowfall)",
@@ -2008,10 +2018,10 @@ jobs:
           }
           EOF
           # WCP (xz, matching the flagship DXVK job)
-          tar -cJf "d7vk-${{ steps.version.outputs.commit }}.wcp" -C packaging .
+          tar -cJf "${NAME}.wcp" -C packaging .
           # ZIP
           cd packaging
-          zip -r "../d7vk-${{ steps.version.outputs.commit }}.zip" .
+          zip -r "../${NAME}.zip" .
 
       - uses: actions/upload-artifact@v4
         with:
