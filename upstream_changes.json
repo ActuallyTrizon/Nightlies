@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-07T21:29:48Z",
+  "triggered_at": "2026-08-07T22:25:50Z",
   "changed": [
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "bc3b29b",
+      "new": "7e13818",
+      "full": "7e13818eb937d05c980469a81bf0e97724bbf9dc",
+      "msg": "[meta] Tweak dirty surface upload locations",
+      "date": "2026-08-07T22:03:25Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f475fb0",
-      "new": "0138d2e",
-      "full": "0138d2e800fcec8b65dc92a2e519cdf4c1a8c8fa",
-      "msg": "nak: Serialize carry access in instr_sched_prepass",
-      "date": "2026-08-07T20:49:21.000+00:00"
+      "old": "0138d2e",
+      "new": "0deba49",
+      "full": "0deba49b3d91eb510e47cbd52678b862af7b1c58",
+      "msg": "svga: do y flip back only for non negative svga->curr.viewport[0].scale[1]",
+      "date": "2026-08-07T21:44:36.000+00:00"
     }
   ]
 }
