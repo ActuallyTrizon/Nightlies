@@ -1,10 +1,33 @@
 {
-  "updated_at": "2026-08-07T09:53:52Z",
+  "updated_at": "2026-08-07T12:42:15Z",
   "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
-  "total_releases": 41,
-  "total_assets": 52,
+  "total_releases": 42,
+  "total_assets": 54,
   "releases": [
+    {
+      "tag": "tu_v31",
+      "name": "Mainline Turnip v31",
+      "published_at": "2026-08-07T12:06:28Z",
+      "assets": [
+        {
+          "name": "mainline-turnip-sync-V31.zip",
+          "mirror_name": "tu_v31_mainline-turnip-sync-V31.zip",
+          "size": 2683531,
+          "original_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v31/mainline-turnip-sync-V31.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v31_mainline-turnip-sync-V31.zip",
+          "published_at": "2026-08-07T12:06:29Z"
+        },
+        {
+          "name": "mainline-turnip-V31.zip",
+          "mirror_name": "tu_v31_mainline-turnip-V31.zip",
+          "size": 2679911,
+          "original_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v31/mainline-turnip-V31.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v31_mainline-turnip-V31.zip",
+          "published_at": "2026-08-07T12:06:30Z"
+        }
+      ]
+    },
     {
       "tag": "tu_v30",
       "name": "Mainline Turnip v30",

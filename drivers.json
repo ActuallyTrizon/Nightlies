@@ -2011,6 +2011,18 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "tu_v31 \u2014 mainline-turnip-sync-V31.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v31_mainline-turnip-sync-V31.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v31 \u2014 mainline-turnip-V31.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v31_mainline-turnip-V31.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v30 \u2014 mainline-turnip-sync-V30.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v30_mainline-turnip-sync-V30.zip"
