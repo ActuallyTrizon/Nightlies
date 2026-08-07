@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-07T22:25:50Z",
+  "triggered_at": "2026-08-07T23:25:52Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "bc3b29b",
-      "new": "7e13818",
-      "full": "7e13818eb937d05c980469a81bf0e97724bbf9dc",
-      "msg": "[meta] Tweak dirty surface upload locations",
-      "date": "2026-08-07T22:03:25Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "1aecb5d",
+      "new": "c935e69",
+      "full": "c935e6914223b59ca8609a6e1e19e618130cc337",
+      "msg": "[dxvk] Set render area layer count to 1 if no layered rendering is used",
+      "date": "2026-08-07T22:44:19Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0138d2e",
-      "new": "0deba49",
-      "full": "0deba49b3d91eb510e47cbd52678b862af7b1c58",
-      "msg": "svga: do y flip back only for non negative svga->curr.viewport[0].scale[1]",
-      "date": "2026-08-07T21:44:36.000+00:00"
+      "old": "0deba49",
+      "new": "2a2cc31",
+      "full": "2a2cc31dd7d2b7197a4de13818ed6ae2a251c78e",
+      "msg": "anv: Bump up the subgroup size to 32",
+      "date": "2026-08-07T22:49:29.000+00:00"
     }
   ]
 }
