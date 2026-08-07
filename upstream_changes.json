@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-07T08:07:38Z",
+  "triggered_at": "2026-08-07T09:52:24Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ba373ab",
-      "new": "491ab0e",
-      "full": "491ab0e3047d590134a115caa8c79d22ed8f88c6",
-      "msg": "[NON4K] Added fake 4k protection tracking (#4207)",
-      "date": "2026-08-07T07:18:09Z"
+      "old": "491ab0e",
+      "new": "9cf3cea",
+      "full": "9cf3ceaa86b40ac04474d0b7e853a70dfec13e34",
+      "msg": "[TLS] Added full support for CLONE_SETTLS (#4209)",
+      "date": "2026-08-07T09:11:35Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "58af0e1",
-      "new": "33780ef",
-      "full": "33780ef17231d34dc2c1348e9b967fb0f1f37cda",
-      "msg": "docs: fix reporting VK_KHR_index_type_uint8 on RADV",
-      "date": "2026-08-07T08:16:24.000+02:00"
+      "old": "33780ef",
+      "new": "7c32b01",
+      "full": "7c32b01df300feadf65d72555760b570cdfdccef",
+      "msg": "anv: fix descriptor heap with non buffer aligned addresses pre Gfx12.5",
+      "date": "2026-08-07T09:18:12.000+00:00"
     }
   ]
 }
