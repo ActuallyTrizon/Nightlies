@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-07T10:43:21Z",
+  "triggered_at": "2026-08-07T11:38:25Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9cf3cea",
+      "new": "e51e9c8",
+      "full": "e51e9c84a3f4f802fbfe1d2e809badf7a8fd053a",
+      "msg": "[WRAPPER] Fix typo of my_wl_touch_listener_down (#4213)",
+      "date": "2026-08-07T11:06:14Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7c32b01",
-      "new": "fa63afe",
-      "full": "fa63afe272482cc8c6a1fad6f006d740173d09ca",
-      "msg": "etnaviv: Derive the shadow compare shader key from current sampler state",
-      "date": "2026-08-07T10:13:25.000+00:00"
+      "old": "fa63afe",
+      "new": "8dd0282",
+      "full": "8dd0282c298962e8124acd303b093656dcb7b770",
+      "msg": "kk: Improve workaround 14",
+      "date": "2026-08-07T11:23:08.000+00:00"
     }
   ]
 }
