@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-07T09:52:24Z",
+  "triggered_at": "2026-08-07T10:43:21Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "491ab0e",
-      "new": "9cf3cea",
-      "full": "9cf3ceaa86b40ac04474d0b7e853a70dfec13e34",
-      "msg": "[TLS] Added full support for CLONE_SETTLS (#4209)",
-      "date": "2026-08-07T09:11:35Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "33780ef",
-      "new": "7c32b01",
-      "full": "7c32b01df300feadf65d72555760b570cdfdccef",
-      "msg": "anv: fix descriptor heap with non buffer aligned addresses pre Gfx12.5",
-      "date": "2026-08-07T09:18:12.000+00:00"
+      "old": "7c32b01",
+      "new": "fa63afe",
+      "full": "fa63afe272482cc8c6a1fad6f006d740173d09ca",
+      "msg": "etnaviv: Derive the shadow compare shader key from current sampler state",
+      "date": "2026-08-07T10:13:25.000+00:00"
     }
   ]
 }
