@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-07T14:05:50Z",
+  "triggered_at": "2026-08-07T15:44:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "de048b7",
-      "new": "525aac8",
-      "full": "525aac88c53be55f5958122e590fea2edcdc05d1",
-      "msg": "freedreno/a2xx: remove the IO variables of lowered TGSI shaders",
-      "date": "2026-08-07T13:37:05.000+00:00"
+      "old": "525aac8",
+      "new": "3903060",
+      "full": "3903060418105c9d0fd4896a855b55e9a6e8b25d",
+      "msg": "anv: shrink push constant data for EXT_descriptor_buffer/EXT_descriptor_heap",
+      "date": "2026-08-07T14:40:52.000+00:00"
     }
   ]
 }
