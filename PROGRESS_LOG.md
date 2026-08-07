@@ -6,6 +6,43 @@
 
 ---
 
+## Session — 2026-08-06
+
+### [feat] — Add D7VK (DirectDraw/D3D7) all-in-one component (2026-08-06)
+**Branch `feat/d7vk-aio-component` → FF-merged to `main` (`5d6ceb4e`); real publish run `31136317325` success.**
+
+#### What changed
+- New `build-d7vk` job in `new-All-in-one-nightly+zips-latest-stable.yml`. Builds
+  `WinterSnowfall/d7vk` **`devel`** branch (pinned `--branch devel`) — the 2.x PRODUCT
+  line (latest v2.x tags). Deliberately NOT `master` (that's a DXVK-3.0.2-rebase line; the
+  `v3.0.2` tag + meson `version:'3.0.2'` are the DXVK base, not the d7vk product version).
+- Reuses the DXVK harness (mingw + ccache keyed to devel HEAD + glslang). **32-bit only**
+  (package-release.sh `opt_32_only=1`); ships ONLY `syswow64/ddraw.dll` (statically links
+  own d3d9 → self-contained; does not touch container DXVK d3d9/d3d11/dxgi).
+- **GCC/mingw shim (required):** devel uses clang-only `std::sqrtf` (libstdc++/mingw doesn't
+  expose it in `std::`) → rewrite to `std::sqrt` before building. Plus fallback to last
+  product tag if devel still won't build.
+- Version label `<latest-product-tag>-<commit>-nightly` (e.g. `v2.1-bc3b29b9e-nightly`).
+  Artifacts `d7vk-<version>.{tzst,wcp,zip}`. `.tzst` = drop-in refresh for the app's bundled
+  `assets/ddrawrapper/d7vk.tzst`. profile.json type `D7VK`.
+- create-release wired: `needs`, version env, built-components + files-included tables,
+  README block, upstream-status array, and `*.tzst` added to the release + nightly-latest
+  upload globs. `nightlies-components-json.yml` classifies `d7vk-*` as type `D7VK`.
+  `Upstream-watcher.yml` tracks `WinterSnowfall/d7vk` (HEAD=devel) → new commits trigger a
+  nightly and show under "What changed".
+- Published: `nightly-20260807-010254` + `nightly-latest` carry `d7vk-v2.1-bc3b29b9e-nightly.
+  {tzst,wcp,zip}`; manifest has 2 D7VK entries.
+- ⚠️ Known convention gap: the auto-manifest derives `verName` from the FILENAME stem
+  (`d7vk-…`, needed so the classifier greps "d7vk"), which differs from the .wcp's
+  profile.json versionName (`v2.1-…`). Pre-existing for all manifest components; the
+  winlator-contents catalog uses the correct version-matching verName.
+
+#### Files touched
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
+- `.github/workflows/Upstream-watcher.yml`
+- `.github/workflows/nightlies-components-json.yml`
+- `PROGRESS_LOG.md`
+
 ## Session — 2026-07-03
 
 ### [feat] — FEX build naming: stable (on-tag) vs nightly (+N drift) (2026-07-03)
