@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-07T18:41:22Z",
+  "triggered_at": "2026-08-07T19:44:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "61656d7",
-      "new": "6775457",
-      "full": "67754571ca932823ede9c392c9e538218a434943",
-      "msg": "zink: fall back to sole pdev when DRM matching is unavailable",
-      "date": "2026-08-07T18:01:25.000+00:00"
+      "old": "6775457",
+      "new": "6a87757",
+      "full": "6a87757de5ef92c7d4b5770a47b2a9836eaf373c",
+      "msg": "pan: allow CRC with AFBC",
+      "date": "2026-08-07T18:50:35.000+00:00"
     }
   ]
 }
