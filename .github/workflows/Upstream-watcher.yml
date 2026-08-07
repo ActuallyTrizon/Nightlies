@@ -28,6 +28,7 @@ jobs:
             "https://github.com/FEX-Emu/FEX"
             "https://github.com/HansKristian-Work/vkd3d-proton"
             "https://github.com/doitsujin/dxvk"
+            "https://github.com/WinterSnowfall/d7vk"
           )
           NAMES=(
             "Box64 (Official)"
@@ -35,6 +36,7 @@ jobs:
             "FEX"
             "VKD3D-Proton"
             "DXVK"
+            "D7VK (DDraw/D3D7)"
           )
 
           HASH_FILE="upstream_hashes.txt"
