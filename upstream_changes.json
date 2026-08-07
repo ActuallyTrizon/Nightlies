@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-07T11:38:25Z",
+  "triggered_at": "2026-08-07T12:41:57Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "9cf3cea",
-      "new": "e51e9c8",
-      "full": "e51e9c84a3f4f802fbfe1d2e809badf7a8fd053a",
-      "msg": "[WRAPPER] Fix typo of my_wl_touch_listener_down (#4213)",
-      "date": "2026-08-07T11:06:14Z"
+      "old": "e51e9c8",
+      "new": "e99ca51",
+      "full": "e99ca51299ec897e6a96da6d00983d90406a836f",
+      "msg": "[WRAPPER] Fix my_readlink (#4212)",
+      "date": "2026-08-07T11:44:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fa63afe",
-      "new": "8dd0282",
-      "full": "8dd0282c298962e8124acd303b093656dcb7b770",
-      "msg": "kk: Improve workaround 14",
-      "date": "2026-08-07T11:23:08.000+00:00"
+      "old": "8dd0282",
+      "new": "de048b7",
+      "full": "de048b7cda65e634e19ea66cfec4bdcdbd0ee0e6",
+      "msg": "pco: drop i2i16 conversion for nir_interleave srcs",
+      "date": "2026-08-07T11:37:39.000+00:00"
     }
   ]
 }
