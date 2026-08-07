@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-06T23:50:38Z",
+  "triggered_at": "2026-08-07T02:10:58Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "12af35c",
-      "new": "a962b84",
-      "full": "a962b84f2f6a875434d4468d32cabe10b665f248",
-      "msg": "gen_calendar_entries: fix datetime for newer Python",
-      "date": "2026-08-06T23:15:27.000+00:00"
+      "old": "a962b84",
+      "new": "f5b6dfb",
+      "full": "f5b6dfb260bcad9522e9bf2c5fc3bd01258daf03",
+      "msg": "intel/executor: Add 256_hw_regs.lua example",
+      "date": "2026-08-07T01:24:31.000+00:00"
     }
   ]
 }
