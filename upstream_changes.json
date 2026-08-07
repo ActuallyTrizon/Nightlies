@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-07T16:42:39Z",
+  "triggered_at": "2026-08-07T17:40:48Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3903060",
-      "new": "e40d93a",
-      "full": "e40d93a8ea98966ecb33b3a273c1633ea9ea0ea4",
-      "msg": "ci/rusticl: Update nightly expectations after spirv-llvm-translator bump",
-      "date": "2026-08-07T15:47:10.000+00:00"
+      "old": "e40d93a",
+      "new": "61656d7",
+      "full": "61656d744be6101fe2e807ee6feca9d61724f2bc",
+      "msg": "wsi/display: free the previous display name when EDID is parsed",
+      "date": "2026-08-07T16:51:00.000+00:00"
     }
   ]
 }
