@@ -852,6 +852,18 @@
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.5-Hybrid-ba373ab4b-Native.zip"
   },
   {
+    "type": "D7VK",
+    "verName": "d7vk-v2.1-bc3b29b9e-nightly",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-bc3b29b9e-nightly.wcp"
+  },
+  {
+    "type": "D7VK",
+    "verName": "d7vk-v2.1-bc3b29b9e-nightly",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-bc3b29b9e-nightly.zip"
+  },
+  {
     "type": "DXVK",
     "verName": "DXVK-ARM64EC-v3.0.2-gplasync-arm64ec-1aecb5d9",
     "verCode": "0",
