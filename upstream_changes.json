@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-07T04:48:24Z",
+  "triggered_at": "2026-08-07T06:05:02Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "92e43c2",
+      "new": "fd141ed",
+      "full": "fd141ed6d721d03062619e4702bca1a0c93b6dd9",
+      "msg": "Merge pull request #5811 from Claudemirovsky/fix/compilation/archlinux-mingw-llv",
+      "date": "2026-08-07T05:00:10Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f5b6dfb",
-      "new": "fde6d51",
-      "full": "fde6d5183a3aaf379cb7cc684e4d798a79fe7f12",
-      "msg": "nv30: add todo comments",
-      "date": "2026-08-07T04:23:22.000+00:00"
+      "old": "fde6d51",
+      "new": "58af0e1",
+      "full": "58af0e12abafaaa84f045b944f381c9260ca28e8",
+      "msg": "kraid: Add OpMMul* and plumb them through",
+      "date": "2026-08-07T05:15:31.000+00:00"
     }
   ]
 }
