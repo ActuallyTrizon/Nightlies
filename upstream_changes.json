@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-07T19:44:56Z",
+  "triggered_at": "2026-08-07T20:30:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6775457",
-      "new": "6a87757",
-      "full": "6a87757de5ef92c7d4b5770a47b2a9836eaf373c",
-      "msg": "pan: allow CRC with AFBC",
-      "date": "2026-08-07T18:50:35.000+00:00"
+      "old": "6a87757",
+      "new": "f475fb0",
+      "full": "f475fb0c8372f9e5f66e17920f60df4fa3ec67da",
+      "msg": "ci: move virgl jobs from merge pipelines to pre-merge/nightly only",
+      "date": "2026-08-07T19:32:18.000+00:00"
     }
   ]
 }
