@@ -1928,23 +1928,52 @@ jobs:
       - name: Build D7VK (master HEAD)
         id: version
         run: |
+          set -e
           # Bleeding edge: build WinterSnowfall/d7vk master (latest commits).
           # No patch to vendor — d7vk is a standalone repo, not a patched dxvk tree.
           git clone --recurse-submodules --shallow-submodules \
             https://github.com/WinterSnowfall/d7vk.git d7vk
           cd d7vk
           git fetch --tags --force >/dev/null 2>&1 || true
-          COMMIT_HASH=$(git rev-parse --short HEAD)
+
+          # ── GCC/mingw-w64 compat shim ──────────────────────────────────
+          # Upstream's cross-files target GCC, but master occasionally uses the
+          # clang-friendly `std::sqrtf`, which libstdc++ on mingw-w64 does NOT
+          # expose in namespace std (GCC-vs-Clang divergence). Rewrite to
+          # `std::sqrt` — its float overload gives an identical float-precision
+          # result — so the bleeding-edge tree still builds with GCC. No-op when
+          # upstream isn't using std::sqrtf.
+          apply_gcc_shim() { grep -rl 'std::sqrtf' src 2>/dev/null | xargs -r sed -i 's/std::sqrtf/std::sqrt/g'; }
+          apply_gcc_shim
+          # package-release.sh calls bare `ninja` — use all vCPUs.
+          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
+
+          # Try master; if it still fails to build with GCC (some other upstream
+          # breakage the shim can't absorb), fall back to the last release tag so
+          # the nightly always ships — same philosophy as the DXVK job.
           LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "d7vk")
-          VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          if ./package-release.sh master ../d7vk-built --no-package; then
+            echo "Built d7vk master (${COMMIT_HASH})"
+            VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
+          else
+            echo "::warning::d7vk master (${COMMIT_HASH}) failed to build with GCC/mingw even after the std::sqrtf shim; falling back to last release tag ${LATEST_TAG}."
+            cd ..
+            rm -rf d7vk d7vk-built
+            git clone --recurse-submodules --shallow-submodules --branch "$LATEST_TAG" \
+              https://github.com/WinterSnowfall/d7vk.git d7vk
+            cd d7vk
+            apply_gcc_shim
+            sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
+            COMMIT_HASH=$(git rev-parse --short HEAD)
+            VERSION_NAME="${LATEST_TAG}-${COMMIT_HASH}"
+            # 32-bit only (opt_32_only=1 default) -> emits ../d7vk-built/d7vk-master/x32/
+            ./package-release.sh master ../d7vk-built --no-package
+          fi
+
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
-
-          # package-release.sh calls bare `ninja` — use all vCPUs.
-          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
-          # 32-bit only (opt_32_only=1 default) -> emits ../d7vk-built/d7vk-master/x32/
-          ./package-release.sh master ../d7vk-built --no-package
 
       - name: Print ccache stats
         run: ccache --show-stats
