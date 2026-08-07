@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-07T20:30:51Z",
+  "triggered_at": "2026-08-07T21:29:48Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6a87757",
-      "new": "f475fb0",
-      "full": "f475fb0c8372f9e5f66e17920f60df4fa3ec67da",
-      "msg": "ci: move virgl jobs from merge pipelines to pre-merge/nightly only",
-      "date": "2026-08-07T19:32:18.000+00:00"
+      "old": "f475fb0",
+      "new": "0138d2e",
+      "full": "0138d2e800fcec8b65dc92a2e519cdf4c1a8c8fa",
+      "msg": "nak: Serialize carry access in instr_sched_prepass",
+      "date": "2026-08-07T20:49:21.000+00:00"
     }
   ]
 }
