@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T17:21:16Z",
+  "triggered_at": "2026-08-08T18:23:55Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c63b65",
-      "new": "2376e45",
-      "full": "2376e45acbf67dcb97bcb36ca5377115456b4e0e",
-      "msg": "nir: Add missing lower_io case",
-      "date": "2026-08-08T16:14:10.000+00:00"
+      "old": "2376e45",
+      "new": "502fe65",
+      "full": "502fe653a31e40929a6b4527824bacf9b76ec470",
+      "msg": "brw: Consider address register SWSB dependencies in lower_scoreboard",
+      "date": "2026-08-08T17:30:32.000+00:00"
     }
   ]
 }
