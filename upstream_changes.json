@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T08:29:13Z",
+  "triggered_at": "2026-08-08T10:21:58Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e99ca51",
-      "new": "43acf32",
-      "full": "43acf32c8561eeb0711b0a9c0cff1b7c8beb812e",
-      "msg": "Addressed some wrapping issues report in #4214 (#4215)",
-      "date": "2026-08-08T07:57:21Z"
+      "old": "43acf32",
+      "new": "986846b",
+      "full": "986846bb7c103459a28c2f234f1b83e549a16f13",
+      "msg": "[INTERP] fixes PANIC_1 from #4214",
+      "date": "2026-08-08T09:33:58Z"
     }
   ]
 }
