@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T12:28:55Z",
+  "triggered_at": "2026-08-08T13:38:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "986846b",
-      "new": "73e3a97",
-      "full": "73e3a970090cc607605cce7e6282c3e41eda4fc1",
-      "msg": "[LA64_DYNAREC] Added SS/SD/AVX upper-lane tracking (#4145)",
-      "date": "2026-08-08T11:44:36Z"
+      "old": "73e3a97",
+      "new": "d691d07",
+      "full": "d691d07bd9a1f12d87f080c63a61220e194b9928",
+      "msg": "[OS] Fix FLAGM/FLAGM2 extension detection (#4217)",
+      "date": "2026-08-08T12:57:45Z"
     }
   ]
 }
