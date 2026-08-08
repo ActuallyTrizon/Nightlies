@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-08T13:38:36Z",
+  "triggered_at": "2026-08-08T14:23:31Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "73e3a97",
-      "new": "d691d07",
-      "full": "d691d07bd9a1f12d87f080c63a61220e194b9928",
-      "msg": "[OS] Fix FLAGM/FLAGM2 extension detection (#4217)",
-      "date": "2026-08-08T12:57:45Z"
+      "old": "d691d07",
+      "new": "da05e01",
+      "full": "da05e012353711293c3dda1eaaccd1325b72cccf",
+      "msg": "[RV64_DYNAREC] Addressed more issues reported in #4214 (#4218)",
+      "date": "2026-08-08T14:14:57Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "32fab1a",
+      "new": "057132b",
+      "full": "057132b93b6c1b0d4da2efac1b285e75e9aa0e29",
+      "msg": "virgl: Close winsys fd after destroying screen",
+      "date": "2026-08-08T13:58:48.000+00:00"
     }
   ]
 }
