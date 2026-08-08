@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T18:23:55Z",
+  "triggered_at": "2026-08-08T19:22:00Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2376e45",
-      "new": "502fe65",
-      "full": "502fe653a31e40929a6b4527824bacf9b76ec470",
-      "msg": "brw: Consider address register SWSB dependencies in lower_scoreboard",
-      "date": "2026-08-08T17:30:32.000+00:00"
+      "old": "502fe65",
+      "new": "cb671c5",
+      "full": "cb671c51db1407f82c366b32642a7271224ceedd",
+      "msg": "intel/executor: Support Large GRF mode on DG2 through Xe2",
+      "date": "2026-08-08T18:57:19.000+00:00"
     }
   ]
 }
