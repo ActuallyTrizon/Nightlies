@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T19:22:00Z",
+  "triggered_at": "2026-08-08T20:18:48Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "502fe65",
-      "new": "cb671c5",
-      "full": "cb671c51db1407f82c366b32642a7271224ceedd",
-      "msg": "intel/executor: Support Large GRF mode on DG2 through Xe2",
-      "date": "2026-08-08T18:57:19.000+00:00"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "7e13818",
+      "new": "5767eb5",
+      "full": "5767eb5b241d67dce1cc55c367006cbdbfce832c",
+      "msg": "[meta] Generalize mip map and back buffer count helpers",
+      "date": "2026-08-08T19:29:36Z"
     }
   ]
 }
