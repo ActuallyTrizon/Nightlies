@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-08T14:23:31Z",
+  "triggered_at": "2026-08-08T16:21:47Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d691d07",
-      "new": "da05e01",
-      "full": "da05e012353711293c3dda1eaaccd1325b72cccf",
-      "msg": "[RV64_DYNAREC] Addressed more issues reported in #4214 (#4218)",
-      "date": "2026-08-08T14:14:57Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "32fab1a",
-      "new": "057132b",
-      "full": "057132b93b6c1b0d4da2efac1b285e75e9aa0e29",
-      "msg": "virgl: Close winsys fd after destroying screen",
-      "date": "2026-08-08T13:58:48.000+00:00"
+      "old": "057132b",
+      "new": "2c63b65",
+      "full": "2c63b650516f27d4c20be6b2fbc6988b1e659799",
+      "msg": "ci: Run the shader-db job on etnaviv changes",
+      "date": "2026-08-08T15:34:31.000+00:00"
     }
   ]
 }
