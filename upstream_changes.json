@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-08T20:18:48Z",
+  "triggered_at": "2026-08-08T23:19:28Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "7e13818",
-      "new": "5767eb5",
-      "full": "5767eb5b241d67dce1cc55c367006cbdbfce832c",
-      "msg": "[meta] Generalize mip map and back buffer count helpers",
-      "date": "2026-08-08T19:29:36Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "da05e01",
+      "new": "78bf553",
+      "full": "78bf553c62818a5c3a9231ebd5ddb28bfec0c90e",
+      "msg": "[LA64_DYNAREC] Addressed more issues reported in #4214 (#4219)",
+      "date": "2026-08-08T22:21:12Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "cb671c5",
+      "new": "bab34da",
+      "full": "bab34da4a378379e65d212b405525f50255efd31",
+      "msg": "ci/broadcom: Update ci expectations after piglit uprev",
+      "date": "2026-08-09T00:54:25.000+02:00"
     }
   ]
 }
