@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T04:06:04Z",
+  "triggered_at": "2026-08-08T05:35:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bd52ca4",
-      "new": "b961bb5",
-      "full": "b961bb5513653735d623a88128da858353a31054",
-      "msg": "subprojects: amend missing venus-protocol version bump",
-      "date": "2026-08-08T03:03:26.000+00:00"
+      "old": "b961bb5",
+      "new": "32fab1a",
+      "full": "32fab1ad098a393ffa40dce8e5272f52aa0ff70a",
+      "msg": "kraid: Add a destination modifier propagation pass",
+      "date": "2026-08-08T04:32:37.000+00:00"
     }
   ]
 }
