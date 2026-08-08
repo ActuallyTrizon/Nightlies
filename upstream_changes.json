@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T16:21:47Z",
+  "triggered_at": "2026-08-08T17:21:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "057132b",
-      "new": "2c63b65",
-      "full": "2c63b650516f27d4c20be6b2fbc6988b1e659799",
-      "msg": "ci: Run the shader-db job on etnaviv changes",
-      "date": "2026-08-08T15:34:31.000+00:00"
+      "old": "2c63b65",
+      "new": "2376e45",
+      "full": "2376e45acbf67dcb97bcb36ca5377115456b4e0e",
+      "msg": "nir: Add missing lower_io case",
+      "date": "2026-08-08T16:14:10.000+00:00"
     }
   ]
 }
