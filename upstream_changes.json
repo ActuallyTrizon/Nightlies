@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T00:58:39Z",
+  "triggered_at": "2026-08-08T04:06:04Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2a2cc31",
-      "new": "bd52ca4",
-      "full": "bd52ca4c90ae17cd690256ec4650de1af6f739ca",
-      "msg": "freedreno/a2xx: stop advertising GL_EXT_frag_depth",
-      "date": "2026-08-08T00:17:03.000+00:00"
+      "old": "bd52ca4",
+      "new": "b961bb5",
+      "full": "b961bb5513653735d623a88128da858353a31054",
+      "msg": "subprojects: amend missing venus-protocol version bump",
+      "date": "2026-08-08T03:03:26.000+00:00"
     }
   ]
 }
