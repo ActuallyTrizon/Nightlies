@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T05:35:39Z",
+  "triggered_at": "2026-08-08T08:29:13Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "b961bb5",
-      "new": "32fab1a",
-      "full": "32fab1ad098a393ffa40dce8e5272f52aa0ff70a",
-      "msg": "kraid: Add a destination modifier propagation pass",
-      "date": "2026-08-08T04:32:37.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "e99ca51",
+      "new": "43acf32",
+      "full": "43acf32c8561eeb0711b0a9c0cff1b7c8beb812e",
+      "msg": "Addressed some wrapping issues report in #4214 (#4215)",
+      "date": "2026-08-08T07:57:21Z"
     }
   ]
 }
