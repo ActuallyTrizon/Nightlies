@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-08T10:21:58Z",
+  "triggered_at": "2026-08-08T12:28:55Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "43acf32",
-      "new": "986846b",
-      "full": "986846bb7c103459a28c2f234f1b83e549a16f13",
-      "msg": "[INTERP] fixes PANIC_1 from #4214",
-      "date": "2026-08-08T09:33:58Z"
+      "old": "986846b",
+      "new": "73e3a97",
+      "full": "73e3a970090cc607605cce7e6282c3e41eda4fc1",
+      "msg": "[LA64_DYNAREC] Added SS/SD/AVX upper-lane tracking (#4145)",
+      "date": "2026-08-08T11:44:36Z"
     }
   ]
 }
