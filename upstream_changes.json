@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-09T08:31:37Z",
+  "triggered_at": "2026-08-09T09:30:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "78bf553",
-      "new": "09124eb",
-      "full": "09124eb6effcab7b7a3de46ced8aecd0c642df37",
-      "msg": "[ARM64_DYNAREC] Addressed more issues reported in #4214 (#4220)",
-      "date": "2026-08-09T07:46:08Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "39257e6",
-      "new": "4c5987b",
-      "full": "4c5987b2a2ac0a4494f97b09fc636f12e51f7ef3",
-      "msg": "[meta] Optimize ignored surfaces fast skip",
-      "date": "2026-08-09T08:24:45Z"
+      "old": "09124eb",
+      "new": "1cb3a71",
+      "full": "1cb3a71c0540d2d2822a9e2a1d67781b7f4e9ff0",
+      "msg": "[WRAPPER] Fixed wrapping of g_initable_new (#4221)",
+      "date": "2026-08-09T08:37:33Z"
     }
   ]
 }
