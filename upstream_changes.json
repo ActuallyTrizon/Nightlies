@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-09T13:41:42Z",
+  "triggered_at": "2026-08-09T18:26:38Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "303bceb",
-      "new": "2595c1e",
-      "full": "2595c1e98f2d4c61257a2806b7beefedf7dc1a8b",
-      "msg": "[CI] This should fix ANDROID & TERMUX build",
-      "date": "2026-08-09T13:03:30Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "7966bfb",
+      "new": "430846d",
+      "full": "430846d7f2bb3200757fd2259003e72326878651",
+      "msg": "Merge pull request #5818 from OFFTKP/ffreep",
+      "date": "2026-08-09T17:46:43Z"
     }
   ]
 }
