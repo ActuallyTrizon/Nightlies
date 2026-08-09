@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-08T23:19:28Z",
+  "triggered_at": "2026-08-09T01:02:08Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "da05e01",
-      "new": "78bf553",
-      "full": "78bf553c62818a5c3a9231ebd5ddb28bfec0c90e",
-      "msg": "[LA64_DYNAREC] Addressed more issues reported in #4214 (#4219)",
-      "date": "2026-08-08T22:21:12Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "cb671c5",
-      "new": "bab34da",
-      "full": "bab34da4a378379e65d212b405525f50255efd31",
-      "msg": "ci/broadcom: Update ci expectations after piglit uprev",
-      "date": "2026-08-09T00:54:25.000+02:00"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "5767eb5",
+      "new": "39257e6",
+      "full": "39257e69fd0c001bccdd426ee3cf90340f8491dd",
+      "msg": "[meta] Optimize ignored surfaces fast skip",
+      "date": "2026-08-08T23:20:50Z"
     }
   ]
 }
