@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-09T09:30:09Z",
+  "triggered_at": "2026-08-09T10:23:21Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "09124eb",
-      "new": "1cb3a71",
-      "full": "1cb3a71c0540d2d2822a9e2a1d67781b7f4e9ff0",
-      "msg": "[WRAPPER] Fixed wrapping of g_initable_new (#4221)",
-      "date": "2026-08-09T08:37:33Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "fd141ed",
+      "new": "7966bfb",
+      "full": "7966bfb077c7690a98ac8f4403fabea935f479b4",
+      "msg": "Merge pull request #5816 from Sonicadvance1/199",
+      "date": "2026-08-09T10:19:59Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "bab34da",
+      "new": "2b66ae8",
+      "full": "2b66ae8a739733b09cfdf9b0e99be84c0c9041bd",
+      "msg": "Uprev ANGLE to be80ce591a481c12d60c50d6040d40c035b40a2b",
+      "date": "2026-08-09T00:06:52.000+00:00"
     }
   ]
 }
