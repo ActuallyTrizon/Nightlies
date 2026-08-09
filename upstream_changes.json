@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-09T18:26:38Z",
+  "triggered_at": "2026-08-09T23:21:56Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7966bfb",
-      "new": "430846d",
-      "full": "430846d7f2bb3200757fd2259003e72326878651",
-      "msg": "Merge pull request #5818 from OFFTKP/ffreep",
-      "date": "2026-08-09T17:46:43Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "c935e69",
+      "new": "3a4c6fa",
+      "full": "3a4c6fa3cb1548d56a90a38dd8f526b6c13e63fd",
+      "msg": "[d3d9] Don't test clip planes for pre-transformed vertices",
+      "date": "2026-08-09T23:12:30Z"
     }
   ]
 }
