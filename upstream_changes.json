@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-09T12:31:28Z",
+  "triggered_at": "2026-08-09T13:41:42Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "1cb3a71",
-      "new": "303bceb",
-      "full": "303bceba3fef2931918719ecb017156e7279cdb6",
-      "msg": "[WRAPPER] Added fake libmimalloc with some wrapping (for BeamNG Drive v0.39+)",
-      "date": "2026-08-09T12:22:52Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "2b66ae8",
-      "new": "f56d52b",
-      "full": "f56d52b26b2937b93a518e3346282e312cfb894f",
-      "msg": "anv: always ensure push constant is allocated for compute",
-      "date": "2026-08-09T11:03:00.000+00:00"
+      "old": "303bceb",
+      "new": "2595c1e",
+      "full": "2595c1e98f2d4c61257a2806b7beefedf7dc1a8b",
+      "msg": "[CI] This should fix ANDROID & TERMUX build",
+      "date": "2026-08-09T13:03:30Z"
     }
   ]
 }
