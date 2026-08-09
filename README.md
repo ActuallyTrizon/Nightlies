@@ -36,7 +36,7 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260809-010809](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260809-010809) |
+| **Release** | [🔗 nightly-20260809-083736](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260809-083736) |
 | **FEXCore** | [`fd141ed6d`](https://github.com/FEX-Emu/FEX/commit/fd141ed6d) — FEX-2608+14-Nightly-fd141ed6d |
 | **VKD3D-Proton (Std)** | [`84c87c83`](https://github.com/HansKristian-Work/vkd3d-proton/commit/84c87c83) |
 | **VKD3D-Proton (ARM64EC)** | [`84c87c83`](https://github.com/HansKristian-Work/vkd3d-proton/commit/84c87c83) |
@@ -44,10 +44,10 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK (ARM64EC)** | [`c935e691`](https://github.com/doitsujin/dxvk/commit/c935e691) |
 | **DXVK BinSem (GPLAsync)** | [`c935e691`](https://github.com/doitsujin/dxvk/commit/c935e691) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`c935e691`](https://github.com/doitsujin/dxvk/commit/c935e691) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
-| **D7VK (DDraw/D3D7)** | [`39257e69f`](https://github.com/WinterSnowfall/d7vk/commit/39257e69f) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
+| **D7VK (DDraw/D3D7)** | [`4c5987b2a`](https://github.com/WinterSnowfall/d7vk/commit/4c5987b2a) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
 | **Turnip** | [v26.3.0-20260809](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260809) — Turnip v26.3.0-20260809 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260809-010809) |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260809-083736) |
 <!-- NIGHTLY-LATEST-END -->
 
 ---
