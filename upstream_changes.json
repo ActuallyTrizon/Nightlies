@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-10T16:43:42Z",
+  "triggered_at": "2026-08-10T17:43:37Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "430846d",
+      "new": "f6d20a1",
+      "full": "f6d20a1a88f4f1b583857ee548cdfa2e54609271",
+      "msg": "Merge pull request #5819 from cjacek/clang-warnings",
+      "date": "2026-08-10T17:37:40Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "742af79",
-      "new": "34b78fb",
-      "full": "34b78fb26b9b1b3f52c81de538ebbad1c994b293",
-      "msg": "freedreno/a2xx: fix the window scissor losing a row and a column",
-      "date": "2026-08-10T16:00:55.000+00:00"
+      "old": "34b78fb",
+      "new": "9bbf48e",
+      "full": "9bbf48eed3cf5ec67d7cf44de9f4fb46e629bc27",
+      "msg": "mediafoundation: shut down the event queue.",
+      "date": "2026-08-10T16:50:40.000+00:00"
     }
   ]
 }
