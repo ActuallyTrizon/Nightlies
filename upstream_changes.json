@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-10T17:43:37Z",
+  "triggered_at": "2026-08-10T18:43:27Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "430846d",
-      "new": "f6d20a1",
-      "full": "f6d20a1a88f4f1b583857ee548cdfa2e54609271",
-      "msg": "Merge pull request #5819 from cjacek/clang-warnings",
-      "date": "2026-08-10T17:37:40Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "34b78fb",
-      "new": "9bbf48e",
-      "full": "9bbf48eed3cf5ec67d7cf44de9f4fb46e629bc27",
-      "msg": "mediafoundation: shut down the event queue.",
-      "date": "2026-08-10T16:50:40.000+00:00"
+      "old": "9bbf48e",
+      "new": "74d4e41",
+      "full": "74d4e41b2bb1e77ef4e022a6a1329d6cc782c4c6",
+      "msg": "tu: Use correct pointer for vis stream patchpoint cs fence",
+      "date": "2026-08-10T17:06:37.000+00:00"
     }
   ]
 }
