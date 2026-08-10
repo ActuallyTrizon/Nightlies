@@ -3499,6 +3499,24 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260804-r6-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260804-r6/Turnip-v26.3.0-20260804-r6-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260804-r6-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260804-r6/Turnip-v26.3.0-20260804-r6-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260804-r6",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260804-r6/Turnip-v26.3.0-20260804-r6.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "Turnip-v26.3.0-20260804-r5-710-720-Test",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260804-r5/Turnip-v26.3.0-20260804-r5-710-720-Test.zip"
@@ -3715,6 +3733,24 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260802-r2-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260802-r2/Turnip-v26.3.0-20260802-r2-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260802-r2-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260802-r2/Turnip-v26.3.0-20260802-r2-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260802-r2",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260802-r2/Turnip-v26.3.0-20260802-r2.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "Turnip-v26.3.0-20260802-710-720-Test",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260802/Turnip-v26.3.0-20260802-710-720-Test.zip"
@@ -3805,6 +3841,24 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260801-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260801/Turnip-v26.3.0-20260801-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260801-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260801/Turnip-v26.3.0-20260801-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260801",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260801/Turnip-v26.3.0-20260801.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "Turnip-v26.3.0-20260731-r12-710-720-Test",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260731-r12/Turnip-v26.3.0-20260731-r12-710-720-Test.zip"
@@ -3856,6 +3910,24 @@
     "verName": "Turnip-v26.3.0-20260731-r10",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260731-r10/Turnip-v26.3.0-20260731-r10.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260731-r9-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260731-r9/Turnip-v26.3.0-20260731-r9-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260731-r9-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260731-r9/Turnip-v26.3.0-20260731-r9-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260731-r9",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260731-r9/Turnip-v26.3.0-20260731-r9.zip"
   },
   {
     "type": "GpuDriver",
