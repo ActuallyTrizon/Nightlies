@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-10T09:08:21Z",
+  "triggered_at": "2026-08-10T10:58:58Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d6806f0",
-      "new": "0b9b632",
-      "full": "0b9b6322dea03c93f53f5d52cbc5f279138c2e22",
-      "msg": "[DYNAREC] Hard reset x87 state in EMMS (#4226)",
-      "date": "2026-08-10T08:29:16Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "84c87c8",
+      "new": "731c4aa",
+      "full": "731c4aae5991b33f2ddab45d3cb1b4779159bf4b",
+      "msg": "vkd3d: Convert buffer-image copies between block formats (#3202)",
+      "date": "2026-08-10T09:39:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8ede4cc",
-      "new": "5187897",
-      "full": "518789778c28e66add9c8685f63e92566c22ebc0",
-      "msg": "kk: Add Foundation framework to bridge",
-      "date": "2026-08-10T08:44:30.000+00:00"
+      "old": "5187897",
+      "new": "02af786",
+      "full": "02af7862247919f073139ba88cd0e4d35b84e876",
+      "msg": "r300: improve error printing in r500_fragprog_emit.c",
+      "date": "2026-08-10T10:31:25.000+00:00"
     }
   ]
 }
