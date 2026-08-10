@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-10T10:58:58Z",
+  "triggered_at": "2026-08-10T11:47:46Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "84c87c8",
-      "new": "731c4aa",
-      "full": "731c4aae5991b33f2ddab45d3cb1b4779159bf4b",
-      "msg": "vkd3d: Convert buffer-image copies between block formats (#3202)",
-      "date": "2026-08-10T09:39:43Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5187897",
-      "new": "02af786",
-      "full": "02af7862247919f073139ba88cd0e4d35b84e876",
-      "msg": "r300: improve error printing in r500_fragprog_emit.c",
-      "date": "2026-08-10T10:31:25.000+00:00"
+      "old": "02af786",
+      "new": "43c2df4",
+      "full": "43c2df4bca6b5d1d557a3c22cb466b07d61769b4",
+      "msg": "nir/algebraic: don't leak pattern conditions across passes",
+      "date": "2026-08-10T10:49:03.000+00:00"
     }
   ]
 }
