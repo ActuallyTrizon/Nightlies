@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-10T14:14:15Z",
+  "triggered_at": "2026-08-10T15:51:48Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fb6e1fb",
-      "new": "9b900ba",
-      "full": "9b900ba1b658ef1e6102b70975d480b4a1696598",
-      "msg": "radv/video: Use vk_video_get_h264_level",
-      "date": "2026-08-10T13:12:07.000+00:00"
+      "old": "9b900ba",
+      "new": "742af79",
+      "full": "742af792775f21e29e154a4e35b8c1a2e3103de4",
+      "msg": "radv/meta: fix resolving to 3D color images",
+      "date": "2026-08-10T15:11:46.000+00:00"
     }
   ]
 }
