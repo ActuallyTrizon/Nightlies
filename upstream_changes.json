@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-09T23:21:56Z",
+  "triggered_at": "2026-08-10T07:13:37Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "c935e69",
-      "new": "3a4c6fa",
-      "full": "3a4c6fa3cb1548d56a90a38dd8f526b6c13e63fd",
-      "msg": "[d3d9] Don't test clip planes for pre-transformed vertices",
-      "date": "2026-08-09T23:12:30Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2595c1e",
+      "new": "d6806f0",
+      "full": "d6806f0eccbb7b2214c4371a875dcd743f7fb79d",
+      "msg": "[WRAPPER] Fix missing parameter (#4223)",
+      "date": "2026-08-10T07:06:06Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "f56d52b",
+      "new": "8ede4cc",
+      "full": "8ede4ccb7300892dd004fb4cede8abb0823000f4",
+      "msg": "kk: Simplify memory budget calculations",
+      "date": "2026-08-10T06:49:14.000+00:00"
     }
   ]
 }
