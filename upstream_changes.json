@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-10T20:32:21Z",
+  "triggered_at": "2026-08-10T21:32:55Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f6d20a1",
+      "new": "adea3e4",
+      "full": "adea3e410f85c04628cf5d93eeda16a8e5ea47d3",
+      "msg": "Merge pull request #5793 from Sonicadvance1/193",
+      "date": "2026-08-10T21:24:37Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b587ce6",
-      "new": "e408d9a",
-      "full": "e408d9abd32d0f3f7621fd7cbcc018f635d24531",
-      "msg": "iris: Initialize source hash in program data",
-      "date": "2026-08-10T19:33:04.000+00:00"
+      "old": "e408d9a",
+      "new": "62585e8",
+      "full": "62585e8940a6ccb920e7b5bd8bc1235e6cabedc2",
+      "msg": "anv: Close shader dump archive on device destruction",
+      "date": "2026-08-10T20:45:54.000+00:00"
     }
   ]
 }
