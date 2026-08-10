@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-10T07:13:37Z",
+  "triggered_at": "2026-08-10T09:08:21Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "2595c1e",
-      "new": "d6806f0",
-      "full": "d6806f0eccbb7b2214c4371a875dcd743f7fb79d",
-      "msg": "[WRAPPER] Fix missing parameter (#4223)",
-      "date": "2026-08-10T07:06:06Z"
+      "old": "d6806f0",
+      "new": "0b9b632",
+      "full": "0b9b6322dea03c93f53f5d52cbc5f279138c2e22",
+      "msg": "[DYNAREC] Hard reset x87 state in EMMS (#4226)",
+      "date": "2026-08-10T08:29:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f56d52b",
-      "new": "8ede4cc",
-      "full": "8ede4ccb7300892dd004fb4cede8abb0823000f4",
-      "msg": "kk: Simplify memory budget calculations",
-      "date": "2026-08-10T06:49:14.000+00:00"
+      "old": "8ede4cc",
+      "new": "5187897",
+      "full": "518789778c28e66add9c8685f63e92566c22ebc0",
+      "msg": "kk: Add Foundation framework to bridge",
+      "date": "2026-08-10T08:44:30.000+00:00"
     }
   ]
 }
