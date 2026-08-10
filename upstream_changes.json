@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-10T18:43:27Z",
+  "triggered_at": "2026-08-10T19:48:11Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9bbf48e",
-      "new": "74d4e41",
-      "full": "74d4e41b2bb1e77ef4e022a6a1329d6cc782c4c6",
-      "msg": "tu: Use correct pointer for vis stream patchpoint cs fence",
-      "date": "2026-08-10T17:06:37.000+00:00"
+      "old": "74d4e41",
+      "new": "b587ce6",
+      "full": "b587ce63f66f0a6b5136bd5d27d6f793410629ad",
+      "msg": "brw: Respect execution mask when resetting GS control data",
+      "date": "2026-08-10T19:11:35.000+00:00"
     }
   ]
 }
