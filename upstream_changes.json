@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-10T19:48:11Z",
+  "triggered_at": "2026-08-10T20:32:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "74d4e41",
-      "new": "b587ce6",
-      "full": "b587ce63f66f0a6b5136bd5d27d6f793410629ad",
-      "msg": "brw: Respect execution mask when resetting GS control data",
-      "date": "2026-08-10T19:11:35.000+00:00"
+      "old": "b587ce6",
+      "new": "e408d9a",
+      "full": "e408d9abd32d0f3f7621fd7cbcc018f635d24531",
+      "msg": "iris: Initialize source hash in program data",
+      "date": "2026-08-10T19:33:04.000+00:00"
     }
   ]
 }
