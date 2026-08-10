@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-10T11:47:46Z",
+  "triggered_at": "2026-08-10T12:47:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "02af786",
-      "new": "43c2df4",
-      "full": "43c2df4bca6b5d1d557a3c22cb466b07d61769b4",
-      "msg": "nir/algebraic: don't leak pattern conditions across passes",
-      "date": "2026-08-10T10:49:03.000+00:00"
+      "old": "43c2df4",
+      "new": "fb6e1fb",
+      "full": "fb6e1fbce19fec4755c8f1710a1b60d096ee68ca",
+      "msg": "nak: Add a test for IMNMX in nvdisasm_tests",
+      "date": "2026-08-10T12:21:59.000+00:00"
     }
   ]
 }
