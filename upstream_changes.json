@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-11T16:48:29Z",
+  "triggered_at": "2026-08-11T17:50:45Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "c3f61b1",
+      "new": "238f157",
+      "full": "238f157e1d64f90e0d90593557c092ab8af6e0a3",
+      "msg": "vkd3d: Rethink how we do barriers for COPY <-> RESOURCE.",
+      "date": "2026-08-11T17:17:33Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64dbbfe",
-      "new": "b061696",
-      "full": "b0616965331138387d63402f1d17f4ecc5245511",
-      "msg": "kk: Fix disable of workaround 8",
-      "date": "2026-08-11T16:13:05.000+00:00"
+      "old": "b061696",
+      "new": "56f473c",
+      "full": "56f473cc63e86c74e815c5f44e3cdc7ddd6d665f",
+      "msg": "freedreno/a2xx: read gl_FragCoord from the component asked for",
+      "date": "2026-08-11T17:11:41.000+00:00"
     }
   ]
 }
