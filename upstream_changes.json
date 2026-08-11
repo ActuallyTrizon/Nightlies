@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-11T15:51:49Z",
+  "triggered_at": "2026-08-11T16:48:29Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3601698",
-      "new": "9f3671b",
-      "full": "9f3671b8eccf9222e484bf22620222417c922af9",
-      "msg": "[LA64_DYNAREC] Split la64_00.c to speedup compilation (#4230)",
-      "date": "2026-08-11T15:41:18Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "94073fb",
-      "new": "64dbbfe",
-      "full": "64dbbfe03429ee4e3b80e3d88ef8000084d15ff8",
-      "msg": "radv: run nir_opt_dead_cf before nir_vk_lower_ycbcr_tex",
-      "date": "2026-08-11T14:52:40.000+00:00"
+      "old": "64dbbfe",
+      "new": "b061696",
+      "full": "b0616965331138387d63402f1d17f4ecc5245511",
+      "msg": "kk: Fix disable of workaround 8",
+      "date": "2026-08-11T16:13:05.000+00:00"
     }
   ]
 }
