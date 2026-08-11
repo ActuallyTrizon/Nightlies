@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-08-11T10:42:13Z",
+  "triggered_at": "2026-08-11T11:37:24Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "83a9d67",
+      "new": "3601698",
+      "full": "3601698aa737da4206332963aebe45d2b11520dc",
+      "msg": "[DYNAREC] Removed the gdb backtrace feature for trace build (#4229)",
+      "date": "2026-08-11T11:11:31Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "731c4aa",
+      "new": "c3f61b1",
+      "full": "c3f61b18b0dd8a16bfeaee8a16d7850912024697",
+      "msg": "tests: Add VVL mute descriptor heap alignment violation",
+      "date": "2026-08-11T11:14:40Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "28285e6",
-      "new": "811ebbd",
-      "full": "811ebbd43c24ead247c19a792eae55b4a3162d21",
-      "msg": "pco, pvr: add support for VK_EXT_inline_uniform_block",
-      "date": "2026-08-11T09:43:01.000+00:00"
+      "old": "811ebbd",
+      "new": "4e66d3c",
+      "full": "4e66d3ca29458c0c749c199255e348b09e81c514",
+      "msg": "broadcom/compiler: handle 16-bit fsat",
+      "date": "2026-08-11T11:00:18.000+00:00"
     }
   ]
 }
