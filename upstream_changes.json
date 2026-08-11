@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-11T12:43:18Z",
+  "triggered_at": "2026-08-11T14:13:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4e66d3c",
-      "new": "c95c270",
-      "full": "c95c27078e54cd1334cb150d9c4591c0dcdc6a36",
-      "msg": "st/mesa: Only drop ARB_depth_buffer_float on desktop GL",
-      "date": "2026-08-11T11:59:27.000+00:00"
+      "old": "c95c270",
+      "new": "94073fb",
+      "full": "94073fb459293cebe10c4e74ee28e7d2879cc917",
+      "msg": "pan/genxml/v14: Clean up format list",
+      "date": "2026-08-11T13:35:23.000+00:00"
     }
   ]
 }
