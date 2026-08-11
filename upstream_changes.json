@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-11T18:49:20Z",
+  "triggered_at": "2026-08-11T19:55:19Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "9f3671b",
-      "new": "80e10e6",
-      "full": "80e10e696a03b92220ee75cf490666a9b2cfdb84",
-      "msg": "[RV64_DYNAREC] Disable flags fusion for all the shift/rotate on CL opcodes (#423",
-      "date": "2026-08-11T18:47:45Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "56f473c",
-      "new": "58f6bc5",
-      "full": "58f6bc5eab77cd818d0a0e20d32c6859b67ed174",
-      "msg": "anv: remove all code related to INTEL_performance_query not using metrics_librar",
-      "date": "2026-08-11T18:17:19.000+00:00"
+      "old": "58f6bc5",
+      "new": "fdaeb5a",
+      "full": "fdaeb5a757599841ec9c95a548f8849066bd2fc3",
+      "msg": "etnaviv: reorder state emission to optimize loads",
+      "date": "2026-08-11T18:39:47.000+00:00"
     }
   ]
 }
