@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-11T22:32:47Z",
+  "triggered_at": "2026-08-11T23:30:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "76e9e97",
-      "new": "aa6f912",
-      "full": "aa6f9121f0fb76446f1fb48cb9284380a64f9686",
-      "msg": "anv: let's not crash everywhere",
-      "date": "2026-08-11T22:01:26.000+00:00"
+      "old": "aa6f912",
+      "new": "064cbe8",
+      "full": "064cbe8aabe117766b59fc7bf4745598c75bbf90",
+      "msg": "freedreno/a2xx: let nir lower fsign",
+      "date": "2026-08-11T22:52:40.000+00:00"
     }
   ]
 }
