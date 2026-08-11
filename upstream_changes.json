@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-10T22:27:19Z",
+  "triggered_at": "2026-08-11T01:03:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "62585e8",
-      "new": "fc8b192",
-      "full": "fc8b1928cbc21099d1428299bf7d0c86da9f7b65",
-      "msg": "intel/compiler: Don't vectorize URB access to vec8 in SIMD32",
-      "date": "2026-08-10T21:24:54.000+00:00"
+      "old": "fc8b192",
+      "new": "1b2e70d",
+      "full": "1b2e70de00f68f8cf32dca8cd1a64fba9b6410a8",
+      "msg": "nak: improve implementation of global_bounded",
+      "date": "2026-08-10T23:15:02.000+00:00"
     }
   ]
 }
