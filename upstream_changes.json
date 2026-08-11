@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-11T17:50:45Z",
+  "triggered_at": "2026-08-11T18:49:20Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c3f61b1",
-      "new": "238f157",
-      "full": "238f157e1d64f90e0d90593557c092ab8af6e0a3",
-      "msg": "vkd3d: Rethink how we do barriers for COPY <-> RESOURCE.",
-      "date": "2026-08-11T17:17:33Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9f3671b",
+      "new": "80e10e6",
+      "full": "80e10e696a03b92220ee75cf490666a9b2cfdb84",
+      "msg": "[RV64_DYNAREC] Disable flags fusion for all the shift/rotate on CL opcodes (#423",
+      "date": "2026-08-11T18:47:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b061696",
-      "new": "56f473c",
-      "full": "56f473cc63e86c74e815c5f44e3cdc7ddd6d665f",
-      "msg": "freedreno/a2xx: read gl_FragCoord from the component asked for",
-      "date": "2026-08-11T17:11:41.000+00:00"
+      "old": "56f473c",
+      "new": "58f6bc5",
+      "full": "58f6bc5eab77cd818d0a0e20d32c6859b67ed174",
+      "msg": "anv: remove all code related to INTEL_performance_query not using metrics_librar",
+      "date": "2026-08-11T18:17:19.000+00:00"
     }
   ]
 }
