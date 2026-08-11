@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-08-11T11:37:24Z",
+  "triggered_at": "2026-08-11T12:43:18Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "83a9d67",
-      "new": "3601698",
-      "full": "3601698aa737da4206332963aebe45d2b11520dc",
-      "msg": "[DYNAREC] Removed the gdb backtrace feature for trace build (#4229)",
-      "date": "2026-08-11T11:11:31Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "731c4aa",
-      "new": "c3f61b1",
-      "full": "c3f61b18b0dd8a16bfeaee8a16d7850912024697",
-      "msg": "tests: Add VVL mute descriptor heap alignment violation",
-      "date": "2026-08-11T11:14:40Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "811ebbd",
-      "new": "4e66d3c",
-      "full": "4e66d3ca29458c0c749c199255e348b09e81c514",
-      "msg": "broadcom/compiler: handle 16-bit fsat",
-      "date": "2026-08-11T11:00:18.000+00:00"
+      "old": "4e66d3c",
+      "new": "c95c270",
+      "full": "c95c27078e54cd1334cb150d9c4591c0dcdc6a36",
+      "msg": "st/mesa: Only drop ARB_depth_buffer_float on desktop GL",
+      "date": "2026-08-11T11:59:27.000+00:00"
     }
   ]
 }
