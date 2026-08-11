@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-11T19:55:19Z",
+  "triggered_at": "2026-08-11T20:35:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "58f6bc5",
-      "new": "fdaeb5a",
-      "full": "fdaeb5a757599841ec9c95a548f8849066bd2fc3",
-      "msg": "etnaviv: reorder state emission to optimize loads",
-      "date": "2026-08-11T18:39:47.000+00:00"
+      "old": "fdaeb5a",
+      "new": "47bc087",
+      "full": "47bc0871f64477bf2d013bfab1c0774a221ef5cf",
+      "msg": "freedreno/ci: Switch a200 to gfx-ci/linux kernel",
+      "date": "2026-08-11T19:20:51.000+00:00"
     }
   ]
 }
