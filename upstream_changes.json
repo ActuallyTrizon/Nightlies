@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-12T10:52:59Z",
+  "triggered_at": "2026-08-12T11:39:23Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5b32594",
-      "new": "d74598a",
-      "full": "d74598aaa8e1a602423a4a23ed08843d34bd47c1",
-      "msg": "Revert \"[LA64_DYNAREC] Speed up crc validation (#4178)\" (#4233)",
-      "date": "2026-08-12T10:19:01Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c4ebcd",
-      "new": "6b80f6d",
-      "full": "6b80f6da762ce8d69a85bf4912ccac82f678afe3",
-      "msg": "anv/video: Enable KHR_video_encode_av1 on Gen125",
-      "date": "2026-08-12T10:16:36.000+00:00"
+      "old": "6b80f6d",
+      "new": "724bffd",
+      "full": "724bffde435bd1055a07db34cd8252d809d37a4f",
+      "msg": "radv/ci: use all drm-shim devices in radv-validate-cache",
+      "date": "2026-08-12T10:50:02.000+00:00"
     }
   ]
 }
