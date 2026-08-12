@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-12T09:02:40Z",
+  "triggered_at": "2026-08-12T10:52:59Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "80e10e6",
-      "new": "5b32594",
-      "full": "5b3259491bced5ccb95d6f830bb2f930b0ce8912",
-      "msg": "[NON4K] Fixed wine prefix creation (#4232)",
-      "date": "2026-08-12T07:41:35Z"
+      "old": "5b32594",
+      "new": "d74598a",
+      "full": "d74598aaa8e1a602423a4a23ed08843d34bd47c1",
+      "msg": "Revert \"[LA64_DYNAREC] Speed up crc validation (#4178)\" (#4233)",
+      "date": "2026-08-12T10:19:01Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "faf1cd2",
-      "new": "2c4ebcd",
-      "full": "2c4ebcdef8ebf72a6296d62b7c04b63f0469bb18",
-      "msg": "nir/opt_cse: CSE subgroup ops per block",
-      "date": "2026-08-12T08:08:23.000+00:00"
+      "old": "2c4ebcd",
+      "new": "6b80f6d",
+      "full": "6b80f6da762ce8d69a85bf4912ccac82f678afe3",
+      "msg": "anv/video: Enable KHR_video_encode_av1 on Gen125",
+      "date": "2026-08-12T10:16:36.000+00:00"
     }
   ]
 }
