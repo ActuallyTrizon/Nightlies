@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-12T01:10:42Z",
+  "triggered_at": "2026-08-12T03:56:34Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "064cbe8",
-      "new": "eb03131",
-      "full": "eb03131ca07be8a8f4abd09fcae66686007afd13",
-      "msg": "brw/rt: Accept hit directly based on condition",
-      "date": "2026-08-11T23:33:29.000+00:00"
+      "old": "eb03131",
+      "new": "b7314ee",
+      "full": "b7314eec75b007efd0569cbd1df046e6da3b6e90",
+      "msg": "kk: Move kk_buffer Metal members into its own struct",
+      "date": "2026-08-12T03:22:29.000+00:00"
     }
   ]
 }
