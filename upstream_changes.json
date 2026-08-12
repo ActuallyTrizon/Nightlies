@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-12T19:56:33Z",
+  "triggered_at": "2026-08-12T20:37:01Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "4c5987b",
-      "new": "73aac98",
-      "full": "73aac98c978c4f0e6115c7790b8eec18947a9b31",
-      "msg": "[d3d6/5/3] Move viewport light helpers to the common object",
-      "date": "2026-08-12T19:03:41Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "e651fb7",
+      "new": "e2c33e7",
+      "full": "e2c33e79025d7bc2eb6cdce21353cee71bb63491",
+      "msg": "pvr: fix sampler handle dereference with immutable samplers",
+      "date": "2026-08-12T20:02:01.000+00:00"
     }
   ]
 }
