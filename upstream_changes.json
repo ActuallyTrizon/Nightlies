@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-12T11:39:23Z",
+  "triggered_at": "2026-08-12T12:47:27Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d74598a",
+      "new": "554b840",
+      "full": "554b84068b1d2a24f6a8ad6cedbc71160f42037a",
+      "msg": "[MEM] Fixed a typo in box_mmap (#4235)",
+      "date": "2026-08-12T11:43:17Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6b80f6d",
-      "new": "724bffd",
-      "full": "724bffde435bd1055a07db34cd8252d809d37a4f",
-      "msg": "radv/ci: use all drm-shim devices in radv-validate-cache",
-      "date": "2026-08-12T10:50:02.000+00:00"
+      "old": "724bffd",
+      "new": "4e171a2",
+      "full": "4e171a2330deb370bbf2c3afc1887727b9e06cbd",
+      "msg": "tu: Simplify query pool resets",
+      "date": "2026-08-12T12:09:40.000+00:00"
     }
   ]
 }
