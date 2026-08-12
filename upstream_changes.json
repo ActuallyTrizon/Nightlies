@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-12T14:15:02Z",
+  "triggered_at": "2026-08-12T15:51:24Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "554b840",
-      "new": "3c6704a",
-      "full": "3c6704a9098f87a87f28689844ad2a537c893f08",
-      "msg": "Fix some UAF errors report in #4214 (#4228)",
-      "date": "2026-08-12T13:31:49Z"
+      "old": "3c6704a",
+      "new": "fb73285",
+      "full": "fb73285312a807bcb3e2816c0ea09aced28eb9f0",
+      "msg": "[RV64_DYNAREC] Fixed some rotate opcodes (#4238)",
+      "date": "2026-08-12T15:48:40Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4e171a2",
-      "new": "61f62f5",
-      "full": "61f62f590d026f80d22976371719ff8bb7d9e66c",
-      "msg": "gfxstream: default unknown AHB dataspace to BT.709 (sRGB)",
-      "date": "2026-08-12T13:47:09.000+00:00"
+      "old": "61f62f5",
+      "new": "5ece56a",
+      "full": "5ece56a815c9fc341ec92add086eeec1b2d358e9",
+      "msg": "tu: Fix condition for implicit dep of separate DS resolve",
+      "date": "2026-08-12T15:21:18.000+00:00"
     }
   ]
 }
