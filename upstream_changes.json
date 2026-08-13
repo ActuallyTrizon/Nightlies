@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T16:46:02Z",
+  "triggered_at": "2026-08-13T17:50:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6f34944",
-      "new": "2c90739",
-      "full": "2c9073912232b93eb9b60486edbd72d53e5f3d26",
-      "msg": "radv: Prefer STRUCTURED OOB over STRUCTURED_OFFSET for texel buffers.",
-      "date": "2026-08-13T15:26:32.000+00:00"
+      "old": "2c90739",
+      "new": "d4e515d",
+      "full": "d4e515de85a0637a6b272246d5b4ce8ff8f33443",
+      "msg": "Revert \"freedreno: Don't re-bind global buffers\"",
+      "date": "2026-08-13T17:24:59.000+00:00"
     }
   ]
 }
