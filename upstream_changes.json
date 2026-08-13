@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-13T15:50:57Z",
+  "triggered_at": "2026-08-13T16:46:02Z",
   "changed": [
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "3ba66cb",
-      "new": "0b4a6a1",
-      "full": "0b4a6a16986c659dafab566d8886887a41a52835",
-      "msg": "[d3d6/5/3] Refactor viewport helpers",
-      "date": "2026-08-13T15:08:49Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b3fba9b",
-      "new": "6f34944",
-      "full": "6f34944c756c72ecc64cfede1670d4f3aae44857",
-      "msg": "radeonsi/test: update navi10 failures",
-      "date": "2026-08-13T14:43:44.000+00:00"
+      "old": "6f34944",
+      "new": "2c90739",
+      "full": "2c9073912232b93eb9b60486edbd72d53e5f3d26",
+      "msg": "radv: Prefer STRUCTURED OOB over STRUCTURED_OFFSET for texel buffers.",
+      "date": "2026-08-13T15:26:32.000+00:00"
     }
   ]
 }
