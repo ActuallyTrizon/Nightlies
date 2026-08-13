@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-13T19:51:26Z",
+  "triggered_at": "2026-08-13T20:32:16Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8ed77f3",
-      "new": "750a877",
-      "full": "750a8775b9db373391d5e08dce25c230d12d96fe",
-      "msg": "[RV64_DYNAREC] Fixed more flags emulation issues (#4243)",
-      "date": "2026-08-13T19:10:46Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2b7a724",
-      "new": "899bfd8",
-      "full": "899bfd8e713122dde4dcfdd03e7651e2a232508a",
-      "msg": "gfxstream/guest: let the Vulkan driver link on Mach-O",
-      "date": "2026-08-13T19:05:51.000+00:00"
+      "old": "899bfd8",
+      "new": "00a4c00",
+      "full": "00a4c003792ae069217bed9b49ffd089afaa69b7",
+      "msg": "panfrost: Add CPU trace to panfrost_blitter_draw_rectangle()",
+      "date": "2026-08-13T20:03:28.000+00:00"
     }
   ]
 }
