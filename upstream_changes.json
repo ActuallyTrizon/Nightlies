@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-13T14:16:52Z",
+  "triggered_at": "2026-08-13T15:50:57Z",
   "changed": [
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "3ba66cb",
+      "new": "0b4a6a1",
+      "full": "0b4a6a16986c659dafab566d8886887a41a52835",
+      "msg": "[d3d6/5/3] Refactor viewport helpers",
+      "date": "2026-08-13T15:08:49Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "885b390",
-      "new": "b3fba9b",
-      "full": "b3fba9b4e64e093f6cfbf39fb3fd4ef55e8dc3e3",
-      "msg": "brw: handle load_ubo through memory_access on lsc platforms",
-      "date": "2026-08-13T13:32:30.000+00:00"
+      "old": "b3fba9b",
+      "new": "6f34944",
+      "full": "6f34944c756c72ecc64cfede1670d4f3aae44857",
+      "msg": "radeonsi/test: update navi10 failures",
+      "date": "2026-08-13T14:43:44.000+00:00"
     }
   ]
 }
