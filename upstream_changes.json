@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-13T06:09:49Z",
+  "triggered_at": "2026-08-13T08:12:03Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7075377",
-      "new": "71afe47",
-      "full": "71afe476751deac24adabd1adb575fd2337b6e0a",
-      "msg": "Merge pull request #5821 from Sonicadvance1/200",
-      "date": "2026-08-13T05:47:56Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c3105f2",
-      "new": "b342710",
-      "full": "b342710032c8b422ae05ae6de31031d7637f9288",
-      "msg": "kk: Don't split compute encoders when possible to add a marker",
-      "date": "2026-08-13T05:54:30.000+00:00"
+      "old": "b342710",
+      "new": "f640713",
+      "full": "f640713b89e37ca939f3941ceb31b7af283fefc5",
+      "msg": "radv/amdgpu: prevent a rare issue when setting pstate",
+      "date": "2026-08-13T07:08:03.000+00:00"
     }
   ]
 }
