@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T08:12:03Z",
+  "triggered_at": "2026-08-13T09:54:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b342710",
-      "new": "f640713",
-      "full": "f640713b89e37ca939f3941ceb31b7af283fefc5",
-      "msg": "radv/amdgpu: prevent a rare issue when setting pstate",
-      "date": "2026-08-13T07:08:03.000+00:00"
+      "old": "f640713",
+      "new": "15fd588",
+      "full": "15fd588bae91a937a96ed3af6432ccf9ee6e891a",
+      "msg": "radv: fix cmdbuf alignment with DGC when queues aren't enabled",
+      "date": "2026-08-13T07:52:49.000+00:00"
     }
   ]
 }
