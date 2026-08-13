@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T17:50:47Z",
+  "triggered_at": "2026-08-13T18:51:08Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c90739",
-      "new": "d4e515d",
-      "full": "d4e515de85a0637a6b272246d5b4ce8ff8f33443",
-      "msg": "Revert \"freedreno: Don't re-bind global buffers\"",
-      "date": "2026-08-13T17:24:59.000+00:00"
+      "old": "d4e515d",
+      "new": "2b7a724",
+      "full": "2b7a72457a55b80e02700debdbc11037db7201e2",
+      "msg": "anv: Add missing ANV_BO_ALLOC_INTERNAL flags",
+      "date": "2026-08-13T17:47:21.000+00:00"
     }
   ]
 }
