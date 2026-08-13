@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-13T01:12:32Z",
+  "triggered_at": "2026-08-13T04:01:33Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "f386c62",
-      "new": "7075377",
-      "full": "7075377a6398ffd874427fda23cdb413a25a58b0",
-      "msg": "Merge pull request #5822 from Sonicadvance1/201",
-      "date": "2026-08-13T00:13:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "175e1f3",
-      "new": "ac021d1",
-      "full": "ac021d175341483cd267111d5cc160a4a8fa7c16",
-      "msg": "subprojects: Use CDN URLs for crates.io",
-      "date": "2026-08-13T00:03:40.000+00:00"
+      "old": "ac021d1",
+      "new": "c3105f2",
+      "full": "c3105f2cf210deb2f6df71d5ff7b7241991c2359",
+      "msg": "panfrost: allow explicit layout for array images",
+      "date": "2026-08-13T03:03:57.000+00:00"
     }
   ]
 }
