@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T20:32:16Z",
+  "triggered_at": "2026-08-13T21:35:43Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "899bfd8",
-      "new": "00a4c00",
-      "full": "00a4c003792ae069217bed9b49ffd089afaa69b7",
-      "msg": "panfrost: Add CPU trace to panfrost_blitter_draw_rectangle()",
-      "date": "2026-08-13T20:03:28.000+00:00"
+      "old": "00a4c00",
+      "new": "8613a71",
+      "full": "8613a718f2ae2d17ecab84eef8868e997b4d4d73",
+      "msg": "dri-sw: Use size and offset from whandle in create_mapped()",
+      "date": "2026-08-13T20:59:10.000+00:00"
     }
   ]
 }
