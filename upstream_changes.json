@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T22:31:45Z",
+  "triggered_at": "2026-08-13T23:32:06Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "71afe47",
-      "new": "f3ab82a",
-      "full": "f3ab82a73fb48271ee12a882c98bc5d823a2b4d1",
-      "msg": "Merge pull request #5823 from Sonicadvance1/202",
-      "date": "2026-08-13T22:15:59Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "8613a71",
+      "new": "944ef80",
+      "full": "944ef80b85da5a98ca92b2f9a616151cc562de0c",
+      "msg": "anv: Require dedicated allocation query on scanout images from WSI",
+      "date": "2026-08-13T22:37:21.000+00:00"
     }
   ]
 }
