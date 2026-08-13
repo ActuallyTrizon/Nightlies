@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-12T23:31:26Z",
+  "triggered_at": "2026-08-13T01:12:32Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "b61157a",
-      "new": "3ba66cb",
-      "full": "3ba66cb3e2f4ec06b2fef5ff8b09635b549ad231",
-      "msg": "[d3d6/5/3] Move viewport light helpers to the common object",
-      "date": "2026-08-12T22:48:56Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f386c62",
+      "new": "7075377",
+      "full": "7075377a6398ffd874427fda23cdb413a25a58b0",
+      "msg": "Merge pull request #5822 from Sonicadvance1/201",
+      "date": "2026-08-13T00:13:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "769b2d6",
-      "new": "175e1f3",
-      "full": "175e1f3cf5347c8a9a104dfcd64d32d7583642b2",
-      "msg": "nir: Set info->fs.color_is_dual_source for DUAL_SRC_BLEND var locations",
-      "date": "2026-08-12T22:21:53.000+00:00"
+      "old": "175e1f3",
+      "new": "ac021d1",
+      "full": "ac021d175341483cd267111d5cc160a4a8fa7c16",
+      "msg": "subprojects: Use CDN URLs for crates.io",
+      "date": "2026-08-13T00:03:40.000+00:00"
     }
   ]
 }
