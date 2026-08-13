@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T09:54:16Z",
+  "triggered_at": "2026-08-13T10:54:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f640713",
-      "new": "15fd588",
-      "full": "15fd588bae91a937a96ed3af6432ccf9ee6e891a",
-      "msg": "radv: fix cmdbuf alignment with DGC when queues aren't enabled",
-      "date": "2026-08-13T07:52:49.000+00:00"
+      "old": "15fd588",
+      "new": "771ade1",
+      "full": "771ade18e3f5068e59a523d7a5538b0160acb750",
+      "msg": "anv: flush L1/L2 caches on end of command buffer",
+      "date": "2026-08-13T10:14:05.000+00:00"
     }
   ]
 }
