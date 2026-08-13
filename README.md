@@ -27,11 +27,25 @@ A single JSON index of every component published here — point any compatible W
 
 ---
 
-## 🌙 Latest Nightly Releases
+## 📦 Releases — Stable & Nightly
 
-> ⚠️ Nightly builds are not always stable. Use at your own risk.
+> 🟢 **Stable** — curated archives of versioned `.wcp` builds on **fixed, never-changing tags** (the hourly nightlies otherwise bury these on the back pages of [Releases](https://github.com/The412Banner/Nightlies/releases)).
+> 🌙 **Nightly** — freshest upstream commit, auto-built hourly with a full daily build at **03:30 AM EST / 08:30 AM UTC**. *Not always stable — use at your own risk.* Every component ships together in the rolling [`nightly-latest`](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) release.
 
-### 📦 All-in-One Emulation Nightly (Box64 · FEX · VKD3D-Proton · DXVK)
+| Component | 🟢 Stable Archive | 🌙 Nightly |
+| :--- | :--- | :---: |
+| **DXVK (GPLAsync)** | [Standard](https://github.com/The412Banner/Nightlies/releases/tag/Dxvk-gplasync) · [ARM64EC](https://github.com/The412Banner/Nightlies/releases/tag/Dxvk-gplasync-arm64ec) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **DXVK (BinSem · GPLAsync)** | [Standard](https://github.com/The412Banner/Nightlies/releases/tag/Dxvk-binsem-gplasync) · [ARM64EC](https://github.com/The412Banner/Nightlies/releases/tag/Dxvk-binsem-gplasync-arm64ec) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **DXVK-Sarek** *(older GPUs / GL fallback)* | [Sarek](https://github.com/The412Banner/Nightlies/releases/tag/DXVK-SAREK) · [Async](https://github.com/The412Banner/Nightlies/releases/tag/DXVK-SAREK-ASYNC) · [Async ARM64EC](https://github.com/The412Banner/Nightlies/releases/tag/DXVK-SAREK-ASYNC-ARM64EC) | — |
+| **VKD3D-Proton (D3D12)** | [Standard](https://github.com/The412Banner/Nightlies/releases/tag/Vkd3d-proton) · [ARM64EC](https://github.com/The412Banner/Nightlies/releases/tag/VKD3D-PROTON-ARM) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **D7VK (DDraw/D3D7)** | — | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **Box64** | [glibc](https://github.com/The412Banner/Nightlies/releases/tag/Box64) · [Bionic](https://github.com/The412Banner/Nightlies/releases/tag/Box64-Bionic) · [Hybrid](https://github.com/The412Banner/Nightlies/releases/tag/Box64-Hybrid) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **WOWBox64** | [Archive](https://github.com/The412Banner/Nightlies/releases/tag/Wowbox64) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **FEXCore** | [Archive](https://github.com/The412Banner/Nightlies/releases/tag/FexCore) · [PPA-flavor](https://github.com/The412Banner/Nightlies/releases/tag/fexcore-ppa-FEX-2608-e869aa644) | [Latest](https://github.com/The412Banner/Nightlies/releases/tag/nightly-latest) |
+| **Proton / Wine** | [Proton 11](https://github.com/The412Banner/Nightlies/releases/tag/Proton-11) · [Prefix pack (P10-4)](https://github.com/The412Banner/Nightlies/releases/tag/P10-4-prefixpack) | — |
+
+<details>
+<summary>🔧 <b>Exact nightly commits / versions</b> (current all-in-one build)</summary>
 
 <!-- NIGHTLY-LATEST-START -->
 | | |
@@ -49,6 +63,18 @@ A single JSON index of every component published here — point any compatible W
 | **Turnip** | [v26.3.0-20260813-r4](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260813-r4) — Turnip v26.3.0-20260813-r4 |
 | **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260813-110216) |
 <!-- NIGHTLY-LATEST-END -->
+
+</details>
+
+<details>
+<summary>📁 <b>Other permanent releases</b> (Steam, driver mirrors, backups)</summary>
+<br>
+<ul>
+  <li><b>Steam:</b> <a href="https://github.com/The412Banner/Nightlies/releases/tag/Steam-clients">Steam-clients</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/Steam-agent">Steam-agent</a></li>
+  <li><b>Driver mirrors:</b> <a href="https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers">StevenMXZ</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/white-drivers">whitebelyash</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/mtr-drivers">Mr. Purple</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/kimchi-drivers">Kimchi</a></li>
+  <li><b>Misc:</b> <a href="https://github.com/The412Banner/Nightlies/releases/tag/Personal-packs">Personal-packs</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/Backup-Winlator-Builds">Backup Winlator builds</a> · <a href="https://github.com/The412Banner/Nightlies/releases/tag/Star-compose-test">Star-compose test</a></li>
+</ul>
+</details>
 
 ---
 
