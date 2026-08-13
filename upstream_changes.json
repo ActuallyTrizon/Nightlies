@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-13T04:01:33Z",
+  "triggered_at": "2026-08-13T06:09:49Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "7075377",
+      "new": "71afe47",
+      "full": "71afe476751deac24adabd1adb575fd2337b6e0a",
+      "msg": "Merge pull request #5821 from Sonicadvance1/200",
+      "date": "2026-08-13T05:47:56Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ac021d1",
-      "new": "c3105f2",
-      "full": "c3105f2cf210deb2f6df71d5ff7b7241991c2359",
-      "msg": "panfrost: allow explicit layout for array images",
-      "date": "2026-08-13T03:03:57.000+00:00"
+      "old": "c3105f2",
+      "new": "b342710",
+      "full": "b342710032c8b422ae05ae6de31031d7637f9288",
+      "msg": "kk: Don't split compute encoders when possible to add a marker",
+      "date": "2026-08-13T05:54:30.000+00:00"
     }
   ]
 }
