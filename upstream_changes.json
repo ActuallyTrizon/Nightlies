@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-13T10:54:21Z",
+  "triggered_at": "2026-08-13T12:49:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "15fd588",
-      "new": "771ade1",
-      "full": "771ade18e3f5068e59a523d7a5538b0160acb750",
-      "msg": "anv: flush L1/L2 caches on end of command buffer",
-      "date": "2026-08-13T10:14:05.000+00:00"
+      "old": "771ade1",
+      "new": "885b390",
+      "full": "885b39075fc18c8a1ae075395912819f7f74fc39",
+      "msg": "radv: add radv_cmd_buffer_end_rendering()",
+      "date": "2026-08-13T12:07:17.000+00:00"
     }
   ]
 }
