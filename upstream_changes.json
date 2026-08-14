@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-14T11:37:35Z",
+  "triggered_at": "2026-08-14T12:43:49Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ceea146",
-      "new": "3a2f172",
-      "full": "3a2f1727c30170f849ae779ccad7c684eb7c2e65",
-      "msg": "[WRAPPER] Fixed g_child_watch_add_full wrapping (#4244)",
-      "date": "2026-08-14T10:43:04Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "3d9b44b",
+      "new": "68d0970",
+      "full": "68d09709af69cbed54584407d03c69186ce800e4",
+      "msg": "[meta] Slightly optimize surface upload helpers",
+      "date": "2026-08-14T12:15:11Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "82bab1c",
-      "new": "4566d5c",
-      "full": "4566d5ceef26132710b8db4330634aa847801235",
-      "msg": "aco/tests: test cndmask condition invert",
-      "date": "2026-08-14T10:16:42.000+00:00"
+      "old": "4566d5c",
+      "new": "f97037d",
+      "full": "f97037d764fe7089cd0845f9814e013b76bb8b33",
+      "msg": "tu/ci: Skip more broken direct_drm tests on a702",
+      "date": "2026-08-14T11:31:33.000+00:00"
     }
   ]
 }
