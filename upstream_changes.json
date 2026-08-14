@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-14T03:57:28Z",
+  "triggered_at": "2026-08-14T07:11:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2cd04a5",
-      "new": "72c8f5c",
-      "full": "72c8f5c89b3849b2b4444ebc53dd3b84ac70c2e2",
-      "msg": "meson: Drop version check for GCC < 4.4.6",
-      "date": "2026-08-14T02:54:01.000+00:00"
+      "old": "72c8f5c",
+      "new": "d67b04a",
+      "full": "d67b04a356d5191424136b3140d370d453e09886",
+      "msg": "radv/ci: skip two more tests that use custom border color on compute",
+      "date": "2026-08-14T06:18:29.000+00:00"
     }
   ]
 }
