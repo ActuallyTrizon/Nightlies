@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-14T14:09:25Z",
+  "triggered_at": "2026-08-14T15:42:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f97037d",
-      "new": "8cafe2c",
-      "full": "8cafe2c1a7db42c2972eb44e83becd14a9c532bb",
-      "msg": "radeonsi: fix AMD_DEBUG=usellvm usage",
-      "date": "2026-08-14T13:16:29.000+00:00"
+      "old": "8cafe2c",
+      "new": "f08c9d9",
+      "full": "f08c9d96432513af146575e03f03a623c6395e7d",
+      "msg": "nv30/ci: add notes about piglit tests",
+      "date": "2026-08-14T15:07:08.000+00:00"
     }
   ]
 }
