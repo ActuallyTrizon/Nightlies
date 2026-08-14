@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-13T23:32:06Z",
+  "triggered_at": "2026-08-14T01:11:26Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "750a877",
+      "new": "ceea146",
+      "full": "ceea1465aba46d580b00cff79cc6206381923bf6",
+      "msg": "[RV64_DYNAREC] Support some VBROADCAST opcode (#4241)",
+      "date": "2026-08-14T01:02:00Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8613a71",
-      "new": "944ef80",
-      "full": "944ef80b85da5a98ca92b2f9a616151cc562de0c",
-      "msg": "anv: Require dedicated allocation query on scanout images from WSI",
-      "date": "2026-08-13T22:37:21.000+00:00"
+      "old": "944ef80",
+      "new": "2cd04a5",
+      "full": "2cd04a54ece55e27a58470949fb74870fe656f24",
+      "msg": "glsl: Store the type name as a pointer",
+      "date": "2026-08-14T00:27:57.000+00:00"
     }
   ]
 }
