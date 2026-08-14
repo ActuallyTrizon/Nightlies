@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-14T18:41:30Z",
+  "triggered_at": "2026-08-14T19:42:11Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3a2f172",
-      "new": "1227cf2",
-      "full": "1227cf2e6b6e05fbb29b8872dcfdb12d69c3bbaa",
-      "msg": "[CORE] Fix some UAFs and OOB reported in #4214 (#4246)",
-      "date": "2026-08-14T18:39:04Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "68d0970",
-      "new": "c0fe0f7",
-      "full": "c0fe0f78b241913ca391e5c90a797aaa1d374398",
-      "msg": "[meta] Slightly optimize surface upload helpers",
-      "date": "2026-08-14T17:57:45Z"
+      "old": "1227cf2",
+      "new": "b38a33c",
+      "full": "b38a33c00da42c567b4c58c620b3023063ecbe51",
+      "msg": "[DYNAREC] Small optimization to strongmem emulation (#4249)",
+      "date": "2026-08-14T18:49:01Z"
     }
   ]
 }
