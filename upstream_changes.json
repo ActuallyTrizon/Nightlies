@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-14T07:11:10Z",
+  "triggered_at": "2026-08-14T08:59:08Z",
   "changed": [
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "0b4a6a1",
+      "new": "3d9b44b",
+      "full": "3d9b44b984e747211300692d548bf514a8191043",
+      "msg": "[meta] Improve depth stencil and surface lock handling",
+      "date": "2026-08-14T07:38:15Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "72c8f5c",
-      "new": "d67b04a",
-      "full": "d67b04a356d5191424136b3140d370d453e09886",
-      "msg": "radv/ci: skip two more tests that use custom border color on compute",
-      "date": "2026-08-14T06:18:29.000+00:00"
+      "old": "d67b04a",
+      "new": "06962ba",
+      "full": "06962badb1997f9e41516c9341e9e5a157c01435",
+      "msg": "radv: remove the VBO descriptor prefetch",
+      "date": "2026-08-14T07:43:18.000+00:00"
     }
   ]
 }
