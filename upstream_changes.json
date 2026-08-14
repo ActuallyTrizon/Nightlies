@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-14T08:59:08Z",
+  "triggered_at": "2026-08-14T10:03:43Z",
   "changed": [
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "0b4a6a1",
-      "new": "3d9b44b",
-      "full": "3d9b44b984e747211300692d548bf514a8191043",
-      "msg": "[meta] Improve depth stencil and surface lock handling",
-      "date": "2026-08-14T07:38:15Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d67b04a",
-      "new": "06962ba",
-      "full": "06962badb1997f9e41516c9341e9e5a157c01435",
-      "msg": "radv: remove the VBO descriptor prefetch",
-      "date": "2026-08-14T07:43:18.000+00:00"
+      "old": "06962ba",
+      "new": "82bab1c",
+      "full": "82bab1c403d5f594ef654ea560fda0ed29f7f4eb",
+      "msg": "Uprev Piglit to a705d674d11624a9ad9f670185b2dda9b1ee196f",
+      "date": "2026-08-14T09:01:10.000+00:00"
     }
   ]
 }
