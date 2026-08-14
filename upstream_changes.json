@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-14T15:42:16Z",
+  "triggered_at": "2026-08-14T16:41:16Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8cafe2c",
-      "new": "f08c9d9",
-      "full": "f08c9d96432513af146575e03f03a623c6395e7d",
-      "msg": "nv30/ci: add notes about piglit tests",
-      "date": "2026-08-14T15:07:08.000+00:00"
+      "old": "f08c9d9",
+      "new": "f413ab8",
+      "full": "f413ab8ccd882b27738667ddedc078b0e6a697f9",
+      "msg": "radv/video: Fix out of bounds reads of AV1 tile params",
+      "date": "2026-08-14T15:48:05.000+00:00"
     }
   ]
 }
