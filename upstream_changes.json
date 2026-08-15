@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-15T00:43:23Z",
+  "triggered_at": "2026-08-15T02:08:42Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e999786",
-      "new": "558688a",
-      "full": "558688a73c7894b46b511e0c485f8eb0de0d9526",
-      "msg": "kraid/stats: Fix spill cost",
-      "date": "2026-08-14T23:58:47.000+00:00"
+      "old": "558688a",
+      "new": "8220394",
+      "full": "822039414ce22530906183913e5afd7a6f075670",
+      "msg": "panvk/ci: Route VS shaders through Kraid in Kraid job",
+      "date": "2026-08-15T01:27:26.000+00:00"
     }
   ]
 }
