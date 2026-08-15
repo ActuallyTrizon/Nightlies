@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-14T23:13:11Z",
+  "triggered_at": "2026-08-15T00:43:23Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7486528",
-      "new": "e999786",
-      "full": "e999786ac06e1708d18bc5b2211258934e5c5c20",
-      "msg": "tu/lrz: Fast-clear the part of LRZ that the flag RAM covers",
-      "date": "2026-08-14T22:18:21.000+00:00"
+      "old": "e999786",
+      "new": "558688a",
+      "full": "558688a73c7894b46b511e0c485f8eb0de0d9526",
+      "msg": "kraid/stats: Fix spill cost",
+      "date": "2026-08-14T23:58:47.000+00:00"
     }
   ]
 }
