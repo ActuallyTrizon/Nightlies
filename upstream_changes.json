@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-16T14:14:29Z",
+  "triggered_at": "2026-08-16T20:11:43Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "f3ab82a",
-      "new": "73ab3bc",
-      "full": "73ab3bc56db3180485c186ef5b4d37fe3215ccf9",
-      "msg": "Merge pull request #5826 from cjacek/crt-printf",
-      "date": "2026-08-16T14:07:21Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "992929b",
+      "new": "0d7bae4",
+      "full": "0d7bae463773d22bd6a9b6656591e0eec1849f8a",
+      "msg": "[util] Add several game specific workarounds",
+      "date": "2026-08-16T19:16:14Z"
     }
   ]
 }
