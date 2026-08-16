@@ -427,6 +427,12 @@
   },
   {
     "type": "DXVK",
+    "verName": "dxvk-v2.3.1-stripped",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk/dxvk-v2.3.1-stripped.wcp"
+  },
+  {
+    "type": "DXVK",
     "verName": "dxvk-arm64ec-2.3.1",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Dxvk-arm64ec/dxvk-arm64ec-2.3.1.wcp"
@@ -853,15 +859,15 @@
   },
   {
     "type": "D7VK",
-    "verName": "d7vk-v2.1-992929b8a-nightly",
+    "verName": "d7vk-v2.1-0d7bae463-nightly",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-992929b8a-nightly.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-0d7bae463-nightly.wcp"
   },
   {
     "type": "D7VK",
-    "verName": "d7vk-v2.1-992929b8a-nightly",
+    "verName": "d7vk-v2.1-0d7bae463-nightly",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-992929b8a-nightly.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-0d7bae463-nightly.zip"
   },
   {
     "type": "DXVK",
