@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-15T13:23:34Z",
+  "triggered_at": "2026-08-16T10:14:49Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "8220394",
-      "new": "f0bcf54",
-      "full": "f0bcf54488119f97502da9f4cca87a214e502a3e",
-      "msg": "etnaviv: rs: Add the rgb10_a2 RS format",
-      "date": "2026-08-15T12:21:55.000+00:00"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "c0fe0f7",
+      "new": "992929b",
+      "full": "992929b8a1096d59b07d77a40669bdaa4f1a2e19",
+      "msg": "[util] Add several game specific workarounds",
+      "date": "2026-08-16T09:33:42Z"
     }
   ]
 }
