@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-17T14:19:14Z",
+  "triggered_at": "2026-08-17T16:16:44Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "a597dcd",
-      "new": "7841db9",
-      "full": "7841db91ee70518971f09e2a8f603f95748c4dce",
-      "msg": "[d3d7/6/3] Improve the robustness of buffer lock tracking",
-      "date": "2026-08-17T13:32:39Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "5842099",
+      "new": "0b1b879",
+      "full": "0b1b8798d81cb4da8c181c7d81076a0541006853",
+      "msg": "wsi/wayland: send tearing hints when present mode changes to IMMEDIATE",
+      "date": "2026-08-17T15:02:59.000+00:00"
     }
   ]
 }
