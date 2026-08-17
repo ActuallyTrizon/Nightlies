@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-08-17T05:28:14Z",
+  "triggered_at": "2026-08-17T08:32:43Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b38a33c",
+      "new": "f204ae6",
+      "full": "f204ae69004fab7a34bbd5cf80104b2b8cbaf4d6",
+      "msg": "[LA64_DYNAREC] Fixed VCVTTPD2DQ opcode (#4253)",
+      "date": "2026-08-17T07:45:12Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "0d7bae4",
+      "new": "bb3ac21",
+      "full": "bb3ac216888ba9eb629707ec970ce035ab039f50",
+      "msg": "[meta] Simplify read only lock tracking",
+      "date": "2026-08-17T08:11:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e2340e1",
-      "new": "efeda58",
-      "full": "efeda58bb23294b848e846219c37fe95c6d939b8",
-      "msg": "gallivm: orcjit: fix use-after-free in remove_jd() during exit",
-      "date": "2026-08-17T04:22:46.000+00:00"
+      "old": "efeda58",
+      "new": "dddaef6",
+      "full": "dddaef6f8c970770cc60f6bab6ab5392f54e7679",
+      "msg": "radv: try to clarify RECTLIST/RECT_2D differences",
+      "date": "2026-08-17T06:53:58.000+00:00"
     }
   ]
 }
