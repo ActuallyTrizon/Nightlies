@@ -859,15 +859,15 @@
   },
   {
     "type": "D7VK",
-    "verName": "d7vk-v2.1-bb3ac2168-nightly",
+    "verName": "d7vk-v2.1-7841db91e-nightly",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-bb3ac2168-nightly.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-7841db91e-nightly.wcp"
   },
   {
     "type": "D7VK",
-    "verName": "d7vk-v2.1-bb3ac2168-nightly",
+    "verName": "d7vk-v2.1-7841db91e-nightly",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-bb3ac2168-nightly.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/d7vk-v2.1-7841db91e-nightly.zip"
   },
   {
     "type": "DXVK",
@@ -1174,12 +1174,6 @@
     "verName": "wine-9.7-x86_64-ref",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/wine-9.7-x86_64-ref.wcp"
-  },
-  {
-    "type": "Proton",
-    "verName": "proton-11.0-arm64ec-20260422.1559",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton-11/proton-11.0-arm64ec-20260422.1559.wcp"
   },
   {
     "type": "GpuDriver",
@@ -2926,24 +2920,6 @@
     "verName": "Turnip-v26.3.0-20260807-r17",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260807-r17/Turnip-v26.3.0-20260807-r17.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260807-r16-710-720-Test",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260807-r16/Turnip-v26.3.0-20260807-r16-710-720-Test.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260807-r16-A8xx",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260807-r16/Turnip-v26.3.0-20260807-r16-A8xx.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260807-r16",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260807-r16/Turnip-v26.3.0-20260807-r16.zip"
   },
   {
     "type": "GpuDriver",
