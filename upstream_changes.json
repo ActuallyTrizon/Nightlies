@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-17T17:18:58Z",
+  "triggered_at": "2026-08-17T18:24:55Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "f204ae6",
+      "new": "ba23a5e",
+      "full": "ba23a5e8e29b270f1ed15c9bd0a0b6de9b41c556",
+      "msg": "[LA64_DYNAREC] Optimized SHA256 opcodes (#4256)",
+      "date": "2026-08-17T18:22:57Z"
+    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "73ab3bc",
-      "new": "a3d609e",
-      "full": "a3d609ebb1e2bc4050ea15ecb8c4004383aa07fd",
-      "msg": "Merge pull request #5820 from javelina-pkwy/lea-reg-reg",
-      "date": "2026-08-17T16:58:47Z"
+      "old": "a3d609e",
+      "new": "9618b5a",
+      "full": "9618b5adef54fb5c585d6aceb1f6a070d2faccf6",
+      "msg": "Merge pull request #5828 from Sonicadvance1/203",
+      "date": "2026-08-17T17:22:19Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0b1b879",
-      "new": "a7d03b0",
-      "full": "a7d03b03a182b58210800576ee271d499b766a06",
-      "msg": "radv/meta: Slightly reorganize meta fill and copy",
-      "date": "2026-08-17T15:48:42.000+00:00"
+      "old": "a7d03b0",
+      "new": "d00b719",
+      "full": "d00b719c453d504b9b2a525aa1a68034059b0b67",
+      "msg": "pan/bi: Fix vector phis from spilling",
+      "date": "2026-08-17T17:21:05.000+00:00"
     }
   ]
 }
