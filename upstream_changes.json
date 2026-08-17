@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-16T20:11:43Z",
+  "triggered_at": "2026-08-17T02:14:16Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "992929b",
-      "new": "0d7bae4",
-      "full": "0d7bae463773d22bd6a9b6656591e0eec1849f8a",
-      "msg": "[util] Add several game specific workarounds",
-      "date": "2026-08-16T19:16:14Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "f0bcf54",
+      "new": "41fe6cb",
+      "full": "41fe6cb36e2e50fa5f8610a8ed500de438fd5e4d",
+      "msg": "anv/video: Fix to set proper values to missing attributes for H265 encoding",
+      "date": "2026-08-17T03:15:31.000+02:00"
     }
   ]
 }
