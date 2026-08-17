@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-17T04:32:31Z",
+  "triggered_at": "2026-08-17T05:28:14Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "41fe6cb",
-      "new": "e2340e1",
-      "full": "e2340e192a1260561a9f7a62936c4d11d100dc0a",
-      "msg": "nir/opt_varyings: Change non-interpolated I/O to uint type.",
-      "date": "2026-08-16T20:24:24.000-07:00"
+      "old": "e2340e1",
+      "new": "efeda58",
+      "full": "efeda58bb23294b848e846219c37fe95c6d939b8",
+      "msg": "gallivm: orcjit: fix use-after-free in remove_jd() during exit",
+      "date": "2026-08-17T04:22:46.000+00:00"
     }
   ]
 }
