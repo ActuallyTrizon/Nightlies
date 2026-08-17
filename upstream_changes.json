@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-17T18:30:52Z",
+  "triggered_at": "2026-08-17T19:20:42Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ba23a5e",
-      "new": "db05d0e",
-      "full": "db05d0e66449a331af626ded5f564868250930c5",
-      "msg": "[RV64_DYNAREC] Refined safeflags and df emulation (#4260)",
-      "date": "2026-08-17T18:27:45Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "7841db9",
+      "new": "2437e5d",
+      "full": "2437e5d35483bf8ac339dfca92a0eebeee8d381a",
+      "msg": "[d3d3] Validate against a few execute buffer corner cases",
+      "date": "2026-08-17T18:37:51Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "d00b719",
+      "new": "3c4d3e4",
+      "full": "3c4d3e46d19f2f4e951f3ae059543b03592f7944",
+      "msg": "radeonsi/mm: Fix AV1 decode qmatrix params",
+      "date": "2026-08-17T18:17:13.000+00:00"
     }
   ]
 }
