@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-08-17T08:32:43Z",
+  "triggered_at": "2026-08-17T13:33:11Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b38a33c",
-      "new": "f204ae6",
-      "full": "f204ae69004fab7a34bbd5cf80104b2b8cbaf4d6",
-      "msg": "[LA64_DYNAREC] Fixed VCVTTPD2DQ opcode (#4253)",
-      "date": "2026-08-17T07:45:12Z"
-    },
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "0d7bae4",
-      "new": "bb3ac21",
-      "full": "bb3ac216888ba9eb629707ec970ce035ab039f50",
-      "msg": "[meta] Simplify read only lock tracking",
-      "date": "2026-08-17T08:11:47Z"
+      "old": "bb3ac21",
+      "new": "a597dcd",
+      "full": "a597dcd76b28381ee8ccf410241d65e991a8f203",
+      "msg": "[meta] Don't penalize legacy presentation paths",
+      "date": "2026-08-17T12:15:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "efeda58",
-      "new": "dddaef6",
-      "full": "dddaef6f8c970770cc60f6bab6ab5392f54e7679",
-      "msg": "radv: try to clarify RECTLIST/RECT_2D differences",
-      "date": "2026-08-17T06:53:58.000+00:00"
+      "old": "dddaef6",
+      "new": "5842099",
+      "full": "5842099c6db8f91f91fb4f2e454ebba4139da5f2",
+      "msg": "radeonsi/mm: Use correct feedback size for VCE",
+      "date": "2026-08-17T12:05:34.000+00:00"
     }
   ]
 }
