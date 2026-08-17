@@ -97,25 +97,36 @@ jobs:
       # rebuild_wrappers.py before build so the generated defs pick this up.
       # Applied to every source flavor (Official / Hybrid) and Android type
       # (Bionic / Native); harmlessly no-op on WOW64 (no ANDROID define).
-      - name: Apply libaaudio wrap
+      - name: Apply Android wraps (libaaudio + liblog)
         run: |
           set -eo pipefail
           cd source
+          # Install both wraps' sources into the box64 tree
           cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio.c        src/wrapped/
           cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio_private.h src/wrapped/
+          cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedliblog.c           src/wrapped/
+          cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedliblog_private.h   src/wrapped/
           # Context-free sed inserts (patches would break under the Hybrid merge which
           # alters surrounding lines in library_list.h). Anchor on the androidshmem
           # entry which every variant carries. Guard on grep so a re-run doesn't dupe.
           if ! grep -q 'GO("libaaudio.so", libaaudio)' src/library_list.h; then
             sed -i '/GO("libandroid-shmem.so", androidshmem)/a GO("libaaudio.so", libaaudio)' src/library_list.h
           fi
+          if ! grep -q 'GO("liblog.so", liblog)' src/library_list.h; then
+            sed -i '/GO("libaaudio.so", libaaudio)/a GO("liblog.so", liblog)' src/library_list.h
+          fi
           if ! grep -q 'wrappedlibaaudio.c' CMakeLists.txt; then
             sed -i '/wrappedandroidshmem.c/a\        "${BOX64_ROOT}/src/wrapped/wrappedlibaaudio.c"' CMakeLists.txt
           fi
-          # Verify both edits landed
-          grep -q 'GO("libaaudio.so", libaaudio)' src/library_list.h || { echo "library_list.h edit missing"; exit 1; }
-          grep -q 'wrappedlibaaudio.c' CMakeLists.txt              || { echo "CMakeLists.txt edit missing";  exit 1; }
-          echo "libaaudio wrap: applied cleanly."
+          if ! grep -q 'wrappedliblog.c' CMakeLists.txt; then
+            sed -i '/wrappedlibaaudio.c/a\        "${BOX64_ROOT}/src/wrapped/wrappedliblog.c"' CMakeLists.txt
+          fi
+          # Verify all four edits landed
+          grep -q 'GO("libaaudio.so", libaaudio)' src/library_list.h || { echo "library_list.h libaaudio edit missing"; exit 1; }
+          grep -q 'GO("liblog.so", liblog)'       src/library_list.h || { echo "library_list.h liblog edit missing";   exit 1; }
+          grep -q 'wrappedlibaaudio.c' CMakeLists.txt                || { echo "CMakeLists.txt libaaudio edit missing"; exit 1; }
+          grep -q 'wrappedliblog.c'    CMakeLists.txt                || { echo "CMakeLists.txt liblog edit missing";    exit 1; }
+          echo "Android wraps (libaaudio + liblog): applied cleanly."
 
       - name: Get Version Info
         id: version
