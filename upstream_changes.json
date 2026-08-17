@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-17T13:33:11Z",
+  "triggered_at": "2026-08-17T14:19:14Z",
   "changed": [
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "bb3ac21",
-      "new": "a597dcd",
-      "full": "a597dcd76b28381ee8ccf410241d65e991a8f203",
-      "msg": "[meta] Don't penalize legacy presentation paths",
-      "date": "2026-08-17T12:15:47Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "dddaef6",
-      "new": "5842099",
-      "full": "5842099c6db8f91f91fb4f2e454ebba4139da5f2",
-      "msg": "radeonsi/mm: Use correct feedback size for VCE",
-      "date": "2026-08-17T12:05:34.000+00:00"
+      "old": "a597dcd",
+      "new": "7841db9",
+      "full": "7841db91ee70518971f09e2a8f603f95748c4dce",
+      "msg": "[d3d7/6/3] Improve the robustness of buffer lock tracking",
+      "date": "2026-08-17T13:32:39Z"
     }
   ]
 }
