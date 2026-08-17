@@ -99,11 +99,23 @@ jobs:
       # (Bionic / Native); harmlessly no-op on WOW64 (no ANDROID define).
       - name: Apply libaaudio wrap
         run: |
+          set -eo pipefail
           cd source
           cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio.c        src/wrapped/
           cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio_private.h src/wrapped/
-          git apply $GITHUB_WORKSPACE/patches/libaaudio/library_list.h.patch
-          git apply $GITHUB_WORKSPACE/patches/libaaudio/CMakeLists.txt.patch
+          # Context-free sed inserts (patches would break under the Hybrid merge which
+          # alters surrounding lines in library_list.h). Anchor on the androidshmem
+          # entry which every variant carries. Guard on grep so a re-run doesn't dupe.
+          if ! grep -q 'GO("libaaudio.so", libaaudio)' src/library_list.h; then
+            sed -i '/GO("libandroid-shmem.so", androidshmem)/a GO("libaaudio.so", libaaudio)' src/library_list.h
+          fi
+          if ! grep -q 'wrappedlibaaudio.c' CMakeLists.txt; then
+            sed -i '/wrappedandroidshmem.c/a\        "${BOX64_ROOT}/src/wrapped/wrappedlibaaudio.c"' CMakeLists.txt
+          fi
+          # Verify both edits landed
+          grep -q 'GO("libaaudio.so", libaaudio)' src/library_list.h || { echo "library_list.h edit missing"; exit 1; }
+          grep -q 'wrappedlibaaudio.c' CMakeLists.txt              || { echo "CMakeLists.txt edit missing";  exit 1; }
+          echo "libaaudio wrap: applied cleanly."
 
       - name: Get Version Info
         id: version
