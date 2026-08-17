@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-17T16:16:44Z",
+  "triggered_at": "2026-08-17T17:18:58Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "73ab3bc",
+      "new": "a3d609e",
+      "full": "a3d609ebb1e2bc4050ea15ecb8c4004383aa07fd",
+      "msg": "Merge pull request #5820 from javelina-pkwy/lea-reg-reg",
+      "date": "2026-08-17T16:58:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5842099",
-      "new": "0b1b879",
-      "full": "0b1b8798d81cb4da8c181c7d81076a0541006853",
-      "msg": "wsi/wayland: send tearing hints when present mode changes to IMMEDIATE",
-      "date": "2026-08-17T15:02:59.000+00:00"
+      "old": "0b1b879",
+      "new": "a7d03b0",
+      "full": "a7d03b03a182b58210800576ee271d499b766a06",
+      "msg": "radv/meta: Slightly reorganize meta fill and copy",
+      "date": "2026-08-17T15:48:42.000+00:00"
     }
   ]
 }
