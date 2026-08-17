@@ -1,0 +1,12 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ccbfbc6..59538c5 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -872,6 +872,7 @@ endif()
+ if(ANDROID)
+     list(APPEND WRAPPEDS
+         "${BOX64_ROOT}/src/wrapped/wrappedandroidshmem.c"
++        "${BOX64_ROOT}/src/wrapped/wrappedlibaaudio.c"
+     )
+ endif()
+ if(TERMUX)

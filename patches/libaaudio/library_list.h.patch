@@ -1,0 +1,12 @@
+diff --git a/src/library_list.h b/src/library_list.h
+index 37d634d..ac3d6ba 100644
+--- a/src/library_list.h
++++ b/src/library_list.h
+@@ -415,6 +415,7 @@ GO("liblapack.so.3", liblapack)
+ GO("liblapack.so", liblapack)
+ #ifdef ANDROID
+ GO("libandroid-shmem.so", androidshmem)
++GO("libaaudio.so", libaaudio)
+ #endif
+ 
+ GO("libc.so.6", libc)

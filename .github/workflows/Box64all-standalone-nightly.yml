@@ -89,6 +89,22 @@ jobs:
             echo -e '\nint __mingw_vsprintf(char* buffer, const char* format, va_list args) { return vsprintf(buffer, format, args); }' >> wine/common/crt.c
           fi
 
+      # Register a libaaudio wrap so guest x86_64 code (Wine's winedirectaudio.so
+      # in a Wine x86_64 layer) can talk to the host arm64 libaaudio. Without
+      # this box64 fails "Error loading needed lib libaaudio.so" and DirectAudio
+      # can't init on x86_64 containers. Wrap is patch-only new files + one line
+      # each in src/library_list.h and CMakeLists.txt; CMake auto-runs
+      # rebuild_wrappers.py before build so the generated defs pick this up.
+      # Applied to every source flavor (Official / Hybrid) and Android type
+      # (Bionic / Native); harmlessly no-op on WOW64 (no ANDROID define).
+      - name: Apply libaaudio wrap
+        run: |
+          cd source
+          cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio.c        src/wrapped/
+          cp $GITHUB_WORKSPACE/patches/libaaudio/wrappedlibaaudio_private.h src/wrapped/
+          git apply $GITHUB_WORKSPACE/patches/libaaudio/library_list.h.patch
+          git apply $GITHUB_WORKSPACE/patches/libaaudio/CMakeLists.txt.patch
+
       - name: Get Version Info
         id: version
         run: |
