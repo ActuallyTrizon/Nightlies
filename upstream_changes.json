@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-18T22:13:02Z",
+  "triggered_at": "2026-08-18T23:13:38Z",
   "changed": [
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "2437e5d",
-      "new": "d62397e",
-      "full": "d62397ec061f2e8148f567d7d3d8c6f738b7d475",
+      "old": "d62397e",
+      "new": "85704bf",
+      "full": "85704bfa02b30b9638b15e53d1dd9f4a5b116279",
       "msg": "[d3d6/5] Fix up legacy projection corrections on regular draws",
-      "date": "2026-08-18T21:41:44Z"
+      "date": "2026-08-18T22:33:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3c56bd8",
-      "new": "7cee821",
-      "full": "7cee821cdec35e68d46c5313db19488b9bbe116e",
-      "msg": "rusticl: fix wrong destination offset in Image::copy_to_buffer",
-      "date": "2026-08-18T21:44:34.000+00:00"
+      "old": "7cee821",
+      "new": "fcee81a",
+      "full": "fcee81a38d8e4b4c77c3d45261e2d50205b6400f",
+      "msg": "spirv: Discard excess image coordinate components",
+      "date": "2026-08-18T22:24:27.000+00:00"
     }
   ]
 }
