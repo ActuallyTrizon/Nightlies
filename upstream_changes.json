@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-18T11:16:48Z",
+  "triggered_at": "2026-08-18T12:26:50Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "b07a478",
-      "new": "5bb2a8e",
-      "full": "5bb2a8e83f1b657e3eccfafc6aff99d5f91d5a87",
-      "msg": "Revert \"[dxvk] Set render area layer count to 1 if no layered rendering is used\"",
-      "date": "2026-08-18T10:53:16Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f38b05e",
-      "new": "1a12d71",
-      "full": "1a12d7188b46703d433f4d909b0e8e0d6c5bbe5d",
-      "msg": "radv: disable nir_opt_reassociate_for_fma for VS if it's not the last pre FS sha",
-      "date": "2026-08-18T10:26:27.000+00:00"
+      "old": "1a12d71",
+      "new": "d22b355",
+      "full": "d22b355f035c57d2051575cd93c05bb98dbb455e",
+      "msg": "panvk/utrace: handle clone CS heap exhaustion gracefully",
+      "date": "2026-08-18T11:06:37.000+00:00"
     }
   ]
 }
