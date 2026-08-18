@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-18T08:24:55Z",
+  "triggered_at": "2026-08-18T09:23:08Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c6740b",
-      "new": "9075f69",
-      "full": "9075f69cd0cb55e126d88ab91e547ecec0cba560",
-      "msg": "radv/ci: add khronos link to the bfloat16 dequant failures.",
-      "date": "2026-08-18T07:18:08.000+00:00"
+      "old": "9075f69",
+      "new": "ec9f041",
+      "full": "ec9f0419f530119537d822b206c40c4b9f4cb873",
+      "msg": "tu: Allow multi-layer images with explicit DRM format modifiers",
+      "date": "2026-08-18T08:37:18.000+00:00"
     }
   ]
 }
