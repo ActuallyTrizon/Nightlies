@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-18T06:27:12Z",
+  "triggered_at": "2026-08-18T07:30:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "728fd22",
-      "new": "85d08fe",
-      "full": "85d08fe5557c755e628e36ff31c242499c749c96",
-      "msg": "radv: Wait for L2 cache writeback on ACE for SDMA+ACE gangs",
-      "date": "2026-08-18T05:15:10.000+00:00"
+      "old": "85d08fe",
+      "new": "2c6740b",
+      "full": "2c6740b0394cccdaad916052f17eddf9e7534ba9",
+      "msg": "anv: Add drirc option to disable dynamicStackIDControl",
+      "date": "2026-08-18T06:59:38.000+00:00"
     }
   ]
 }
