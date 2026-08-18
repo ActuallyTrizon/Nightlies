@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-18T16:21:00Z",
+  "triggered_at": "2026-08-18T17:19:02Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "238f157",
-      "new": "4b9ab83",
-      "full": "4b9ab838958badd374e1eb9cd35e6479e6fefb5a",
-      "msg": "tests: Don't force compute queue for custom border colors",
-      "date": "2026-08-18T16:14:49Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "27a599c",
-      "new": "fe1491b",
-      "full": "fe1491b758fe6aec57f5109a12821accd2d5efce",
-      "msg": "tu: Set MSM_SUBMIT_SYNCOBJ_* when there are only internal syncobjs",
-      "date": "2026-08-18T15:43:48.000+00:00"
+      "old": "fe1491b",
+      "new": "b87749b",
+      "full": "b87749b99a30ffab4cf2bd1d7e1d85feccf7428b",
+      "msg": "tool/gamma: Add virtual destructor for gamma_file_view",
+      "date": "2026-08-18T16:29:48.000+00:00"
     }
   ]
 }
