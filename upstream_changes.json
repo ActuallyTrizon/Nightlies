@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-18T19:21:13Z",
+  "triggered_at": "2026-08-18T20:13:46Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f2d9c30",
-      "new": "7f760b8",
-      "full": "7f760b878f2686de303b5d07512ad3a2ca1ab441",
-      "msg": "ir3: Handle sparse loads in ir3_nir_lower_64b_image",
-      "date": "2026-08-18T18:45:51.000+00:00"
+      "old": "7f760b8",
+      "new": "ecbc99d",
+      "full": "ecbc99d70862f3f4d842657558e1ec51abc09033",
+      "msg": "gfxstream: map DRM_FORMAT_ARGB8888/XRGB8888 to VK_FORMAT_B8G8R8A8_UNORM",
+      "date": "2026-08-18T19:41:04.000+00:00"
     }
   ]
 }
