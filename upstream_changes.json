@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-18T07:30:09Z",
+  "triggered_at": "2026-08-18T08:24:55Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "85d08fe",
-      "new": "2c6740b",
-      "full": "2c6740b0394cccdaad916052f17eddf9e7534ba9",
-      "msg": "anv: Add drirc option to disable dynamicStackIDControl",
-      "date": "2026-08-18T06:59:38.000+00:00"
+      "old": "2c6740b",
+      "new": "9075f69",
+      "full": "9075f69cd0cb55e126d88ab91e547ecec0cba560",
+      "msg": "radv/ci: add khronos link to the bfloat16 dequant failures.",
+      "date": "2026-08-18T07:18:08.000+00:00"
     }
   ]
 }
