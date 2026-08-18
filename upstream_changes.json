@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-17T19:20:42Z",
+  "triggered_at": "2026-08-18T02:10:03Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "7841db9",
-      "new": "2437e5d",
-      "full": "2437e5d35483bf8ac339dfca92a0eebeee8d381a",
-      "msg": "[d3d3] Validate against a few execute buffer corner cases",
-      "date": "2026-08-17T18:37:51Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9618b5a",
+      "new": "9377bac",
+      "full": "9377bac5e7fe21a48343525fab1f15777362c181",
+      "msg": "Merge pull request #5825 from javelina-pkwy/fix/siglongjmp-deadlock",
+      "date": "2026-08-18T00:55:39Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d00b719",
-      "new": "3c4d3e4",
-      "full": "3c4d3e46d19f2f4e951f3ae059543b03592f7944",
-      "msg": "radeonsi/mm: Fix AV1 decode qmatrix params",
-      "date": "2026-08-17T18:17:13.000+00:00"
+      "old": "3c4d3e4",
+      "new": "c14545d",
+      "full": "c14545d36aff5f21b3174ed6b4514926fff23606",
+      "msg": "radv: tidy up declaring CS_TASK_DRAW_ID for task shaders",
+      "date": "2026-08-18T01:08:42.000+00:00"
     }
   ]
 }
