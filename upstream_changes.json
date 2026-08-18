@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-18T02:10:03Z",
+  "triggered_at": "2026-08-18T03:36:48Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "9618b5a",
-      "new": "9377bac",
-      "full": "9377bac5e7fe21a48343525fab1f15777362c181",
-      "msg": "Merge pull request #5825 from javelina-pkwy/fix/siglongjmp-deadlock",
-      "date": "2026-08-18T00:55:39Z"
+      "old": "9377bac",
+      "new": "c3b4d4b",
+      "full": "c3b4d4b7bb9b895c53ed1c6ce47c54d595fbf4eb",
+      "msg": "Merge pull request #5829 from Sonicadvance1/204",
+      "date": "2026-08-18T03:21:41Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3c4d3e4",
-      "new": "c14545d",
-      "full": "c14545d36aff5f21b3174ed6b4514926fff23606",
-      "msg": "radv: tidy up declaring CS_TASK_DRAW_ID for task shaders",
-      "date": "2026-08-18T01:08:42.000+00:00"
+      "old": "c14545d",
+      "new": "94e6a35",
+      "full": "94e6a3523db2b9072841ac76150bdf13d478c601",
+      "msg": "radv/ci: skip WSI tests on RENOIR too",
+      "date": "2026-08-18T02:05:32.000+00:00"
     }
   ]
 }
