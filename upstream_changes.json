@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-18T21:19:02Z",
+  "triggered_at": "2026-08-18T22:13:02Z",
   "changed": [
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "2437e5d",
+      "new": "d62397e",
+      "full": "d62397ec061f2e8148f567d7d3d8c6f738b7d475",
+      "msg": "[d3d6/5] Fix up legacy projection corrections on regular draws",
+      "date": "2026-08-18T21:41:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ecbc99d",
-      "new": "3c56bd8",
-      "full": "3c56bd8ded62ba90a766254b4d985ef8197d8787",
-      "msg": "etnaviv: Cache the shader key and variant lookup",
-      "date": "2026-08-18T20:49:50.000+00:00"
+      "old": "3c56bd8",
+      "new": "7cee821",
+      "full": "7cee821cdec35e68d46c5313db19488b9bbe116e",
+      "msg": "rusticl: fix wrong destination offset in Image::copy_to_buffer",
+      "date": "2026-08-18T21:44:34.000+00:00"
     }
   ]
 }
