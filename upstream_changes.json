@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-18T10:18:35Z",
+  "triggered_at": "2026-08-18T11:16:48Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "3a4c6fa",
-      "new": "b07a478",
-      "full": "b07a4783e94c1adfb9d1a761027622e3945a4e6c",
-      "msg": "[d3d9] Set non-empty sampler LOD range for single-mip textures",
-      "date": "2026-08-18T09:23:12Z"
+      "old": "b07a478",
+      "new": "5bb2a8e",
+      "full": "5bb2a8e83f1b657e3eccfafc6aff99d5f91d5a87",
+      "msg": "Revert \"[dxvk] Set render area layer count to 1 if no layered rendering is used\"",
+      "date": "2026-08-18T10:53:16Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ec9f041",
-      "new": "f38b05e",
-      "full": "f38b05eaaf2d4f570fa417c6ac3fe80939d71c47",
-      "msg": "radv/meta: fix using aspects for blits",
-      "date": "2026-08-18T09:05:24.000+00:00"
+      "old": "f38b05e",
+      "new": "1a12d71",
+      "full": "1a12d7188b46703d433f4d909b0e8e0d6c5bbe5d",
+      "msg": "radv: disable nir_opt_reassociate_for_fma for VS if it's not the last pre FS sha",
+      "date": "2026-08-18T10:26:27.000+00:00"
     }
   ]
 }
