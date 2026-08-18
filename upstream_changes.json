@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-18T09:23:08Z",
+  "triggered_at": "2026-08-18T10:18:35Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "3a4c6fa",
+      "new": "b07a478",
+      "full": "b07a4783e94c1adfb9d1a761027622e3945a4e6c",
+      "msg": "[d3d9] Set non-empty sampler LOD range for single-mip textures",
+      "date": "2026-08-18T09:23:12Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9075f69",
-      "new": "ec9f041",
-      "full": "ec9f0419f530119537d822b206c40c4b9f4cb873",
-      "msg": "tu: Allow multi-layer images with explicit DRM format modifiers",
-      "date": "2026-08-18T08:37:18.000+00:00"
+      "old": "ec9f041",
+      "new": "f38b05e",
+      "full": "f38b05eaaf2d4f570fa417c6ac3fe80939d71c47",
+      "msg": "radv/meta: fix using aspects for blits",
+      "date": "2026-08-18T09:05:24.000+00:00"
     }
   ]
 }
