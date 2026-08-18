@@ -50,8 +50,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260817-192649](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260817-192649) |
-| **FEXCore** | [`9618b5ade`](https://github.com/FEX-Emu/FEX/commit/9618b5ade) — FEX-2608+50-Nightly-9618b5ade |
+| **Release** | [🔗 nightly-20260818-043302](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260818-043302) |
+| **FEXCore** | [`c3b4d4b7b`](https://github.com/FEX-Emu/FEX/commit/c3b4d4b7b) — FEX-2608+55-Nightly-c3b4d4b7b |
 | **VKD3D-Proton (Std)** | [`238f157e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/238f157e) |
 | **VKD3D-Proton (ARM64EC)** | [`238f157e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/238f157e) |
 | **DXVK (GPLAsync)** | [`3a4c6fa3`](https://github.com/doitsujin/dxvk/commit/3a4c6fa3) |
@@ -60,8 +60,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (ARM64EC)** | [`3a4c6fa3`](https://github.com/doitsujin/dxvk/commit/3a4c6fa3) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **D7VK (DDraw/D3D7)** | [`2437e5d35`](https://github.com/WinterSnowfall/d7vk/commit/2437e5d35) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.3.0-20260817-r6](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260817-r6) — Turnip v26.3.0-20260817-r6 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260817-192649) |
+| **Turnip** | [v26.3.0-20260818-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260818-r2) — Turnip v26.3.0-20260818-r2 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260818-043302) |
 <!-- NIGHTLY-LATEST-END -->
 
 </details>
