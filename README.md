@@ -56,7 +56,7 @@ A single JSON index of every component published here — point any compatible W
 | **VKD3D-Proton (ARM64EC)** | [`20c0ab20`](https://github.com/HansKristian-Work/vkd3d-proton/commit/20c0ab20) |
 | **DXVK (GPLAsync)** | [`5bb2a8e8`](https://github.com/doitsujin/dxvk/commit/5bb2a8e8) |
 | **DXVK (ARM64EC)** | [`5bb2a8e8`](https://github.com/doitsujin/dxvk/commit/5bb2a8e8) |
-| **DXVK BinSem (GPLAsync)** | [`5bb2a8e8`](https://github.com/doitsujin/dxvk/commit/5bb2a8e8) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK BinSem (GPLAsync)** | [`9370ef15`](https://github.com/doitsujin/dxvk/commit/9370ef15) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **DXVK BinSem (ARM64EC)** | [`5bb2a8e8`](https://github.com/doitsujin/dxvk/commit/5bb2a8e8) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **D7VK (DDraw/D3D7)** | [`85704bfa0`](https://github.com/WinterSnowfall/d7vk/commit/85704bfa0) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
