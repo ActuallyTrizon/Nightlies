@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T20:16:43Z",
+  "triggered_at": "2026-08-19T21:17:09Z",
   "changed": [
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "635f9f9",
-      "new": "520b48a",
-      "full": "520b48a54a71ce0a5344143fe80bee085b251fa2",
-      "msg": "[d3d3] Allow D3D3 device creation from IDirectDrawSurface2/3 objects",
-      "date": "2026-08-19T19:49:16Z"
+      "old": "520b48a",
+      "new": "d1ff623",
+      "full": "d1ff62383f61b0f53fa1b3fcfeb3d36fdfd1359a",
+      "msg": "[d3d3] Fix input FVF logic on execute buffer transforms",
+      "date": "2026-08-19T20:54:01Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "88be0c1",
-      "new": "95c504f",
-      "full": "95c504fa17a3912e56df37a7c24ca983d69be33e",
-      "msg": "zink: enable renderpass tracking for KosmicKrisp",
-      "date": "2026-08-19T19:40:52.000+00:00"
+      "old": "95c504f",
+      "new": "13ecff6",
+      "full": "13ecff6e2f5335c5ab9c2823d3fed7753ae3e219",
+      "msg": "ci: uprev vkd3d",
+      "date": "2026-08-19T20:01:38.000+00:00"
     }
   ]
 }
