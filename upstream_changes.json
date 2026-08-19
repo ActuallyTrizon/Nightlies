@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T12:27:02Z",
+  "triggered_at": "2026-08-19T13:37:04Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5bb2a8e",
-      "new": "9370ef1",
-      "full": "9370ef157ebfcc1515a9fd0e006b3beb1c672f4e",
-      "msg": "[dxgi] Reserve a hot-patchable entry on the DXGI entry points overlays hook",
-      "date": "2026-08-19T11:54:02Z"
+      "repo": "Pipetto-crypto/box64",
+      "name": "Box64 (Hybrid/Pipetto)",
+      "old": "ecd1e94",
+      "new": "eb6fb21",
+      "full": "eb6fb21f8e3f93cecd7214227c07757f6236b7b1",
+      "msg": "Merge branch 'ptitSeb:main' into main",
+      "date": "2026-08-19T12:39:40Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "914e6ae",
-      "new": "b848564",
-      "full": "b848564ebb2052cd22eaf87d07ddfe784cdec81a",
-      "msg": "ethosu: Improve U65 Conv1D block selection",
-      "date": "2026-08-19T11:14:26.000+00:00"
+      "old": "b848564",
+      "new": "586fc2f",
+      "full": "586fc2f5e096855c3828644bb212634f1f664682",
+      "msg": "radv/nir: do not always lower push constants to SMEM",
+      "date": "2026-08-19T12:31:55.000+00:00"
     }
   ]
 }
