@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T13:37:04Z",
+  "triggered_at": "2026-08-19T15:22:13Z",
   "changed": [
     {
-      "repo": "Pipetto-crypto/box64",
-      "name": "Box64 (Hybrid/Pipetto)",
-      "old": "ecd1e94",
-      "new": "eb6fb21",
-      "full": "eb6fb21f8e3f93cecd7214227c07757f6236b7b1",
-      "msg": "Merge branch 'ptitSeb:main' into main",
-      "date": "2026-08-19T12:39:40Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "85704bf",
+      "new": "c8eb0ef",
+      "full": "c8eb0ef3d86bafeeb5bcf05bcba831f7095ca84f",
+      "msg": "[meta] Properly handle invalid texture surface bindings",
+      "date": "2026-08-19T14:32:51Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b848564",
-      "new": "586fc2f",
-      "full": "586fc2f5e096855c3828644bb212634f1f664682",
-      "msg": "radv/nir: do not always lower push constants to SMEM",
-      "date": "2026-08-19T12:31:55.000+00:00"
+      "old": "586fc2f",
+      "new": "0e6ae6a",
+      "full": "0e6ae6a4dca6d8c46b4e3a1d18d28a521af7b70a",
+      "msg": "radv/rt: Use CPS function signature for raygen if CPS is used",
+      "date": "2026-08-19T14:21:02.000+00:00"
     }
   ]
 }
