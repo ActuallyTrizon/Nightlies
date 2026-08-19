@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-19T00:43:06Z",
+  "triggered_at": "2026-08-19T02:13:06Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c3b4d4b",
-      "new": "f42dc71",
-      "full": "f42dc719723f793742427c62ed4168d1d863a938",
-      "msg": "Merge pull request #5831 from cjacek/int-assert",
-      "date": "2026-08-18T23:39:39Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fcee81a",
-      "new": "679bec7",
-      "full": "679bec75fdef43ed98b8c507c0c9e011ef002136",
-      "msg": "svga: Fix some vmw_printf() debugging messages.",
-      "date": "2026-08-18T23:22:59.000+00:00"
+      "old": "679bec7",
+      "new": "24c8a88",
+      "full": "24c8a889798562010742bc58bb0fc9c6bdc4ed07",
+      "msg": "vulkan/android: allow optimal tiling for unorm and srgb mutation",
+      "date": "2026-08-19T00:57:32.000+00:00"
     }
   ]
 }
