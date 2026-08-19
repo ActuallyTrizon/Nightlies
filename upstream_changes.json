@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-19T10:22:32Z",
+  "triggered_at": "2026-08-19T11:16:46Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "4b9ab83",
+      "new": "20c0ab2",
+      "full": "20c0ab209583b69b7a4b8e19edf780aec6c2fe60",
+      "msg": "Support hybrid_patchable on the command queue vtable",
+      "date": "2026-08-19T11:09:27Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "88b03b4",
-      "new": "9486299",
-      "full": "9486299e0c38ac8036716b923bf534f2728f9070",
-      "msg": "freedreno/ci: correctly tag the qualcomm jobs",
-      "date": "2026-08-19T09:25:00.000+00:00"
+      "old": "9486299",
+      "new": "914e6ae",
+      "full": "914e6ae217f398da1ac7d9bc4321eafe14fa547c",
+      "msg": "aco/sched_vopd: create v_dual_and_b32 from v_cvt_u32_u16",
+      "date": "2026-08-19T10:40:05.000+00:00"
     }
   ]
 }
