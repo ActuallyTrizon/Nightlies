@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T19:18:20Z",
+  "triggered_at": "2026-08-19T20:16:43Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "d1bb1d1",
-      "new": "7fbbcd3",
-      "full": "7fbbcd34689b70067e080f3225e564514674fd30",
-      "msg": "[RV64_DYNAREC] Support VMOVMSKPS opcode (#4269)",
-      "date": "2026-08-19T19:07:54Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "635f9f9",
+      "new": "520b48a",
+      "full": "520b48a54a71ce0a5344143fe80bee085b251fa2",
+      "msg": "[d3d3] Allow D3D3 device creation from IDirectDrawSurface2/3 objects",
+      "date": "2026-08-19T19:49:16Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "9370ef1",
-      "new": "fd666da",
-      "full": "fd666dae991eee8e3af17edb3fe1594f437e8825",
-      "msg": "[dxgi] Fix DXVK_HOTPATCHABLE definition",
-      "date": "2026-08-19T18:41:13Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "88be0c1",
+      "new": "95c504f",
+      "full": "95c504fa17a3912e56df37a7c24ca983d69be33e",
+      "msg": "zink: enable renderpass tracking for KosmicKrisp",
+      "date": "2026-08-19T19:40:52.000+00:00"
     }
   ]
 }
