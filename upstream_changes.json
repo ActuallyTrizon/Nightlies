@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-19T08:25:38Z",
+  "triggered_at": "2026-08-19T10:22:32Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "87082b0",
-      "new": "88b03b4",
-      "full": "88b03b465553ede3c86cfe39b8553e04e3c3c1f8",
-      "msg": "kk: narrow forced depth write application",
-      "date": "2026-08-19T07:15:59.000+00:00"
+      "old": "88b03b4",
+      "new": "9486299",
+      "full": "9486299e0c38ac8036716b923bf534f2728f9070",
+      "msg": "freedreno/ci: correctly tag the qualcomm jobs",
+      "date": "2026-08-19T09:25:00.000+00:00"
     }
   ]
 }
