@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T11:16:46Z",
+  "triggered_at": "2026-08-19T12:27:02Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "4b9ab83",
-      "new": "20c0ab2",
-      "full": "20c0ab209583b69b7a4b8e19edf780aec6c2fe60",
-      "msg": "Support hybrid_patchable on the command queue vtable",
-      "date": "2026-08-19T11:09:27Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "5bb2a8e",
+      "new": "9370ef1",
+      "full": "9370ef157ebfcc1515a9fd0e006b3beb1c672f4e",
+      "msg": "[dxgi] Reserve a hot-patchable entry on the DXGI entry points overlays hook",
+      "date": "2026-08-19T11:54:02Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9486299",
-      "new": "914e6ae",
-      "full": "914e6ae217f398da1ac7d9bc4321eafe14fa547c",
-      "msg": "aco/sched_vopd: create v_dual_and_b32 from v_cvt_u32_u16",
-      "date": "2026-08-19T10:40:05.000+00:00"
+      "old": "914e6ae",
+      "new": "b848564",
+      "full": "b848564ebb2052cd22eaf87d07ddfe784cdec81a",
+      "msg": "ethosu: Improve U65 Conv1D block selection",
+      "date": "2026-08-19T11:14:26.000+00:00"
     }
   ]
 }
