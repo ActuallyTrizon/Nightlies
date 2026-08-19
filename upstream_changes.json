@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-19T15:22:13Z",
+  "triggered_at": "2026-08-19T16:20:32Z",
   "changed": [
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "85704bf",
-      "new": "c8eb0ef",
-      "full": "c8eb0ef3d86bafeeb5bcf05bcba831f7095ca84f",
-      "msg": "[meta] Properly handle invalid texture surface bindings",
-      "date": "2026-08-19T14:32:51Z"
+      "old": "c8eb0ef",
+      "new": "635f9f9",
+      "full": "635f9f9feab0ca317c39147d7753a132da86a19d",
+      "msg": "[d3d5/3] Don't swap textures lacking valid handles",
+      "date": "2026-08-19T16:03:30Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "586fc2f",
-      "new": "0e6ae6a",
-      "full": "0e6ae6a4dca6d8c46b4e3a1d18d28a521af7b70a",
-      "msg": "radv/rt: Use CPS function signature for raygen if CPS is used",
-      "date": "2026-08-19T14:21:02.000+00:00"
+      "old": "0e6ae6a",
+      "new": "68831cc",
+      "full": "68831ccfb655d691bebb945b84d2c9c22046b9e0",
+      "msg": "kk: use fb fetch and avoid breaking render passes in barriers when possible",
+      "date": "2026-08-19T15:30:52.000+00:00"
     }
   ]
 }
