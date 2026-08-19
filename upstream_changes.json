@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-19T02:13:06Z",
+  "triggered_at": "2026-08-19T04:28:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "679bec7",
-      "new": "24c8a88",
-      "full": "24c8a889798562010742bc58bb0fc9c6bdc4ed07",
-      "msg": "vulkan/android: allow optimal tiling for unorm and srgb mutation",
-      "date": "2026-08-19T00:57:32.000+00:00"
+      "old": "24c8a88",
+      "new": "276eace",
+      "full": "276eace58baa521a306b72a8b3fce06445a11fea",
+      "msg": "kk: Enable nir_io_non_interpolated_as_uint",
+      "date": "2026-08-18T20:25:54.000-07:00"
     }
   ]
 }
