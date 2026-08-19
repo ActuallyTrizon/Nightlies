@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-19T16:20:32Z",
+  "triggered_at": "2026-08-19T17:19:26Z",
   "changed": [
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "c8eb0ef",
-      "new": "635f9f9",
-      "full": "635f9f9feab0ca317c39147d7753a132da86a19d",
-      "msg": "[d3d5/3] Don't swap textures lacking valid handles",
-      "date": "2026-08-19T16:03:30Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0e6ae6a",
-      "new": "68831cc",
-      "full": "68831ccfb655d691bebb945b84d2c9c22046b9e0",
-      "msg": "kk: use fb fetch and avoid breaking render passes in barriers when possible",
-      "date": "2026-08-19T15:30:52.000+00:00"
+      "old": "68831cc",
+      "new": "88be0c1",
+      "full": "88be0c15190df9c46d42dca3e14cb42ba8cd3f8d",
+      "msg": "anv: Allow CCS_E without a format list more often",
+      "date": "2026-08-19T16:36:00.000+00:00"
     }
   ]
 }
