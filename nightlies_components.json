@@ -895,15 +895,15 @@
   },
   {
     "type": "DXVK",
-    "verName": "DXVK-v3.0.2-binsem-gplasync-5bb2a8e8",
+    "verName": "DXVK-v3.0.2-binsem-gplasync-9370ef15",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/DXVK-v3.0.2-binsem-gplasync-5bb2a8e8.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/DXVK-v3.0.2-binsem-gplasync-9370ef15.wcp"
   },
   {
     "type": "DXVK",
-    "verName": "DXVK-v3.0.2-binsem-gplasync-5bb2a8e8",
+    "verName": "DXVK-v3.0.2-binsem-gplasync-9370ef15",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/DXVK-v3.0.2-binsem-gplasync-5bb2a8e8.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/DXVK-v3.0.2-binsem-gplasync-9370ef15.zip"
   },
   {
     "type": "DXVK",
@@ -967,27 +967,27 @@
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0.1-20c0ab20",
+    "verName": "VKD3D-Proton-3.0.1-4b9ab838",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-20c0ab20.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-4b9ab838.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0.1-20c0ab20",
+    "verName": "VKD3D-Proton-3.0.1-4b9ab838",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-20c0ab20.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-4b9ab838.zip"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0.1-20c0ab20",
+    "verName": "VKD3D-Proton-arm64ec-3.0.1-4b9ab838",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-20c0ab20.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-4b9ab838.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0.1-20c0ab20",
+    "verName": "VKD3D-Proton-arm64ec-3.0.1-4b9ab838",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-20c0ab20.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-4b9ab838.zip"
   },
   {
     "type": "WOWBox64",
