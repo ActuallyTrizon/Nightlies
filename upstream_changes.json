@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-19T17:19:26Z",
+  "triggered_at": "2026-08-19T19:18:20Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "68831cc",
-      "new": "88be0c1",
-      "full": "88be0c15190df9c46d42dca3e14cb42ba8cd3f8d",
-      "msg": "anv: Allow CCS_E without a format list more often",
-      "date": "2026-08-19T16:36:00.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d1bb1d1",
+      "new": "7fbbcd3",
+      "full": "7fbbcd34689b70067e080f3225e564514674fd30",
+      "msg": "[RV64_DYNAREC] Support VMOVMSKPS opcode (#4269)",
+      "date": "2026-08-19T19:07:54Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "9370ef1",
+      "new": "fd666da",
+      "full": "fd666dae991eee8e3af17edb3fe1594f437e8825",
+      "msg": "[dxgi] Fix DXVK_HOTPATCHABLE definition",
+      "date": "2026-08-19T18:41:13Z"
     }
   ]
 }
