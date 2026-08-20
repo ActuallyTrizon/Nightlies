@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-20T03:38:50Z",
+  "triggered_at": "2026-08-20T04:28:02Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c7432ef",
-      "new": "f30ebdf",
-      "full": "f30ebdf012b7b60f06230d5d87d8969f9653a99e",
-      "msg": "brw: Skip unspilling the destination when nothing is defined",
-      "date": "2026-08-20T02:48:40.000+00:00"
+      "old": "f30ebdf",
+      "new": "302736b",
+      "full": "302736bcf272ccf12572879dcc6846196a45f143",
+      "msg": "nir: add a central load struct field helper.",
+      "date": "2026-08-20T03:44:58.000+00:00"
     }
   ]
 }
