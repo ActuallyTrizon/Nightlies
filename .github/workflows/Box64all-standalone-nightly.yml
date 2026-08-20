@@ -81,7 +81,13 @@ jobs:
             git fetch pipetto
             git config user.email "action@github.com"
             git config user.name "GitHub Action"
-            git merge pipetto/main --no-edit || { echo "MERGE FAILED"; exit 1; }
+            # src/emu/x64printer.c is debug-only call tracing (BOX64_LOG). ptitSeb and
+            # Pipetto both keep appending adjacent "else if (w == iF...)" signature
+            # branches, which collide textually but never semantically. Union-merge
+            # that one file so both sides' branches are kept instead of conflicting.
+            echo 'src/emu/x64printer.c merge=union' > .git/info/attributes
+            git merge pipetto/main --no-edit || {
+              echo "MERGE FAILED - unresolved conflicts:"; git diff --name-only --diff-filter=U; exit 1; }
           fi
           
           if [ "${{ matrix.type }}" == "WOW64" ]; then
