@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-20T05:22:11Z",
+  "triggered_at": "2026-08-20T07:33:21Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "302736b",
-      "new": "c363342",
-      "full": "c363342a1130b8e00743337492055c71541724af",
-      "msg": "freedreno/ci: Document cl-cts test bugs",
-      "date": "2026-08-20T04:13:40.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "499d038",
+      "new": "b32ea75",
+      "full": "b32ea7586917a19a0ceee7030bacd5c84f712341",
+      "msg": "[WRAPPER] Refined gtk wrapping for #4251 (#4272)",
+      "date": "2026-08-20T07:11:58Z"
     }
   ]
 }
