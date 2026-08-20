@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-20T18:25:02Z",
+  "triggered_at": "2026-08-20T19:24:02Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "b32ea75",
-      "new": "6d039e5",
-      "full": "6d039e5df1c969d78fb648747bdbf2779f6a5c28",
-      "msg": "[WRAPPER] Add some symbols in gnutls (#4276)",
-      "date": "2026-08-20T17:52:39Z"
+      "old": "6d039e5",
+      "new": "64367de",
+      "full": "64367de6bf6bdce8be24015dcc0c580f9d52e5ae",
+      "msg": "[WRAPPER] Wrapper libopus.so library (#4277)",
+      "date": "2026-08-20T19:01:48Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f42dc71",
+      "new": "f50279a",
+      "full": "f50279a2e7e7f69075582c1d29f99b821866e846",
+      "msg": "Merge pull request #5832 from Plagman/plagman/cache_mr",
+      "date": "2026-08-20T19:06:59Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d2ce69d",
-      "new": "c69cc19",
-      "full": "c69cc19ae80c52a8399cca63873479474d9f2acb",
-      "msg": "nouveau/drm: fix UB applying non-zero offset 40 to null pointer",
-      "date": "2026-08-20T17:53:30.000+00:00"
+      "old": "c69cc19",
+      "new": "82c3c80",
+      "full": "82c3c804868fb3020239b793646ba6e4b7dd3a68",
+      "msg": "tu: Fix renderpass tracepoints being lost with s/r chains",
+      "date": "2026-08-20T18:29:48.000+00:00"
     }
   ]
 }
