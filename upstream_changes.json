@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-08-20T20:18:12Z",
+  "triggered_at": "2026-08-20T22:17:38Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "64367de",
-      "new": "67e8c97",
-      "full": "67e8c97ca13296a0c5806926b1c073bf5b53408d",
-      "msg": "[BOX32] Revive fwprintf/vfwprintf/vwprintf wrappers (#4278)",
-      "date": "2026-08-20T19:24:12Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "de84b9b",
-      "new": "6ab96c7",
-      "full": "6ab96c7a6051fd3b07f8ae777d46d13bf6e896f5",
-      "msg": "[meta] Cache color keying info and support multiple texture stages",
-      "date": "2026-08-20T20:14:09Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "82c3c80",
-      "new": "6dd2f29",
-      "full": "6dd2f2919e74a1e038485b1dd08eb062c4230ebb",
-      "msg": "radeonsi: try to clarify RECTLIST/RECT_2D differences",
-      "date": "2026-08-20T19:33:23.000+00:00"
+      "old": "6dd2f29",
+      "new": "dbda147",
+      "full": "dbda14734f3be9163eadaf7c68dafc98952da9ec",
+      "msg": "panfrost/mid: Disable mediump lowering entirely",
+      "date": "2026-08-20T21:15:28.000+00:00"
     }
   ]
 }
