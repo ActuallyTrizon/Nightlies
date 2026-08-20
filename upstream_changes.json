@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-20T00:42:54Z",
+  "triggered_at": "2026-08-20T02:11:39Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "da9e9a5",
-      "new": "081df64",
-      "full": "081df6414f058ef11962a9e1057bf69d0702c261",
-      "msg": "[d3d3] Correctly handle Get/SetExecuteData validations",
-      "date": "2026-08-19T23:51:48Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7fbbcd3",
+      "new": "499d038",
+      "full": "499d038626da2b0c343b53a3d295854306f2eac6",
+      "msg": "[MEM] Reduced autocrc overhead by merging guest page protections (#4270)",
+      "date": "2026-08-20T01:41:56Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "c207014",
+      "new": "c7432ef",
+      "full": "c7432ef5b912d1bebec4624b96cb90c131bd5aca",
+      "msg": "vk/meta: Remove vk_meta_fill_buffer",
+      "date": "2026-08-20T01:23:47.000+00:00"
     }
   ]
 }
