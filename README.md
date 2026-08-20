@@ -50,8 +50,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260820-172703](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260820-172703) |
-| **FEXCore** | [`f42dc7197`](https://github.com/FEX-Emu/FEX/commit/f42dc7197) — FEX-2608+57-Nightly-f42dc7197 |
+| **Release** | [🔗 nightly-20260820-193102](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260820-193102) |
+| **FEXCore** | [`f50279a2e`](https://github.com/FEX-Emu/FEX/commit/f50279a2e) — FEX-2608+59-Nightly-f50279a2e |
 | **VKD3D-Proton (Std)** | [`d01924b6`](https://github.com/HansKristian-Work/vkd3d-proton/commit/d01924b6) |
 | **VKD3D-Proton (ARM64EC)** | [`d01924b6`](https://github.com/HansKristian-Work/vkd3d-proton/commit/d01924b6) |
 | **DXVK (GPLAsync)** | [`a3e186ae`](https://github.com/doitsujin/dxvk/commit/a3e186ae) |
@@ -60,8 +60,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (ARM64EC)** | [`a3e186ae`](https://github.com/doitsujin/dxvk/commit/a3e186ae) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **D7VK (DDraw/D3D7)** | [`de84b9b91`](https://github.com/WinterSnowfall/d7vk/commit/de84b9b91) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.3.0-20260820-r12](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260820-r12) — Turnip v26.3.0-20260820-r12 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260820-172703) |
+| **Turnip** | [v26.3.0-20260820-r14](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260820-r14) — Turnip v26.3.0-20260820-r14 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260820-193102) |
 <!-- NIGHTLY-LATEST-END -->
 
 </details>
