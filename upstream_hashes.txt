@@ -4,7 +4,7 @@ https://github.com/FEX-Emu/FEX: f42dc719723f793742427c62ed4168d1d863a938
 https://github.com/HansKristian-Work/vkd3d-proton: d01924b6f02fa3f78e3d371269267355363dbcb7
 https://github.com/doitsujin/dxvk: a3e186ae547829bb397f5c20e4675c642a993a44
 https://github.com/WinterSnowfall/d7vk: de84b9b9156698117bf76473b3be69518db9eb89
-https://gitlab.freedesktop.org/mesa/mesa@main: 30a5b4c95b9ed9c172cdd2b4aa6caae8c62e08dc
+https://gitlab.freedesktop.org/mesa/mesa@main: d2ce69d4373284e6e3863d4201ec8e46b50cd58a
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
 https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: v26.3.0-R3
 https://github.com/whitebelyash/freedreno_turnip-CI@latest-release: tu_v31

@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-20T16:23:29Z",
+  "triggered_at": "2026-08-20T17:20:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b78fc73",
-      "new": "30a5b4c",
-      "full": "30a5b4c95b9ed9c172cdd2b4aa6caae8c62e08dc",
-      "msg": "zink: Handle max_varying where maxVertexOutputComponents value is too low.",
-      "date": "2026-08-20T15:15:01.000+00:00"
+      "old": "30a5b4c",
+      "new": "d2ce69d",
+      "full": "d2ce69d4373284e6e3863d4201ec8e46b50cd58a",
+      "msg": "radv: only split the right aspect for depth/stencil internal views",
+      "date": "2026-08-20T16:30:47.000+00:00"
     }
   ]
 }
