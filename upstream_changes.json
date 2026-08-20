@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-20T17:20:03Z",
+  "triggered_at": "2026-08-20T18:25:02Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b32ea75",
+      "new": "6d039e5",
+      "full": "6d039e5df1c969d78fb648747bdbf2779f6a5c28",
+      "msg": "[WRAPPER] Add some symbols in gnutls (#4276)",
+      "date": "2026-08-20T17:52:39Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "30a5b4c",
-      "new": "d2ce69d",
-      "full": "d2ce69d4373284e6e3863d4201ec8e46b50cd58a",
-      "msg": "radv: only split the right aspect for depth/stencil internal views",
-      "date": "2026-08-20T16:30:47.000+00:00"
+      "old": "d2ce69d",
+      "new": "c69cc19",
+      "full": "c69cc19ae80c52a8399cca63873479474d9f2acb",
+      "msg": "nouveau/drm: fix UB applying non-zero offset 40 to null pointer",
+      "date": "2026-08-20T17:53:30.000+00:00"
     }
   ]
 }
