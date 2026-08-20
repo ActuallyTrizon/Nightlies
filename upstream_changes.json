@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-20T07:33:21Z",
+  "triggered_at": "2026-08-20T09:24:14Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "499d038",
-      "new": "b32ea75",
-      "full": "b32ea7586917a19a0ceee7030bacd5c84f712341",
-      "msg": "[WRAPPER] Refined gtk wrapping for #4251 (#4272)",
-      "date": "2026-08-20T07:11:58Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "c363342",
+      "new": "6f55c61",
+      "full": "6f55c6188bf3b4ef9c903498a896a2ec78e3f77c",
+      "msg": "ci/deqp: Update VK CTS to 1.4.6.2",
+      "date": "2026-08-20T09:51:32.000+02:00"
     }
   ]
 }
