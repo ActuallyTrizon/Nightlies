@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-20T11:18:18Z",
+  "triggered_at": "2026-08-20T14:26:15Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "e514a4b",
-      "new": "d01924b",
-      "full": "d01924b6f02fa3f78e3d371269267355363dbcb7",
-      "msg": "vkd3d: Drop the per-app allow-non-compliant-fp16 hackery.",
-      "date": "2026-08-20T10:31:19Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "fd666da",
+      "new": "8c4fd27",
+      "full": "8c4fd2723c031b425fb857454e9e5fa4ca25f4ac",
+      "msg": "[util] Use hybrid_patchable attribute for DXVK_HOTPATCHABLE on ARM64EC",
+      "date": "2026-08-20T12:03:18Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "0bcf6dd",
+      "new": "a985edb",
+      "full": "a985edbfb46e5a1d82f7fb86e673c478889383de",
+      "msg": "[meta] Cache color keying info and support multiple texture stages",
+      "date": "2026-08-20T14:09:03Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "29086ed",
-      "new": "57063d7",
-      "full": "57063d75742766f55924b12a3c10118bb76c1be7",
-      "msg": "broadcom: pass simulator arg to build libbroadcom_v3d",
-      "date": "2026-08-20T10:12:35.000+00:00"
+      "old": "57063d7",
+      "new": "20c66a6",
+      "full": "20c66a6e8da4a04ad97bb23e0c9db31d1a62125c",
+      "msg": "broadcom/qpu: drop obsolete pre-4.0 UNIFA check",
+      "date": "2026-08-20T13:46:36.000+00:00"
     }
   ]
 }
