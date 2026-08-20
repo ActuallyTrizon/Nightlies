@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-08-20T14:26:15Z",
+  "triggered_at": "2026-08-20T15:25:11Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "fd666da",
-      "new": "8c4fd27",
-      "full": "8c4fd2723c031b425fb857454e9e5fa4ca25f4ac",
-      "msg": "[util] Use hybrid_patchable attribute for DXVK_HOTPATCHABLE on ARM64EC",
-      "date": "2026-08-20T12:03:18Z"
+      "old": "8c4fd27",
+      "new": "a3e186a",
+      "full": "a3e186ae547829bb397f5c20e4675c642a993a44",
+      "msg": "[dxvk] Hide useless exception when DXVK_CAPTURE_FRAMES is not set",
+      "date": "2026-08-20T14:43:28Z"
     },
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "0bcf6dd",
-      "new": "a985edb",
-      "full": "a985edbfb46e5a1d82f7fb86e673c478889383de",
+      "old": "a985edb",
+      "new": "de84b9b",
+      "full": "de84b9b9156698117bf76473b3be69518db9eb89",
       "msg": "[meta] Cache color keying info and support multiple texture stages",
-      "date": "2026-08-20T14:09:03Z"
+      "date": "2026-08-20T15:01:57Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "57063d7",
-      "new": "20c66a6",
-      "full": "20c66a6e8da4a04ad97bb23e0c9db31d1a62125c",
-      "msg": "broadcom/qpu: drop obsolete pre-4.0 UNIFA check",
-      "date": "2026-08-20T13:46:36.000+00:00"
+      "old": "20c66a6",
+      "new": "b78fc73",
+      "full": "b78fc73dd898a7dfa87448a4b5ff4459a870e21a",
+      "msg": "docs: add missing VK_EXT_cooperative_matrix_maintenance1 for radv, lvp",
+      "date": "2026-08-20T14:11:47.000+00:00"
     }
   ]
 }
