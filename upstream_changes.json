@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T09:26:53Z",
+  "triggered_at": "2026-08-21T10:20:45Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5ecf1f7",
-      "new": "88c960b",
-      "full": "88c960b769045c40b2f5d5c5364c2f64ae178fdf",
-      "msg": "nvk: Advertise VK_KHR_device_address_commands",
-      "date": "2026-08-21T08:23:46.000+00:00"
+      "old": "88c960b",
+      "new": "d945492",
+      "full": "d945492cc49648ed7aeec490f4adc327aa849557",
+      "msg": "va: Set a reasonable minimum size for coded buffer",
+      "date": "2026-08-21T09:49:14.000+00:00"
     }
   ]
 }
