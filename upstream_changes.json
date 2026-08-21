@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T02:18:28Z",
+  "triggered_at": "2026-08-21T06:30:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "75f4634",
-      "new": "d2e56df",
-      "full": "d2e56dfcda6383956d8a3297a3ac9879bd9a9e35",
-      "msg": "nak: add iadd3 ineg with constant rules",
-      "date": "2026-08-21T01:38:12.000+00:00"
+      "old": "d2e56df",
+      "new": "ae07c23",
+      "full": "ae07c23981e85037228789f5adeacc021e293734",
+      "msg": "radv: remove unnecessary radv_write_data()",
+      "date": "2026-08-21T05:46:48.000+00:00"
     }
   ]
 }
