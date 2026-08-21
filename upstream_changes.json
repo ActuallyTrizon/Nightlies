@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T08:28:52Z",
+  "triggered_at": "2026-08-21T09:26:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8bfe318",
-      "new": "5ecf1f7",
-      "full": "5ecf1f76324238cfd21f767e3b74fccd14c5c958",
-      "msg": "vulkan: fix strict aliasing violations with vk_foreach_struct",
-      "date": "2026-08-21T07:55:15.000+00:00"
+      "old": "5ecf1f7",
+      "new": "88c960b",
+      "full": "88c960b769045c40b2f5d5c5364c2f64ae178fdf",
+      "msg": "nvk: Advertise VK_KHR_device_address_commands",
+      "date": "2026-08-21T08:23:46.000+00:00"
     }
   ]
 }
