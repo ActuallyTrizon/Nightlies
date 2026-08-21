@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T07:35:25Z",
+  "triggered_at": "2026-08-21T08:28:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ae07c23",
-      "new": "8bfe318",
-      "full": "8bfe3182c03fb557e7bd949224d02b648b254f36",
-      "msg": "radv: allow enabling the SDMA transfer queue per-application",
-      "date": "2026-08-21T07:13:25.000+00:00"
+      "old": "8bfe318",
+      "new": "5ecf1f7",
+      "full": "5ecf1f76324238cfd21f767e3b74fccd14c5c958",
+      "msg": "vulkan: fix strict aliasing violations with vk_foreach_struct",
+      "date": "2026-08-21T07:55:15.000+00:00"
     }
   ]
 }
