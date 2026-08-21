@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-20T23:17:10Z",
+  "triggered_at": "2026-08-21T00:46:46Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f50279a",
+      "new": "bc69693",
+      "full": "bc69693b6c9a57eac99640fc1ed613e710bbfb32",
+      "msg": "Merge pull request #5834 from Sonicadvance1/205",
+      "date": "2026-08-20T23:47:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dbda147",
-      "new": "bb3fef5",
-      "full": "bb3fef572518943e78af2ccde943f7559dbd5a5a",
-      "msg": "jay: bump JAY_PARTITION_BLOCKS",
-      "date": "2026-08-20T22:24:44.000+00:00"
+      "old": "bb3fef5",
+      "new": "75f4634",
+      "full": "75f46345841f296b966868b728c5d8097fea816e",
+      "msg": "docs: Use merge=union for new_features.txt",
+      "date": "2026-08-21T00:01:22.000+00:00"
     }
   ]
 }
