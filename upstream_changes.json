@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-21T15:24:05Z",
+  "triggered_at": "2026-08-21T16:21:32Z",
   "changed": [
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "6ab96c7",
-      "new": "c19e873",
-      "full": "c19e873734c62de2685b019675a7ee3bca97b198",
-      "msg": "[d3d3] Fix shared device matrix handles and MMX device handling",
-      "date": "2026-08-21T14:55:57Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "497f31e",
-      "new": "973858c",
-      "full": "973858c8022452020a38dd4831b1f7f7f08f772a",
-      "msg": "radv: set radv_force_exclusive_image for few native Vulkan games",
-      "date": "2026-08-21T16:10:40.000+02:00"
+      "old": "973858c",
+      "new": "e7b3fda",
+      "full": "e7b3fdaefa65239e09a5eb7e23d7133a5862ef15",
+      "msg": "zink/ci: fix wrongly identified failures on POLARIS10/NAVI10",
+      "date": "2026-08-21T15:56:53.000+00:00"
     }
   ]
 }
