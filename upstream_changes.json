@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T20:15:39Z",
+  "triggered_at": "2026-08-21T21:14:51Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "4bd7d5b",
-      "new": "355091f",
-      "full": "355091fc91bf49e853967b62a04c6acce0b09af7",
-      "msg": "intel/brw: Add support to TANH instruction in Gfx 35",
-      "date": "2026-08-21T18:46:26.000+00:00"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "38f986b",
+      "new": "2bcb4ff",
+      "full": "2bcb4ff25c5e8f68225f51e7b6bbd7fd35e099ec",
+      "msg": "[d3d6/5] Refactor per-vertex draw handling",
+      "date": "2026-08-21T20:47:57Z"
     }
   ]
 }
