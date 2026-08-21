@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T06:30:54Z",
+  "triggered_at": "2026-08-21T07:35:25Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d2e56df",
-      "new": "ae07c23",
-      "full": "ae07c23981e85037228789f5adeacc021e293734",
-      "msg": "radv: remove unnecessary radv_write_data()",
-      "date": "2026-08-21T05:46:48.000+00:00"
+      "old": "ae07c23",
+      "new": "8bfe318",
+      "full": "8bfe3182c03fb557e7bd949224d02b648b254f36",
+      "msg": "radv: allow enabling the SDMA transfer queue per-application",
+      "date": "2026-08-21T07:13:25.000+00:00"
     }
   ]
 }
