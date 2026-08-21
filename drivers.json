@@ -2347,6 +2347,24 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260821-r15-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260821-r15/Turnip-v26.3.0-20260821-r15-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260821-r15-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260821-r15/Turnip-v26.3.0-20260821-r15-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260821-r15",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260821-r15/Turnip-v26.3.0-20260821-r15.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "Turnip-v26.3.0-20260821-r14-710-720-Test",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260821-r14/Turnip-v26.3.0-20260821-r14-710-720-Test.zip"
@@ -4126,23 +4144,5 @@
     "verName": "Turnip-v26.3.0-20260812-r13",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260812-r13/Turnip-v26.3.0-20260812-r13.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260812-r12-710-720-Test",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260812-r12/Turnip-v26.3.0-20260812-r12-710-720-Test.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260812-r12-A8xx",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260812-r12/Turnip-v26.3.0-20260812-r12-A8xx.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260812-r12",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260812-r12/Turnip-v26.3.0-20260812-r12.zip"
   }
 ]
