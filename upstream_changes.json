@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-21T21:14:51Z",
+  "triggered_at": "2026-08-21T22:14:25Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "38f986b",
-      "new": "2bcb4ff",
-      "full": "2bcb4ff25c5e8f68225f51e7b6bbd7fd35e099ec",
-      "msg": "[d3d6/5] Refactor per-vertex draw handling",
-      "date": "2026-08-21T20:47:57Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "b2b6b26",
+      "new": "bf30f6a",
+      "full": "bf30f6af4c0774337a8215bdef748ad0c790d6c8",
+      "msg": "Merge pull request #5838 from Sonicadvance1/207",
+      "date": "2026-08-21T22:07:39Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "355091f",
+      "new": "00e42c5",
+      "full": "00e42c51b10d8e0769489156fa414f111897d515",
+      "msg": "nvk: add a nvk_video_enabled() helper",
+      "date": "2026-08-21T21:04:37.000+00:00"
     }
   ]
 }
