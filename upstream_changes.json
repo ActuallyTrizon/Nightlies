@@ -1,41 +1,14 @@
 {
-  "triggered_at": "2026-08-21T19:19:16Z",
+  "triggered_at": "2026-08-21T20:15:39Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "67e8c97",
-      "new": "76fda79",
-      "full": "76fda7910e7941a55abbc1ececef235a5e1e025b",
-      "msg": "[ELFLOADER] Support versioned data symbols (#4274)",
-      "date": "2026-08-21T18:32:15Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c1e9d19",
-      "new": "b2b6b26",
-      "full": "b2b6b263bb02bbfea91e0ad2f4f93dffd8a9752d",
-      "msg": "Merge pull request #5835 from Plagman/plagman/cache_thread_mr",
-      "date": "2026-08-21T18:36:39Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "a3e186a",
-      "new": "ff25c7f",
-      "full": "ff25c7f57a635fd195d6d6fbc08a1e12e9a22b8e",
-      "msg": "Fix whitespace",
-      "date": "2026-08-21T18:53:25Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bdcb5ca",
-      "new": "4bd7d5b",
-      "full": "4bd7d5bc0686d2ab0a80b5f0c4d38da0ccdb49c8",
-      "msg": "anv: don't forget to hash render pass color attachments",
-      "date": "2026-08-21T18:26:25.000+00:00"
+      "old": "4bd7d5b",
+      "new": "355091f",
+      "full": "355091fc91bf49e853967b62a04c6acce0b09af7",
+      "msg": "intel/brw: Add support to TANH instruction in Gfx 35",
+      "date": "2026-08-21T18:46:26.000+00:00"
     }
   ]
 }
