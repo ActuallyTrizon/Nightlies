@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T13:38:02Z",
+  "triggered_at": "2026-08-21T14:25:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "75bd6b2",
-      "new": "d7a796e",
-      "full": "d7a796e618f480f9346ff73da14b6cb94da4c78d",
-      "msg": "radv/ci: raise back the lockup timeout to the previous level",
-      "date": "2026-08-21T12:32:51.000+00:00"
+      "old": "d7a796e",
+      "new": "497f31e",
+      "full": "497f31e04cd7cb828254dea1c6efd717bcf567c8",
+      "msg": "nir/opt_shared_vars_to_subgroup: detect loads that stay within subgroups",
+      "date": "2026-08-21T13:14:03.000+00:00"
     }
   ]
 }
