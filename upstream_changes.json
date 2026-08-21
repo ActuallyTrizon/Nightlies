@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-08-21T16:21:32Z",
+  "triggered_at": "2026-08-21T17:20:09Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "bc69693",
+      "new": "c1e9d19",
+      "full": "c1e9d19809f38234b28d119106177a35f830b0fa",
+      "msg": "Merge pull request #5836 from cjacek/int-3",
+      "date": "2026-08-21T16:30:01Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "c19e873",
+      "new": "38f986b",
+      "full": "38f986bd259c8b0047ddf612297442c6af7f4082",
+      "msg": "[d3d3] Refactor device refcount handling",
+      "date": "2026-08-21T17:08:48Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "973858c",
-      "new": "e7b3fda",
-      "full": "e7b3fdaefa65239e09a5eb7e23d7133a5862ef15",
-      "msg": "zink/ci: fix wrongly identified failures on POLARIS10/NAVI10",
-      "date": "2026-08-21T15:56:53.000+00:00"
+      "old": "e7b3fda",
+      "new": "216b4e5",
+      "full": "216b4e5fa1891750e627b72ecd7c950f387897ca",
+      "msg": "ac/rdp: expose elf_gfxip_level enum and conversion helper in the header",
+      "date": "2026-08-21T16:12:09.000+00:00"
     }
   ]
 }
