@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-21T10:20:45Z",
+  "triggered_at": "2026-08-21T11:17:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "88c960b",
-      "new": "d945492",
-      "full": "d945492cc49648ed7aeec490f4adc327aa849557",
-      "msg": "va: Set a reasonable minimum size for coded buffer",
-      "date": "2026-08-21T09:49:14.000+00:00"
+      "old": "d945492",
+      "new": "75bd6b2",
+      "full": "75bd6b237f49ff6b120ae2a6a8e38a0f1cd896ea",
+      "msg": "etnaviv: Emit TFB_COMMAND after the TFB buffer state",
+      "date": "2026-08-21T10:27:34.000+00:00"
     }
   ]
 }
