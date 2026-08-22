@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-22T20:13:02Z",
+  "triggered_at": "2026-08-22T23:11:54Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "cd61921",
-      "new": "708fd7d",
-      "full": "708fd7dc071d46ad24b1a028626a0279ec928c1e",
-      "msg": "[dxvk] Do not always print error messages if image relocation fails",
-      "date": "2026-08-22T20:06:34Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "42c7d81",
+      "new": "0dbda37",
+      "full": "0dbda37d1240b3e74772d12fe15e402052bd5967",
+      "msg": "[meta] General styling cleanup and data type alignment",
+      "date": "2026-08-22T22:51:32Z"
     }
   ]
 }
