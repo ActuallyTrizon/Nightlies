@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-22T14:12:35Z",
+  "triggered_at": "2026-08-22T20:13:02Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "ff25c7f",
-      "new": "cd61921",
-      "full": "cd61921233a3413cc519563f1989466d8f11a904",
-      "msg": "[dxvk] Set render area layer count to 1 if no layered rendering is used",
-      "date": "2026-08-22T13:44:29Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "898c730",
-      "new": "42c7d81",
-      "full": "42c7d81da466c3f96b219eb7caf1fd86374fe33b",
-      "msg": "[meta] Skip normalized color keying on paletted surfaces",
-      "date": "2026-08-22T13:58:50Z"
+      "old": "cd61921",
+      "new": "708fd7d",
+      "full": "708fd7dc071d46ad24b1a028626a0279ec928c1e",
+      "msg": "[dxvk] Do not always print error messages if image relocation fails",
+      "date": "2026-08-22T20:06:34Z"
     }
   ]
 }
