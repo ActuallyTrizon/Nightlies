@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-23T03:42:09Z",
+  "triggered_at": "2026-08-23T15:13:11Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "b563703",
-      "new": "af9b438",
-      "full": "af9b438eec342e0fadbf11e0c34664397c554dcc",
-      "msg": "Merge pull request #5841 from OFFTKP/blsmsk",
-      "date": "2026-08-23T03:13:27Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "0dbda37",
+      "new": "9c5fc30",
+      "full": "9c5fc30d50a863d121abdc08807763e88fd69f79",
+      "msg": "[meta] General styling cleanup and data type alignment",
+      "date": "2026-08-23T14:54:47Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "ebcfbe6",
+      "new": "3f1b217",
+      "full": "3f1b217baffffa00cb8f53e158713a33e1bd4632",
+      "msg": "freedreno/a5xx: seed the streamout counter in the units the hardware uses",
+      "date": "2026-08-23T16:51:23.000+03:00"
     }
   ]
 }
