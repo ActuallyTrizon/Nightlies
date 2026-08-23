@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-23T15:13:11Z",
+  "triggered_at": "2026-08-23T16:14:11Z",
   "changed": [
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "0dbda37",
-      "new": "9c5fc30",
-      "full": "9c5fc30d50a863d121abdc08807763e88fd69f79",
-      "msg": "[meta] General styling cleanup and data type alignment",
-      "date": "2026-08-23T14:54:47Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "ebcfbe6",
-      "new": "3f1b217",
-      "full": "3f1b217baffffa00cb8f53e158713a33e1bd4632",
-      "msg": "freedreno/a5xx: seed the streamout counter in the units the hardware uses",
-      "date": "2026-08-23T16:51:23.000+03:00"
+      "old": "9c5fc30",
+      "new": "dcf2ccd",
+      "full": "dcf2ccd2b3b17c3df2e41d9a3b4a444ee8dcaf0f",
+      "msg": "[build] Fix failing MinGW builder image",
+      "date": "2026-08-23T16:08:14Z"
     }
   ]
 }
