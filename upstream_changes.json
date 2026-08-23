@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-22T23:11:54Z",
+  "triggered_at": "2026-08-23T03:42:09Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "42c7d81",
-      "new": "0dbda37",
-      "full": "0dbda37d1240b3e74772d12fe15e402052bd5967",
-      "msg": "[meta] General styling cleanup and data type alignment",
-      "date": "2026-08-22T22:51:32Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "b563703",
+      "new": "af9b438",
+      "full": "af9b438eec342e0fadbf11e0c34664397c554dcc",
+      "msg": "Merge pull request #5841 from OFFTKP/blsmsk",
+      "date": "2026-08-23T03:13:27Z"
     }
   ]
 }
