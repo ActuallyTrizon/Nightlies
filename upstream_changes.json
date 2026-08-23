@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-23T17:13:16Z",
+  "triggered_at": "2026-08-23T18:16:00Z",
   "changed": [
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "dcf2ccd",
-      "new": "6fb52de",
-      "full": "6fb52dee9a175c7db34cfd43331d71017138b1bf",
-      "msg": "[build] Use a simplified MinGW builder image",
-      "date": "2026-08-23T16:42:06Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "708fd7d",
+      "new": "8dd0c49",
+      "full": "8dd0c49099952be17a1012447abe2f821c1f5849",
+      "msg": "[dxgi] Forward DXGI present parameters to presenter",
+      "date": "2026-08-23T17:34:32Z"
     }
   ]
 }
