@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-23T18:16:00Z",
+  "triggered_at": "2026-08-23T19:15:35Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "708fd7d",
-      "new": "8dd0c49",
-      "full": "8dd0c49099952be17a1012447abe2f821c1f5849",
-      "msg": "[dxgi] Forward DXGI present parameters to presenter",
-      "date": "2026-08-23T17:34:32Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "6fb52de",
+      "new": "b97eb02",
+      "full": "b97eb02cef44e471273918b9eb257377ec5053cc",
+      "msg": "[build] Use a simplified MinGW builder image",
+      "date": "2026-08-23T18:26:13Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3f1b217",
+      "new": "d2d9722",
+      "full": "d2d97220bdebe8c37e1f740f357a671990d3d1be",
+      "msg": "nv50: fixes for left shifts (picked with ubsan)",
+      "date": "2026-08-23T18:12:50.000+00:00"
     }
   ]
 }
