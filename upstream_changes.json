@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-24T12:29:21Z",
+  "triggered_at": "2026-08-24T14:32:50Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9e8d819",
+      "new": "a793cd5",
+      "full": "a793cd52c224fb7136438aca7e7be0c3526810e4",
+      "msg": "[DYNAREC] Added preliminary interblocks deferred flags elimination (#4284)",
+      "date": "2026-08-24T14:02:17Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "73e40d8",
-      "new": "4c1c22e",
-      "full": "4c1c22e9d1a483b27f2502d9becc213257cfa7c5",
-      "msg": "kk: Expose shaderSharedFloat32AtomicAdd for MSL >= 4.1",
-      "date": "2026-08-24T11:36:04.000+00:00"
+      "old": "4c1c22e",
+      "new": "0cd184e",
+      "full": "0cd184e94fc4233d72fba6b9b266a943df4da13a",
+      "msg": "tu: Don't reuse LRZ when it is cleared with partial render area",
+      "date": "2026-08-24T13:27:29.000+00:00"
     }
   ]
 }
