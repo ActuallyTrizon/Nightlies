@@ -301,6 +301,12 @@
   },
   {
     "type": "DXVK",
+    "verName": "dxvk-sarek-v1.13.0",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK/dxvk-sarek-v1.13.0.wcp"
+  },
+  {
+    "type": "DXVK",
     "verName": "dxvk-sarek-async-1.11.0",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/DXVK-SAREK-ASYNC/dxvk-sarek-async-1.11.0.wcp"
@@ -1180,6 +1186,24 @@
     "verName": "proton-11.0-arm64ec-20260422.1559",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/Proton-11/proton-11.0-arm64ec-20260422.1559.wcp"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260824-r9-710-720-Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260824-r9/Turnip-v26.3.0-20260824-r9-710-720-Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260824-r9-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260824-r9/Turnip-v26.3.0-20260824-r9-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.3.0-20260824-r9",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260824-r9/Turnip-v26.3.0-20260824-r9.zip"
   },
   {
     "type": "GpuDriver",
@@ -2962,23 +2986,5 @@
     "verName": "Turnip-v26.3.0-20260813-r13",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260813-r13/Turnip-v26.3.0-20260813-r13.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260813-r12-710-720-Test",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260813-r12/Turnip-v26.3.0-20260813-r12-710-720-Test.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260813-r12-A8xx",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260813-r12/Turnip-v26.3.0-20260813-r12-A8xx.zip"
-  },
-  {
-    "type": "GpuDriver",
-    "verName": "Turnip-v26.3.0-20260813-r12",
-    "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.3.0-20260813-r12/Turnip-v26.3.0-20260813-r12.zip"
   }
 ]
