@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-24T07:50:55Z",
+  "triggered_at": "2026-08-24T08:37:17Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d50beea",
+      "new": "9e8d819",
+      "full": "9e8d8193dc2f7f87ffba2f470376182acac4235a",
+      "msg": "[ARM64_DYNAREC] Fix memory corruption in unaligned LOCK CMPXCHG8B/16B (#4280)",
+      "date": "2026-08-24T08:24:18Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "899977f",
-      "new": "6f03332",
-      "full": "6f0333205471a6d894dff5246aeabf3e8ff3d311",
-      "msg": "tu: Advertise VK_EXT_shader_subgroup_ballot",
-      "date": "2026-08-24T08:39:10.000+02:00"
+      "old": "6f03332",
+      "new": "ac75cf5",
+      "full": "ac75cf5a5bab59f86119d97f21d9b8cd0f85f4f8",
+      "msg": "v3d: flush jobs that queue too many draw calls",
+      "date": "2026-08-24T07:55:06.000+00:00"
     }
   ]
 }
