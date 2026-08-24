@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-24T18:26:55Z",
+  "triggered_at": "2026-08-24T19:22:38Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "a793cd5",
+      "new": "ec1d5a6",
+      "full": "ec1d5a6ac2d4fdfb461344859a03ad1e20920afd",
+      "msg": "[WINE] Add shared CPU feature list for WowBox64 (#4286)",
+      "date": "2026-08-24T19:09:29Z"
+    },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "8dd0c49",
-      "new": "84d8768",
-      "full": "84d876802dbcadae8977ce9a904baa7f7a397cc0",
-      "msg": "[dxvk] Use buffer view clears when clearing buffer attachment",
-      "date": "2026-08-24T17:45:34Z"
+      "old": "84d8768",
+      "new": "87803a3",
+      "full": "87803a3b321297c4388d72a9a84f3034af1ba7b4",
+      "msg": "[meta] Switch CI Arch builder image",
+      "date": "2026-08-24T19:12:25Z"
     }
   ]
 }
