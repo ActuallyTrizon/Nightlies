@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-24T02:17:36Z",
+  "triggered_at": "2026-08-24T07:50:55Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "76fda79",
-      "new": "d50beea",
-      "full": "d50beea87b19d7d4178802d566bdaae6c382ff22",
-      "msg": "[RCFILE] Fixed a game launcher profile (#4282)",
-      "date": "2026-08-24T00:49:04Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "899977f",
+      "new": "6f03332",
+      "full": "6f0333205471a6d894dff5246aeabf3e8ff3d311",
+      "msg": "tu: Advertise VK_EXT_shader_subgroup_ballot",
+      "date": "2026-08-24T08:39:10.000+02:00"
     }
   ]
 }
