@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-23T22:12:27Z",
+  "triggered_at": "2026-08-24T02:17:36Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "af9b438",
-      "new": "c9b23eb",
-      "full": "c9b23eb0e711b0ca614616b530639719fa64a0da",
-      "msg": "Merge pull request #5845 from Plagman/plagman/thread_priority_mr",
-      "date": "2026-08-23T22:09:20Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "76fda79",
+      "new": "d50beea",
+      "full": "d50beea87b19d7d4178802d566bdaae6c382ff22",
+      "msg": "[RCFILE] Fixed a game launcher profile (#4282)",
+      "date": "2026-08-24T00:49:04Z"
     }
   ]
 }
