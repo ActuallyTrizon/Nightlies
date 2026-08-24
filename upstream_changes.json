@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-24T11:18:50Z",
+  "triggered_at": "2026-08-24T12:29:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "84d3619",
-      "new": "73e40d8",
-      "full": "73e40d80550681226e5b82f3c6cc4b56768cdfe2",
-      "msg": "nvk/ci: update expectations",
-      "date": "2026-08-24T10:45:21.000+00:00"
+      "old": "73e40d8",
+      "new": "4c1c22e",
+      "full": "4c1c22e9d1a483b27f2502d9becc213257cfa7c5",
+      "msg": "kk: Expose shaderSharedFloat32AtomicAdd for MSL >= 4.1",
+      "date": "2026-08-24T11:36:04.000+00:00"
     }
   ]
 }
