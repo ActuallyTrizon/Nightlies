@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-24T19:22:38Z",
+  "triggered_at": "2026-08-24T20:20:01Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "a793cd5",
-      "new": "ec1d5a6",
-      "full": "ec1d5a6ac2d4fdfb461344859a03ad1e20920afd",
-      "msg": "[WINE] Add shared CPU feature list for WowBox64 (#4286)",
-      "date": "2026-08-24T19:09:29Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "c9b23eb",
+      "new": "f0b4501",
+      "full": "f0b45010ec18f5686c35b846108f149739552fa4",
+      "msg": "Merge pull request #5840 from Sonicadvance1/209",
+      "date": "2026-08-24T19:44:37Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "84d8768",
-      "new": "87803a3",
-      "full": "87803a3b321297c4388d72a9a84f3034af1ba7b4",
-      "msg": "[meta] Switch CI Arch builder image",
-      "date": "2026-08-24T19:12:25Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4641f00",
+      "new": "4f14e16",
+      "full": "4f14e16ba953b87286dfc3ddcbfc511ea2e60b9a",
+      "msg": "nouveau/mme/tu104: add test and simulator code for DMA_READ and DMA_SYNC",
+      "date": "2026-08-24T19:42:55.000+00:00"
     }
   ]
 }
