@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-24T15:31:49Z",
+  "triggered_at": "2026-08-24T18:26:55Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "0cd184e",
-      "new": "4641f00",
-      "full": "4641f0094f29752f2774e5c0cbfc75d5c76a2f26",
-      "msg": "frontends/va: report processing entrypoint only if VPP is supported",
-      "date": "2026-08-24T14:49:27.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8dd0c49",
+      "new": "84d8768",
+      "full": "84d876802dbcadae8977ce9a904baa7f7a397cc0",
+      "msg": "[dxvk] Use buffer view clears when clearing buffer attachment",
+      "date": "2026-08-24T17:45:34Z"
     }
   ]
 }
