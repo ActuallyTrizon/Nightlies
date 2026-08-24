@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-24T09:37:17Z",
+  "triggered_at": "2026-08-24T10:28:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ac75cf5",
-      "new": "0dadb17",
-      "full": "0dadb17223fa30175c5996f093fe0e830f87e3c2",
-      "msg": "kraid: Do not encode empty shaders",
-      "date": "2026-08-24T09:10:58.000+00:00"
+      "old": "0dadb17",
+      "new": "84d3619",
+      "full": "84d36193fdfe344986fa93f76c67954136803c6d",
+      "msg": "tu: Disable LRZ for depth resolve targets",
+      "date": "2026-08-24T09:37:05.000+00:00"
     }
   ]
 }
