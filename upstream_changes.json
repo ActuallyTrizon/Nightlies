@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-24T21:20:07Z",
+  "triggered_at": "2026-08-24T23:14:58Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ec1d5a6",
-      "new": "91b7fa7",
-      "full": "91b7fa7eea51d30a274c760b168768bb5745985c",
-      "msg": "[CORE] Fix possible buffer overflow for box64rc path (#4288)",
-      "date": "2026-08-24T20:37:38Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "87803a3",
+      "new": "88bfe4e",
+      "full": "88bfe4e7e18a18d97fbae2593e9db624484837a2",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-08-24T22:23:52Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4f14e16",
-      "new": "087e24f",
-      "full": "087e24f91ea9357c1c704c588df335ecfe6bfda3",
-      "msg": "brw: Use reaching definitions when skipping destination fills",
-      "date": "2026-08-24T20:50:19.000+00:00"
+      "old": "087e24f",
+      "new": "c915b45",
+      "full": "c915b4587b127535b89393f268448e57ee3c143a",
+      "msg": "drm-shim: add freedreno/a225",
+      "date": "2026-08-24T22:16:35.000+00:00"
     }
   ]
 }
