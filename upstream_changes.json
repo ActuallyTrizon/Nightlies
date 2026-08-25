@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-25T15:34:40Z",
+  "triggered_at": "2026-08-25T16:25:43Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "88bfe4e",
-      "new": "d4df413",
-      "full": "d4df413147f74bbdc4e6396b0c219f78f2935f7d",
-      "msg": "[d3d11] Forward dirty rectangles to Vulkan swapchain",
-      "date": "2026-08-25T15:30:46Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "118ec7f",
-      "new": "7403042",
-      "full": "74030424e6ed5cc404055bb1afb3221bdec07897",
-      "msg": "broadcom/compiler: fill the old value when spilling a partial write",
-      "date": "2026-08-25T14:35:35.000+00:00"
+      "old": "7403042",
+      "new": "ab4a67a",
+      "full": "ab4a67a17a6402417343076f98131460ddbf2e92",
+      "msg": "radv: fix and improve vkCmdSetEvent2 / vkCmdResetEvent2",
+      "date": "2026-08-25T15:48:03.000+00:00"
     }
   ]
 }
