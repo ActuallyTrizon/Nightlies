@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-08-25T21:18:50Z",
+  "triggered_at": "2026-08-25T22:17:21Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7614e48",
-      "new": "2a76d3b",
-      "full": "2a76d3b15364954e02d28ecc1cf6c1f44c7777f6",
-      "msg": "Merge pull request #5809 from simon902/fcomi_flag_zero",
-      "date": "2026-08-25T20:22:28Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "a66a521",
-      "new": "7ad4937",
-      "full": "7ad4937e28ea1a0e78e3d5345a5c420b6f1ba549",
-      "msg": "tests: Add test for UB r16 texel buffer atomics",
-      "date": "2026-08-25T19:32:06Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d88f9b7",
-      "new": "d286f87",
-      "full": "d286f87b1641abce126337f99caa13b11ae8ef5b",
-      "msg": "freedreno/fdl: Fix gen8 multi-plane descriptor base",
-      "date": "2026-08-25T20:46:20.000+00:00"
+      "old": "d286f87",
+      "new": "2e70082",
+      "full": "2e7008210fcc59013f0fdfec3f65c36ab65b3f45",
+      "msg": "Uprev Piglit to 136db767d5eb88eb439574a25ba429926170da4b",
+      "date": "2026-08-25T21:29:54.000+00:00"
     }
   ]
 }
