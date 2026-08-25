@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T05:23:46Z",
+  "triggered_at": "2026-08-25T06:30:43Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "07646ea",
-      "new": "4412e09",
-      "full": "4412e0924c9440910f3f25c5585b34d03cba9748",
-      "msg": "mesa/st: don't pass stale VBO offsets as user pointers in core profiles",
-      "date": "2026-08-25T04:28:22.000+00:00"
+      "old": "4412e09",
+      "new": "f9831d4",
+      "full": "f9831d49c18291fa557ade665bf3cf86282ad5ff",
+      "msg": "radv: fix copying VRS rates with a non-zero base layer correctly",
+      "date": "2026-08-25T06:10:20.000+00:00"
     }
   ]
 }
