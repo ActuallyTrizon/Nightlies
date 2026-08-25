@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-08-25T10:22:12Z",
+  "triggered_at": "2026-08-25T11:18:35Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "b4b38a9",
-      "new": "7614e48",
-      "full": "7614e48322df593c5f787240f640e5d3dcb8d208",
-      "msg": "Merge pull request #5851 from Sonicadvance1/215",
-      "date": "2026-08-25T10:13:21Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "1f7ff4b",
+      "new": "dc57589",
+      "full": "dc57589aac71f29a37ba326a899d89a98a6d399a",
+      "msg": "[CORE] Fix some errors reported in #4214 (#4292)",
+      "date": "2026-08-25T10:58:20Z"
     },
     {
       "repo": "WinterSnowfall/d7vk",
       "name": "D7VK (DDraw/D3D7)",
-      "old": "b97eb02",
-      "new": "4d3d7fa",
-      "full": "4d3d7fa7769c9c87d1dc3f670d4b57674810019f",
+      "old": "4d3d7fa",
+      "new": "c800a3e",
+      "full": "c800a3e20138780c456cfc6ee0a66729aa7b4bf6",
       "msg": "[build] Use a simplified MinGW builder image",
-      "date": "2026-08-25T10:00:06Z"
+      "date": "2026-08-25T10:24:07Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e79595e",
-      "new": "630840b",
-      "full": "630840b3333ac6eafce6029ad153a47db97dd091",
-      "msg": "amd/common/virtio: fix import/free race that detaches a live res_id",
-      "date": "2026-08-25T09:43:24.000+00:00"
+      "old": "630840b",
+      "new": "1eb29b2",
+      "full": "1eb29b2f2f0f8a7c0a0d1251d9f26c5fb5d26902",
+      "msg": "v3dv: keep CPU mapping alive for the cached BOs",
+      "date": "2026-08-25T10:30:17.000+00:00"
     }
   ]
 }
