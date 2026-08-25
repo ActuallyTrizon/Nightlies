@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-24T23:14:58Z",
+  "triggered_at": "2026-08-25T00:44:29Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "87803a3",
-      "new": "88bfe4e",
-      "full": "88bfe4e7e18a18d97fbae2593e9db624484837a2",
-      "msg": "[meta] Update dxbc-spirv",
-      "date": "2026-08-24T22:23:52Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "087e24f",
-      "new": "c915b45",
-      "full": "c915b4587b127535b89393f268448e57ee3c143a",
-      "msg": "drm-shim: add freedreno/a225",
-      "date": "2026-08-24T22:16:35.000+00:00"
+      "old": "c915b45",
+      "new": "07646ea",
+      "full": "07646ea2ab6d09e53b46d33fedfe9ad59a84efcb",
+      "msg": "nir/lower_int_to_float: correct idiv from the remainder",
+      "date": "2026-08-24T23:03:50.000+00:00"
     }
   ]
 }
