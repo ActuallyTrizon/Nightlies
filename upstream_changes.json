@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-25T09:25:41Z",
+  "triggered_at": "2026-08-25T10:22:12Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d01924b",
-      "new": "a66a521",
-      "full": "a66a5217d688838ad37edf71da789c0589cfe584",
-      "msg": "ci: Don't enable extras for 32bit native builds",
-      "date": "2026-08-25T08:42:45Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "b4b38a9",
+      "new": "7614e48",
+      "full": "7614e48322df593c5f787240f640e5d3dcb8d208",
+      "msg": "Merge pull request #5851 from Sonicadvance1/215",
+      "date": "2026-08-25T10:13:21Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "b97eb02",
+      "new": "4d3d7fa",
+      "full": "4d3d7fa7769c9c87d1dc3f670d4b57674810019f",
+      "msg": "[build] Use a simplified MinGW builder image",
+      "date": "2026-08-25T10:00:06Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2aa64dc",
-      "new": "e79595e",
-      "full": "e79595e37b64d6c84b1962f5adc1bb61fa2ef165",
-      "msg": "radeonsi/ci: update expectations",
-      "date": "2026-08-25T08:22:39.000+00:00"
+      "old": "e79595e",
+      "new": "630840b",
+      "full": "630840b3333ac6eafce6029ad153a47db97dd091",
+      "msg": "amd/common/virtio: fix import/free race that detaches a live res_id",
+      "date": "2026-08-25T09:43:24.000+00:00"
     }
   ]
 }
