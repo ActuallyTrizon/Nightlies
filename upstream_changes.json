@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-25T08:31:28Z",
+  "triggered_at": "2026-08-25T09:25:41Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "91b7fa7",
-      "new": "1f7ff4b",
-      "full": "1f7ff4b9684e734a72a052670f128b55c9d76ae5",
-      "msg": "Revert \"[SYSCALL] Align io_uring epoll events (#4283)\" (#4291)",
-      "date": "2026-08-25T08:00:44Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "d01924b",
+      "new": "a66a521",
+      "full": "a66a5217d688838ad37edf71da789c0589cfe584",
+      "msg": "ci: Don't enable extras for 32bit native builds",
+      "date": "2026-08-25T08:42:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9bb9a74",
-      "new": "2aa64dc",
-      "full": "2aa64dcf1ceb523aca350a25ef64adb3437d35ab",
-      "msg": "radv: enable HTILE for mips+layers on GFX10+",
-      "date": "2026-08-25T07:46:03.000+00:00"
+      "old": "2aa64dc",
+      "new": "e79595e",
+      "full": "e79595e37b64d6c84b1962f5adc1bb61fa2ef165",
+      "msg": "radeonsi/ci: update expectations",
+      "date": "2026-08-25T08:22:39.000+00:00"
     }
   ]
 }
