@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-25T14:35:26Z",
+  "triggered_at": "2026-08-25T15:34:40Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "88bfe4e",
+      "new": "d4df413",
+      "full": "d4df413147f74bbdc4e6396b0c219f78f2935f7d",
+      "msg": "[d3d11] Forward dirty rectangles to Vulkan swapchain",
+      "date": "2026-08-25T15:30:46Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dc33057",
-      "new": "118ec7f",
-      "full": "118ec7f45b1300d0d5b304bb2b34b53a20f09c9e",
-      "msg": "tu: Workaround 32B rollover bug in GPU firmware",
-      "date": "2026-08-25T13:59:52.000+00:00"
+      "old": "118ec7f",
+      "new": "7403042",
+      "full": "74030424e6ed5cc404055bb1afb3221bdec07897",
+      "msg": "broadcom/compiler: fill the old value when spilling a partial write",
+      "date": "2026-08-25T14:35:35.000+00:00"
     }
   ]
 }
