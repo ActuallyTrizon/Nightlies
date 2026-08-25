@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T03:40:37Z",
+  "triggered_at": "2026-08-25T05:23:46Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c3769a6",
-      "new": "b4b38a9",
-      "full": "b4b38a92efb391fcd9ec34f36237d5e26c1ca6a7",
-      "msg": "Merge pull request #5850 from Sonicadvance1/214",
-      "date": "2026-08-25T02:14:15Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "07646ea",
+      "new": "4412e09",
+      "full": "4412e0924c9440910f3f25c5585b34d03cba9748",
+      "msg": "mesa/st: don't pass stale VBO offsets as user pointers in core profiles",
+      "date": "2026-08-25T04:28:22.000+00:00"
     }
   ]
 }
