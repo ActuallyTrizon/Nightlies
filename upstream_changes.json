@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T16:25:43Z",
+  "triggered_at": "2026-08-25T17:23:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7403042",
-      "new": "ab4a67a",
-      "full": "ab4a67a17a6402417343076f98131460ddbf2e92",
-      "msg": "radv: fix and improve vkCmdSetEvent2 / vkCmdResetEvent2",
-      "date": "2026-08-25T15:48:03.000+00:00"
+      "old": "ab4a67a",
+      "new": "27bf3ee",
+      "full": "27bf3ee4c2b2993f2a513b12c0d81f91e6e0a529",
+      "msg": "kk: Connect VK_EXT_debug_utils labels to Metal",
+      "date": "2026-08-25T16:17:25.000+00:00"
     }
   ]
 }
