@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T06:30:43Z",
+  "triggered_at": "2026-08-25T07:36:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4412e09",
-      "new": "f9831d4",
-      "full": "f9831d49c18291fa557ade665bf3cf86282ad5ff",
-      "msg": "radv: fix copying VRS rates with a non-zero base layer correctly",
-      "date": "2026-08-25T06:10:20.000+00:00"
+      "old": "f9831d4",
+      "new": "9bb9a74",
+      "full": "9bb9a74414d69c18eadc5a01b1efe04a6928da51",
+      "msg": "freedreno, tu: Limit XFB streams on GPUs lacking multi-stream query support",
+      "date": "2026-08-25T06:42:39.000+00:00"
     }
   ]
 }
