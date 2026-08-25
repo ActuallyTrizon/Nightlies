@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T00:44:29Z",
+  "triggered_at": "2026-08-25T02:13:33Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "c915b45",
-      "new": "07646ea",
-      "full": "07646ea2ab6d09e53b46d33fedfe9ad59a84efcb",
-      "msg": "nir/lower_int_to_float: correct idiv from the remainder",
-      "date": "2026-08-24T23:03:50.000+00:00"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "f0b4501",
+      "new": "c3769a6",
+      "full": "c3769a69372ea9f8bfc9249a164f670bca0bd090",
+      "msg": "Merge pull request #5849 from Sonicadvance1/213",
+      "date": "2026-08-25T02:11:34Z"
     }
   ]
 }
