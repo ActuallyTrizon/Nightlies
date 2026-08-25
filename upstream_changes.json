@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-25T07:36:28Z",
+  "triggered_at": "2026-08-25T08:31:28Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "91b7fa7",
+      "new": "1f7ff4b",
+      "full": "1f7ff4b9684e734a72a052670f128b55c9d76ae5",
+      "msg": "Revert \"[SYSCALL] Align io_uring epoll events (#4283)\" (#4291)",
+      "date": "2026-08-25T08:00:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f9831d4",
-      "new": "9bb9a74",
-      "full": "9bb9a74414d69c18eadc5a01b1efe04a6928da51",
-      "msg": "freedreno, tu: Limit XFB streams on GPUs lacking multi-stream query support",
-      "date": "2026-08-25T06:42:39.000+00:00"
+      "old": "9bb9a74",
+      "new": "2aa64dc",
+      "full": "2aa64dcf1ceb523aca350a25ef64adb3437d35ab",
+      "msg": "radv: enable HTILE for mips+layers on GFX10+",
+      "date": "2026-08-25T07:46:03.000+00:00"
     }
   ]
 }
