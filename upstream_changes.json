@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-25T13:41:04Z",
+  "triggered_at": "2026-08-25T14:35:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1eb29b2",
-      "new": "dc33057",
-      "full": "dc330577adb9e98363ef6061e09062f171d0d053",
-      "msg": "amd/common: update TRUNC_COORD documentation",
-      "date": "2026-08-25T11:23:08.000+00:00"
+      "old": "dc33057",
+      "new": "118ec7f",
+      "full": "118ec7f45b1300d0d5b304bb2b34b53a20f09c9e",
+      "msg": "tu: Workaround 32B rollover bug in GPU firmware",
+      "date": "2026-08-25T13:59:52.000+00:00"
     }
   ]
 }
