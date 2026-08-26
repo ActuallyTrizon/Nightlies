@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-26T07:38:21Z",
+  "triggered_at": "2026-08-26T08:32:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bb63b17",
-      "new": "5ff6194",
-      "full": "5ff6194ee004f3c21c9617a57c6861f39fbdeef5",
-      "msg": "pan/kmod: Don't initialize pan_kmod_deferred_bo_sync with size=0",
-      "date": "2026-08-26T06:46:21.000+00:00"
+      "old": "5ff6194",
+      "new": "b9a2bf3",
+      "full": "b9a2bf372bf71eb6080fbfe7a75638bfb14e451c",
+      "msg": "broadcom/ci: update expected results",
+      "date": "2026-08-26T08:03:48.000+00:00"
     }
   ]
 }
