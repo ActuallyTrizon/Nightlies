@@ -1,10 +1,10 @@
 https://github.com/ptitSeb/box64: 90b02b9a41101ecfdbfb6de6d8dc1665a26838c2
 https://github.com/Pipetto-crypto/box64: eb6fb21f8e3f93cecd7214227c07757f6236b7b1
 https://github.com/FEX-Emu/FEX: 4ed80fd07176dce976a7351f559d59a47b68cbae
-https://github.com/HansKristian-Work/vkd3d-proton: 7ad4937e28ea1a0e78e3d5345a5c420b6f1ba549
+https://github.com/HansKristian-Work/vkd3d-proton: 7cfe109e80eb0c49cdfeaa5479e45840c134b128
 https://github.com/doitsujin/dxvk: d647fdf3c554ba917f88e01374602e06f664491d
 https://github.com/WinterSnowfall/d7vk: c800a3e20138780c456cfc6ee0a66729aa7b4bf6
-https://gitlab.freedesktop.org/mesa/mesa@main: 7efbeb9098afb9a2b1d28b965527fa968fb6b949
+https://gitlab.freedesktop.org/mesa/mesa@main: 9065df13eb0fec9423897704db4d2d8f414a1364
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
 https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: v26.3.0-R4
 https://github.com/whitebelyash/freedreno_turnip-CI@latest-release: tu_v31

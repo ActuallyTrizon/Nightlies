@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-08-26T12:32:38Z",
+  "triggered_at": "2026-08-26T13:46:17Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "dc57589",
-      "new": "90b02b9",
-      "full": "90b02b9a41101ecfdbfb6de6d8dc1665a26838c2",
-      "msg": "[WRAPPER] Fix some errors reported in #4214 (#4295)",
-      "date": "2026-08-26T11:52:54Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "9cd6755",
-      "new": "d647fdf",
-      "full": "d647fdf3c554ba917f88e01374602e06f664491d",
-      "msg": "[d3d9] Pass validation for imported D3D11 textures.",
-      "date": "2026-08-26T11:38:26Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "7ad4937",
+      "new": "7cfe109",
+      "full": "7cfe109e80eb0c49cdfeaa5479e45840c134b128",
+      "msg": "tests: Add smoke test for OOB queue transition",
+      "date": "2026-08-26T13:28:06Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "31c4715",
-      "new": "7efbeb9",
-      "full": "7efbeb9098afb9a2b1d28b965527fa968fb6b949",
-      "msg": "jay: Fix SIMD selection when a workgroup fits within a size",
-      "date": "2026-08-26T07:32:30.000-04:00"
+      "old": "7efbeb9",
+      "new": "9065df1",
+      "full": "9065df13eb0fec9423897704db4d2d8f414a1364",
+      "msg": "radv: rework RADV_DEBUG options using a bitset",
+      "date": "2026-08-26T12:59:49.000+00:00"
     }
   ]
 }
