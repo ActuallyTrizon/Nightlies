@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-26T08:32:29Z",
+  "triggered_at": "2026-08-26T11:20:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5ff6194",
-      "new": "b9a2bf3",
-      "full": "b9a2bf372bf71eb6080fbfe7a75638bfb14e451c",
-      "msg": "broadcom/ci: update expected results",
-      "date": "2026-08-26T08:03:48.000+00:00"
+      "old": "b9a2bf3",
+      "new": "31c4715",
+      "full": "31c4715fa834dc1da66db38f8360bd796ce39a74",
+      "msg": "kraid: Check mods and more swizzles for small constants",
+      "date": "2026-08-26T10:27:59.000+00:00"
     }
   ]
 }
