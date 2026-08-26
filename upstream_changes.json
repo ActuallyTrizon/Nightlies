@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-26T00:45:56Z",
+  "triggered_at": "2026-08-26T02:19:45Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "a409220",
-      "new": "4ed80fd",
-      "full": "4ed80fd07176dce976a7351f559d59a47b68cbae",
-      "msg": "Merge pull request #5855 from Sonicadvance1/218",
-      "date": "2026-08-26T00:37:52Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8cc4fe5",
-      "new": "5244626",
-      "full": "52446262113329de9cdaab59de8713a2215b2f5e",
-      "msg": "spirv: Narrow the VectorShuffle undef marker to the component bit size",
-      "date": "2026-08-25T23:49:45.000+00:00"
+      "old": "5244626",
+      "new": "28ce274",
+      "full": "28ce274f4e5b0da78025b36c32f239549e09d012",
+      "msg": "spirv: Fix bounds check in OpSpecConstantOp CompositeExtract/Insert",
+      "date": "2026-08-26T00:18:30.000+00:00"
     }
   ]
 }
