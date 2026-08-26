@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-26T02:19:45Z",
+  "triggered_at": "2026-08-26T03:44:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5244626",
-      "new": "28ce274",
-      "full": "28ce274f4e5b0da78025b36c32f239549e09d012",
-      "msg": "spirv: Fix bounds check in OpSpecConstantOp CompositeExtract/Insert",
-      "date": "2026-08-26T00:18:30.000+00:00"
+      "old": "28ce274",
+      "new": "bb63b17",
+      "full": "bb63b1797b657b64dac605391d251a22e1c9cefc",
+      "msg": "amd/virtio: request deferred mapping for blob BOs",
+      "date": "2026-08-26T02:24:41.000+00:00"
     }
   ]
 }
