@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-26T16:10:33Z",
+  "triggered_at": "2026-08-26T18:51:26Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "4ed80fd",
-      "new": "9d4b493",
-      "full": "9d4b493ec0b2b1625660679a2ec35c4020781e87",
-      "msg": "Merge pull request #5852 from Plagman/plagman/keybucket_mr",
-      "date": "2026-08-26T14:59:48Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "c800a3e",
+      "new": "bb7a75e",
+      "full": "bb7a75e7a767aff01292e19758b6eea84dbaf543",
+      "msg": "[d3d6/5/3] Keep set texture handle surface alive",
+      "date": "2026-08-26T18:27:40Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ca0c5d3",
-      "new": "870e94b",
-      "full": "870e94b6341188879149d42f7a30030d4c6503ae",
-      "msg": "magma-gpu-rs: sort the create_event_pair import",
-      "date": "2026-08-26T14:48:56.000+00:00"
+      "old": "870e94b",
+      "new": "cd6564a",
+      "full": "cd6564aba7dfda24e14506eb75e31b8091b55083",
+      "msg": "ir3: Don't use early preamble when the preamble is not speculatable",
+      "date": "2026-08-26T17:37:28.000+00:00"
     }
   ]
 }
