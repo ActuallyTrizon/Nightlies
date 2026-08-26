@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-08-26T11:20:29Z",
+  "triggered_at": "2026-08-26T12:32:38Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "dc57589",
+      "new": "90b02b9",
+      "full": "90b02b9a41101ecfdbfb6de6d8dc1665a26838c2",
+      "msg": "[WRAPPER] Fix some errors reported in #4214 (#4295)",
+      "date": "2026-08-26T11:52:54Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "9cd6755",
+      "new": "d647fdf",
+      "full": "d647fdf3c554ba917f88e01374602e06f664491d",
+      "msg": "[d3d9] Pass validation for imported D3D11 textures.",
+      "date": "2026-08-26T11:38:26Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b9a2bf3",
-      "new": "31c4715",
-      "full": "31c4715fa834dc1da66db38f8360bd796ce39a74",
-      "msg": "kraid: Check mods and more swizzles for small constants",
-      "date": "2026-08-26T10:27:59.000+00:00"
+      "old": "31c4715",
+      "new": "7efbeb9",
+      "full": "7efbeb9098afb9a2b1d28b965527fa968fb6b949",
+      "msg": "jay: Fix SIMD selection when a workgroup fits within a size",
+      "date": "2026-08-26T07:32:30.000-04:00"
     }
   ]
 }
