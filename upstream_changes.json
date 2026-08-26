@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-26T13:46:17Z",
+  "triggered_at": "2026-08-26T14:36:13Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "7ad4937",
-      "new": "7cfe109",
-      "full": "7cfe109e80eb0c49cdfeaa5479e45840c134b128",
-      "msg": "tests: Add smoke test for OOB queue transition",
-      "date": "2026-08-26T13:28:06Z"
+      "old": "7cfe109",
+      "new": "ca242b4",
+      "full": "ca242b4c498feaa13c526e2ba68d27888c474d03",
+      "msg": "tests: Add test to verify GPUVA alignment of buffers.",
+      "date": "2026-08-26T14:30:34Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7efbeb9",
-      "new": "9065df1",
-      "full": "9065df13eb0fec9423897704db4d2d8f414a1364",
-      "msg": "radv: rework RADV_DEBUG options using a bitset",
-      "date": "2026-08-26T12:59:49.000+00:00"
+      "old": "9065df1",
+      "new": "ca0c5d3",
+      "full": "ca0c5d3b7d92b41d985562e32b77b8415014eb5c",
+      "msg": "r600/sfn: lower BUF txf in nir when on PRE-EG",
+      "date": "2026-08-26T13:31:19.000+00:00"
     }
   ]
 }
