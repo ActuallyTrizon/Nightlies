@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-25T23:17:26Z",
+  "triggered_at": "2026-08-26T00:45:56Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "2a76d3b",
-      "new": "a409220",
-      "full": "a409220e5401c3c0256c4b4338b5f49a6a1f48bc",
-      "msg": "Merge pull request #5854 from Sonicadvance1/217",
-      "date": "2026-08-25T22:33:39Z"
+      "old": "a409220",
+      "new": "4ed80fd",
+      "full": "4ed80fd07176dce976a7351f559d59a47b68cbae",
+      "msg": "Merge pull request #5855 from Sonicadvance1/218",
+      "date": "2026-08-26T00:37:52Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2e70082",
-      "new": "8cc4fe5",
-      "full": "8cc4fe51fe781163d0345320a7a04520ecfcdb8d",
-      "msg": "panvk/android: avoid pNext injection of caller ANB info",
-      "date": "2026-08-25T22:11:11.000+00:00"
+      "old": "8cc4fe5",
+      "new": "5244626",
+      "full": "52446262113329de9cdaab59de8713a2215b2f5e",
+      "msg": "spirv: Narrow the VectorShuffle undef marker to the component bit size",
+      "date": "2026-08-25T23:49:45.000+00:00"
     }
   ]
 }
