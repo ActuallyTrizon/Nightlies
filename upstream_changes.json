@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-26T03:44:56Z",
+  "triggered_at": "2026-08-26T07:38:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "28ce274",
-      "new": "bb63b17",
-      "full": "bb63b1797b657b64dac605391d251a22e1c9cefc",
-      "msg": "amd/virtio: request deferred mapping for blob BOs",
-      "date": "2026-08-26T02:24:41.000+00:00"
+      "old": "bb63b17",
+      "new": "5ff6194",
+      "full": "5ff6194ee004f3c21c9617a57c6861f39fbdeef5",
+      "msg": "pan/kmod: Don't initialize pan_kmod_deferred_bo_sync with size=0",
+      "date": "2026-08-26T06:46:21.000+00:00"
     }
   ]
 }
