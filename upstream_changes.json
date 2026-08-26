@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-26T14:36:13Z",
+  "triggered_at": "2026-08-26T16:10:33Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "7cfe109",
-      "new": "ca242b4",
-      "full": "ca242b4c498feaa13c526e2ba68d27888c474d03",
-      "msg": "tests: Add test to verify GPUVA alignment of buffers.",
-      "date": "2026-08-26T14:30:34Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "4ed80fd",
+      "new": "9d4b493",
+      "full": "9d4b493ec0b2b1625660679a2ec35c4020781e87",
+      "msg": "Merge pull request #5852 from Plagman/plagman/keybucket_mr",
+      "date": "2026-08-26T14:59:48Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9065df1",
-      "new": "ca0c5d3",
-      "full": "ca0c5d3b7d92b41d985562e32b77b8415014eb5c",
-      "msg": "r600/sfn: lower BUF txf in nir when on PRE-EG",
-      "date": "2026-08-26T13:31:19.000+00:00"
+      "old": "ca0c5d3",
+      "new": "870e94b",
+      "full": "870e94b6341188879149d42f7a30030d4c6503ae",
+      "msg": "magma-gpu-rs: sort the create_event_pair import",
+      "date": "2026-08-26T14:48:56.000+00:00"
     }
   ]
 }
