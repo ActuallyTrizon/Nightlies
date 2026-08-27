@@ -1,23 +1,41 @@
 {
-  "triggered_at": "2026-08-27T02:26:49Z",
+  "triggered_at": "2026-08-27T13:23:34Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "90b02b9",
+      "new": "aab716f",
+      "full": "aab716ff6e0b63bb5218fbecd2f16bbf0515b78e",
+      "msg": "[WRAPPER] Fix some errors reported in #4214 (#4297)",
+      "date": "2026-08-27T10:31:34Z"
+    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "baca86b",
-      "new": "0814780",
-      "full": "0814780c2f957a4d98cbe9c8c57f770b3f38f640",
-      "msg": "Merge pull request #5860 from Plagman/plagman/bucket_cleanup_mr",
-      "date": "2026-08-27T01:57:02Z"
+      "old": "0814780",
+      "new": "62c9c13",
+      "full": "62c9c130c4fb92960dfb1bdc301e168717abceb9",
+      "msg": "Merge pull request #5864 from simon902/pf2id_saturation",
+      "date": "2026-08-27T13:16:04Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ca242b4",
+      "new": "015d718",
+      "full": "015d71889d6969e16cb812888e227dbc3839ef12",
+      "msg": "vkd3d: Add method to simulate pure wave64 device for debug.",
+      "date": "2026-08-27T12:58:21Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d45779b",
-      "new": "d0b3b0f",
-      "full": "d0b3b0fc8797b9609cc3a2f23273efd9e6f04d29",
-      "msg": "kk: Wrap meta operations in debug groups",
-      "date": "2026-08-27T00:52:41.000+00:00"
+      "old": "d0b3b0f",
+      "new": "e34e6d8",
+      "full": "e34e6d88c096dc7c21a3d01d10c8003293caf902",
+      "msg": "pvr: use a load op for the resolve stencil load op",
+      "date": "2026-08-27T11:31:53.000+00:00"
     }
   ]
 }
