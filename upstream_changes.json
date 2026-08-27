@@ -1,41 +1,23 @@
 {
-  "triggered_at": "2026-08-27T13:23:34Z",
+  "triggered_at": "2026-08-27T23:23:40Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "90b02b9",
-      "new": "aab716f",
-      "full": "aab716ff6e0b63bb5218fbecd2f16bbf0515b78e",
-      "msg": "[WRAPPER] Fix some errors reported in #4214 (#4297)",
-      "date": "2026-08-27T10:31:34Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "0814780",
-      "new": "62c9c13",
-      "full": "62c9c130c4fb92960dfb1bdc301e168717abceb9",
-      "msg": "Merge pull request #5864 from simon902/pf2id_saturation",
-      "date": "2026-08-27T13:16:04Z"
-    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "ca242b4",
-      "new": "015d718",
-      "full": "015d71889d6969e16cb812888e227dbc3839ef12",
-      "msg": "vkd3d: Add method to simulate pure wave64 device for debug.",
-      "date": "2026-08-27T12:58:21Z"
+      "old": "015d718",
+      "new": "2c7c18b",
+      "full": "2c7c18bb1ab3726e7e3567055660ff6a5f7caa4c",
+      "msg": "dxil-spirv: Update submodule",
+      "date": "2026-08-27T16:55:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d0b3b0f",
-      "new": "e34e6d8",
-      "full": "e34e6d88c096dc7c21a3d01d10c8003293caf902",
-      "msg": "pvr: use a load op for the resolve stencil load op",
-      "date": "2026-08-27T11:31:53.000+00:00"
+      "old": "e34e6d8",
+      "new": "2329baf",
+      "full": "2329baffd13c67e7f82af81a543a8074cb9b325b",
+      "msg": "nir, spirv: Widen boolean DebugPrintf arguments to 32-bit",
+      "date": "2026-08-27T21:01:34.000+00:00"
     }
   ]
 }
