@@ -6,6 +6,23 @@
 
 ---
 
+## Session — 2026-08-28
+
+### [feat] — Vanilla DXVK build jobs added to the all-in-one nightly (2026-08-28, `d64ace24` on `main`)
+**Two new jobs in `new-All-in-one-nightly+zips-latest-stable.yml`, both pinned to the latest upstream stable release:**
+- `build-dxvk-vanilla` (std x64/x86) — repackages upstream's official `dxvk-<ver>.tar.gz` → `DXVK-v<ver>.wcp`, versionName `v<ver>`. No compile. Artifact `dxvk-vanilla`.
+- `build-dxvk-arm64ec-vanilla` — cross-compiles arm64ec (LLVM-MinGW 20251104; mirrors the arm64ec gplasync job minus patches) → `DXVK-v<ver>-arm64ec.wcp`, versionName `v<ver>-arm64ec`. Artifact `dxvk-arm64ec-vanilla`.
+- Wired into `create-release` `needs:`; artifacts auto-collected via existing `download-artifact merge-multiple` + `*.wcp/*.zip` upload.
+- **CI-GREEN:** validated on branch run `33215950780` — both vanilla jobs success (also all 4 gplasync/binsem DXVK jobs).
+
+#### Reconciliation note (parallel work by another session)
+While this was on branch `feat/dxvk-vanilla-aio-jobs`, `origin/main` independently gained the **same gplasync fix** (`d402935e` — DxvkAttachment shadow field, identical `.view` member-access approach) plus a **compile-guard hardening** (`e81c0fb2` — real compile guard with v3.0 fallback). So my duplicate patch fix (branch commit `158288d2`) was **dropped**; only the vanilla-jobs commit was cherry-picked onto `origin/main` (`52458184` → `d64ace24`). No clobber. Both features coexist (verified: 14 jobs, both vanilla jobs + the v3.0 compile-guard fallback present).
+
+#### ⚠️ Known: FEXCore master breakage (NOT DXVK, left for now per user)
+`Build FEXCore` + `(PPA flavor)` fail on FEX **master** `config_generator.py:425 assert "AffectsCodeGen" in op_vals` — a recent FEX commit added/renamed a config option without the marker. FEX passed at 21:14 + in the 20:31 nightly. Blocks the nightly publish (hard `needs`) until upstream fixes it or FEX is pinned. Documented; no action this session.
+
+---
+
 ## Session — 2026-08-06
 
 ### [feat] — Add D7VK (DirectDraw/D3D7) all-in-one component (2026-08-06)
