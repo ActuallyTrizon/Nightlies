@@ -1,32 +1,59 @@
 {
-  "triggered_at": "2026-08-28T08:08:58Z",
+  "triggered_at": "2026-08-28T20:31:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "aab716f",
-      "new": "77964a0",
-      "full": "77964a083fe67c74e743e33cf4fc0b012076e74d",
-      "msg": "[WRAPPER] Fixed CLONE_VM|CLONE_VFORK handling in clone (#4305)",
-      "date": "2026-08-28T08:06:14Z"
+      "old": "77964a0",
+      "new": "c305b57",
+      "full": "c305b57c6f56405dbb816db861862dbd3b826af7",
+      "msg": "[ARM64_DYNAREC] Fixed some printer for some speicifc ADD/SUB ocpodes",
+      "date": "2026-08-28T13:17:22Z"
     },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "62c9c13",
-      "new": "fd180a1",
-      "full": "fd180a16d325dda21a04164f0664a0d177729810",
-      "msg": "Merge pull request #5861 from Plagman/plagman/cache_map_mr",
-      "date": "2026-08-28T05:18:13Z"
+      "old": "fd180a1",
+      "new": "063af71",
+      "full": "063af711af804e06d0d5177a800ca6588d6991ad",
+      "msg": "Merge pull request #5869 from cjacek/wow64-syscall",
+      "date": "2026-08-28T20:30:51Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "2c7c18b",
+      "new": "c9c6bf2",
+      "full": "c9c6bf2e9c18252dce304272e7ea47d524287b6c",
+      "msg": "vkd3d: Add raw va config for Assetto Corsa EVO",
+      "date": "2026-08-28T12:07:05Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "d647fdf",
+      "new": "70d7508",
+      "full": "70d7508c01201ed3d4bfb33da42ba834eafe3857",
+      "msg": "[meta] Release 3.1",
+      "date": "2026-08-27T17:33:47Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "bb7a75e",
+      "new": "ce4a349",
+      "full": "ce4a34948b72b1c6b27576e04a0f22ae155d674c",
+      "msg": "[d3d6/5/3] Keep set texture handle surface alive",
+      "date": "2026-08-28T17:15:33Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2329baf",
-      "new": "8fce8ee",
-      "full": "8fce8eee280f2592c653f7c541c65c6d6c97598c",
-      "msg": "spirv: Check all valid capabilities for Layer and ViewportIndex builtins",
-      "date": "2026-08-28T06:04:21.000+00:00"
+      "old": "8fce8ee",
+      "new": "f5f8413",
+      "full": "f5f841333e6936e6d561c699c2d8ca73817aec55",
+      "msg": "tu: Add TU_DEBUG=gmem_warmup to preallocate a large VSC for GMEM rendering.",
+      "date": "2026-08-28T16:44:36.000+00:00"
     }
   ]
 }
