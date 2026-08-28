@@ -1069,37 +1069,60 @@ jobs:
         id: version
         run: |
           PATCHES="$GITHUB_WORKSPACE/patches"
-          # Bleeding edge: build upstream doitsujin/dxvk MASTER (latest commit) and apply
-          # Ph42oN's newest MASTER gplasync patch (vendored under patches/) for a "true"
-          # gplasync. If master ever drifts past what that patch can absorb, fall back to
-          # the last-good release (v3.0 + gplasync-3.0-1) so the nightly still ships.
-          git clone --recurse-submodules --shallow-submodules \
-            https://github.com/doitsujin/dxvk.git dxvk
-          cd dxvk
-          git fetch --tags --force >/dev/null 2>&1 || true
-          # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
-          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
-            echo "Applying vendored MASTER gplasync patch onto dxvk master"
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
-          else
-            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
-            cd ..
-            rm -rf dxvk
+          # Bleeding edge: build upstream doitsujin/dxvk MASTER (latest commit) + Ph42oN's
+          # newest MASTER gplasync patch (vendored under patches/) for a "true" gplasync.
+          # COMPILE guard: a textually-applicable patch can still fail to BUILD after master
+          # drifts (e.g. an upstream struct gains a field), so we PROVE the patched tree
+          # compiles and, only if it does not, fall back to the last-good release
+          # (v3.0 + gplasync-3.0-1) so the nightly still ships.
+
+          # Job-specific COMPILE recipe (package-release.sh propagates ninja failure as non-zero).
+          build_dxvk() {
+            cd "$GITHUB_WORKSPACE/dxvk" || return 1
+            # Use all available vCPUs (runners have 4; was hardcoded to 2)
+            sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh \
+              && ./package-release.sh master ../dxvk-built --no-package
+          }
+
+          # Try upstream MASTER + master gplasync patch and PROVE IT COMPILES.
+          # Returns non-zero if the patch fails to APPLY or the tree fails to COMPILE.
+          attempt_master() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            git fetch --tags --force >/dev/null 2>&1 || true
+            # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
+            patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1 || return 1
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch" || return 1
+            build_dxvk || return 1
+          }
+
+          # Pinned known-good fallback: v3.0 + gplasync-3.0-1. Fatal if it fails.
+          use_fallback() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
             git clone --recurse-submodules --shallow-submodules --branch v3.0 \
               https://github.com/doitsujin/dxvk.git dxvk
             cd dxvk
             patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+            build_dxvk
+          }
+
+          if attempt_master; then
+            echo "DXVK master patched tree built OK"
+          else
+            echo "::warning::DXVK master gplasync patch failed to APPLY or COMPILE — falling back to pinned v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            use_fallback
           fi
-          # Version from whichever tree actually built (master, or the v3.0 fallback).
+
+          # Version reflects whichever tree actually built (master, or the v3.0 fallback).
+          cd "$GITHUB_WORKSPACE/dxvk"
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-gplasync-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
+          echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
-
-          # Use all available vCPUs (runners have 4; was hardcoded to 2)
-          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
-          ./package-release.sh master ../dxvk-built --no-package
 
       - name: Print ccache stats
         run: ccache --show-stats
@@ -1352,36 +1375,6 @@ jobs:
           ccache --max-size=1G
           ccache --zero-stats
 
-      - name: Clone & Patch DXVK
-        id: version
-        run: |
-          PATCHES="$GITHUB_WORKSPACE/patches"
-          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
-          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
-          # if master drifts past what the master patch can absorb. See gplasync (std) job.
-          git clone --recurse-submodules --shallow-submodules \
-            https://github.com/doitsujin/dxvk.git dxvk
-          cd dxvk
-          git fetch --tags --force >/dev/null 2>&1 || true
-          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
-            echo "Applying vendored MASTER gplasync patch onto dxvk master"
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
-          else
-            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
-            cd ..
-            rm -rf dxvk
-            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
-              https://github.com/doitsujin/dxvk.git dxvk
-            cd dxvk
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
-          fi
-          LATEST_TAG=$(git describe --tags --abbrev=0)
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="${LATEST_TAG}-gplasync-arm64ec-${COMMIT_HASH}"
-          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
-          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
-          echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-
       - name: Configure Cross-Files
         run: |
           # ccache injected via the binaries array — cleanest approach for meson cross builds
@@ -1418,13 +1411,62 @@ jobs:
           EOF
 
       - name: Build
+        id: version
         run: |
-          cd dxvk
-          meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
-          meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true
-          # Use all available vCPUs (runners have 4; was hardcoded to 2)
-          ninja -C build-ec -j$(nproc)
-          ninja -C build-x86 -j$(nproc)
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: dxvk MASTER + Ph42oN gplasync (master). COMPILE guard: PROVE the
+          # patched tree builds; only if it fails to APPLY or COMPILE fall back to v3.0 +
+          # gplasync-3.0-1 so the nightly still ships. Cross files were written into
+          # $GITHUB_WORKSPACE by the preceding "Configure Cross-Files" step.
+
+          # Job-specific COMPILE recipe (meson + ninja cross-build; ../*.txt from Configure Cross-Files).
+          build_dxvk() {
+            cd "$GITHUB_WORKSPACE/dxvk" || return 1
+            meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true \
+              && meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true \
+              && ninja -C build-ec -j$(nproc) \
+              && ninja -C build-x86 -j$(nproc)
+          }
+
+          # Try upstream MASTER + master gplasync patch and PROVE IT COMPILES.
+          # Returns non-zero if the patch fails to APPLY or the tree fails to COMPILE.
+          attempt_master() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            git fetch --tags --force >/dev/null 2>&1 || true
+            # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
+            patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1 || return 1
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch" || return 1
+            build_dxvk || return 1
+          }
+
+          # Pinned known-good fallback: v3.0 + gplasync-3.0-1. Fatal if it fails.
+          use_fallback() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+            build_dxvk
+          }
+
+          if attempt_master; then
+            echo "DXVK master patched tree built OK"
+          else
+            echo "::warning::DXVK master gplasync patch failed to APPLY or COMPILE — falling back to pinned v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            use_fallback
+          fi
+
+          # Version reflects whichever tree actually built (master, or the v3.0 fallback).
+          cd "$GITHUB_WORKSPACE/dxvk"
+          LATEST_TAG=$(git describe --tags --abbrev=0)
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          VERSION_NAME="${LATEST_TAG}-gplasync-arm64ec-${COMMIT_HASH}"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
+          echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
 
       - name: Print ccache stats
         run: ccache --show-stats
@@ -1556,47 +1598,66 @@ jobs:
           ccache --max-size=1G
           ccache --zero-stats
 
-      - name: Clone & Patch DXVK
+      - name: Build DXVK
         id: version
         run: |
           PATCHES="$GITHUB_WORKSPACE/patches"
-          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
-          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
-          # if master drifts past what the master patch can absorb. See gplasync (std) job.
-          git clone --recurse-submodules --shallow-submodules \
-            https://github.com/doitsujin/dxvk.git dxvk
-          cd dxvk
-          git fetch --tags --force >/dev/null 2>&1 || true
-          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
-            echo "Applying vendored MASTER gplasync patch onto dxvk master"
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
-          else
-            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
-            cd ..
-            rm -rf dxvk
+          # Bleeding edge: dxvk MASTER + Ph42oN gplasync (master) + leegao binary-semaphore
+          # patch layered on top. COMPILE guard: PROVE the fully-patched tree builds; only if
+          # it fails to APPLY or COMPILE fall back to v3.0 + gplasync-3.0-1 (+ binsem) so the
+          # nightly still ships. The BinSem patch is applied in BOTH the master and fallback
+          # paths (touches dxvk_cmdlist/dxvk_queue only — no overlap with gplasync).
+
+          # Job-specific COMPILE recipe (package-release.sh propagates ninja failure as non-zero).
+          build_dxvk() {
+            cd "$GITHUB_WORKSPACE/dxvk" || return 1
+            # Use all available vCPUs (runners have 4; was hardcoded to 2)
+            sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh \
+              && ./package-release.sh master ../dxvk-built --no-package
+          }
+
+          # Try upstream MASTER + master gplasync + binsem patches and PROVE IT COMPILES.
+          # Returns non-zero if any patch fails to APPLY or the tree fails to COMPILE.
+          attempt_master() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            git fetch --tags --force >/dev/null 2>&1 || true
+            # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
+            patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1 || return 1
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch" || return 1
+            # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch" || return 1
+            build_dxvk || return 1
+          }
+
+          # Pinned known-good fallback: v3.0 + gplasync-3.0-1 + binsem. Fatal if it fails.
+          use_fallback() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
             git clone --recurse-submodules --shallow-submodules --branch v3.0 \
               https://github.com/doitsujin/dxvk.git dxvk
             cd dxvk
             patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
+            build_dxvk
+          }
+
+          if attempt_master; then
+            echo "DXVK master patched tree built OK"
+          else
+            echo "::warning::DXVK master gplasync patch failed to APPLY or COMPILE — falling back to pinned v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            use_fallback
           fi
+
+          # Version reflects whichever tree actually built (master, or the v3.0 fallback).
+          cd "$GITHUB_WORKSPACE/dxvk"
           LATEST_TAG=$(git describe --tags --abbrev=0)
           COMMIT_HASH=$(git rev-parse --short HEAD)
           VERSION_NAME="${LATEST_TAG}-binsem-gplasync-${COMMIT_HASH}"
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
-
-          # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
-          # Touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync. Applied with
-          # `patch --fuzz` so it tolerates master drift the same way the gplasync patch does.
-          patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
-
-      - name: Build DXVK
-        run: |
-          cd dxvk
-          # Use all available vCPUs (runners have 4; was hardcoded to 2)
-          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
-          ./package-release.sh master ../dxvk-built --no-package
 
       - name: Print ccache stats
         run: ccache --show-stats
@@ -1724,41 +1785,6 @@ jobs:
           ccache --max-size=1G
           ccache --zero-stats
 
-      - name: Clone & Patch DXVK
-        id: version
-        run: |
-          PATCHES="$GITHUB_WORKSPACE/patches"
-          # Bleeding edge: build upstream doitsujin/dxvk MASTER + Ph42oN's newest MASTER
-          # gplasync patch (vendored under patches/); fall back to v3.0 + gplasync-3.0-1
-          # if master drifts past what the master patch can absorb. See gplasync (std) job.
-          git clone --recurse-submodules --shallow-submodules \
-            https://github.com/doitsujin/dxvk.git dxvk
-          cd dxvk
-          git fetch --tags --force >/dev/null 2>&1 || true
-          if patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1; then
-            echo "Applying vendored MASTER gplasync patch onto dxvk master"
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch"
-          else
-            echo "::warning::master gplasync patch no longer applies to dxvk master; falling back to v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
-            cd ..
-            rm -rf dxvk
-            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
-              https://github.com/doitsujin/dxvk.git dxvk
-            cd dxvk
-            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
-          fi
-          LATEST_TAG=$(git describe --tags --abbrev=0)
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="${LATEST_TAG}-binsem-gplasync-arm64ec-${COMMIT_HASH}"
-          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
-          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
-          echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-
-          # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
-          # Touches dxvk_cmdlist/dxvk_queue only, no overlap with gplasync. Applied with
-          # `patch --fuzz` so it tolerates master drift the same way the gplasync patch does.
-          patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
-
       - name: Configure Cross-Files
         run: |
           # ccache injected via the binaries array — cleanest approach for meson cross builds
@@ -1795,13 +1821,67 @@ jobs:
           EOF
 
       - name: Build
+        id: version
         run: |
-          cd dxvk
-          meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
-          meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true
-          # Use all available vCPUs (runners have 4; was hardcoded to 2)
-          ninja -C build-ec -j$(nproc)
-          ninja -C build-x86 -j$(nproc)
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          # Bleeding edge: dxvk MASTER + Ph42oN gplasync (master) + leegao binary-semaphore
+          # patch layered on top. COMPILE guard: PROVE the fully-patched tree builds; only if
+          # it fails to APPLY or COMPILE fall back to v3.0 + gplasync-3.0-1 (+ binsem) so the
+          # nightly still ships. The BinSem patch is applied in BOTH the master and fallback
+          # paths (touches dxvk_cmdlist/dxvk_queue only — no overlap with gplasync). Cross files
+          # were written into $GITHUB_WORKSPACE by the preceding "Configure Cross-Files" step.
+
+          # Job-specific COMPILE recipe (meson + ninja cross-build; ../*.txt from Configure Cross-Files).
+          build_dxvk() {
+            cd "$GITHUB_WORKSPACE/dxvk" || return 1
+            meson setup build-ec --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true \
+              && meson setup build-x86 --cross-file ../x86.txt -Dbuildtype=release -Dstrip=true \
+              && ninja -C build-ec -j$(nproc) \
+              && ninja -C build-x86 -j$(nproc)
+          }
+
+          # Try upstream MASTER + master gplasync + binsem patches and PROVE IT COMPILES.
+          # Returns non-zero if any patch fails to APPLY or the tree fails to COMPILE.
+          attempt_master() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            git fetch --tags --force >/dev/null 2>&1 || true
+            # patch --fuzz (not git apply): tolerates minor context drift vs a moving master.
+            patch -p1 --fuzz=3 --dry-run < "$PATCHES/dxvk-gplasync-master.patch" >/dev/null 2>&1 || return 1
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-master.patch" || return 1
+            # leegao binary-semaphore fallback (vendored) — layered on top of gplasync.
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch" || return 1
+            build_dxvk || return 1
+          }
+
+          # Pinned known-good fallback: v3.0 + gplasync-3.0-1 + binsem. Fatal if it fails.
+          use_fallback() {
+            cd "$GITHUB_WORKSPACE"; rm -rf dxvk dxvk-built build-ec build-x86
+            git clone --recurse-submodules --shallow-submodules --branch v3.0 \
+              https://github.com/doitsujin/dxvk.git dxvk
+            cd dxvk
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-gplasync-3.0-1.patch"
+            patch -p1 --fuzz=3 < "$PATCHES/dxvk-binary-semaphores.patch"
+            build_dxvk
+          }
+
+          if attempt_master; then
+            echo "DXVK master patched tree built OK"
+          else
+            echo "::warning::DXVK master gplasync patch failed to APPLY or COMPILE — falling back to pinned v3.0 + gplasync-3.0-1. Re-vendor patches/dxvk-gplasync-master.patch from Ph42oN."
+            use_fallback
+          fi
+
+          # Version reflects whichever tree actually built (master, or the v3.0 fallback).
+          cd "$GITHUB_WORKSPACE/dxvk"
+          LATEST_TAG=$(git describe --tags --abbrev=0)
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          VERSION_NAME="${LATEST_TAG}-binsem-gplasync-arm64ec-${COMMIT_HASH}"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
+          echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
 
       - name: Print ccache stats
         run: ccache --show-stats
