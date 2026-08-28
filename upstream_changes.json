@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-08-26T03:44:56Z",
+  "triggered_at": "2026-08-28T08:08:58Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "aab716f",
+      "new": "77964a0",
+      "full": "77964a083fe67c74e743e33cf4fc0b012076e74d",
+      "msg": "[WRAPPER] Fixed CLONE_VM|CLONE_VFORK handling in clone (#4305)",
+      "date": "2026-08-28T08:06:14Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "62c9c13",
+      "new": "fd180a1",
+      "full": "fd180a16d325dda21a04164f0664a0d177729810",
+      "msg": "Merge pull request #5861 from Plagman/plagman/cache_map_mr",
+      "date": "2026-08-28T05:18:13Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "28ce274",
-      "new": "bb63b17",
-      "full": "bb63b1797b657b64dac605391d251a22e1c9cefc",
-      "msg": "amd/virtio: request deferred mapping for blob BOs",
-      "date": "2026-08-26T02:24:41.000+00:00"
+      "old": "2329baf",
+      "new": "8fce8ee",
+      "full": "8fce8eee280f2592c653f7c541c65c6d6c97598c",
+      "msg": "spirv: Check all valid capabilities for Layer and ViewportIndex builtins",
+      "date": "2026-08-28T06:04:21.000+00:00"
     }
   ]
 }
