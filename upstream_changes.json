@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-08-27T23:23:40Z",
+  "triggered_at": "2026-08-28T08:08:58Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "015d718",
-      "new": "2c7c18b",
-      "full": "2c7c18bb1ab3726e7e3567055660ff6a5f7caa4c",
-      "msg": "dxil-spirv: Update submodule",
-      "date": "2026-08-27T16:55:45Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "aab716f",
+      "new": "77964a0",
+      "full": "77964a083fe67c74e743e33cf4fc0b012076e74d",
+      "msg": "[WRAPPER] Fixed CLONE_VM|CLONE_VFORK handling in clone (#4305)",
+      "date": "2026-08-28T08:06:14Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "62c9c13",
+      "new": "fd180a1",
+      "full": "fd180a16d325dda21a04164f0664a0d177729810",
+      "msg": "Merge pull request #5861 from Plagman/plagman/cache_map_mr",
+      "date": "2026-08-28T05:18:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e34e6d8",
-      "new": "2329baf",
-      "full": "2329baffd13c67e7f82af81a543a8074cb9b325b",
-      "msg": "nir, spirv: Widen boolean DebugPrintf arguments to 32-bit",
-      "date": "2026-08-27T21:01:34.000+00:00"
+      "old": "2329baf",
+      "new": "8fce8ee",
+      "full": "8fce8eee280f2592c653f7c541c65c6d6c97598c",
+      "msg": "spirv: Check all valid capabilities for Layer and ViewportIndex builtins",
+      "date": "2026-08-28T06:04:21.000+00:00"
     }
   ]
 }
