@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-29T02:57:22Z",
+  "triggered_at": "2026-08-29T09:42:37Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "063af71",
-      "new": "98964c5",
-      "full": "98964c552773b374676610776357a030a6825e53",
-      "msg": "Merge pull request #5875 from lioncash/config",
-      "date": "2026-08-28T22:47:11Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c305b57",
+      "new": "0b0fb69",
+      "full": "0b0fb69c9fdf5f4802ae63b74c583f5ab201a467",
+      "msg": "[WRAPPER] Wrapped libc arch_prctl (#4317)",
+      "date": "2026-08-29T09:06:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f5f8413",
-      "new": "e881540",
-      "full": "e881540692daac6532cefec76699f7a025563767",
-      "msg": "jay: Mask shuffle lane index to avoid out-of-bounds register file access",
-      "date": "2026-08-29T01:10:00.000+00:00"
+      "old": "e881540",
+      "new": "4a7a29d",
+      "full": "4a7a29d007446f68ac6ac3633b58282fe99cd700",
+      "msg": "kk: Handle NULL object names in vkSetDebugUtilsObjectNameEXT()",
+      "date": "2026-08-29T07:30:52.000+00:00"
     }
   ]
 }
