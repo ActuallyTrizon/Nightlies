@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-29T21:24:41Z",
+  "triggered_at": "2026-08-29T23:44:38Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0b5d30b",
-      "new": "55083ea",
-      "full": "55083ea13d9e71d18ceaacf359d16361a9072f03",
-      "msg": "[STEAM] Added a hack to fix the stair-stepping logging issue (#4323)",
-      "date": "2026-08-29T19:15:31Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "4a7a29d",
-      "new": "e87a037",
-      "full": "e87a03754d9a39632a78503f551d51bab2a6c5a5",
-      "msg": "winsys/radeon: reuse GEM_OPEN handles for display",
-      "date": "2026-08-29T20:47:33.000+00:00"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "c9c6bf2",
+      "new": "940e9f9",
+      "full": "940e9f9355d81a397f6e51cf97f5dd7ea528967c",
+      "msg": "vkd3d: Handle raw buffers in optimized ClearUAV path",
+      "date": "2026-08-29T22:24:38Z"
     }
   ]
 }
