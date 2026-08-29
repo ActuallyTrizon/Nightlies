@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-29T14:49:54Z",
+  "triggered_at": "2026-08-29T18:02:49Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0b0fb69",
-      "new": "31c8d83",
-      "full": "31c8d836fc247891106c1a07a039ed4b61be4467",
-      "msg": "docs: fix typo priviledge -> privilege (#4318)",
-      "date": "2026-08-29T13:59:02Z"
+      "old": "31c8d83",
+      "new": "0b5d30b",
+      "full": "0b5d30b9a8f3eb87a8721c65b3a8a339e4aa16e1",
+      "msg": "[SIGNAL][ARM64_DYNAREC] Emitted SIGTRAP on INT3 regardless of handler state (#43",
+      "date": "2026-08-29T17:14:42Z"
     }
   ]
 }
