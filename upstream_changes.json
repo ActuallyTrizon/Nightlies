@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-29T18:02:49Z",
+  "triggered_at": "2026-08-29T21:24:41Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "31c8d83",
-      "new": "0b5d30b",
-      "full": "0b5d30b9a8f3eb87a8721c65b3a8a339e4aa16e1",
-      "msg": "[SIGNAL][ARM64_DYNAREC] Emitted SIGTRAP on INT3 regardless of handler state (#43",
-      "date": "2026-08-29T17:14:42Z"
+      "old": "0b5d30b",
+      "new": "55083ea",
+      "full": "55083ea13d9e71d18ceaacf359d16361a9072f03",
+      "msg": "[STEAM] Added a hack to fix the stair-stepping logging issue (#4323)",
+      "date": "2026-08-29T19:15:31Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "4a7a29d",
+      "new": "e87a037",
+      "full": "e87a03754d9a39632a78503f551d51bab2a6c5a5",
+      "msg": "winsys/radeon: reuse GEM_OPEN handles for display",
+      "date": "2026-08-29T20:47:33.000+00:00"
     }
   ]
 }
