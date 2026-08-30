@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-30T02:39:48Z",
+  "triggered_at": "2026-08-30T08:44:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e87a037",
-      "new": "d340c7d",
-      "full": "d340c7d825b719a1797ca024ad06632f3b3566d2",
-      "msg": "freedreno/a5xx: implement depth clamp",
-      "date": "2026-08-30T01:38:16.000+00:00"
+      "old": "d340c7d",
+      "new": "80f5c91",
+      "full": "80f5c9174b094c26befc5efa90d0ba863999bfa6",
+      "msg": "r300: fall back for oversized blit rectangles",
+      "date": "2026-08-30T06:35:48.000+00:00"
     }
   ]
 }
