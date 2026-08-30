@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-08-29T23:44:38Z",
+  "triggered_at": "2026-08-30T02:39:48Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c9c6bf2",
-      "new": "940e9f9",
-      "full": "940e9f9355d81a397f6e51cf97f5dd7ea528967c",
-      "msg": "vkd3d: Handle raw buffers in optimized ClearUAV path",
-      "date": "2026-08-29T22:24:38Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "e87a037",
+      "new": "d340c7d",
+      "full": "d340c7d825b719a1797ca024ad06632f3b3566d2",
+      "msg": "freedreno/a5xx: implement depth clamp",
+      "date": "2026-08-30T01:38:16.000+00:00"
     }
   ]
 }
