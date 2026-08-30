@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-30T08:44:20Z",
+  "triggered_at": "2026-08-30T14:08:10Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "98964c5",
+      "new": "dea5c62",
+      "full": "dea5c62a44d776f725f96dd970241496612323cc",
+      "msg": "Merge pull request #5880 from Plagman/plagman/lookup_less_allocs_mr",
+      "date": "2026-08-30T11:57:30Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d340c7d",
-      "new": "80f5c91",
-      "full": "80f5c9174b094c26befc5efa90d0ba863999bfa6",
-      "msg": "r300: fall back for oversized blit rectangles",
-      "date": "2026-08-30T06:35:48.000+00:00"
+      "old": "80f5c91",
+      "new": "29c5f0a",
+      "full": "29c5f0ad445246ba8352aee61702bc3b5887389d",
+      "msg": "etnaviv: nir: Call nir_opt_combine_stores(..)",
+      "date": "2026-08-30T10:43:40.000+00:00"
     }
   ]
 }
