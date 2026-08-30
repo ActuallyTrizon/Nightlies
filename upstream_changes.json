@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-08-30T14:08:10Z",
+  "triggered_at": "2026-08-30T18:17:24Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "98964c5",
-      "new": "dea5c62",
-      "full": "dea5c62a44d776f725f96dd970241496612323cc",
-      "msg": "Merge pull request #5880 from Plagman/plagman/lookup_less_allocs_mr",
-      "date": "2026-08-30T11:57:30Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "80f5c91",
-      "new": "29c5f0a",
-      "full": "29c5f0ad445246ba8352aee61702bc3b5887389d",
-      "msg": "etnaviv: nir: Call nir_opt_combine_stores(..)",
-      "date": "2026-08-30T10:43:40.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "55083ea",
+      "new": "b238f4f",
+      "full": "b238f4f1b8b143d371acdc47d96c2804d18c75ff",
+      "msg": "[RV64_DYNAREC] Added preliminary RVV1.0 (vlen>=256) AVX/AVX2 implementation (#43",
+      "date": "2026-08-30T15:59:45Z"
     }
   ]
 }
