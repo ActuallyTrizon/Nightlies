@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-08-30T18:17:24Z",
+  "triggered_at": "2026-08-30T21:45:02Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "55083ea",
-      "new": "b238f4f",
-      "full": "b238f4f1b8b143d371acdc47d96c2804d18c75ff",
-      "msg": "[RV64_DYNAREC] Added preliminary RVV1.0 (vlen>=256) AVX/AVX2 implementation (#43",
-      "date": "2026-08-30T15:59:45Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "dea5c62",
+      "new": "e17fdf9",
+      "full": "e17fdf9e90a49614e16ac8414a687477fb9e4f7c",
+      "msg": "Merge pull request #5882 from Sonicadvance1/222",
+      "date": "2026-08-30T21:41:35Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "29c5f0a",
+      "new": "cf63745",
+      "full": "cf63745aa2dfdb88eafb4ac2b619f95c09cfd832",
+      "msg": "anv: fix regression on coopmat per element operations feature.",
+      "date": "2026-08-30T21:02:25.000+00:00"
     }
   ]
 }
