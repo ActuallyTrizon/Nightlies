@@ -1,50 +1,41 @@
 {
-  "triggered_at": "2026-08-31T14:39:05Z",
+  "triggered_at": "2026-08-31T20:31:07Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0f6603e",
-      "new": "1e7121e",
-      "full": "1e7121e48f3641538cb3168a26068590f4465833",
-      "msg": "[SYSCALL] Fixed getdents wrapping (#4332)",
-      "date": "2026-08-31T12:05:04Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "73dc3b3",
-      "new": "ef5439e",
-      "full": "ef5439e5ae9af9ce658b61eb414800eefdce72a4",
-      "msg": "Merge pull request #5885 from Plagman/plagman/linux_writerthread_signalblock_mr",
-      "date": "2026-08-31T14:18:14Z"
+      "old": "1e7121e",
+      "new": "12636eb",
+      "full": "12636eb32146ebc1f5547483a439077162fdfffb",
+      "msg": "[CORE] Add MIT license header to all relevant source files (#4287)",
+      "date": "2026-08-31T17:50:21Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "940e9f9",
-      "new": "bde5824",
-      "full": "bde58245be2f29ede66b7e0e5c75274072bd3aa3",
-      "msg": "vkd3d: Enable fail_unsupported_state_template for Teardown",
-      "date": "2026-08-31T10:35:13Z"
+      "old": "bde5824",
+      "new": "6cd5334",
+      "full": "6cd53341734235c2427103714bc80019e4ffc933",
+      "msg": "ci: Remove unused step IDs",
+      "date": "2026-08-31T17:46:52Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "70d7508",
-      "new": "adeda66",
-      "full": "adeda6639a09ad1b6a1b7c4158a781ffaf68947d",
-      "msg": "[meta] Use Arch container directly in CI",
-      "date": "2026-08-31T07:01:23Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "ce4a349",
+      "new": "7acd340",
+      "full": "7acd3409669b3f1e34b21e93114c4094aa47fa0c",
+      "msg": "[d3d6/5/3] Keep set texture handle surface alive",
+      "date": "2026-08-31T18:12:23Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cf63745",
-      "new": "68cbebd",
-      "full": "68cbebd579008b68149d4dedfd20cae07ded30ad",
-      "msg": "mesa/main: Add extra_new_buffers for STENCIL_REF",
-      "date": "2026-08-31T13:02:00.000+00:00"
+      "old": "68cbebd",
+      "new": "0b8dee2",
+      "full": "0b8dee24fb9c7e0cf7daa1bb10e2fed014f12f00",
+      "msg": "radv/ci: Remove bounds checking failures from expected fails on Hawaii and Tahit",
+      "date": "2026-08-31T19:40:23.000+00:00"
     }
   ]
 }
