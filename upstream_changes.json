@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-08-30T21:45:02Z",
+  "triggered_at": "2026-08-31T06:27:20Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b238f4f",
+      "new": "0f6603e",
+      "full": "0f6603ed4266f8820aef6fd79190f39ef2909e80",
+      "msg": "Add SDL_RenderLogicalToWindow function wrapper (#4308)",
+      "date": "2026-08-31T02:12:10Z"
+    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "dea5c62",
-      "new": "e17fdf9",
-      "full": "e17fdf9e90a49614e16ac8414a687477fb9e4f7c",
-      "msg": "Merge pull request #5882 from Sonicadvance1/222",
-      "date": "2026-08-30T21:41:35Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "29c5f0a",
-      "new": "cf63745",
-      "full": "cf63745aa2dfdb88eafb4ac2b619f95c09cfd832",
-      "msg": "anv: fix regression on coopmat per element operations feature.",
-      "date": "2026-08-30T21:02:25.000+00:00"
+      "old": "e17fdf9",
+      "new": "73dc3b3",
+      "full": "73dc3b3eddaf72745c743fe8ec76ed66f87636dc",
+      "msg": "Merge pull request #5883 from Sonicadvance1/223",
+      "date": "2026-08-31T00:16:07Z"
     }
   ]
 }
