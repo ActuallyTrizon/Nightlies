@@ -1,41 +1,23 @@
 {
-  "triggered_at": "2026-08-31T20:31:07Z",
+  "triggered_at": "2026-09-01T00:14:21Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "1e7121e",
-      "new": "12636eb",
-      "full": "12636eb32146ebc1f5547483a439077162fdfffb",
-      "msg": "[CORE] Add MIT license header to all relevant source files (#4287)",
-      "date": "2026-08-31T17:50:21Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "bde5824",
-      "new": "6cd5334",
-      "full": "6cd53341734235c2427103714bc80019e4ffc933",
-      "msg": "ci: Remove unused step IDs",
-      "date": "2026-08-31T17:46:52Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "ce4a349",
-      "new": "7acd340",
-      "full": "7acd3409669b3f1e34b21e93114c4094aa47fa0c",
-      "msg": "[d3d6/5/3] Keep set texture handle surface alive",
-      "date": "2026-08-31T18:12:23Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ef5439e",
+      "new": "8cf2bf7",
+      "full": "8cf2bf7ad8a7fcb3d4329388f1ddd26e11c63015",
+      "msg": "Merge pull request #5884 from Plagman/plagman/lookup_opt_mr",
+      "date": "2026-08-31T21:05:34Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "68cbebd",
-      "new": "0b8dee2",
-      "full": "0b8dee24fb9c7e0cf7daa1bb10e2fed014f12f00",
-      "msg": "radv/ci: Remove bounds checking failures from expected fails on Hawaii and Tahit",
-      "date": "2026-08-31T19:40:23.000+00:00"
+      "old": "0b8dee2",
+      "new": "c8a0510",
+      "full": "c8a05106a19e3873064fea9986df9fd34ec7d0c4",
+      "msg": "panvk/jm: Fix unbound attribute reads",
+      "date": "2026-08-31T23:41:08.000+00:00"
     }
   ]
 }
