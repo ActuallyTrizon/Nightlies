@@ -1003,39 +1003,39 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a-PPA-unix",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad-PPA-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a-PPA-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad-PPA-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a-PPA",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a-PPA.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad-PPA.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a-PPA",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a-PPA.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad-PPA.zip"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a-unix",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2608+150-Nightly-ef5439e5a",
+    "verName": "FEX-2608+153-Nightly-8cf2bf7ad",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+150-Nightly-ef5439e5a.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2608+153-Nightly-8cf2bf7ad.zip"
   },
   {
     "type": "FEXCore",
