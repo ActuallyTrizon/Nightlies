@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-09-01T19:02:15Z",
+  "triggered_at": "2026-09-01T22:13:13Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "433091c",
-      "new": "ab6e675",
-      "full": "ab6e67596f170f9e6f83f3cb953c5be3ae70971f",
-      "msg": "Merge pull request #5891 from Plagman/plagman/guestextents_mr",
-      "date": "2026-09-01T17:19:59Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "fae3bf6",
-      "new": "18c0887",
-      "full": "18c0887dfb4cd914f4061576ab5e2cd524c23ee8",
-      "msg": "Revert \"tests: Flag new Turnip bug for single texel alignment\"",
-      "date": "2026-09-01T15:20:39Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "153345a",
-      "new": "ff4f94a",
-      "full": "ff4f94a4d2c0b140982eeac018ef7d17ad598e1c",
-      "msg": "lavapipe: zero compute state for every mesh draw",
-      "date": "2026-09-01T18:39:14.000+00:00"
+      "old": "ff4f94a",
+      "new": "73ff21e",
+      "full": "73ff21ef2d03f8b57a1470dad49ed49ae71913c5",
+      "msg": "gfxstream: Fixes for extensions with type erased objects",
+      "date": "2026-09-01T12:23:27.000-07:00"
     }
   ]
 }
