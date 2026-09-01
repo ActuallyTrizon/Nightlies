@@ -50,8 +50,8 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260831-203728](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260831-203728) |
-| **FEXCore** | [`ef5439e5a`](https://github.com/FEX-Emu/FEX/commit/ef5439e5a) — FEX-2608+150-Nightly-ef5439e5a |
+| **Release** | [🔗 nightly-20260901-002029](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260901-002029) |
+| **FEXCore** | [`8cf2bf7ad`](https://github.com/FEX-Emu/FEX/commit/8cf2bf7ad) — FEX-2608+153-Nightly-8cf2bf7ad |
 | **VKD3D-Proton (Std)** | [`6cd53341`](https://github.com/HansKristian-Work/vkd3d-proton/commit/6cd53341) |
 | **VKD3D-Proton (ARM64EC)** | [`6cd53341`](https://github.com/HansKristian-Work/vkd3d-proton/commit/6cd53341) |
 | **DXVK (GPLAsync)** | [`adeda663`](https://github.com/doitsujin/dxvk/commit/adeda663) |
@@ -60,8 +60,8 @@ A single JSON index of every component published here — point any compatible W
 | **DXVK BinSem (ARM64EC)** | [`adeda663`](https://github.com/doitsujin/dxvk/commit/adeda663) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **D7VK (DDraw/D3D7)** | [`7acd34096`](https://github.com/WinterSnowfall/d7vk/commit/7acd34096) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.3.0-20260831-r2](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260831-r2) — Turnip v26.3.0-20260831-r2 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260831-203728) |
+| **Turnip** | [v26.3.0-20260831-r3](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260831-r3) — Turnip v26.3.0-20260831-r3 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260901-002029) |
 <!-- NIGHTLY-LATEST-END -->
 
 </details>
