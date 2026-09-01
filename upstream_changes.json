@@ -1,41 +1,32 @@
 {
-  "triggered_at": "2026-09-01T15:20:00Z",
+  "triggered_at": "2026-09-01T19:02:15Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3f74c74",
-      "new": "65702d6",
-      "full": "65702d61c3c8460c249e76354b1d5824a081592b",
-      "msg": "[WRAPPER] Fix some erros reported in #4214 (#4342)",
-      "date": "2026-09-01T11:35:52Z"
-    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "a6e74cd",
-      "new": "433091c",
-      "full": "433091c32645cedfae869f793d23a7037a67dd40",
-      "msg": "Merge pull request #5871 from mcfi/pr5814",
-      "date": "2026-09-01T14:12:49Z"
+      "old": "433091c",
+      "new": "ab6e675",
+      "full": "ab6e67596f170f9e6f83f3cb953c5be3ae70971f",
+      "msg": "Merge pull request #5891 from Plagman/plagman/guestextents_mr",
+      "date": "2026-09-01T17:19:59Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "6cd5334",
-      "new": "fae3bf6",
-      "full": "fae3bf633810b3b7abe014b6c0846e1842c64387",
-      "msg": "vkd3d: Rename vk_swapchain_count to dxgi.",
-      "date": "2026-09-01T14:26:13Z"
+      "old": "fae3bf6",
+      "new": "18c0887",
+      "full": "18c0887dfb4cd914f4061576ab5e2cd524c23ee8",
+      "msg": "Revert \"tests: Flag new Turnip bug for single texel alignment\"",
+      "date": "2026-09-01T15:20:39Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "eaa8cb6",
-      "new": "153345a",
-      "full": "153345a840cb74188fe25b3e28fe517c5bc8aa42",
-      "msg": "tu: Fix single texel alignment for non-POT texel buffers",
-      "date": "2026-09-01T14:39:20.000+00:00"
+      "old": "153345a",
+      "new": "ff4f94a",
+      "full": "ff4f94a4d2c0b140982eeac018ef7d17ad598e1c",
+      "msg": "lavapipe: zero compute state for every mesh draw",
+      "date": "2026-09-01T18:39:14.000+00:00"
     }
   ]
 }
