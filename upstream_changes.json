@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-09-01T05:54:25Z",
+  "triggered_at": "2026-09-01T10:50:27Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "8cf2bf7",
-      "new": "a6e74cd",
-      "full": "a6e74cdbe6f454376e0a55ac567f73f45a8888e3",
-      "msg": "Merge pull request #5889 from Sonicadvance1/224",
-      "date": "2026-09-01T02:47:00Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "12636eb",
+      "new": "3f74c74",
+      "full": "3f74c742c666b9c9c2bd00b5c31f2107e6f07d23",
+      "msg": "[LA64_DYNAREC] Added host_call to arch state (#4340)",
+      "date": "2026-09-01T09:50:13Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c8a0510",
-      "new": "8e12d60",
-      "full": "8e12d6000b247715b7c9bfaac67bca565dd8b9d8",
-      "msg": "nv30/ci: add recent regression",
-      "date": "2026-09-01T00:37:13.000+00:00"
+      "old": "8e12d60",
+      "new": "eaa8cb6",
+      "full": "eaa8cb690243d25c9b5ccc40e11a0d0d5a836d0f",
+      "msg": "intel/brw: Replace tab by spaces to fix identation on brw_shader::assign_curb_se",
+      "date": "2026-09-01T10:08:41.000+00:00"
     }
   ]
 }
