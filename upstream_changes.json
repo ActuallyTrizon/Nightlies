@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-09-02T05:17:13Z",
+  "triggered_at": "2026-09-02T10:15:11Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ab6e675",
-      "new": "5a68359",
-      "full": "5a68359f37bd0780c9fc4bcb264002710521ba8d",
-      "msg": "Merge pull request #5896 from Plagman/plagman/skipthunkrelocs_mr",
-      "date": "2026-09-02T00:54:03Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "65702d6",
+      "new": "4de0910",
+      "full": "4de091016beaaeb81c45c8efcd200b08d8d0c11c",
+      "msg": "[CORE] Fix some errors reported in #4214 (#4343)",
+      "date": "2026-09-02T07:01:15Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "18c0887",
+      "new": "eaeb5ba",
+      "full": "eaeb5bab80f7a83f012c6972483e32cebfd8fbb2",
+      "msg": "Attribute queue submits to the right VK_NV_low_latency2 frame ID. (#3255)",
+      "date": "2026-09-02T09:28:53Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dd40672",
-      "new": "d870cef",
-      "full": "d870cef8b7c8a4a11edc669669c9f18ae402314a",
-      "msg": "intel/isl: Bump HALIGN from 16B to 32B on Xe2+",
-      "date": "2026-09-02T03:00:40.000+00:00"
+      "old": "d870cef",
+      "new": "1c8cf9e",
+      "full": "1c8cf9ee7842140afdbd33d764b84501f5d22811",
+      "msg": "r600/sfn: get rid of useless indirect_file tracking",
+      "date": "2026-09-02T09:20:52.000+00:00"
     }
   ]
 }
