@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-09-02T10:15:11Z",
+  "triggered_at": "2026-09-02T14:49:40Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "65702d6",
-      "new": "4de0910",
-      "full": "4de091016beaaeb81c45c8efcd200b08d8d0c11c",
-      "msg": "[CORE] Fix some errors reported in #4214 (#4343)",
-      "date": "2026-09-02T07:01:15Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5a68359",
+      "new": "511c45c",
+      "full": "511c45c4c63ae2958027ca7bfdb88cea457afceb",
+      "msg": "Merge pull request #5886 from simon902/IE_sticky",
+      "date": "2026-09-02T10:49:35Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "18c0887",
-      "new": "eaeb5ba",
-      "full": "eaeb5bab80f7a83f012c6972483e32cebfd8fbb2",
-      "msg": "Attribute queue submits to the right VK_NV_low_latency2 frame ID. (#3255)",
-      "date": "2026-09-02T09:28:53Z"
+      "old": "eaeb5ba",
+      "new": "634d341",
+      "full": "634d341a5a312a3d75bb5cc6ac522534f1e8b454",
+      "msg": "vkd3d: Add wave32 workaround for Onimusha: Way of the Sword demo",
+      "date": "2026-09-02T14:22:54Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d870cef",
-      "new": "1c8cf9e",
-      "full": "1c8cf9ee7842140afdbd33d764b84501f5d22811",
-      "msg": "r600/sfn: get rid of useless indirect_file tracking",
-      "date": "2026-09-02T09:20:52.000+00:00"
+      "old": "1c8cf9e",
+      "new": "109507f",
+      "full": "109507f242b079ce21e2956373695c51f571ddde",
+      "msg": "va: Don't allow NULL codec in vaEndPicture",
+      "date": "2026-09-02T13:36:01.000+00:00"
     }
   ]
 }
