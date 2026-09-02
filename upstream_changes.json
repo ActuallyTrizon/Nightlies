@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-09-02T00:42:01Z",
+  "triggered_at": "2026-09-02T05:17:13Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ab6e675",
+      "new": "5a68359",
+      "full": "5a68359f37bd0780c9fc4bcb264002710521ba8d",
+      "msg": "Merge pull request #5896 from Plagman/plagman/skipthunkrelocs_mr",
+      "date": "2026-09-02T00:54:03Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "73ff21e",
-      "new": "dd40672",
-      "full": "dd4067299bfa2e2537645d42226bce4887ff144f",
-      "msg": "kraid/ra: Clean up clippy complaints",
-      "date": "2026-09-02T00:57:30.000+02:00"
+      "old": "dd40672",
+      "new": "d870cef",
+      "full": "d870cef8b7c8a4a11edc669669c9f18ae402314a",
+      "msg": "intel/isl: Bump HALIGN from 16B to 32B on Xe2+",
+      "date": "2026-09-02T03:00:40.000+00:00"
     }
   ]
 }
