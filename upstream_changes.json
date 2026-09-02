@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-01T22:13:13Z",
+  "triggered_at": "2026-09-02T00:42:01Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ff4f94a",
-      "new": "73ff21e",
-      "full": "73ff21ef2d03f8b57a1470dad49ed49ae71913c5",
-      "msg": "gfxstream: Fixes for extensions with type erased objects",
-      "date": "2026-09-01T12:23:27.000-07:00"
+      "old": "73ff21e",
+      "new": "dd40672",
+      "full": "dd4067299bfa2e2537645d42226bce4887ff144f",
+      "msg": "kraid/ra: Clean up clippy complaints",
+      "date": "2026-09-02T00:57:30.000+02:00"
     }
   ]
 }
