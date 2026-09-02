@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-09-02T18:15:33Z",
+  "triggered_at": "2026-09-02T21:27:03Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "4de0910",
+      "new": "d79d0ef",
+      "full": "d79d0efad84e264c2535fcdcaa08628c7e491b2a",
+      "msg": "Add install bundle option (#4344)",
+      "date": "2026-09-02T20:43:25Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "109507f",
-      "new": "6f082cf",
-      "full": "6f082cf42654e73f64060cc695b839e650e73a5a",
-      "msg": "docs: add sha sum for 26.2.2",
-      "date": "2026-09-02T18:20:43.000+02:00"
+      "old": "6f082cf",
+      "new": "bc4e308",
+      "full": "bc4e308a1a7fb8b94e931d5c9f70518c06dbe353",
+      "msg": "ci/deqp: backport GLES2 CTS fixes",
+      "date": "2026-09-02T20:39:16.000+00:00"
     }
   ]
 }
