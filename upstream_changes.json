@@ -1,14 +1,41 @@
 {
-  "triggered_at": "2026-09-03T02:14:05Z",
+  "triggered_at": "2026-09-03T07:32:01Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d79d0ef",
+      "new": "e367134",
+      "full": "e367134e7fed0a38ad950713554aea4fed91ae0a",
+      "msg": "[LA64_DYNAREC] Refined illegal opcodes handling (#4349)",
+      "date": "2026-09-03T07:26:49Z"
+    },
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "511c45c",
-      "new": "c4c82f2",
-      "full": "c4c82f23eead519719faf7e81bba445b86f2c7b4",
-      "msg": "Merge pull request #5905 from Sonicadvance1/228",
-      "date": "2026-09-03T00:32:07Z"
+      "old": "c4c82f2",
+      "new": "d833f3a",
+      "full": "d833f3ae675a404212fbdf1b96ffa619c6861f1f",
+      "msg": "Merge pull request #5906 from Sonicadvance1/229",
+      "date": "2026-09-03T02:18:02Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "7acd340",
+      "new": "cbe94fa",
+      "full": "cbe94fabf03a31f1a06dfb2aa884917be1726348",
+      "msg": "[meta] Streamline shadow surface creation",
+      "date": "2026-09-03T07:20:36Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "946b15e",
+      "new": "1a2dab3",
+      "full": "1a2dab30fa5f3c368255753caa838b92a95380ee",
+      "msg": "amd: fix GFX12 SPM GCEA_SE counter aliasing with GCEA_CPWD",
+      "date": "2026-09-03T06:56:46.000+00:00"
     }
   ]
 }
