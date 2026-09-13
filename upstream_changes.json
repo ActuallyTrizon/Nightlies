@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-13T21:58:18Z",
+  "triggered_at": "2026-09-13T23:53:35Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "bbc7792",
-      "new": "f6f4f66",
-      "full": "f6f4f66c975c4ced2547e78e20c3b71850765ab5",
-      "msg": "nvk: Increase pushbuf limit in CmdBeginRendering",
-      "date": "2026-09-13T15:55:57.000-04:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "eb49d3d",
+      "new": "2c188cf",
+      "full": "2c188cfc358aaa663d7637a151fc45c76f959e2f",
+      "msg": "[RV64_DYNAREC] Fix clobbering scratch register for VDPPS 256-bit (#4379)",
+      "date": "2026-09-13T22:32:09Z"
     }
   ]
 }
