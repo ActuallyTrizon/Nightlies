@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-13T07:49:42Z",
+  "triggered_at": "2026-09-13T12:58:33Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "4b652eb",
-      "new": "5d6609a",
-      "full": "5d6609a6b1182b8d972005befda8b7e338fd3644",
-      "msg": "Merge pull request #5950 from Sonicadvance1/240",
-      "date": "2026-09-13T02:42:11Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c79152c",
+      "new": "e4e5cba",
+      "full": "e4e5cba58cb224dda76e6c949630043960c82cc6",
+      "msg": "[DYNAREC] Improved HotPage handling",
+      "date": "2026-09-13T12:10:34Z"
     }
   ]
 }
