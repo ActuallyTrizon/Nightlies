@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-09-14T20:04:22Z",
+  "triggered_at": "2026-09-14T23:36:58Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "98516b5",
-      "new": "3af19ac",
-      "full": "3af19acdda3634a1643dc5c5cff26bd7caa5cb30",
-      "msg": "Merge pull request #5954 from Sonicadvance1/242",
-      "date": "2026-09-14T18:51:11Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "2a38e79",
-      "new": "81d9693",
-      "full": "81d96933a40207023a812a6f522caefd7e36b73b",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-09-14T16:01:52Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "8759acd",
+      "new": "878473b",
+      "full": "878473bafd6e0595ffd71eff0e6b2d9e45f00a20",
+      "msg": "[util] Enable cached dynamic resources for Skyrim SE",
+      "date": "2026-09-14T22:39:25Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a1c75a9",
-      "new": "c0ad6fd",
-      "full": "c0ad6fd9ecabd06c642cb0818932647acbb21719",
-      "msg": "nir/divergence: Handle SYSTEM_VALUE_BARYCENTRIC_*",
-      "date": "2026-09-14T18:10:25.000+00:00"
+      "old": "c0ad6fd",
+      "new": "67e17c4",
+      "full": "67e17c43a1adb03454a514e30eb8910bf4c8b391",
+      "msg": "anv: add the compiler configuration to the cache key",
+      "date": "2026-09-14T23:16:26.000+00:00"
     }
   ]
 }
