@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-09-14T15:29:05Z",
+  "triggered_at": "2026-09-14T20:04:22Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3673867",
-      "new": "23807cd",
-      "full": "23807cdbe7721aa4aa69aae739b342dcbfc98f31",
-      "msg": "[RV64_DYNAREC] Added more AVX VPCMP opcodes (#4392)",
-      "date": "2026-09-14T10:12:42Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "98516b5",
+      "new": "3af19ac",
+      "full": "3af19acdda3634a1643dc5c5cff26bd7caa5cb30",
+      "msg": "Merge pull request #5954 from Sonicadvance1/242",
+      "date": "2026-09-14T18:51:11Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "2a38e79",
+      "new": "81d9693",
+      "full": "81d96933a40207023a812a6f522caefd7e36b73b",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-09-14T16:01:52Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f447fb3",
-      "new": "a1c75a9",
-      "full": "a1c75a99f4dddf9473121ed83b0e391697de7e5f",
-      "msg": "pvr: add new PDS compiler and pre-compilation utility",
-      "date": "2026-09-14T14:56:37.000+00:00"
+      "old": "a1c75a9",
+      "new": "c0ad6fd",
+      "full": "c0ad6fd9ecabd06c642cb0818932647acbb21719",
+      "msg": "nir/divergence: Handle SYSTEM_VALUE_BARYCENTRIC_*",
+      "date": "2026-09-14T18:10:25.000+00:00"
     }
   ]
 }
