@@ -1027,39 +1027,39 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539-PPA-unix",
+    "verName": "FEX-2609+30-Nightly-3af19acdd-PPA-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539-PPA-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd-PPA-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539-PPA",
+    "verName": "FEX-2609+30-Nightly-3af19acdd-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539-PPA.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd-PPA.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539-PPA",
+    "verName": "FEX-2609+30-Nightly-3af19acdd-PPA",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539-PPA.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd-PPA.zip"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539-unix",
+    "verName": "FEX-2609+30-Nightly-3af19acdd-unix",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539-unix.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd-unix.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539",
+    "verName": "FEX-2609+30-Nightly-3af19acdd",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2609+28-Nightly-98516b539",
+    "verName": "FEX-2609+30-Nightly-3af19acdd",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+28-Nightly-98516b539.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2609+30-Nightly-3af19acdd.zip"
   },
   {
     "type": "FEXCore",
@@ -1075,27 +1075,27 @@
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0.1-2a38e799",
+    "verName": "VKD3D-Proton-3.0.1-81d96933",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-2a38e799.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-81d96933.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0.1-2a38e799",
+    "verName": "VKD3D-Proton-3.0.1-81d96933",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-2a38e799.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0.1-81d96933.zip"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0.1-2a38e799",
+    "verName": "VKD3D-Proton-arm64ec-3.0.1-81d96933",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-2a38e799.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-81d96933.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0.1-2a38e799",
+    "verName": "VKD3D-Proton-arm64ec-3.0.1-81d96933",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-2a38e799.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0.1-81d96933.zip"
   },
   {
     "type": "WOWBox64",
