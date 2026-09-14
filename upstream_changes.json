@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-09-14T08:21:08Z",
+  "triggered_at": "2026-09-14T15:29:05Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "2c188cf",
-      "new": "3673867",
-      "full": "36738670eed066ea1b3881dc651c9c7899c6b40d",
-      "msg": "[LA64_DYNAREC] Added leaf call inline optimization (#4376)",
-      "date": "2026-09-14T07:20:11Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5d6609a",
-      "new": "98516b5",
-      "full": "98516b539e4a678de6d57f89263dbbf4711716ea",
-      "msg": "Merge pull request #5949 from Plagman/plagman/more_necropatching_mr",
-      "date": "2026-09-14T07:17:55Z"
+      "old": "3673867",
+      "new": "23807cd",
+      "full": "23807cdbe7721aa4aa69aae739b342dcbfc98f31",
+      "msg": "[RV64_DYNAREC] Added more AVX VPCMP opcodes (#4392)",
+      "date": "2026-09-14T10:12:42Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a655bee",
-      "new": "f447fb3",
-      "full": "f447fb30acceedd33c996301a866c63832bb9195",
-      "msg": "radv: emit ACQUIRE_MEM in ME when possible",
-      "date": "2026-09-14T06:55:21.000+00:00"
+      "old": "f447fb3",
+      "new": "a1c75a9",
+      "full": "a1c75a99f4dddf9473121ed83b0e391697de7e5f",
+      "msg": "pvr: add new PDS compiler and pre-compilation utility",
+      "date": "2026-09-14T14:56:37.000+00:00"
     }
   ]
 }
