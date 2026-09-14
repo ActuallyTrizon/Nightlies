@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-09-14T02:34:20Z",
+  "triggered_at": "2026-09-14T08:21:08Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "2c188cf",
+      "new": "3673867",
+      "full": "36738670eed066ea1b3881dc651c9c7899c6b40d",
+      "msg": "[LA64_DYNAREC] Added leaf call inline optimization (#4376)",
+      "date": "2026-09-14T07:20:11Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5d6609a",
+      "new": "98516b5",
+      "full": "98516b539e4a678de6d57f89263dbbf4711716ea",
+      "msg": "Merge pull request #5949 from Plagman/plagman/more_necropatching_mr",
+      "date": "2026-09-14T07:17:55Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f6f4f66",
-      "new": "a655bee",
-      "full": "a655bee9ba8de9ddc1a0a4e861ee67c47d13cf55",
-      "msg": "nv30/ci: add flakes to fails file",
-      "date": "2026-09-14T03:56:59.000+02:00"
+      "old": "a655bee",
+      "new": "f447fb3",
+      "full": "f447fb30acceedd33c996301a866c63832bb9195",
+      "msg": "radv: emit ACQUIRE_MEM in ME when possible",
+      "date": "2026-09-14T06:55:21.000+00:00"
     }
   ]
 }
