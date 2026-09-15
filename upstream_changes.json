@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-14T23:36:58Z",
+  "triggered_at": "2026-09-15T02:38:10Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "8759acd",
-      "new": "878473b",
-      "full": "878473bafd6e0595ffd71eff0e6b2d9e45f00a20",
-      "msg": "[util] Enable cached dynamic resources for Skyrim SE",
-      "date": "2026-09-14T22:39:25Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c0ad6fd",
-      "new": "67e17c4",
-      "full": "67e17c43a1adb03454a514e30eb8910bf4c8b391",
-      "msg": "anv: add the compiler configuration to the cache key",
-      "date": "2026-09-14T23:16:26.000+00:00"
+      "old": "67e17c4",
+      "new": "44b08bb",
+      "full": "44b08bb9f1eab6e4df043ac66017137443f6eeb1",
+      "msg": "panvk/v6-7: include required layouts in host image copy layouts",
+      "date": "2026-09-15T02:13:24.000+00:00"
     }
   ]
 }
