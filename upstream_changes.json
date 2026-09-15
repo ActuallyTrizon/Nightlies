@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-09-15T02:38:10Z",
+  "triggered_at": "2026-09-15T08:12:52Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "3af19ac",
+      "new": "82510eb",
+      "full": "82510eb452b258959ef982be58a9c3c1bafc82a4",
+      "msg": "Merge pull request #5955 from Sonicadvance1/243",
+      "date": "2026-09-15T04:02:24Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "11764da",
+      "new": "d6faa06",
+      "full": "d6faa06439eb097783dee27fb2b5d1cf3bb1b335",
+      "msg": "[meta] Use the shared sync scoped helpers for all devices",
+      "date": "2026-09-15T08:09:17Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "67e17c4",
-      "new": "44b08bb",
-      "full": "44b08bb9f1eab6e4df043ac66017137443f6eeb1",
-      "msg": "panvk/v6-7: include required layouts in host image copy layouts",
-      "date": "2026-09-15T02:13:24.000+00:00"
+      "old": "44b08bb",
+      "new": "6f5914e",
+      "full": "6f5914ee075b5ad62669feafbdac5a25a4d14c08",
+      "msg": "panvk/utrace: replace bogus assert with static_assert in perfetto begin event ca",
+      "date": "2026-09-15T07:25:59.000+00:00"
     }
   ]
 }
