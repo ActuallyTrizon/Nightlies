@@ -1,32 +1,41 @@
 {
-  "triggered_at": "2026-09-15T08:12:52Z",
+  "triggered_at": "2026-09-15T14:01:18Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "3af19ac",
-      "new": "82510eb",
-      "full": "82510eb452b258959ef982be58a9c3c1bafc82a4",
-      "msg": "Merge pull request #5955 from Sonicadvance1/243",
-      "date": "2026-09-15T04:02:24Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "23807cd",
+      "new": "583b5b6",
+      "full": "583b5b6e11bc54858fe33833f03926031c664423",
+      "msg": "[RV64_DYNAREC] Fix nativeflags for high-byte FAST8 operations (#4393)",
+      "date": "2026-09-15T08:15:01Z"
     },
     {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "11764da",
-      "new": "d6faa06",
-      "full": "d6faa06439eb097783dee27fb2b5d1cf3bb1b335",
-      "msg": "[meta] Use the shared sync scoped helpers for all devices",
-      "date": "2026-09-15T08:09:17Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "81d9693",
+      "new": "ba76bf6",
+      "full": "ba76bf64625090e27e75028c9d9a36605053868c",
+      "msg": "vkd3d: Add min16float denorm requirement for Elden Ring.",
+      "date": "2026-09-15T13:43:25Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "878473b",
+      "new": "6019309",
+      "full": "601930949d111edbbcf9dd463948426d9f8f6ddd",
+      "msg": "[dxvk] Correctly set up flat shading mask for shader metadata",
+      "date": "2026-09-15T11:40:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "44b08bb",
-      "new": "6f5914e",
-      "full": "6f5914ee075b5ad62669feafbdac5a25a4d14c08",
-      "msg": "panvk/utrace: replace bogus assert with static_assert in perfetto begin event ca",
-      "date": "2026-09-15T07:25:59.000+00:00"
+      "old": "6f5914e",
+      "new": "b8bc200",
+      "full": "b8bc20021c2bb69fc0a9309d11cd12827723ddf9",
+      "msg": "radv: rework setting queue as lost",
+      "date": "2026-09-15T13:22:22.000+00:00"
     }
   ]
 }
