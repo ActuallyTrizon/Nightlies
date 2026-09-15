@@ -1,41 +1,41 @@
 {
-  "triggered_at": "2026-09-15T14:01:18Z",
+  "triggered_at": "2026-09-15T18:36:26Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "23807cd",
-      "new": "583b5b6",
-      "full": "583b5b6e11bc54858fe33833f03926031c664423",
-      "msg": "[RV64_DYNAREC] Fix nativeflags for high-byte FAST8 operations (#4393)",
-      "date": "2026-09-15T08:15:01Z"
+      "old": "583b5b6",
+      "new": "f9d5835",
+      "full": "f9d58352e937c8448a921f978b81da8cd86419c7",
+      "msg": "[CUSTOMMEM] Fixed race between concurrent mmaps silently overwriting guest mappi",
+      "date": "2026-09-15T16:01:51Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "81d9693",
-      "new": "ba76bf6",
-      "full": "ba76bf64625090e27e75028c9d9a36605053868c",
-      "msg": "vkd3d: Add min16float denorm requirement for Elden Ring.",
-      "date": "2026-09-15T13:43:25Z"
+      "old": "ba76bf6",
+      "new": "af89350",
+      "full": "af89350cc2eacd9da2293fbae96bd9ab4987c9bb",
+      "msg": "vkd3d: Add wave32 workaround for Half Sword.",
+      "date": "2026-09-15T16:00:45Z"
     },
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "878473b",
-      "new": "6019309",
-      "full": "601930949d111edbbcf9dd463948426d9f8f6ddd",
-      "msg": "[dxvk] Correctly set up flat shading mask for shader metadata",
-      "date": "2026-09-15T11:40:43Z"
+      "old": "6019309",
+      "new": "7df3596",
+      "full": "7df3596eed49cb79f07c18869a1a9a8c067efe04",
+      "msg": "[dxgi] Query frame statistics directly from the presenter",
+      "date": "2026-09-15T18:14:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6f5914e",
-      "new": "b8bc200",
-      "full": "b8bc20021c2bb69fc0a9309d11cd12827723ddf9",
-      "msg": "radv: rework setting queue as lost",
-      "date": "2026-09-15T13:22:22.000+00:00"
+      "old": "b8bc200",
+      "new": "e010c3b",
+      "full": "e010c3b39afdc069381426840125de677a925872",
+      "msg": "anv: fix push constant range gathering for dynamic offsets",
+      "date": "2026-09-15T17:49:30.000+00:00"
     }
   ]
 }
