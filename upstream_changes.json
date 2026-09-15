@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-09-15T21:50:47Z",
+  "triggered_at": "2026-09-15T23:51:07Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "82510eb",
-      "new": "fd7b749",
-      "full": "fd7b749e476c1b020d7f9931db0c4cb15d7c297c",
-      "msg": "Merge pull request #5959 from Sonicadvance1/246",
-      "date": "2026-09-15T20:35:43Z"
+      "old": "fd7b749",
+      "new": "2790f89",
+      "full": "2790f89949ab13c0c6e464c70a7ed9cd91269423",
+      "msg": "Merge pull request #5957 from Sonicadvance1/245",
+      "date": "2026-09-15T23:02:05Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e010c3b",
-      "new": "822120d",
-      "full": "822120d6d5c0109f98c3fbf85ec716c5d1fa00b6",
-      "msg": "etnaviv: Drop the fragment shader R/B swap",
-      "date": "2026-09-15T20:07:53.000+00:00"
+      "old": "822120d",
+      "new": "f9f8f77",
+      "full": "f9f8f777d01feee8f46fcd1ba037ee51203becda",
+      "msg": "etnaviv: blt: Clear each 128-bit plane with its own clear bits",
+      "date": "2026-09-15T22:03:47.000+00:00"
     }
   ]
 }
