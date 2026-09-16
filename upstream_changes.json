@@ -1,41 +1,23 @@
 {
-  "triggered_at": "2026-09-16T17:52:41Z",
+  "triggered_at": "2026-09-16T20:41:10Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b40b2f1",
-      "new": "cc07741",
-      "full": "cc07741a6cbd69ba2a8f01a6330ec1f5869d5aac",
-      "msg": "[RV64_DYNAREC] Added more LOCK prefix opcodes (#4402)",
-      "date": "2026-09-16T15:08:59Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "7723c47",
-      "new": "9bbdb35",
-      "full": "9bbdb357119bf9e7c363cbd131d2c0bf9a71d86e",
-      "msg": "Merge pull request #5967 from lioncash/vixup",
-      "date": "2026-09-16T17:01:12Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c1e0926",
-      "new": "5d0db74",
-      "full": "5d0db7414b0b3f1afa7c9a84acf9ff483cb805d1",
-      "msg": "vkd3d: Remove VkFence workaround for slow timeline semaphores.",
-      "date": "2026-09-16T14:51:03Z"
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "d6faa06",
+      "new": "89b32fc",
+      "full": "89b32fc8cacd7006a58712b47e41426e3855c3dd",
+      "msg": "[d3d7] Implement ProcessVerticesStrided",
+      "date": "2026-09-16T19:23:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "881d92d",
-      "new": "06a6743",
-      "full": "06a6743aacc17b08b612e0f85c1ecb6c841034dd",
-      "msg": "kraid: Check restricted fields during decoding",
-      "date": "2026-09-16T17:03:15.000+00:00"
+      "old": "06a6743",
+      "new": "9da422d",
+      "full": "9da422d331719526693179ade2cee5172aebeb60",
+      "msg": "docs: add sha sum for 26.2.3",
+      "date": "2026-09-16T22:24:33.000+02:00"
     }
   ]
 }
