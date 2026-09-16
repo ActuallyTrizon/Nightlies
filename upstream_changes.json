@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-09-15T23:51:07Z",
+  "triggered_at": "2026-09-16T02:32:43Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "fd7b749",
-      "new": "2790f89",
-      "full": "2790f89949ab13c0c6e464c70a7ed9cd91269423",
-      "msg": "Merge pull request #5957 from Sonicadvance1/245",
-      "date": "2026-09-15T23:02:05Z"
+      "old": "2790f89",
+      "new": "19df181",
+      "full": "19df181f651c353c3f8cbc9468e8305c63c284cf",
+      "msg": "Merge pull request #5962 from Sonicadvance1/249",
+      "date": "2026-09-15T23:56:48Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "822120d",
-      "new": "f9f8f77",
-      "full": "f9f8f777d01feee8f46fcd1ba037ee51203becda",
-      "msg": "etnaviv: blt: Clear each 128-bit plane with its own clear bits",
-      "date": "2026-09-15T22:03:47.000+00:00"
+      "old": "f9f8f77",
+      "new": "9df9c70",
+      "full": "9df9c70f17214c4f04843d2b180ce03f8c3eef4a",
+      "msg": "intel/brw/xe3+: Consider trivial scheduling heuristic in pre-RA scheduling pass.",
+      "date": "2026-09-15T17:38:19.000-07:00"
     }
   ]
 }
