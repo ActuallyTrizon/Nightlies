@@ -8,6 +8,50 @@
 
 ## Session — 2026-09-15
 
+### [feat] — Publish workflow for a DXVK stable set, server-side only (2026-09-16)
+**New dispatch-only `dxvk-stable-publish.yml` + `.github/release-notes/dxvk-3.1.1.md`. Moves
+finished assets GitHub-to-GitHub; nothing is ever uploaded from a workstation.**
+
+#### What changed
+- **`.github/workflows/dxvk-stable-publish.yml` (new).** Inputs: `version`, `build_run_id`
+  (the `dxvk-stable-patched.yml` run holding the four patched artifacts), `asset_revision`,
+  `nightly_tag`, `combined_tag`, and `dry_run`. Steps: pull the 4 patched artifacts by run
+  id via `gh run download`, pull the 2 vanilla `.wcp` assets off the nightly release via
+  `gh release download`, rename all six to their published names, verify, then upload.
+- **Vanilla pair is RENAME ONLY.** `DXVK-v<ver>.wcp` → `dxvk-<ver>.wcp` and
+  `DXVK-v<ver>-arm64ec.wcp` → `dxvk-arm64ec-<ver>.wcp`. They are never unpacked,
+  recompressed or re-profiled — they are upstream's own release binaries. The workflow
+  `cmp`s each renamed file against its source to prove the rename really was a rename.
+- **Verification gates every upload.** `scripts/verify-dxvk-wcp.sh` plus a filename ↔
+  `profile.json` versionName assertion driven by a six-row table. Any mismatch fails the
+  job *before* the first upload, so a bad file can never be published.
+- **Additive by construction.** Each per-flavour release gets ONE file via
+  `gh release upload --clobber`, which replaces only a same-named asset and leaves every
+  other asset alone; the job also asserts each release's asset count never decreases. The
+  target release must already exist — this workflow never creates a per-flavour release.
+- Combined release: tag `dxvk-<version>`, title `DXVK <version> Stable — all flavors`,
+  not a pre-release, all six files, body read verbatim from the committed notes file.
+
+#### Verifier fix required by the vanilla ARM64EC asset
+`DXVK-v3.1.1-arm64ec.wcp` stores its members **without** the `./` prefix
+(`system32/d3d11.dll`), while every other `.wcp` uses `./system32/d3d11.dll`. Both are valid
+tar and install identically, but `verify-dxvk-wcp.sh` matched members literally and rejected
+the flat layout. It now normalises a leading `./` away before matching. Confirmed: all six
+files pass, where the vanilla ARM64EC one previously failed.
+
+#### Decision: the combined release does NOT take the "Latest" badge
+`gh release create` would mark a non-prerelease as Latest by default. In this repo the
+nightly holds Latest (currently `nightly-20260916-023850`), so the combined release is
+created with `--latest=false` — non-prerelease as asked, but it does not displace the
+nightly, and the next nightly will not silently undo it either.
+
+#### Files touched
+- `.github/workflows/dxvk-stable-publish.yml` (new)
+- `.github/release-notes/dxvk-3.1.1.md` (new, verbatim)
+- `scripts/verify-dxvk-wcp.sh` (member-path normalisation)
+
+---
+
 ### [feat] — Stable-tag DXVK builds: gplasync + binsem from the upstream release tag (2026-09-15, branch `feat/dxvk-stable-patched`)
 **New dispatch-only workflow `dxvk-stable-patched.yml` + shared verifier `scripts/verify-dxvk-wcp.sh`. ARTIFACTS ONLY — no release, no upload, no tag.**
 

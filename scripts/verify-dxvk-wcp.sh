@@ -34,6 +34,14 @@ MEMBERS=$(tar -tf "$WCP") || fail "$WCP does not open as a tar archive"
 echo "--- members ---"
 echo "$MEMBERS" | sort
 
+# Member paths are compared against this normalised list. Not every .wcp is
+# packed the same way: most store "./system32/d3d11.dll" (packed with
+# `tar -C dir .`) but some store "system32/d3d11.dll" (packed from inside the
+# directory), e.g. the vanilla ARM64EC asset. Both are valid tar and both
+# install identically, so strip a leading "./" before matching rather than
+# rejecting one layout.
+MEMBERS_N=$(echo "$MEMBERS" | sed 's|^\./||')
+
 # --- 2. profile.json parses and says the right things ---------------------
 PROFILE=$(tar -xOf "$WCP" ./profile.json 2>/dev/null || tar -xOf "$WCP" profile.json) \
   || fail "profile.json missing from $WCP"
@@ -62,14 +70,14 @@ echo "$PROFILE" | grep -q '\${syswow64}/d3d11.dll' \
 
 # --- 3. every file listed in the profile is really in the archive ---------
 while read -r src; do
-  echo "$MEMBERS" | grep -qx "./$src" \
+  echo "$MEMBERS_N" | grep -qx "$src" \
     || fail "profile.json lists '$src' but it is not in the archive"
 done < <(echo "$PROFILE" | jq -r '.files[].source')
 
 # --- 4. the expected DLL set is complete, both arches ---------------------
 for dir in system32 syswow64; do
   for dll in $DLLS; do
-    echo "$MEMBERS" | grep -qx "./$dir/$dll" \
+    echo "$MEMBERS_N" | grep -qx "$dir/$dll" \
       || fail "missing $dir/$dll"
   done
 done

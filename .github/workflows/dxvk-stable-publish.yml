@@ -1,0 +1,254 @@
+name: DXVK Stable — Publish
+
+# ==================================================================
+# Publishes a finished DXVK stable set. Everything moves GitHub to
+# GitHub inside this runner — nothing is uploaded from a workstation.
+#
+# Sources, all server-side:
+#   - the 4 PATCHED .wcp artifacts from a dxvk-stable-patched.yml run
+#     (gplasync / binsem x std / arm64ec), by run id
+#   - the 2 VANILLA .wcp assets already attached to the nightly release,
+#     which are upstream's own stable binaries repackaged
+#
+# The vanilla pair is RENAMED ONLY. It is never rebuilt, repacked or
+# recompressed, and its profile.json is never rewritten — those assets
+# are byte-for-byte upstream's release and must stay that way.
+#
+# Publishes to:
+#   - each per-flavour release, ADDING one file (existing assets are
+#     never touched; a re-run overwrites only the same-named file)
+#   - one combined release carrying all six
+#
+# Every file is verified BEFORE any upload: scripts/verify-dxvk-wcp.sh
+# plus a filename <-> profile.json versionName assertion from the table
+# below. A single mismatch fails the job and nothing is published.
+#
+# Dispatch-only. NOTE: GitHub registers workflow_dispatch only from the
+# DEFAULT branch, so this file must be on main to be runnable.
+# ==================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'DXVK stable version, no leading v (e.g. 3.1.1)'
+        required: true
+        default: '3.1.1'
+      build_run_id:
+        description: 'Run id of dxvk-stable-patched.yml holding the 4 patched artifacts'
+        required: true
+      asset_revision:
+        description: 'Patch revision — the -N in dxvk-gplasync-<version>-<N>.wcp'
+        required: false
+        default: '1'
+      nightly_tag:
+        description: 'Release tag carrying the vanilla DXVK-v<version>[-arm64ec].wcp assets'
+        required: false
+        default: 'nightly-latest'
+      combined_tag:
+        description: 'Tag for the combined all-flavors release (empty ⇒ dxvk-<version>)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Verify everything and publish NOTHING'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    name: Verify and publish DXVK stable set
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      VERSION: ${{ inputs.version }}
+      REV: ${{ inputs.asset_revision }}
+      BUILD_RUN_ID: ${{ inputs.build_run_id }}
+      NIGHTLY_TAG: ${{ inputs.nightly_tag }}
+      DRY_RUN: ${{ inputs.dry_run }}
+    steps:
+      - name: Checkout (verifier + release notes)
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq zstd xz-utils file
+
+      - name: Resolve names
+        id: names
+        run: |
+          set -euo pipefail
+          COMBINED="${{ inputs.combined_tag }}"
+          if [ -z "$COMBINED" ]; then COMBINED="dxvk-${VERSION}"; fi
+          NOTES=".github/release-notes/dxvk-${VERSION}.md"
+          [ -f "$NOTES" ] || { echo "::error::release notes $NOTES not found in the repo"; exit 1; }
+          echo "combined=$COMBINED" >> $GITHUB_OUTPUT
+          echo "notes=$NOTES"       >> $GITHUB_OUTPUT
+          echo "Combined release tag: $COMBINED"
+          echo "Release notes file  : $NOTES"
+
+      - name: Fetch the 4 patched artifacts (server-side)
+        run: |
+          set -euo pipefail
+          mkdir -p staging publish
+          for p in gplasync gplasync-arm64ec binsem-gplasync binsem-gplasync-arm64ec; do
+            NAME="dxvk-${p}-${VERSION}-${REV}"
+            echo "::group::artifact $NAME"
+            gh run download "$BUILD_RUN_ID" -R "$REPO" -n "$NAME" -D "staging/$NAME"
+            ls -la "staging/$NAME"
+            echo "::endgroup::"
+          done
+
+      - name: Fetch the 2 vanilla assets from the nightly release (rename only)
+        run: |
+          set -euo pipefail
+          mkdir -p staging/vanilla
+          # RENAME ONLY: these are upstream's own stable binaries. They are not
+          # unpacked, recompressed or modified in any way — only copied to their
+          # published filename.
+          gh release download "$NIGHTLY_TAG" -R "$REPO" \
+            -p "DXVK-v${VERSION}.wcp" -p "DXVK-v${VERSION}-arm64ec.wcp" \
+            -D staging/vanilla --clobber
+          ls -la staging/vanilla
+
+      - name: Assemble the six published filenames
+        run: |
+          set -euo pipefail
+          cp "staging/vanilla/DXVK-v${VERSION}.wcp"                                              "publish/dxvk-${VERSION}.wcp"
+          cp "staging/vanilla/DXVK-v${VERSION}-arm64ec.wcp"                                      "publish/dxvk-arm64ec-${VERSION}.wcp"
+          cp "staging/dxvk-gplasync-${VERSION}-${REV}/dxvk-gplasync-${VERSION}-${REV}.wcp"                               "publish/"
+          cp "staging/dxvk-gplasync-arm64ec-${VERSION}-${REV}/dxvk-gplasync-arm64ec-${VERSION}-${REV}.wcp"               "publish/"
+          cp "staging/dxvk-binsem-gplasync-${VERSION}-${REV}/dxvk-binsem-gplasync-${VERSION}-${REV}.wcp"                 "publish/"
+          cp "staging/dxvk-binsem-gplasync-arm64ec-${VERSION}-${REV}/dxvk-binsem-gplasync-arm64ec-${VERSION}-${REV}.wcp" "publish/"
+          ls -la publish
+
+          # Prove the renamed vanilla files are bit-identical to what the nightly
+          # holds — i.e. that "rename only" really was rename only.
+          cmp "staging/vanilla/DXVK-v${VERSION}.wcp"         "publish/dxvk-${VERSION}.wcp"
+          cmp "staging/vanilla/DXVK-v${VERSION}-arm64ec.wcp" "publish/dxvk-arm64ec-${VERSION}.wcp"
+          echo "vanilla assets are byte-identical after rename"
+
+      - name: Verify all six BEFORE any upload
+        run: |
+          set -euo pipefail
+          chmod +x scripts/verify-dxvk-wcp.sh
+
+          # file | expected profile.json versionName | variant | target release tag
+          TABLE="
+          dxvk-${VERSION}.wcp|v${VERSION}|std|Dxvk
+          dxvk-arm64ec-${VERSION}.wcp|v${VERSION}-arm64ec|arm64ec|Dxvk-arm64ec
+          dxvk-gplasync-${VERSION}-${REV}.wcp|v${VERSION}-gplasync|std|Dxvk-gplasync
+          dxvk-gplasync-arm64ec-${VERSION}-${REV}.wcp|v${VERSION}-gplasync-arm64ec|arm64ec|Dxvk-gplasync-arm64ec
+          dxvk-binsem-gplasync-${VERSION}-${REV}.wcp|v${VERSION}-binsem-gplasync|std|Dxvk-binsem-gplasync
+          dxvk-binsem-gplasync-arm64ec-${VERSION}-${REV}.wcp|v${VERSION}-binsem-gplasync-arm64ec|arm64ec|Dxvk-binsem-gplasync-arm64ec
+          "
+          echo "$TABLE" | grep -v '^\s*$' > table.txt
+          [ "$(wc -l < table.txt)" -eq 6 ] || { echo "::error::expected 6 table rows"; exit 1; }
+
+          FAILED=0
+          while IFS='|' read -r file vname variant tag; do
+            file=$(echo "$file" | xargs); vname=$(echo "$vname" | xargs)
+            variant=$(echo "$variant" | xargs); tag=$(echo "$tag" | xargs)
+            echo "::group::verify $file  ->  $tag"
+
+            if [ ! -f "publish/$file" ]; then
+              echo "::error::$file is missing from the publish set"; FAILED=1; echo "::endgroup::"; continue
+            fi
+
+            # The release must exist already — this job ADDS to it, never creates it.
+            if ! gh release view "$tag" -R "$REPO" >/dev/null 2>&1; then
+              echo "::error::target release $tag does not exist"; FAILED=1; echo "::endgroup::"; continue
+            fi
+
+            # filename <-> profile.json versionName assertion
+            GOT=$(tar -xOf "publish/$file" ./profile.json 2>/dev/null \
+                  || tar -xOf "publish/$file" profile.json) || GOT=''
+            GOT=$(echo "$GOT" | jq -r '.versionName // empty')
+            if [ "$GOT" != "$vname" ]; then
+              echo "::error::$file carries versionName '$GOT' but its name requires '$vname'"; FAILED=1
+              echo "::endgroup::"; continue
+            fi
+
+            if ! bash scripts/verify-dxvk-wcp.sh "publish/$file" "$vname" "$variant"; then
+              echo "::error::$file failed package verification"; FAILED=1
+            fi
+            echo "::endgroup::"
+          done < table.txt
+
+          if [ "$FAILED" -ne 0 ]; then
+            echo "::error::verification failed — publishing NOTHING"
+            exit 1
+          fi
+          echo "all six verified"
+
+      - name: Upload one file to each per-flavour release
+        if: ${{ !inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          # --clobber replaces ONLY a same-named asset; every other asset on the
+          # release is left untouched. Nothing is ever deleted outright.
+          while IFS='|' read -r file vname variant tag; do
+            file=$(echo "$file" | xargs); tag=$(echo "$tag" | xargs)
+            echo "::group::upload $file -> $tag"
+            BEFORE=$(gh release view "$tag" -R "$REPO" --json assets --jq '.assets|length')
+            gh release upload "$tag" "publish/$file" -R "$REPO" --clobber
+            AFTER=$(gh release view "$tag" -R "$REPO" --json assets --jq '.assets|length')
+            echo "$tag: assets $BEFORE -> $AFTER"
+            if [ "$AFTER" -lt "$BEFORE" ]; then
+              echo "::error::$tag lost assets ($BEFORE -> $AFTER)"; exit 1
+            fi
+            echo "::endgroup::"
+          done < table.txt
+
+      - name: Create or update the combined stable release
+        if: ${{ !inputs.dry_run }}
+        env:
+          COMBINED: ${{ steps.names.outputs.combined }}
+          NOTES: ${{ steps.names.outputs.notes }}
+        run: |
+          set -euo pipefail
+          TITLE="DXVK ${VERSION} Stable — all flavors"
+          if gh release view "$COMBINED" -R "$REPO" >/dev/null 2>&1; then
+            echo "combined release $COMBINED exists — updating notes and assets"
+            gh release edit "$COMBINED" -R "$REPO" \
+              --title "$TITLE" --notes-file "$NOTES" --prerelease=false
+          else
+            # --latest=false on purpose: in this repo the nightly holds the
+            # "Latest" badge, and a component release should not displace it.
+            gh release create "$COMBINED" -R "$REPO" \
+              --title "$TITLE" --notes-file "$NOTES" \
+              --prerelease=false --latest=false
+          fi
+          gh release upload "$COMBINED" publish/*.wcp -R "$REPO" --clobber
+          gh release view "$COMBINED" -R "$REPO" --json assets --jq '.assets[].name'
+
+      - name: Report
+        run: |
+          set -euo pipefail
+          {
+            echo "## DXVK ${VERSION} stable publish"
+            echo ""
+            if [ "$DRY_RUN" = "true" ]; then echo "**DRY RUN — nothing was published.**"; echo ""; fi
+            echo "| file | release | bytes | sha256 |"
+            echo "|---|---|---|---|"
+            while IFS='|' read -r file vname variant tag; do
+              file=$(echo "$file" | xargs); tag=$(echo "$tag" | xargs)
+              echo "| \`$file\` | \`$tag\` | $(stat -c%s "publish/$file") | \`$(sha256sum "publish/$file" | cut -d' ' -f1)\` |"
+            done < table.txt
+            echo ""
+            if [ "$DRY_RUN" != "true" ]; then
+              echo "Combined release: https://github.com/${REPO}/releases/tag/${{ steps.names.outputs.combined }}"
+            fi
+          } >> $GITHUB_STEP_SUMMARY
+
+          echo "=== final ==="
+          while IFS='|' read -r file vname variant tag; do
+            file=$(echo "$file" | xargs); tag=$(echo "$tag" | xargs)
+            printf '%-46s %-32s %10s  %s\n' "$file" "$tag" "$(stat -c%s "publish/$file")" "$(sha256sum "publish/$file" | cut -d' ' -f1)"
+          done < table.txt
