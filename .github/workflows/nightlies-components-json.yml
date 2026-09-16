@@ -187,6 +187,12 @@ jobs:
                           continue
                       if "turnip" not in name.lower():
                           continue
+                      # Banners-Turnip also publishes Wayland builds (Turnip-<tag>[-variant]-Wayland.zip):
+                      # Linux-style Vulkan ICDs for Bannerlator Wayland containers, imported as a Wayland
+                      # game driver. They are not AdrenoTools GPU drivers, so they stay out of this catalog
+                      # and out of every drivers.json that copies it.
+                      if name.lower().endswith("-wayland.zip"):
+                          continue
                       ver_name = name.rsplit(".", 1)[0]
                       entry = {
                           "type":      "GpuDriver",

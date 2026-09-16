@@ -6,6 +6,18 @@
 
 ---
 
+## Session — 2026-09-16
+
+### [fix] — Keep Banners-Turnip Wayland builds out of the GPU driver catalog and the nightly bundle (2026-09-16)
+**Banners-Turnip releases will also carry `Turnip-<tag>[-variant]-Wayland.zip`**. These are Linux-style Vulkan ICDs for Bannerlator Wayland containers, imported as a Wayland game driver, not AdrenoTools GPU drivers.
+
+#### What changed
+- `.github/workflows/nightlies-components-json.yml`: the Banners-Turnip loop skips assets whose name ends in `-wayland.zip`. They stay out of `banners-turnip_drivers.json`, which Bannerlator's built-in "Banners-Turnip" driver source reads, and out of every `drivers.json` the mirror workflows rebuild from it (kimchi / mtr / stevenmxz / white).
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`: after `gh release download --pattern "Turnip-*.zip"`, `rm -f ./artifacts/Turnip-*-Wayland.zip`, so the AIO nightly bundles only the Android drivers.
+- Checked: both files parse (js-yaml), and the Python block compiles. No catalog content changes until a release with Wayland zips exists.
+
+---
+
 ## Session — 2026-09-15
 
 ### [feat] — Publish workflow for a DXVK stable set, server-side only (2026-09-16)

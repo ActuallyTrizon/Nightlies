@@ -2426,6 +2426,9 @@ jobs:
             --repo The412Banner/Banners-Turnip \
             --pattern "Turnip-*.zip" \
             --dir ./artifacts
+          # The Wayland builds (Turnip-<tag>[-variant]-Wayland.zip) are for Bannerlator Wayland
+          # containers, not AdrenoTools GPU drivers: keep them out of the nightly bundle.
+          rm -f ./artifacts/Turnip-*-Wayland.zip
           echo "Downloaded Turnip release: $TURNIP_TAG ($TURNIP_NAME)"
 
       - name: Set Release Variables
