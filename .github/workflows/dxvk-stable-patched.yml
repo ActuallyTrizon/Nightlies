@@ -1,0 +1,584 @@
+name: DXVK Stable (Patched) — GPLAsync + BinSem
+
+# ==================================================================
+# Builds the four PATCHED DXVK flavours from an upstream STABLE TAG
+# (not master). The all-in-one nightly builds these same flavours from
+# doitsujin/dxvk MASTER, which drifts ahead of the release tag as soon
+# as upstream merges anything — so its gplasync/binsem assets are NOT
+# the stable release. This workflow is the stable counterpart.
+#
+#   1. gplasync            (std: x64 + x86)         -> xz  .wcp
+#   2. gplasync            (arm64ec + x86)          -> zstd .wcp
+#   3. binsem + gplasync   (std: x64 + x86)         -> xz  .wcp
+#   4. binsem + gplasync   (arm64ec + x86)          -> zstd .wcp
+#
+# Dispatch-only, ARTIFACTS ONLY — no release is created, nothing is
+# uploaded to a release, no tag is pushed. The artifacts are downloaded
+# and published by hand.
+#
+# Reusable on every future upstream stable: leave the version input
+# empty and it resolves the latest upstream stable release itself.
+#
+# DELIBERATE DIFFERENCE FROM THE NIGHTLY: the nightly's DXVK jobs carry a
+# compile guard that falls back to a pinned v3.0 + gplasync-3.0-1 tree so
+# the nightly always ships something. That behaviour is WRONG here — the
+# entire point of this workflow is "this is the stable release, patched".
+# Silently shipping a different base would make the asset a lie, so every
+# patch/verify failure below is FATAL.
+#
+# Patch note: Ph42oN publishes no per-release gplasync patch beyond
+# 3.0-1; from 3.1 on, only dxvk-gplasync-master.patch exists. It is
+# written against master, so applying it to a stable tag needs the same
+# tolerant `patch --fuzz=3` the nightly uses (git apply is too strict).
+# A dry run gates every apply, and a failed dry run STOPS the job.
+# ==================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      dxvk_version:
+        description: 'Upstream DXVK stable tag (e.g. v3.1.1). Leave EMPTY to use the latest upstream stable release.'
+        required: false
+        default: ''
+      asset_revision:
+        description: 'Asset revision — the -N in dxvk-gplasync-<version>-<N>.wcp'
+        required: false
+        default: '1'
+
+permissions:
+  contents: read
+
+jobs:
+  # ==================================================================
+  # JOB 0: Resolve the upstream stable tag -> exact commit
+  # Peeling the tag here (once) gives every build job a commit to assert
+  # against, so a job can never quietly build something else.
+  # ==================================================================
+  resolve:
+    name: Resolve upstream stable tag
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.r.outputs.tag }}
+      version: ${{ steps.r.outputs.version }}
+      commit: ${{ steps.r.outputs.commit }}
+      revision: ${{ steps.r.outputs.revision }}
+    steps:
+      - name: Resolve tag and peel to commit
+        id: r
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_TAG: ${{ inputs.dxvk_version }}
+          INPUT_REV: ${{ inputs.asset_revision }}
+        run: |
+          set -euo pipefail
+
+          TAG="$INPUT_TAG"
+          if [ -z "$TAG" ]; then
+            TAG=$(gh api repos/doitsujin/dxvk/releases/latest --jq '.tag_name')
+            echo "No version given — latest upstream stable release is $TAG"
+          fi
+
+          # Annotated tags point at a tag object; peel it to the commit.
+          OBJ_TYPE=$(gh api "repos/doitsujin/dxvk/git/ref/tags/$TAG" --jq '.object.type')
+          OBJ_SHA=$(gh api "repos/doitsujin/dxvk/git/ref/tags/$TAG" --jq '.object.sha')
+          if [ "$OBJ_TYPE" = "tag" ]; then
+            COMMIT=$(gh api "repos/doitsujin/dxvk/git/tags/$OBJ_SHA" --jq '.object.sha')
+          else
+            COMMIT="$OBJ_SHA"
+          fi
+
+          VERSION="${TAG#v}"
+          REV="${INPUT_REV:-1}"
+
+          echo "tag=$TAG"         >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "commit=$COMMIT"   >> $GITHUB_OUTPUT
+          echo "revision=$REV"    >> $GITHUB_OUTPUT
+
+          {
+            echo "## DXVK stable base"
+            echo ""
+            echo "| field | value |"
+            echo "|---|---|"
+            echo "| tag | \`$TAG\` |"
+            echo "| version | \`$VERSION\` |"
+            echo "| commit | \`$COMMIT\` |"
+            echo "| asset revision | \`$REV\` |"
+          } >> $GITHUB_STEP_SUMMARY
+
+  # ==================================================================
+  # JOB 1/3: Standard (x64 + x86), gplasync and binsem+gplasync
+  # Recipe copied from the nightly's build-dxvk / build-dxvk-binsem
+  # (mingw-w64 + package-release.sh), with the clone pinned to the tag
+  # and the v3.0 fallback removed.
+  # ==================================================================
+  build-std:
+    name: Build DXVK ${{ matrix.label }} (stable, std)
+    needs: resolve
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - flavor: gplasync
+            label: GPLAsync
+            suffix: gplasync
+            asset_prefix: dxvk-gplasync
+            description: 'Banners Repo (Upstream: Philip Rebohle, Patch: Ph42oN)'
+          - flavor: binsem
+            label: BinSem
+            suffix: binsem-gplasync
+            asset_prefix: dxvk-binsem-gplasync
+            description: 'Banners Repo - Binary Semaphores + GPLAsync (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback.'
+    steps:
+      - name: Checkout (for patch files)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mingw-w64 wget git xz-utils python3 meson ninja-build build-essential unzip zip ccache patch jq
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          # Keyed to the pinned stable commit — a fixed base, so this is a
+          # true hit on every re-run of the same release.
+          key: ccache-dxvk-stable-${{ matrix.flavor }}-std-${{ needs.resolve.outputs.commit }}
+          restore-keys: ccache-dxvk-stable-${{ matrix.flavor }}-std-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup ccache compiler wrappers
+        run: |
+          # ccache-backed symlinks that shadow the real MinGW compilers;
+          # package-release.sh picks compilers off PATH.
+          mkdir -p ~/ccache-bin
+          for compiler in \
+            x86_64-w64-mingw32-gcc \
+            x86_64-w64-mingw32-g++ \
+            i686-w64-mingw32-gcc \
+            i686-w64-mingw32-g++; do
+            ln -s "$(which ccache)" ~/ccache-bin/$compiler
+          done
+          echo "$HOME/ccache-bin" >> $GITHUB_PATH
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Clone DXVK at the stable tag
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          EXPECTED: ${{ needs.resolve.outputs.commit }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+          rm -rf dxvk dxvk-built
+          git clone --depth 1 --branch "$TAG" --recurse-submodules --shallow-submodules \
+            https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          ACTUAL=$(git rev-parse HEAD)
+          echo "Requested tag : $TAG"
+          echo "Expected commit: $EXPECTED"
+          echo "CHECKED OUT DXVK COMMIT: $ACTUAL"
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::error::Checked-out commit $ACTUAL != expected $EXPECTED for tag $TAG — refusing to build an unknown base."
+            exit 1
+          fi
+          echo "meson project version: $(grep -m1 -o "version *: *'[^']*'" meson.build)"
+
+      - name: Apply patches (fatal on failure — no fallback base)
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          FLAVOR: ${{ matrix.flavor }}
+        run: |
+          set -euo pipefail
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          cd "$GITHUB_WORKSPACE/dxvk"
+
+          # Ph42oN ships no per-release patch past 3.0-1, so the MASTER gplasync
+          # patch is applied to the stable tag. It is authored against master, so
+          # hunks land at an offset and may need fuzz; `git apply` refuses that,
+          # `patch --fuzz=3` does not. A failed dry run is FATAL — falling back to
+          # an older base would defeat the purpose of this workflow.
+          apply_patch() {
+            local p="$1"
+            echo "::group::patch $(basename "$p")"
+            if ! patch -p1 --fuzz=3 --dry-run < "$p"; then
+              echo "::endgroup::"
+              echo "::error::$(basename "$p") does NOT apply to $TAG even with --fuzz=3. STOPPING — re-vendor the patch from Ph42oN/leegao for this release. No fallback base is used."
+              exit 1
+            fi
+            patch -p1 --fuzz=3 < "$p"
+            echo "::endgroup::"
+          }
+
+          apply_patch "$PATCHES/dxvk-gplasync-master.patch"
+          if [ "$FLAVOR" = "binsem" ]; then
+            # leegao binary-semaphore fallback, layered on top of gplasync
+            # (touches dxvk_cmdlist/dxvk_queue only — no overlap).
+            apply_patch "$PATCHES/dxvk-binary-semaphores.patch"
+          fi
+
+          # Prove the patches actually took effect in the tree.
+          grep -q "dxvk.enableAsync" src/dxvk/dxvk_options.cpp \
+            || { echo "::error::gplasync applied but dxvk.enableAsync missing"; exit 1; }
+          if [ "$FLAVOR" = "binsem" ]; then
+            grep -q "DXVK_DISABLE_TIMELINE_SEMAPHORES" src/dxvk/dxvk_queue.cpp \
+              || { echo "::error::binsem applied but DXVK_DISABLE_TIMELINE_SEMAPHORES missing"; exit 1; }
+          fi
+
+      - name: Build
+        env:
+          VERSION: ${{ needs.resolve.outputs.version }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/dxvk"
+          # Use all available vCPUs (the script hardcodes a bare `ninja`).
+          sed -i 's/\bninja\b/ninja -j$(nproc)/g' package-release.sh
+          # The version arg only names the output directory; the DLL version
+          # itself comes from the tag's own meson.build.
+          ./package-release.sh "$VERSION" ../dxvk-built --no-package
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package .wcp
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          VERSION: ${{ needs.resolve.outputs.version }}
+          REV: ${{ needs.resolve.outputs.revision }}
+          SUFFIX: ${{ matrix.suffix }}
+          ASSET_PREFIX: ${{ matrix.asset_prefix }}
+          DESCRIPTION: ${{ matrix.description }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+
+          VERSION_NAME="${TAG}-${SUFFIX}"
+          WCP="${ASSET_PREFIX}-${VERSION}-${REV}.wcp"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "WCP=$WCP" >> $GITHUB_ENV
+
+          rm -rf packaging && mkdir -p packaging
+          cp -r "dxvk-built/dxvk-${VERSION}/x64" packaging/system32
+          cp -r "dxvk-built/dxvk-${VERSION}/x32" packaging/syswow64
+
+          cat <<EOF > packaging/profile.json
+          {
+            "type": "DXVK",
+            "versionName": "${VERSION_NAME}",
+            "versionCode": 0,
+            "description": "${DESCRIPTION}",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+
+          # xz — matches the published standard stable assets.
+          tar -cJf "$WCP" -C packaging .
+
+      - name: Verify .wcp
+        env:
+          COMMIT: ${{ needs.resolve.outputs.commit }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+          bash scripts/verify-dxvk-wcp.sh "$WCP" "$VERSION_NAME" std "$COMMIT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset_prefix }}-${{ needs.resolve.outputs.version }}-${{ needs.resolve.outputs.revision }}
+          path: '*.wcp'
+          if-no-files-found: error
+
+  # ==================================================================
+  # JOB 2/4: ARM64EC (+ x86 syswow64), gplasync and binsem+gplasync
+  # Recipe copied from the nightly's build-dxvk-arm64ec /
+  # build-dxvk-binsem-arm64ec (LLVM-MinGW cross build), clone pinned to
+  # the tag and the v3.0 fallback removed.
+  # ==================================================================
+  build-arm64ec:
+    name: Build DXVK ${{ matrix.label }} (stable, ARM64EC)
+    needs: resolve
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - flavor: gplasync
+            label: GPLAsync
+            suffix: gplasync-arm64ec
+            asset_prefix: dxvk-gplasync-arm64ec
+            description: 'Banners Repo (Upstream: Philip Rebohle, Patch: Ph42oN)'
+          - flavor: binsem
+            label: BinSem
+            suffix: binsem-gplasync-arm64ec
+            asset_prefix: dxvk-binsem-gplasync-arm64ec
+            description: 'Banners Repo - Binary Semaphores + GPLAsync ARM64EC (Upstream: Philip Rebohle, GPLAsync: Ph42oN, BinSem: leegao). Set DXVK_DISABLE_TIMELINE_SEMAPHORES=1 to enable the fallback.'
+    steps:
+      - name: Checkout (for patch files)
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates curl xz-utils jq git build-essential \
+            python3 pkg-config zstd meson ninja-build wget unzip zip ccache patch
+
+      - name: Get week number (for glslang cache key)
+        id: date
+        run: echo "week=$(date +%Y-%W)" >> $GITHUB_OUTPUT
+
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          key: ccache-dxvk-stable-${{ matrix.flavor }}-arm64ec-${{ needs.resolve.outputs.commit }}
+          restore-keys: ccache-dxvk-stable-${{ matrix.flavor }}-arm64ec-
+
+      - name: Cache glslang
+        id: cache-glslang
+        uses: actions/cache@v4
+        with:
+          path: glslang
+          key: glslang-master-tot-${{ runner.os }}-${{ steps.date.outputs.week }}
+          restore-keys: glslang-master-tot-${{ runner.os }}-
+
+      - name: Cache LLVM-MinGW
+        uses: actions/cache@v4
+        with:
+          path: /opt/llvm-mingw
+          # Version-pinned — only re-downloads if the tag below is bumped.
+          key: llvm-mingw-20251104-ubuntu22
+
+      - name: Download glslang
+        if: steps.cache-glslang.outputs.cache-hit != 'true'
+        run: |
+          wget -q https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+          unzip -qo glslang-master-linux-Release.zip -d glslang
+
+      - name: Add glslang to PATH
+        run: echo "$PWD/glslang/bin" >> $GITHUB_PATH
+
+      - name: Setup LLVM-MinGW
+        run: |
+          if [ ! -d "/opt/llvm-mingw/bin" ]; then
+            echo "Cache miss — downloading LLVM-MinGW..."
+            LLVM_MINGW_TAG="20251104"
+            wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/$LLVM_MINGW_TAG/llvm-mingw-$LLVM_MINGW_TAG-ucrt-ubuntu-22.04-x86_64.tar.xz" -O llvm.tar.xz
+            sudo mkdir -p /opt/llvm-mingw
+            sudo tar -C /opt/llvm-mingw --strip-components=1 -xJf llvm.tar.xz
+          else
+            echo "Cache hit — LLVM-MinGW ready."
+          fi
+          echo "/opt/llvm-mingw/bin" >> $GITHUB_PATH
+
+      - name: Configure ccache
+        run: |
+          ccache --max-size=1G
+          ccache --zero-stats
+
+      - name: Configure Cross-Files
+        run: |
+          # ccache injected via the binaries array — cleanest for meson cross builds.
+          cat <<EOF > arm64ec.txt
+          [binaries]
+          c = ['ccache', 'arm64ec-w64-mingw32-clang']
+          cpp = ['ccache', 'arm64ec-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'arm64ec-w64-mingw32-windres'
+          widl = 'arm64ec-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'aarch64'
+          cpu = 'aarch64'
+          endian = 'little'
+          EOF
+
+          cat <<EOF > x86.txt
+          [binaries]
+          c = ['ccache', 'i686-w64-mingw32-clang']
+          cpp = ['ccache', 'i686-w64-mingw32-clang++']
+          ar = 'llvm-ar'
+          strip = 'llvm-strip'
+          windres = 'i686-w64-mingw32-windres'
+          widl = 'i686-w64-mingw32-widl'
+          pkg-config = 'pkg-config'
+          [host_machine]
+          system = 'windows'
+          cpu_family = 'x86'
+          cpu = 'i686'
+          endian = 'little'
+          EOF
+
+      - name: Clone DXVK at the stable tag
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          EXPECTED: ${{ needs.resolve.outputs.commit }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+          rm -rf dxvk build-ec build-x86
+          git clone --depth 1 --branch "$TAG" --recurse-submodules --shallow-submodules \
+            https://github.com/doitsujin/dxvk.git dxvk
+          cd dxvk
+          ACTUAL=$(git rev-parse HEAD)
+          echo "Requested tag : $TAG"
+          echo "Expected commit: $EXPECTED"
+          echo "CHECKED OUT DXVK COMMIT: $ACTUAL"
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::error::Checked-out commit $ACTUAL != expected $EXPECTED for tag $TAG — refusing to build an unknown base."
+            exit 1
+          fi
+          echo "meson project version: $(grep -m1 -o "version *: *'[^']*'" meson.build)"
+
+      - name: Apply patches (fatal on failure — no fallback base)
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          FLAVOR: ${{ matrix.flavor }}
+        run: |
+          set -euo pipefail
+          PATCHES="$GITHUB_WORKSPACE/patches"
+          cd "$GITHUB_WORKSPACE/dxvk"
+
+          apply_patch() {
+            local p="$1"
+            echo "::group::patch $(basename "$p")"
+            if ! patch -p1 --fuzz=3 --dry-run < "$p"; then
+              echo "::endgroup::"
+              echo "::error::$(basename "$p") does NOT apply to $TAG even with --fuzz=3. STOPPING — re-vendor the patch from Ph42oN/leegao for this release. No fallback base is used."
+              exit 1
+            fi
+            patch -p1 --fuzz=3 < "$p"
+            echo "::endgroup::"
+          }
+
+          apply_patch "$PATCHES/dxvk-gplasync-master.patch"
+          if [ "$FLAVOR" = "binsem" ]; then
+            apply_patch "$PATCHES/dxvk-binary-semaphores.patch"
+          fi
+
+          grep -q "dxvk.enableAsync" src/dxvk/dxvk_options.cpp \
+            || { echo "::error::gplasync applied but dxvk.enableAsync missing"; exit 1; }
+          if [ "$FLAVOR" = "binsem" ]; then
+            grep -q "DXVK_DISABLE_TIMELINE_SEMAPHORES" src/dxvk/dxvk_queue.cpp \
+              || { echo "::error::binsem applied but DXVK_DISABLE_TIMELINE_SEMAPHORES missing"; exit 1; }
+          fi
+
+      - name: Build
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/dxvk"
+          meson setup build-ec  --cross-file ../arm64ec.txt -Dbuildtype=release -Dstrip=true
+          meson setup build-x86 --cross-file ../x86.txt     -Dbuildtype=release -Dstrip=true
+          ninja -C build-ec  -j$(nproc)
+          ninja -C build-x86 -j$(nproc)
+
+      - name: Print ccache stats
+        run: ccache --show-stats
+
+      - name: Package .wcp
+        env:
+          TAG: ${{ needs.resolve.outputs.tag }}
+          VERSION: ${{ needs.resolve.outputs.version }}
+          REV: ${{ needs.resolve.outputs.revision }}
+          SUFFIX: ${{ matrix.suffix }}
+          ASSET_PREFIX: ${{ matrix.asset_prefix }}
+          DESCRIPTION: ${{ matrix.description }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+
+          VERSION_NAME="${TAG}-${SUFFIX}"
+          WCP="${ASSET_PREFIX}-${VERSION}-${REV}.wcp"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "WCP=$WCP" >> $GITHUB_ENV
+
+          rm -rf packaging
+          mkdir -p packaging/system32 packaging/syswow64
+
+          copy_dll() {
+            SRC_DIR=$1
+            DEST_DIR=$2
+            cp "dxvk/$SRC_DIR/src/d3d11/d3d11.dll"       "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d10/d3d10core.dll"   "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d9/d3d9.dll"         "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/d3d8/d3d8.dll"         "$DEST_DIR/"
+            cp "dxvk/$SRC_DIR/src/dxgi/dxgi.dll"         "$DEST_DIR/"
+          }
+          copy_dll "build-ec"  "packaging/system32"
+          copy_dll "build-x86" "packaging/syswow64"
+          llvm-strip --strip-all packaging/system32/*.dll
+          llvm-strip --strip-all packaging/syswow64/*.dll
+
+          cat <<EOF > packaging/profile.json
+          {
+            "type": "DXVK",
+            "versionName": "${VERSION_NAME}",
+            "versionCode": 0,
+            "description": "${DESCRIPTION}",
+            "files": [
+              { "source": "system32/d3d10core.dll", "target": "\${system32}/d3d10core.dll" },
+              { "source": "system32/d3d11.dll", "target": "\${system32}/d3d11.dll" },
+              { "source": "system32/d3d8.dll", "target": "\${system32}/d3d8.dll" },
+              { "source": "system32/d3d9.dll", "target": "\${system32}/d3d9.dll" },
+              { "source": "system32/dxgi.dll", "target": "\${system32}/dxgi.dll" },
+              { "source": "syswow64/d3d10core.dll", "target": "\${syswow64}/d3d10core.dll" },
+              { "source": "syswow64/d3d11.dll", "target": "\${syswow64}/d3d11.dll" },
+              { "source": "syswow64/d3d8.dll", "target": "\${syswow64}/d3d8.dll" },
+              { "source": "syswow64/d3d9.dll", "target": "\${syswow64}/d3d9.dll" },
+              { "source": "syswow64/dxgi.dll", "target": "\${syswow64}/dxgi.dll" }
+            ]
+          }
+          EOF
+
+          # zstd — matches the published ARM64EC stable assets.
+          cd packaging
+          tar --zstd -cf "../$WCP" .
+
+      - name: Verify .wcp
+        env:
+          COMMIT: ${{ needs.resolve.outputs.commit }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+          bash scripts/verify-dxvk-wcp.sh "$WCP" "$VERSION_NAME" arm64ec "$COMMIT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset_prefix }}-${{ needs.resolve.outputs.version }}-${{ needs.resolve.outputs.revision }}
+          path: '*.wcp'
+          if-no-files-found: error

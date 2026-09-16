@@ -6,6 +6,80 @@
 
 ---
 
+## Session — 2026-09-15
+
+### [feat] — Stable-tag DXVK builds: gplasync + binsem from the upstream release tag (2026-09-15, branch `feat/dxvk-stable-patched`)
+**New dispatch-only workflow `dxvk-stable-patched.yml` + shared verifier `scripts/verify-dxvk-wcp.sh`. ARTIFACTS ONLY — no release, no upload, no tag.**
+
+#### Why
+The all-in-one nightly builds its four gplasync/binsem DXVK flavours from doitsujin/dxvk
+**master**, which drifts ahead of the release tag the moment upstream merges anything. On
+2026-09-15 upstream cut **v3.1.1** (`b1a1c99ab52b`) and master was already **21 commits
+ahead** (`7df3596e`) — so the nightly's gplasync/binsem assets are NOT the stable release.
+The nightly's two *vanilla* DXVK jobs were already pinned to the stable release; the four
+patched flavours had no stable counterpart. This workflow is it.
+
+#### What changed
+- **`.github/workflows/dxvk-stable-patched.yml` (new).** `workflow_dispatch` only. Inputs:
+  `dxvk_version` (empty ⇒ resolves the latest upstream stable via
+  `gh api repos/doitsujin/dxvk/releases/latest`) and `asset_revision` (the `-N` suffix).
+  Reusable as-is on every future upstream stable.
+  - `resolve` job peels the tag to a commit **once** and hands it to every build job, which
+    asserts `git rev-parse HEAD` equals it and **fails** on mismatch — a job can never
+    quietly build a different base.
+  - `build-std` (ubuntu-latest, mingw-w64 + `package-release.sh`) and `build-arm64ec`
+    (ubuntu-24.04, LLVM-MinGW 20251104 cross build), each a 2-entry matrix
+    (`gplasync`, `binsem`) ⇒ the four flavours. Recipes copied from the nightly's
+    `build-dxvk` / `build-dxvk-arm64ec` / `build-dxvk-binsem` / `build-dxvk-binsem-arm64ec`,
+    with the clone changed to `--branch <tag>`.
+  - **No fallback base.** The nightly's DXVK jobs fall back to a pinned v3.0 +
+    `gplasync-3.0-1` tree so the nightly always ships. That behaviour is wrong for a
+    stable asset — shipping a different base under a 3.1.1 label would make the asset a
+    lie — so every patch/verify failure here is fatal and the job stops.
+  - Packaging matches the published stable assets exactly: std ⇒ `tar -cJf` (xz),
+    arm64ec ⇒ `tar --zstd`; `profile.json` + `system32/` + `syswow64/`; type `DXVK`,
+    `versionCode 0`, versionName `<tag>-<suffix>`, descriptions copied verbatim from the
+    published `3.1-1` assets.
+  - Artifact filenames: `dxvk-gplasync-<ver>-<rev>.wcp`,
+    `dxvk-gplasync-arm64ec-<ver>-<rev>.wcp`, `dxvk-binsem-gplasync-<ver>-<rev>.wcp`,
+    `dxvk-binsem-gplasync-arm64ec-<ver>-<rev>.wcp`.
+- **`scripts/verify-dxvk-wcp.sh` (new).** Gate every `.wcp` before upload: archive opens,
+  `profile.json` is valid JSON with the expected type/versionName/versionCode/description,
+  the literal `${system32}`/`${syswow64}` placeholders survived packaging, every `files[]`
+  source really exists in the archive, the 5×2 DLL set is complete, and each DLL is a PE of
+  the right flavour. Validated locally against all four published `3.1-1` assets (pass) and
+  three deliberate mismatches (fail).
+
+#### Patch behaviour against the stable tag (checked before writing the workflow)
+Ph42oN publishes no per-release gplasync patch past `3.0-1`; from 3.1 on only
+`dxvk-gplasync-master.patch` exists, authored against master. Against the `v3.1.1` tree:
+- `git apply` **rejects** it (`src/dxvk/dxvk_graphics.cpp:1420 patch does not apply`).
+- `patch -p1 --fuzz=3` **applies**, all hunks, one at fuzz 2 — `dxvk_graphics.cpp` hunk #4,
+  the `m_async = false;` line in `DxvkGraphicsPipeline::getOptimizedPipeline`. The only
+  context drift is that master has `status.store(status, std::memory_order_release)` where
+  the tag still has `status.store(status)`; the added line lands in the identical place.
+- `dxvk-binary-semaphores.patch` layers on top, also via `--fuzz=3` (hunks at fuzz 1 and
+  fuzz 2, both landing correctly — `m_useTimeline` env read in the `DxvkSubmissionQueue`
+  ctor and the `m_useTimeline`/binary-pool members in `dxvk_queue.h`).
+So the tolerant `patch --fuzz=3` the nightly uses is **required** here, and the workflow
+gates every apply behind a dry run that is fatal on failure.
+
+#### ARM64EC note for the verifier
+An ARM64EC PE carries the **AMD64** machine type in its COFF header, so `file` reports both
+std and arm64ec `system32` DLLs as `PE32+ … x86-64` — the machine type cannot tell them
+apart. The verifier discriminates on the ARM64EC-only sections `.hexpthk` (x64→ARM64 entry
+thunks) and `.a64xrm` (ARM64X range map), plus the CHPE load-config pointer via
+`llvm-readobj` where available. Confirmed against the published assets: the arm64ec
+`system32` DLLs carry both markers and a non-zero `CHPEMetadataPointer`, the std ones carry
+neither.
+
+#### Files touched
+- `.github/workflows/dxvk-stable-patched.yml` (new)
+- `scripts/verify-dxvk-wcp.sh` (new)
+- No existing workflow modified — `new-All-in-one-nightly+zips-latest-stable.yml` untouched.
+
+---
+
 ## Session — 2026-08-28
 
 ### [feat] — Vanilla DXVK build jobs added to the all-in-one nightly (2026-08-28, `d64ace24` on `main`)
