@@ -36,10 +36,10 @@ patched flavours had no stable counterpart. This workflow is it.
     `gplasync-3.0-1` tree so the nightly always ships. That behaviour is wrong for a
     stable asset — shipping a different base under a 3.1.1 label would make the asset a
     lie — so every patch/verify failure here is fatal and the job stops.
-  - Packaging matches the published stable assets exactly: std ⇒ `tar -cJf` (xz),
-    arm64ec ⇒ `tar --zstd`; `profile.json` + `system32/` + `syswow64/`; type `DXVK`,
-    `versionCode 0`, versionName `<tag>-<suffix>`, descriptions copied verbatim from the
-    published `3.1-1` assets.
+  - Packaging matches the published stable assets exactly: std ⇒ `tar -cJf` (xz -6),
+    arm64ec ⇒ `tar --use-compress-program='zstd -19 -T0'`; `profile.json` + `system32/` +
+    `syswow64/`; type `DXVK`, `versionCode 0`, versionName `<tag>-<suffix>`, descriptions
+    copied verbatim from the published `3.1-1` assets.
   - Artifact filenames: `dxvk-gplasync-<ver>-<rev>.wcp`,
     `dxvk-gplasync-arm64ec-<ver>-<rev>.wcp`, `dxvk-binsem-gplasync-<ver>-<rev>.wcp`,
     `dxvk-binsem-gplasync-arm64ec-<ver>-<rev>.wcp`.
@@ -72,6 +72,29 @@ thunks) and `.a64xrm` (ARM64X range map), plus the CHPE load-config pointer via
 `llvm-readobj` where available. Confirmed against the published assets: the arm64ec
 `system32` DLLs carry both markers and a non-zero `CHPEMetadataPointer`, the std ones carry
 neither.
+
+#### Compression: the ARM64EC assets are zstd **-19**, not tar's default
+Measured against the published `3.1-1` assets rather than assumed:
+- **std** — recompressing the published `dxvk-binsem-gplasync-3.1-1.wcp` payload with plain
+  `tar -cJf` reproduces **7,797,976 bytes, its exact published size**. So the standard
+  assets are ordinary xz -6 and the jobs keep `tar -cJf`. A higher xz preset was rejected:
+  -9 would shrink the asset ~1 MB but raises the *decoder's* memory need from 8 MB to
+  64 MB, which is not worth it for an asset unpacked on a phone.
+- **arm64ec** — `tar --zstd` means level 3 and yields **13.3 MB**, but the published
+  `dxvk-gplasync-arm64ec-3.1-1.wcp` is **6,319,391 bytes**; recompressing our own payload at
+  `zstd -19` gives **6,319,088** — a 303-byte delta on 6.3 MB, i.e. the 3.1→3.1.1 code
+  difference. The published ARM64EC assets are therefore level 19, and the AIO's bare
+  `tar --zstd` would have handed users a **2.1x larger download for identical DLLs**. The
+  ARM64EC jobs use `zstd -19 -T0`; decompression stays an 8 MB window and is already proven
+  on device by the existing published assets.
+
+#### Known size difference vs the 3.1 assets (std only, not a packaging bug)
+The std `3.1.1` archives come out ~1 MB larger than the published `3.1` ones (8.78 MB vs
+7.80 MB) even though the packaging is byte-for-byte the same recipe and the *uncompressed*
+payloads are the same size (44,631,130 vs 44,627,032 B, every DLL within 4 KB). The 3.1.1
+DLLs simply compress ~12% worse — different mingw-w64 GCC codegen on today's runner image
+than when the 3.1 asset was built. Nothing to fix; noted so the size jump is not mistaken
+for a stripping or packaging regression later.
 
 #### Files touched
 - `.github/workflows/dxvk-stable-patched.yml` (new)

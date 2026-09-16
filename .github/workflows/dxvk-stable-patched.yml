@@ -574,9 +574,18 @@ jobs:
           }
           EOF
 
-          # zstd — matches the published ARM64EC stable assets.
+          # zstd LEVEL 19 — matches the published ARM64EC stable assets.
+          # `tar --zstd` alone means level 3 and produces a ~13.3 MB archive;
+          # the published dxvk-gplasync-arm64ec-3.1-1.wcp is 6.32 MB, and
+          # recompressing this exact payload at -19 reproduces that size, so
+          # the published assets are level 19. Level 3 would hand every user a
+          # 2.1x larger download for identical DLLs. Decompression stays cheap
+          # (8 MB window) and is already proven on device by those assets.
+          # (The std jobs keep plain `tar -cJf`: xz -6 reproduces the published
+          # standard assets exactly, and a higher xz preset would raise the
+          # decoder's memory need from 8 MB to 64 MB.)
           cd packaging
-          tar --zstd -cf "../$WCP" .
+          tar --use-compress-program='zstd -19 -T0' -cf "../$WCP" .
 
       - name: Verify .wcp
         env:
