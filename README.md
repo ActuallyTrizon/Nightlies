@@ -50,18 +50,18 @@ A single JSON index of every component published here — point any compatible W
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260915-134826](https://github.com/ActuallyTrizon/Nightlies/releases/tag/nightly-20260915-134826) |
-| **FEXCore** | [`82510eb45`](https://github.com/FEX-Emu/FEX/commit/82510eb45) — FEX-2609+41-Nightly-82510eb45 |
-| **VKD3D-Proton (Std)** | [`81d96933`](https://github.com/HansKristian-Work/vkd3d-proton/commit/81d96933) |
-| **VKD3D-Proton (ARM64EC)** | [`81d96933`](https://github.com/HansKristian-Work/vkd3d-proton/commit/81d96933) |
-| **DXVK (GPLAsync)** | [`60193094`](https://github.com/doitsujin/dxvk/commit/60193094) |
-| **DXVK (ARM64EC)** | [`60193094`](https://github.com/doitsujin/dxvk/commit/60193094) |
-| **DXVK BinSem (GPLAsync)** | [`60193094`](https://github.com/doitsujin/dxvk/commit/60193094) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
-| **DXVK BinSem (ARM64EC)** | [`60193094`](https://github.com/doitsujin/dxvk/commit/60193094) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **Release** | [🔗 nightly-20260916-134840](https://github.com/ActuallyTrizon/Nightlies/releases/tag/nightly-20260916-134840) |
+| **FEXCore** | [`7723c47be`](https://github.com/FEX-Emu/FEX/commit/7723c47be) — FEX-2609+80-Nightly-7723c47be |
+| **VKD3D-Proton (Std)** | [`c1e0926d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/c1e0926d) |
+| **VKD3D-Proton (ARM64EC)** | [`c1e0926d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/c1e0926d) |
+| **DXVK (GPLAsync)** | [`7df3596e`](https://github.com/doitsujin/dxvk/commit/7df3596e) |
+| **DXVK (ARM64EC)** | [`7df3596e`](https://github.com/doitsujin/dxvk/commit/7df3596e) |
+| **DXVK BinSem (GPLAsync)** | [`7df3596e`](https://github.com/doitsujin/dxvk/commit/7df3596e) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
+| **DXVK BinSem (ARM64EC)** | [`7df3596e`](https://github.com/doitsujin/dxvk/commit/7df3596e) — set `DXVK_DISABLE_TIMELINE_SEMAPHORES=1` to activate |
 | **D7VK (DDraw/D3D7)** | [`d6faa0643`](https://github.com/WinterSnowfall/d7vk/commit/d6faa0643) — DDraw Wrapper slot; `.tzst` = bundled-asset refresh |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.3.0-20260915-r3](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260915-r3) — Turnip v26.3.0-20260915-r3 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/ActuallyTrizon/Nightlies/releases/tag/nightly-20260915-134826) |
+| **Turnip** | [v26.3.0-20260916-r3](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.3.0-20260916-r3) — Turnip v26.3.0-20260916-r3 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/ActuallyTrizon/Nightlies/releases/tag/nightly-20260916-134840) |
 <!-- NIGHTLY-LATEST-END -->
 
 </details>
