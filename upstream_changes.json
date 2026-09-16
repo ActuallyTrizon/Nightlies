@@ -1,32 +1,32 @@
 {
-  "triggered_at": "2026-09-16T08:06:34Z",
+  "triggered_at": "2026-09-16T13:55:04Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "f9d5835",
-      "new": "77fdc0b",
-      "full": "77fdc0bafb1c70420c070d18d3fe7f90fae2688d",
-      "msg": "[STEAM] Added ondemand SteamUI to save memory (#4397)",
-      "date": "2026-09-16T07:02:34Z"
+      "old": "77fdc0b",
+      "new": "b40b2f1",
+      "full": "b40b2f12936ea21b1dd85b6ecbfc9b7c3f0659a3",
+      "msg": "[SIGNAL] Re-raise software-generated fatal signals (#4400)",
+      "date": "2026-09-16T11:58:31Z"
     },
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "19df181",
-      "new": "7723c47",
-      "full": "7723c47be45c386697e0c3126780df27a3ac9d19",
-      "msg": "Merge pull request #5964 from Sonicadvance1/250",
-      "date": "2026-09-16T08:01:12Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "af89350",
+      "new": "c1e0926",
+      "full": "c1e0926d60f22c4f5a62f9e7f5038035b8ff7a34",
+      "msg": "build: Add arm64ec cross-file.",
+      "date": "2026-09-16T12:40:17Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9df9c70",
-      "new": "d175940",
-      "full": "d175940c8651d7ca2a8211463084a47ada898a9b",
-      "msg": "anv: remove transfer from render section in barriers",
-      "date": "2026-09-16T07:18:20.000+00:00"
+      "old": "d175940",
+      "new": "881d92d",
+      "full": "881d92d1562bdfc419ec816c4561b3abc4cc81c6",
+      "msg": "anv/video: report back codec overrides",
+      "date": "2026-09-16T13:35:50.000+00:00"
     }
   ]
 }
