@@ -34,15 +34,10 @@ name: DXVK Stable (Patched) — GPLAsync + BinSem
 # ==================================================================
 
 on:
-  # TEMPORARY — validation only, removed before this lands on main.
-  # GitHub only registers a workflow_dispatch workflow once it exists on the
-  # DEFAULT branch, so the workflow cannot be dispatched while it lives only
-  # on this branch. This push trigger proves it green from the branch without
-  # touching main; a push run supplies no inputs, which also exercises the
-  # "resolve the latest upstream stable myself" default path.
-  push:
-    branches:
-      - feat/dxvk-stable-patched
+  # Dispatch-only by design. NOTE: GitHub only registers a workflow_dispatch
+  # workflow once the file exists on the DEFAULT branch, so this cannot be
+  # dispatched until it is on main. It was validated from its branch with a
+  # temporary push trigger (runs 35051699762 and 35052836695, both green).
   workflow_dispatch:
     inputs:
       dxvk_version:

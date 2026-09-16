@@ -73,6 +73,26 @@ thunks) and `.a64xrm` (ARM64X range map), plus the CHPE load-config pointer via
 `system32` DLLs carry both markers and a non-zero `CHPEMetadataPointer`, the std ones carry
 neither.
 
+#### CI-GREEN
+- Run `35051699762` (`3dd72499`) — all 5 jobs success; first cut, ARM64EC still zstd level 3.
+- Run `35052836695` (`98804cb0`) — all 5 jobs success; the zstd -19 fix. **This is the run
+  whose four artifacts are the deliverable.** All four jobs logged
+  `CHECKED OUT DXVK COMMIT: b1a1c99ab52b687cf950d62c88bc2fa316b41663` and
+  `meson project version: 3.1.1`.
+- `workflow_dispatch` only registers from the DEFAULT branch, so the workflow could not be
+  dispatched while it lived only on this branch. It was validated with a temporary
+  branch-scoped `push:` trigger, removed again in the final commit — the workflow ships
+  dispatch-only. A push run passes no inputs, so this also proved the default
+  "resolve the latest upstream stable myself" path (it found `v3.1.1` on its own).
+- Artifacts (run `35052836695`), **not uploaded anywhere** — the user publishes them:
+
+  | artifact | bytes | sha256 |
+  |---|---|---|
+  | `dxvk-gplasync-3.1.1-1.wcp` | 8,776,848 | `51a06efbb8463ca75253aff52850a4e4cf4b27fbc431e216facfd23609a0f404` |
+  | `dxvk-gplasync-arm64ec-3.1.1-1.wcp` | 6,318,968 | `e229df557c366cb4257372fb7f8edb02023ce982bd7b8ff9c196d79ccc30bfea` |
+  | `dxvk-binsem-gplasync-3.1.1-1.wcp` | 8,783,156 | `e02c5d7258191c500d3a65b506aaf6ef658c7454560a7d76821faff31266b36d` |
+  | `dxvk-binsem-gplasync-arm64ec-3.1.1-1.wcp` | 6,321,195 | `4d3a7128669797646f87a67e3889c4e32ea6640b32eb348e6fa95dfaad97131d` |
+
 #### Compression: the ARM64EC assets are zstd **-19**, not tar's default
 Measured against the published `3.1-1` assets rather than assumed:
 - **std** — recompressing the published `dxvk-binsem-gplasync-3.1-1.wcp` payload with plain
