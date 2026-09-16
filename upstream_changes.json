@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-16T20:41:10Z",
+  "triggered_at": "2026-09-16T23:25:58Z",
   "changed": [
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "d6faa06",
-      "new": "89b32fc",
-      "full": "89b32fc8cacd7006a58712b47e41426e3855c3dd",
-      "msg": "[d3d7] Implement ProcessVerticesStrided",
-      "date": "2026-09-16T19:23:47Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "06a6743",
-      "new": "9da422d",
-      "full": "9da422d331719526693179ade2cee5172aebeb60",
-      "msg": "docs: add sha sum for 26.2.3",
-      "date": "2026-09-16T22:24:33.000+02:00"
+      "old": "9da422d",
+      "new": "a6bb6e5",
+      "full": "a6bb6e52b7ced637177b5bc79da049df0f0659b7",
+      "msg": "anv: Use anv_cmd_buffer_alloc_space for encode batch",
+      "date": "2026-09-16T21:16:53.000+00:00"
     }
   ]
 }
