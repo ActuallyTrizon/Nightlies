@@ -45,6 +45,32 @@ nightly holds Latest (currently `nightly-20260916-023850`), so the combined rele
 created with `--latest=false` — non-prerelease as asked, but it does not displace the
 nightly, and the next nightly will not silently undo it either.
 
+#### PUBLISHED — DXVK 3.1.1, all six flavours (2026-09-16)
+Dry run `35053418721` first (all six verified, both upload steps **skipped**, nothing
+written), then the real publish run **`35053481208` — success**, both on `main` `b86c7884`.
+Combined release: https://github.com/The412Banner/Nightlies/releases/tag/dxvk-3.1.1
+
+| file | release | assets before → after | bytes | sha256 |
+|---|---|---|---|---|
+| `dxvk-3.1.1.wcp` | `Dxvk` | 13 → 14 | 8,460,648 | `5733f66be140f2be5c3f47d36025c79bdf53daca1b990827c3a3dc733aa8bc7d` |
+| `dxvk-arm64ec-3.1.1.wcp` | `Dxvk-arm64ec` | 9 → 10 | 6,311,178 | `719e238d96d3e13c6089a295aa9413d35b42ed1764b5ae9ccbf5c7028f9230e8` |
+| `dxvk-gplasync-3.1.1-1.wcp` | `Dxvk-gplasync` | 11 → 12 | 8,776,848 | `51a06efbb8463ca75253aff52850a4e4cf4b27fbc431e216facfd23609a0f404` |
+| `dxvk-gplasync-arm64ec-3.1.1-1.wcp` | `Dxvk-gplasync-arm64ec` | 10 → 11 | 6,318,968 | `e229df557c366cb4257372fb7f8edb02023ce982bd7b8ff9c196d79ccc30bfea` |
+| `dxvk-binsem-gplasync-3.1.1-1.wcp` | `Dxvk-binsem-gplasync` | 2 → 3 | 8,783,156 | `e02c5d7258191c500d3a65b506aaf6ef658c7454560a7d76821faff31266b36d` |
+| `dxvk-binsem-gplasync-arm64ec-3.1.1-1.wcp` | `Dxvk-binsem-gplasync-arm64ec` | 2 → 3 | 6,321,195 | `4d3a7128669797646f87a67e3889c4e32ea6640b32eb348e6fa95dfaad97131d` |
+
+Post-publish checks, done against the **live** releases, not the runner:
+- Every per-flavour release gained exactly **+1** asset; none lost any.
+- All six re-downloaded and re-verified from the release — all PASS, and the four patched
+  sha256s are identical to the build artifacts from run `35052836695`, so the exact bytes
+  that were built are the bytes that shipped.
+- Rename-only proven: published `dxvk-3.1.1.wcp` and `dxvk-arm64ec-3.1.1.wcp` are
+  `cmp`-identical to the nightly's `DXVK-v3.1.1.wcp` / `DXVK-v3.1.1-arm64ec.wcp`.
+- The nightly release is untouched (43 assets, all 8 of its own `DXVK-v3.1.1*` files intact).
+- The repo's "Latest" badge is still `nightly-20260916-023850`, as intended.
+- The release body is the notes file verbatim (differs only by one trailing newline), and
+  upstream's anti-virus false-positive warning is present.
+
 #### Files touched
 - `.github/workflows/dxvk-stable-publish.yml` (new)
 - `.github/release-notes/dxvk-3.1.1.md` (new, verbatim)
