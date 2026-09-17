@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-16T23:25:58Z",
+  "triggered_at": "2026-09-17T02:36:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9da422d",
-      "new": "a6bb6e5",
-      "full": "a6bb6e52b7ced637177b5bc79da049df0f0659b7",
-      "msg": "anv: Use anv_cmd_buffer_alloc_space for encode batch",
-      "date": "2026-09-16T21:16:53.000+00:00"
+      "old": "a6bb6e5",
+      "new": "8a97554",
+      "full": "8a97554c54ce748347df0030351603e25d4abdda",
+      "msg": "lavapipe: handle planar views as rendering attachments",
+      "date": "2026-09-17T00:46:11.000+00:00"
     }
   ]
 }
