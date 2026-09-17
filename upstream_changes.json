@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-09-17T02:36:39Z",
+  "triggered_at": "2026-09-17T08:12:53Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cc07741",
+      "new": "92527de",
+      "full": "92527ded34d51cdfd9d9f785a7157df51e8c14d8",
+      "msg": "[DYNAREC] Added dynablock in_used tracking and removed DYNAREC_PURGE (#4405)",
+      "date": "2026-09-17T07:32:51Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a6bb6e5",
-      "new": "8a97554",
-      "full": "8a97554c54ce748347df0030351603e25d4abdda",
-      "msg": "lavapipe: handle planar views as rendering attachments",
-      "date": "2026-09-17T00:46:11.000+00:00"
+      "old": "8a97554",
+      "new": "e36f69d",
+      "full": "e36f69d1587584f34ad151ebb1e0d1fdad37e219",
+      "msg": "pan/kmod: dummy BO is per VM for emulated sparse",
+      "date": "2026-09-17T07:33:18.000+00:00"
     }
   ]
 }
