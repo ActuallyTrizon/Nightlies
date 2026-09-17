@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-17T17:57:36Z",
+  "triggered_at": "2026-09-17T23:20:32Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ae8a2eb",
-      "new": "496fb4b",
-      "full": "496fb4bebf13f9172db7cd33a52e9aad3bc89874",
-      "msg": "[DYNAREC] Made the zombie Dynablocks buffer bigger (#4412)",
-      "date": "2026-09-17T17:28:28Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9726757",
-      "new": "03f434a",
-      "full": "03f434abd4fef66ced55cb937a72ec8aa512511a",
-      "msg": "vc4: skip draws whose clip window is empty",
-      "date": "2026-09-17T16:43:48.000+00:00"
+      "old": "03f434a",
+      "new": "87295d9",
+      "full": "87295d9e488dffea93d172da96f78e078809f433",
+      "msg": "brw: Use simpler instruction to clear flags for unconditional terminate/demote",
+      "date": "2026-09-17T22:56:38.000+00:00"
     }
   ]
 }
