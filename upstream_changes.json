@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-09-17T13:58:41Z",
+  "triggered_at": "2026-09-17T17:57:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "92527de",
-      "new": "ae8a2eb",
-      "full": "ae8a2eb85e8c5c4ff10f05ef0623d733e608500b",
-      "msg": "[RV64_DYNAREC] Optimize aligned REP STOSB with DF=0 (#4407)",
-      "date": "2026-09-17T13:40:42Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "89b32fc",
-      "new": "54c363b",
-      "full": "54c363b6c173c6705b776080468fe6e9449bcd66",
-      "msg": "[d3d3] Also update extents during D3DPROCESSVERTICES_COPY",
-      "date": "2026-09-17T12:25:39Z"
+      "old": "ae8a2eb",
+      "new": "496fb4b",
+      "full": "496fb4bebf13f9172db7cd33a52e9aad3bc89874",
+      "msg": "[DYNAREC] Made the zombie Dynablocks buffer bigger (#4412)",
+      "date": "2026-09-17T17:28:28Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e36f69d",
-      "new": "9726757",
-      "full": "972675794391a60f6f6f20a3a39d1cb0aecd7af4",
-      "msg": "bin/ci_run_n_monitor: add `--no-new-job-after 12h`",
-      "date": "2026-09-17T13:38:50.000+00:00"
+      "old": "9726757",
+      "new": "03f434a",
+      "full": "03f434abd4fef66ced55cb937a72ec8aa512511a",
+      "msg": "vc4: skip draws whose clip window is empty",
+      "date": "2026-09-17T16:43:48.000+00:00"
     }
   ]
 }
