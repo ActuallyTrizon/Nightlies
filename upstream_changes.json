@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-17T23:20:32Z",
+  "triggered_at": "2026-09-18T02:24:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "03f434a",
-      "new": "87295d9",
-      "full": "87295d9e488dffea93d172da96f78e078809f433",
-      "msg": "brw: Use simpler instruction to clear flags for unconditional terminate/demote",
-      "date": "2026-09-17T22:56:38.000+00:00"
+      "old": "87295d9",
+      "new": "51dd427",
+      "full": "51dd427e3960215c5f9f9e37c7d1badae9af6671",
+      "msg": "nv30: Fix for loops in fragment shaders on nv40",
+      "date": "2026-09-18T00:56:13.000+00:00"
     }
   ]
 }
