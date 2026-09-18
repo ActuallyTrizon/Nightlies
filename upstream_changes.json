@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-09-18T02:24:21Z",
+  "triggered_at": "2026-09-18T07:47:35Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "496fb4b",
+      "new": "560bfed",
+      "full": "560bfed1982174c252336cc5d032864b9f32c2f5",
+      "msg": "[RV64_DYNAREC] Use BEXTI to extract single bits instead of SRLI+ANDI (#4415)",
+      "date": "2026-09-18T06:22:23Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "87295d9",
-      "new": "51dd427",
-      "full": "51dd427e3960215c5f9f9e37c7d1badae9af6671",
-      "msg": "nv30: Fix for loops in fragment shaders on nv40",
-      "date": "2026-09-18T00:56:13.000+00:00"
+      "old": "51dd427",
+      "new": "6cf91c1",
+      "full": "6cf91c16869bc55d1074db1117ddeb486d3f9029",
+      "msg": "tu: Bump conformanceVersion",
+      "date": "2026-09-18T07:04:00.000+00:00"
     }
   ]
 }
