@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-09-18T07:47:35Z",
+  "triggered_at": "2026-09-18T12:31:55Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "496fb4b",
-      "new": "560bfed",
-      "full": "560bfed1982174c252336cc5d032864b9f32c2f5",
-      "msg": "[RV64_DYNAREC] Use BEXTI to extract single bits instead of SRLI+ANDI (#4415)",
-      "date": "2026-09-18T06:22:23Z"
+      "old": "560bfed",
+      "new": "9dd0bb4",
+      "full": "9dd0bb4b400256e6bb5e75d011cda15c3aacb19e",
+      "msg": "[RV64_DYNAREC] Fixed SHA opcodes (#4420)",
+      "date": "2026-09-18T10:57:43Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "51dd427",
-      "new": "6cf91c1",
-      "full": "6cf91c16869bc55d1074db1117ddeb486d3f9029",
-      "msg": "tu: Bump conformanceVersion",
-      "date": "2026-09-18T07:04:00.000+00:00"
+      "old": "6cf91c1",
+      "new": "503e8fe",
+      "full": "503e8fe6077474c912876c8298fc7b839d90ceba",
+      "msg": "nir/lower_input_attachments: add support for heap subpass image load",
+      "date": "2026-09-18T11:36:36.000+00:00"
     }
   ]
 }
