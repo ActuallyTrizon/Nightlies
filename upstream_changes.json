@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-09-18T19:20:13Z",
+  "triggered_at": "2026-09-18T22:05:44Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9bbdb35",
+      "new": "1405755",
+      "full": "1405755a315f8068628ec140ff91b562b00f0590",
+      "msg": "Merge pull request #5968 from javelina-pkwy/feat/rdrand-fallback",
+      "date": "2026-09-18T20:33:09Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "54c363b",
+      "new": "c949b83",
+      "full": "c949b83e65c943144824e2cc167193f58adc1208",
+      "msg": "[d3d6/5/3] Generalize texture handle lookups against common textures",
+      "date": "2026-09-18T21:08:01Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "943c367",
-      "new": "2ff83b5",
-      "full": "2ff83b54c951e3783d063b2ff1c13e88e7e6092f",
-      "msg": "r300: stop advertising full NPOT texture support",
-      "date": "2026-09-18T18:08:30.000+00:00"
+      "old": "2ff83b5",
+      "new": "590bf21",
+      "full": "590bf21d918c86908d96d1f4590ecd25b9657171",
+      "msg": "anv: implement VK_INTEL_device_info",
+      "date": "2026-09-18T20:00:52.000+00:00"
     }
   ]
 }
