@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-18T16:50:14Z",
+  "triggered_at": "2026-09-18T19:20:13Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "9dd0bb4",
-      "new": "6f7a215",
-      "full": "6f7a215578092e74fda7c40d3d58fc9dc56eb534",
-      "msg": "[ELFLOADER] Fast reject addresses outside ELF reservations (#4424)",
-      "date": "2026-09-18T13:33:53Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "503e8fe",
-      "new": "943c367",
-      "full": "943c367ef3aa33d9fa8d6189515444ed7cf7e418",
-      "msg": "radv: ignore radv_disable_dcc* driconf options when not applicable",
-      "date": "2026-09-18T15:55:05.000+00:00"
+      "old": "943c367",
+      "new": "2ff83b5",
+      "full": "2ff83b54c951e3783d063b2ff1c13e88e7e6092f",
+      "msg": "r300: stop advertising full NPOT texture support",
+      "date": "2026-09-18T18:08:30.000+00:00"
     }
   ]
 }
