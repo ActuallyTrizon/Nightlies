@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-09-19T13:47:47Z",
+  "triggered_at": "2026-09-19T21:57:44Z",
   "changed": [
     {
       "repo": "doitsujin/dxvk",
       "name": "DXVK",
-      "old": "260237c",
-      "new": "076922b",
-      "full": "076922bd242f29d359448cf56a79df853ee39032",
-      "msg": "[dxvk] Disable descriptor heap on AMD Proprietary",
-      "date": "2026-09-19T11:32:42Z"
+      "old": "076922b",
+      "new": "40e0164",
+      "full": "40e01640396d03f9fddeb697f5ee00ae893ecb75",
+      "msg": "[dxvk] End render pass before recording frame capture markers",
+      "date": "2026-09-19T19:43:00Z"
+    },
+    {
+      "repo": "WinterSnowfall/d7vk",
+      "name": "D7VK (DDraw/D3D7)",
+      "old": "c949b83",
+      "new": "6faf335",
+      "full": "6faf335939d11133d86c528aa8eae50dfe2982cf",
+      "msg": "[d3d6/5/3] Reevaluate alpha op selection during blend mode changes",
+      "date": "2026-09-19T20:25:14Z"
     }
   ]
 }
