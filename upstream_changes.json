@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-09-19T10:00:15Z",
+  "triggered_at": "2026-09-19T13:47:47Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "b4bc7c2",
-      "new": "38f4831",
-      "full": "38f4831b2452fb891cf00dfb2ad512cb19ae5cc5",
-      "msg": "[BOX32][X11] Fixed in-place WM hints conversion (#4430)",
-      "date": "2026-09-19T06:20:04Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "260237c",
+      "new": "076922b",
+      "full": "076922bd242f29d359448cf56a79df853ee39032",
+      "msg": "[dxvk] Disable descriptor heap on AMD Proprietary",
+      "date": "2026-09-19T11:32:42Z"
     }
   ]
 }
