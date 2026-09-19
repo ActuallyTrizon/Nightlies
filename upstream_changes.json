@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-19T21:57:44Z",
+  "triggered_at": "2026-09-19T23:54:06Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "076922b",
-      "new": "40e0164",
-      "full": "40e01640396d03f9fddeb697f5ee00ae893ecb75",
-      "msg": "[dxvk] End render pass before recording frame capture markers",
-      "date": "2026-09-19T19:43:00Z"
-    },
-    {
-      "repo": "WinterSnowfall/d7vk",
-      "name": "D7VK (DDraw/D3D7)",
-      "old": "c949b83",
-      "new": "6faf335",
-      "full": "6faf335939d11133d86c528aa8eae50dfe2982cf",
-      "msg": "[d3d6/5/3] Reevaluate alpha op selection during blend mode changes",
-      "date": "2026-09-19T20:25:14Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "590bf21",
+      "new": "e1f3f37",
+      "full": "e1f3f372c4a661cd0e71a0cdafc4d469d56ecf35",
+      "msg": "nv30: port fix from nv30_validate_fb to nv40 blit copy",
+      "date": "2026-09-19T22:03:06.000+00:00"
     }
   ]
 }
