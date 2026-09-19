@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-09-19T05:19:47Z",
+  "triggered_at": "2026-09-19T10:00:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "6f7a215",
-      "new": "b4bc7c2",
-      "full": "b4bc7c2e465bee588ece097c928ed6b5d421df6d",
-      "msg": "[RV64_DYNAREC] Fix scalar-version VPERM2I128 (#4425)",
-      "date": "2026-09-19T03:37:18Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "1405755",
-      "new": "555e8bd",
-      "full": "555e8bd2d1f07fc7455e21324c9f9c7303c7ee7d",
-      "msg": "Merge pull request #5971 from Sonicadvance1/252",
-      "date": "2026-09-19T02:44:37Z"
+      "old": "b4bc7c2",
+      "new": "38f4831",
+      "full": "38f4831b2452fb891cf00dfb2ad512cb19ae5cc5",
+      "msg": "[BOX32][X11] Fixed in-place WM hints conversion (#4430)",
+      "date": "2026-09-19T06:20:04Z"
     }
   ]
 }
