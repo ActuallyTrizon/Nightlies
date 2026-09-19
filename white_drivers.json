@@ -1,6 +1,18 @@
 [
   {
     "type": "GpuDriver",
+    "verName": "tu_v32 \u2014 mainline-turnip-sync-V32.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v32_mainline-turnip-sync-V32.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v32 \u2014 mainline-turnip-V32.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v32_mainline-turnip-V32.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_v31 \u2014 mainline-turnip-sync-V31.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v31_mainline-turnip-sync-V31.zip"
@@ -22,6 +34,18 @@
     "verName": "tu_v30 \u2014 mainline-turnip-V30.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v30_mainline-turnip-V30.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "stu_v2 \u2014 stable-turnip-sync-V2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/stu_v2_stable-turnip-sync-V2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "stu_v2 \u2014 stable-turnip-V2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/stu_v2_stable-turnip-V2.zip"
   },
   {
     "type": "GpuDriver",
